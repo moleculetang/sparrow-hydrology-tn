@@ -1,0 +1,25 @@
+{
+  "stage": "20260826_31",
+  "role": "RESERVED_INTEGRITY_REPAIR_ONLY",
+  "registered_before_development_alpha_results": true,
+  "disclosed_trigger": "Stage 29 missed the pre-registered median absolute PBIAS margin by 0.326 percentage points; no other gate failed.",
+  "allowed_change": "one scalar posterior-shrinkage alpha applied jointly to the eight HBV raw-parameter offsets and dynamic gate strength",
+  "alpha_grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "development_only_selection": "2010-2018 discharge; retrospective observations are not read by this script",
+  "score": "0.35 pooled monthly log-MSE ratio + 0.35 station-median monthly log-RMSE ratio + 0.25 station-median absolute-PBIAS ratio + 0.05*(1-alpha)^2",
+  "forbidden": [
+    "new gate weights",
+    "new static features",
+    "regional alpha",
+    "station correction",
+    "retrospective-selected alpha"
+  ],
+  "scientific_status": "post-retrospective integrity repair; any later 2019-2022 result is known-period sensitivity, not independent validation",
+  "TN_read": false
+}

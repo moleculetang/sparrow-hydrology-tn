@@ -1,0 +1,7 @@
+{
+  "scenario_id": "20260818_7",
+  "purpose": "independent persisted-output audit and final lock",
+  "imports_experiment_core": false,
+  "selection_uses_2022": false,
+  "lock_parent_files": true
+}

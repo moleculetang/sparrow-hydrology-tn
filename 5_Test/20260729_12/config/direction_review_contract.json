@@ -1,0 +1,15 @@
+{
+  "run_id": "20260729_12",
+  "parent_run_id": "20260729_11",
+  "required_parent_action": "REPAIR_UNRESOLVED_REACH_DIRECTION",
+  "target_reach_ids": [6, 20, 31, 57, 136, 146],
+  "source_dem_endpoint_min_drop_m": 1.0,
+  "chain_dem_min_drop_m": 1.0,
+  "flat_slope_abs_threshold": 1e-8,
+  "area_monotonic_tolerance_km2": 1e-6,
+  "forbid_2019_2022_read": true,
+  "forbid_production_topology_mutation": true,
+  "forbid_absolute_slope_repair": true,
+  "required_next_action_if_pass": "BUILD_Q78_NAT_CONSERVATION_CORE",
+  "required_next_action_if_fail": "SUPPLEMENT_UNRESOLVED_REACH_DIRECTION_EVIDENCE"
+}

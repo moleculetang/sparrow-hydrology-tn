@@ -1,0 +1,53 @@
+{
+  "run_id": "20260729_15",
+  "parent_run_id": "20260729_14",
+  "required_parent_action": "REGISTER_Q78_NAT_PARAMETER_PRIORS_AND_INITIALIZATION",
+  "development_period": [2006, 2018],
+  "evaluation_sensitivity_start": "2012-01",
+  "relative_spread_threshold": 0.01,
+  "prior_semantic_state": "development_prior_not_posterior",
+  "parameter_priors": {
+    "kappa_s": {"lower": 0.5, "center": 1.0, "upper": 2.0, "scale": "dimensionless"},
+    "gamma_ET": {"lower": 0.5, "center": 1.0, "upper": 2.0, "scale": "dimensionless"},
+    "k_perc": {"lower": 0.01, "center": 0.08, "upper": 0.30, "scale": "fraction_per_month"},
+    "p_perc": {"lower": 1.0, "center": 2.0, "upper": 4.0, "scale": "dimensionless"},
+    "k_int": {"lower": 0.01, "center": 0.20, "upper": 0.50, "scale": "fraction_per_month"},
+    "p_int": {"lower": 1.0, "center": 2.0, "upper": 4.0, "scale": "dimensionless"},
+    "k_g": {"lower": 0.01, "center": 0.05, "upper": 0.30, "scale": "fraction_per_month"},
+    "k_route": {"lower": 0.50, "center": 0.85, "upper": 1.0, "scale": "fraction_per_month"},
+    "k_deep": {"lower": 0.0, "center": 0.0, "upper": 0.0, "scale": "fraction_per_month"}
+  },
+  "joint_constraints": {
+    "k_perc_plus_k_int_upper": 0.75
+  },
+  "parameter_scenarios": {
+    "nominal": {
+      "kappa_s": 1.0, "gamma_ET": 1.0,
+      "k_perc": 0.08, "p_perc": 2.0,
+      "k_int": 0.20, "p_int": 2.0,
+      "k_g": 0.05, "k_deep": 0.0, "k_route": 0.85
+    },
+    "slow_memory_edge": {
+      "kappa_s": 2.0, "gamma_ET": 2.0,
+      "k_perc": 0.01, "p_perc": 4.0,
+      "k_int": 0.01, "p_int": 4.0,
+      "k_g": 0.01, "k_deep": 0.0, "k_route": 0.50
+    },
+    "fast_memory_edge": {
+      "kappa_s": 0.5, "gamma_ET": 0.5,
+      "k_perc": 0.25, "p_perc": 1.0,
+      "k_int": 0.50, "p_int": 1.0,
+      "k_g": 0.30, "k_deep": 0.0, "k_route": 1.0
+    }
+  },
+  "initialization_variants": {
+    "cold": {"initial_soil_fraction": 0.0, "initial_groundwater_mm": 0.0, "initial_channel_m3": 0.0},
+    "dry": {"initial_soil_fraction": 0.25, "initial_groundwater_mm": 10.0, "initial_channel_m3": 0.0},
+    "reference": {"initial_soil_fraction": 0.50, "initial_groundwater_mm": 50.0, "initial_channel_m3": 0.0},
+    "wet": {"initial_soil_fraction": 0.75, "initial_groundwater_mm": 150.0, "initial_channel_m3": 1000000.0},
+    "saturated": {"initial_soil_fraction": 1.0, "initial_groundwater_mm": 300.0, "initial_channel_m3": 10000000.0}
+  },
+  "next_action_if_pass": "BUILD_Q78_NAT_ATTRIBUTE_PARAMETER_MAPPING",
+  "next_action_if_fail": "DESIGN_Q78_NAT_SPINUP_PROTOCOL"
+}
+

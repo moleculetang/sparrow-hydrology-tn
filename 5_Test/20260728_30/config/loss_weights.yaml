@@ -1,0 +1,6 @@
+status: unchanged_from_20260727_4
+log_flow_map_objective: unchanged
+flow_contrast_weight: 1.0
+new_linear_flow_loss: 0.0
+new_annual_volume_loss: 0.0
+new_auxiliary_loss: 0.0

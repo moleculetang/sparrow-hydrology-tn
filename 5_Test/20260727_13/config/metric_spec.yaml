@@ -1,0 +1,35 @@
+good_definition:
+  minimum_months: 24
+  minimum_NSElog: 0.65
+  minimum_KGE: 0.50
+  maximum_abs_PBIAS_pct: 25.0
+flow_regimes:
+  low: observed_at_or_below_Q25
+  high: observed_at_or_above_Q75
+  very_low: observed_at_or_below_Q10
+  very_high: observed_at_or_above_Q90
+fdc_exceedance_segments_pct:
+  - [0, 10]
+  - [10, 30]
+  - [30, 70]
+  - [70, 90]
+  - [90, 100]
+peak_events:
+  threshold_quantile: 0.75
+  local_window_months: 1
+  minimum_separation_months: 2
+  primary_match_window_months: 1
+  sensitivity_match_window_months: 2
+deseasonal_cross_correlation:
+  minimum_lag_months: -3
+  maximum_lag_months: 3
+  climatology_period: 2010-2015
+engineering_effect_sizes:
+  median_NSElog: 0.005
+  median_KGE: 0.005
+  median_abs_PBIAS_percentage_points: 0.5
+  flow_bias_percentage_points: 5.0
+  flow_RMSE_relative: 0.05
+  annual_ROCE_percentage_points: 2.0
+  event_F1: 0.05
+  event_absolute_lag_months: 0.25

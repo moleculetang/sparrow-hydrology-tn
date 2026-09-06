@@ -1,0 +1,19 @@
+{
+  "stage": "20260828_32",
+  "title": "Historical activation registry for the 13 locked reservoir operators",
+  "status": "REGISTERED",
+  "parent": "E:/SPARROW/5_Test/20260828_24",
+  "parameter_policy": "R2 tau=180 day, inflow response=0.25, drawdown=0.00 and all capacities/topology remain frozen",
+  "activation_semantics": "First impoundment when available; otherwise first verified operation; year-only dates use July 1 and month-only dates use the first day",
+  "state_semantics": {
+    "before_activation": "identity pass-through with zero storage",
+    "active_before_1961": "participates in hydrologic spin-up",
+    "active_after_1961": "starts empty and fills from modeled inflow"
+  },
+  "forbidden": [
+    "discharge or TN observation access",
+    "reservoir parameter refitting",
+    "instantaneous injection of target storage at activation",
+    "changing reservoir topology or capacity"
+  ]
+}

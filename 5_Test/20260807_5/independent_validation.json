@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "runtime_exact": true,
+    "validation_passed": true,
+    "all_registered_checks_passed": true,
+    "gate_passed": true,
+    "daily_shape_exact": true,
+    "daily_key_unique": true,
+    "daily_period_frozen": true,
+    "mass_all_passed": true,
+    "area_all_passed": true,
+    "readme_updated": true
+  },
+  "passed": true
+}

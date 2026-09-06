@@ -1,0 +1,30 @@
+{
+  "run_id": "20260729_9",
+  "development_start_year": 2006,
+  "development_end_year": 2018,
+  "locked_confirmation_start_year": 2019,
+  "locked_confirmation_end_year": 2022,
+  "expected_reaches": 230,
+  "expected_months_per_reach": 156,
+  "fixed_excluded_stations": [
+    "劳村站",
+    "富罗（二）站",
+    "隆安站",
+    "灵渠（三）站",
+    "马口站"
+  ],
+  "protected_retained_stations": [
+    "石角站"
+  ],
+  "allowed_field_states": [
+    "observed",
+    "reported",
+    "downscaled",
+    "literature_coefficient",
+    "scenario_only",
+    "diagnostic_only",
+    "missing"
+  ],
+  "formal_model_runtime": "conda sparrow",
+  "geospatial_runtime": "conda PRB_reach"
+}

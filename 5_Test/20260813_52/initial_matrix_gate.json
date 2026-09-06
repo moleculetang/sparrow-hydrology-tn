@@ -1,0 +1,9 @@
+{
+  "terminal": "INITIAL_SCENARIO_MATRIX_COMPLETE",
+  "scenario_count": 8,
+  "passing_scenarios": [
+    "S111"
+  ],
+  "s111_negative_stations": "",
+  "closure_required": false
+}

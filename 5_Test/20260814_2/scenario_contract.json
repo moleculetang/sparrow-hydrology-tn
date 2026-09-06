@@ -1,0 +1,11 @@
+{
+  "scenario_id":"20260814_2",
+  "stage":"fixed_branch_comparison",
+  "parent":"../20260814_1",
+  "branches":["main","flash","slow","buffer","wet"],
+  "performance_type":"fixed_structure_oof",
+  "runtime":"conda --no-plugins run -n sparrow python",
+  "expected_oof_rows_per_model":7755,
+  "expected_design_columns":3383,
+  "groundwater_cannot_rescue_flow_failure":true
+}

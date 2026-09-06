@@ -1,0 +1,21 @@
+{
+  "verdict": "CONDITIONAL_PASS",
+  "boundary_status": "WITHIN_D0_P",
+  "legacy_reconstruction": "PASS",
+  "enhanced_evidence_status": "PROVISIONAL",
+  "allow_read_only_lineage": true,
+  "lineage_gate": "PROCEED_READ_ONLY_LINEAGE_WITH_PROVISIONAL_ENHANCED_LABELS",
+  "blocking_for_lineage": [],
+  "prohibited_interpretations": [
+    "station_deletion",
+    "flow_value_modification",
+    "confirmed_observation_error",
+    "confirmed_hydrological_mechanism"
+  ],
+  "required_before_confirmatory_use": [
+    "fold_stratified_year_bootstrap_sensitivity",
+    "increase_bootstrap_replicates_and_report_monte_carlo_resolution",
+    "BY_or_river_group_dependence_sensitivity",
+    "resolution_aware_low_flow_instability_rule"
+  ]
+}

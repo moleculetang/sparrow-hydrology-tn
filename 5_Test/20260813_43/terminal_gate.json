@@ -1,0 +1,13 @@
+{
+  "terminal": "REGRESSION_REPARAMETERIZATION_EQUIVALENCE_FAILURE",
+  "model_run": false,
+  "station_count": 111,
+  "all_checked_blocks_equivalent": false,
+  "failed_blocks": [
+    "station_intercept_or_random_slope",
+    "regime_station_slope",
+    "spatial_group_slope",
+    "exact_duplicate_multistore_feature"
+  ],
+  "required_repair": "restore zero-preserving gates with the full original Gaussian-prior column space, then rerun all folds"
+}

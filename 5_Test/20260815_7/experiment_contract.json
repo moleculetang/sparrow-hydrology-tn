@@ -1,0 +1,15 @@
+{
+  "scenario_id": "20260815_7",
+  "parent": "E:\\SPARROW\\5_Test\\20260815_6",
+  "question": "joint_adjudication_and_single_use_2022_locked_evaluation",
+  "selection_frozen_from": ["20260815_4", "20260815_5", "20260815_6"],
+  "final_readout_training_years": [2016, 2021],
+  "locked_evaluation_year": 2022,
+  "locked_year_may_change_selection": false,
+  "comparators": ["selected_joint_model", "M0_T0_R0_baseline"],
+  "bootstrap": {"replicates": 10000, "seed": 20260815, "margin_log_rmse": 0.01, "ci": "percentile_95"},
+  "target": "TN_concentration",
+  "load_semantics": "model_based_monthly_load_proxy_from_TN_sample_and_R0_water_volume",
+  "point_source_tn": "missing_not_fabricated",
+  "groundwater_external_evidence": "non_identifying"
+}

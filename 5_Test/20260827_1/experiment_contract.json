@@ -1,0 +1,19 @@
+{
+  "stage": "20260827_1",
+  "role": "read-only evidence and leakage audit before any current-program model fitting",
+  "audit_dimensions": [
+    "input grain completeness uniqueness validity and hashes",
+    "time split and future-observation access",
+    "station and Reach uniqueness",
+    "target-tree exclusion",
+    "feature and prior provenance",
+    "candidate and hyperparameter selection history",
+    "mass conservation and component interpretation",
+    "hydrologic routing versus TN hydraulic-exposure semantics"
+  ],
+  "current_program_candidate_search": false,
+  "DYN2P_structure_fixed": true,
+  "alpha_fixed": 0.5,
+  "2019_2022_tuning_forbidden": true,
+  "TN_read": false
+}

@@ -1,0 +1,15 @@
+{
+  "scenario_id": "20260820_11",
+  "hypothesis": "the already-registered 2018-2021 monthly residual fingerprint is compatible with, but cannot prove, a missing effective monthly diffuse-N availability phase",
+  "role": "parameter_free_hypothesis_plausibility_audit",
+  "parent": "20260820_10__PARENT_RETAINED",
+  "allowed_parameters": [],
+  "forbidden_parameters": ["a", "b", "eta_refit", "new_problem_months", "temperature", "new_mu", "groundwater_age", "second_groundwater_store"],
+  "registered_months": [2, 3, 7, 10, 11, 12],
+  "residual_definition": "ln1p_observed_minus_ln1p_predicted",
+  "development_period": [2016, 2021],
+  "oof_evaluation_years": [2018, 2019, 2020, 2021],
+  "tn_2022_access": "forbidden",
+  "decision_values": ["hypothesis_plausible", "hypothesis_not_strengthened"],
+  "decision_is_gate_for_A0": false
+}

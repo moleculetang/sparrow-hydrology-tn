@@ -1,0 +1,20 @@
+{
+  "stage": "20260826_5",
+  "status": "registered_before_execution",
+  "purpose": "Development performance decomposition and structural equifinality audit",
+  "fit_period_reused": "2010-2018; no refit in this stage",
+  "screening_gate_for_spatial_mapping": {
+    "daily_pooled_NSE_min": 0.70,
+    "daily_station_median_NSE_min": 0.40,
+    "monthly_pooled_NSE_min": 0.85,
+    "monthly_station_median_NSE_min": 0.60,
+    "monthly_station_median_absolute_PBIAS_pct_max": 25.0
+  },
+  "gate_role": "eligibility for expensive spatial mapping, not final promotion",
+  "component_mapping": {"HBV3_PARENT": ["Q0", "Q1", "Q2"], "all_challengers": ["fast_response", "intermediate_response", "slow_response"]},
+  "claim_boundary": "cross-structure component spread is structural uncertainty, not observation error or verified source-water uncertainty",
+  "retrospective_discharge_used": false,
+  "TN_used": false,
+  "authorized_successor": "20260826_6"
+}
+

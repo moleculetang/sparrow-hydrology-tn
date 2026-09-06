@@ -1,0 +1,49 @@
+{
+  "stage": "20260824_27",
+  "parent": "20260824_26 PASS_HISTORICAL_HYDROLOGY_BRIDGE",
+  "hypothesis": "A source-tagged, mass-conserving agricultural N state model can couple the registered monthly source calendar to frozen fast, percolation and lower-slow water fluxes without an empirical TN lag.",
+  "formal_period": "1961-2024",
+  "pre_1961_spinup": {
+    "forcing": "repeat the same 1961-1970 CENTRAL source and frozen hydrology sequence independently for every candidate",
+    "absolute_terminal_tolerance_kg_n": 1e-6,
+    "max_cycles": 2000
+  },
+  "source_entry": {
+    "FERT": "mobile mineral pool",
+    "DEP": "mobile mineral pool",
+    "MAN": "agricultural legacy pool for LEG candidates; direct mineral input for L0",
+    "BNF": "agricultural legacy pool for LEG candidates; direct mineral input for L0"
+  },
+  "fixed_candidates": {
+    "L0": null,
+    "LEG10": 0.10,
+    "LEG20": 0.05,
+    "LEG50": 0.02
+  },
+  "month_order": [
+    "add source-tagged current-month inputs",
+    "mineralize the registered fraction of the legacy pool",
+    "apply crop removal proportionally to available mineral source tags",
+    "mobilize one shared mineral pool with fast plus percolation water contact",
+    "partition mobilized N by actual fast/percolation water volumes",
+    "add percolated N to the lower dissolved-N pool",
+    "release lower dissolved N only with actual local slow water",
+    "update all states"
+  ],
+  "forbidden": [
+    "TN observation reading",
+    "parameter fitting or candidate selection",
+    "annual divided by 12 source forcing",
+    "free source entry fractions",
+    "fixed 36-month generic memory",
+    "additional empirical TN lag",
+    "temperature",
+    "WWTP",
+    "SAS or groundwater age fitting",
+    "second agricultural legacy pool",
+    "hydrology parameter refit",
+    "Andreadis reference discharge"
+  ],
+  "runtime": {"conda_environment": "sparrow", "threads": 1, "warning_gib": 12, "hard_stop_gib": 16},
+  "authorized_successor": "20260824_28"
+}

@@ -1,0 +1,1049 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "PRB Reach拓扑与空间合理性全量审计",
+    "description": "230条Reach、Catchment、站点映射及低流目标的坐标优先审计。",
+    "generatedAt": "2026-08-10T00:25:36+08:00",
+    "sources": [
+      {
+        "id": "src_risk",
+        "label": "230条Reach全量风险注册表",
+        "path": "reports/full_reach_risk_registry.csv",
+        "query": {
+          "engine": "DuckDB",
+          "sql": "SELECT * FROM read_csv_auto('reports/full_reach_risk_registry.csv', header=true);",
+          "description": "全网图结构、几何、DEM、Catchment和模型代表站风险注册表。",
+          "language": "sql",
+          "tables_used": [
+            "reports/full_reach_risk_registry.csv"
+          ],
+          "filters": [
+            "Frozen PRB topology snapshot",
+            "No mainline files modified"
+          ],
+          "metric_definitions": [
+            "风险数按230条唯一reach_id计数。"
+          ]
+        }
+      },
+      {
+        "id": "src_external",
+        "label": "坐标外部河网交叉验证",
+        "path": "reports/coordinate_based_external_geography_evidence.csv",
+        "query": {
+          "engine": "DuckDB",
+          "sql": "SELECT * FROM read_csv_auto('reports/coordinate_based_external_geography_evidence.csv', header=true);",
+          "description": "按固定经纬度或本地Reach包围盒从OpenStreetMap提取水系并计算空间距离；名称不参与候选定位。",
+          "language": "sql",
+          "tables_used": [
+            "reports/coordinate_based_external_geography_evidence.csv",
+            "reports/external_raw/*.json"
+          ],
+          "filters": [
+            "Frozen PRB topology snapshot",
+            "No mainline files modified"
+          ],
+          "metric_definitions": [
+            "外部河网距离在本地等积投影中计算；名称仅辅助。"
+          ]
+        }
+      },
+      {
+        "id": "src_counterfactual",
+        "label": "候选补边反事实影响",
+        "path": "reports/candidate_edge_counterfactual_summary.csv",
+        "query": {
+          "engine": "DuckDB",
+          "sql": "SELECT * FROM read_csv_auto('reports/candidate_edge_counterfactual_summary.csv', header=true);",
+          "description": "在冻结DAG副本中加入5条候选边，重新递推累计面积并追踪下游Reach与Q72代表站。",
+          "language": "sql",
+          "tables_used": [
+            "reports/candidate_edge_counterfactual_summary.csv",
+            "reports/candidate_edge_downstream_impact.csv"
+          ],
+          "filters": [
+            "Frozen PRB topology snapshot",
+            "No mainline files modified"
+          ],
+          "metric_definitions": [
+            "受影响Reach为接收Reach及其全部下游；模型未重跑。"
+          ]
+        }
+      },
+      {
+        "id": "src_station",
+        "label": "站点坐标与同Reach代表站审计",
+        "path": "reports/all_station_coordinate_based_spatial_classification.csv",
+        "query": {
+          "engine": "DuckDB",
+          "sql": "SELECT * FROM read_csv_auto('reports/all_station_coordinate_based_spatial_classification.csv', header=true);",
+          "description": "按坐标、最近Reach及增量Catchment包含关系分类，并验证同Reach选择最大median_q_cfs。",
+          "language": "sql",
+          "tables_used": [
+            "reports/all_station_coordinate_based_spatial_classification.csv",
+            "reports/same_reach_representative_selection_validation.csv"
+          ],
+          "filters": [
+            "Frozen PRB topology snapshot",
+            "No mainline files modified"
+          ],
+          "metric_definitions": [
+            "Q72代表站按唯一station_key—assigned_reach_id去重。"
+          ]
+        }
+      },
+      {
+        "id": "src_lowflow",
+        "label": "28个低流目标与背景Reach风险比较",
+        "path": "reports/legacy_lowflow_vs_other_topology_risk.csv",
+        "query": {
+          "engine": "DuckDB",
+          "sql": "SELECT * FROM read_csv_auto('reports/legacy_lowflow_vs_other_topology_risk.csv', header=true);",
+          "description": "比较28个冻结低流目标与其余202条Reach的拓扑风险率。",
+          "language": "sql",
+          "tables_used": [
+            "reports/legacy_lowflow_vs_other_topology_risk.csv"
+          ],
+          "filters": [
+            "Frozen PRB topology snapshot",
+            "No mainline files modified"
+          ],
+          "metric_definitions": [
+            "分母分别为28和202条唯一Reach。"
+          ]
+        }
+      }
+    ],
+    "cards": [
+      {
+        "id": "card_reaches",
+        "dataset": "headline_risk",
+        "sourceId": "src_risk",
+        "description": "冻结拓扑中的唯一Reach总数。",
+        "metrics": [
+          {
+            "label": "Reach",
+            "field": "reach_count",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "card_breaks",
+        "dataset": "headline_risk",
+        "sourceId": "src_risk",
+        "description": "几何末端与接收Reach精确相接但拓扑表未建边。",
+        "metrics": [
+          {
+            "label": "确定断边",
+            "field": "confirmed_breaks",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "card_affected",
+        "dataset": "headline_cf",
+        "sourceId": "src_counterfactual",
+        "description": "五边同时加入后累计面积发生变化的唯一Reach。",
+        "metrics": [
+          {
+            "label": "受影响下游Reach",
+            "field": "affected_reaches",
+            "format": "number"
+          },
+          {
+            "label": "代表站",
+            "field": "affected_stations",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "card_station_hard",
+        "dataset": "headline_station",
+        "sourceId": "src_station",
+        "description": "121个Q72代表站中明确位于另一增量Catchment且偏离超过5 km的站。",
+        "metrics": [
+          {
+            "label": "确定站点Catchment矛盾",
+            "field": "confirmed_different_catchment",
+            "format": "number"
+          },
+          {
+            "label": "Q72代表站",
+            "field": "q72_representatives",
+            "format": "number"
+          }
+        ]
+      }
+    ],
+    "charts": [
+      {
+        "id": "chart_risk_counts",
+        "title": "全网Reach风险分级",
+        "subtitle": "230条Reach；确定矛盾仅5条，主体结构未发现硬失败",
+        "type": "horizontalBar",
+        "intent": "comparison",
+        "question": "各风险层级有多少Reach？",
+        "rationale": "横向条形图适合比较四个长标签类别。",
+        "dataset": "risk_counts",
+        "sourceId": "src_risk",
+        "layout": "full",
+        "valueFormat": "number",
+        "unit": "Reach",
+        "encodings": {
+          "x": {
+            "field": "risk_class_cn",
+            "type": "nominal",
+            "aggregate": "none",
+            "label": "风险等级"
+          },
+          "y": {
+            "field": "count",
+            "type": "quantitative",
+            "label": "Reach数",
+            "format": "number"
+          },
+          "tooltip": [
+            {
+              "field": "count",
+              "type": "quantitative",
+              "label": "Reach数"
+            },
+            {
+              "field": "share",
+              "type": "quantitative",
+              "label": "占比",
+              "format": "percent"
+            },
+            {
+              "field": "legacy_count",
+              "type": "quantitative",
+              "label": "低流目标数"
+            }
+          ]
+        }
+      },
+      {
+        "id": "chart_counterfactual",
+        "title": "五条候选边的下游影响范围",
+        "subtitle": "单边反事实；重复下游Reach和站点在同时补边结果中去重",
+        "type": "horizontalBar",
+        "intent": "comparison",
+        "question": "哪条断边对下游Reach影响最广？",
+        "rationale": "横向条形图直接比较五个候选边的受影响Reach数。",
+        "dataset": "counterfactual",
+        "sourceId": "src_counterfactual",
+        "layout": "full",
+        "valueFormat": "number",
+        "unit": "Reach",
+        "encodings": {
+          "x": {
+            "field": "pair",
+            "type": "nominal",
+            "aggregate": "none",
+            "label": "候选边"
+          },
+          "y": {
+            "field": "affected_reaches",
+            "type": "quantitative",
+            "label": "受影响下游Reach"
+          },
+          "tooltip": [
+            {
+              "field": "affected_reaches",
+              "type": "quantitative",
+              "label": "受影响Reach"
+            },
+            {
+              "field": "affected_stations",
+              "type": "quantitative",
+              "label": "Q72代表站"
+            },
+            {
+              "field": "source_area_km2",
+              "type": "quantitative",
+              "label": "接入面积",
+              "unit": "km²"
+            },
+            {
+              "field": "legacy_affected",
+              "type": "quantitative",
+              "label": "低流目标"
+            }
+          ]
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "table_terminal",
+        "title": "断点坐标证据与反事实影响",
+        "subtitle": "5条候选边；外部河网严格按坐标提取，名称不用于定位",
+        "dataset": "terminal_cases",
+        "sourceId": "src_external",
+        "layout": "full",
+        "density": "spacious",
+        "defaultSort": {
+          "field": "affected_reaches",
+          "direction": "desc"
+        },
+        "columns": [
+          {
+            "field": "pair",
+            "label": "候选边",
+            "type": "text"
+          },
+          {
+            "field": "locality_coordinate_reverse_geocode",
+            "label": "坐标行政位置",
+            "type": "text"
+          },
+          {
+            "field": "join_distance_m",
+            "label": "断点距外部水系(m)",
+            "format": "number"
+          },
+          {
+            "field": "source_median_m",
+            "label": "源段中位距离(m)",
+            "format": "number"
+          },
+          {
+            "field": "receiver_median_m",
+            "label": "接收段中位距离(m)",
+            "format": "number"
+          },
+          {
+            "field": "affected_reaches",
+            "label": "受影响Reach",
+            "format": "number"
+          },
+          {
+            "field": "affected_stations",
+            "label": "受影响代表站",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "table_catchment",
+        "title": "Reach—Catchment错配的坐标外部核验",
+        "subtitle": "3个严重错配Reach；百分比为本地河线长度覆盖率",
+        "dataset": "catchment_cases",
+        "sourceId": "src_external",
+        "layout": "full",
+        "density": "spacious",
+        "defaultSort": {
+          "field": "own_catchment_pct",
+          "direction": "asc"
+        },
+        "columns": [
+          {
+            "field": "reach_id",
+            "label": "Reach",
+            "format": "number"
+          },
+          {
+            "field": "locality_coordinate_reverse_geocode",
+            "label": "坐标位置",
+            "type": "text"
+          },
+          {
+            "field": "own_catchment_pct",
+            "label": "自身Catchment(%)",
+            "format": "number"
+          },
+          {
+            "field": "other_catchment_pct",
+            "label": "最大其他Catchment(%)",
+            "format": "number"
+          },
+          {
+            "field": "osm_300m_pct",
+            "label": "外部河网300m(%)",
+            "format": "number"
+          },
+          {
+            "field": "osm_1000m_pct",
+            "label": "外部河网1km(%)",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "table_station",
+        "title": "Q72代表站的非标准空间关系",
+        "subtitle": "16个非“主河线空间一致”站；多数仍位于assigned Catchment内或处于坐标取整范围",
+        "dataset": "station_exceptions",
+        "sourceId": "src_station",
+        "layout": "full",
+        "density": "dense",
+        "defaultSort": {
+          "field": "assigned_catchment_distance_km",
+          "direction": "desc"
+        },
+        "columns": [
+          {
+            "field": "station_key",
+            "label": "站点标识",
+            "type": "text"
+          },
+          {
+            "field": "assigned_reach_id",
+            "label": "assigned Reach",
+            "format": "number"
+          },
+          {
+            "field": "nearest_reach_id",
+            "label": "最近Reach",
+            "format": "number"
+          },
+          {
+            "field": "assigned_reach_distance_km",
+            "label": "距assigned河线(km)",
+            "format": "number"
+          },
+          {
+            "field": "assigned_catchment_distance_km",
+            "label": "距assigned Catchment(km)",
+            "format": "number"
+          },
+          {
+            "field": "coordinate_spatial_class",
+            "label": "坐标空间类别",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "id": "table_lowflow",
+        "title": "低流目标与背景Reach的拓扑风险率",
+        "subtitle": "冻结28个目标Reach对比其余202条Reach",
+        "dataset": "lowflow_comparison",
+        "sourceId": "src_lowflow",
+        "layout": "full",
+        "density": "spacious",
+        "defaultSort": {
+          "field": "reach_count",
+          "direction": "asc"
+        },
+        "columns": [
+          {
+            "field": "group",
+            "label": "Reach组",
+            "type": "text"
+          },
+          {
+            "field": "reach_count",
+            "label": "Reach数",
+            "format": "number"
+          },
+          {
+            "field": "internal_contradiction_or_high_rate",
+            "label": "确定/高风险率",
+            "format": "percent"
+          },
+          {
+            "field": "catchment_high_rate",
+            "label": "Catchment高风险率",
+            "format": "percent"
+          },
+          {
+            "field": "dem_uncertain_rate",
+            "label": "DEM不确定率",
+            "format": "percent"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "body": "# PRB Reach拓扑与空间合理性全量审计",
+        "layout": "full"
+      },
+      {
+        "id": "summary",
+        "type": "markdown",
+        "body": "## 技术摘要\n\n**主体拓扑可用，但存在5条确定缺失的汇流边。** 这5处同时满足本地几何—拓扑表硬矛盾和按坐标提取的外部河网强支持。Reach 23、47、146和199还存在严重增量Catchment错配。反事实补边会改变24条下游Reach和11个Q72代表站的上游聚合，但不会改变28个低流目标中任何目标Reach自身的上游集合，因此拓扑不能作为20+站共同低流高估的解释。",
+        "layout": "full"
+      },
+      {
+        "id": "headline",
+        "type": "metric-strip",
+        "cardIds": [
+          "card_reaches",
+          "card_breaks",
+          "card_affected",
+          "card_station_hard"
+        ],
+        "layout": "full"
+      },
+      {
+        "id": "risk_intro",
+        "type": "markdown",
+        "body": "## 全网结构总体健康，面积闭合仍掩盖了假terminal\n\n冻结图无环、无非法下游ID，现有19个弱连通分量内面积递推闭合。但被错误切断的支流仍可作为独立terminal贡献完整面积，因此全局面积守恒不能证明19个terminal都是真实出口。",
+        "sourceId": "src_risk",
+        "layout": "full"
+      },
+      {
+        "id": "risk_chart",
+        "type": "chart",
+        "chartId": "chart_risk_counts",
+        "layout": "full"
+      },
+      {
+        "id": "edge_intro",
+        "type": "markdown",
+        "body": "## 5个断点均由坐标河网独立支持\n\n断点坐标直接来自本地源Reach末端；外部水系按坐标提取。5处源段和接收段均在制图容差内与外部河网对齐，河名只作辅助。",
+        "sourceId": "src_external",
+        "layout": "full"
+      },
+      {
+        "id": "edge_table",
+        "type": "table",
+        "tableId": "table_terminal",
+        "layout": "full"
+      },
+      {
+        "id": "cf_intro",
+        "type": "markdown",
+        "body": "## 补边影响下游聚合，但不直接改变28站目标自身\n\n五边同时加入后，弱连通分量19→14、terminal 19→14，图仍无环。单边影响存在重叠；同时补边去重后共有24条Reach和11个代表站受影响，石角包含在64→59的下游集合中并必须保留。",
+        "sourceId": "src_counterfactual",
+        "layout": "full"
+      },
+      {
+        "id": "cf_chart",
+        "type": "chart",
+        "chartId": "chart_counterfactual",
+        "layout": "full"
+      },
+      {
+        "id": "catch_intro",
+        "type": "markdown",
+        "body": "## Catchment分区是23、47、146的首要嫌疑\n\n三条本地河线都得到外部水系位置支持，但自身增量Catchment覆盖明显不足。Reach 23最严重：自身覆盖为0，而约99.84%落入Reach 21 Catchment。",
+        "sourceId": "src_external",
+        "layout": "full"
+      },
+      {
+        "id": "catch_table",
+        "type": "table",
+        "tableId": "table_catchment",
+        "layout": "full"
+      },
+      {
+        "id": "station_intro",
+        "type": "markdown",
+        "body": "## 距主河线较远不等于站点映射错误\n\nQ72的121个代表站中，105个空间一致；另有5个位于assigned Catchment内但离简化主河线较远，2个位于assigned Catchment但另一条Reach更近，6个只表现为≤2 km边界/坐标取整。只有岔江属于明确位于另一Catchment且偏离>5 km。27个同Reach多站组全部选择站内median_q_cfs最大的代表站。",
+        "sourceId": "src_station",
+        "layout": "full"
+      },
+      {
+        "id": "station_table",
+        "type": "table",
+        "tableId": "table_station",
+        "layout": "full"
+      },
+      {
+        "id": "lowflow_intro",
+        "type": "markdown",
+        "body": "## 低流目标没有系统富集拓扑风险\n\n28个低流目标的确定/高风险率为7.14%，低于其余Reach的10.40%。局部拓扑问题确实会影响个别站和下游聚合，但现有证据不支持把20+站共同低流高估归因于一个全网拓扑故障。",
+        "sourceId": "src_lowflow",
+        "layout": "full"
+      },
+      {
+        "id": "lowflow_table",
+        "type": "table",
+        "tableId": "table_lowflow",
+        "layout": "full"
+      },
+      {
+        "id": "scope",
+        "type": "markdown",
+        "body": "## 范围、方法与判据\n\n审计覆盖230条Reach、211条有向边、230个增量Catchment、238个站点空间要素和121个Q72代表站。主判据依次为坐标、几何连续性、图关系、Catchment包含和独立河网；名称只作为记录标识与阅读辅助。外部OpenStreetMap证据是交叉验证，不是官方水文权威。",
+        "layout": "full"
+      },
+      {
+        "id": "limitations",
+        "type": "markdown",
+        "body": "## 不确定性与稳健性\n\n站点坐标多为约1角分精度，因此1–2 km边界差异保守解释为取整/概化。外部河线与本地线的几十至数百米差异属于可预期制图尺度差异。反事实没有重跑Q72，量化的是拓扑与上游聚合影响，不是模型指标改善。所有结论均保留原始CSV、GPKG、外部JSON和可运行脚本。",
+        "layout": "full"
+      },
+      {
+        "id": "next",
+        "type": "markdown",
+        "body": "## 建议下一步\n\n1. 在新的测试副本中加入14→19、64→59、132→149、180→168、199→196，并完整重建节点、hydseq、terminal、累计面积和Catchment。\n2. 优先复核Reach 199/196及岔江，其次复核23、47/48、146/147的增量分区。\n3. 重建后重新运行同Reach最大流量代表站门禁；石角保留并单独报告。\n4. 只有在全部空间与数值门禁通过后，才重跑Q72并与当前基线比较。",
+        "layout": "full"
+      },
+      {
+        "id": "questions",
+        "type": "markdown",
+        "body": "## 仍需回答的问题\n\n- 官方河网/水文资料是否确认5个断点的接收Reach节点与本地坐标一致？\n- Reach 23的Catchment错配来自栅格标签、矢量化还是reach_id关联？\n- 岩滩大坝附近146/147的分段是否有意表达坝上下游单元？\n- 完整重建后，11个下游代表站的Q72上游聚合和OOF指标改变多少？",
+        "layout": "full"
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-08-10T00:25:36+08:00",
+    "status": "ready",
+    "datasets": {
+      "headline_risk": [
+        {
+          "reach_count": 230,
+          "confirmed_breaks": 5
+        }
+      ],
+      "headline_cf": [
+        {
+          "affected_reaches": 24,
+          "affected_stations": 11
+        }
+      ],
+      "headline_station": [
+        {
+          "q72_representatives": 121,
+          "confirmed_different_catchment": 1
+        }
+      ],
+      "risk_counts": [
+        {
+          "risk_class": "CONFIRMED_INTERNAL_TOPOLOGY_CONTRADICTION",
+          "risk_class_cn": "确定内部矛盾",
+          "count": 5,
+          "share": 0.021739130434782608,
+          "legacy_count": 2,
+          "median_length_km": 148.19342287282512,
+          "severity_order": 0
+        },
+        {
+          "risk_class": "HIGH_PRIORITY_GEOGRAPHIC_REVIEW",
+          "risk_class_cn": "高优先级地理复核",
+          "count": 18,
+          "share": 0.0782608695652174,
+          "legacy_count": 0,
+          "median_length_km": 68.7576657545367,
+          "severity_order": 1
+        },
+        {
+          "risk_class": "LIKELY_GEOMETRIC_OR_RESOLUTION_ARTIFACT",
+          "risk_class_cn": "可能几何/分辨率效应",
+          "count": 10,
+          "share": 0.043478260869565216,
+          "legacy_count": 0,
+          "median_length_km": 28.63562522640168,
+          "severity_order": 2
+        },
+        {
+          "risk_class": "NO_HARD_TOPOLOGY_FAILURE",
+          "risk_class_cn": "未发现硬失败",
+          "count": 197,
+          "share": 0.8565217391304348,
+          "legacy_count": 26,
+          "median_length_km": 65.74480404778129,
+          "severity_order": 3
+        }
+      ],
+      "terminal_cases": [
+        {
+          "pair": "14→19",
+          "coordinate_lon": 111.82064883947244,
+          "coordinate_lat": 23.132804924407772,
+          "locality_coordinate_reverse_geocode": "德城街道, 德庆县, 肇庆市, 广东省, 中国",
+          "join_distance_m": 0.03,
+          "source_median_m": 63.73,
+          "receiver_median_m": 0.0,
+          "affected_reaches": 2,
+          "affected_stations": 1,
+          "source_area_km2": 4481.83,
+          "external_coordinate_decision": "COORDINATE_NETWORK_STRONGLY_SUPPORTS_JOIN"
+        },
+        {
+          "pair": "64→59",
+          "coordinate_lon": 113.4092330751464,
+          "coordinate_lat": 24.16566277751522,
+          "locality_coordinate_reverse_geocode": "大站镇, 清远市, 广东省, 中国",
+          "join_distance_m": 82.59,
+          "source_median_m": 100.19,
+          "receiver_median_m": 165.99,
+          "affected_reaches": 4,
+          "affected_stations": 2,
+          "source_area_km2": 4859.41,
+          "external_coordinate_decision": "COORDINATE_NETWORK_STRONGLY_SUPPORTS_JOIN"
+        },
+        {
+          "pair": "132→149",
+          "coordinate_lon": 108.97746278707804,
+          "coordinate_lat": 23.63296701361688,
+          "locality_coordinate_reverse_geocode": "迁江镇, 来宾市, 广西壮族自治区, 中国",
+          "join_distance_m": 166.37,
+          "source_median_m": 159.32,
+          "receiver_median_m": 237.54,
+          "affected_reaches": 11,
+          "affected_stations": 6,
+          "source_area_km2": 3306.54,
+          "external_coordinate_decision": "COORDINATE_NETWORK_STRONGLY_SUPPORTS_JOIN"
+        },
+        {
+          "pair": "180→168",
+          "coordinate_lon": 107.32800291780046,
+          "coordinate_lat": 24.8382282412404,
+          "locality_coordinate_reverse_geocode": "吾隘镇, 南丹县, 河池市, 广西壮族自治区, 中国",
+          "join_distance_m": 59.1,
+          "source_median_m": 106.69,
+          "receiver_median_m": 99.22,
+          "affected_reaches": 16,
+          "affected_stations": 8,
+          "source_area_km2": 960.31,
+          "external_coordinate_decision": "COORDINATE_NETWORK_STRONGLY_SUPPORTS_JOIN"
+        },
+        {
+          "pair": "199→196",
+          "coordinate_lon": 104.676500009368,
+          "coordinate_lat": 25.06029099473369,
+          "locality_coordinate_reverse_geocode": "白碗窑镇, 兴义市, 黔西南布依族苗族自治州, 贵州省, 中国",
+          "join_distance_m": 121.02,
+          "source_median_m": 182.9,
+          "receiver_median_m": 101.15,
+          "affected_reaches": 20,
+          "affected_stations": 9,
+          "source_area_km2": 1100.67,
+          "external_coordinate_decision": "COORDINATE_NETWORK_STRONGLY_SUPPORTS_JOIN"
+        }
+      ],
+      "counterfactual": [
+        {
+          "pair": "14→19",
+          "affected_reaches": 2,
+          "affected_stations": 1,
+          "source_area_km2": 4481.83,
+          "legacy_affected": 0
+        },
+        {
+          "pair": "64→59",
+          "affected_reaches": 4,
+          "affected_stations": 2,
+          "source_area_km2": 4859.41,
+          "legacy_affected": 0
+        },
+        {
+          "pair": "132→149",
+          "affected_reaches": 11,
+          "affected_stations": 6,
+          "source_area_km2": 3306.54,
+          "legacy_affected": 0
+        },
+        {
+          "pair": "180→168",
+          "affected_reaches": 16,
+          "affected_stations": 8,
+          "source_area_km2": 960.31,
+          "legacy_affected": 0
+        },
+        {
+          "pair": "199→196",
+          "affected_reaches": 20,
+          "affected_stations": 9,
+          "source_area_km2": 1100.67,
+          "legacy_affected": 0
+        }
+      ],
+      "catchment_cases": [
+        {
+          "reach_id": 23,
+          "locality_coordinate_reverse_geocode": "杨村镇, 惠州市, 广东省, 中国",
+          "own_catchment_pct": 0.0,
+          "other_catchment_pct": 99.84,
+          "osm_300m_pct": 86.05,
+          "osm_1000m_pct": 97.67,
+          "external_coordinate_decision": "LOCAL_RIVER_GEOMETRY_EXTERNALLY_SUPPORTED_CATCHMENT_PARTITION_IS_PRIMARY_SUSPECT"
+        },
+        {
+          "reach_id": 47,
+          "locality_coordinate_reverse_geocode": "黄石镇, 龙川县, 河源市, 广东省, 中国",
+          "own_catchment_pct": 86.86,
+          "other_catchment_pct": 11.2,
+          "osm_300m_pct": 17.74,
+          "osm_1000m_pct": 100.0,
+          "external_coordinate_decision": "LOCAL_RIVER_GEOMETRY_EXTERNALLY_SUPPORTED_CATCHMENT_PARTITION_IS_PRIMARY_SUSPECT"
+        },
+        {
+          "reach_id": 146,
+          "locality_coordinate_reverse_geocode": "岩滩镇, 大化瑶族自治县, 河池市, 广西壮族自治区, 中国",
+          "own_catchment_pct": 81.38,
+          "other_catchment_pct": 16.13,
+          "osm_300m_pct": 70.0,
+          "osm_1000m_pct": 100.0,
+          "external_coordinate_decision": "LOCAL_RIVER_GEOMETRY_EXTERNALLY_SUPPORTED_CATCHMENT_PARTITION_IS_PRIMARY_SUSPECT"
+        }
+      ],
+      "station_exceptions": [
+        {
+          "station_key": "岔江",
+          "assigned_reach_id": 199,
+          "nearest_reach_id": 199,
+          "assigned_reach_distance_km": 0.6,
+          "assigned_catchment_distance_km": 19.17,
+          "coordinate_spatial_class": "CONFIRMED_POINT_IN_DIFFERENT_INCREMENTAL_CATCHMENT"
+        },
+        {
+          "station_key": "富阳",
+          "assigned_reach_id": 91,
+          "nearest_reach_id": 91,
+          "assigned_reach_distance_km": 0.31,
+          "assigned_catchment_distance_km": 0.2,
+          "coordinate_spatial_class": "LIKELY_COORDINATE_ROUNDING_OR_BOUNDARY_GENERALIZATION"
+        },
+        {
+          "station_key": "梧州(四)",
+          "assigned_reach_id": 18,
+          "nearest_reach_id": 18,
+          "assigned_reach_distance_km": 0.66,
+          "assigned_catchment_distance_km": 0.64,
+          "coordinate_spatial_class": "LIKELY_COORDINATE_ROUNDING_OR_BOUNDARY_GENERALIZATION"
+        },
+        {
+          "station_key": "百色(三)",
+          "assigned_reach_id": 138,
+          "nearest_reach_id": 138,
+          "assigned_reach_distance_km": 0.25,
+          "assigned_catchment_distance_km": 0.06,
+          "coordinate_spatial_class": "LIKELY_COORDINATE_ROUNDING_OR_BOUNDARY_GENERALIZATION"
+        },
+        {
+          "station_key": "金鸡",
+          "assigned_reach_id": 6,
+          "nearest_reach_id": 5,
+          "assigned_reach_distance_km": 1.31,
+          "assigned_catchment_distance_km": 1.3,
+          "coordinate_spatial_class": "LIKELY_COORDINATE_ROUNDING_OR_BOUNDARY_GENERALIZATION"
+        },
+        {
+          "station_key": "顺天",
+          "assigned_reach_id": 54,
+          "nearest_reach_id": 54,
+          "assigned_reach_distance_km": 0.64,
+          "assigned_catchment_distance_km": 0.01,
+          "coordinate_spatial_class": "LIKELY_COORDINATE_ROUNDING_OR_BOUNDARY_GENERALIZATION"
+        },
+        {
+          "station_key": "高要",
+          "assigned_reach_id": 19,
+          "nearest_reach_id": 19,
+          "assigned_reach_distance_km": 1.16,
+          "assigned_catchment_distance_km": 1.12,
+          "coordinate_spatial_class": "LIKELY_COORDINATE_ROUNDING_OR_BOUNDARY_GENERALIZATION"
+        },
+        {
+          "station_key": "岳城",
+          "assigned_reach_id": 55,
+          "nearest_reach_id": 55,
+          "assigned_reach_distance_km": 9.94,
+          "assigned_catchment_distance_km": 0.0,
+          "coordinate_spatial_class": "PLAUSIBLE_MINOR_TRIBUTARY_OR_GENERALIZED_MAIN_REACH"
+        },
+        {
+          "station_key": "河步(二)",
+          "assigned_reach_id": 31,
+          "nearest_reach_id": 31,
+          "assigned_reach_distance_km": 11.57,
+          "assigned_catchment_distance_km": 0.0,
+          "coordinate_spatial_class": "PLAUSIBLE_MINOR_TRIBUTARY_OR_GENERALIZED_MAIN_REACH"
+        },
+        {
+          "station_key": "结龙湾",
+          "assigned_reach_id": 75,
+          "nearest_reach_id": 75,
+          "assigned_reach_distance_km": 6.07,
+          "assigned_catchment_distance_km": 0.0,
+          "coordinate_spatial_class": "PLAUSIBLE_MINOR_TRIBUTARY_OR_GENERALIZED_MAIN_REACH"
+        },
+        {
+          "station_key": "英竹",
+          "assigned_reach_id": 140,
+          "nearest_reach_id": 140,
+          "assigned_reach_distance_km": 4.83,
+          "assigned_catchment_distance_km": 0.0,
+          "coordinate_spatial_class": "PLAUSIBLE_MINOR_TRIBUTARY_OR_GENERALIZED_MAIN_REACH"
+        },
+        {
+          "station_key": "高古马(二)",
+          "assigned_reach_id": 190,
+          "nearest_reach_id": 190,
+          "assigned_reach_distance_km": 3.82,
+          "assigned_catchment_distance_km": 0.0,
+          "coordinate_spatial_class": "PLAUSIBLE_MINOR_TRIBUTARY_OR_GENERALIZED_MAIN_REACH"
+        },
+        {
+          "station_key": "大田河(二)",
+          "assigned_reach_id": 203,
+          "nearest_reach_id": 204,
+          "assigned_reach_distance_km": 17.38,
+          "assigned_catchment_distance_km": 0.0,
+          "coordinate_spatial_class": "PLAUSIBLE_WITHIN_ASSIGNED_CATCHMENT_DIFFERENT_NEAREST_REACH"
+        },
+        {
+          "station_key": "富宁",
+          "assigned_reach_id": 124,
+          "nearest_reach_id": 127,
+          "assigned_reach_distance_km": 43.35,
+          "assigned_catchment_distance_km": 0.0,
+          "coordinate_spatial_class": "PLAUSIBLE_WITHIN_ASSIGNED_CATCHMENT_DIFFERENT_NEAREST_REACH"
+        },
+        {
+          "station_key": "严洞",
+          "assigned_reach_id": 123,
+          "nearest_reach_id": 123,
+          "assigned_reach_distance_km": 27.39,
+          "assigned_catchment_distance_km": 2.12,
+          "coordinate_spatial_class": "STATION_CATCHMENT_BOUNDARY_REVIEW"
+        },
+        {
+          "station_key": "博罗(二)",
+          "assigned_reach_id": 22,
+          "nearest_reach_id": 22,
+          "assigned_reach_distance_km": 3.65,
+          "assigned_catchment_distance_km": 3.38,
+          "coordinate_spatial_class": "STATION_CATCHMENT_BOUNDARY_REVIEW"
+        }
+      ],
+      "lowflow_comparison": [
+        {
+          "group": "其余Reach",
+          "reach_count": 202,
+          "internal_contradiction_or_high_count": 21,
+          "internal_contradiction_or_high_rate": 0.10396039603960396,
+          "catchment_high_count": 3,
+          "catchment_high_rate": 0.01485148514851485,
+          "dem_uncertain_count": 10,
+          "dem_uncertain_rate": 0.04950495049504951
+        },
+        {
+          "group": "28个低流目标Reach",
+          "reach_count": 28,
+          "internal_contradiction_or_high_count": 2,
+          "internal_contradiction_or_high_rate": 0.07142857142857142,
+          "catchment_high_count": 1,
+          "catchment_high_rate": 0.03571428571428571,
+          "dem_uncertain_count": 0,
+          "dem_uncertain_rate": 0.0
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "src_risk",
+      "label": "230条Reach全量风险注册表",
+      "path": "reports/full_reach_risk_registry.csv",
+      "query": {
+        "engine": "DuckDB",
+        "sql": "SELECT * FROM read_csv_auto('reports/full_reach_risk_registry.csv', header=true);",
+        "description": "全网图结构、几何、DEM、Catchment和模型代表站风险注册表。",
+        "language": "sql",
+        "tables_used": [
+          "reports/full_reach_risk_registry.csv"
+        ],
+        "filters": [
+          "Frozen PRB topology snapshot",
+          "No mainline files modified"
+        ],
+        "metric_definitions": [
+          "风险数按230条唯一reach_id计数。"
+        ]
+      }
+    },
+    {
+      "id": "src_external",
+      "label": "坐标外部河网交叉验证",
+      "path": "reports/coordinate_based_external_geography_evidence.csv",
+      "query": {
+        "engine": "DuckDB",
+        "sql": "SELECT * FROM read_csv_auto('reports/coordinate_based_external_geography_evidence.csv', header=true);",
+        "description": "按固定经纬度或本地Reach包围盒从OpenStreetMap提取水系并计算空间距离；名称不参与候选定位。",
+        "language": "sql",
+        "tables_used": [
+          "reports/coordinate_based_external_geography_evidence.csv",
+          "reports/external_raw/*.json"
+        ],
+        "filters": [
+          "Frozen PRB topology snapshot",
+          "No mainline files modified"
+        ],
+        "metric_definitions": [
+          "外部河网距离在本地等积投影中计算；名称仅辅助。"
+        ]
+      }
+    },
+    {
+      "id": "src_counterfactual",
+      "label": "候选补边反事实影响",
+      "path": "reports/candidate_edge_counterfactual_summary.csv",
+      "query": {
+        "engine": "DuckDB",
+        "sql": "SELECT * FROM read_csv_auto('reports/candidate_edge_counterfactual_summary.csv', header=true);",
+        "description": "在冻结DAG副本中加入5条候选边，重新递推累计面积并追踪下游Reach与Q72代表站。",
+        "language": "sql",
+        "tables_used": [
+          "reports/candidate_edge_counterfactual_summary.csv",
+          "reports/candidate_edge_downstream_impact.csv"
+        ],
+        "filters": [
+          "Frozen PRB topology snapshot",
+          "No mainline files modified"
+        ],
+        "metric_definitions": [
+          "受影响Reach为接收Reach及其全部下游；模型未重跑。"
+        ]
+      }
+    },
+    {
+      "id": "src_station",
+      "label": "站点坐标与同Reach代表站审计",
+      "path": "reports/all_station_coordinate_based_spatial_classification.csv",
+      "query": {
+        "engine": "DuckDB",
+        "sql": "SELECT * FROM read_csv_auto('reports/all_station_coordinate_based_spatial_classification.csv', header=true);",
+        "description": "按坐标、最近Reach及增量Catchment包含关系分类，并验证同Reach选择最大median_q_cfs。",
+        "language": "sql",
+        "tables_used": [
+          "reports/all_station_coordinate_based_spatial_classification.csv",
+          "reports/same_reach_representative_selection_validation.csv"
+        ],
+        "filters": [
+          "Frozen PRB topology snapshot",
+          "No mainline files modified"
+        ],
+        "metric_definitions": [
+          "Q72代表站按唯一station_key—assigned_reach_id去重。"
+        ]
+      }
+    },
+    {
+      "id": "src_lowflow",
+      "label": "28个低流目标与背景Reach风险比较",
+      "path": "reports/legacy_lowflow_vs_other_topology_risk.csv",
+      "query": {
+        "engine": "DuckDB",
+        "sql": "SELECT * FROM read_csv_auto('reports/legacy_lowflow_vs_other_topology_risk.csv', header=true);",
+        "description": "比较28个冻结低流目标与其余202条Reach的拓扑风险率。",
+        "language": "sql",
+        "tables_used": [
+          "reports/legacy_lowflow_vs_other_topology_risk.csv"
+        ],
+        "filters": [
+          "Frozen PRB topology snapshot",
+          "No mainline files modified"
+        ],
+        "metric_definitions": [
+          "分母分别为28和202条唯一Reach。"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "scenario_id": "20260815_2",
+  "parent": "E:\\SPARROW\\5_Test\\20260815_1",
+  "forbidden_parent": "E:\\SPARROW\\5_Test\\20260814_9",
+  "question": "construct_one_nonduplicated_1961_2022_reach_N_ledger",
+  "dynamic_diffuse_input": "legacy_eligible_n_surplus_kg_n",
+  "gross_terms_are_audit_components_not_additional_dynamic_inputs": true,
+  "surplus_identity": "fertilizer+cropland_manure+cropland_bnf+atmospheric_deposition-crop_removal",
+  "forbidden_additional_dynamic_inputs": [
+    "fertilizer_kg_n",
+    "manure_kg_n",
+    "cropland_bnf_kg_n",
+    "atmospheric_deposition_kg_n",
+    "crop_removal_kg_n"
+  ],
+  "gross_terms_dynamic_mass_required": 0.0,
+  "annual_to_monthly": "uniform_divide_by_12",
+  "historical_hydrology": {
+    "1961_2005": "repeat_Q72_2006_2015_monthly_climatology",
+    "2006_2022": "actual_Q72_structural_canonical_main"
+  },
+  "point_source": {
+    "inventory": "HydroWASTE_v1.0",
+    "available_field": "wastewater_discharge_proxy_m3_day",
+    "annual_TN_mass_status": "not_available_not_fabricated",
+    "soil_legacy_eligible": false
+  },
+  "source_limitations": {
+    "deposition_2021_2022": "hold_2020_spatial_mass",
+    "harvested_area_2021_2022": "hold_2020_spatial_area",
+    "grazing_manure": "not_included_no_safe_category_spatialization",
+    "crop_rate_crosswalk": "20_harvest_area_groups_with_Others_rate_for_Sweetpotato"
+  }
+}

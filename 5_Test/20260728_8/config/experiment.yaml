@@ -1,0 +1,49 @@
+run_id: 20260728_8
+logical_parent_run: 20260727_6
+contract_predecessor: 20260728_6
+gate_predecessor: 20260728_7
+contract_id: C01_gauged_history_low_flow_residual_expert
+phase: minimal_monotone_residual_pilot
+generation_type: single_scalar_amplitude_nested_oof_selection
+baseline_prediction: frozen_original_class_alpha_fusion
+amplitude_grid: [0.0, 0.05, 0.10, 0.15, 0.20]
+amplitude_selection:
+  evidence: corresponding_outer_fold_allowed_nested_oof_only
+  primary_objective: minimum_median_target_station_low_flow_log_rmse
+  tie_break: smallest_amplitude
+  guardrails:
+    clean_nontarget_median_abs_delta_logq_max: 0.0
+    target_nonlow_median_abs_delta_logq_max: 0.01
+    predicted_high_median_abs_delta_logq_max: 0.005
+station_gate: frozen_from_20260728_7_outer_fold_assignments
+time_gate:
+  q25: station_allowed_nested_oof_baseline_prediction_q25
+  scale: max_station_nested_oof_logq_iqr_0.25
+  formula: sigmoid((log(q25_Q0+eps)-log(Q0_t+eps))/scale)
+correction:
+  formula: logQnew_equals_logQ0_minus_station_gate_times_time_gate_times_amplitude
+  direction: downward_only
+outer_scientific_gates:
+  target_low_abs_pbias_improves_folds_min: 2
+  target_low_logrmse_improves_folds_min: 2
+  clean_nontarget_median_abs_delta_logq_max: 0.01
+  target_nonlow_median_abs_delta_logq_max: 0.01
+  high_flow_median_abs_delta_logq_max: 0.005
+  newly_severe_abs_pbias_gt_50pct_stations_max: 0
+  maximum_single_station_positive_sse_gain_share: 0.25
+station_policy:
+  active_exclusions: [劳村站, 富罗（二）站, 隆安站]
+  protected_from_exclusion: [石角站]
+  gate_zero_station_predictions_must_equal_baseline: true
+forbidden:
+  - new_features
+  - new_hydrologic_structure
+  - q72_or_q78_refit
+  - alpha_change
+  - q72_q78_conditional_fusion
+  - observed_evaluation_flow_in_time_gate
+  - 2019_2022_evidence
+runtime:
+  heartbeat_seconds: 30
+  default_step_timeout_seconds: 300
+status: completed_scientific_fail_time_gate_too_broad_one_bounded_iteration_allowed

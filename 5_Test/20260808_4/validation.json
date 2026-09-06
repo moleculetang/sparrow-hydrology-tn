@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "terminal_decision_present": true,
+  "scenario_rows": {
+    "D0": 8738,
+    "D-flat": 8738,
+    "D1": 8738
+  },
+  "shuffle_replicates": 99,
+  "decision": "DAILY_TO_MONTHLY_PREMATURE_AGGREGATION_HYPOTHESIS_FALSIFIED"
+}

@@ -1,0 +1,20 @@
+{
+  "stage": "20260823_8",
+  "hypothesis": "remaining long-horizon residual structure is not caused by failure of the convex MAP solver, and unused discharge records do not automatically constitute unseen-Reach validation",
+  "development": "2006-2018",
+  "outer_temporal_evaluation": "2012-2018",
+  "retrospective": "2019-2022_locked_post-development_check",
+  "population": {
+    "primary": "20260813_52/scenarios/S000",
+    "sensitivity_only": "S111",
+    "station_deletion_after_scoring": false
+  },
+  "map_audit": ["rank", "condition_number", "objective_type", "column_groups", "explicit_time_terms"],
+  "nonstationarity": {
+    "residual": "log(1+Qobs)-log(1+Qpred)",
+    "controls": ["station", "calendar_month", "fold"],
+    "outputs": ["linear_residual_slope", "annual_effect_RMS_J_year"]
+  },
+  "unused_discharge_rule": "same-Reach or aliased records are replication/data-quality evidence, not unseen-Reach spatial validation",
+  "reservoir_scope": "excluded_without_modifying_existing_parent_inputs"
+}

@@ -1,0 +1,75 @@
+{
+  "run_id": "20260808_4",
+  "files": [
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260808_4\\inputs\\source_snapshot\\canonical_q72_oof.parquet",
+      "bytes": 3191984,
+      "sha256": "13b8d77015681804cc3362fe3854675c94e63aa83a96227bc85b4a66524b4d62"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260808_4\\inputs\\source_snapshot\\canonical_signal_registry.csv",
+      "bytes": 105000,
+      "sha256": "046e290e473d870704b6480c24864b95ddd609060cda915ac76306e25ece19a7"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260808_4\\inputs\\source_snapshot\\chm_pre_v2_daily_by_reach_2006_2018.parquet",
+      "bytes": 7893279,
+      "sha256": "9d5d57b4f8dc6d1f62617aa9a4408f2fa288ccc68f4ce0f91333522cc2fcc3b6"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260808_4\\inputs\\source_snapshot\\q72_indata_2006_2018.parquet",
+      "bytes": 3378658,
+      "sha256": "1f971037cb266a5afbbec6def679d132572977af56b7b5664519f75b58b12918"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260808_4\\inputs\\source_snapshot\\topology_edges.csv",
+      "bytes": 12318,
+      "sha256": "3dda23377f59ed7e649003f851a0c64352ab777684929edca4ef63dedea29aee"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260808_4\\scripts\\daily_state.py",
+      "bytes": 18794,
+      "sha256": "8ef3ac5add943f5b412d08f7d9773e933f81fff5a733216cfde2561624b44e75"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260808_4\\scripts\\experiment_utils.py",
+      "bytes": 11452,
+      "sha256": "eae07ca2ed4642c6eb18c97ab7ae5bc62f863b8731350f4b7fea4777726697e7"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260808_4\\scripts\\reference_run_q72_baseline.py",
+      "bytes": 4950,
+      "sha256": "01f1a47b98bdd03fbb88e80acc9507a0041fb618ed115a6dd6c51c28de8f535a"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260808_4\\scripts\\run_daily_state_experiment.py",
+      "bytes": 34503,
+      "sha256": "2fdf8136af2abb602bdf5f99c2f898cb239fa8adfedae7ad87e4dd6129f8d611"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260808_4\\scripts\\runtime_guard.py",
+      "bytes": 1355,
+      "sha256": "bd6508e4c5b524634355c28e024f05fb127771712fde5caf831f6e675061d560"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260808_4\\scripts\\validate_run.py",
+      "bytes": 8676,
+      "sha256": "efa05e7b7ed3557eb4febe18cc135e52dac028dc0cf10cac8ce70545a27bbadb"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260808_4\\scripts\\components\\fit_monthly_bayes_seasonal_hysteresis.py",
+      "bytes": 62813,
+      "sha256": "51ce1041804518e89877d1760feb55dfbcb5854a6fbad31c6b14fcbd456d5c62"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260808_4\\config.json",
+      "bytes": 1449,
+      "sha256": "b1c3de16e916d6404c6b69fe2641ad7a877e9abfd241fd2c9c94021352df88ed"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260808_4\\experiment_contract.md",
+      "bytes": 2081,
+      "sha256": "6a950e83f6458182dc5165c6af38a373ef641bec2e110fe28ce2690a06417285"
+    }
+  ]
+}

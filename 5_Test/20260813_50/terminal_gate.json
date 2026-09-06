@@ -1,0 +1,47 @@
+{
+  "terminal": "TEMPORAL_EXTRAPOLATION_STABLE",
+  "evaluation_label": "HISTORICALLY_VIEWED_NON_PRISTINE_EVALUATION_PERIOD",
+  "fit_years": "2006-2018",
+  "evaluation_years": "2019-2022",
+  "pooled_2012_2018_oof": {
+    "n": 8822,
+    "stations": 111,
+    "raw_nse": 0.9393143608674797,
+    "log_nse": 0.9337832694613735,
+    "kge_2012": 0.9472210074487168,
+    "pbias_pct": 1.126017396434922,
+    "rmse_cfs": 11031.494053541684,
+    "log_rmse": 0.4879021891203752,
+    "correlation": 0.9718119890907625,
+    "variability_ratio": 1.04317715342634,
+    "mean_ratio": 1.011260173964349
+  },
+  "pooled_2019_2022": {
+    "n": 5090,
+    "stations": 110,
+    "raw_nse": 0.9279821456400867,
+    "log_nse": 0.9360434976639816,
+    "kge_2012": 0.9519173807035952,
+    "pbias_pct": 2.382661381078468,
+    "rmse_cfs": 12128.93625597078,
+    "log_rmse": 0.48865656788969497,
+    "correlation": 0.9634771930206949,
+    "variability_ratio": 0.9797437584170421,
+    "mean_ratio": 1.0238266138107845
+  },
+  "delta_raw_nse": -0.011332215227392917,
+  "delta_log_nse": 0.0022602282026081832,
+  "minimum_annual_raw_nse": 0.9105229328947182,
+  "minimum_annual_log_nse": 0.9305993983563269,
+  "common_station_count": 108,
+  "hard_conditions": {
+    "raw_nse_ge_0_90": true,
+    "log_nse_ge_0_90": true,
+    "raw_delta_ge_minus_0_03": true,
+    "log_delta_ge_minus_0_03": true,
+    "kge_ge_0_85": true,
+    "abs_pbias_le_10": true,
+    "all_annual_raw_nse_ge_0_80": true,
+    "all_annual_log_nse_ge_0_80": true
+  }
+}

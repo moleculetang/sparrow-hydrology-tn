@@ -1,0 +1,45 @@
+{
+  "scenario_id": "20260814_6",
+  "stage": "retrospective_structural_noninferiority_adjudication",
+  "evidence_label": "retrospective_secondary_structural_noninferiority_adjudication",
+  "evidence_scope": "retrospective_development_only_not_preregistered_confirmatory",
+  "parents": ["../20260814_1", "../20260814_2", "../20260814_5"],
+  "candidate_branches": ["main", "flash", "slow", "buffer", "wet"],
+  "conditional_grid_candidates": 0,
+  "development_period": ["2006-01", "2018-12"],
+  "locked_period_excluded_from_selection": ["2019-01", "2022-12"],
+  "runtime": "conda --no-plugins run -n sparrow python",
+  "thread_limits": {
+    "OMP_NUM_THREADS": 1,
+    "MKL_NUM_THREADS": 1,
+    "OPENBLAS_NUM_THREADS": 1
+  },
+  "random_seed": 20260814,
+  "bootstrap_replicates": 10000,
+  "selection": {
+    "prefer_main_if_fully_eligible": true,
+    "fallback": "provisional_unresolved",
+    "model_averaging": false,
+    "alternative_ranking": [
+      "max_station_low_tail_ci95_upper",
+      "tail_shape_rmse",
+      "event_volume_abs_log_error",
+      "abs_pbias_pct",
+      "branch_id"
+    ]
+  },
+  "fixed_conclusions": {
+    "operational_flow_model_id": "H0_hybrid",
+    "operational_model_status": "retained_best_predictive_model",
+    "groundwater_status": "non_identifying",
+    "groundwater_role": "unresolved_auxiliary_validation"
+  },
+  "prohibited_actions": [
+    "rerun_or_modify_20260814_1_to_5",
+    "parameter_calibration",
+    "conditional_25_grid",
+    "read_raw_groundwater_rasters",
+    "rerun_2019_2022_flow_prediction",
+    "use_locked_period_for_gate_or_ranking"
+  ]
+}

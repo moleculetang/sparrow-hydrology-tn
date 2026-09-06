@@ -1,0 +1,8 @@
+{
+  "model_time_step": "month",
+  "water_gate_threshold_mm": 1e-12,
+  "quick_n_rho_fixed_from_q72": 0.25,
+  "base_n_rho_fixed_from_q72": 0.85,
+  "free_scientific_parameter_count": 0,
+  "forbidden": ["soil_legacy_tau_month", "effective_tn_delivery_mu_month", "river_tau", "river_loss"]
+}

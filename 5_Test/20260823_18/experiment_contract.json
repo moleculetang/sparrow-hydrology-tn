@@ -1,0 +1,21 @@
+{
+  "stage": "20260823_18",
+  "status": "registered_before_reconciliation",
+  "selected_target_model_source": "20260823_17/reports/stage17_candidate_lock.json",
+  "hypothesis": "A spatially generated monthly Reach target can be reconciled into nonnegative local increments and exact river-network routing without destroying its development-period predictive signal.",
+  "objective": "min_l>=0 ||W(Ul-Q_target)||^2 + lambda ||D(l-l_Q72)||^2",
+  "lambda_grid": [0.01, 0.1, 1.0, 10.0],
+  "lambda_selection": "minimum 2006-2018 station-mean log-RMSE; no 2019-2022 outcome",
+  "W": "diag(1/sqrt(1+Q_target))",
+  "D": "diag(1/sqrt(1+local_Q72))",
+  "quick_slow_split": "local Q72 quick fraction; each component rerouted through the same frozen upstream matrix",
+  "required_invariants": [
+    "local reconciled flows are nonnegative",
+    "routed total equals U times local total",
+    "routed quick plus routed slow equals routed total",
+    "all 230 Reaches and 204 months are present",
+    "correction flux is explicit"
+  ],
+  "claim_boundary": "river-network closure only; no claim of full precipitation-ET-storage closure",
+  "authorized_successor": "20260823_19"
+}

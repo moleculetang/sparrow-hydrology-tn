@@ -1,0 +1,45 @@
+{
+  "program": "20260827 leakage-audited conserving DYN2P baseline",
+  "purpose": "Rebuild the hydrology baseline after an independent leakage and structural audit, while preserving the requirement that calibration acts inside conserving fast/slow fluxes.",
+  "predecessor": "20260826_30 PROGRAM_COMPLETE_DYN2P_ENGINEERING_INTERFACE_AUTHORIZED_WITH_POST_RETROSPECTIVE_CAVEAT",
+  "fixed_before_current_results": {
+    "structure": "DYN2P fast-response plus slow-response",
+    "engineering_shrinkage_alpha": 0.5,
+    "station_specific_history_correction": false,
+    "primary_temporal_scale": "daily process with monthly TN aggregation"
+  },
+  "stage_status": {
+    "20260827_1": "AUDIT_COMPLETE_REBUILD_REQUIRED",
+    "20260827_2": "PASS_DEVELOPMENT_ALGORITHM_INTEGRITY",
+    "20260827_3": "FAIL_COMPONENT_IDENTIFICATION_REPAIR_REQUIRED",
+    "20260827_4": "PASS_SIGNATURE_CONSTRAINED_COMPONENT_REPAIR",
+    "20260827_5": "BLIND_230_REACH_EXPORT_LOCKED",
+    "20260827_6": "BASELINE_ACCEPTED_TIME_AND_SPACE_TOTAL_FLOW_PROGRAM_CLOSED"
+  },
+  "evaluation_boundary": {
+    "2010_2015": "training",
+    "2016": "early stopping only",
+    "2017_2018": "development-only algorithm integrity check; not the formal time-extrapolation test",
+    "2019_2022": "formal external-in-time comparison for this rerun; observations physically inaccessible until the full model and 230-Reach predictions are hashed; historically known and therefore not claimed as never-seen independent validation",
+    "spatial": "the four supplemental stations are the formal external-space comparison; their observations, names and Reach mapping are physically inaccessible until the all-Reach prediction lock is written",
+    "supplemental_stations": [
+      "珠坑",
+      "昭平",
+      "瓦村（二）",
+      "盘江桥（三）"
+    ]
+  },
+  "hard_stop": "No automatic 20260827_7+ extension",
+  "test_observation_firewall": {
+    "training_process_forbidden_paths": [
+      "E:\\SPARROW\\5_Test\\20260825_2\\outputs\\daily_discharge_locked_retrospective_2019_2022.parquet",
+      "E:\\SPARROW\\5_Test\\20260823_14\\outputs\\supplemental_zero_history_station_month_observations.parquet",
+      "E:\\SPARROW\\5_Test\\20260823_14\\outputs\\supplemental_zero_history_station_coverage.parquet"
+    ],
+    "unlock_condition": "model lock and 230-Reach prediction hashes exist and pass no-test-read audit"
+  },
+  "authorized_successor": null,
+  "final_status": "PROGRAM_CLOSED_NO_20260827_7_PLUS_AUTHORIZED",
+  "final_model": "20260827_5 clean full-development DYN2P alpha0.5 plus conserving SIG2P component operator",
+  "final_evaluation": "20260827_6 post-lock 2019-2022 temporal and four-station spatial evaluation"
+}

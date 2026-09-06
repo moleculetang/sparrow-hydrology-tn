@@ -1,0 +1,24 @@
+{
+  "stage": "20260823_29",
+  "status": "registered_before_execution",
+  "parent": "20260823_28",
+  "purpose": "Build and verify a float64 differentiable implementation of the locked three-store hydrologic state generator.",
+  "parameter_order": ["prod_capacity", "runoff_gamma", "quick_rho", "base_release", "base_rho"],
+  "parameter_bounds": {
+    "prod_capacity": [50.0, 1000.0],
+    "runoff_gamma": [0.5, 5.0],
+    "quick_rho": [0.01, 0.9],
+    "base_release": [0.005, 0.5],
+    "base_rho": ["quick_rho + 0.05", 0.999]
+  },
+  "precision": "torch.float64",
+  "optimizer": "Adam followed by L-BFGS with deterministic starts",
+  "hard_gates": {
+    "parent_local_or_routed_flow_max_abs_m3_s": 1e-08,
+    "parent_state_max_abs_mm": 1e-10,
+    "synthetic_max_parameter_relative_error": 0.05,
+    "synthetic_log_flow_rmse": 0.001,
+    "synthetic_delayed_fraction_rmse": 0.01
+  },
+  "scientific_boundary": "Synthetic recovery verifies implementation and conditional recoverability under the registered information set; it is not evidence that real-basin parameters are uniquely identified."
+}

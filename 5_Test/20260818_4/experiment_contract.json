@@ -1,0 +1,10 @@
+{
+  "scenario_id": "20260818_4",
+  "purpose": "conditional source-water-operator by WWTP interaction",
+  "trigger": "new operator supported AND PS1 at least supporting",
+  "evaluation_years_if_triggered": [2018, 2019],
+  "interaction_definition": "I = delta_joint - delta_operator - delta_WWTP",
+  "interaction_sign": {"zero": "additive", "positive": "redundant", "negative": "synergistic"},
+  "bootstrap": "paired same station/tree blocks and replicate indices",
+  "selection_uses_2022": false
+}

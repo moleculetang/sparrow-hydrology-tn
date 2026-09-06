@@ -1,0 +1,12 @@
+{
+  "frozen_before_locked_prediction_access": true,
+  "threshold_period": [
+    "2006-01",
+    "2018-12"
+  ],
+  "stations": 106,
+  "threshold_sha256": "fbed81173c9f0f49e3dc1e60b36529485d62ddcd5bfb89a6606a41102fe0d341",
+  "lowflow_definition": "locked_actual_cfs <= frozen_station_q20_cfs",
+  "tail_definition": "frozen_station_Q75_local_peak_then_2_to_6_consecutive_monotone_months_below_frozen_upstream_input_Q75_excluding_edges_and_right_censor",
+  "q20_q75_recomputed_after_access": false
+}

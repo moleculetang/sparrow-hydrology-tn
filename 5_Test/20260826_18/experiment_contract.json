@@ -1,0 +1,25 @@
+{
+  "stage": "20260826_18",
+  "status": "registered_before_GRACE_content_read",
+  "purpose": "Independent hydrologic-state product QA and descriptive parent-state compatibility audit.",
+  "authorized_products": {
+    "PML_V2_2a": "monthly AET soft-validation product",
+    "CSR_GRACE_RL06_Mascon_v02": "basin-scale terrestrial-water-storage anomaly soft-validation product",
+    "ESA_CCI_v09_1": "availability and access audit only unless a complete reproducible local subset is acquired",
+    "SMAP": "availability and access audit only unless a complete reproducible local subset is acquired"
+  },
+  "development_state_period": "2010-2018; 2006-2009 used only for spin-up and anomaly reference",
+  "retrospective_state_period_2019_2022_read": false,
+  "discharge_used_for_state_QA": false,
+  "TN_read": false,
+  "selection_role": "none; no candidate fitting, early stopping, selection or promotion",
+  "state_comparison_role": "descriptive soft validation only",
+  "forbidden": [
+    "reopening Stage 19 after the registered Stage 16 temporal high-flow failure",
+    "treating PML or GRACE as direct observations of HBV response components",
+    "claiming real fast water, slow water, groundwater, old water or water age",
+    "filling absent ESA CCI or SMAP products with proxy or synthetic values",
+    "reading TN or 2019-2022 discharge"
+  ],
+  "successor_rule": "Stage 19 remains closed because Stage 16 failed; Stage 18 can only improve data readiness and evidence accounting."
+}

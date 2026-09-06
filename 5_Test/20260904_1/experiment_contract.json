@@ -1,0 +1,46 @@
+{
+  "stage": "20260904_1",
+  "status": "REGISTERED_AND_INPUTS_LOCKED",
+  "architecture": {
+    "population": "log1p(process concentration) + fold-local standardized transferable X_reach gamma",
+    "conditional": "population + centered strongly-shrunk station residual",
+    "single_fit": true,
+    "eligible_capacities": {
+      "H7": "7 local hydro-soil attributes",
+      "H14": "H7 plus 7 upstream means",
+      "H22": "H14 plus 7 upstream standard deviations and contributing area"
+    },
+    "station_only_eligible": false
+  },
+  "objective": {
+    "likelihood": "Student-t df=4 on ln(1+TN)",
+    "population_conditional_weights": [
+      0.9,
+      0.1
+    ],
+    "station_tree_macro_weights": [
+      0.9,
+      0.1
+    ],
+    "station_ridge": 12.0,
+    "gamma_prior_sd": 0.25,
+    "deterministic_starts": 5,
+    "optimizer": "AdamW then strong-Wolfe L-BFGS",
+    "projected_kkt_tolerance": 1e-05
+  },
+  "resource_contract": {
+    "python": "D:\\ProgramData\\anaconda3\\envs\\sparrow\\python.exe",
+      "logical_cpu_limit": 4,
+      "default_workers": 1,
+      "threads_per_worker": 4,
+      "combined_rss_limit_gib": 28.0,
+      "per_worker_rss_limit_gib": 15.0,
+      "measured_lbfgs_peak_rss_gib": 14.01,
+      "reason": "20260904 Stage4 live audit supersedes the one-loss preflight; concurrent L-BFGS workers retain large autograd arenas",
+      "atomic_checkpointing": true
+  },
+  "runtime": {
+    "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26100-SP0"
+  }
+}

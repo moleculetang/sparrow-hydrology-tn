@@ -1,0 +1,34 @@
+{
+  "stage": "20260826_27 spatial DYN2P substage",
+  "registered_before_DYN2P_target_results_read": true,
+  "hypothesis": "The nested two-response conserving correction transfers to an entirely unseen terminal tree without any target-gauge discharge history.",
+  "heldout_terminal_trees": [
+    1,
+    20,
+    22,
+    26,
+    56,
+    166,
+    212,
+    217
+  ],
+  "formal_candidates": [
+    "DYN2P"
+  ],
+  "training": "2010-2015 non-target-tree complete gauges only",
+  "early_stopping": "2016 non-target-tree gauges only",
+  "evaluation": "all available 2010-2018 target-tree observations; never used for fitting, stopping, scaling or initialization",
+  "fold_parent": "independently fit from the fixed physical prior under the same composite objective; no full-development parameter lock",
+  "candidate_seed": 260826,
+  "gates": {
+    "overall_log_noninferior": "paired tree bootstrap CI95 upper < 0.01",
+    "high_flow_noninferior": "paired tree bootstrap CI95 upper < 0.01",
+    "low_flow_noninferior": "paired tree bootstrap CI95 upper < 0.01",
+    "median_NSE_drop_max": 0.02,
+    "median_abs_PBIAS_worsening_max_points": 2.0,
+    "tree_direction": "candidate improves high-flow RMSE in at least 5 of 8 trees"
+  },
+  "selection": "DYN2P is formally selected only if it passes every zero-target-history spatial gate.",
+  "TN_read": false,
+  "2019_2022_read": false
+}

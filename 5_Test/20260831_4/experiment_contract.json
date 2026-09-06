@@ -1,0 +1,35 @@
+{
+  "stage": "20260831_4",
+  "status": "REGISTERED_BEFORE_RESULTS",
+  "candidate": "O0_LOG_T4 + conservative R2 reservoir TN carrier + MINERAL_LIFETIME",
+  "reference": "20260824_47 nested MINERAL_LIFETIME without R2 reservoir carrier",
+  "spatial_layer": "population_transferable only; held-out station effects forbidden",
+  "screen": {
+    "folds": "all T3 LORO and LOTO folds from the locked 20260824_47 registry",
+    "train_years": "2021-2023",
+    "evaluation_year": 2024,
+    "purpose": "dense-period spatial screen before launching T1/T2"
+  },
+  "optimizer": {
+    "warm_start": "same-fold leak-free 20260824_47 MINERAL_LIFETIME nested process parameters",
+    "site_start": "zero for every retained station",
+    "first_block": {"adam_steps": 1, "adam_lr": 0.015, "lbfgs_max_iter": 2},
+    "v_f_profile_offsets": [-0.05, 0.0, 0.05],
+    "profile_refit_if_changed": {"adam_steps": 1, "adam_lr": 0.01, "lbfgs_max_iter": 1},
+    "heldout_TN_used": false
+  },
+  "screen_gate": {
+    "primary_exclusions": ["reach_id=17", "terminal_tree_id=163"],
+    "LORO_noninferiority": "paired block bootstrap delta macro log-RMSE CI95 upper < 0.005",
+    "LOTO_noninferiority": "paired block bootstrap delta macro log-RMSE CI95 upper < 0.005",
+    "absolute_skill": "point Skill_log > 0 for both LORO and LOTO; CI is supporting because only seven formal trees exist",
+    "pass": "all four conditions true"
+  },
+  "full_nested": "run T1 and T2 only if the T3 screen passes; combine all T1-T3 before final spatial lock",
+  "special_audits": {
+    "reach_17": "report separately and exclude from promotion",
+    "tree_163": "report separately when present and exclude from promotion"
+  },
+  "runtime": {"workers": 4, "threads_per_worker": 2, "maximum_total_rss_gib": 28},
+  "authorized_successor": "20260831_4 full nested only after screen pass"
+}

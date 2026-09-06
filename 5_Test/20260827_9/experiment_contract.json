@@ -1,0 +1,27 @@
+{
+  "stage": "20260827_9",
+  "required_predecessor": "20260827_8 CANDIDATE_LOCKED_WITHOUT_DEVELOPMENT_READ",
+  "selected_candidate": "seed and lambda fixed by 2016 stopping score; no 2017-2018 reselection",
+  "development_period": "2017-2018",
+  "reference": "same-seed lambda_S=0 model fitted with the identical 91-station objective",
+  "temporal_gates": {
+    "pooled_log_RMSE_increase_max": 0.01,
+    "monthly_pooled_NSE_drop_max": 0.02,
+    "monthly_station_median_NSE_drop_max": 0.03,
+    "monthly_station_median_abs_PBIAS_worsening_max_pct_point": 2.0
+  },
+  "component_gates": {
+    "BFI_spearman_min": 0.30,
+    "BFI_spearman_drop_from_SIG2P_O_max": 0.05,
+    "SIG2P_O_BFI_spearman": 0.3623688811188811,
+    "BFI_RMSE_max": 0.20,
+    "BFI_RMSE_increase_from_SIG2P_O_max": 0.02,
+    "SIG2P_O_BFI_RMSE": 0.15605906997654898,
+    "high_flow_fast_direction_fraction_min": 0.80,
+    "slow_memory_direction_fraction_min": 0.80,
+    "regionalized_score_boundary_fraction_max": 0.10
+  },
+  "spatial_gate": "if temporal and component gates pass, run eight complete terminal-tree deletion refits for lambda=0 and the locked candidate",
+  "formal_test_firewall": ["2019-2022 observations", "four spatial station observations", "TN"],
+  "authorized_successor": "20260827_10 only after temporal/component and spatial deletion gates pass"
+}

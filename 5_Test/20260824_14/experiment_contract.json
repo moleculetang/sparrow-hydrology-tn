@@ -1,0 +1,28 @@
+{
+  "experiment_id": "20260824_14",
+  "registered_on": "2026-08-28",
+  "hypothesis": "A single conservative agricultural organic-N legacy pool improves TN transfer beyond the locked stage-13 carrier without adding a second hydrologic lag.",
+  "parent": "20260824_13 selected M0 carrier",
+  "legacy_eligible_sources": ["FERT", "MAN", "BNF"],
+  "legacy_bypass_sources": ["DEP"],
+  "fixed_k_L_year_inverse_sensitivities": [0.05, 0.16, 0.30, 0.75],
+  "production_k_L_if_supported": 0.16,
+  "fitted_parameters": {
+    "rho_L": [0.0, 0.95],
+    "pi_E": [0.0001, 0.9999],
+    "v_f_m_per_day": [0.0, 0.5]
+  },
+  "nesting": "rho_L=0 must exactly recover M0 for every fixed k_L",
+  "monthly_order": "agricultural input split -> SON analytic release -> DEP bypass -> proportional crop demand -> locked water carrier -> H1 routing",
+  "selection_boundary": "k_L is never selected from TN; 0.16 yr-1 is the pre-registered production value and other values are structural sensitivity members",
+  "forbidden": [
+    "second SON pool",
+    "free k_L fitting",
+    "initial SON fitted from TN",
+    "fixed T1, gamma TTD, SAS or second groundwater store",
+    "station-specific parameters",
+    "temperature, reservoir or WWTP terms"
+  ],
+  "authorized_successor": "20260824_15",
+  "hard_stop_after": "20260824_17"
+}

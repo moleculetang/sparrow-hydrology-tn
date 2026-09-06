@@ -1,0 +1,11 @@
+{
+  "scenario_id": "20260818_3",
+  "purpose": "municipal_wwtp_mass_only_direct_source_sensitivity",
+  "scenarios": ["PS0", "PS1", "PS2", "PS3", "PS09"],
+  "formal_evaluation_years": [2018, 2019],
+  "forcing_years": [2006, 2019],
+  "return_flow_water": false,
+  "WWTP_enters_soil_or_TTD": false,
+  "WWTP_scaled_by_eta": false,
+  "locked_2022_used": false
+}

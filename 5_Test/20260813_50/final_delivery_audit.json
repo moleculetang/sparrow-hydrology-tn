@@ -1,0 +1,54 @@
+{
+  "terminal": "INDEPENDENT_P1_BASELINE_AND_2019_2022_VALIDATION_COMPLETE",
+  "checks": {
+    "independent_reproduction_pass": true,
+    "prediction_difference_exact_zero": true,
+    "temporal_extrapolation_complete": true,
+    "all_extrapolation_gates_true": true,
+    "input_code_manifest_exists": true,
+    "figure_formats_complete": true,
+    "svg_text_editable": true,
+    "pdf_single_page": true,
+    "tiff_600_dpi": true
+  },
+  "figures": [
+    {
+      "stem": "figure_1_temporal_extrapolation",
+      "all_formats_exist_nonempty": true,
+      "svg_contains_editable_text": true,
+      "pdf_pages": 1,
+      "tiff_pixels": [
+        4389,
+        3369
+      ],
+      "tiff_dpi": [
+        600.0,
+        600.0
+      ],
+      "png_pixels": [
+        2194,
+        1684
+      ]
+    },
+    {
+      "stem": "figure_2_large_station_hydrographs",
+      "all_formats_exist_nonempty": true,
+      "svg_contains_editable_text": true,
+      "pdf_pages": 1,
+      "tiff_pixels": [
+        4389,
+        4989
+      ],
+      "tiff_dpi": [
+        600.0,
+        600.0
+      ],
+      "png_pixels": [
+        2194,
+        2494
+      ]
+    }
+  ],
+  "scientific_terminal": "TEMPORAL_EXTRAPOLATION_STABLE",
+  "evaluation_label": "HISTORICALLY_VIEWED_NON_PRISTINE_EVALUATION_PERIOD"
+}

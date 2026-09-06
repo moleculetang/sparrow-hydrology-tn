@@ -1,0 +1,10 @@
+{
+  "replicates_checked": [
+    1,
+    99
+  ],
+  "reach_month_checks": 71760,
+  "monthly_sum_wet_days_and_multiset_preserved": true,
+  "same_year_month_permutation_applied_to_all_reaches": true,
+  "passed": true
+}

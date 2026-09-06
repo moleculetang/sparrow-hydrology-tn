@@ -1,0 +1,25 @@
+{
+  "stage": "20260823_3",
+  "registered_before_outer_run": true,
+  "reference": "20260823_2/H0_CORRECTED",
+  "candidates": {
+    "main": {"prod_capacity": 240.0, "runoff_gamma": 2.5, "quick_rho": 0.25, "base_release": 0.10, "base_rho": 0.85, "highflow_scale": 1.00},
+    "flash": {"prod_capacity": 132.0, "runoff_gamma": 1.7, "quick_rho": 0.10, "base_release": 0.06, "base_rho": 0.76, "highflow_scale": 1.20},
+    "slow": {"prod_capacity": 432.0, "runoff_gamma": 3.1, "quick_rho": 0.48, "base_release": 0.07, "base_rho": 0.94, "highflow_scale": 0.85},
+    "buffer": {"prod_capacity": 348.0, "runoff_gamma": 3.3, "quick_rho": 0.66, "base_release": 0.12, "base_rho": 0.96, "highflow_scale": 0.65},
+    "wet": {"prod_capacity": 288.0, "runoff_gamma": 2.2, "quick_rho": 0.34, "base_release": 0.08, "base_rho": 0.90, "highflow_scale": 1.10}
+  },
+  "shared": {
+    "network_input_scale": 1.0,
+    "correct_kge2012": true,
+    "outer_fold_prediction_exposure": "evaluation_rows_only",
+    "single_production_feature_space": true,
+    "hysteresis_grid": [0.3, 0.8, 1.5, 3.0]
+  },
+  "selection": {
+    "primary": "paired_station_bootstrap_delta_log_RMSE_CI95_upper_lt_0",
+    "guardrails": ["raw_NSE_nonworse", "KGE2012_nonworse", "PBIAS_not_materially_worse", "low_flow_noninferior", "high_flow_noninferior", "mass_closure"]
+  },
+  "forbidden": ["candidate_addition_after_outer_results", "station_deletion", "network_scale_change", "unregistered_grid_expansion"]
+}
+

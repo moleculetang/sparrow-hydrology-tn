@@ -1,0 +1,9 @@
+{
+  "terminal": "ALL_MONITORED_OBSERVATION_LINEAGE_CONFIRMED_NO_CHANGE",
+  "parent": "E:\\SPARROW\\5_Test\\20260813_30",
+  "atom": "MONITORED_STATION_OBSERVATION_LINEAGE",
+  "passed": true,
+  "model_run_performed": false,
+  "parent_oof_sha256": "4a6b66c9c182a4bf9aff74554911af012712a0da6dffcfc83a128d9410188c5d",
+  "next_atom": "PRECIPITATION_FORCING_INDEPENDENT_CROSS_VALIDATION"
+}

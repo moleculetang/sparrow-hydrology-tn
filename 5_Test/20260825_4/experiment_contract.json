@@ -1,0 +1,55 @@
+{
+  "stage": "20260825_4",
+  "status": "registered_before_discharge_fit",
+  "title": "Global Raven-HBV control and conserving channel-routing ablation",
+  "authorized_by": "20260825_3/reports/stage3_decision.json",
+  "development_discharge": "20260825_2/outputs/daily_discharge_development_2010_2018.parquet only",
+  "locked_discharge_forbidden": "2019-2022 discharge file must not be opened",
+  "spinup_forcing": "2006-2009 climate forcing only",
+  "candidates": {
+    "GLOBAL_HBV_R0": "one global 8-parameter Raven-equation-conformant land model plus instantaneous conserving topology accumulation",
+    "GLOBAL_HBV_R1": "same fitted land parameters without refit, plus adaptive conserving hydraulic channel storage",
+    "Q72_MONTHLY_REFERENCE": "frozen operational monthly reference, diagnostic only"
+  },
+  "fit_contract": {
+    "selected_layer": "GLOBAL_HBV_R0 total discharge only",
+    "objective": "tree-equal then station-equal mean squared error in ln(1+Q), plus station volume-bias term and frozen Gaussian raw-parameter prior",
+    "gaussian_prior_weight": 0.002,
+    "station_volume_bias_weight": 0.1,
+    "starts": 3,
+    "raw_bounds": [-5.5, 5.5],
+    "optimizer": "scipy L-BFGS-B",
+    "signatures_in_objective": false,
+    "station_identity_parameters": false
+  },
+  "gauge_operator": {
+    "R0": "all upstream local volume plus registered fraction of the target-Reach local volume",
+    "R1": "linear interpolation between target-Reach upstream boundary inflow and downstream outflow at the registered along-Reach fraction",
+    "site_history_correction": false
+  },
+  "R1_hydraulics": {
+    "discharge": "candidate own daily instantaneous Q0+Q1+Q2 accumulation",
+    "geometry": "Andreadis width/depth central values and Reach length",
+    "travel_time": "length*width*depth/max(own_Q,1e-6)/86400 days",
+    "wqd_reference_discharge_allowed": false,
+    "land_parameters_refit_for_R1": false
+  },
+  "route_selection": "R1 advances only if paired station and terminal-tree bootstrap CI95 upper bounds for delta station log-RMSE are both <0 and monthly absolute PBIAS does not worsen by >1 percentage point; otherwise R0 advances",
+  "minimum_technical_gate": {
+    "optimization_finite": true,
+    "land_mass_max_abs_error_mm": 1e-10,
+    "routing_mass_relative_error": 1e-12,
+    "median_station_daily_NSE_min": -0.5,
+    "development_only": true
+  },
+  "forbidden": [
+    "2019-2022 discharge",
+    "Gauge/P2 or station-specific correction",
+    "daily hydrograph separation as a likelihood",
+    "reservoir equation",
+    "TN observations",
+    "wqd_reference_discharge_m3_s",
+    "calling Q2 observed groundwater, old water or water age"
+  ],
+  "authorized_successor": "20260825_5"
+}

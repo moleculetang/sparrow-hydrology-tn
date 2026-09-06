@@ -1,0 +1,13 @@
+{
+  "scenario_id": "20260817_6",
+  "purpose": "independent_requirement_by_requirement_audit",
+  "core_import_forbidden": true,
+  "audited_stages": [
+    "20260817_1",
+    "20260817_2",
+    "20260817_3",
+    "20260817_4",
+    "20260817_5"
+  ],
+  "failure_policy": "any failed hard check prevents final lock"
+}

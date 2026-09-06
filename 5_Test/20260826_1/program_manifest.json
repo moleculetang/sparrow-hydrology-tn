@@ -1,0 +1,22 @@
+{
+  "program": "20260826 multi-structure conserving hydrologic response ensemble",
+  "created_utc": "2026-08-25T21:52:33.613712+00:00",
+  "status": "running",
+  "authoritative_parent": "20260825_7 GLOBAL_HBV_R0",
+  "parent_total_flow_status": "GLOBAL_HBV_R0_TOTAL_FLOW_PROMOTED_FOR_TN_HYDROLOGY",
+  "parent_path_status": "TOTAL_FLOW_SUPPORTED_FAST_SLOW_NOT_IDENTIFIED",
+  "claim_level": "STANDARD_MODEL_RESPONSE_COMPONENTS_NOT_INDEPENDENTLY_OBSERVED_PATHS",
+  "stage_status": {
+    "20260826_1": "PASS_PROGRAM_REGISTERED",
+    "20260826_2": "authorized_not_started",
+    "20260826_3_to_5": "registered_not_started",
+    "20260826_6": "conditional_spatial_mapping",
+    "20260826_7": "supporting_ML_ceiling",
+    "20260826_8": "conditional_full_evaluation",
+    "20260826_9": "conditional_ensemble",
+    "20260826_10": "conditional_final_bridge",
+    "20260826_11_to_12": "repair_slots_only"
+  },
+  "hard_stop": "No automatic 20260826_13+ extension",
+  "authorized_successor": "20260826_2"
+}

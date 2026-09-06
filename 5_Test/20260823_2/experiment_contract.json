@@ -1,0 +1,34 @@
+{
+  "stage": "20260823_2",
+  "parent": "E:/SPARROW/5_Test/20260813_54",
+  "candidate_registration_time": "before_corrected_outer_run",
+  "models": {
+    "H0_EXACT_REPRO": "parent fold parameters, controlled execution, reproduction only",
+    "H0_CORRECTED": "same H0 structure with correct KGE2012 inner selection"
+  },
+  "forcing": {
+    "network_input_scale": 1.0,
+    "highflow_scale": 1.0,
+    "state_calendar": "full_forcing",
+    "forcing_semantics": "prescribed_aet_balance",
+    "mass_accounting": "explicit_upstream_volume",
+    "et_state_operator": "baseline_clip"
+  },
+  "frozen_process_parameters": {
+    "rho": 0.7,
+    "wm": 480.0,
+    "sas_rho": 0.93,
+    "young_k": 1.5,
+    "storage_scale": 720.0,
+    "prod_capacity": 240.0,
+    "runoff_gamma": 2.5,
+    "quick_rho": 0.25,
+    "base_rho": 0.85,
+    "base_release": 0.1
+  },
+  "non_parameter_note": "et_gamma=0.75 is retained as a compatibility signature value but is registered as inactive/dead in the current state equations.",
+  "outer_fold_isolation": true,
+  "retrospective_2019_2022_access": false,
+  "success": "exact reproduction passes and corrected OOF has complete unique registered keys"
+}
+

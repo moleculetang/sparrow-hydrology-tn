@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "stage": "20260824_45",
+  "status": "REGISTERED_BEFORE_RESULTS",
+  "authorized_by": "E:/SPARROW/5_Test/20260824_44/objective_calibration_revision/locks/objective_calibration_lock.json",
+  "required_parent_status": "PASS_OBJECTIVE_CALIBRATION_READY_FOR_STAGE45",
+  "selected_objective": "U3_P90_S90",
+  "hypothesis": "canonical L0-v2 is a mass-exact hydrology-driven TN parent and admits exact source-tag bookkeeping without changing its aggregate forward",
+  "successor": "20260824_46 only after engineering, hydrologic-interface and source-ledger gates pass",
+  "production_boundary": "Stage32 remains the production parameter product; Stage45 is the scientific parent for registered process screening",
+  "forbidden": [
+    "regionalization",
+    "dynamic delivery",
+    "source-specific fitted coefficient",
+    "free mineral lifetime",
+    "agricultural Active/Fresh Legacy selection",
+    "temperature",
+    "hydrology fitting",
+    "post-hoc station correction"
+  ]
+}

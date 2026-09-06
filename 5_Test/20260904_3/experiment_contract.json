@@ -1,0 +1,8 @@
+{
+  "stage": "20260904_3",
+  "status": "PASS_UNIFIED_TN_CORE_READY_FOR_FITTING",
+  "required_parent": "20260831_2 conservative R2 TN carrier",
+  "change": "port to Stage35/38 complete 1961 histories and optional 2025 sensitivity",
+  "temperature": false,
+  "reservoir_reaction": false
+}

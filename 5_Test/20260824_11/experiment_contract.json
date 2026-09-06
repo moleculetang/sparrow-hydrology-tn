@@ -1,0 +1,42 @@
+{
+  "experiment_id": "20260824_11",
+  "registered_on": "2026-08-27",
+  "purpose": "refit the frozen monthly SPARROW+legacy+H1+C-Q architecture with the accepted DYN2P+SIG2P water interface and evaluate old and recent temporal transfer",
+  "required_parent_status": "20260824_10 PASS_INTERFACE_AND_DATA_READY_FOR_TN_REFIT",
+  "fixed_architecture": "DYN2P+SIG2P water -> F00 -> S0/S1-12 x mu={12,36,60,96,144,240} -> fixed effective TN lag -> H1_GLOBAL -> Gaussian C-Q hinge -> P1/P2 MAP readout",
+  "formal_members": 12,
+  "parameter_training": {
+    "method": "penalized Gaussian MAP equivalent to the frozen ridge/prior objective",
+    "per_fold_refit": ["H1 vf", "eta_fast", "eta_slow", "beta_low", "beta_high", "P2 station intercepts"],
+    "shared": ["bounds", "ridge", "solver", "initialization", "tolerance"],
+    "forbidden_borrowing": "no parameter may be reused across hydrology versions, folds, layers or ensemble members"
+  },
+  "evaluation": {
+    "historical_OOF": [
+      "2016-2017 -> 2018",
+      "2016-2018 -> 2019",
+      "2016-2019 -> 2020",
+      "2016-2020 -> 2021"
+    ],
+    "recent_rolling_origin": [
+      "2021 -> 2022",
+      "2021-2022 -> 2023",
+      "2021-2023 -> 2024"
+    ],
+    "final_MAP": "2021-2024",
+    "historical_backcast": "2016-2020 using final 2021-2024 MAP; descriptive, not validation"
+  },
+  "observation_domain": "strict matched primary-river station-month TN; open-water tree 163 diagnostic only",
+  "layers": {
+    "P1": "globally scaled fast/slow pathway layer without station identity",
+    "P2": "monitored-station prediction layer with ridge station intercept"
+  },
+  "reference": "20260824_4 old-Q72 Gaussian C-Q hinge on the exact 2018-2021 OOF keys",
+  "decision_boundary": {
+    "water_interface": "adopted on hydrologic and conservation evidence, independent of TN score",
+    "TN_prediction_upgrade": "must be reported separately for P1 and P2; P2 cannot establish spatial transfer",
+    "spatial_claim": "not tested here and remains unsupported",
+    "recent_folds": "correlated rolling-origin tests, not three independent experiments"
+  },
+  "closed": ["temperature", "WWTP", "new source calendar", "additional legacy structure", "new travel-time operator", "Bayesian spatial random effects"]
+}

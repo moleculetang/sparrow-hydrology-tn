@@ -1,0 +1,66 @@
+{
+  "stage": "20260824_42",
+  "status": "REGISTERED_BEFORE_ACTIVELEGACY_RESULTS",
+  "purpose": "Test whether one explicit Active/Fresh agricultural N pool improves transferable TN prediction after the L0-v2 hydrologic and finite-mineral repair.",
+  "scientific_parent": "20260824_41 L0_v2_R0",
+  "mechanism_isolation_control": "ActiveLegacy_v2__KFAST_CONTROL using the identical manure/residue ledger and q_active=1 per month",
+  "primary_candidate": "ActiveLegacy_v2__IMM0",
+  "forcing": "E:/SPARROW/0_reach_topology/data/processed/agricultural_n_legacy_v2/activelegacy_v2_monthly_forcing_1961_2024.parquet",
+  "forcing_id": "ACTIVE_V2_MAN050_DRYAD_NONOFFFIELD_1961_2023_CF2024",
+  "external_forcing_completion_amendment": {
+    "date": "2026-08-29",
+    "reason": "Complete the already-registered primary Dryad residue-removal constraint after official files became locally available; no TN result was used to choose the source or annual values.",
+    "mapping": "residue_return_fraction interface = 1 - China-mainland annual off-field residue-removal percentage; 2023 carried to 2024",
+    "bounded_interpretation": "This is an explicit upper-bound non-off-field mapping, not observed soil return, because Dryad excludes in-field burning and does not separate grazing from decomposition.",
+    "superseded_temporary_forcing": "ACTIVE_V2_MAN050_SHAO_SOUTH_CHINA_RES076"
+  },
+  "states_1961": {"active_fresh_kg_n": 0.0, "mineral_kg_n": 0.0, "lower_dissolved_kg_n": 0.0},
+  "within_month_order": [
+    "mineralize old Active/Fresh",
+    "add mineral fertilizer, BNF, deposition, mineral manure and mineralized N",
+    "actual crop uptake and product/returned/removed-residue accounting",
+    "IMM0: no fitted immobilization",
+    "candidate-specific frozen daily fast/percolation/slow TN transfer and fixed mineral other-loss",
+    "add organic manure and actual returned residue as one end-of-month new Active/Fresh batch"
+  ],
+  "active_turnover": {
+    "parameter": "k_active_year_minus_1",
+    "bounds": [0.02, 0.20],
+    "prior": "log(k_active) ~ Normal(log(0.13), 0.45^2)",
+    "monthly_probability": "1-exp(-k_active/12)",
+    "river_tn_fitted_parameters": 1
+  },
+  "external_constraints": {
+    "mineralizable_soil_n": "Zenodo 10.5281/zenodo.19998062; basin Active stock and at least 95% of Reaches must remain below the study-balanced p95 mineralizable fraction of total soil N (20.282799%)",
+    "crop_recovery": "You et al. 2023 source data are an envelope diagnostic only and are not reused as independent validation",
+    "IMM_FIXED": "not executable after Dryad endpoint preprocessing: aggregate gaseous, runoff/leaching and soil-isotope observations do not uniquely map mineral N to a monthly Active/Fresh immobilization operator",
+    "IMM_FIXED_status": "BIOGEOCHEMICAL_PRIOR_MAPPING_UNRESOLVED",
+    "protected_sensitivity": "closed in this run because no externally locked h/kP endpoint mapping is available"
+  },
+  "mechanism_gate": {
+    "primary_comparison": "ActiveLegacy_v2__IMM0 versus ActiveLegacy_v2__KFAST_CONTROL on population_transferable temporal OOF",
+    "improvement": "paired station bootstrap CI95 upper < 0",
+    "noninferiority": "paired station bootstrap CI95 upper < 0.005",
+    "conditional_only_cannot_promote": true,
+    "active_rate_boundary_confounded": "k_active at either bound in at least 2 of 3 temporal folds",
+    "spatial_requirement": "nested LORO, LOTO and natural expansion in 20260824_43 before mainline promotion"
+  },
+  "shared_with_parent": [
+    "frozen canonical daily hydrology and station-position Q",
+    "fixed one-year mineral other-loss lifetime",
+    "river hydraulic exposure and routing",
+    "global R0 contact structure",
+    "unified Student-t station/tree balanced objective",
+    "direct weighted-centered station intercept ridge=12",
+    "optimizer and temporal folds"
+  ],
+  "forbidden": [
+    "fit immobilization from river TN",
+    "free Protected pool",
+    "temperature",
+    "extra empirical TN lag",
+    "hydrology refit",
+    "post-hoc P2",
+    "use R1 regionalization before nested spatial validation"
+  ]
+}

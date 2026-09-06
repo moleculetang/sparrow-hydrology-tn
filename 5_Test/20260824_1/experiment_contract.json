@@ -1,0 +1,63 @@
+{
+  "experiment_id": "20260824_1",
+  "hypothesis_id": "PARENT_REPAIR_AND_UNBIASED_READJUDICATION",
+  "registered_before_new_candidate_tn_results": true,
+  "parent_reference": "E:/SPARROW/5_Test/20260820_19/final_lock.json",
+  "allowed_changes": [
+    "repair numerical assertions, dependency-aware caching and mass-balance evidence",
+    "replace duplicated Q72 constants with locked-interface reads and assertions",
+    "correct H1 semantics to areal/benthic hydraulic exposure",
+    "rerun existing H0 versus H1 with outer-space inner-time nesting",
+    "restore station-blind absolute spatial skill and small-tree inference",
+    "remove stale or objective-inconsistent MCMC from authoritative evidence",
+    "share one checked development/retrospective hydraulic kernel"
+  ],
+  "forbidden_changes": [
+    "new hydraulic architecture beyond H0 and H1",
+    "temperature",
+    "new Legacy source structure",
+    "new mu",
+    "WWTP activation",
+    "2022 TN use for selection",
+    "modification of any 20260820 parent file"
+  ],
+  "formal_models": "S0/S1-12 x mu={12,36,60,96,144,240}",
+  "time_boundary": {
+    "development": [2016, 2021],
+    "oof_evaluation_years": [2018, 2019, 2020, 2021],
+    "retrospective_year": 2022
+  },
+  "formal_h1": {
+    "name": "areal_benthic_hydraulic_exposure",
+    "equation": "H = L * W / (86400 * Q)",
+    "water_source": "Q72 structural_canonical main",
+    "geometry": "PRB reach length plus Andreadis width",
+    "forbidden_input": "wqd_reference_discharge_m3_s",
+    "depth_slope_manning_role": "diagnostic only; algebraically cancel from formal H1"
+  },
+  "evaluation": {
+    "P1": "globally scaled process layer; formal process and spatial evidence",
+    "P2": "monitored-station temporal prediction layer only",
+    "noninferiority_margin_log_rmse": 0.005,
+    "paired_bootstrap_replicates": 10000,
+    "models_required_noninferior": 10,
+    "models_required_improved": 8,
+    "absolute_spatial_skill": "1 - SSE_P1 / SSE_training_station_equal_log_mean",
+    "absolute_spatial_skill_gate": "paired CI95 lower > 0",
+    "small_tree_checks": ["ordinary cluster bootstrap", "exact paired sign flip", "wild cluster", "leave one tree out"]
+  },
+  "required_status_outputs": [
+    "temporal_process_status",
+    "within_observed_tree_LOSO_status",
+    "new_tree_LOTO_status",
+    "monitored_station_P2_status"
+  ],
+  "hard_invariants": {
+    "parent_h0_reproduction_relative_tolerance": 1e-12,
+    "mass_balance_relative_tolerance": 1e-10,
+    "optimizer_failures_may_be_selected": false,
+    "heldout_tn_may_affect_outer_fold_selection": false,
+    "tree_163_role": "diagnostic_only_open_lake_center",
+    "TN_2022_read": false
+  }
+}

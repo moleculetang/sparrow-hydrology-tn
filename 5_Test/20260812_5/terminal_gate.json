@@ -1,0 +1,54 @@
+{
+  "A0": {
+    "n": 8738,
+    "raw_nse": 0.9254883456800572,
+    "log_nse": 0.9350724885018425,
+    "pbias_pct": 4.667235647109676,
+    "rmse_cfs": 12279.953249316408,
+    "mae_cfs": 3299.4117634856443,
+    "log_rmse": 0.4846944523487294
+  },
+  "A1": {
+    "n": 8738,
+    "raw_nse": 0.9253536264420666,
+    "log_nse": 0.9350801752854052,
+    "pbias_pct": 4.672942999358161,
+    "rmse_cfs": 12291.04949230177,
+    "mae_cfs": 3301.1129038126205,
+    "log_rmse": 0.4846657599536056
+  },
+  "delta_A1_minus_A0": {
+    "raw_nse": -0.00013471923799057706,
+    "log_nse": 7.686783562665944e-06,
+    "pbias_pct": 0.005707352248484732,
+    "rmse_cfs": 11.09624298536255,
+    "log_rmse": -2.869239512376387e-05
+  },
+  "highflow_logrmse_change_pct": 0.02499770750321595,
+  "large_station_logrmse_change_pct": -0.0052367440062206505,
+  "path_mean_downstream_mae_change_pct": 0.049822543693434085,
+  "abs_pbias_change_points": 0.005707352248484732,
+  "fold_log_nse_delta": {
+    "fit_2006_2011_eval_2012_2013": 4.1040911824552495e-07,
+    "fit_2006_2013_eval_2014_2015": 7.029240867373332e-06,
+    "fit_2006_2015_eval_2016_2018": 1.2943733567971627e-05
+  },
+  "legacy_registry_members": 28,
+  "legacy_evaluable_targets": 27,
+  "legacy_unmatched_labels": [
+    "天河站"
+  ],
+  "checks": {
+    "pooled_raw_nse_decline_le_0_001": true,
+    "pooled_log_nse_decline_le_0_001": true,
+    "every_fold_log_nse_decline_le_0_003": true,
+    "highflow_logrmse_worsen_le_1pct": true,
+    "large_station_logrmse_worsen_le_1pct": true,
+    "path_mean_downstream_mae_worsen_le_1pct": true,
+    "abs_pbias_worsen_le_1point": true,
+    "oof_identity": true,
+    "all_feature_accounting_gates": true
+  },
+  "all_promotion_gates_pass": true,
+  "terminal": "EMPIRICAL_035_SCALE_REMOVED_WITH_PREDICTIVE_EQUIVALENCE"
+}

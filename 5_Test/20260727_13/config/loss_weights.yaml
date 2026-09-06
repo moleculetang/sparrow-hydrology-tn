@@ -1,0 +1,9 @@
+status: stage2a_single_factor_experiment
+log_flow_map_objective: unchanged_core_logQ
+low_flow_objective: no_auxiliary_loss
+flow_contrast_weight: 1.0
+new_linear_flow_loss: 0.0
+new_annual_volume_loss: 0.0
+new_auxiliary_loss: 0.0
+primary_production_recession_reference_exponent: 1.0
+primary_production_recession_candidate_exponent: 1.5

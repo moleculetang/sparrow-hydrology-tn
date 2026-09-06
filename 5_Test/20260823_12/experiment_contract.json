@@ -1,0 +1,23 @@
+{
+  "stage": "20260823_12-15",
+  "status": "REGISTERED",
+  "training": "S111 complete stations, 2006-2018 only",
+  "time_check": "same complete stations, 2019-2022, no observation update",
+  "spatial_check": "all observations from incomplete S111 stations; target history always zero",
+  "candidates": {
+    "H0_Q72_CLEAN": "reselected physical production-routing parameters; no station identity",
+    "H1_Q72_MAP_TRANSFERABLE": "low-dimensional Gaussian-prior MAP using all-reach features only",
+    "H2_Q72_MAP_GAUGED": "H1 plus partially pooled station terms for the 68 complete stations",
+    "H3_Q72_MAP_DA": "H2 plus recursive residual-state assimilation through 2018 only"
+  },
+  "all_reach_eligibility": [
+    "H0_Q72_CLEAN",
+    "H1_Q72_MAP_TRANSFERABLE"
+  ],
+  "gauged_only": [
+    "H2_Q72_MAP_GAUGED",
+    "H3_Q72_MAP_DA"
+  ],
+  "assimilation_semantics": "prediction-error state only; never added to physical water stores or TN water mass",
+  "old_q72_parameters": "initialization only"
+}

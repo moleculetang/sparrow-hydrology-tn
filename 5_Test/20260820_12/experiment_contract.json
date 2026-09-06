@@ -1,0 +1,66 @@
+{
+  "scenario_id": "20260820_12",
+  "status": "REGISTERED",
+  "scientific_name": "effective monthly diffuse-N availability operator",
+  "hypothesis": "a basin-wide two-parameter mass-conserving seasonal availability operator improves the registered residual fingerprint without degrading temporal or spatial-block OOF performance",
+  "parent": "20260820_10__PARENT_RETAINED",
+  "hydrology": "Q72_canonical_main_only",
+  "operator": "F00",
+  "formal_models": {
+    "source_structures": ["S0", "S1_tau_012m"],
+    "delivery_mu_month": [12, 36, 60, 96, 144, 240],
+    "count": 12
+  },
+  "seasonal_operator": {
+    "equation": "w_m=exp(a*sin(2*pi*m/12)+b*cos(2*pi*m/12))/sum_k(exp(u_k))",
+    "amplitude_max": 0.8047189562170501,
+    "weight_ratio_max": 5.0,
+    "phase_evaluable_weight_ratio_strictly_greater_than": 1.2,
+    "uniform_parent": [0.0, 0.0]
+  },
+  "annual_mass_closure": "absolute_error <= 1e-9 kg + 1e-12 * absolute_annual_mass",
+  "optimizer": {
+    "outer": "scipy.optimize.minimize_SLSQP",
+    "ftol": 1e-10,
+    "maxiter": 200,
+    "starts": ["zero", "half_amplitude_positive_a", "half_amplitude_negative_a", "half_amplitude_positive_b", "half_amplitude_negative_b"],
+    "tie_tolerance": 1e-8,
+    "inner_readout": "frozen_parent_scipy_least_squares_trf"
+  },
+  "readout": {
+    "eta_bounds": [0.0, 1.0],
+    "eta_ridge": 1.0,
+    "eta_initialization": [0.8, 0.8],
+    "station_effect_ridge": 12.0,
+    "tolerance": 1e-12,
+    "max_nfev": 2000,
+    "P1": ["a", "b", "eta_quick", "eta_gw"],
+    "P2": ["a", "b", "eta_quick", "eta_gw", "station_effects"]
+  },
+  "oof": {
+    "folds": [[2016, 2017, 2018], [2016, 2018, 2019], [2016, 2019, 2020], [2016, 2020, 2021]],
+    "primary_metric": "station_macro_RMSE_ln1p_TN",
+    "nested_spatial_layer": "P1",
+    "retrospective_locked_year": 2022
+  },
+  "registered_months": [2, 3, 7, 10, 11, 12],
+  "residual_definition": "ln1p_observed_minus_ln1p_predicted",
+  "bootstrap": {"replicates": 10000, "seed": 20260820, "noninferiority_margin": 0.005},
+  "ensemble_gates": {
+    "temporal_station_noninferior_min": 10,
+    "temporal_tree_noninferior_min": 10,
+    "nested_LOSO_noninferior_min": 10,
+    "nested_LOTO_noninferior_min": 10,
+    "J6_improved_min": 10,
+    "Jphase_improved_min": 10,
+    "registered_months_abs_bias_shrunk_min": 4,
+    "max_month_or_contrast_abs_worsening": 0.01,
+    "amplitude_boundary_models_max": 2,
+    "eta_boundary_models_max": 2
+  },
+  "forbidden": ["new_mu", "second_harmonic", "regional_calendar", "reach_specific_phase", "temperature", "groundwater_age", "second_groundwater_store", "wqd_reference_discharge_m3_s"],
+  "locked_data": {
+    "Q72_2022": "integrity_and_prediction_input_allowed",
+    "TN_2022": "forbidden_until_development_mechanism_lock_and_full_development_parameter_lock_exist"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "run_id": "20260729_14",
+  "parent_run_id": "20260729_13",
+  "required_parent_action": "BUILD_Q78_NAT_CONSERVATION_CORE",
+  "development_start_year": 2006,
+  "development_end_year": 2018,
+  "expected_reaches": 230,
+  "expected_months_per_reach": 156,
+  "expected_reach_months": 35880,
+  "expected_network_components": 18,
+  "relative_closure_threshold": 1e-8,
+  "absolute_tolerance": 1e-9,
+  "parameters": {
+    "kappa_s": 1.0,
+    "gamma_ET": 1.0,
+    "k_perc": 0.08,
+    "p_perc": 2.0,
+    "k_int": 0.2,
+    "p_int": 2.0,
+    "k_g": 0.05,
+    "k_deep": 0.0,
+    "k_route": 0.85,
+    "initial_soil_fraction": 0.5,
+    "initial_groundwater_mm": 0.0,
+    "initial_channel_m3": 0.0
+  },
+  "parameter_semantic_state": "numerical_core_test_only_not_calibrated",
+  "required_next_action_if_pass": "REGISTER_Q78_NAT_PARAMETER_PRIORS_AND_INITIALIZATION",
+  "required_next_action_if_fail": "REPAIR_Q78_NAT_CONSERVATION_CORE"
+}

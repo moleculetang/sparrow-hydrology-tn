@@ -1,0 +1,25 @@
+run_id: 20260727_6
+parent_run: 20260727_4
+input_anchor_run: 20260727_4
+phase: stage0
+hypothesis_id: H00_no_model_change_reproduction
+generation_type: stage0_frozen_baseline_and_diagnostic_reproduction
+model_change: none
+target_failure_group: all
+data_split:
+  model_training_and_selection: 2006-2018
+  inner_training: 2006-2015
+  inner_selection: 2016-2018
+  development_holdout: 2019-2022
+blocked_folds:
+  - fit_2006_2011_eval_2012_2013
+  - fit_2006_2013_eval_2014_2015
+  - fit_2006_2015_eval_2016_2018
+station_policy:
+  active_exclusions: [劳村站, 富罗（二）站, 隆安站]
+  protected_from_exclusion: [石角站]
+  allow_new_exclusions: false
+reservoir_scope: report_only_no_reservoir_module
+reproduction_reference: E:/SPARROW/5_Test/20260727_4
+model_parameters_changed: false
+random_seed: 1729

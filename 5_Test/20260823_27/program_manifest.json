@@ -1,0 +1,39 @@
+{
+  "program": "20260823 unified fast-delayed hydrology for TN",
+  "status": "completed",
+  "primary_product": "OPEN_LOOP_PARAMETER_CONDITIONED_REACH_HYDROLOGY",
+  "claim_vocabulary": {
+    "allowed": [
+      "fast-response pathway",
+      "delayed-storage pathway",
+      "hydrograph-separation proxy"
+    ],
+    "forbidden_without_tracers": [
+      "observed groundwater fraction",
+      "old-water fraction",
+      "young-water fraction"
+    ]
+  },
+  "stages": {
+    "20260823_27": "locked-Q72 full-state bridge",
+    "20260823_28": "daily hydrograph separation and Gauge support audit",
+    "20260823_29": "differentiable process model and synthetic recovery",
+    "20260823_30": "global joint MAP",
+    "20260823_31": "attribute regionalization",
+    "20260823_32": "conditional river-network residual",
+    "20260823_33": "conditional conserving state-analysis diagnostic",
+    "20260823_34": "monthly-state frozen time and zero-target-history spatial decision",
+    "20260823_35": "daily forcing and observation feasibility audit",
+    "20260823_36": "daily conserving fast-delayed state machine and synthetic identifiability",
+    "20260823_37": "daily flow plus hydrograph-separation joint training",
+    "20260823_38": "daily-model frozen-time and zero-target-history spatial evaluation",
+    "20260823_39": "daily-to-monthly TN interface decision and final program lock"
+  },
+  "hard_stop": "User explicitly authorized extension through 20260823_39 on 2026-08-25. No automatic 20260823_40+ experiment is authorized.",
+  "extension_reason": "Monthly-state candidates were numerically valid but failed registered delayed-path spatial ranking and phase gates; one bounded daily-state joint experiment was explicitly authorized.",
+  "tn_selection_boundary": "Hydrology is locked before any TN performance is read. TN performance cannot select hydrologic parameters.",
+  "final_stage": "20260823_39",
+  "final_decision": "CANDIDATE_INTERFACE_NUMERICALLY_VALID_NOT_AUTHORIZED_FOR_TN",
+  "daily_candidate_promoted": false,
+  "closed_utc_note": "Closed after the explicitly authorized bounded daily experiment; date follows local project chronology."
+}

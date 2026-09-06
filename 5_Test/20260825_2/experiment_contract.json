@@ -1,0 +1,47 @@
+{
+  "stage": "20260825_2",
+  "status": "registered_before_input_build",
+  "title": "Authoritative daily forcing, Gauge representativeness and Q-derived signature contract",
+  "purpose": "Build the non-leaking forcing and observation-support layer required before Raven-equation-conformant HBV implementation.",
+  "formal_forcing": {
+    "precipitation": "CHM_PRE V2.1 daily, frozen full-polygon Reach weights",
+    "temperature_and_pet": "TPDC CMFD V2.0 three-hour temp/pres/shum/wind/srad/lrad aggregated at UTC day boundary; daily FAO-56 Penman-Monteith with direct downward radiation",
+    "cmfd_doi": "10.11888/Atmos.tpdc.302088",
+    "cmfd_period": "2006-01-01 through 2022-12-31",
+    "cmfd_variables": ["temp", "pres", "shum", "wind", "srad", "lrad"],
+    "aet_role": "PML V2.2a monthly AET is an auxiliary soft validation target, never daily forcing"
+  },
+  "gauge_rules": {
+    "nonpositive_discharge": "missing",
+    "area_ratio_allowed": [0.67, 1.5],
+    "runoff_coefficient_allowed": [0.02, 1.5],
+    "maximum_snap_distance_m": 5000,
+    "daily_separation_role": "Q-derived response signature, not observed groundwater or water age",
+    "forbid_segments_crossing": ["date gaps", "2018-12-31/2019-01-01 boundary"]
+  },
+  "minimum_support_gates": {
+    "valid_gauges": 80,
+    "observed_terminal_trees": 6,
+    "largest_tree_station_fraction_max": 0.85,
+    "reach_count": 230,
+    "cmfd_steps_per_complete_day": 8,
+    "cmfd_minimum_valid_weight": 0.999,
+    "daily_forcing_missing_rows": 0
+  },
+  "time_boundary": {
+    "spinup": "2006-2009 forcing only",
+    "development": "2010-2018 discharge",
+    "locked_retrospective": "2019-2022 discharge physically separated before fitting",
+    "forcing_read_rule": "2019-2022 frozen climate forcing may be read for integrity and simulation but never for model selection using discharge"
+  },
+  "forbidden": [
+    "monthly AET or PET split into artificial daily forcing",
+    "daily hydrograph-separation fraction as a likelihood",
+    "station-specific hydrologic parameters or Gauge correction in TN hydrology",
+    "reservoir equation",
+    "use of wqd_reference_discharge_m3_s",
+    "TN observations",
+    "claiming response components are observed groundwater, old water, new water or water age"
+  ],
+  "authorized_successor": "20260825_3"
+}

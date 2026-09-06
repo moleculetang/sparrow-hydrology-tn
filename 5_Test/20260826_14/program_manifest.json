@@ -1,0 +1,24 @@
+{
+  "program": "20260826 differentiable conserving hydrology with independent state constraints",
+  "registered_at": "2026-08-26T15:12:59.074676+08:00",
+  "status": "running",
+  "authoritative_parent": "20260825_7 GLOBAL_HBV_R0",
+  "parent_TN_authorized_field": "routed_total_m3_s",
+  "parent_component_status": "TOTAL_FLOW_SUPPORTED_FAST_INTERMEDIATE_SLOW_NOT_IDENTIFIED",
+  "folder_boundary": "20260826_13_to_22",
+  "prior_program_repair_slots": "20260826_11_to_12 remain reserved for integrity repairs to 20260826_1_to_10",
+  "stage_status": {
+    "20260826_13": "PASS_PROGRAM_REGISTERED",
+    "20260826_14": "PASS_DIFFERENTIABLE_PARENT_REPRODUCTION",
+    "20260826_15": "authorized_next_multiscale_attribute_construction",
+    "20260826_16": "registered_Q_only_static_DPL_HBV",
+    "20260826_17": "conditional_full_tree_spatial_evaluation",
+    "20260826_18": "registered_independent_state_data_QA",
+    "20260826_19": "conditional_state_constrained_DPL_and_neural_flux_gate",
+    "20260826_20": "conditional_forcing_sensitivity",
+    "20260826_21": "conditional_final_refit_retrospective_and_TN_bridge",
+    "20260826_22": "integrity_repair_only"
+  },
+  "hard_stop": "No automatic creation of 20260826_23 or later folders",
+  "authorized_successor": "20260826_15"
+}

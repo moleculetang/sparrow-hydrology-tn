@@ -1,0 +1,10 @@
+{
+  "stage": "20260823_11",
+  "single_product_rule": "exactly one zero-target-history 230-Reach product",
+  "locked_product": "P0_Q72_PROCESS",
+  "reason": "REGIONALIZED_ROUTED_CORRECTION failed registered nested spatial, flow-regime, pooled-NSE, J_year and boundary gates",
+  "development": "2006-2018",
+  "retrospective": "2019-2022 after model lock",
+  "p2_role": "diagnostic gauged-site adaptation only",
+  "tn_interface": "routed Q72 quick/slow and registered SAS state diagnostics; no station-history correction"
+}

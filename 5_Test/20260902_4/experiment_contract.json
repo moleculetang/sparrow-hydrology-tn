@@ -1,0 +1,40 @@
+{
+  "stage": "20260902_4",
+  "status": "REGISTERED_BEFORE_NEW_TN_RESULTS",
+  "parent": "20260824_46 MINERAL_LIFETIME under U3_P90_S90",
+  "candidates": ["PARENT", "H22_TRANSFER_HEAD", "TN82_TRANSFER_HEAD"],
+  "folds": [
+    {"fold_id": "T1", "train": "2021", "evaluate": "2022"},
+    {"fold_id": "T2", "train": "2021-2022", "evaluate": "2023"},
+    {"fold_id": "T3", "train": "2021-2023", "evaluate": "2024"}
+  ],
+  "equations": {
+    "population": "parent_process_log_prediction + centered_scaled_X_reach * gamma",
+    "conditional": "population + centered strongly-shrunk station residual",
+    "formal_spatial_prediction": "population_transferable"
+  },
+  "fit": {
+    "likelihood": "Student-t df=4 on ln(1+TN)",
+    "objective_weights": "0.90 population + 0.10 conditional; each 0.90 station macro + 0.10 terminal-tree macro",
+    "site_ridge_precision": 12.0,
+    "global_prior_normalization": 119.0,
+    "gamma_prior_sd": 0.25,
+    "group_prior": "equal mean-square prior capacity across source, soil_delivery, hydro and network_human groups",
+    "deterministic_starts": 5,
+    "optimizer": "160 AdamW steps then up to 200 strong-Wolfe L-BFGS iterations",
+    "projected_kkt_tolerance": 1e-5
+  },
+  "fold_preprocessing": "p01/p99 winsorization, centering and scaling learned only from unique training reaches and applied to evaluation reaches",
+  "temporal_gate": {
+    "noninferiority_margin_log_rmse": 0.005,
+    "required": "station and tree CI95 upper <0.005, with at least one CI95 upper <0",
+    "offset_guard": "maximum absolute transferable offset <=1 log unit; repeated exceedance is confounding",
+    "conditional_guard": "conditional layer must not be significantly worse than Parent"
+  },
+  "resources": {
+    "workers": 4,
+    "threads_per_worker": 2,
+    "total_RSS_limit_GiB": 28.0,
+    "per_worker_RSS_stop_GiB": 6.5
+  }
+}

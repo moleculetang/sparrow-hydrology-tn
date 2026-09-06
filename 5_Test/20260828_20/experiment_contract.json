@@ -1,0 +1,53 @@
+{
+  "stage": "20260828_20",
+  "title": "Development-only low-dimensional reservoir structure experiment",
+  "status": "REGISTERED_AUTHORIZED_DEVELOPMENT_ONLY",
+  "parent_stage": "20260828_19",
+  "formal_fit_authorized": true,
+  "authorization_scope": "Only 2010-2015 fitting and 2016-2018 development selection. 2019-2022 and the four spatial-test stations remain inaccessible.",
+  "station_contract": {
+    "registered_parent_cohort": 91,
+    "excluded_control_reach_stations": ["武宣（二）", "平山（三）"],
+    "development_likelihood_stations": 89,
+    "reason": "The edge reservoir operator replaces a control-Reach outlet; it cannot represent a gauge located within that same Reach without a separate sub-Reach observation operator."
+  },
+  "comparators": {
+    "R0": "frozen canonical no-reservoir parent",
+    "R1": "generic low-data conservative reservoir rule with hydrologic wet-season target window",
+    "R2": "same-dimensional rule with registered literature phase, storage-zone and regulation-class constraints where evidence exists"
+  },
+  "free_hyperparameters": [
+    "global recovery time tau_day",
+    "global inflow-response alpha",
+    "global seasonal target-storage drawdown amplitude"
+  ],
+  "candidate_grid": {
+    "tau_day": [60.0, 180.0, 365.0],
+    "inflow_response": [0.25, 0.5, 0.75],
+    "seasonal_drawdown_fraction": [0.05, 0.15]
+  },
+  "parameter_count_per_candidate": 3,
+  "per_reservoir_free_deviations": 0,
+  "fit_period": "2010-2015",
+  "selection_period": "2016-2018",
+  "unscored_state_spinup": "2006-2009",
+  "primary_objective": "pooled RMSE of ln(1+monthly discharge) across the 89 legal development gauges",
+  "selection_rule": "Select one parameter tuple per layer using 2010-2015 only; then compare locked R0/R1/R2 on 2016-2018.",
+  "tn_interface_priority_rule": "Because the registered scientific objective is a state-consistent reservoir interface, choose locked R2 when it passes every total-flow noninferiority limit; otherwise choose locked R1 when it passes; otherwise retain R0. Improvement and noninferiority are reported separately, and noninferiority alone cannot be described as empirical identification of reservoir operations.",
+  "noninferiority_limits_against_R0": {
+    "pooled_log_RMSE_increase_max": 0.01,
+    "pooled_NSE_decrease_max": 0.02,
+    "station_median_NSE_decrease_max": 0.03,
+    "station_median_absolute_PBIAS_increase_max_percentage_points": 2.0
+  },
+  "claim_boundary": "Downstream flow can estimate shared hyperparameters only. No per-reservoir operation, release series or real rule curve is claimed identified because the reservoir-specific release gate is unavailable.",
+  "forbidden": [
+    "per-reservoir unconstrained parameter fitting",
+    "free monthly releases",
+    "rainfall-runoff parent refit",
+    "TN observations",
+    "2019-2022 outcome access before the Stage-20 lock",
+    "remote storage data in fitting or selection"
+  ],
+  "workers": 5
+}

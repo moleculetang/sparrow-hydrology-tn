@@ -1,0 +1,31 @@
+{
+  "stage": "20260823_21",
+  "status": "registered_before_fitting",
+  "parent": "20260823_20",
+  "hypothesis": "The network-native MAP5 structure was over-regularized because mean data loss was combined with unscaled Gaussian-prior penalties; restoring sum-likelihood MAP semantics will retain more gauged-station skill without changing the physical/routing structure.",
+  "only_authorized_changes": [
+    "divide every Gaussian-prior penalty and gradient by the number of fitted observations when data loss is a mean",
+    "expand graph and Reach precision grids on the corrected MAP scale",
+    "increase optimization iterations and use two registered initializations for the final fit"
+  ],
+  "forbidden_changes": [
+    "network-native local-flow equation",
+    "five spatial effects",
+    "Q72 process parameters",
+    "routing matrix",
+    "station identity block",
+    "reservoir equation",
+    "external four station outcomes"
+  ],
+  "graph_smooth_precision_grid": [0.1, 1.0, 10.0, 100.0],
+  "reach_ridge_precision_grid": [0.1, 1.0, 10.0],
+  "attribute_precision": 1.0,
+  "global_prior_sigma": 0.25,
+  "hyperparameter_training": "2006-2014",
+  "hyperparameter_validation": "2015-2018",
+  "selection_score": "station_mean_log_RMSE + 0.2*abs(PBIAS_pct)/100",
+  "grid_initialization": "zero for every candidate",
+  "final_initializations": ["selected 2006-2014 solution", "zero"],
+  "final_refit": "2006-2018 only",
+  "external_four_stations_remain_sealed": true
+}

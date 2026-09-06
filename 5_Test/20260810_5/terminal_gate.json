@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "data_merge_gate_passed": true,
+    "q72_oof_rows_8738": true,
+    "q72_oof_keys_identical": true,
+    "three_folds_complete": true,
+    "runtime_is_conda_sparrow": true
+  },
+  "terminals": [
+    "ALL_DISCHARGE_CONFLICTS_RESOLVED_WITH_CONFIDENCE_LABELS",
+    "MERGED_2006_2022_INPUT_COMPLETE",
+    "Q72_CLEAN_DATA_RERUN_COMPLETE"
+  ],
+  "scientific_note": "Performance is an outcome only and was not used to choose discharge candidates. LOW decisions remain inferential.",
+  "passed": true
+}

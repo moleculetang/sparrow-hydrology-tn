@@ -1,0 +1,29 @@
+{
+  "experiment_id": "20260824_16",
+  "registered_on": "2026-08-28",
+  "authorization": "20260824_15 dynamic_delivery_triggered=true for all four frozen canonical anomalies",
+  "hypothesis": "A single shared hydrologic-state gate on land-to-water N delivery improves TN prediction while conserving N and leaving canonical water unchanged.",
+  "parent": "M0_NO_SON with DAILY_COMPILED_CARRIER",
+  "fixed_state_score": "mean of z anomalies for upper storage, lower storage, effective excess and routed fast fraction; then tanh(score/2)",
+  "equation": "logit(pi_E,r,t) = alpha + beta_D * tanh(H_score,r,t / 2)",
+  "parameters": {
+    "alpha": [-9.21, 9.21],
+    "beta_D": [-1.0, 1.0],
+    "v_f_m_per_day": [0.0, 0.5]
+  },
+  "nesting": "beta_D=0 exactly recovers M0",
+  "regularization": {
+    "beta_prior_mean": 0.0,
+    "beta_prior_sd": 0.35
+  },
+  "forbidden": [
+    "changing water or fast/slow allocation",
+    "additional lag or storage",
+    "free feature selection",
+    "station, Reach-ID or tree effects",
+    "dynamic v_f",
+    "temperature, reservoir or WWTP terms"
+  ],
+  "authorized_successor": "20260824_17",
+  "hard_stop_after": "20260824_17"
+}

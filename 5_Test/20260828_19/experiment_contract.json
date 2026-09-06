@@ -1,0 +1,20 @@
+{
+  "stage": "20260828_19",
+  "title": "Reservoir observation-role and likelihood preflight",
+  "status": "COMPLETE_RELEASE_GATE_NOT_AUTHORIZED",
+  "parent_stage": "20260828_18",
+  "formal_fit_authorized": false,
+  "allowed_inputs": [
+    "registered 91-station cohort metadata",
+    "2010-2016 and 2017-2018 physical discharge observations",
+    "reservoir topology and activation registry"
+  ],
+  "forbidden_inputs": [
+    "2019-2022 discharge outcomes",
+    "the four spatial extrapolation station observations",
+    "2023-2024 observations",
+    "TN observations"
+  ],
+  "classification_rule": "Station names alone never establish total reservoir release. A station may be a general downstream-flow likelihood, an immediate-downstream candidate requiring semantic confirmation, a component/diversion station, or excluded/ambiguous.",
+  "purpose": "Determine whether formal R1/R2 fitting and the reservoir-specific release gate have enough legally classified development observations."
+}

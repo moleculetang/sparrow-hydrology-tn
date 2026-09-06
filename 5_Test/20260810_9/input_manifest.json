@@ -1,0 +1,211 @@
+{
+  "created_utc": "2026-08-10T17:21:58.662995+00:00",
+  "runtime": {
+    "environment_name": "sparrow",
+    "expected_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "sys_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "sys_executable": "D:\\ProgramData\\anaconda3\\envs\\sparrow\\python.exe",
+    "conda_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "conda_default_env": "sparrow"
+  },
+  "thread_limits": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "sources": [
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\rainfall_2\\CHM_PRE V2\\monthly\\CHM_PRE_V2_monthly.nc",
+      "bytes": 1437726812,
+      "sha256": "4ae2e5de801f0b54757effc16b5dd55b0ce490e9e7fb22747e22f509b5bea108"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\CMFD\\temp_CMFD_V0200_B-01_01mo_010deg_195101-202412.nc",
+      "bytes": 994639159,
+      "sha256": "6908ceb66ae30341a7a42cf48c754067678b80217885b823e1ba3908152f3752"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\CMFD\\pres_CMFD_V0200_B-01_01mo_010deg_195101-202412.nc",
+      "bytes": 994639144,
+      "sha256": "b188221522d85915bbeac7eba3ef9bd2d4afd731177dfb582da8f5df7d817606"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\CMFD\\shum_CMFD_V0200_B-01_01mo_010deg_195101-202412.nc",
+      "bytes": 994639169,
+      "sha256": "41a72fd127a1422ddf611549c091bad12886fb68cedf3cd922cc910ac93629a7"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\CMFD\\wind_CMFD_V0200_B-01_01mo_010deg_195101-202412.nc",
+      "bytes": 994639119,
+      "sha256": "8ea124fca7480867eec11f7138a30de18ea22365fdb7da532cd53c5026aa036b"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\CMFD\\srad_CMFD_V0200_B-01_01mo_010deg_195101-202412.nc",
+      "bytes": 994641478,
+      "sha256": "95f754fbb23b7ac7ef1cbc2945007830f9da5cf7cd9e9b903dcd765f5c8539cb"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\CMFD\\lrad_CMFD_V0200_B-01_01mo_010deg_195101-202412.nc",
+      "bytes": 994639209,
+      "sha256": "21c12eaf66459d19fca33a5cb6029cf763e81ebe9ff3854850819f8d3ac7786b"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\era5_land\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2006.nc",
+      "bytes": 1896623,
+      "sha256": "a883a214fa56cacf5be04d9fb27dfced4f784b3d986e9b18341202296043da3b"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\era5_land\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2007.nc",
+      "bytes": 1892927,
+      "sha256": "9df1a5f9072804678c32410e23bd9556cb2b53b5b9cd3d64a6d7ccf45522f00b"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\era5_land\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2008.nc",
+      "bytes": 1886535,
+      "sha256": "129df8717311669a2d3330fc4e97d664ecc15cd3c490a32c1c8ca2474e7b556c"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\era5_land\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2009.nc",
+      "bytes": 1887028,
+      "sha256": "6ce22c9acc8c373b30f4b2ba9e47f3df60e8bc2eee35eff4c4534a7e2ebc19f5"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\era5_land\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2010.nc",
+      "bytes": 1894143,
+      "sha256": "aa5bec4e4d5f64815614eb54f09e9800fc17cf6402318c6d62d5c316a3bf1691"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\era5_land\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2011.nc",
+      "bytes": 1888149,
+      "sha256": "cd4d11793d2249bfba0c284a5f4fbe08d830f9a796235bda7cf97149789bda08"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\era5_land\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2012.nc",
+      "bytes": 1888086,
+      "sha256": "57a0b0d297df6346c2887111f4816a165b963b4fb21e2514f359e52c54eed384"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\era5_land\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2013.nc",
+      "bytes": 1888722,
+      "sha256": "8c33acec793fb355bf899c2c5948b172427619fd7cc1561467f794118b5ba25a"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\era5_land\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2014.nc",
+      "bytes": 1896509,
+      "sha256": "682243b43a8d123937c0c1d5737fc10365477dbb980bf7bd6962743f5d5c8f03"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\era5_land\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2015.nc",
+      "bytes": 1891731,
+      "sha256": "e54491f9a87e90680324798a98b693eee8fd42a0b7a6158dbbe7cb6c39ecbf49"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\era5_land\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2016.nc",
+      "bytes": 1884374,
+      "sha256": "a97673fa5730c295892ea6de78d887a379d5b53d1512bd3d2b883fffe922cbb2"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\era5_land\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2017.nc",
+      "bytes": 1886974,
+      "sha256": "31c73cbf96c7b8aba39433b02485ebddb1f578689a1974146f3c17137250af6c"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\era5_land\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2018.nc",
+      "bytes": 1891728,
+      "sha256": "97d090138888bc74d0c57f03860f86124ef276f7869d2e0f713f72a56348b4f6"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\era5_land\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2019.nc",
+      "bytes": 1895829,
+      "sha256": "7c0ed092c5f5c5a8a12f418ded89de1340cca48473fabfc2244c22555cd51e18"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\era5_land\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2020.nc",
+      "bytes": 1893404,
+      "sha256": "21230b6e4028c51debac3cc1c6b0c745b633cf3610cc9469b0d3b0fb2651fa8b"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\era5_land\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2021.nc",
+      "bytes": 1894856,
+      "sha256": "c36b3813ddf6283cb873eaf10053819a06f30eab48d065626bd830ea7a0482bb"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\era5_land\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2022.nc",
+      "bytes": 1897030,
+      "sha256": "f068684af2be79b31fcdb17007d6a3b8826f2134390de7581c1b021c51d07b05"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\work\\rasters\\dem_clipped.tif",
+      "bytes": 1856297416,
+      "sha256": "b90af4f3fea319fbd75a1e6e6998b3f7befaa0ec888d138abb0715e59cac7099"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\results\\rasters\\reach_catchments.tif",
+      "bytes": 10009633,
+      "sha256": "be26f892165b130720d3460daf58abf315e6327feb8becc7648d7f11db19332f"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\processed\\dem_prb\\dem.tif",
+      "bytes": 504867207,
+      "sha256": "da29dac738a19fdc9334f7f3ef2dea0bde48735c267c8163250d5693cf40af7a"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\dem\\DEM.tif",
+      "bytes": 12672619933,
+      "sha256": "0b7f7f1db0a9563d1edfb24da57d6bb90c71f09856006288822cd8e8f755e62b"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260810_9\\inputs\\spatial\\reach_catchments.shp",
+      "bytes": 24799380,
+      "sha256": "792f8138935ae06ce7730435b406c3f4900516fb2c03e73eff31283eff5476cf"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260810_9\\inputs\\baseline\\R3_11_indata.parquet",
+      "bytes": 5071311,
+      "sha256": "dac17e58125981d34bf944bca94e5a21e712b01658dd0294b7cc12120427c52a"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260810_9\\inputs\\topology\\topology_edges.csv",
+      "bytes": 18988,
+      "sha256": "2daa0a1df1e8b4d5cf364492068be88e410c3d6228fe417275fda3bc4afd37f9"
+    }
+  ],
+  "derived": [
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260810_9\\inputs\\spatial\\dem_wgs84_reclip_from_raw.tif",
+      "bytes": 845760166,
+      "sha256": "b17758e128a2422bd2a1b249e65f8a3d0161aa5473fe7a9301f872e3082879bd"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260810_9\\inputs\\spatial\\dem_aligned_reclip_fill200.tif",
+      "bytes": 816106002,
+      "sha256": "389934891124cc5c8c41424584cf0ec61ef04a8c39e4b9a417c27e01bd628e14"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260810_9\\inputs\\spatial\\grid_overlap_weights.parquet",
+      "bytes": 890327,
+      "sha256": "cf19e1c8e3bfccf2729150cf7cbfaecd6fe1bef0dbd658eada980557c1e719b2"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260810_9\\inputs\\spatial\\reach_grid_fragment_elevation.parquet",
+      "bytes": 573777,
+      "sha256": "c01726c8fe31c13a76d23bf44417310dc6d101c7b5f446270b5a2ef4c9da4c76"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260810_9\\inputs\\forcing_panel.parquet",
+      "bytes": 1408459,
+      "sha256": "b7a1a5e9eb1dce616cd5b366b3f21a45ca971d177bc4feb83fb44d9d890b44af"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260810_9\\inputs\\scenarios\\S0_indata.parquet",
+      "bytes": 5071311,
+      "sha256": "dac17e58125981d34bf944bca94e5a21e712b01658dd0294b7cc12120427c52a"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260810_9\\inputs\\scenarios\\S1_indata.parquet",
+      "bytes": 5072883,
+      "sha256": "230a3c750602d8cd74ef2dc28e978b59ddacab99c49138309078fd499336b72f"
+    }
+  ],
+  "expected_but_not_created": []
+}

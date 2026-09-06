@@ -1,0 +1,15 @@
+{
+  "source_type": "official_local_government",
+  "publisher": "梧州市人民政府办公室",
+  "title": "梧州市人民政府办公室关于印发我市城市防洪应急预案的通知 梧政办发〔2023〕22号",
+  "url": "http://ybj.wuzhou.gov.cn/xxgk/zfxxgk/fdzdgknr/yjgl/t12879604.shtml",
+  "displayed_publication_time": "2026-02-13 08:00",
+  "document_date": "2023-04-07",
+  "accessed_at": "2026-07-29T13:12:21.8643553+08:00",
+  "quotes": [
+    "梧州市位于广西东南部，市区紧接两广边界，为广西东大门，梧州市的地形特点是四周高、中间低，丘陵地占总面积的80％以上。浔江、桂江相汇成西江，集广西784条河流水量，流经梧州的出水量约占广西总径流量的85％以上。",
+    "梧州市地处两广交界处，是珠江流域西江的起点。"
+  ],
+  "cross_validation_claim": "真实河流关系为浔江与桂江在梧州汇合后形成西江，与本地 node 27 的浔江+桂江(漓江)→西江一致。",
+  "decision_role": "non_decisive_external_cross_validation"
+}

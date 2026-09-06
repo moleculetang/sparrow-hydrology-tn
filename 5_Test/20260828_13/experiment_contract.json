@@ -1,0 +1,41 @@
+{
+  "stage": "20260828_13",
+  "title": "Reservoir evidence, entity and topology preflight",
+  "status": "REGISTERED_AUDIT_ONLY",
+  "formal_fit_authorized": false,
+  "required_parent": {
+    "stage": "20260828_10",
+    "daily_product": "E:\\SPARROW\\5_Test\\20260828_9\\outputs\\canonical_reach_daily_2006_2024.parquet",
+    "daily_product_sha256": "a8c2b57d35de374a57798ab3e837dbf5c75cbd644275b6e52f888b20e16ca471",
+    "mutation": "forbidden"
+  },
+  "purpose": "Identify candidate reservoir entities intersecting the 230-Reach domain, distinguish authoritative control edges from spatial suggestions, audit local operation observations, and register literature-derived priors without fitting a reservoir model.",
+  "evidence_registry": {
+    "preserved_user_synthesis": "inputs/reservoir_specific_evidence.csv",
+    "independently_verified_rows": "inputs/reservoir_verified_evidence.csv",
+    "authoritative_merged_product": "outputs/literature_prior_registry.parquet"
+  },
+  "allowed_actions": [
+    "read static reservoir attributes and geometries",
+    "read local storage, water-level, area and discharge registries for coverage only",
+    "search pre-existing literature and official rules",
+    "compute candidate dam-to-Reach distances",
+    "write evidence, coverage and unresolved-topology audit products"
+  ],
+  "forbidden_actions": [
+    "fit reservoir parameters",
+    "read TN observations",
+    "modify the accepted rainfall-runoff or fast-slow parent",
+    "treat nearest-Reach matching as an authoritative control edge",
+    "duplicate one reservoir state across multiple reservoir-named reaches",
+    "convert water level linearly to storage without an elevation-storage relation",
+    "use 2019-2022 operational outcomes to tune priors for the formal temporal test"
+  ],
+  "time_boundary": {
+    "state_spinup": "2006-2009, inherited from the canonical is_spinup_period flag; forcing only and excluded from scored likelihoods",
+    "development": "2010-2018 when formal fitting is later authorized",
+    "retrospective_test": "2019-2022, inaccessible to parameter selection",
+    "extension": "2023-2024 only after a model lock"
+  },
+  "success": "A reproducible candidate inventory, explicit evidence grades, local data coverage, and a list of unresolved entity/control-edge decisions; success does not authorize formal fitting."
+}

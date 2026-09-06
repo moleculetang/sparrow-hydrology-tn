@@ -1,0 +1,15 @@
+{
+  "scenario_id": "20260820_10",
+  "status": "frozen_complete",
+  "selected_mechanism": "PARENT",
+  "hard_check_count": 31,
+  "failed_hard_checks": [],
+  "authoritative_outputs": {
+    "E:\\SPARROW\\5_Test\\20260820_10\\reports\\development_mechanism_lock.json": "e43530eb5d05320141f2d45ecbf01923327c7770f4c238c0b2d8440306908d28",
+    "E:\\SPARROW\\5_Test\\20260820_10\\reports\\full_development_parameter_lock.json": "15df3f0a3b1f11d9a53ab4eab23c8e0905a21d85a25a9bede77401a5dc494a2f",
+    "E:\\SPARROW\\5_Test\\20260820_10\\reports\\final_decision.json": "e8b01a2a339aa8818656e7568f7cc2951790eaa8c95edc700076c639be87efdd",
+    "E:\\SPARROW\\5_Test\\20260820_10\\reports\\technical_report.md": "d38876b69b72d4e09cceda26109235c548df9864a9461df849ec5358d0520340",
+    "E:\\SPARROW\\5_Test\\20260820_10\\outputs\\final_performance_metrics.parquet": "2be6d7db54acbd379a5f75278447ba85910617de44ca3d2478276a8da47643b9",
+    "E:\\SPARROW\\5_Test\\20260820_10\\outputs\\requirement_by_requirement_audit.parquet": "429f360801b1cde98380fd40f9b1e4aa20edd1999c268d4ad365e931fc76f037"
+  }
+}

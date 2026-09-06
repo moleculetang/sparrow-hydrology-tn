@@ -1,0 +1,31 @@
+{
+  "stage": "20260828_22",
+  "title": "Locked R2 initial-state convergence and tracer sensitivity",
+  "status": "REGISTERED_RUNNING",
+  "parent_stage": "20260828_21",
+  "selected_candidate": {
+    "layer": "R2",
+    "tau_day": 180.0,
+    "inflow_response": 0.25,
+    "drawdown_fraction": 0.0
+  },
+  "initial_states": {
+    "empty": "zero storage and zero tracers; authoritative development run",
+    "target_centered": "base target storage with parent fast/slow climatological proportions",
+    "high": "0.9 capacity with parent fast/slow climatological proportions"
+  },
+  "initial_age": "storage multiplied by the registered reservoir-specific recovery time; sensitivity only",
+  "evaluation_period": "2016-2018 development selection only",
+  "hard_gates": {
+    "maximum_pooled_log_RMSE_change": 0.005,
+    "p99_absolute_station_month_log_prediction_change": 0.02,
+    "maximum_end_2018_storage_fraction_change": 0.02,
+    "maximum_end_2018_fast_fraction_change": 0.02,
+    "maximum_end_2018_mean_storage_age_change_day": 30.0
+  },
+  "forbidden": [
+    "2019-2022 observations",
+    "retuning the selected candidate",
+    "TN observations"
+  ]
+}

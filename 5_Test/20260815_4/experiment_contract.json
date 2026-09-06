@@ -1,0 +1,22 @@
+{
+  "scenario_id": "20260815_4",
+  "parent": "E:\\SPARROW\\5_Test\\20260815_3",
+  "question": "is_source_zone_N_memory_required",
+  "candidates": {
+    "M0": "current_month_mobile_no_source_carryover",
+    "S0": "one_cross_month_mobile_pool",
+    "S1": "one_SON_pool_to_mobile_pool",
+    "S1_tau_month": [12, 36, 60, 96, 144, 240, 480]
+  },
+  "positive_input_location": {"M0": "current_mobile", "S0": "mobile_pool", "S1": "SON_pool"},
+  "free_SON_mobile_partition": false,
+  "cohort_resolution": "input_month",
+  "transport": "T0_fixed_Q72_quick_and_base_response",
+  "network_operator_for_comparison": "fixed_same_month_mass_conserving_R0_not_a_fitted_structure",
+  "terminal_tree_bootstrap": "complete_frozen_terminal_tree_blocks_represented_by_TN_evaluation_stations",
+  "selection_years": [2018, 2019, 2020, 2021],
+  "locked_year": 2022,
+  "bootstrap": {"replicates": 10000, "seed": 20260815, "margin_log_rmse": 0.01, "ci": "percentile_95"},
+  "floating_point_mass_gate": {"max_abs_error_kg_n": 1e-6, "max_relative_error": 1e-14, "both_required": true},
+  "advancement": "structural_noninferiority_plus_process_evidence"
+}

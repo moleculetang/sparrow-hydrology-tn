@@ -1,0 +1,41 @@
+{
+  "experiment_id": "20260824_3",
+  "status": "FROZEN_COMPLETE",
+  "terminal_scientific_status": "STATION_READOUT_COMPENSATED_NOT_PROCESS_SUPPORTED",
+  "model_mainline": "Q72-F00-T1-H1_GLOBAL",
+  "generic_cropland_SON12_process_supported": false,
+  "partial_fraction_extension_supported": false,
+  "nested_spatial_authorized": false,
+  "TN_years_read": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "TN_2022_values_read": false,
+  "authoritative_artifacts": {
+    "E:\\SPARROW\\5_Test\\20260824_3\\experiment_contract.json": "0ec0be5bae3ee94d8be8665b55f02188b5feedc8526f084f6ef202e17a7a93ea",
+    "E:\\SPARROW\\5_Test\\20260824_3\\program_manifest.json": "7b60c8e626c6bffe933fed0d3f7fadf08a712e53c42a20df9f783d8e58b30468",
+    "E:\\SPARROW\\5_Test\\20260824_3\\README.md": "abfd2183352784c88df25372a25d1fef51b06dcc57df2bfb30f37dbbfd57ad05",
+    "E:\\SPARROW\\5_Test\\20260824_3\\scripts\\run_temporal_son_fraction.py": "c0193c0ca70233c860a13af05ee415a6b35c3fee2ad44d27e1338d37b0edd8a4",
+    "E:\\SPARROW\\5_Test\\20260824_3\\locks\\pre_tn_input_lock.json": "74b54c3a8b67d5b74ce1bfff8aa1a27c4d1bf497a50c853d501b7129ed6fdbd3",
+    "E:\\SPARROW\\5_Test\\20260824_3\\outputs\\operator_spinup_audit.parquet": "6a7118e8d69c000071a659af3a824fb21c873f010eca7f31c2276f4a1a53e72d",
+    "E:\\SPARROW\\5_Test\\20260824_3\\outputs\\operator_mass_balance_audit.parquet": "aa3ea07a76be5e7a599c507f46bf81cde940f4c4a6ffe76cc497ce5bb7c0df9b",
+    "E:\\SPARROW\\5_Test\\20260824_3\\outputs\\endpoint_exact_nesting_audit.parquet": "7f817429bbff3f279e487cb7283b0327e2171c031487f6188a22baa7df5493a5",
+    "E:\\SPARROW\\5_Test\\20260824_3\\outputs\\candidate_fold_parameters.parquet": "36ab9dac942b40e913c4def3988a6df5d86d5ceff2182f06ef46f188d7c4a578",
+    "E:\\SPARROW\\5_Test\\20260824_3\\outputs\\candidate_fold_readouts.parquet": "927cd00143cf395efbed75b801473b5cbab24655ae73201523fa68943e3f4b73",
+    "E:\\SPARROW\\5_Test\\20260824_3\\outputs\\fold_phi_selections.parquet": "c40dc06fe2662c0a2a73acfbdce6423ea525e80e64f02872e1114e66942b844c",
+    "E:\\SPARROW\\5_Test\\20260824_3\\outputs\\temporal_oof_predictions.parquet": "445c14608f9be223ce90571f6b985496cec4cb6d9074f236c52c9de39d746ac0",
+    "E:\\SPARROW\\5_Test\\20260824_3\\outputs\\paired_temporal_gates.parquet": "91f11b42af13526f08b5309c5d1143fdb264129ac6c603bfbac5479d87451664",
+    "E:\\SPARROW\\5_Test\\20260824_3\\outputs\\six_mu_ensemble_predictions.parquet": "db46388debe579b44fc5e6613766069d2b19954e5dcd2d03723042dff53378fe",
+    "E:\\SPARROW\\5_Test\\20260824_3\\outputs\\ensemble_performance_metrics.parquet": "7726ea3d1746dbf607e528b0f876eb1bf2b1c48f9cfd5ae4e701533274eef02a",
+    "E:\\SPARROW\\5_Test\\20260824_3\\outputs\\ensemble_monthly_residuals.parquet": "20780c3513ff878bdced63d83318b7d467432ba70588bf13f452915c8b350822",
+    "E:\\SPARROW\\5_Test\\20260824_3\\reports\\temporal_decision.json": "f19d3cd6e565b0d183e7224e39979ed51b30f6c4921a0d30787a52136a987d56",
+    "E:\\SPARROW\\5_Test\\20260824_3\\reports\\technical_report.md": "eea76f38a29a9c431a8d38212a54931ea8ebfb1f5d7f32710138f8567e023804",
+    "E:\\SPARROW\\5_Test\\20260824_3\\reports\\stage_completion_audit.json": "ea01f02b97d758e41f56e6236d3ca6c70be20925934e13024eeb7d47cab048bb",
+    "E:\\SPARROW\\5_Test\\20260824_1\\locks\\parent_lock_registry.json": "696e26fbb65995244338a9f2edcb221c50f832b7cfc314bf15845dd6e2d64778",
+    "E:\\SPARROW\\5_Test\\20260824_2\\final_lock.json": "0c58be22a3524e09572022c0472e232f5442218b21ad9a2cd7c0806b0ecc9177"
+  }
+}

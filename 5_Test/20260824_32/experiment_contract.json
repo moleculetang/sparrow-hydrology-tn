@@ -1,0 +1,40 @@
+{
+  "stage": "20260824_32",
+  "parent": "20260824_31 PASS_STAGE31_READY_FOR_20260824_32",
+  "production_structure": "L0 parameter-consistent pre-1961 equilibrium + hydrology-coupled mineral/lower dissolved N + routed hydraulic exposure + global C-Q hinge",
+  "final_training": "all formal river-channel TN observations from 2021-2024",
+  "retrospective_back_report": "2016-2020 observations; explicitly reverse-time descriptive evaluation, not OOF or external validation",
+  "forcing": "CENTRAL effective monthly availability calendar; Reach-year mass unchanged",
+  "parameters": ["log_alpha_contact", "beta_contact", "v_f", "delta_path", "beta_low", "beta_high", "log_sigma"],
+  "p2": "ridge=12 station training-history intercept, exported separately; never applied to unmonitored Reach products",
+  "production_output": {
+    "grain": "1961-2024 x 12 months x 230 Reach",
+    "required_fields": [
+      "source-tagged local fast and slow N loads",
+      "source-tagged routed outlet N loads",
+      "mass-conserving process TN concentration",
+      "global P1 C-Q adjusted TN concentration",
+      "frozen hydrology provenance and water volume"
+    ]
+  },
+  "claim_boundary": [
+    "temporal OOF and held-out Reach support passed",
+    "whole-terminal-tree transfer did not pass because only seven independent trees produced wide uncertainty",
+    "230-Reach output is a model application, not proof of uniform spatial accuracy",
+    "P2 improves previously monitored stations but is not spatially transferable",
+    "fixed agricultural Legacy candidates were not supported",
+    "EARLY/LATE calendars are sensitivity scenarios, not observed fertilizer dates",
+    "2024 FERT/MAN/BNF and post-2020 deposition/spatial crop-area extensions remain forcing limitations"
+  ],
+  "forbidden": [
+    "new data, parameters, structures or post-result gate changes",
+    "P2 at unmonitored reaches",
+    "calling the back-report independent validation",
+    "claiming full 230-Reach spatial validation",
+    "temperature, WWTP, SAS, fitted groundwater age or hydrology refit"
+  ],
+  "runtime": {"environment": "sparrow", "threads": 1, "warning_gib": 12, "hard_stop_gib": 16},
+  "spinup_verification": "The differentiable periodic solution is independently checked against explicit 1961-1970 cycling to absolute terminal delta <=1e-6 kg N; the verification ceiling is 10000 cycles and does not alter fitted equations.",
+  "authorized_successor": null,
+  "hard_stop": true
+}

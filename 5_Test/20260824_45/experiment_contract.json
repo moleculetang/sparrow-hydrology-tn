@@ -1,0 +1,53 @@
+{
+  "stage": "20260824_45",
+  "status": "REGISTERED_BEFORE_RESULTS",
+  "candidate": "L0_v2_U3_R0",
+  "forward": "E:/SPARROW/5_Test/20260824_41/scripts/l0_v2_core.py with regionalized=false",
+  "hydrology": "frozen 1961-2009 deterministic reconstruction plus exact 2010-2024 canonical 20260828_9 daily hydrology",
+  "objective": {
+    "population_weight": 0.90,
+    "conditional_weight": 0.10,
+    "station_weight": 0.90,
+    "tree_weight": 0.10,
+    "site_ridge": 12.0,
+    "site_prior_scaled_by_conditional_weight": true,
+    "global_priors": "unchanged L0-v2 priors divided by J_ref=119"
+  },
+  "temporal_folds": ["T1", "T2", "T3"],
+  "optimizer": {
+    "deterministic_multistarts": 5,
+    "adamw_steps": 100,
+    "adamw_learning_rate": 0.03,
+    "lbfgs_max_iter": 120,
+    "selected_solution_projected_kkt_tolerance": 1e-5,
+    "gradient_clip_norm": 10.0
+  },
+  "source_tags": [
+    "fertilizer_kg_n",
+    "manure_kg_n",
+    "cropland_bnf_kg_n",
+    "atmospheric_deposition_kg_n"
+  ],
+  "source_tag_semantics": {
+    "role": "nonselecting additive bookkeeping only",
+    "crop_allocation": "each month-reach crop uptake is allocated to tags in proportion to their pre-crop mineral mass",
+    "operators": "all tags use the same fitted contact, fast/percolation partition, lower release, other-loss and channel equations",
+    "aggregate_invariance": "the sum over tags must reproduce aggregate input, crop, fast, slow, other loss, mineral state and lower state",
+    "claim_boundary": "tags attribute modeled mass under a deterministic proportional convention; they do not identify real molecular source provenance"
+  },
+  "engineering_gates": [
+    "zero 1961 incremental mineral and lower state",
+    "daily probability, zero-water and operator closure",
+    "land closure <= 1e-9 relative",
+    "channel removed-sink closure <= 1e-9 relative",
+    "source-tag all-period and 2010-2024 closure <= 1e-9 relative",
+    "source-tag monthly aggregate maximum relative mismatch <= 1e-9",
+    "station-position water and Q features come only from the frozen hydrologic interface",
+    "all five starts finite and selected projected KKT <= 1e-5",
+    "site effects centered <= 1e-10",
+    "peak RSS < 12 GiB",
+    "atomic outputs and no partial files"
+  ],
+  "predictive_role": "report temporal OOF versus Stage32 and Stage41 R0 descriptively; predictive improvement is not required to establish the mass-exact parent",
+  "successor_rule": "Authorize Stage46 only if every engineering and source-ledger gate passes."
+}

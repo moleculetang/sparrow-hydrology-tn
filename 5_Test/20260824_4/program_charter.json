@@ -1,0 +1,57 @@
+{
+  "program_id": "20260824_monthly_tn_structural_diagnosis_and_upgrade",
+  "created_before_new_candidate_tn_results": true,
+  "primary_scientific_question": "Which low-dimensional change can improve monthly TN dynamics after water quantity, quick/groundwater partitioning and hydrologic state are fixed to Q72?",
+  "primary_prediction_target": "monitored-station temporal prediction",
+  "primary_endpoint": "station-macro station-demeaned log1p anomaly RMSE",
+  "secondary_endpoint": "station-macro absolute log1p RMSE",
+  "spatial_boundary": "LOSO and LOTO are diagnostic and must be nested; no claim of reliable 230-Reach extrapolation is allowed unless a separate absolute spatial-skill gate passes.",
+  "frozen_core": {
+    "network_framework": "SPARROW mass-conserving source-delivery-routing regression",
+    "water_source": "Q72 structural_canonical main only",
+    "hydrologic_information": [
+      "routed discharge",
+      "quick and groundwater water partitions",
+      "Q72 state and antecedent wetness",
+      "Q72-derived hydraulic exposure inputs"
+    ],
+    "geometry_role": "static reach length and Andreadis width/depth; Andreadis reference discharge forbidden",
+    "legacy_requirement": "a persistent N-memory concept remains in the core, but F2 may test an equal-complexity relocation of the existing memory",
+    "formal_members": "S0 and S1-12 crossed with mu={12,36,60,96,144,240}",
+    "source_timing": "agricultural reconstruction remains annual/12; this is an input limitation, not observed monthly availability",
+    "development_support": [2016, 2021],
+    "oof_evaluation_years": [2018, 2019, 2020, 2021],
+    "retrospective_locked_year": 2022
+  },
+  "evidence_hierarchy": [
+    "P1 station-demeaned temporal OOF",
+    "P1 absolute temporal preservation",
+    "P2 monitored-station predictive preservation",
+    "nested spatial diagnostics",
+    "internal process fingerprints"
+  ],
+  "upgrade_rule": {
+    "anomaly_improvement": "paired simultaneous CI95 upper < 0",
+    "absolute_noninferiority": "paired simultaneous CI95 upper < 0.005 log1p unit",
+    "member_consistency": ">=10 of 12 members anomaly point-improved and absolute noninferior",
+    "p2_requirement": "monitored-station P2 predictive performance preserved",
+    "hard_numeric_gates": [
+      "optimizer success",
+      "exact parent nesting",
+      "mass and state closure",
+      "no registered parameter-boundary confounding",
+      "no eta-boundary confounding"
+    ],
+    "multiple_testing": "paired station blocks with Westfall-Young max-T across the registered candidate family"
+  },
+  "synthetic_gate": {
+    "required_before_observed_candidate_fit": true,
+    "null_replicates_per_family": 500,
+    "material_alternative_replicates_per_family": 500,
+    "maximum_false_upgrade_rate": 0.05,
+    "minimum_power": 0.8,
+    "maximum_condition_number": 30,
+    "maximum_absolute_key_parameter_correlation": 0.9
+  },
+  "claim_boundary": "A better likelihood or P2 readout is a monitored-station prediction upgrade, not evidence that a new nitrogen process has been identified. Internal Legacy stocks and fitted lags remain effective model states unless constrained by independent soil, vadose-zone, groundwater or tracer observations."
+}

@@ -1,0 +1,119 @@
+{
+  "program": "20260828_reservoir_process",
+  "status": "R2_TN_HYDROLOGY_INTERFACE_RELEASED",
+  "formal_fit_authorized": true,
+  "immutable_parent": "20260828_10 CANONICAL_TN_HYDROLOGY_INTERFACE_RELEASED",
+  "immutable_parent_product": {
+    "path": "E:\\SPARROW\\5_Test\\20260828_9\\outputs\\canonical_reach_daily_2006_2024.parquet",
+    "sha256": "a8c2b57d35de374a57798ab3e837dbf5c75cbd644275b6e52f888b20e16ca471",
+    "routing_source_fields": [
+      "local_fast_response_m3_s",
+      "local_slow_response_m3_s"
+    ]
+  },
+  "inventory_counts": {
+    "physical_or_candidate_entities": 35,
+    "artificial_candidates": 34,
+    "priority": 13,
+    "supplementary": 21,
+    "natural_lakes_excluded": 1,
+    "operator_authorized_priority": 13,
+    "development_fit_eligible_priority": 12,
+    "extension_only_priority": 1,
+    "priority_unresolved": 0
+  },
+  "authoritative_prior_registry": "E:\\SPARROW\\5_Test\\20260828_13\\outputs\\literature_prior_registry.parquet",
+  "evidence_source_policy": {
+    "preserved_unverified_source": "inputs/reservoir_specific_evidence.csv",
+    "independently_verified_source": "inputs/reservoir_verified_evidence.csv",
+    "merge_rule": "append and preserve conflicts; verified evidence never overwrites the user's original synthesis",
+    "post_2018_policy": "diagnostic only unless the row is an immutable static-design fact with the registered exception",
+    "post_2022_policy": "date-scoped extension diagnostic or transfer-edge constraint only"
+  },
+  "stages": [
+    {
+      "stage": "20260828_13",
+      "role": "entity, topology, literature and observation coverage audit",
+      "status": "complete_strict_inventory_13_priority_21_supplementary_13_authorized_12_fit_eligible"
+    },
+    {
+      "stage": "20260828_14",
+      "role": "conserving reservoir operator and synthetic tests",
+      "status": "complete_23_of_23_tests_pass"
+    },
+    {
+      "stage": "20260828_15",
+      "role": "formal hierarchical fitting contract",
+      "status": "all_13_disabled_parent_reproduction_exact_observation_likelihood_closed"
+    },
+    {
+      "stage": "20260828_16",
+      "role": "reservoir-specific literature meta-analysis and prior registry",
+      "status": "field_level_evidence_registered_old_lock_superseded_by_stage18_integration"
+    },
+    {
+      "stage": "20260828_17",
+      "role": "hard-gate resolution and authoritative registry synchronization",
+      "status": "complete_7_of_7_hard_gates_resolved"
+    },
+    {
+      "stage": "20260828_18",
+      "role": "all-priority-reservoir no-observation integration smoke test",
+      "status": "complete_all_13_mass_tracer_age_activation_tests_pass"
+    },
+    {
+      "stage": "20260828_19",
+      "role": "development-only reservoir observation-role and likelihood audit",
+      "status": "complete_general_91_station_likelihood_available_reservoir_specific_release_gate_not_authorized"
+    },
+    {
+      "stage": "20260828_20",
+      "role": "development-only low-dimensional R0/R1/R2 experiment",
+      "status": "complete_initial_grid_lower_boundary_detected"
+    },
+    {
+      "stage": "20260828_21",
+      "role": "physical-null boundary completion and development lock",
+      "status": "complete_R2_tau180_a0.25_d0.00_locked"
+    },
+    {
+      "stage": "20260828_22",
+      "role": "initial reservoir-storage sensitivity",
+      "status": "complete_pass_initial_state_converged"
+    },
+    {
+      "stage": "20260828_23",
+      "role": "locked 2019-2022 retrospective temporal evaluation",
+      "status": "complete_R2_all_noninferiority_gates_pass"
+    },
+    {
+      "stage": "20260828_24",
+      "role": "final 2006-2024 Reach and reservoir TN hydrology export",
+      "status": "complete_pass_tn_hydrology_interface_qa"
+    },
+    {
+      "stage": "20260828_25",
+      "role": "final synthesis and program lock",
+      "status": "complete_R2_TN_hydrology_interface_released"
+    },
+    {
+      "stage": "20260828_26",
+      "role": "independent artifact, data-quality, calculation and hash completion audit",
+      "status": "complete_28_of_28_checks_pass_ready_for_TN"
+    }
+  ],
+  "completion_audit": {
+    "status": "COMPLETE_VERIFIED_READY_FOR_TN",
+    "report": "E:\\SPARROW\\5_Test\\20260828_26\\reports\\program_completion_audit.json",
+    "lock": "E:\\SPARROW\\5_Test\\20260828_26\\locks\\program_completion_lock.json",
+    "checks_total": 28,
+    "checks_failed": 0
+  },
+  "legal_successor": "TN transport may consume the locked 20260828_24 Reach/reservoir interface. Any change to hydrology, reservoir structure or individual operation requires a separately registered experiment and cannot use TN outcomes to revise this hydrology lock.",
+  "forbidden_successors": [
+    "free 12-month release coefficients",
+    "Reach-specific arbitrary post-processing",
+    "rainfall-runoff parent refit together with reservoir rules",
+    "TN-informed reservoir selection"
+  ]
+}

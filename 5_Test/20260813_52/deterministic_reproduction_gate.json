@@ -1,0 +1,23 @@
+{
+  "terminal": "S111_DETERMINISTIC_REPRODUCTION_PASS",
+  "oof": {
+    "reference_rows": 7755,
+    "reproduced_rows": 7755,
+    "keys_identical": true,
+    "actual_identical": true,
+    "max_abs_prediction_difference_cfs": 0.0,
+    "reference_sha256": "6712d2f265532b759505d3a9de2d4112f033961be43221fe7b42971ba373bccc",
+    "reproduced_sha256": "6712d2f265532b759505d3a9de2d4112f033961be43221fe7b42971ba373bccc",
+    "pass": true
+  },
+  "validation_2019_2022": {
+    "reference_rows": 4509,
+    "reproduced_rows": 4509,
+    "keys_identical": true,
+    "actual_identical": true,
+    "max_abs_prediction_difference_cfs": 0.0,
+    "reference_sha256": "789d9bb13b18d453a9399e593ecea071df271164ef8d45b9dc5aba8da1b9a142",
+    "reproduced_sha256": "e135977425415e4bfb8c0b2c55f4d4c61691dd50261d2839d28ea929c6891554",
+    "pass": true
+  }
+}

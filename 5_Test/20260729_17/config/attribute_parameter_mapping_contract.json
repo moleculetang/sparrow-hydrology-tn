@@ -1,0 +1,25 @@
+{
+  "run_id": "20260729_17",
+  "parent_run_id": "20260729_16",
+  "required_parent_action": "BUILD_Q78_NAT_ATTRIBUTE_PARAMETER_MAPPING",
+  "prior_semantic_state": "development_prior_not_posterior",
+  "mapping_semantic_state": "fixed_attribute_mapping_not_calibrated",
+  "mapped_parameters": ["k_perc", "k_int", "k_g", "k_route"],
+  "global_parameters": {
+    "kappa_s": 1.0,
+    "gamma_ET": 1.0,
+    "p_perc": 2.0,
+    "p_int": 2.0,
+    "k_deep": 0.0
+  },
+  "mapping_coefficients": {
+    "k_perc": {"center": 0.08, "bedrock": 0.45, "soil_storage": -0.20},
+    "k_int": {"center": 0.20, "slope": 0.35, "bedrock": -0.35},
+    "k_g": {"center": 0.05, "slope": 0.35, "bedrock": -0.45, "soil_storage": -0.25},
+    "k_route": {"center": 0.85, "amplitude": 0.08, "slope": 0.50, "area": 0.25, "length": -0.25}
+  },
+  "joint_k_perc_k_int_upper": 0.75,
+  "next_action_if_pass": "RUN_SPATIALLY_PARAMETERIZED_Q78_NAT_CORE",
+  "next_action_if_fail": "REPAIR_Q78_NAT_ATTRIBUTE_PARAMETER_MAPPING"
+}
+

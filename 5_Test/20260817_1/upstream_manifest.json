@@ -1,0 +1,11 @@
+{
+  "E:\\SPARROW\\5_Test\\20260816_4\\outputs\\candidate_oof_predictions_2018_2021.parquet": "e3d697fc3213932a3914ff5ad9164178dbf285e8835ce6c05fbbbfa36917d28a",
+  "E:\\SPARROW\\5_Test\\20260816_4\\outputs\\candidate_state_summary_2010_2018.parquet": "3b84be3ad609806289d27c399504c3cf3abf9b32e46658fc714eeb4c8078c9a4",
+  "E:\\SPARROW\\5_Test\\20260816_4\\outputs\\candidate_fold_eta_parameters.parquet": "121f093dbb376121309645e3aa00b723b1af80f0d15f53aa0f1fb8cc9f999fb6",
+  "E:\\SPARROW\\5_Test\\20260816_5\\reports\\progressive_candidate_adjudication.csv": "d1aa4d0879f9d422314e6c7f1cdac16ea1f0c9c18588ab144d8f7a51b6e717c6",
+  "E:\\SPARROW\\5_Test\\20260816_1\\outputs\\soil_observation_operator_by_reach.parquet": "2e3aec115be1658a1d0ecdba134af89f1be3c521b89faeb88e4d0e94195a8a91",
+  "E:\\SPARROW\\5_Test\\20260816_2\\reports\\soil_tau_admissibility.csv": "efe848d33367b5b21234efc87f555b7444574b9645233c8b55d3e78c3970a3ed",
+  "E:\\SPARROW\\5_Test\\20260816_3\\reports\\delivery_mu_hydrogeo_plausibility.csv": "4841b867af91b0aaba33689817b6089dd3986d860c2d1cc8b72736c830410619",
+  "E:\\SPARROW\\5_Test\\20260816_4\\reports\\candidate_oof_metrics.csv": "623a32f2ea5365b16ef87ae503c296bd8e107c6bc047803bb60e4d452ca8a132",
+  "E:\\SPARROW\\5_Test\\20260816_4\\scripts\\run_stage4.py": "37d0bcb0174a27fafaace592f85739914374472f29506b0055725ff2a6c8c9ac"
+}

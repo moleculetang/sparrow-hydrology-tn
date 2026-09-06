@@ -1,0 +1,85 @@
+{
+  "stage": "20260826_13",
+  "status": "registered_before_candidate_training",
+  "hypothesis": "A low-capacity differentiable mapping from multiscale static catchment attributes to bounded HBV parameters can improve transferable total-flow prediction while retaining exact HBV mass conservation; independent state products may subsequently constrain internal response states.",
+  "parent": "20260825_7 GLOBAL_HBV_R0",
+  "registered_candidates": {
+    "GLOBAL_HBV_PARENT": "frozen eight global raw parameters",
+    "DPL_HBV_LOCAL_STATIC": "seven local static attributes -> 16 hidden units -> eight bounded raw-parameter offsets",
+    "DPL_HBV_MULTISCALE_STATIC": "local attributes + upstream mean/std + area (22 inputs) -> 16 hidden units -> eight bounded raw-parameter offsets",
+    "DPL_HBV_MULTISCALE_STATE": "only after independent-state QA and static DPL gate",
+    "MC_FLUX_GATE_DIAGNOSTIC": "only bounded mass-conserving infiltration and fast/slow transfer gates after static DPL evaluation"
+  },
+  "parameter_mapping_contract": {
+    "output": "eight Reach-specific raw HBV parameters",
+    "final_layer_initialization": "all zeros so epoch 0 exactly reproduces the frozen parent",
+    "raw_offset_bound": "parent raw value +/- 1.5 for every Reach and parameter",
+    "first_round_time_dependence": false,
+    "first_round_station_identity": false
+  },
+  "time_contract": {
+    "periodic_spinup": "2006-2009",
+    "optimization": "2010-2015",
+    "early_stopping": "2016",
+    "locked_development_temporal_evaluation": "2017-2018",
+    "locked_retrospective": "2019-2022 after all development decisions and full-development parameter lock"
+  },
+  "spatial_contract": {
+    "terminal_trees": [
+      1,
+      20,
+      22,
+      26,
+      56,
+      166,
+      212,
+      217
+    ],
+    "target_tree_Q_2010_2018": "completely excluded from mapping-network optimization, early stopping and model selection",
+    "target_station_history": "zero target-tree discharge history may enter prediction",
+    "loss_weighting": "equal terminal-tree weight, then equal station weight within tree"
+  },
+  "gates": {
+    "primary_metric": "paired tree-block delta log-RMSE",
+    "noninferiority": "CI95 upper < 0.01",
+    "improvement": "CI95 upper < 0",
+    "station_median_NSE_max_drop": 0.02,
+    "median_absolute_PBIAS_max_worsening_percentage_points": 2.0,
+    "flow_regimes": "high-flow and low-flow must each be noninferior",
+    "seed_consistency": "at least 2 of 3 registered seeds agree in direction",
+    "promotion": "all temporal and full-tree gates pass, and temporal or spatial CI95 upper < 0"
+  },
+  "independent_state_contract": {
+    "qa_candidates": [
+      "ESA CCI soil moisture",
+      "SMAP soil moisture",
+      "GRACE terrestrial water storage",
+      "PML evapotranspiration"
+    ],
+    "minimum_support_for_H2": "ESA CCI, GRACE and PML: at least two improve; SMAP must not clearly worsen",
+    "maximum_claim": "H2 components state-consistent sensitivity",
+    "tracer_required_for_H3": true
+  },
+  "authorization_levels": {
+    "H0": "total flow unsupported",
+    "H1": "total flow supported; response components internal only",
+    "H2": "response components compatible with independent states and usable for structured sensitivity",
+    "H3": "components independently identified by tracer or conductivity evidence"
+  },
+  "forbidden": [
+    "TN observations in hydrologic fitting, early stopping or model selection",
+    "Gauge/P2 station-history correction in the 230-Reach product",
+    "target-tree or target-station discharge history in spatial evaluation",
+    "station identity, station random intercepts or terminal-tree random intercepts",
+    "unrestricted residual LSTM or neural total-flow correction as the TN interface",
+    "daily neural rewriting of all HBV parameters in the first candidate round",
+    "reservoir or dam-operation equations",
+    "Andreadis reference discharge or upstream area; only width and depth may be used",
+    "unverified nationwide 1-km groundwater-level raster",
+    "temperature in this hydrology program",
+    "claims of observed surface water, groundwater, new water, old water or water age without H3 evidence",
+    "automatic folders beyond 20260826_22"
+  ],
+  "software_preflight": "Use a dedicated PyTorch environment; do not bypass OpenMP conflicts with unsafe duplicate-library environment flags.",
+  "authorized_successor": "20260826_14"
+}

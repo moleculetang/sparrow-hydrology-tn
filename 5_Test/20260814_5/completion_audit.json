@@ -1,0 +1,213 @@
+{
+  "audit_id": "20260814_5_completion_audit",
+  "objective_requirements": 6,
+  "checks": {
+    "R1_bootstrap_CI_gate": {
+      "pass": true,
+      "evidence": {
+        "fixed_recomputed": [
+          {
+            "model": "main",
+            "low_ci_high": 0.0017275892335791604,
+            "tail_ci_high": -0.00016970569650319909,
+            "reported_ci_match": true,
+            "pbias": 5.648867566868256,
+            "pbias_guard": true,
+            "reported_pbias_guard_consistent": true
+          },
+          {
+            "model": "flash",
+            "low_ci_high": 0.0015046511274640882,
+            "tail_ci_high": 0.0036500002703323134,
+            "reported_ci_match": true,
+            "pbias": 4.886438159919864,
+            "pbias_guard": true,
+            "reported_pbias_guard_consistent": true
+          },
+          {
+            "model": "slow",
+            "low_ci_high": 0.005845604404834419,
+            "tail_ci_high": 0.011753141921989185,
+            "reported_ci_match": true,
+            "pbias": 5.582255069204388,
+            "pbias_guard": true,
+            "reported_pbias_guard_consistent": true
+          },
+          {
+            "model": "buffer",
+            "low_ci_high": 0.009104387661347019,
+            "tail_ci_high": 0.00714518606456591,
+            "reported_ci_match": true,
+            "pbias": 5.156854500553338,
+            "pbias_guard": true,
+            "reported_pbias_guard_consistent": true
+          },
+          {
+            "model": "wet",
+            "low_ci_high": 0.0009263081988665358,
+            "tail_ci_high": 0.0058680139188545645,
+            "reported_ci_match": true,
+            "pbias": 6.117309744876732,
+            "pbias_guard": true,
+            "reported_pbias_guard_consistent": true
+          }
+        ],
+        "conditional_low": {
+          "clusters": 94,
+          "point": -0.00086291384100734,
+          "ci95_low": -0.0028902056140003574,
+          "ci95_high": 0.0010891757528955776
+        },
+        "conditional_tail": {
+          "clusters": 95,
+          "point": -0.0003177090460734222,
+          "ci95_low": -0.0013586960280935353,
+          "ci95_high": 0.000699133961677528
+        }
+      }
+    },
+    "R2_overall_PBIAS_guard": {
+      "pass": true,
+      "evidence": {
+        "H0_pbias": 5.697999770233765,
+        "candidate_checks": [
+          {
+            "model": "main",
+            "low_ci_high": 0.0017275892335791604,
+            "tail_ci_high": -0.00016970569650319909,
+            "reported_ci_match": true,
+            "pbias": 5.648867566868256,
+            "pbias_guard": true,
+            "reported_pbias_guard_consistent": true
+          },
+          {
+            "model": "flash",
+            "low_ci_high": 0.0015046511274640882,
+            "tail_ci_high": 0.0036500002703323134,
+            "reported_ci_match": true,
+            "pbias": 4.886438159919864,
+            "pbias_guard": true,
+            "reported_pbias_guard_consistent": true
+          },
+          {
+            "model": "slow",
+            "low_ci_high": 0.005845604404834419,
+            "tail_ci_high": 0.011753141921989185,
+            "reported_ci_match": true,
+            "pbias": 5.582255069204388,
+            "pbias_guard": true,
+            "reported_pbias_guard_consistent": true
+          },
+          {
+            "model": "buffer",
+            "low_ci_high": 0.009104387661347019,
+            "tail_ci_high": 0.00714518606456591,
+            "reported_ci_match": true,
+            "pbias": 5.156854500553338,
+            "pbias_guard": true,
+            "reported_pbias_guard_consistent": true
+          },
+          {
+            "model": "wet",
+            "low_ci_high": 0.0009263081988665358,
+            "tail_ci_high": 0.0058680139188545645,
+            "reported_ci_match": true,
+            "pbias": 6.117309744876732,
+            "pbias_guard": true,
+            "reported_pbias_guard_consistent": true
+          }
+        ],
+        "conditional_delta_abs_pbias_pp": -0.1253516658996432
+      }
+    },
+    "R3_conditional_OOF_label": {
+      "pass": true,
+      "evidence": {
+        "rows": 7755,
+        "labels": [
+          "conditional_parameter_oof_after_structure_selection"
+        ]
+      }
+    },
+    "R4_groundwater_evidence_semantics": {
+      "pass": true,
+      "evidence": {
+        "allowed": [
+          "identifying",
+          "supportive",
+          "non_identifying",
+          "contradictory"
+        ],
+        "current": "non_identifying",
+        "reason": "no_single_production_candidate_passed_development_flow_gate"
+      }
+    },
+    "R5_locked_confirmation": {
+      "pass": true,
+      "evidence": {
+        "locked_at": "2026-08-14T11:43:59.958548+00:00",
+        "confirmed_at": "2026-08-14T11:46:05.891548+00:00",
+        "threshold_hash": "fbed81173c9f0f49e3dc1e60b36529485d62ddcd5bfb89a6606a41102fe0d341",
+        "tail_selection": "frozen_station_Q75_local_peak_then_2_to_6_consecutive_monotone_months_below_frozen_upstream_input_Q75_excluding_edges_and_right_censor",
+        "tail_events": 276,
+        "both_worsen": false
+      }
+    },
+    "R6_interface_and_reproducibility": {
+      "pass": true,
+      "evidence": {
+        "rows": 46920,
+        "required_fields": [
+          "source_water_capacity_mm",
+          "catchment_area_km2"
+        ],
+        "q_local_identity_max_error_mm": 5.3290705182007514e-14,
+        "repro_hashes_match": true,
+        "threads": {
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1"
+        }
+      }
+    },
+    "folder_iteration_and_README": {
+      "pass": true,
+      "evidence": {
+        "20260814_1": {
+          "exists": true,
+          "readme": true,
+          "skipped": false
+        },
+        "20260814_2": {
+          "exists": true,
+          "readme": true,
+          "skipped": false
+        },
+        "20260814_3": {
+          "exists": true,
+          "readme": true,
+          "skipped": false
+        },
+        "20260814_4": {
+          "exists": true,
+          "readme": false,
+          "skipped": true
+        },
+        "20260814_5": {
+          "exists": true,
+          "readme": true,
+          "skipped": false
+        }
+      }
+    },
+    "immutable_lock_hashes": {
+      "pass": true,
+      "evidence": {
+        "mismatches": [],
+        "protected_artifacts": 17
+      }
+    }
+  },
+  "terminal_state": "operational_retained_interface_provisional",
+  "all_pass": true
+}

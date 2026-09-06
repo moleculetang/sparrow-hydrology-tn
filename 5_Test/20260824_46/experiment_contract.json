@@ -1,0 +1,70 @@
+{
+  "stage": "20260824_46",
+  "status": "REGISTERED_BEFORE_RESULTS",
+  "parent": "L0_v2_U3_R0",
+  "objective": "locked U3_P90_S90",
+  "temporal_folds": ["T1", "T2", "T3"],
+  "candidates": {
+    "REG3_CONTACT": {
+      "equation": "log_alpha_r = log_alpha + gamma_soc*z_soc + gamma_clay*z_clay + gamma_slope*z_slope",
+      "bounds": "each gamma in [-0.5,0.5]",
+      "prior_sd": 0.25,
+      "nesting": "all gamma=0",
+      "interpretation": "three land properties alter modeled upper-zone N-water contact"
+    },
+    "REG3_OBSERVATION": {
+      "equation": "population_logC += gamma_soc*z_soc + gamma_clay*z_clay + gamma_slope*z_slope at the observation reach",
+      "bounds": "each gamma in [-0.5,0.5]",
+      "prior_sd": 0.25,
+      "nesting": "all gamma=0",
+      "interpretation": "same covariates form a transferable spatial readout control; it is not a process claim"
+    },
+    "DYN_HYDRO_DELIVERY": {
+      "equation": "log_alpha_r,t = log_alpha + beta_D*tanh(mean(z_upper,z_lower,z_excess,z_fast_fraction)/2)",
+      "climatology": "2010-2020 reach-month-of-year; reach-wise anomaly SD",
+      "bounds": "beta_D in [-1,1]",
+      "prior_sd": 0.35,
+      "nesting": "beta_D=0",
+      "interpretation": "the previously supported frozen hydrologic-state score modulates land-to-water contact"
+    },
+    "SOURCE2": {
+      "equation": "effective input = exp(delta_source)*(fertilizer+manure+BNF) + exp(-delta_source)*atmospheric deposition",
+      "bounds": "delta_source in [-1,1]",
+      "prior_sd": 0.5,
+      "nesting": "delta_source=0",
+      "interpretation": "one centered agricultural-versus-atmospheric source contrast; source uncertainty, not observed source provenance"
+    },
+    "MINERAL_LIFETIME": {
+      "equation": "daily other-loss probability = 1-exp(-1/tau_mineral_days)",
+      "bounds_days": [182.625, 3652.5],
+      "prior": "log(tau) centered on log(365.25), sd=log(2)",
+      "nesting": "tau=365.25 days",
+      "interpretation": "finite labile-mineral persistence; not agricultural Legacy age"
+    },
+    "AQ_SIZE": {
+      "equation": "v_f,r = v_f*exp(beta_size*z_log_median_routed_Q_2010_2020)",
+      "bounds": "beta_size in [-0.75,0.75]",
+      "prior_sd": 0.35,
+      "nesting": "beta_size=0",
+      "interpretation": "one hydrology-derived river-size scaling of aquatic removal"
+    }
+  },
+  "shared_covariate_rule": "REG3_CONTACT and REG3_OBSERVATION use the identical SOC/clay/slope design so process embedding can be separated from readout compensation.",
+  "optimizer": {
+    "deterministic_starts": 3,
+    "adamw_steps": 60,
+    "lbfgs_max_iter": 80,
+    "selected_projected_kkt_tolerance": 1e-5,
+    "parent_fold_solution_is_first_start": true
+  },
+  "temporal_gate": {
+    "population_station_noninferior": "paired station-block CI95 upper < 0.005",
+    "population_tree_noninferior": "paired tree-block CI95 upper < 0.005",
+    "improvement": "at least one of station or tree CI95 upper < 0",
+    "conditional": "reported but not used to select process structure",
+    "boundary": "no extra parameter at its bound in >=2/3 folds",
+    "regional_modifier": "maximum absolute fitted REG3 modifier <=1.0 log unit"
+  },
+  "outputs": "atomic per-candidate checkpoints plus combined predictions, parameters, structural audits, metrics and decision",
+  "successor_rule": "Only temporally eligible candidates enter Stage47 nested spatial validation."
+}

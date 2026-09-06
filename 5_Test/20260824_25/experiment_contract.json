@@ -1,0 +1,32 @@
+{
+  "stage": "20260824_25",
+  "parent": "20260824_24 locked TN mainline",
+  "hypotheses": [
+    "P2 improvement is primarily station mean-bias correction rather than a post-2022 process model",
+    "the required N ledger is numerically complete through 2024 but several late years are carry-forward rather than native observations"
+  ],
+  "read_only_inputs": [
+    "20260824_21 temporal OOF predictions and parameters",
+    "20260824_24 final station predictions",
+    "20260824_10 annual N ledger",
+    "20260824_12 monthly source forcing",
+    "20260824_18 audited TN observations"
+  ],
+  "p2_definition": "log1p(P2)=log1p(P1)+sum_train_station(log1p(obs)-log1p(P1))/(n_station+12)",
+  "required_n_variables": [
+    "fertilizer_kg_n",
+    "manure_kg_n",
+    "cropland_bnf_kg_n",
+    "atmospheric_deposition_kg_n",
+    "crop_removal_kg_n"
+  ],
+  "forbidden": [
+    "new TN fit",
+    "candidate selection",
+    "new source variables outside the registered long-legacy equation",
+    "2025 data",
+    "HTML output"
+  ],
+  "memory_contract_gib": {"warning": 12, "hard_stop": 16},
+  "authorized_successor": "20260824_26"
+}

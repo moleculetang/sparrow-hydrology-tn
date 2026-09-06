@@ -1,0 +1,34 @@
+{
+  "stage": "20260827_4",
+  "hypothesis": "A regionalized hydrologic-signature constraint can correct the spatial amount of slow response while preserving the clean DYN2P total-flow simulation and within-Reach mass closure.",
+  "parent": "20260827_2 clean DYN2P alpha=0.5",
+  "reason_for_opening": "20260827_3 passed event, memory, stability and nondegeneracy checks but failed BFI spatial amount checks",
+  "operator": {
+    "name": "SIG2P conservative component reallocation",
+    "training_target": "median of Lyne-Hollick, Eckhardt and UKIH BFI calculated from 2010-2015 development discharge",
+    "spatial_predictors": "22 frozen multiscale physical/hydroclimate attributes created without discharge and using hydroclimate only through 2015",
+    "ridge_lambda": 12.0,
+    "intercept_penalized": false,
+    "equation": "logit(f_slow_corrected[r,t]) = logit(f_slow_DYN2P[r,t]) + clip(logit(BFIhat_r)-logit(mean_f_slow_DYN2P_r), -2, 2)",
+    "identity": "fast_corrected + slow_corrected = original DYN2P total locally before topology routing",
+    "station_identity_forbidden": true,
+    "target_station_history_forbidden": true
+  },
+  "development_evaluation": "2017-2018 only; not formal temporal test",
+  "registered_gates": {
+    "2017_2018_slow_fraction_BFI_spearman_min": 0.3,
+    "2017_2018_slow_fraction_BFI_RMSE_max": 0.2,
+    "high_flow_fast_direction_station_fraction_min": 0.8,
+    "slow_memory_direction_station_fraction_min": 0.8,
+    "tree_block_ridge_RMSE_better_than_climatology": true,
+    "offset_boundary_fraction_max": 0.1,
+    "component_closure_max_abs_m3_s": 1e-10,
+    "total_flow_change_max_abs_m3_s": 1e-10
+  },
+  "formal_test_firewall": {
+    "2019_2022_observed_discharge": "forbidden",
+    "four_station_observations_and_mapping": "forbidden",
+    "TN": "forbidden"
+  },
+  "successor": "20260827_5"
+}

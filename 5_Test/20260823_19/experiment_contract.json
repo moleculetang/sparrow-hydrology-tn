@@ -1,0 +1,26 @@
+{
+  "stage": "20260823_19",
+  "status": "registered_before_validation",
+  "hypothesis": "A zero-target-history regional MAP5 algorithm can retain most gauged-station MAP skill while improving transferable spatial prediction and preserving river-network closure.",
+  "development_period": "2006-2018",
+  "locked_temporal_period": "2019-2022",
+  "station_spatial_test": "ten outer groups; candidate, prior and reconciliation lambda reselected using only the other groups",
+  "whole_tree_test": "eight outer groups made from complete terminal trees; all selection repeated without held-out trees",
+  "eligible_algorithms": ["R0_GLOBAL_ZERO", "R1_HB5_ATTRIBUTES", "R2_HB5_ATTRIBUTES_EUCLIDEAN", "R3_HB5_ATTRIBUTES_RIVER_NETWORK"],
+  "spatial_gates": {
+    "station_mean_log_RMSE_paired_CI95_upper_vs_R0_below": 0.0,
+    "station_improvement_fraction_vs_R0_min": 0.60,
+    "station_mean_log_RMSE_margin_vs_Q72": 0.03,
+    "whole_tree_mean_log_RMSE_margin_vs_R0": 0.03
+  },
+  "temporal_retention_gates_relative_to_local_station_MAP": {
+    "pooled_NSE_decline_max": 0.02,
+    "station_median_NSE_decline_max": 0.03,
+    "log_RMSE_increase_max": 0.03,
+    "absolute_PBIAS_pct_max": 5.0
+  },
+  "reconciliation": "lambda reselected inside every spatial outer training set from [0.01,0.1,1,10]",
+  "external_four_stations_read": false,
+  "promotion_requires_all_gates": true,
+  "authorized_successor": "20260823_20"
+}

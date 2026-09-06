@@ -1,0 +1,19 @@
+{
+  "stage": "20260823_25",
+  "status": "registered_before_weight_selection",
+  "hypothesis": "For an ungauged target, spatial Gauge correction should be reliability-shrunk toward Q72; choose the largest correction weight that remains spatially noninferior to Q72.",
+  "prediction": "log1p(Q_unknown)=log1p(Q72)+w*[log1p(Q_spatial_gauge)-log1p(Q72)]",
+  "weight_grid": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+  "selection": "largest eligible weight, prioritizing unified spatial structure over point improvement",
+  "eligibility_gates": {
+    "paired_station_bootstrap_CI95_upper_delta_log_RMSE_vs_Q72": 0.03,
+    "pooled_NSE_decline_vs_Q72_max": 0.02,
+    "station_median_NSE_decline_vs_Q72_max": 0.03,
+    "absolute_PBIAS_worsening_vs_Q72_max_percentage_points": 5.0
+  },
+  "known_gauge_weight": 1.0,
+  "unknown_gauge_weight": "selected here",
+  "if_selected_weight_zero": "spatial Gauge correction not supported; unknown locations use Q72 and spatial search stops",
+  "reach_flow_product": "Q72 remains the unknown-Reach conserving flow baseline; Gauge reliability blend never changes routed water",
+  "external_four_station_outcomes_read": false
+}

@@ -1,0 +1,947 @@
+[
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\experiment_contract.md",
+    "size": 2866,
+    "sha256": "6e40bbf4621f4455a6015ffcbb817595216e8c66ee23a8f9107d39e5236d5558"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\README.md",
+    "size": 5173,
+    "sha256": "bfc2ff0c70197f3e694ffd4c76a64a3496928f2ba6ba709403a1f84eef5d0b64"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\terminal_gate.json",
+    "size": 743,
+    "sha256": "92ce36ea32aebdc664f6b9e1608b0af49857dc836cdda4cd96d46c9c2e1e6ecb"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\inputs\\canonical_signal_registry.csv",
+    "size": 105000,
+    "sha256": "046e290e473d870704b6480c24864b95ddd609060cda915ac76306e25ece19a7"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\inputs\\confirmed_evaluable_nearest_downstream_paths.csv",
+    "size": 7639,
+    "sha256": "ca88aad60a412e4d944ea23d3d04114d7adee33bbe6c4ab1ff92bd155fe1e739"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\inputs\\scenarios\\B0_indata.parquet",
+    "size": 5072883,
+    "sha256": "230a3c750602d8cd74ef2dc28e978b59ddacab99c49138309078fd499336b72f"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\inputs\\topology\\topology_edges.csv",
+    "size": 18988,
+    "sha256": "2daa0a1df1e8b4d5cf364492068be88e410c3d6228fe417275fda3bc4afd37f9"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\literature\\literature_evidence_registry.csv",
+    "size": 2080,
+    "sha256": "ae766e8c201ddce7ed65c8ff7188d0e0836e7b6f53983d377631d8f6d726a154"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\literature\\literature_method_audit.md",
+    "size": 2209,
+    "sha256": "5cf89603acc79a45b5156efa57b119b5764bf0add5b1907651a3a72c891e619e"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\logs\\completion_audit.json",
+    "size": 3547,
+    "sha256": "68fbdf973bab95bc2d945ff824a6288ac9ab9823107d4b957c731c78589cb49b"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\logs\\design_artifact_repair.json",
+    "size": 1757,
+    "sha256": "1090a62ad93ebee012308d3e502177d841c2df2a30ee027029c09199d387cdfb"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\logs\\G1_b0_reproduction.json",
+    "size": 117,
+    "sha256": "1d26ee4237abde92cb448da418c1e80bacc38652e1dc47ff6c9a7fa9c11f9f68"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\logs\\G5_G8_dynamic_inference.json",
+    "size": 2100,
+    "sha256": "b3fabeffb701981e2474a0020bbd491c85e31daf7bb76cad727c3f94f0b30002"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\logs\\I0_protection_gate.json",
+    "size": 1110,
+    "sha256": "a40a54be3254f7f54f7b00a0764edbd83268119a5edd62077808afb38e2c81c5"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\logs\\oof_identity.json",
+    "size": 172,
+    "sha256": "910e705ecdee6e1879c62d5316a7a9313c3d4ebc250b608ae4dbab7b14e36a11"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\logs\\corrupt_design_artifact_backup\\fit_2006_2013_eval_2014_2015__augmented_map_design_matrix.npz.corrupt",
+    "size": 73179,
+    "sha256": "7a05c013766f28969fbdaab873fc2b4a81ebb64493919a5224000a44d1c8a51f"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\logs\\corrupt_design_artifact_backup\\fit_2006_2013_eval_2014_2015__observation_design_matrix.npz.corrupt",
+    "size": 51053,
+    "sha256": "3f265b1f62415b69052e75db20175831b5b1ea7ef57ccc9a63d485bf6686f7b7"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_fold_manifest.csv",
+    "size": 495,
+    "sha256": "940575907412c05827092955a0793a6194d11c5937e34a5f59f97fdd875aeb3d"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\q72_three_fold_oof_predictions.parquet",
+    "size": 3045431,
+    "sha256": "ec227e9e015e9096e4745c7dd4964fea5170415c1c49774dff6ac23f3e5b4596"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\run_manifest.json",
+    "size": 1726,
+    "sha256": "ab7a9eeba3b47b0184a1fb5ad9b09af8fd6c454a208e36620da532b112a1b50e"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\evaluation_predictions.csv",
+    "size": 2097321,
+    "sha256": "08cdcbd243befdcb05ff55d91463e5fe1c82d2de3adf69f3c839dbfc63b2b381"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\design_standardization.csv",
+    "size": 3562,
+    "sha256": "a3a9b39c1ebfbf192e957eb21acdc5125689b28acd62f5459dc2a538b4642e40"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_fixed_parameters.csv",
+    "size": 4494,
+    "sha256": "f9e13034a30869963df6ab9f2f186b9eeeb62bc775405583c4c0258c19aad35e"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_good_validation_stations.csv",
+    "size": 36849,
+    "sha256": "8f0a8b5e8811b6b393a2bfcdc1e36afa126e589456b3270c517d4d4dfe4fc61d"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_hyperparameter_grid.csv",
+    "size": 520,
+    "sha256": "9c576b84419f91847e4231e407f358638469a0ba6e641a7b0d08854c38af656a"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_metrics_by_station.csv",
+    "size": 56137,
+    "sha256": "f0a14bd0124e99176ec27cd43ce67b4535cb0a23a900da81a3481c130e0e55d4"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_metric_summary.csv",
+    "size": 451,
+    "sha256": "14e5b49c74f5fbc63891838d5bd5b505dc0879e499a84bbd90fd48d45f376447"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_not_good_validation_stations.csv",
+    "size": 19702,
+    "sha256": "50d034b6d48facd448aa9d6acdd25e70136838ca11e97e1fcd326f6a60e285b9"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_parameter_group_strength.csv",
+    "size": 1186,
+    "sha256": "1bed8d13f0a59b3283540d4555d5e64ea7e52637fe8b36c2eab25d230ccebc89"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_prediction_vs_observed_2006_2022.csv",
+    "size": 16817529,
+    "sha256": "833763a3642b42377569059e7b84dd7531b5d9d1545dc9a528192c5a661491a6"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_regime_slope_parameters.csv",
+    "size": 548953,
+    "sha256": "2a69e2c6b4b99dfda365586a2127c3e7468df3ed8b1d0f2c4bc2a2faaa9bdb17"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_spatial_group_parameters.csv",
+    "size": 9089,
+    "sha256": "e6be57cee01a436ae563a6d0307e549929b143ddeb6b9a929db30385289caa78"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_station_random_effects.csv",
+    "size": 101422,
+    "sha256": "2236a51bde1c54ae5d4f209d7cb2f07b0983cd96b4c8d04260ecdb59acbba189"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_station_slope_parameters.csv",
+    "size": 227686,
+    "sha256": "304ea6b28ac957b5ff54fc84c555dd52f65732b4d43f988b9bb1577fd327a68c"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\design_matrix\\augmented_map_design_matrix.npz",
+    "size": 3261417,
+    "sha256": "bdb5d5aeea879afc6a44f3cfb19b29aae1f802e4602ac65ff09f0728ecb651ac"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\design_matrix\\augmented_map_response.npy",
+    "size": 100888,
+    "sha256": "0d91cb3cadd65edb04f8e39bd600c8d1eb04f1ab57b951a91794e3b7cdd4f443"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\design_matrix\\design_matrix_columns.csv",
+    "size": 490183,
+    "sha256": "d14b163340f15fba595ec7dbb848cbf28e68fa7a79a3074a7e8e9bfd5fbf15f7"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\design_matrix\\design_matrix_manifest.json",
+    "size": 633,
+    "sha256": "0bcf13f9766ccef565483e3e8327832236b82d4a1a252a47a51be8e104bc9e54"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\design_matrix\\observation_design_matrix.npz",
+    "size": 3099665,
+    "sha256": "0a8492d19d7f05a74e4e03045aeabc432c5b36127616dcb0084bbec574419cd9"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\design_matrix\\observation_log_flow_response.npy",
+    "size": 61408,
+    "sha256": "4bedddb11a0f9e386ccfec4c45aeab2caf51b7bd97ddf68284f6a8158756f093"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\design_matrix\\ridge_curvature_and_approx_covariance_diagonal.csv",
+    "size": 673733,
+    "sha256": "50545e63a7ae8cc376e9329bcfa66b71cb2edbc83fa12fbc1a687d154a15350a"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\evaluation_predictions.csv",
+    "size": 2227380,
+    "sha256": "6d727acda8d5a12c84cf4eb592025003603ab1edc124f45cc2b604eeaeae970a"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\design_standardization.csv",
+    "size": 3573,
+    "sha256": "603b8d1eadfa9bc003d77e30dcb8e439e0534fe8180e8134fb0c45a56cc833e4"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_fixed_parameters.csv",
+    "size": 4488,
+    "sha256": "b92b56dd40a132670527ca6f4e982710fc395e8a8f450be7866da86ee3ec5afb"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_good_validation_stations.csv",
+    "size": 30285,
+    "sha256": "0e12bb226ebf88be7226d68cf5abeb79330021a0461a191cdf775ea25feeeb76"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_hyperparameter_grid.csv",
+    "size": 520,
+    "sha256": "9c576b84419f91847e4231e407f358638469a0ba6e641a7b0d08854c38af656a"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_metrics_by_station.csv",
+    "size": 56320,
+    "sha256": "4d5f4d3d5c11e5ac82882c9ec16387698a2a5fe50904d082dbbd02c1264ab18c"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_metric_summary.csv",
+    "size": 448,
+    "sha256": "fca1591f552e2763b62e1a52b505c1881a7bb173985742b0801ca03750d97571"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_not_good_validation_stations.csv",
+    "size": 26449,
+    "sha256": "401e8ff13a961b39625d06881aab0d2fd4cfce510d9d900e00f2dd21f44875eb"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_parameter_group_strength.csv",
+    "size": 1184,
+    "sha256": "f9705c3228c4b3731e9be29558369ef32c364e027232b4d3f27027835464c3f9"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_prediction_vs_observed_2006_2022.csv",
+    "size": 16819703,
+    "sha256": "5e7f2b91df3400e2c0b867e189bb4e7cd130056ec875cb649018f79b60019056"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_regime_slope_parameters.csv",
+    "size": 548894,
+    "sha256": "ff7d1fdb83983e698fc658bbdc2db7bae89afac01a8ebba9db380d4acd18da50"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_spatial_group_parameters.csv",
+    "size": 9083,
+    "sha256": "110c1870b47e71bffcbbe864e92679244de611d23eaa720cdf96733bb7087d22"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_station_random_effects.csv",
+    "size": 101297,
+    "sha256": "aa2ca6f97ab8096c849a729743c1a1007a6ae32f8934a93bea89b79815086bed"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_station_slope_parameters.csv",
+    "size": 227636,
+    "sha256": "8d08b812eb92b25877b8a3fadc23ca85424dd9bd7046ed72ecefd073b41149d2"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\design_matrix\\augmented_map_design_matrix.npz",
+    "size": 4261357,
+    "sha256": "39c8f72e952564d4e57923e7db3bfec7d357514816791575bf4d844ca0636ab9"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\design_matrix\\augmented_map_response.npy",
+    "size": 120360,
+    "sha256": "15520f796eb2b922b36157ed4ae1cdfba18d07a85032a8502ff1cf3d9ce5a5f1"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\design_matrix\\design_matrix_columns.csv",
+    "size": 490183,
+    "sha256": "d14b163340f15fba595ec7dbb848cbf28e68fa7a79a3074a7e8e9bfd5fbf15f7"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\design_matrix\\design_matrix_manifest.json",
+    "size": 635,
+    "sha256": "6e8449a155ecdb1f02a64dbcca78a1576136c483e2a0160082e7fb253a4f8900"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\design_matrix\\observation_design_matrix.npz",
+    "size": 4099258,
+    "sha256": "af7e60ee2f1836a6d23a9bdf1cdc39251c4af23fb132554aab31a500ed44afdb"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\design_matrix\\observation_log_flow_response.npy",
+    "size": 80880,
+    "sha256": "d1bea0304b2669f23071f85d678664e4a432f6baa247f3043190e6c751b881e7"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\design_matrix\\ridge_curvature_and_approx_covariance_diagonal.csv",
+    "size": 674681,
+    "sha256": "b68ea439e869497bce78fca8d05b84c347e9ab454974cf164a8fa19f4baa1caf"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\evaluation_predictions.csv",
+    "size": 3200013,
+    "sha256": "152632051fcb6f1bdb04f481633f26c93a3c98809269080f118545632454c246"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\design_standardization.csv",
+    "size": 3568,
+    "sha256": "6e7788f0d932f05852e4251dcdaa7b02237e17fbe27e9caab5be6086ae8c4a93"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_fixed_parameters.csv",
+    "size": 4491,
+    "sha256": "13a5e24404931092dc8145304173d92eb05dcff91c3a1a1727bd2353ed09dc82"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_good_validation_stations.csv",
+    "size": 33517,
+    "sha256": "800ef4e5b3976bf2302382ec877e6d32f1039b3be02c9e62e5f9759a9728ac1e"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_hyperparameter_grid.csv",
+    "size": 520,
+    "sha256": "9c576b84419f91847e4231e407f358638469a0ba6e641a7b0d08854c38af656a"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_metrics_by_station.csv",
+    "size": 56101,
+    "sha256": "7c615cf258d113cc58d5f9f5722f54b5a615986196c551449d2d60ac2718fd87"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_metric_summary.csv",
+    "size": 449,
+    "sha256": "1931157e10c4f236d38fbfd500d7420bac78a89fdc4ea9bf22679139938cf15e"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_not_good_validation_stations.csv",
+    "size": 22998,
+    "sha256": "59c55e9d69a6f853b0302dec627faf3498bcc84cb258a66736c259597cc4d9e8"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_parameter_group_strength.csv",
+    "size": 1184,
+    "sha256": "514783931e85ad3c572e7f51412967cff05246b544c9230f2b53ff39e4f45c62"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_prediction_vs_observed_2006_2022.csv",
+    "size": 16822508,
+    "sha256": "9f66ddbfed201e4fbe9837fc51557af6342ab14c863b7994b32feb8693fc935d"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_regime_slope_parameters.csv",
+    "size": 548831,
+    "sha256": "6d564b32383124245e6408352d5eeb475f627dc00b62373d0c74bb96561f1e2d"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_spatial_group_parameters.csv",
+    "size": 9082,
+    "sha256": "bbec42c988e7df87545e79bed1a5428aaaaaa8e27bd4372587e66ca700979b8b"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_station_random_effects.csv",
+    "size": 101199,
+    "sha256": "63842b0464ef3052831cf756961104c3d3a7aa132904197054c3dee285d41f3c"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_station_slope_parameters.csv",
+    "size": 227590,
+    "sha256": "587d0065f80d2e6ea63b61b75fa80231c14c7ba19a07e7a90c3be9f0b8845ee1"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\design_matrix\\augmented_map_design_matrix.npz",
+    "size": 5343461,
+    "sha256": "b73df6c865495b43d2d14fb775d541270c2f045deeae820138e9f5b1128ac7a2"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\design_matrix\\augmented_map_response.npy",
+    "size": 141016,
+    "sha256": "a4fc9ba977a2f37629381b78d78787abf31cf94b1d8858129dad020445e52ea7"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\design_matrix\\design_matrix_columns.csv",
+    "size": 490183,
+    "sha256": "d14b163340f15fba595ec7dbb848cbf28e68fa7a79a3074a7e8e9bfd5fbf15f7"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\design_matrix\\design_matrix_manifest.json",
+    "size": 637,
+    "sha256": "dc1fb0726e4d78474f116e5faa2d91658b8fa55a64670eff6bc0363042180fac"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\design_matrix\\observation_design_matrix.npz",
+    "size": 5181552,
+    "sha256": "9e031cea3b72423c0c739cc76efdb1ae056fb0d89a3681ddd0eb71dc1959ae6c"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\design_matrix\\observation_log_flow_response.npy",
+    "size": 101536,
+    "sha256": "42fc1ca1dd2bd94ef0bf2b6c388bd8cb4a0c4dded54bc303ced139fe935a1a93"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\B0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\design_matrix\\ridge_curvature_and_approx_covariance_diagonal.csv",
+    "size": 675719,
+    "sha256": "f8162afb6f3418d2bc7cacbfa325e413bc8ac61760c33d1ff98997d6ad657b4d"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_fold_manifest.csv",
+    "size": 280,
+    "sha256": "200912c0789e7106329b8fafc74e9a2fe59856806487a8b49d474618922bf7cb"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\q72_three_fold_oof_predictions.parquet",
+    "size": 3505905,
+    "sha256": "e5ff8856f5e410c4c6dd4ae0837c694276156901915a43b45e16e6a77251e99b"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\run_manifest.json",
+    "size": 1347,
+    "sha256": "b0bc83ab6ad08f8172eed2ce4ff7dfd6cd00271c81869ab1f47e3baf9e1b0da9"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\evaluation_predictions.csv",
+    "size": 358545,
+    "sha256": "be902f35b5d9d26c1e415113afa31580008e74922943837f5a1db9bb6388f667"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\evaluation_predictions.parquet",
+    "size": 1002320,
+    "sha256": "c6f70147c473cc44447820706491a74d941ef815d1d0b0f9fbae5ae8f4fbae43"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\design_standardization.csv",
+    "size": 3445,
+    "sha256": "32b67b1c8d86b5eb373098fe64398137ab85b52566c65be14d4a452a46008f54"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\model_population_audit.json",
+    "size": 345,
+    "sha256": "33d6d6359cc4db6e8e3770fbde098f04a26b7fbf33c5dd1546ad9158c56511c3"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_fixed_parameters.csv",
+    "size": 4310,
+    "sha256": "104eaa2125914a62ca41d109a52763f5fb36cc41986c92a0a1ebdd37f8e3bfaa"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_good_validation_stations.csv",
+    "size": 38219,
+    "sha256": "fb3334516682292f3d6745909bb7e80a20a940f2e1184592523c1828e4202db7"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_hyperparameter_grid.csv",
+    "size": 418,
+    "sha256": "9ec55173d01d2802652c2b89d72a022efaa81cddf823c4c1e4a92f683f143115"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_metrics_by_station.csv",
+    "size": 56116,
+    "sha256": "c4c9b16f40863dbe02711387d2ad8837dfb56d1aedf8580148889fc74faa1482"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_metric_summary.csv",
+    "size": 449,
+    "sha256": "28b3690e22d768ee17a55cce31515e40ad6dfd1ead210bb78e41d5bd501e33f9"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_not_good_validation_stations.csv",
+    "size": 18311,
+    "sha256": "6201649cc0f873e91951829482a75381167fe92e61f5387487d50fa0425e3be8"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_parameter_group_strength.csv",
+    "size": 1183,
+    "sha256": "315fe9a05e7b655e0ac949806678aaebb771919ad50b24b092345ecd7c97640a"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_prediction_vs_observed_2006_2022.csv",
+    "size": 4271200,
+    "sha256": "b72614fe3e4d18ec862a1bf775d773b339618406685510a0691cb70e9387be28"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_prediction_vs_observed_2006_2022.parquet",
+    "size": 8489749,
+    "sha256": "5a36f9e5ef08658b8de3921bdb1f5d56e23788a62fe8fd229b1822bc85fc0929"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_regime_slope_parameters.csv",
+    "size": 461264,
+    "sha256": "ad206679ed98dcf645f2065b61e9a255a49c9fc9bacca720c7b4431e3b4f1018"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_spatial_group_parameters.csv",
+    "size": 7851,
+    "sha256": "f6ecca90d138e4bde468a13e78e1d1e664860c30c9df536894b47cd48377da53"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_station_random_effects.csv",
+    "size": 83033,
+    "sha256": "fa7fe64dec18b90641a90517adb182681bd4fd95793b2cac02cffc2bc928b46f"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\monthly_bayes_seasonal_hysteresis_station_slope_parameters.csv",
+    "size": 176389,
+    "sha256": "dab8461b4cbbba31aef148753a5d36eacdd59b8363f7c34532aac4a889c54672"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\design_matrix\\augmented_map_design_matrix.npz",
+    "size": 2949378,
+    "sha256": "90aa7cedc1c0af02c02d74a791715c907e361b6a88b527d81e8d45481afcea48"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\design_matrix\\augmented_map_response.npy",
+    "size": 94040,
+    "sha256": "0be536528d0c699304d105741feeef860d4c110ead0ca7389d8f04510331334f"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\design_matrix\\design_matrix_columns.csv",
+    "size": 403659,
+    "sha256": "243c162fc737eb55b4c928a62faa916e7282a52069e5fceb01f12aa7d49c043b"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\design_matrix\\design_matrix_manifest.json",
+    "size": 635,
+    "sha256": "6dcf8d3e4cce69a3c3c46817b9f2119e376676f4672ec1d6dae003e6cc0cad70"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\design_matrix\\observation_design_matrix.npz",
+    "size": 2804752,
+    "sha256": "4c4caa1fd87927d24646547bb993f30f4eb6eea97e79b6b7d8c690cdc22a8715"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\design_matrix\\observation_log_flow_response.npy",
+    "size": 61408,
+    "sha256": "4bedddb11a0f9e386ccfec4c45aeab2caf51b7bd97ddf68284f6a8158756f093"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2011_eval_2012_2013\\reports\\design_matrix\\ridge_curvature_and_approx_covariance_diagonal.csv",
+    "size": 553838,
+    "sha256": "3cd86a9b407239f20143464fd8129676f1a5b139e106f583e5391040a4ca8713"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\evaluation_predictions.csv",
+    "size": 380703,
+    "sha256": "21b6eb2d713de3960ef95e136e948d1140d85a228839885c87e11cb843578bcd"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\evaluation_predictions.parquet",
+    "size": 1065368,
+    "sha256": "101746c5969e02ddb835e34c35c1f70432751106c1a3c7e5248e4e62ca3f41a0"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\design_standardization.csv",
+    "size": 3448,
+    "sha256": "bb642c61b6180ed055c56abbc3e6a401a59351e68d8e487a3e987399c055ad71"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\model_population_audit.json",
+    "size": 346,
+    "sha256": "1737d9f2c1eed0bb6de5fa0e2749d7179580e2f3843cfd94c0ca8e080ac3fb7e"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_fixed_parameters.csv",
+    "size": 4319,
+    "sha256": "2f8c5548d407a95689e80a93bd3cec0df88d097fa4893852dcede2f3a3ef0c45"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_good_validation_stations.csv",
+    "size": 35389,
+    "sha256": "dccd07c217c539a6190f6aec1dc9889e1571715a39fe5f4aac897a35532fb276"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_hyperparameter_grid.csv",
+    "size": 418,
+    "sha256": "9ec55173d01d2802652c2b89d72a022efaa81cddf823c4c1e4a92f683f143115"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_metrics_by_station.csv",
+    "size": 56158,
+    "sha256": "18ff23c1e3e83483f71993dea7f0af97c52269d28c71e8013c55a55cfb808f70"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_metric_summary.csv",
+    "size": 451,
+    "sha256": "b973705452cb3b5e11e40bfa92323ef081092fd69d59a1fbb65a5f242f74f2fa"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_not_good_validation_stations.csv",
+    "size": 21183,
+    "sha256": "17949152e5be68045b510516633bb14f141c711c4761d9e6f8b0de3c59b6424c"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_parameter_group_strength.csv",
+    "size": 1179,
+    "sha256": "41d4ee8582aee8f98e885b990399d6365f02dcfa9c51cc4c3d3218ab7a37e423"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_prediction_vs_observed_2006_2022.csv",
+    "size": 4274667,
+    "sha256": "0915387bc65dc7fd8aed661c1b08e2517cf2e305a1251e1d9c9a976d4dbc270b"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_prediction_vs_observed_2006_2022.parquet",
+    "size": 8489755,
+    "sha256": "dcd1e57288e93826fadf067de773f7b2541546ce0a2369730480fab305185075"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_regime_slope_parameters.csv",
+    "size": 461250,
+    "sha256": "103357b0544d13c085f67f5dbeb192ae6eddab0c5f2571f409688b5387207e25"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_spatial_group_parameters.csv",
+    "size": 7853,
+    "sha256": "f8b1a0967658a2a58bb51f1b4de2915a4e7b1b314d83b4c7fcacdb077f141844"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_station_random_effects.csv",
+    "size": 82946,
+    "sha256": "92d5c4129bd7e11066065847ff03ef9e3d0c92a724e76a254a494943c7d58f49"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\monthly_bayes_seasonal_hysteresis_station_slope_parameters.csv",
+    "size": 176314,
+    "sha256": "7fc1169bdbe997d2090c6256e6e17b53d30908aea9a2d8ca93a4c7b756d94aff"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\design_matrix\\augmented_map_design_matrix.npz",
+    "size": 3851765,
+    "sha256": "81a0a7ad8ac49d85ff4c0a35a42b58de10ccb48a722e5eea7bf0df0e7d053fb5"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\design_matrix\\augmented_map_response.npy",
+    "size": 113512,
+    "sha256": "c6e8e054a014f10a46af65fd9a0312fbe3af5c80d0c8bb3f0196f6647ac2343a"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\design_matrix\\design_matrix_columns.csv",
+    "size": 403659,
+    "sha256": "243c162fc737eb55b4c928a62faa916e7282a52069e5fceb01f12aa7d49c043b"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\design_matrix\\design_matrix_manifest.json",
+    "size": 638,
+    "sha256": "df3880e740f55a4c2bc3e3413491b1d6ad3e155d521962b9c8a50ec0857bfd22"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\design_matrix\\observation_design_matrix.npz",
+    "size": 3707335,
+    "sha256": "b30cb5934d398e85b42b7df74120420c1061131c51eda87693c4f1631cb59aa5"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\design_matrix\\observation_log_flow_response.npy",
+    "size": 80880,
+    "sha256": "d1bea0304b2669f23071f85d678664e4a432f6baa247f3043190e6c751b881e7"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2013_eval_2014_2015\\reports\\design_matrix\\ridge_curvature_and_approx_covariance_diagonal.csv",
+    "size": 554367,
+    "sha256": "fe1ead142c9eaf63c4dca4370a0757514fb77d87a9dc958d735f4d657dd0d017"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\evaluation_predictions.csv",
+    "size": 548399,
+    "sha256": "66f59cc98ddb5716b723d45075643bd1fa0761806002f4edf76c56645a74a743"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\evaluation_predictions.parquet",
+    "size": 1496954,
+    "sha256": "5b6c2cb711a53a33961acd66a6705d6fbdb1275e040be550dfacddc61f7c4c0a"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\design_standardization.csv",
+    "size": 3440,
+    "sha256": "19128e96dcb6411bb8bf915220e9e514336511e5754d0853112028837e7ca91d"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\model_population_audit.json",
+    "size": 346,
+    "sha256": "c6eea614e49e7c65d0d00177468868e32050df3e1dc6db28aa7213c11e45cc69"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_fixed_parameters.csv",
+    "size": 4312,
+    "sha256": "2d3db260c9f8f533101cd876fa5d139cac7b010f86151c27b98a6a39d1e18d89"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_good_validation_stations.csv",
+    "size": 35410,
+    "sha256": "b61babc85a15dc6a2f3fb1f1c1c20eb5ee691ea7e6dc72346218ca8ce7e35a19"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_hyperparameter_grid.csv",
+    "size": 418,
+    "sha256": "9ec55173d01d2802652c2b89d72a022efaa81cddf823c4c1e4a92f683f143115"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_metrics_by_station.csv",
+    "size": 56032,
+    "sha256": "8c0c791c8ec9b3a385a70f2499beb45545033bc7ac1d6cb71a92a7143281c1ae"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_metric_summary.csv",
+    "size": 447,
+    "sha256": "0cb38ecddcfb819a7b1e8d8955ace4e56a15ffb7945c35c42b26f92ce96be8df"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_not_good_validation_stations.csv",
+    "size": 21036,
+    "sha256": "188ee6ca46291ebbe6e10753ce427776ab3adfcd21e8ec4b5987c88d44f64695"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_parameter_group_strength.csv",
+    "size": 1184,
+    "sha256": "f4497906f508316b81acce5c3260296fb465b95f7abb3ed0e791d9e99023390b"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_prediction_vs_observed_2006_2022.csv",
+    "size": 4275554,
+    "sha256": "42b2d1263da33575ef9994f8f8ed5ca57d6c846db5e58a4dd24c25e8786ca23a"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_prediction_vs_observed_2006_2022.parquet",
+    "size": 8489764,
+    "sha256": "9379ab5c5232d74db5fe678c6133d310c604c0eea70d590e682477ce7856ecbe"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_regime_slope_parameters.csv",
+    "size": 461135,
+    "sha256": "69584bc6a0e441be6d6b029c9292251c050a2bfa0a0b59a69b25dfe68b907472"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_spatial_group_parameters.csv",
+    "size": 7855,
+    "sha256": "0a32de4ac8765507b01d7e0185d59f268783c412de2757c7d40e0934eab72ec6"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_station_random_effects.csv",
+    "size": 82773,
+    "sha256": "fe545c1e79802e89b0e099dc882029231f913aafae3d5c8059babbc88f903727"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\monthly_bayes_seasonal_hysteresis_station_slope_parameters.csv",
+    "size": 176275,
+    "sha256": "18f0be719c505dbb67eda4913a1c5d4f8e36dfe684e1589b11b0ba7f17b70a94"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\design_matrix\\augmented_map_design_matrix.npz",
+    "size": 4813530,
+    "sha256": "5a624349094679343eed6f0b09cdcf7469058c7132188762c5b50ebb11d9523f"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\design_matrix\\augmented_map_response.npy",
+    "size": 134168,
+    "sha256": "bd14450f824fccd68caf1296e9d4766a11fee411cc81f176de48abe108be585b"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\design_matrix\\design_matrix_columns.csv",
+    "size": 403659,
+    "sha256": "243c162fc737eb55b4c928a62faa916e7282a52069e5fceb01f12aa7d49c043b"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\design_matrix\\design_matrix_manifest.json",
+    "size": 637,
+    "sha256": "d2da28edffcbdd15c5e189421612760779055da94171b49ede0dc686651907a8"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\design_matrix\\observation_design_matrix.npz",
+    "size": 4669339,
+    "sha256": "bd408cff9c895ae64c53845e19d727b97e2a54f1a4722e920368c3ac91e372a5"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\design_matrix\\observation_log_flow_response.npy",
+    "size": 101536,
+    "sha256": "42fc1ca1dd2bd94ef0bf2b6c388bd8cb4a0c4dded54bc303ced139fe935a1a93"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I0\\blocked_folds\\fit_2006_2015_eval_2016_2018\\reports\\design_matrix\\ridge_curvature_and_approx_covariance_diagonal.csv",
+    "size": 555354,
+    "sha256": "0fab1ff4ad06114fa589514904de2ac7ff5091fccbf6f53e602131fb465510d6"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\outputs\\I1\\q72_three_fold_oof_predictions.parquet",
+    "size": 8608594,
+    "sha256": "d58842d865282a2f65ad08b424c1f73fa313c72e0f3d6a2f536a6939fa23a31b"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\reports\\completion_audit.csv",
+    "size": 4544,
+    "sha256": "7b5e0ddb3217e4da72d0ca02d9469c60c26275fc226dc104570208b10bdf239a"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\reports\\completion_recalculated_metrics.csv",
+    "size": 307,
+    "sha256": "579ef56f33376574a36116e10cc83ad071739c3ff7ea75c81b5e7545b8889273"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\reports\\completion_state_mass_closure.csv",
+    "size": 460,
+    "sha256": "6b01fe45b62b781c61c57b26f979e8dfc501a859796602b637f36089f996a4b1"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\reports\\completion_validation_report.md",
+    "size": 4117,
+    "sha256": "72d3dab5b232a30aaaf7751da49bda3bc5273148cb39cedd40aca6b98fa4bef8"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\reports\\dynamic_beta_posterior_grid.csv",
+    "size": 20447,
+    "sha256": "7be9168ca410d2a6c87195381ddbd56440f3ed000971c975d986335935b16659"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\reports\\dynamic_beta_posterior_summary.csv",
+    "size": 801,
+    "sha256": "4f33ae816d0d533ae3e1ec3aea8df6b6aa74ab229b16c1bf6bd039321db38dde"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\reports\\dynamic_inference_i0_equivalence.csv",
+    "size": 291,
+    "sha256": "3fe3050e1f4c84add54841ee8894afcb1d5f4cd751a6b2d4e41e05b8f56edd82"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\reports\\fold_metrics.csv",
+    "size": 859,
+    "sha256": "b8267d0b3d021207ee724913db41d9060d66df94098401b08eaa3d7f6c7673ab"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\reports\\legacy_lowflow_metrics.csv",
+    "size": 25793,
+    "sha256": "c3a2ab5e6a8a7c40a089e35958a8871e7078fdd78fe88808ad6f9aee2bd8aa00"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\reports\\persistence_population_audit.csv",
+    "size": 365,
+    "sha256": "d5274e3d43d0adefa65a2299b3d9357d063fe17de569488b992580e30954af28"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\reports\\q72_unusual_assumption_register.csv",
+    "size": 1506,
+    "sha256": "d2f4d72d0d6572a23ef7a50eebadc5d1259278fb3db6624c67cc6dc5ade7136f"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\reports\\scenario_metrics.csv",
+    "size": 261,
+    "sha256": "41461e617130416524af99aa9cdaf626fbd8be153bc9d78aaf4819b5bd369440"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\reports\\station_metrics.csv",
+    "size": 34370,
+    "sha256": "563dab23cc5d296566eec1ff0170576d6bc4da14f2ce6221f55a042a66296a59"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\reports\\synthetic_recovery.csv",
+    "size": 30334,
+    "sha256": "509b790648e2a6f6202c6d8cc983697a436a1cff003c25b9e111f26c4d0bb4ed"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\reports\\synthetic_recovery_summary.csv",
+    "size": 903,
+    "sha256": "ee56ac1a931e4d8fe105012c8099320541ea34b6122bd4266affadc7d0dd16f5"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\reports\\topology_path_metrics.csv",
+    "size": 3482,
+    "sha256": "f32afd68657e1fe0733b066d42fab7e0c83d4965e43fe911c4d375df8e676e14"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\scripts\\audit_completion.py",
+    "size": 37965,
+    "sha256": "82caf37fdfd31509e1b995a89103e49a4a1dc50a3f7f8eea883f6e6b6f982ea3"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\scripts\\debug_oof_keys.py",
+    "size": 949,
+    "sha256": "d4a77f7515d9013a2a46a272f1bb8b324245a71992fb6ecec9bbf20fdb019c80"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\scripts\\finalize_delivery.py",
+    "size": 4182,
+    "sha256": "d9ff3364b44a99884c15acc2809d3748fca1803964fe24d9884e1db694a00c84"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\scripts\\infer_dynamic_beta.py",
+    "size": 13069,
+    "sha256": "6c4c8981bb324a1fed77d3af36f3ba7a515d7662b796ac9103e556ad715aeec0"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\scripts\\protection_audit.py",
+    "size": 6341,
+    "sha256": "74e818bc4c3f3b6cfedf57b2aa1f77424f78be8fbdf209f22e4bf8acfabe500d"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\scripts\\repair_design_audit_artifacts.py",
+    "size": 4510,
+    "sha256": "ffb82e749b206318bd06b60fef518d35a706e7734e8c0e34343223fb92c1887b"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\scripts\\runtime_guard.py",
+    "size": 1355,
+    "sha256": "bd6508e4c5b524634355c28e024f05fb127771712fde5caf831f6e675061d560"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\scripts\\run_corrected_scenarios.py",
+    "size": 7712,
+    "sha256": "7a72efd04230bbf72acc7cc1de45b5d3970570b1b7b975b8d5c42930c526ff86"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\scripts\\run_legacy_b0.py",
+    "size": 5363,
+    "sha256": "65d8fe8dd4211a48c89ba831e4586ab94735b8443f19911c9bc033b8ff86a788"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\scripts\\summarize_experiment.py",
+    "size": 2583,
+    "sha256": "fefc9610521270d5d63b62eb8d2e18c31f193bf7a4cb0497b2b02990f617d79f"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\scripts\\verify_manifest.py",
+    "size": 1777,
+    "sha256": "2f3b993a709eb921e34db7b6251c9f1793a9dab393e5b58f54446a3da2af9e9b"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\scripts\\components\\corrected_dynamic_q72_component.py",
+    "size": 82025,
+    "sha256": "6d9067ff484a2ccedfd9d1f442ff486f4f63f32b75acf8148263d7efbe75ca0f"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\scripts\\components\\legacy_q72_component.py",
+    "size": 66964,
+    "sha256": "dffe9cc9949c42b1d9b61b0783a45d921c933ddb1ed27332e620378f76209fce"
+  },
+  {
+    "path": "E:\\SPARROW\\5_Test\\20260812_3\\scripts\\tests\\test_corrected_accounting.py",
+    "size": 4261,
+    "sha256": "fd0b638a9b85b49b1271aa07812f2df78354a37666f5cf314f1016e10ebe6d47"
+  }
+]

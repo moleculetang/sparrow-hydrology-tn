@@ -1,0 +1,34 @@
+{
+  "experiment_id": "20260824_3",
+  "status": "closed",
+  "registered_hypothesis": "GENERIC_CROPLAND_SON12_FRACTION",
+  "authorization_basis": "explicit user request on 2026-08-24 after closure of the source-identity experiment",
+  "relationship_to_20260824_2": "new lower-dimensional generic slow-release hypothesis; does not reopen manure-source identity",
+  "stages": [
+    {
+      "stage": "temporal_OOF",
+      "status": "completed",
+      "allowed": true
+    },
+    {
+      "stage": "nested_LOSO_LOTO",
+      "status": "closed_not_authorized",
+      "allowed_only_if": "PARTIAL_CROPLAND_SLOW_RELEASE_TEMPORALLY_SUPPORTED_PENDING_SPATIAL"
+    },
+    {
+      "stage": "2022_retrospective",
+      "status": "locked",
+      "allowed": false
+    }
+  ],
+  "terminal_status": "STATION_READOUT_COMPENSATED_NOT_PROCESS_SUPPORTED",
+  "nested_spatial_authorized": false,
+  "TN_2022_values_read": false,
+  "legal_terminal_states": [
+    "PARTIAL_CROPLAND_SLOW_RELEASE_TEMPORALLY_SUPPORTED_PENDING_SPATIAL",
+    "SLOW_RELEASE_SUPPORTED_EXISTING_ENDPOINT_SUFFICIENT",
+    "STATION_READOUT_COMPENSATED_NOT_PROCESS_SUPPORTED",
+    "CROPLAND_SLOW_RELEASE_NOT_SUPPORTED",
+    "NUMERICALLY_CONFOUNDED"
+  ]
+}

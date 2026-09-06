@@ -1,0 +1,34 @@
+{
+  "stage": "20260828_23",
+  "title": "Locked 2019-2022 retrospective reservoir evaluation",
+  "status": "REGISTERED_AUTHORIZED_RETROSPECTIVE",
+  "parent_stage": "20260828_22",
+  "prerequisite": "PASS_INITIAL_STATE_CONVERGED",
+  "evaluation_period": "2019-2022",
+  "station_cohort": "The same 89 general downstream-flow gauges registered in 20260828_19; the four spatial extrapolation stations remain excluded.",
+  "comparators": {
+    "R0": "frozen canonical no-reservoir parent",
+    "R1": "locked generic reservoir candidate R1_tau180_a0.25_d0.05",
+    "R2": "locked literature-constrained reservoir candidate R2_tau180_a0.25_d0.00"
+  },
+  "parameter_selection": "No refit, reselection, threshold revision or observation assimilation is permitted after opening 2019-2022.",
+  "primary_objective": "pooled RMSE of ln(1+monthly discharge)",
+  "noninferiority_limits_against_R0": {
+    "pooled_log_RMSE_increase_max": 0.01,
+    "pooled_NSE_decrease_max": 0.02,
+    "station_median_NSE_decrease_max": 0.03,
+    "station_median_absolute_PBIAS_increase_max_percentage_points": 2.0
+  },
+  "decision_rule": "R2 becomes the TN reservoir hydrology interface if it passes all four frozen noninferiority limits. Improvement is reported separately and is not required because the registered objective is state consistency. If R2 fails, retain the no-reservoir parent for TN and report the reservoir structure as retrospective-confounded.",
+  "forbidden": [
+    "parameter refitting",
+    "candidate reselection",
+    "per-reservoir deviations",
+    "station-specific correction",
+    "four spatial-test-station observations",
+    "TN observations",
+    "2023-2024 discharge observations"
+  ],
+  "claim_boundary": "This is a locked retrospective temporal check, not independent external validation and not identification of individual reservoir releases.",
+  "runtime_environment": "D:/ProgramData/anaconda3/envs/sparrow/python.exe"
+}

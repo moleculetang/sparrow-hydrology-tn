@@ -1,0 +1,33 @@
+{
+  "stage": "20260826_25",
+  "registered_before_training": true,
+  "parent_repair": "FOLD_PARENT fitted only on 2010-2015 from a fixed process prior; 2017-2018 and the 2010-2018 full lock are excluded from initialization and prior centering.",
+  "models": [
+    "DYN_FLUX",
+    "HYD_ROUTE",
+    "JOINT_DYN3P"
+  ],
+  "seeds": [
+    260826,
+    260827,
+    260828
+  ],
+  "optimizer": "AdamW",
+  "learning_rate": 0.008,
+  "weight_decay": 0.0001,
+  "max_epochs": 60,
+  "early_stopping": "2016 composite loss",
+  "locked_evaluation": "2017-2018",
+  "loss_weights": {
+    "all_log": 0.25,
+    "high_log": 0.2,
+    "low_log": 0.15,
+    "event_shape": 0.2,
+    "event_volume": 0.1,
+    "monthly_volume": 0.1
+  },
+  "state_guardrails": "PML basin AET and GRACE basin TWS correlation hinge, each weight 0.05",
+  "routing_gradient": "exact recurrence reverse mode; hydraulic-Q effect on release coefficient is stop-gradient",
+  "TN_read": false,
+  "retrospective_2019_2022_read": false
+}

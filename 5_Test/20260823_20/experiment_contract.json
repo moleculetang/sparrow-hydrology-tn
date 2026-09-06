@@ -1,0 +1,36 @@
+{
+  "stage": "20260823_20",
+  "status": "registered_before_fitting",
+  "title": "Network-native spatial MAP5 repair",
+  "hypothesis": "The five spatial MAP effects must act on nonnegative local Q72 flow before frozen forward routing, so network conservation is structural rather than a post-hoc inverse problem.",
+  "equation": "local_Q*=local_Q72*exp(X_global c + sum_k z_k b_k,reach); routed_Q*=U local_Q*",
+  "spatial_parameter_model": "b_k,reach=A_reach gamma_k+u_k,reach with graph-smooth Gaussian prior on every one of the 230 Reach nodes",
+  "global_features": "same 17 transferable hydrologic/static features as 20260823_15 plus intercept",
+  "spatial_effects": ["intercept", "log_q72_total", "q72_quick_fraction", "month_sin", "month_cos"],
+  "attribute_mean_features": "ten standardized hydroclimatic Reach attributes from 20260823_16; no attribute intercept",
+  "graph_smooth_precision_grid": [0.001, 0.01, 0.1, 1.0],
+  "reach_ridge_precision_grid": [0.001, 0.01, 0.1],
+  "attribute_precision": 0.01,
+  "global_prior_sigma": 0.25,
+  "hyperparameter_training": "2006-2014 observations only",
+  "hyperparameter_validation": "2015-2018 station-mean log-RMSE",
+  "final_refit": "2006-2018 observations only",
+  "locked_temporal_check": "2019-2022",
+  "required_invariants": {
+    "all_230_reaches_have_five_parameters": true,
+    "free_station_identity_block": false,
+    "local_flow_nonnegative": true,
+    "routing_is_frozen_forward_U": true,
+    "posthoc_inverse_reconciliation": false,
+    "external_four_station_outcomes_read": false,
+    "reservoir_equation_changed": false
+  },
+  "temporal_retention_limits_relative_to_local_station_MAP": {
+    "pooled_NSE_decline_max": 0.02,
+    "station_median_NSE_decline_max": 0.03,
+    "log_RMSE_increase_max": 0.03,
+    "absolute_PBIAS_pct_max": 5.0
+  },
+  "claim_boundary": "river-network conserving statistical correction of Q72 local flow; not full P-ET-storage closure and not recursive assimilation",
+  "external_four_stations_remain_sealed": true
+}

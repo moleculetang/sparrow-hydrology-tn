@@ -1,0 +1,75 @@
+{
+  "runtime": {
+    "environment_name": "sparrow",
+    "expected_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "sys_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "sys_executable": "D:\\ProgramData\\anaconda3\\envs\\sparrow\\python.exe",
+    "conda_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "conda_default_env": "sparrow"
+  },
+  "primary_terminal": "R3_FULL_SPATIAL_SUPPORT_REAGGREGATION_COMPLETE",
+  "promotion_terminal": "R3_SPATIAL_REAGGREGATION_PREDICTIVE_PROMOTION_SUPPORTED",
+  "engineering_complete": true,
+  "predictive_promotion_supported": true,
+  "promotion_scope": "retrospective OOF under the inherited frozen R3_11 full-period forcing feature protocol",
+  "strict_deployment_pure_forecast_validated": false,
+  "known_inherited_temporal_information_issue": "Q_ma_cfs and group_major_flow use 2006-2022 forcing summaries in both S0 and S1; no future observed discharge label is used",
+  "independent_subagent_audit": "CONDITIONAL_PASS",
+  "oof_rows": 8738,
+  "stations": 110,
+  "reaches_in_forcing_panel": 230,
+  "legacy_target_count_registry": 28,
+  "legacy_target_count_evaluable": 27,
+  "large_station_definition": "top quartile of S0 station mean observed discharge",
+  "large_station_cutoff_cfs": 7073.970603028625,
+  "large_station_count": 28,
+  "S0_reproduction_max_abs_prediction_difference": 0.0,
+  "pooled_metrics": {
+    "S0": {
+      "NSE_raw": 0.8814288743861263,
+      "NSE_log": 0.930569373457068,
+      "KGE": 0.9020899552029198,
+      "PBIAS_pct": -3.760436284992335,
+      "RMSE_cfs": 15490.808383322652,
+      "log_RMSE": 0.5012209464396116
+    },
+    "S1": {
+      "NSE_raw": 0.8813855814548729,
+      "NSE_log": 0.930641668975453,
+      "KGE": 0.8983020318505501,
+      "PBIAS_pct": -3.882238142996116,
+      "RMSE_cfs": 15493.636143004907,
+      "log_RMSE": 0.5009599271483215
+    },
+    "delta_S1_minus_S0": {
+      "NSE_raw": -4.3292931253380296e-05,
+      "NSE_log": 7.229551838494608e-05,
+      "KGE": -0.00378792335236966,
+      "PBIAS_pct": -0.12180185800378096,
+      "RMSE_cfs": 2.8277596822554187,
+      "log_RMSE": -0.0002610192912900766
+    }
+  },
+  "station_median_log_NSE": {
+    "S0": 0.7682339211629539,
+    "S1": 0.7689665246667736,
+    "delta": 0.000732603503819762
+  },
+  "legacy_lowflow": {
+    "S0_pooled_log_RMSE": 0.5602327814499467,
+    "S1_pooled_log_RMSE": 0.5628037206433983,
+    "relative_change": 0.004589055261632113,
+    "stations_with_reduced_absolute_median_log_bias": 16,
+    "stations_evaluated": 27
+  },
+  "promotion_gates": {
+    "pooled_raw_NSE_decline_le_0_005": true,
+    "pooled_log_NSE_decline_le_0_005": true,
+    "all_fold_log_NSE_decline_le_0_01": true,
+    "station_median_log_NSE_decline_le_0_01": true,
+    "large_station_log_RMSE_deterioration_le_2pct": true,
+    "high_flow_log_RMSE_deterioration_le_2pct": true,
+    "legacy_lowflow_log_RMSE_deterioration_le_2pct": true
+  },
+  "all_promotion_gates_pass": true
+}

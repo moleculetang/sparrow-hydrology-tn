@@ -1,0 +1,32 @@
+{
+  "stage": "20260827_8",
+  "required_predecessor": "20260827_7 PASS_STATE_OPERATOR_PREFLIGHT",
+  "purpose": "fit and select SIG2P-S/P lambda candidates without reading 2017-2018 or formal-test observations",
+  "station_population": {
+    "definition": "topology_representative=true AND four_group_check_eligible=true",
+    "expected_stations": 91,
+    "expected_unique_reaches": 91,
+    "daily_loss": "all available daily observations; missing-aware, station-equal and terminal-tree-equal",
+    "monthly_loss": "all available authoritative monthly observations for the same stations; missing-aware, station-equal and terminal-tree-equal"
+  },
+  "objective": {
+    "daily_weight": 0.75,
+    "monthly_weight": 0.25,
+    "daily_parts": ["all_log", "high_log", "low_log", "event_shape", "event_volume", "monthly_volume"],
+    "state_guardrails": ["PML AET", "GRACE basin storage"],
+    "physical_prior": "same prior weight and sigma as 20260827_2"
+  },
+  "candidates": {
+    "seeds": [260826, 260827, 260828],
+    "lambda_S": [0.0, 0.25, 0.5, 0.75, 1.0],
+    "selection": "minimum 2016 combined stopping score; 2017-2018 not read",
+    "lambda_zero_role": "identically trained 91-station attribution parent"
+  },
+  "periods": {
+    "spinup": "2006-2009",
+    "training": "2010-2015",
+    "stopping": "2016",
+    "forbidden": ["2017-2018 observations", "2019-2022 observations", "four spatial station observations", "TN"]
+  },
+  "authorized_successor": "20260827_9"
+}

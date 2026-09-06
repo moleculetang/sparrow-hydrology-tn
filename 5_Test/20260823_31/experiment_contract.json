@@ -1,0 +1,58 @@
+{
+  "stage": "20260823_31",
+  "status": "registered_before_fitting",
+  "title": "Attribute-regionalized physical fast/delayed hydrology with zero-target-history tests",
+  "hypothesis": "The five physical hydrology parameters vary predictably with ten frozen Reach attributes, allowing one unified mass-conserving fast/delayed hydrology to improve path partition without using target-station history.",
+  "physical_parameter_field": "raw_theta_r = raw_theta_global + X_attribute_r Gamma",
+  "frozen_attributes": [
+    "log_incarea",
+    "log_cumarea",
+    "log_length",
+    "log_slope",
+    "elevation",
+    "log_ppt_mean",
+    "log_aet_mean",
+    "log_pet_mean",
+    "ppt_cv",
+    "log_distance_terminal"
+  ],
+  "candidates": {
+    "R0_GLOBAL_REFIT": "five global physical parameters refit without target-group data",
+    "R1_ATTRIBUTE10": "five global physical parameters plus 10x5 attribute coefficients, no station physical effect"
+  },
+  "spatial_groups": "ten deterministic groups from 20260823_17; each target group contributes no monthly flow or daily-separation proxy to fitting",
+  "gauge_nuisance": "profiled only for training stations; never predicted or required for held-out targets",
+  "global_raw_prior_precision": 0.1,
+  "attribute_raw_effect_precision": 25.0,
+  "gauge_ridge_precision": 10.0,
+  "proxy_likelihood_weight": 0.1,
+  "optimization": {
+    "adam_iterations": 90,
+    "adam_learning_rate": 0.025,
+    "lbfgs_max_iterations": 35,
+    "initialization": "locked parent global raw parameters and zero attribute effects independently in every fold"
+  },
+  "hard_gates": {
+    "local_mass_balance_max_abs_mm": 1e-8,
+    "routing_relative_error": 1e-10,
+    "total_pooled_NSE_decrease_max": 0.02,
+    "total_station_median_NSE_decrease_max": 0.03,
+    "total_station_macro_log_RMSE_increase_max": 0.03,
+    "absolute_PBIAS_deterioration_max_percentage_points": 2.0,
+    "median_BFI_absolute_error_max": 0.2,
+    "fraction_station_BFI_error_le_0_25_min": 0.6,
+    "station_BFI_spearman_min": 0.3,
+    "median_seasonal_correlation_min": 0.5,
+    "median_peak_month_distance_max": 2.0
+  },
+  "forbidden": [
+    "free station physical parameters",
+    "target station monthly observations in training",
+    "target station daily separation proxy in training",
+    "target Gauge nuisance prediction",
+    "2019-2022 tuning",
+    "TN-based selection",
+    "Euclidean or river-network residual in this stage"
+  ],
+  "interpretation_boundary": "Passing this stage supports attribute-transferable fast/delayed parameter fields, not observed groundwater or young/old water fractions."
+}

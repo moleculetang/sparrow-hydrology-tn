@@ -1,0 +1,33 @@
+{
+  "experiment_id": "20260824_15",
+  "registered_on": "2026-08-28",
+  "hypothesis": "Static catchment attributes can explain part of spatial land-to-water TN delivery without station identifiers or refitting water processes.",
+  "parent": "20260824_14 locked architecture (M0_NO_SON)",
+  "regionalized_parameter": "pi_E only",
+  "mapping": "logit(pi_E,r) = alpha + X_r gamma",
+  "fixed_covariates": [
+    "frozen CLCD 2010/2014/2018 median cropland fraction",
+    "2016-2020 agricultural N intensity",
+    "frozen SoilGrids SOC 0-30 cm",
+    "frozen SoilGrids clay 0-20 cm",
+    "DEM slope"
+  ],
+  "regularization": {
+    "gamma_prior_mean": 0.0,
+    "gamma_prior_sd": 0.35,
+    "gamma_bounds": [-1.5, 1.5]
+  },
+  "fitted_parameters": ["alpha", "five gamma coefficients", "global v_f"],
+  "forbidden": [
+    "Reach embedding",
+    "station or tree identifier parameters",
+    "regionalized v_f",
+    "dynamic parameters",
+    "TN-derived covariates",
+    "hydrology refit",
+    "temperature, reservoir or WWTP terms"
+  ],
+  "dynamic_trigger": "20260824_16 is authorized only if one frozen hydrologic anomaly has absolute Spearman rho >=0.10 with the same sign in at least two of three temporal evaluation years and its combined station-block bootstrap CI95 excludes zero",
+  "authorized_successor": "20260824_16 conditionally, otherwise 20260824_17",
+  "hard_stop_after": "20260824_17"
+}

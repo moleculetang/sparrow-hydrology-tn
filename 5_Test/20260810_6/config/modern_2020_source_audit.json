@@ -1,0 +1,137 @@
+{
+  "purpose": "Modern (about-2020) spatial source inputs for the PRB TN/Legacy-N experiment. A source marked available is locally present and technically usable; it is not automatically a calibrated nitrogen load.",
+  "audit_date": "2026-08-13",
+  "local_root_checked": "E:\\SPARROW\\0_reach_topology\\data\\raw",
+  "items": [
+    {
+      "input": "land_use",
+      "preferred_source": "CLCD",
+      "requested_year": 2020,
+      "status": "available_and_usable",
+      "local_evidence": [
+        "data/raw/land_surface/land_cover/clcd_v1_1985_2025/data/CLCD_v01_2020_albert.tif",
+        "data/processed/land_cover_prb/CLCD_v01_2020_albert.tif"
+      ],
+      "validated": "30 m projected categorical raster; PRB clip is 45,913 x 19,324 pixels. CLCD classes 1=cropland, 4=grassland, 8=impervious.",
+      "role": "Cropland and grassland masks, plus a spatial allocation mask for gridded agricultural sources.",
+      "download_action": "none"
+    },
+    {
+      "input": "population",
+      "preferred_source": "WorldPop Global 2",
+      "requested_year": 2020,
+      "status": "available_and_usable",
+      "local_evidence": [
+        "data/raw/population/worldpop_global2/china_100m_r2025a/chn_pop_2020_CN_100m_R2025A_v1.tif"
+      ],
+      "validated": "China population-count GeoTIFF; 100 m-class 0.00083333333 degree grid, EPSG:4326, Float32, NoData=-99999. The local series is continuous for 2015-2030 on one grid; 2025 onward is projection rather than observation.",
+      "role": "Population allocation; useful for domestic wastewater and human-pressure covariates, but not a measured TN point-source load.",
+      "download_action": "none; retain the WorldPop release metadata and treat future projection years separately."
+    },
+    {
+      "input": "fertilizer_n",
+      "preferred_source": "NPKGRIDS",
+      "requested_year": 2020,
+      "status": "preferred_product_missing_but_functional_alternative_available",
+      "local_evidence": [
+        "data/raw/agriculture/nitrogen_inputs/crop_n_fertilization/global_crop_specific_1961_2020/data"
+      ],
+      "existing_alternative": "Twenty-one crop-specific HDF5 files provide 1961-2020 N inputs on a 5 arc-min global grid. Each contains 13 N-input forms (11 synthetic-fertilizer forms, MA manure, and CR crop residue) split between deep and surface placement. HaNi fertilizer NH4/NO3 fields are also local through 2019.",
+      "role": "Modern cropland fertilizer spatial pattern and an independent cross-check/refinement of HaNi.",
+      "download_action": "NPKGRIDS is optional for sensitivity/cross-validation, not a blocking gap for the current Legacy-N build."
+    },
+    {
+      "input": "crop_area",
+      "preferred_source": "CROPGRIDS",
+      "requested_year": 2020,
+      "status": "preferred_product_missing_but_functional_alternative_available",
+      "local_evidence": [
+        "data/raw/agriculture/nitrogen_inputs/crop_n_fertilization/global_crop_specific_1961_2020/data/Harvested_area_1961-2020.h5"
+      ],
+      "validated": "Twenty-one crop datasets, each with 60 annual 5 arc-min layers for 1961-2020. This harvested area is the matching denominator/allocation field for the local crop-specific N-input product, but it is not the independent CROPGRIDS release.",
+      "role": "Crop-specific allocation weights for NPKGRIDS and later crop-removal estimation.",
+      "download_action": "CROPGRIDS is optional if NPKGRIDS is later used; the current fertilizer product must be paired with its own harvested-area HDF5."
+    },
+    {
+      "input": "cropland_manure",
+      "preferred_source": "Global Cropland Management dataset",
+      "requested_year": 2020,
+      "status": "available_as_integrated_crop_specific_input",
+      "local_evidence": [
+        "data/raw/agriculture/nitrogen_inputs/crop_n_fertilization/global_crop_specific_1961_2020/data"
+      ],
+      "existing_alternative": "The MA_deep and MA_surface datasets provide crop-specific manure N inputs for 1961-2020; HaNi nmanure_app_crop remains an independent alternative through 2019.",
+      "role": "Modern spatial distribution of manure applied to cropland.",
+      "download_action": "none for a first model; validate the MA units and avoid double-counting MA when summing the 13 N-input forms."
+    },
+    {
+      "input": "pasture_manure_deposition",
+      "preferred_source": "Global Pasture Watch plus FAOSTAT manure",
+      "requested_year": 2020,
+      "status": "available_with_known_species_and_element_limits",
+      "local_evidence": [
+        "data/raw/agriculture/livestock/global_pasture_watch/livestock_headcount_faostat_1km_v1",
+        "data/raw/agriculture/livestock_manure/faostat_emn_china/data/FAOSTAT_data_en_8-12-2026.csv",
+        "data/raw/land_surface/land_cover/clcd_v1_1985_2025/data/CLCD_v01_2020_albert.tif"
+      ],
+      "validated": "GPW contains cattle, buffalo, goat, sheep and horse headcount grids for every year 2000-2022. The China FAOSTAT file contains 1961-2023 manure-left-on-pasture N, volatilization and leaching for 15 animal classes with no missing values. GPW does not spatialize pigs, poultry, camels, asses, or mules; use CLCD grassland and documented allocation rules where needed.",
+      "existing_alternative": "HaNi pasture/rangeland manure deposition is local through 2019.",
+      "role": "Spatialized manure deposition during grazing.",
+      "download_action": "no blocking download; write and validate the GPW-to-FAOSTAT animal crosswalk and quantify the unallocated animal-class fraction."
+    },
+    {
+      "input": "nhx_noy_deposition",
+      "preferred_source": "MGND",
+      "requested_year": 2020,
+      "status": "available_and_usable",
+      "local_evidence": [
+        "data/raw/atmosphere/nitrogen_deposition/mgnd_2008_2020/grids"
+      ],
+      "validated": "Fourteen deposition variables, including dryNHx, dryNOy, totNHx, totNOy and totN, are complete for every year 2008-2020 (182 GeoTIFFs) on one Albers grid.",
+      "existing_alternative": "HaNi NHx and NOy deposition are local through 2020.",
+      "role": "Independent 2020 atmospheric-deposition product and uncertainty comparison.",
+      "download_action": "none; harmonize units and use exactly one mutually exclusive deposition definition in each model run."
+    },
+    {
+      "input": "china_deposition_validation",
+      "preferred_source": "China Inorganic N Deposition",
+      "requested_year": 2020,
+      "status": "missing",
+      "role": "China-specific cross-validation of atmospheric N deposition, not an additive second deposition source.",
+      "download_action": "optional validation download: obtain the 2020 layer and metadata; compare only after harmonizing units and wet/dry/total deposition definitions."
+    },
+    {
+      "input": "historical_land_use",
+      "preferred_source": "HYDE 3.5",
+      "requested_year": "through 2025",
+      "status": "missing",
+      "existing_alternative": "HYDE 3.2.1 is local and processed through 2015 only; CLCD provides annual modern land cover through 2025.",
+      "role": "Long-run legacy initialization and 2016+ bridge, subject to release-specific temporal coverage verification.",
+      "download_action": "verify the official HYDE 3.5 release, license and actual annual coverage before download; do not assume a 2025 end year from its name."
+    },
+    {
+      "input": "crop_n_removal",
+      "preferred_source": "crop production or yield × crop-specific N removal coefficients, spatialized by CROPGRIDS",
+      "requested_year": "historical and 2020",
+      "status": "missing_critical",
+      "role": "Required with gross inputs to compute net agricultural N surplus for the explicit SON Legacy-N model.",
+      "download_action": "add national/provincial crop production series and crop N-content/removal coefficients. CROPGRIDS crop area alone does not provide N removal."
+    },
+    {
+      "input": "biological_n_fixation",
+      "preferred_source": "crop/pasture-specific gridded BNF or defensible crop-type parameterization",
+      "requested_year": "historical and 2020",
+      "status": "missing_critical",
+      "role": "Required with crop removal before a net agricultural N surplus can be constructed.",
+      "download_action": "obtain and validate a BNF product/parameter set matched to crop classes; it is absent from the proposed modern list."
+    },
+    {
+      "input": "annual_wastewater_tn",
+      "preferred_source": "official China municipal/provincial wastewater flow, TN concentration or TN discharge",
+      "requested_year": "2006-2022",
+      "status": "missing_critical_for_calibration",
+      "role": "Time-varying point-source TN. WorldPop can allocate a proxy but cannot replace this observation.",
+      "download_action": "obtain annual official records and map to facilities/reaches using HydroWASTE as the location inventory."
+    }
+  ]
+}

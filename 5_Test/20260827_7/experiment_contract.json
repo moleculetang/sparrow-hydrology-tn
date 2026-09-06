@@ -1,0 +1,51 @@
+{
+  "stage": "20260827_7",
+  "status": "AUTHORIZED_BY_USER",
+  "program_amendment": {
+    "supersedes": "20260827_6 hard_stop: no automatic 20260827_7+",
+    "authority": "The user explicitly authorized execution of the approved State-consistent SIG2P-S/P plan in new test folders.",
+    "old_baseline_mutation_forbidden": true,
+    "new_hard_stop": "no automatic 20260827_13+"
+  },
+  "hypothesis": "A regionalized slow-routing constraint can enter the DYN2P upper fast/percolation partition so that corrected slow response is generated from a corresponding lower-store state trajectory without materially degrading total discharge.",
+  "parent": "20260827_6 locked DYN2P alpha=0.5 total-flow baseline; 20260827_4 SIG2P-O is diagnostic reference only",
+  "station_population": {
+    "authoritative_registry": "91 unique stations/Reaches satisfying topology_representative=true and four_group_check_eligible=true in 20260825_2 gauge_representativeness_audit.parquet",
+    "monthly_objective": "all available 2010-2018 monthly observations for the same 91 stations, station-normalized and missing-aware",
+    "daily_objective": "all available daily observations for the same 91 stations, station-normalized and missing-aware",
+    "105_station_role": "earlier authoritative discharge-data audit population; retained for provenance but not used as this state-equation baseline",
+    "old_65_station_role": "legacy exact-complete baseline reproduction only; not the new training population",
+    "attribution_control": "lambda_S=0 is refit with the identical 105-station dual-resolution objective"
+  },
+  "operator": {
+    "name": "SIG2P-S/P",
+    "regionalized_score": "frozen 20260827_4 logit slow-fraction offset, clipped to [-2, 2]",
+    "equation": "logit(percolation_share_star) = logit(percolation_share) + lambda_S * regionalized_score",
+    "modified_fluxes": ["upper fast response", "percolation to lower storage"],
+    "unchanged_fluxes": ["upper carry", "lower slow/carry release equation"],
+    "lambda_candidates": [0.0, 0.25, 0.5, 0.75, 1.0],
+    "lambda_grid_expansion_forbidden": true,
+    "lower_recession_regionalization_forbidden": true,
+    "posthoc_fast_slow_reallocation_forbidden": true
+  },
+  "time_firewall": {
+    "spinup": "2006-2009 candidate-specific",
+    "training": "2010-2015",
+    "stopping_and_candidate_selection": "2016",
+    "development_evaluation": "2017-2018, inaccessible until candidate lock",
+    "formal_temporal_test": "2019-2022, inaccessible until final 230-Reach prediction hash",
+    "formal_spatial_test": ["珠坑", "昭平", "瓦村（二）", "盘江桥（三）"],
+    "extension": "2023-2024 after final decision; no 2025 run without complete PET forcing",
+    "TN_read": false
+  },
+  "preflight_gates": {
+    "lambda_zero_exact_parent": true,
+    "land_mass_error_max_mm": 1e-10,
+    "component_closure_max_m3_s": 1e-10,
+    "all_states_and_fluxes_nonnegative": true,
+    "positive_score_increases_percolation": true,
+    "negative_score_decreases_percolation": true,
+    "lower_store_pulse_has_multiday_release": true
+  },
+  "authorized_successor": "20260827_8"
+}

@@ -1,0 +1,65 @@
+{
+  "experiment_id": "20260824_4",
+  "hypothesis_id": "CURRENT_FAILURE_MODE_AND_BOUNDED_STRUCTURAL_CANDIDATES",
+  "registered_before_new_candidate_tn_results": true,
+  "stage_role": "program registration, parent repair, failure-mode audit and family-level preflight",
+  "parent": {
+    "lock": "E:/SPARROW/5_Test/20260824_1/locks/parent_lock_registry.json",
+    "process": "Q72 -> F00 -> S0/S1-12 x six mu -> T1 -> H1_GLOBAL",
+    "layers": {
+      "P0": "unscaled process prediction",
+      "P1": "globally scaled pathway prediction with eta_quick and eta_gw",
+      "P2": "station-conditioned prediction with the frozen ridge contract"
+    }
+  },
+  "required_repairs": [
+    "audit H1 with the segmentwise identity sum(L_i*W_i/(86400*Q_i)); never divide reach travel time by mean depth",
+    "hard-gate Q72 quick-plus-groundwater closure and routed nitrogen mass closure",
+    "withdraw the existing Laplace/PyMC uncertainty as non-authoritative because it is not centered on the production optimum",
+    "record the current bilevel objective: sample log-SSE for eta and station/tree-macro score for structure",
+    "supersede the 20260824_2 synthetic implementation with registered log1p eta fitting, a real phi=0 endpoint, untruncated log-scale noise and an input lock",
+    "reclassify 20260824_3 as PROCESS_NOT_SUPPORTED_PREDICTION_PRESERVED and record phi=1 boundary confounding",
+    "produce formal P0/P1/P2 absolute and station-demeaned anomaly metrics"
+  ],
+  "time_boundary": {
+    "development_support_period": [2016, 2021],
+    "oof_evaluation_years": [2018, 2019, 2020, 2021],
+    "retrospective_locked_year": 2022,
+    "q72_2022_rule": "may be read only for frozen-input integrity and coverage",
+    "tn_2022_may_be_read": false
+  },
+  "F1": {
+    "mean_equation_parent": "H1_GLOBAL routed quick and groundwater TN divided by Q72 routed water",
+    "student_t": "fixed nu=4 on log1p(TN); no fitted degrees of freedom",
+    "cq_hinge": "z=log(Q72)-training-station median log(Q72); g(z)=beta_low*min(z,0)+beta_high*max(z,0); thresholds use all training-year Q72 months",
+    "nesting": "beta_low=beta_high=0 exactly reproduces the corresponding non-hinge arm",
+    "diagnostics_only": [
+      "no-ID shallow nonlinear residual benchmark",
+      "eta upper bound relaxed from 1 to 2"
+    ]
+  },
+  "F2": {
+    "L1": "one shared nonpoint catchment memory placed before the quick/GW split and replacing post-GW T1 at equal memory complexity",
+    "L2": "one-parameter effective loss driven by a fold-frozen Q72 antecedent-wetness anomaly",
+    "L3": "geometrically normalized MPR: quick delivery varies with reach slope and groundwater delivery with GLHYMPS permeability",
+    "forbidden": "source-specific free lags or a second simultaneous memory unless synthetic recovery first proves separability"
+  },
+  "F3": {
+    "parent": "H1 areal/benthic exposure",
+    "residence_time": "attenuation driven by Q72 flow and Andreadis width/depth/length travel time, without reference discharge",
+    "saturation": "H1 removal with fixed K_N grid {0,0.5,1,2} mg/L; K_N=0 is the registered parent endpoint"
+  },
+  "formal_metrics": [
+    "station-macro station-demeaned log1p anomaly RMSE",
+    "station-macro absolute log1p RMSE",
+    "tree-macro absolute log1p RMSE",
+    "RMSE mg/L",
+    "MAE mg/L",
+    "NSE",
+    "Pearson R2",
+    "PBIAS",
+    "monthly residuals",
+    "flow and concentration strata"
+  ],
+  "stopping_rule": "Do not add candidates after the registered graph. Stop after independent F1/F2/F3 decisions and at most one authorized joint test."
+}

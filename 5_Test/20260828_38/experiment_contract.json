@@ -1,0 +1,32 @@
+{
+  "stage": "20260828_38",
+  "title": "Forced 1961-2025 hydrology sensitivity product",
+  "objective": "Run the frozen 1961-2024 TN-ready hydrology through 2025 with the available harmonized ERA5-Land PET extension, without changing parameters or overwriting the formal product.",
+  "product_class": "sensitivity_only",
+  "authorized_inputs": {
+    "historical_forcing": "E:/SPARROW/5_Test/20260828_29/outputs/daily_hbv_forcing_1961_2024.parquet",
+    "extension_2025": "E:/SPARROW/5_Test/20260828_30/outputs/daily_hbv_forcing_2025_era5_sensitivity.parquet",
+    "frozen_hydrology_checkpoint": "E:/SPARROW/5_Test/20260828_9/outputs/parent_preserving_state_consistent_model.pt",
+    "reservoir_operator": "R2_tau180_a0.25_d0.00"
+  },
+  "invariants": [
+    "No hydrology, reservoir, Gauge, or TN parameter refitting",
+    "1961-2024 rows must be byte-source-equivalent to the accepted historical forcing",
+    "routed total flow equals fast plus slow plus direct flow",
+    "reservoir water, source tracer, and age moment balances close",
+    "formal 1961-2024 outputs in 20260828_35 are never overwritten"
+  ],
+  "known_failed_gate": {
+    "name": "2024 monthly PET correlation between harmonized ERA5-Land and CMFD",
+    "observed": 0.916165152165145,
+    "required": 0.98,
+    "consequence": "The 2025 product is exploratory sensitivity output and cannot be promoted as the formal forcing or independent validation."
+  },
+  "allowed_claim": "Frozen-model 2025 hydrologic sensitivity under CHM_PRE V2 precipitation and harmonized ERA5-Land PET.",
+  "forbidden_claims": [
+    "2025 PET bridge passed the preregistered gate",
+    "1961-2025 is the formal TN-ready product",
+    "2025 discharge validation",
+    "tracer-validated fast/slow endmembers"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "stage": "20260828_31",
+  "title": "1961-2025 forcing integrity amendment and authoritative lock",
+  "status": "AUTHORIZED_BASE_LOCK_1961_2024_WHILE_2025_DOWNLOADS_IN_BACKGROUND",
+  "parents": [
+    "E:/SPARROW/5_Test/20260828_27",
+    "E:/SPARROW/5_Test/20260828_28",
+    "E:/SPARROW/5_Test/20260828_29",
+    "E:/SPARROW/5_Test/20260828_30"
+  ],
+  "formal_sources": {
+    "precipitation": "CHM_PRE V2 daily 1961-2025",
+    "pet_1961_2024": "CMFD V2.0 six-variable FAO-56",
+    "pet_2025": "ERA5-Land hourly FAO-56 harmonized on 2021-2023 and checked on untouched 2024"
+  },
+  "resolved_source_amendments": {
+    "chm_pre_2005": "Official replacement promoted after full date/deep-read audit; incomplete old payload archived",
+    "cmfd_temp_1961_01": "Official replacement promoted after every time slice was read; corrupt old payload archived",
+    "era5_scope": "Formal bridge uses only 2021-2025 (60 months); optional 2006-2020 download cannot alter this bridge"
+  },
+  "integrity_gates": {
+    "stage29_status": "PASS",
+    "daily_key": "exactly one row per date and Reach",
+    "reach_count": 230,
+    "date_1961_2024": "complete daily calendar",
+    "required_rows_1961_2024": 5376480,
+    "finite_nonnegative_precipitation_and_pet": true,
+    "cmfd_1961_2005": "Every used payload must be decompressed over the frozen PRB spatial window during forcing construction",
+    "cmfd_2006_2024": "Accepted locked forcing is reused without numerical rewriting",
+    "source_hashes_and_repair_provenance": true
+  },
+  "pet_2025_bridge": {
+    "fit": "2021-2023",
+    "validation": "2024 only",
+    "gates": {
+      "monthly_pet_correlation_min": 0.98,
+      "pooled_annual_bias_abs_max": 0.05,
+      "median_abs_reach_year_bias_max": 0.05,
+      "corrected_daily_rmse_must_improve": true
+    },
+    "pass": "Append 2025 to the formal forcing and require 5460430 Reach-day rows",
+    "fail": "Lock 1961-2024 as formal; export 2025 separately as PET_EXTENSION_CONFOUNDED sensitivity",
+    "pending": "Lock the already accepted 1961-2024 base forcing and continue the complete base-product pipeline; append 2025 only after the background repair and bridge are independently completed."
+  },
+  "forbidden": [
+    "hydrology or reservoir parameter refitting",
+    "discharge or TN observation access before forcing lock",
+    "using ERA5 2006-2020 to change the registered 2025 bridge",
+    "silently accepting unreadable compressed chunks",
+    "interpolating across a corrupt source payload",
+    "silently promoting a failed 2025 bridge"
+  ],
+  "runtime": "D:/ProgramData/anaconda3/envs/sparrow/python.exe",
+  "pass_statuses": ["PASS_FORCING_LOCK_1961_2025", "PASS_FORCING_LOCK_1961_2024_WITH_2025_SENSITIVITY", "PASS_FORCING_LOCK_1961_2024_2025_PENDING"]
+}

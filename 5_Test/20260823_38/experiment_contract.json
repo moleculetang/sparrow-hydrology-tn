@@ -1,0 +1,27 @@
+{
+  "stage": "20260823_38",
+  "status": "registered_after_20260823_37_parameter_lock_before_evaluation_read",
+  "parent": "20260823_37",
+  "evaluations": {
+    "frozen_time": "Apply the locked full-development parameters to 2019-2022 with continuous states and no discharge update.",
+    "zero_target_history_space": "For each complete terminal tree, delete all 2010-2018 total-flow and separation rows in that tree, refit the same five parameters and predict the deleted tree."
+  },
+  "references": ["monthly Q72 support flow repeated within month", "monthly Q72 delayed fraction repeated within month"],
+  "gates": {
+    "time_pooled_NSE_noninferiority_margin": 0.01,
+    "time_station_median_NSE_noninferiority_margin": 0.01,
+    "nested_space_pooled_NSE_noninferiority_margin": 0.01,
+    "nested_space_station_median_NSE_noninferiority_margin": 0.01,
+    "delayed_fraction_RMSE_must_improve": true,
+    "nested_station_mean_fraction_spearman_min": 0.30,
+    "basin_monthly_peak_circular_difference_max_months": 1,
+    "raw_parameter_boundary_abs_max": 5.5
+  },
+  "forbidden": [
+    "use target-tree history in its refit",
+    "use 2019-2022 in parameter selection",
+    "station Gauge correction",
+    "TN-based decision",
+    "reservoir equation"
+  ]
+}

@@ -1,0 +1,46 @@
+run_id: 20260728_6
+logical_parent_run: 20260727_6
+input_anchor_run: 20260727_6
+diagnostic_predecessors: [20260728_2, 20260728_3, 20260728_4, 20260728_5]
+phase: comprehensive_diagnostic_gate
+hypothesis_id: G01_select_only_evidence_supported_development_path
+generation_type: diagnostic_synthesis_no_model_training
+model_change: none
+forbidden_evidence_years: 2019-2022
+required_integrity_gates:
+  - 20260728_2
+  - 20260728_3
+  - 20260728_4
+  - 20260728_5
+candidate_admission:
+  stable_low_flow_target_required: true
+  gauged_signature_upper_bound_required_if_static_gate_fails: true
+  structure_promotion_permitted: false
+  conditional_q72_q78_fusion_permitted: false
+  ungauged_static_attribute_gate_permitted: false
+allowed_candidate:
+  type: frozen_baseline_gauged_history_low_flow_residual_expert
+  q72_frozen: true
+  q78_frozen: true
+  class_alpha_frozen: true
+  correction_sign: nonpositive_only
+  station_gate_source: outer_fold_training_only_nested_oof
+  time_gate_source: frozen_baseline_prediction_only
+  reservoir_gate: 0
+  data_quality_suspicious_gate: 0
+  excluded_stations: [劳村站, 富罗（二）站, 隆安站]
+  protected_stations: [石角站]
+  oracle_weight_use: forbidden
+  full_series_20260728_5_label_as_predictor: forbidden
+next_phase_dynamic_sequence:
+  - nested_oof_gate_audit
+  - minimal_monotone_residual_pilot
+  - frozen_temporal_block_confirmation
+  - expanded_static_attribute_gate_only_if_temporal_candidate_passes
+  - five_fold_spatial_cluster_holdout_only_if_static_gate_passes
+  - one_time_2019_2022_confirmation_only_after_full_freeze
+  - final_summary_or_evidence_stop
+runtime:
+  heartbeat_seconds: 30
+  default_step_timeout_seconds: 300
+status: completed_one_bounded_gauged_history_candidate_admitted

@@ -1,0 +1,25 @@
+{
+  "scenario_id": "20260818_7",
+  "status": "frozen_complete",
+  "authoritative_output_sha256": {
+    "E:\\SPARROW\\5_Test\\20260817_6\\final_lock.json": "258b716518f398fa942e1b72522d1ca08d88e5772a93629e515883edf85debfe",
+    "E:\\SPARROW\\5_Test\\20260818_1\\reports\\readout_dependence_decision.json": "6db59a854951ada38e38404ef1d12293da08a838ed308119e910012d1be52843",
+    "E:\\SPARROW\\5_Test\\20260818_2\\reports\\source_water_operator_decision.json": "fa18ff9e838d3a51c44852aff2c81d6b47098e2d2c7985d31ed06016e971bb1d",
+    "E:\\SPARROW\\5_Test\\20260818_2\\outputs\\operator_spinup_audit.parquet": "f7756404b22de160873e99c6fd063a385c5f70482faa8487e77b86b8c66eacbc",
+    "E:\\SPARROW\\5_Test\\20260818_2\\outputs\\operator_engineering_audit.parquet": "d75b3218bff0960df5643a661f0f8508689b381ad81922687d057ba466ea3a9b",
+    "E:\\SPARROW\\5_Test\\20260818_3\\reports\\wwtp_evidence_decision.json": "acffa24afaad5c5fcc7b858661fea826d07b79fd99b67bd729e5eb1d83b3fb59",
+    "E:\\SPARROW\\5_Test\\20260818_3\\reports\\wwtp_source_nonoverlap_audit.json": "39c6a5d8fd1cc071839ece9b757e8ada189c2337ccba812c5a2822eb7a2d0909",
+    "E:\\SPARROW\\5_Test\\20260818_4\\reports\\interaction_decision.json": "e6ca7af214e563144dae2e2419032ce7c2b3f5b9435e09632d5aa861afb0977b",
+    "E:\\SPARROW\\5_Test\\20260818_5\\reports\\remaining_process_diagnostic_decision.json": "349187de1f9575971435ebd42089e943029e25c1059002187a95b0a7ea055474",
+    "E:\\SPARROW\\5_Test\\20260818_6\\reports\\conditional_final_model_manifest.json": "ce329150ca2763945493ee7ced13eec0aec32b63758244470149f546b219cab7",
+    "E:\\SPARROW\\5_Test\\20260818_6\\outputs\\final_formal_model_registry.parquet": "1f33ed441a977b2e030a33f76247a3c4d5b0137d97e1993b12d0b8e93641d8b8",
+    "E:\\SPARROW\\5_Test\\20260818_6\\outputs\\final_component_registry.parquet": "ef1a528b2e5133132352529724acda791e01cd228cb75d4a148470a735094428",
+    "E:\\SPARROW\\5_Test\\20260818_7\\outputs\\requirement_by_requirement_audit.parquet": "71b289958cc63e8362a12ba602fc8fb6626aab22647bd6876d6ccce5b81e8326",
+    "E:\\SPARROW\\5_Test\\20260818_7\\reports\\requirement_by_requirement_audit.json": "8d36a605fb752a6729151b4090784a34c3f4d8d78825dc46e7cd8f36f0de056f",
+    "E:\\SPARROW\\5_Test\\20260818_7\\reports\\final_acceptance.json": "cd0dca6ac7b52e81cb6345708a1b34145778219addd3e3a0c44c2f0dcaad4126"
+  },
+  "hard_check_count": 41,
+  "failed_checks": [],
+  "selection_uses_2022": false,
+  "parent_files_modified": false
+}

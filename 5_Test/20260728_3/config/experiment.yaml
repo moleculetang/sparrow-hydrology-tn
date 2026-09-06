@@ -1,0 +1,26 @@
+run_id: 20260728_3
+parent_run: 20260727_6
+input_anchor_run: 20260727_6
+phase: structure_compensation_audit
+hypothesis_id: D01_q72_refit_compensation
+generation_type: diagnostic_only_structure_compensation_audit
+model_change: none
+diagnostic_candidates: [20260727_13, 20260727_15]
+evidence_years: 2006-2018
+forbidden_evidence_years: 2019-2022
+thresholds:
+  design_change_tolerance: 1.0e-12
+  reproduction_tolerance: 1.0e-9
+  weak_structure_leverage_median_abs_logq: 0.01
+  compensation_dominated_index: 0.80
+  effect_retained_index: 0.20
+station_policy:
+  active_exclusions: [劳村站, 富罗（二）站, 隆安站]
+  protected_from_exclusion: [石角站]
+  allow_new_exclusions: false
+reservoir_scope: report_only
+random_seed: 1729
+runtime:
+  heartbeat_seconds: 30
+  default_step_timeout_seconds: 300
+status: completed_passed_structure_compensation_gate

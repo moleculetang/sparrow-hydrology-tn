@@ -1,0 +1,13 @@
+{
+  "program_id": "20260824_monthly_tn_structural_diagnosis_and_upgrade",
+  "parent_manifest": "E:/SPARROW/5_Test/20260824_4/program_manifest.json",
+  "current_folder": "20260824_5",
+  "family": "F2_TERRESTRIAL_INTERFACE",
+  "status": "completed",
+  "candidate_graph_expanded": false,
+  "F1_status": "passed_gaussian_cq_hinge",
+  "F2_status": "NO_REGISTERED_F2_UPGRADE_SUPPORTED",
+  "F3_status": "registered_pending",
+  "joint_status": "closed_pending_condition",
+  "TN_2022_values_read": false
+}

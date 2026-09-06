@@ -1,0 +1,22 @@
+{
+  "program": "20260828_long_hydrology_1961_2025",
+  "status": "running",
+  "registered_at": "2026-08-31",
+  "parent_hydrology_interface": "E:/SPARROW/5_Test/20260828_24",
+  "parent_completion_lock": "E:/SPARROW/5_Test/20260828_26/locks/program_completion_lock.json",
+  "stages": [
+    {"stage": "20260828_27", "role": "source registry and adaptive acquisition", "status": "running"},
+    {"stage": "next_free", "role": "CMFD/ERA5 forcing preprocessing and harmonization", "status": "registered"},
+    {"stage": "next_free", "role": "historical reservoir activation audit", "status": "registered"},
+    {"stage": "next_free", "role": "locked 1961-2025 model execution", "status": "registered"},
+    {"stage": "next_free", "role": "independent QA and final product lock", "status": "registered"}
+  ],
+  "period": {"start": "1961-01-01", "end": "2025-12-31"},
+  "expected_grain": {
+    "reach_daily_rows": 5460430,
+    "reach_monthly_rows": 179400,
+    "reservoir_daily_rows": 308633,
+    "reservoir_monthly_rows": 10140
+  },
+  "claim_boundary": "2025 is a locked forcing extension using harmonized ERA5-Land PET, not discharge validation and not a pure-CMFD year."
+}

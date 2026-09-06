@@ -1,0 +1,56 @@
+{
+  "stage": "20260823_15",
+  "status": "completed",
+  "station_identity": "NFKC; whitespace removed; parentheses unified; terminal 站 removed globally; terminal _2/_3/_4 normalized",
+  "training_registry": "E:\\SPARROW\\5_Test\\20260823_14\\outputs\\final_model_station_month_observations.parquet",
+  "training_window": "2006-01 through 2018-12",
+  "frozen_check_window": "2019-01 through 2022-12",
+  "development_station_count": 105,
+  "frozen_check_station_count": 103,
+  "primary_groups": {
+    "G1": "MAP_2006_2018_FIT",
+    "G2": "MAP_RECURSIVE_ASSIMILATION_2006_2018_FIT",
+    "G3": "MAP_FROZEN_2019_2022_CHECK",
+    "G4": "MAP_RECURSIVE_ASSIMILATION_FROZEN_AFTER_2018_2019_2022_CHECK"
+  },
+  "assimilation_timing": "pre-update one-step prediction; observation at t updates t+1 and later only",
+  "last_allowed_update": "2018-12",
+  "post_2018_observation_update": "FORBIDDEN",
+  "q72_role": "physical-process reference and water-balance audit only; not a fifth primary group",
+  "zero_history_spatial_contract": {
+    "source": "20260823_14 authoritative discharge registry after S111/archive exclusions",
+    "target_station_history_used_in_training": false,
+    "target_reach_used_in_training": false,
+    "target_observations_used_for_parameter_selection": false,
+    "target_station_specific_effect": "identically zero",
+    "target_recursive_state": "identically zero",
+    "eligible_station_type": "ordinary_river_gauge",
+    "maximum_snap_distance_m": 5000,
+    "minimum_usable_months": 12,
+    "minimum_independent_target_reaches_for_promotion": 5,
+    "registered_available_targets": 8,
+    "registered_targets": [
+      {"station": "岳城", "reach_id": 55},
+      {"station": "仁化（三）", "reach_id": 97},
+      {"station": "珠坑", "reach_id": 44},
+      {"station": "昭平", "reach_id": 84},
+      {"station": "水口", "reach_id": 122},
+      {"station": "定安（二）", "reach_id": 133},
+      {"station": "瓦村（二）", "reach_id": 134},
+      {"station": "盘江桥（三）", "reach_id": 206}
+    ],
+    "candidates": [
+      "H0_Q72_PROCESS",
+      "H1_TRANSFERABLE_GLOBAL_MAP",
+      "H2_GAUGED_MAP_COLD_START",
+      "H3_ASSIMILATION_COLD_START"
+    ],
+    "promotion_rule": "Require at least five independent unseen target reaches; paired station bootstrap CI95 upper<0 for H1 minus H0 station RMSE_log; pooled NSE no worse than H0 by more than 0.01; station-median NSE no worse than H0 by more than 0.02; low- and high-flow station RMSE_log paired CI95 upper<0.005; and point RMSE_log improvement at no fewer than 75% of targets."
+  },
+  "promotion_decision": {
+    "gauged_station_time_product": "MAP_GAUGED_LOCKED",
+    "recursive_assimilation": "DIAGNOSTIC_ONLY_NOT_PROMOTED",
+    "all_reach_transferable_product": "NOT_AUTHORIZED_SPATIAL_GATE_FAILED",
+    "tn_water_interface": "NO_NEW_ALL_REACH_PRODUCT_AUTHORIZED"
+  }
+}

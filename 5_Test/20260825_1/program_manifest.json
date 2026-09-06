@@ -1,0 +1,43 @@
+{
+  "program": "20260825 fast-slow response hydrology for TN",
+  "status": "running",
+  "authoritative_previous_lock": "20260823_39/reports/final_daily_experiment_lock.json",
+  "previous_candidate_status": "DAILY_CANDIDATE_NOT_PROMOTED_AND_PARAMETERIZATION_CONFOUNDED",
+  "operational_reference_until_promotion": "20260823_27 monthly Q72",
+  "primary_hypothesis": "A Raven-HBV-equation-conformant daily model with low-capacity attribute regionalization and explicit conserving reach routing can provide spatially transferable fast, intermediate and slow response water components for TN sensitivity analysis.",
+  "claim_vocabulary": {
+    "allowed": [
+      "fast-response flow",
+      "intermediate-response flow",
+      "slow-response flow",
+      "Q-derived hydrologic signature"
+    ],
+    "forbidden_without_external_tracers": [
+      "observed groundwater fraction",
+      "new-water fraction",
+      "old-water fraction",
+      "water age",
+      "transit time identified from discharge"
+    ]
+  },
+  "stages": {
+    "20260825_1": "program registry and previous-experiment forensics",
+    "20260825_2": "daily forcing, gauge representativeness and signature contracts",
+    "20260825_3": "Raven-equation-conformant HBV and conserving routing numerical verification",
+    "20260825_4": "repaired control, global HBV and routing ablation",
+    "20260825_5": "MPR-lite complete terminal-tree spatial evaluation",
+    "20260825_6": "path identifiability and conditional hydraulic exposure",
+    "20260825_7": "full-development refit, locked retrospective check and TN bridge",
+    "20260825_8": "one technical-correction slot only"
+  },
+  "hard_stop": "No automatic 20260825_9+ extension. Stage 8 cannot add scientific degrees of freedom or revise gates after seeing retrospective TN or discharge results.",
+  "forbidden_program_actions": [
+    "promote the 20260823_39 daily candidate",
+    "daily hydrograph-separation fraction likelihood",
+    "station-specific physical parameters or Gauge correction in the TN hydrology",
+    "reservoir equation",
+    "LSTM or dynamic parameter network",
+    "use wqd_reference_discharge_m3_s",
+    "use TN observations to select hydrology"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "stage": "20260826_17",
+  "purpose": "Complete the already registered zero-target-history spatial evidence even though temporal high-flow failure precludes promotion.",
+  "heldout_terminal_trees": [
+    1,
+    20,
+    22,
+    26,
+    56,
+    166,
+    212,
+    217
+  ],
+  "target_Q_2010_2018": "evaluation only after fold model lock; excluded from optimization, early stopping and selection",
+  "fold_parent": "global eight-parameter HBV retrained on the seven remaining trees",
+  "candidate_nesting": "candidate epoch 0 exactly equals its fold-specific global parent",
+  "optimization": "same optimizer, prior, 2010-2015 training, 2016 early stopping and seeds as Stage 16",
+  "promotion_possible": false,
+  "reason_promotion_impossible": "Stage 16 high-flow noninferiority failed in all six candidate-seed runs",
+  "2019_2022_read": false,
+  "TN_read": false
+}

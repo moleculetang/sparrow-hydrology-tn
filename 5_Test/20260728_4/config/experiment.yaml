@@ -1,0 +1,40 @@
+run_id: 20260728_4
+parent_run: 20260727_6
+input_anchor_run: 20260727_6
+phase: q72_q78_oof_complementarity
+hypothesis_id: D02_q72_q78_oof_oracle_upper_bound
+generation_type: diagnostic_only_no_model_promotion
+model_change: none
+evidence_years: 2012-2018_blocked_oof_only
+forbidden_evidence_years: 2019-2022
+folds:
+  - fit_2006_2011_eval_2012_2013
+  - fit_2006_2013_eval_2014_2015
+  - fit_2006_2015_eval_2016_2018
+oracle:
+  alpha_min: 0.0
+  alpha_max: 1.0
+  alpha_step: 0.01
+  primary_loss: log_q_sse
+  deployment_use_permitted: false
+flow_regimes:
+  low: observed_q_at_or_below_training_q25
+  middle: between_training_q25_and_q75
+  high: observed_q_at_or_above_training_q75
+eligibility_thresholds:
+  minimum_direction_consistent_folds: 2
+  minimum_positive_station_fraction: 0.60
+  minimum_median_log_rmse_reduction: 0.02
+  maximum_median_log_residual_correlation: 0.80
+  minimum_cell_months: 6
+station_policy:
+  active_exclusions: [劳村站, 富罗（二）站, 隆安站]
+  protected_from_exclusion: [石角站]
+  allow_new_exclusions: false
+reservoir_scope: report_only_excluded_from_gate
+random_seed: 1729
+runtime:
+  heartbeat_seconds: 30
+  default_step_timeout_seconds: 300
+  q78_oof_timeout_seconds: 900
+status: completed_passed_diagnostic_gate_no_conditional_fusion_support

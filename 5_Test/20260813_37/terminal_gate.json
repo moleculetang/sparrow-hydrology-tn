@@ -1,0 +1,11 @@
+{
+  "terminal": "DETERMINISTIC_SPINUP_REPAIR_COMPLETE",
+  "parent_rows": 8822,
+  "repaired_rows": 8822,
+  "common_reach_month_fold_rows": 8822,
+  "added_evaluation_rows": 0,
+  "evaluation_key_population_unchanged": true,
+  "parent_oof_sha256": "6f30d3fdca1106e55e723b8dd524c0892e872549a845c1062182c64d5e028649",
+  "repaired_oof_sha256": "60a6347c0cfc8f2d61bf9b5de1aa469cfa926fbbdc02f409ee994f0f06db8d25",
+  "strict_dual_nse_target_met": false
+}

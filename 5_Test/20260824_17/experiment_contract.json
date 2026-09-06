@@ -1,0 +1,18 @@
+{
+  "experiment_id": "20260824_17",
+  "registered_on": "2026-08-28",
+  "purpose": "final full-development MAP, historical backcast, hydraulic-geometry sensitivity and synthesis for the locked 20260824_12-16 TN architecture tree",
+  "training": "2021-2024 all primary TN",
+  "historical_backcast": "2016-2020 descriptive; never used to choose the final architecture",
+  "formal_hydraulic_equation": "H1 = length * width / (Q * 86400)",
+  "geometry_sensitivities": ["Andreadis width p05", "central", "width p95"],
+  "LWD_over_Q": "diagnostic exposure only; not mixed with uptake-velocity units and not used for selection",
+  "forbidden": [
+    "new architecture or parameter family",
+    "station calibration",
+    "using 2016-2020 backcast to revise decisions",
+    "temperature, reservoir or WWTP terms",
+    "20260824_18 or later continuation"
+  ],
+  "terminal_stage": true
+}

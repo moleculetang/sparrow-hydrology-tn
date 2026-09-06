@@ -1,0 +1,81 @@
+{
+  "scenario_id": "20260820_10",
+  "status": "CORE_ARCHITECTURE_APPROVED__EXECUTION_CONTRACT_COMPLETE",
+  "purpose": "test whether frozen Q72 groundwater state adds predictive Legacy-N release information beyond fixed T1, and whether explicit cohort age adds information beyond bulk state dependence",
+  "hydrology_source": "frozen_Q72_canonical_main_only",
+  "source_forcing_primary": "annual_N_divided_by_12",
+  "formal_models": {
+    "source_structures": ["S0", "S1_tau_012m"],
+    "delivery_mu_month": [12, 36, 60, 96, 144, 240],
+    "count": 12
+  },
+  "mechanisms": ["PARENT", "HLEG_BULK", "HLEG_AGE"],
+  "beta_grid": [-1.0, -0.75, -0.5, -0.25, 0.0, 0.25, 0.5, 0.75, 1.0],
+  "groundwater_release_gate": "gw_discharge_mm > 1e-12",
+  "cohort_month_order": ["age_old_cohorts_by_one_month", "add_current_groundwater_input_at_age_zero", "release_current_month"],
+  "cohort_exact_age_month": [0, 2399],
+  "cohort_open_tail": ">=2400_month",
+  "oof_evaluation_years": [2018, 2019, 2020, 2021],
+  "development_support_period": [2016, 2021],
+  "retrospective_locked_year": 2022,
+  "primary_metric": "station_macro_RMSE_ln1p_TN",
+  "candidate_selection_layer": "P1_globally_scaled_pathway_layer",
+  "prediction_preservation_layer": "P2_station_conditioned_prediction",
+  "readout": {
+    "eta_bounds": [0.0, 1.0],
+    "eta_ridge": 1.0,
+    "station_effect_ridge": 12.0,
+    "solver": "scipy.optimize.least_squares_trf",
+    "initialization": [0.8, 0.8],
+    "tolerance": 1e-12,
+    "max_nfev": 2000,
+    "candidate_fold_specific": true
+  },
+  "paired_bootstrap": {
+    "replicates": 10000,
+    "seed": 20260820,
+    "noninferiority_margin_RMSE_ln1p": 0.005
+  },
+  "ensemble_gates": {
+    "temporal_noninferior_models_min": 10,
+    "temporal_improved_models_min": 6,
+    "nested_LOSO_noninferior_models_min": 10,
+    "nested_LOTO_noninferior_models_min": 10,
+    "high_H_noninferior_models_min": 10,
+    "low_H_noninferior_models_min": 10,
+    "one_hydrologic_state_improved_models_min": 6,
+    "stable_direction_models_min": 10,
+    "boundary_confounded_models_max": 2
+  },
+  "hydrologic_state": {
+    "reach_anomaly_reference": "2006_2015_monthly_climatology",
+    "reach_scale_ddof": 1,
+    "station_aggregation": "upstream_groundwater_discharge_volume_weighted",
+    "station_standardization_reference": "2006_2015",
+    "high": ">=1",
+    "low": "<=-1"
+  },
+  "semantic_validity_thresholds": {
+    "gw_stock_kg_n": 1e-9,
+    "weighted_age_variance_month2": 1e-12,
+    "abs_beta_times_H": 1e-6,
+    "gw_release_kg_n": 1e-12,
+    "required_direction_fraction": 0.99
+  },
+  "locked_data_contract": {
+    "Q72_2022": "may_be_read_prelock_only_for_frozen_input_integrity_coverage_and_engineering_audits",
+    "TN_2022": "must_not_be_materialized_until_development_mechanism_lock_and_full_development_parameter_lock_exist",
+    "final_label": "locked_2022_retrospective_temporal_check"
+  },
+  "forbidden_expansions": [
+    "temperature",
+    "reaction_kinetics",
+    "second_groundwater_store",
+    "new_mu_grid",
+    "posthoc_beta_grid_expansion",
+    "WaterGAP",
+    "groundwater_level",
+    "GIS_TTD",
+    "Andreadis_reference_discharge"
+  ]
+}

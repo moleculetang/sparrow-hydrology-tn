@@ -1,0 +1,40 @@
+{
+  "program": "20260826 conserving dynamic hydrology for TN",
+  "final_status": "PROGRAM_COMPLETE_DYN2P_ENGINEERING_INTERFACE_AUTHORIZED_WITH_POST_RETROSPECTIVE_CAVEAT",
+  "final_structure": "230-Reach daily conserving HBV with a low-capacity dynamic internal-flux gate and two operational response components",
+  "stage_status": {
+    "20260826_23": "PASS_PROGRAM_REGISTRATION_AND_PRIOR_FAILURE_AUDIT",
+    "20260826_24": "PASS_DYN3P_CORE_PREFLIGHT",
+    "20260826_25": "PASS_TEMPORAL_CANDIDATE_SELECTION",
+    "20260826_26": "PASS_ZERO_TARGET_HISTORY_SPATIAL_SELECTION",
+    "20260826_27": "PASS_DYN2P_SPATIAL_AND_TWO_PATH_SELECTION",
+    "20260826_28": "PASS_FULL_DEVELOPMENT_DYN2P_LOCK",
+    "20260826_29": "LOCKED_RETROSPECTIVE_FAILED_ABSOLUTE_BIAS_GATE",
+    "20260826_31": "PASS_DEVELOPMENT_ONLY_SHRINKAGE_AUDIT_NO_REPAIR_SELECTED",
+    "20260826_32": "POST_RETROSPECTIVE_ALPHA05_ENGINEERING_LOCK_ALL_ENGINEERING_GATES_PASS",
+    "20260826_30": "PROGRAM_COMPLETE_FINAL_TN_INTERFACE_WRITTEN_AND_VERIFIED"
+  },
+  "formal_operational_paths": [
+    "fast_response",
+    "slow_response"
+  ],
+  "primary_TN_hydrology": "routed_total_m3_s",
+  "bounded_TN_pathway_inputs": [
+    "routed_fast_response_m3_s",
+    "routed_slow_response_m3_s",
+    "routed_fast_response_fraction",
+    "lower_slow_storage_mm"
+  ],
+  "hydraulic_exposure_inputs": [
+    "channel_bankfull_travel_time_central_day",
+    "channel_bankfull_travel_time_geometry_p05_day",
+    "channel_bankfull_travel_time_geometry_p95_day"
+  ],
+  "station_history_correction": false,
+  "mass_conserving_internal_calibration": true,
+  "TN_read": false,
+  "independent_validation_claim": false,
+  "post_retrospective_disclosure": "The alpha=0.5 engineering repair was fixed after the first 2019-2022 result was known. The repaired-period result is engineering robustness evidence, not a new independent validation.",
+  "hard_stop": "No automatic creation of 20260826_33 or later folders",
+  "authorized_successor": null
+}

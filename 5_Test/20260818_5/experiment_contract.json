@@ -1,0 +1,9 @@
+{
+  "scenario_id": "20260818_5",
+  "purpose": "zero-new-parameter omitted-process diagnostics",
+  "selected_operator": "F00",
+  "formal_models": 12,
+  "diagnostics": ["negative surplus withdrawal", "monthly residual timing", "CMFD temperature residual", "quick x HYDE cropland x slope residual"],
+  "model_change_authorized": false,
+  "selection_uses_2022": false
+}

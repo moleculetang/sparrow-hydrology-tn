@@ -1,0 +1,31 @@
+run_id: 20260728_17
+parent_run: 20260727_6
+input_anchor_run: 20260727_6
+phase: fresh_latest_discharge_input_excluding_lingqu_san
+hypothesis_id: H17_fresh_latest_discharge_rebuild_excluding_lingqu_san
+generation_type: fresh_discharge_input_rebuild_and_model_diagnostic
+model_change: latest DischargeData rebuild plus Lingqu（三）station exclusion
+target_failure_group: input_provenance_and_lingqu_exclusion_diagnostic
+data_split:
+  model_training_and_selection: 2006-2018
+  inner_training: 2006-2015
+  inner_selection: 2016-2018
+  development_holdout: 2019-2022
+blocked_folds:
+  - fit_2006_2011_eval_2012_2013
+  - fit_2006_2013_eval_2014_2015
+  - fit_2006_2015_eval_2016_2018
+station_policy:
+  active_exclusions: [劳村站, 富罗（二）站, 隆安站, 灵渠（三）站]
+  protected_from_exclusion: [石角站]
+  allow_new_exclusions: true
+reservoir_scope: report_only_no_reservoir_module
+reproduction_reference: E:/SPARROW/5_Test/20260727_6
+model_parameters_changed: false
+random_seed: 1729
+runtime:
+  heartbeat_seconds: 30
+  main_workflow_timeout_seconds: 1800
+  blocked_q72_timeout_seconds: 600
+  default_step_timeout_seconds: 300
+status: planned

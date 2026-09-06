@@ -1,0 +1,48 @@
+{
+  "experiment_id": "20260824_12",
+  "registered_on": "2026-08-28",
+  "purpose": "freeze the canonical 20260828_9/10 hydrology-to-TN bridge, source-calendar prior, observation domain and fold boundaries for the new monthly hydrology-driven TN architecture",
+  "authoritative_hydrology": {
+    "daily": "E:/SPARROW/5_Test/20260828_9/outputs/canonical_reach_daily_2006_2024.parquet",
+    "monthly": "E:/SPARROW/5_Test/20260828_9/outputs/canonical_reach_monthly_2006_2024.parquet",
+    "manifest": "E:/SPARROW/5_Test/20260828_10/reports/canonical_tn_hydrology_manifest.json",
+    "monthly_sha256": "045c639d9480baff939ee0bec1dc034568ff626efb9e3666f4778e315c14707c"
+  },
+  "development": "2021-2024",
+  "temporal_oof": [
+    "2021 -> 2022",
+    "2021-2022 -> 2023",
+    "2021-2023 -> 2024"
+  ],
+  "historical_backcast": "2016-2020, descriptive only",
+  "allowed": [
+    "component-preserving annual N ledger",
+    "MIRCA2000 crop-calendar availability prior",
+    "Sacks 2010 crop-calendar QA",
+    "canonical upper/lower fast/slow water carrier",
+    "SPARROW H1 hydraulic exposure",
+    "one effective agricultural SON pool in successors",
+    "static land-delivery regionalization in a registered successor"
+  ],
+  "forbidden": [
+    "annual component divided by 12",
+    "old Q72 or 20260827_6 response components",
+    "hydrology refit from TN",
+    "station intercept or station history",
+    "C-Q hinge",
+    "eta_fast or eta_slow",
+    "fixed T1, gamma TTD, SAS age gate or second groundwater store",
+    "temperature, reservoir reaction or WWTP mass",
+    "Andreadis WQD reference discharge",
+    "TN-selected calendar phase or k_L"
+  ],
+  "crop_calendar_gate": {
+    "primary": "MIRCA2000 v1.1",
+    "qa": "Sacks et al. 2010",
+    "minimum_basin_harvested_area_coverage": 0.95,
+    "failure": "STOP_CALENDAR_COVERAGE_BELOW_95_PERCENT"
+  },
+  "lineage_correction": "20260828_9 experiment_contract incorrectly described 20260828_8 as failed; 20260828_10 canonical manifest and 20260828_8 accepted decision are authoritative",
+  "authorized_successor": "20260824_13",
+  "hard_stop_after": "20260824_17"
+}

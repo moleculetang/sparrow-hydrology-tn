@@ -1,0 +1,13 @@
+{
+  "stage": "20260826_7",
+  "status": "registered_before_execution",
+  "model": "REGIONAL_HGB_LAG_TOTAL_FLOW_CEILING",
+  "fit_period": "2010-2016",
+  "development_holdout": "2017-2018",
+  "dynamic_features": "upstream area-weighted precipitation and PET with fixed 1-365 day rolling windows; seasonal sine/cosine",
+  "static_features": "upstream area-weighted Stage 6 attributes",
+  "forbidden": ["station identity", "previous observed discharge as input", "2019-2022 discharge", "TN", "interpreting ML state or features as fast/slow water"],
+  "authorization": "TOTAL_FLOW_INFORMATION_CEILING_ONLY_NOT_TN_INTERFACE",
+  "authorized_successor": "20260826_8"
+}
+

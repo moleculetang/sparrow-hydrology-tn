@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "stage": "20260824_46",
+  "status": "REGISTERED_BEFORE_RESULTS",
+  "authorized_by": "E:/SPARROW/5_Test/20260824_45/locks/stage45_lock.json",
+  "required_parent_status": "PASS_CANONICAL_L0_V2_SOURCE_LEDGER_READY_FOR_STAGE46",
+  "parent": "L0_v2_U3_R0",
+  "selection_layer": "population_transferable",
+  "hypothesis": "one low-capacity structural correction can repair a measurable part of the canonical parent gap without station identity or hydrology refitting",
+  "candidate_order": [
+    "REG3_CONTACT",
+    "REG3_OBSERVATION",
+    "DYN_HYDRO_DELIVERY",
+    "SOURCE2",
+    "MINERAL_LIFETIME",
+    "AQ_SIZE"
+  ],
+  "successor": "20260824_47 for temporally eligible candidates; otherwise 20260824_49 synthesis",
+  "hard_boundaries": [
+    "single-factor candidates only",
+    "no pairwise combination",
+    "no temperature",
+    "no agricultural Active/Fresh Legacy selection",
+    "no station/reach/tree identity effect in population layer",
+    "no hydrology refit",
+    "no new empirical TN lag"
+  ]
+}

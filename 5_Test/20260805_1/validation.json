@@ -1,0 +1,32 @@
+{
+  "run_id": "20260805_1",
+  "cohort": "full_2006_2022",
+  "checks": {
+    "runtime_exact_conda_sparrow": true,
+    "all_required_local_artifacts_exist": true,
+    "input_panel_key_unique": true,
+    "input_panel_shape_230_reaches_x_204_months": true,
+    "active_observations_positive_finite": true,
+    "all_policy_exclusions_absent": true,
+    "protected_shijiao_present": true,
+    "cohort_coverage_rule_passed": true,
+    "one_selected_station_per_reach": true,
+    "same_reach_maximum_flow_rank_selected": true,
+    "input_build_fixed_exclusions_absent": true,
+    "three_blocked_folds_complete": true,
+    "oof_key_unique": true,
+    "oof_year_boundary_2012_2018": true,
+    "oof_predictions_positive_finite": true,
+    "q72_parent_code_hashes_exact": true,
+    "q72_model_gate_passed": true,
+    "source_inventory_paths_are_local": true
+  },
+  "passed_count": 18,
+  "check_count": 18,
+  "passed": true,
+  "decision": "FREEZE_AS_NEW_Q72_BASELINE",
+  "forbidden_active_stations": [],
+  "active_station_count": 82,
+  "active_observation_months": 16716,
+  "oof_station_count": 82
+}

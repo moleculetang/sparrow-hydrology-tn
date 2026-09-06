@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "replicates": 99,
+  "workers": 8,
+  "logical_cpu_count": 32,
+  "physical_core_estimate": 16,
+  "worker_formula": "min(8, floor(estimated_physical_cores*0.75))",
+  "blas_threads_per_worker": 1,
+  "elapsed_seconds": 1140.314
+}

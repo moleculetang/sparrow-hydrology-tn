@@ -1,0 +1,6 @@
+q72_structure: unchanged_from_20260727_6_except_low_flow_volume_objective
+q78_mass_structure: unchanged_from_20260727_6
+fusion_structure: unchanged_reach_class_geometric_fusion
+new_hydrologic_module: none
+new_station_random_effect: none
+validation_postprocessing: none

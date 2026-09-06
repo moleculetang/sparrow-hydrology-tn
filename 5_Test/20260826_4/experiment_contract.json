@@ -1,0 +1,16 @@
+{
+  "stage": "20260826_4",
+  "status": "registered_before_execution",
+  "purpose": "Common global-parameter coarse fit and viability screening",
+  "models": ["RAVEN_SACSMA3", "RAVEN_TOPMODEL3", "HYPE3L_HYDROLOGY", "MTRS3"],
+  "fit_period": "2010-2018",
+  "spinup": "2006-2009 periodic forcing",
+  "objective": {
+    "aggregation": "equal terminal-tree weight after station-level scoring",
+    "terms": ["all-flow log RMSE / 0.35", "absolute volume bias / 0.15", "high-flow log RMSE / 0.50", "low-flow log RMSE / 0.50", "PML monthly AET RMSE / 30 mm"],
+    "selection": "fixed-scale composite negative log-error proxy; all component terms retained"
+  },
+  "forbidden": ["station or tree identity parameters", "2019-2022 discharge", "TN", "reservoir equations", "Gauge/P2 correction"],
+  "authorized_successor": "20260826_5"
+}
+

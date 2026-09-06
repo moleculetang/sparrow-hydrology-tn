@@ -1,0 +1,23 @@
+{
+  "scenario_id": "20260816_3",
+  "purpose": "GIS hydrogeologic TTD prior generator",
+  "parent": "E:/SPARROW/5_Test/20260816_2",
+  "formula": "t_path=sum(delta_L_j*n_j/(K_j*i_j))",
+  "permeability": "k_m2=10**(logK_Ferr_/100); K_m_s=k_m2*rho*g/mu",
+  "porosity": "Porosity_x/100",
+  "layer": "near_surface_without_permafrost",
+  "methods": ["local_gradient", "path_gradient"],
+  "hard_contradiction": {
+    "per_gradient_rule": "kernel_mean_month < gis_p10_month/10 OR kernel_mean_month > gis_p90_month*10",
+    "joint_rule": "local_gradient_gross_contradiction AND path_gradient_gross_contradiction",
+    "strictness": "a candidate is hard-excluded only when both gradient methods independently satisfy the same pre-existing 10x gross-contradiction rule"
+  },
+  "hydrogeo_comparison_target": "ungated mutually-exclusive T0/T1 kernel",
+  "water_gated_realized_delivery": "diagnostic only",
+  "cell_weighting": "250-m effective-area subpixel fraction; uniform recharge within Reach",
+  "documentation_sync": {
+    "status": "documentation_sync_of_preexisting_executable_rule",
+    "threshold_changed": false,
+    "executable_source": "scripts/run_stage3.py: kernel mean compared with GIS p10/10 and p90*10"
+  }
+}

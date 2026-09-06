@@ -1,0 +1,27 @@
+{
+  "stage": "20260826_2",
+  "status": "registered_before_execution",
+  "parent": "20260825_7 GLOBAL_HBV_R0",
+  "allowed": [
+    "recompute reach elevation and slope attributes from the authoritative PRB DEM",
+    "freeze common evaluation and numerical contracts",
+    "independently replay the frozen parent with frozen parameters"
+  ],
+  "forbidden": [
+    "fit or select a new hydrologic structure",
+    "modify any 20260825_* artifact",
+    "use 2019-2022 discharge for fitting",
+    "use TN, station identity effects, reservoirs, WQD reference discharge or untrusted groundwater levels"
+  ],
+  "static_repair_method": {
+    "source_dem": "0_reach_topology/data/processed/dem_prb/dem.tif",
+    "source_reaches": "0_reach_topology/results/vectors/reaches_topology.shp",
+    "profile_spacing_m": 250,
+    "endpoint_window_m": 1000,
+    "slope": "downstream-positive robust longitudinal profile regression after rolling-median smoothing",
+    "sub_resolution_rule": "length-specific half-vertical-cell lower bound with an explicit censored flag"
+  },
+  "parent_reproduction_tolerance_m3_s": 1e-9,
+  "authorized_successor": "20260826_3"
+}
+

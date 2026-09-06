@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "stage": "20260824_47",
+  "status": "REGISTERED_BEFORE_RESULTS",
+  "authorized_by": "E:/SPARROW/5_Test/20260824_46/locks/stage46_lock.json",
+  "required_parent_status": "PASS_TEMPORAL_SCREEN_READY_FOR_STAGE47",
+  "parent": "L0_v2_U3_R0",
+  "candidates": ["REG3_OBSERVATION", "DYN_HYDRO_DELIVERY", "MINERAL_LIFETIME", "AQ_SIZE"],
+  "purpose": "nested station-blind spatial validation and natural 2021 network-expansion stress test",
+  "concurrency": {"maximum_workers": 3, "warning_rss_gib": 8, "hard_stop_total_rss_gib": 12},
+  "successor": "20260824_48 only for spatially eligible REG3_OBSERVATION and/or DYN_HYDRO_DELIVERY logic; otherwise 20260824_49",
+  "forbidden": ["P2 selection", "held-out station intercept", "temperature fitting", "candidate combination", "hydrology refit"]
+}

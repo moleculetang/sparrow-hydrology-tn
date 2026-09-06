@@ -1,0 +1,30 @@
+{
+  "scenario_id": "20260816_5",
+  "purpose": "progressive external-constraint and river-TN OOF adjudication",
+  "gate_order": [
+    "engineering_and_mass",
+    "soil_admissibility",
+    "hydrogeologic_plausibility",
+    "groundwater_n_context_not_hard_gate",
+    "river_tn_oof_noninferiority",
+    "predictive_improvement_higher_evidence"
+  ],
+  "reference_model_id": "S1_tau_480m_mu_000m",
+  "river_log_rmse_noninferiority_margin": 0.01,
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 20260816,
+    "blocks": ["station_key", "terminal_tree_id"],
+    "interval": "percentile_95",
+    "strict_upper_rule": "upper < 0.01"
+  },
+  "soil_rule": "only S1 candidates whose tau is admitted by 20260816_2 enter the structural admissible region; M0/S0 remain delivery controls",
+  "hydrogeo_rule": "hard exclusion only when local-gradient and path-gradient both say grossly contradictory",
+  "groundwater_n_role": "contextual_not_hard_gate",
+  "empty_set": {
+    "attribution_status": "external_constraints_incompatible_or_operator_nonidentifying",
+    "predictive_reference": "20260815_7/S1_tau_480m+T0",
+    "gate_relaxation_forbidden": true,
+    "grid_expansion_forbidden": true
+  }
+}

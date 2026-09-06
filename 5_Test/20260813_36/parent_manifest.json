@@ -1,0 +1,7 @@
+{
+  "parent_input": "E:\\SPARROW\\5_Test\\20260813_31\\inputs\\parent_indata.parquet",
+  "parent_input_sha256": "3678cd8a950290a1962f27c9e702ae84087f594e5e3bdc05332644dc200ec26f",
+  "parent_oof": "E:\\SPARROW\\5_Test\\20260813_31\\inputs\\parent_oof.parquet",
+  "parent_oof_sha256": "4a6b66c9c182a4bf9aff74554911af012712a0da6dffcfc83a128d9410188c5d",
+  "source_monthly": "E:\\SPARROW\\5_Test\\20260813_31\\inputs\\merged_discharge\\merged_2006_2022_monthly.parquet"
+}

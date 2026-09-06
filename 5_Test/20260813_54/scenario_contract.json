@@ -1,0 +1,12 @@
+{
+  "scenario_id": "S111",
+  "run_role": "standalone_operational_baseline",
+  "observation_domain": "97 retained OOF stations; 96 retained 2019-2022 diagnostic stations",
+  "excluded_station_count": 15,
+  "protected_stations": ["石角站"],
+  "forcing_rows": 46920,
+  "reaches": 230,
+  "state_calendar": "full_forcing_2006_2022",
+  "station_selection_caveat": "S111 station masking was chosen in a previous post-hoc sensitivity analysis; results are operational-domain performance, not unbiased generalization evidence.",
+  "reference_outputs": "reference_selected/oof.parquet and reference_selected/validation.parquet; used only for deterministic reproduction audit"
+}

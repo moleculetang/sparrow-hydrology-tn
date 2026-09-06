@@ -1,0 +1,26 @@
+run_id: 20260727_15
+parent_run: 20260727_6
+input_anchor_run: 20260727_6
+phase: stage2a3
+hypothesis_id: H09_fixed_slow_flow_disconnection_threshold
+generation_type: stage2a3_disconnection_threshold_experiment
+model_change: apply a fixed 0.25-storage-capacity disconnection threshold to primary production-store slow release; all fitted losses and other structures unchanged
+target_failure_group: low_flow_overprediction
+data_split:
+  model_training_and_selection: 2006-2018
+  inner_training: 2006-2015
+  inner_selection: 2016-2018
+  development_holdout: 2019-2022
+blocked_folds:
+  - fit_2006_2011_eval_2012_2013
+  - fit_2006_2013_eval_2014_2015
+  - fit_2006_2015_eval_2016_2018
+station_policy:
+  active_exclusions: [劳村站, 富罗（二）站, 隆安站]
+  protected_from_exclusion: [石角站]
+  allow_new_exclusions: false
+reservoir_scope: report_only_no_reservoir_module
+comparison_reference: E:/SPARROW/5_Test/20260727_6
+model_parameters_changed: true
+random_seed: 1729
+status: reject_candidate_keep_20260727_6

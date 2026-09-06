@@ -1,0 +1,18 @@
+{
+  "stage": "20260826_30",
+  "purpose": "final all-Reach hydrology conditions for monthly TN transport/transformation",
+  "model": "conserving DYN2P: fast response plus slow response",
+  "total_identity": "routed_fast_response_m3_s + routed_slow_response_m3_s = routed_total_m3_s",
+  "channel_hydraulic_exposure": "reach length × Andreadis width × depth / model routed discharge; WQD reference discharge is forbidden",
+  "channel_exposure_role": "TN covariate for a separately registered reaction experiment; it was not selected as a streamflow routing correction",
+  "slow_hydrologic_memory": "lower-store state and slow-response flux; any additional TN legacy lag remains a nitrogen-state process and is not merged into hydrology",
+  "forbidden_interpretations": [
+    "observed surface water",
+    "observed groundwater",
+    "new water",
+    "old water",
+    "water age"
+  ],
+  "post_retrospective_disclosure": "alpha=0.5 engineering repair was fixed after the first 2019-2022 result was known",
+  "TN_read": false
+}

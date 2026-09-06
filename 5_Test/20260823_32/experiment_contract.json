@@ -1,0 +1,13 @@
+{
+  "stage": "20260823_32",
+  "status": "registered_conditional",
+  "title": "Conditional river-network Gaussian physical-parameter residual",
+  "trigger": "20260823_31 numerical, temporal and path gates pass; transferable spatial evaluation alone fails; graph residual Moran permutation p<0.05",
+  "forbidden_without_trigger": [
+    "fit river-network residual",
+    "inspect residual basis to select complexity",
+    "use target station history",
+    "use TN performance"
+  ],
+  "hard_stop": "If any prerequisite is false, write NOT_TRIGGERED and preserve the attribute/global parent."
+}

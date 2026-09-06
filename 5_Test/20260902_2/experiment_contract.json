@@ -1,0 +1,19 @@
+{
+  "stage": "20260902_2",
+  "status": "COMPLETED_FROM_USER_SUPPLIED_LOCAL_DOWNLOAD",
+  "source": {
+    "doi": "10.6084/m9.figshare.9890531.v1",
+    "license": "CC BY 4.0",
+    "download_directory": "E:\\SPARROW\\0_reach_topology\\data\\未整理\\9890531",
+    "canonical_raw_directory": "E:\\SPARROW\\0_reach_topology\\data\\raw\\hydrology\\hydroatlas_v1_0",
+    "acquisition_mode": "user supplied the complete official download; no network download is part of this execution plan"
+  },
+  "rules": [
+    "verify all seven official MD5 values before moving",
+    "preserve all four downloaded archives",
+    "extract only BasinATLAS and RiverATLAS GDB archives",
+    "never overwrite an existing non-identical file",
+    "write an input hash and extraction inventory"
+  ],
+  "authorized_successor": "20260902_3"
+}

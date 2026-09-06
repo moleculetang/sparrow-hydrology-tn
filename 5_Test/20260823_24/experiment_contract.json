@@ -1,0 +1,22 @@
+{
+  "stage": "20260823_24",
+  "status": "registered_before_spatial_test",
+  "hypothesis": "With each target station's entire record removed, the fixed network-native Reach-flow plus unified Gauge-operator algorithm can predict that station from Q72 forcing, Reach/support attributes and other river-network observations.",
+  "outer_groups": 10,
+  "group_source": "20260823_17 deterministic groups balanced by terminal tree and flow size",
+  "fixed_reach_flow_hyperparameters": {"smooth_precision": 0.1, "ridge_precision": 0.1},
+  "fixed_gauge_operator_hyperparameters": {"smooth_precision": 0.001, "ridge_precision": 10.0},
+  "reason_for_fixed_hyperparameters": "first zero-history test of the locked algorithm; held-out observations fit no coefficient",
+  "target_history_used_in_reach_flow_fit": false,
+  "target_history_used_in_gauge_operator_fit": false,
+  "target_history_used_in_recursive_state": false,
+  "comparators": ["Q72", "zero-history global MAP", "network-native Reach flow without Gauge operator"],
+  "primary_spatial_gates": {
+    "paired_station_bootstrap_CI95_upper_vs_global_MAP_below": 0.0,
+    "station_improvement_fraction_vs_global_MAP_min": 0.60,
+    "station_mean_log_RMSE_noninferiority_margin_vs_Q72": 0.03
+  },
+  "support_stratification": "registered 20260823_22 support-risk categories; diagnostic only and no station removal",
+  "external_four_station_outcomes_read": false,
+  "claim_boundary": "fixed-hyperparameter zero-history test; if successful, hyperparameter nesting and whole-tree deletion remain required"
+}

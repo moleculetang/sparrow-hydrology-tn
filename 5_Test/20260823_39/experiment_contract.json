@@ -1,0 +1,24 @@
+{
+  "stage": "20260823_39",
+  "status": "registered_before_interface_generation",
+  "parent": "20260823_38",
+  "purpose": "Aggregate the locked daily candidate to a numerically closed monthly Reach interface, apply the pre-registered decision, and close the bounded daily experiment series.",
+  "candidate_status_inherited": "DAILY_FAST_DELAYED_HYDROLOGY_NOT_SUPPORTED",
+  "required_outputs": [
+    "all 230 Reach x 204 month local and routed fast/delayed flows",
+    "month-end source, fast and delayed stores",
+    "local monthly mass closure",
+    "comparison with the retained monthly Q72 parent",
+    "final program lock"
+  ],
+  "promotion_rule": "The candidate may become the TN hydrology only if every 20260823_38 gate passed. Numerical closure alone cannot override failed empirical gates.",
+  "hard_numerical_gates": {
+    "rows": 46920,
+    "reaches": 230,
+    "months": 204,
+    "local_mass_balance_max_abs_mm": 1e-8,
+    "component_sum_max_abs_m3_s": 1e-10,
+    "routing_relative_error": 1e-10
+  },
+  "hard_stop": "No 20260823_40+ experiment is authorized."
+}

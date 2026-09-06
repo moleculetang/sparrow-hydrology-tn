@@ -1,0 +1,12 @@
+{
+  "run_id": "20260728_32",
+  "parent_run": "20260728_30",
+  "phase": "lowflow_diagnostic_baseline",
+  "hypothesis_id": "H32_canonical_reach_class_rebuild_before_lowflow_attribution",
+  "major_change": "No model change; replace the area-only audit reach class with the formal canonical reach-class mapping for OOF low-flow diagnosis.",
+  "selection_evidence_years": "2006-2018",
+  "confirmation_only_years": "2019-2022 (not used)",
+  "active_exclusions": ["劳村站", "富罗（二）站", "隆安站", "灵渠（三）站", "马口站"],
+  "protected_stations": ["石角站"],
+  "reservoir_scope": "report_only_no_reservoir_module"
+}

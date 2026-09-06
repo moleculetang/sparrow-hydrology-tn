@@ -1,0 +1,41 @@
+{
+  "program_id": "20260824_q72_tn_source_zone_legacy",
+  "status": "closed",
+  "current_folder": "20260824_2",
+  "next_folder_number": 3,
+  "manifest_revision": 3,
+  "registered_before_new_candidate_tn_results": true,
+  "entries": [
+    {
+      "folder": "20260824_1",
+      "hypothesis_id": "PARENT_REPAIR_AND_UNBIASED_READJUDICATION",
+      "purpose": "Program governance, current-parent numerical repair, hydrologic provenance correction and unbiased H0/H1 temporal/spatial re-adjudication.",
+      "status": "passed",
+      "legal_successors": [
+        "SOURCE_HISTORY_AND_IDENTIFIABILITY_PREFLIGHT",
+        "PARENT_NOT_LOCKABLE",
+        "IMPLEMENTATION_BLOCKED"
+      ],
+      "contract": "E:/SPARROW/5_Test/20260824_1/experiment_contract.json",
+      "decision": "H1_GLOBAL retained as temporal process Parent; monitored-station P2 supported; new-station and new-tree transfer not validated"
+    },
+    {
+      "folder": "20260824_2",
+      "hypothesis_id": "SOURCE_HISTORY_AND_IDENTIFIABILITY_PREFLIGHT",
+      "purpose": "Audit agricultural source history and WWTP non-overlap, synthesize the nitrogen-Legacy literature, and test whether the registered source-selective SON12 structures are numerically distinguishable before any formal TN candidate fitting.",
+      "status": "closed",
+      "legal_successors": [
+        "FORMAL_SOURCE_SELECTIVE_RETENTION_EXPERIMENT",
+        "SOURCE_HISTORY_INSUFFICIENT",
+        "SOURCE_IDENTITY_NOT_IDENTIFIABLE",
+        "IMPLEMENTATION_BLOCKED"
+      ],
+      "contract": "E:/SPARROW/5_Test/20260824_2/experiment_contract.json",
+      "decision": "SOURCE_IDENTITY_NOT_IDENTIFIABLE; formal observed-TN phi_M fitting not authorized"
+    }
+  ],
+  "program_terminal_status": "SOURCE_IDENTITY_NOT_IDENTIFIABLE",
+  "terminal_reason": "The manure-associated source-zone signal is practically indistinguishable from the equal-mass generic control at current monitoring support, despite exact noiseless recoverability.",
+  "scientific_expansion_after_terminal_status": false,
+  "output_formats": ["Markdown", "JSON", "Parquet"]
+}

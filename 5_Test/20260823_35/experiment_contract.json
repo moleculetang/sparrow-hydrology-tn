@@ -1,0 +1,33 @@
+{
+  "stage": "20260823_35",
+  "status": "registered_before_audit",
+  "title": "Daily forcing and observation feasibility audit",
+  "question": "Can one bounded daily-state joint experiment be run without inventing daily precipitation, daily discharge or network support?",
+  "authoritative_daily_precipitation": "Raw CHM_PRE V2.1 daily grids, 2006-2022, aggregated with the frozen 20260813_30 D8 full-polygon-overlap weights used by the current Q72 parent",
+  "authoritative_daily_discharge": "20260823_28 ordinary-river-gauge daily panel, 2010-2022",
+  "authoritative_daily_ET": null,
+  "overlap_window": "2010-2022",
+  "development_window": "2010-2018",
+  "frozen_time_check": "2019-2022",
+  "ET_sensitivity_schedules": {
+    "uniform": "monthly prescribed AET divided equally among calendar days",
+    "solar_weighted": "monthly prescribed AET allocated by positive extraterrestrial-radiation weights and renormalized exactly within month"
+  },
+  "prior_experiment_boundary": "20260808_4 tested frozen-parameter daily-P order with monthly targets and found only +0.0016 pooled OOF log-NSE; the new experiment differs by jointly fitting daily physical states to daily total flow and a soft delayed-response proxy.",
+  "hard_gates": {
+    "precipitation_monthly_closure_max_abs_mm": 1e-8,
+    "AET_monthly_closure_max_abs_mm": 1e-10,
+    "reach_count": 230,
+    "daily_flow_station_min": 80,
+    "development_years_min": 5,
+    "frozen_check_years_min": 3
+  },
+  "forbidden": [
+    "interpolate monthly precipitation to daily",
+    "claim artificial ET is observed daily ET",
+    "read 2019-2022 daily flow for parameter selection or model revision",
+    "claim independent daily delayed-flow observation",
+    "use reservoir gauges"
+  ],
+  "interpretation_boundary": "The experiment has authoritative daily precipitation and discharge but only mass-conserving artificial within-month AET schedules. It is a daily precipitation-driven fast/delayed-state experiment, not an independently forced complete daily energy-water-balance model."
+}

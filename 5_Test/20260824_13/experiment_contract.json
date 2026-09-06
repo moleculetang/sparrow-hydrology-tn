@@ -1,0 +1,44 @@
+{
+  "experiment_id": "20260824_13",
+  "registered_on": "2026-08-28",
+  "hypothesis": "A monthly TN model can use the immutable state-consistent upper/lower water carrier without station history; a daily-compiled conservative tracer kernel may preserve information lost by direct monthly balance fractions.",
+  "parent": "20260824_12 canonical TN input lock",
+  "development": "2021-2024",
+  "temporal_oof": [
+    "2021 -> 2022",
+    "2021-2022 -> 2023",
+    "2021-2023 -> 2024"
+  ],
+  "candidate_carriers": [
+    "MONTHLY_BALANCE_CARRIER",
+    "DAILY_COMPILED_CARRIER"
+  ],
+  "m0_parameters": {
+    "pi_E": [0.0001, 0.9999],
+    "v_f_m_per_day": [0.0, 0.5]
+  },
+  "fixed": [
+    "CENTRAL MIRCA2000 calendar",
+    "component-preserving FERT/MAN/BNF/DEP source labels",
+    "proportional crop-demand deduction",
+    "canonical 20260828_9 hydrology",
+    "frozen topology",
+    "H1 length-width-over-Q hydraulic exposure",
+    "station/reach/tree equally weighted log1p objective",
+    "same-Reach station cross-section rule"
+  ],
+  "forbidden": [
+    "station intercept or station history",
+    "P1/P2 layers",
+    "C-Q hinge",
+    "eta_fast or eta_slow",
+    "fixed T1, gamma TTD, SAS or a second groundwater store",
+    "SON or agricultural legacy parameters",
+    "TN-selected calendar",
+    "temperature, reservoir or WWTP terms",
+    "TN refitting of any water parameter"
+  ],
+  "carrier_decision": "prefer DAILY_COMPILED_CARRIER only if all structural tests pass and temporal station/reach/tree plus nested LORO/LOTO are noninferior to MONTHLY_BALANCE_CARRIER at a 0.005 log-RMSE margin; otherwise lock MONTHLY_BALANCE_CARRIER",
+  "authorized_successor": "20260824_14",
+  "hard_stop_after": "20260824_17"
+}

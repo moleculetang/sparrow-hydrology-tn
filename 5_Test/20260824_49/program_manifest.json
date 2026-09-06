@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "stage": "20260824_49",
+  "status": "REGISTERED_FINAL_SYNTHESIS_AND_LOCK",
+  "authorized_by": "E:/SPARROW/5_Test/20260824_48/locks/stage48_lock.json",
+  "hard_stop": true,
+  "purpose": "Lock the unified one-fit TN method mainline, apply the production promotion rule, and close the 20260824_44-49 program.",
+  "method_mainline": "U3_P90_S90 one-fit constrained differentiable state-space TN architecture",
+  "production_reference_before_decision": "E:/SPARROW/5_Test/20260824_32",
+  "promotion_rule": "A new production structure requires temporal eligibility and Stage47 spatial eligibility; otherwise no full-development refit or production overwrite is allowed.",
+  "forbidden": [
+    "promote a candidate whose station-blind Skill_log CI95 lower is not positive",
+    "use conditional/site-history performance to rescue a population-transfer failure",
+    "fit an unauthorized joint model",
+    "fit all-reach aquatic temperature response",
+    "create 20260824_50 or higher"
+  ]
+}

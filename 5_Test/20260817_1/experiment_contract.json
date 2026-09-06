@@ -1,0 +1,13 @@
+{
+  "scenario_id": "20260817_1",
+  "purpose": "retrospective S0/S1/M0 structural reconciliation",
+  "oof_evaluation_years": [2018, 2019, 2020, 2021],
+  "development_support_period": [2016, 2021],
+  "retrospective_locked_year": 2022,
+  "oof_keys_per_model": 4097,
+  "eta_boundary_confounding_role": "diagnostic_only_not_hard_gate",
+  "m0_candidates": [0, 12, 36, 60, 96, 144, 240],
+  "formal_expected": "S0 and S1_tau_12 x mu=[12,36,60,96,144,240]",
+  "tn_transform": "ln(1 + TN_mg_L)",
+  "locked_2022_used": false
+}

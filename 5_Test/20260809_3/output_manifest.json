@@ -1,0 +1,265 @@
+{
+  "run_id": "20260809_3",
+  "files": [
+    {
+      "path": "artifact.json",
+      "bytes": 39268,
+      "sha256": "7ac11276993acd5631c5e78ed0fb7c976e947079f033829a77c99c4761520f03"
+    },
+    {
+      "path": "experiment_contract.md",
+      "bytes": 2977,
+      "sha256": "b47289dc7444504e04c742d0560361fd84630424232f5a338322c3cecb6552be"
+    },
+    {
+      "path": "figures/01_full_network_topology_risk_map.png",
+      "bytes": 794140,
+      "sha256": "66378061310dc298a7c4a3ad09aadd8268bf20bdda09c99cb014c346b526c2fd"
+    },
+    {
+      "path": "figures/01_full_network_topology_risk_map.svg",
+      "bytes": 742106,
+      "sha256": "fa9de8f6aafa8e2dc30c30d165245a0193b61fe7e5efd6791ea6b9b2363af97d"
+    },
+    {
+      "path": "figures/02_topology_check_counts.png",
+      "bytes": 99300,
+      "sha256": "624dbd9a1aa780adce7be8e2fe5aabee6231bebc6cd7e53fcd12f45563a337af"
+    },
+    {
+      "path": "figures/02_topology_check_counts.svg",
+      "bytes": 75772,
+      "sha256": "9adc12792375d629d59067009436607de851babbe336b3b6d61894f00b2a6035"
+    },
+    {
+      "path": "figures/03_high_risk_local_panels.png",
+      "bytes": 1104381,
+      "sha256": "5708ac810b064dfbe535f1598e433892cdfde1e82d61ee6bed4cb0d61a58bd08"
+    },
+    {
+      "path": "figures/03_high_risk_local_panels.svg",
+      "bytes": 14698666,
+      "sha256": "4a547564a12b0908197bb8e8b4e3baba97e8264c879d7e2936c5a89c0f7da1a9"
+    },
+    {
+      "path": "input_manifest.json",
+      "bytes": 8721,
+      "sha256": "4e36e6ea8a8ab71c64f1e605be0f134b2214568f3c7c7f1b77893e4cc4889365"
+    },
+    {
+      "path": "outputs/vectors/full_topology_audit.gpkg",
+      "bytes": 29278208,
+      "sha256": "d21ab0e19a8742879eb5287355bcedab3f1c567536ecb13e7d1fe81483a41ed8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2649,
+      "sha256": "6ec3575dfbc5b85e8214b2ba630f621dd03a2e1b6d312bab0ac199d94d558a54"
+    },
+    {
+      "path": "report.html",
+      "bytes": 498181,
+      "sha256": "8ae9167a0e3ad26954e759659a932f20fa698167ccc647cd874be4ffd8df81c3"
+    },
+    {
+      "path": "reports/all_station_coordinate_based_spatial_classification.csv",
+      "bytes": 87578,
+      "sha256": "8894c0cedd75cb8fb88b7d8afb1aa162a59dac2a8edc39bbced2a0c99484b108"
+    },
+    {
+      "path": "reports/all_station_reach_catchment_audit.csv",
+      "bytes": 55708,
+      "sha256": "46898ddb5672f6b13b8ad681481122f5492ac9a02a0077b9d0e90cb2d39cc78b"
+    },
+    {
+      "path": "reports/candidate_edge_counterfactual_summary.csv",
+      "bytes": 1200,
+      "sha256": "314d1ce740305476a786af2f386ebe9af59b2740f62aca2286ef77a135f83291"
+    },
+    {
+      "path": "reports/candidate_edge_downstream_impact.csv",
+      "bytes": 6044,
+      "sha256": "3594be05dee003adecc440f085dfbdd7d87e3c85affe4d850123ecd02bcf416c"
+    },
+    {
+      "path": "reports/coordinate_based_external_geography_evidence.csv",
+      "bytes": 5338,
+      "sha256": "43b59c3a70d16f4e8fc2e7b577c9fdd7d093b6ffb9865054d84a6c38789ad564"
+    },
+    {
+      "path": "reports/coordinate_based_external_geography_metadata.json",
+      "bytes": 513,
+      "sha256": "946e440e0acf2255a6449558805e3854b4b26ad2e8aafc2e4ac00432b1e17701"
+    },
+    {
+      "path": "reports/external_raw/catchment_146_nominatim.json",
+      "bytes": 805,
+      "sha256": "ff47d599fce947f3c6a15b374ab04bec1740dc5aaf0008f6bf92e13e0754dcf0"
+    },
+    {
+      "path": "reports/external_raw/catchment_146_overpass.json",
+      "bytes": 38336,
+      "sha256": "bce6f07460441dcbbd42c10435d98b56a6ddb2ae788df4791efb1c708a68a199"
+    },
+    {
+      "path": "reports/external_raw/catchment_23_nominatim.json",
+      "bytes": 716,
+      "sha256": "13e85d2227b4ead7a8b3d1301de28b8abfdef2226a093b19577fd6791b487861"
+    },
+    {
+      "path": "reports/external_raw/catchment_23_overpass.json",
+      "bytes": 246299,
+      "sha256": "0fcde43d04344a43f75d3323e3c216f344b3463b4cc7bfb292366fe00c261b01"
+    },
+    {
+      "path": "reports/external_raw/catchment_47_nominatim.json",
+      "bytes": 757,
+      "sha256": "fe6d7b7a38e57ae2496978c7487fe9fedfc92bfefdc0567761ba730f7d48f6af"
+    },
+    {
+      "path": "reports/external_raw/catchment_47_overpass.json",
+      "bytes": 151192,
+      "sha256": "b172eb5016666798bf2f3d8ac7a7071df60803658490e9f7e3333ed43a680e0e"
+    },
+    {
+      "path": "reports/external_raw/terminal_132_to_149_nominatim.json",
+      "bytes": 739,
+      "sha256": "0d0fa0b61e93caa1d69f01d82d925d4c9b94b026c67b600d8c90dcc87f553fed"
+    },
+    {
+      "path": "reports/external_raw/terminal_132_to_149_overpass.json",
+      "bytes": 87550,
+      "sha256": "c843d31143cc4eebf2cd38476f0cca24dcbeaeff6f41069296e05aa0fe6dae7b"
+    },
+    {
+      "path": "reports/external_raw/terminal_14_to_19_nominatim.json",
+      "bytes": 779,
+      "sha256": "d7e0440e7bf174a44be7c0ac0ebf6afd421d068a3fd196da55c9fc63c2225794"
+    },
+    {
+      "path": "reports/external_raw/terminal_14_to_19_overpass.json",
+      "bytes": 79489,
+      "sha256": "9656007b75d719501f5391168002d8d78c26a81fc75050782b2988d54fd49469"
+    },
+    {
+      "path": "reports/external_raw/terminal_180_to_168_nominatim.json",
+      "bytes": 796,
+      "sha256": "24b882af9f25c9cf47621d38a052809ae0284f23d6f261212cab10fb26376757"
+    },
+    {
+      "path": "reports/external_raw/terminal_180_to_168_overpass.json",
+      "bytes": 36568,
+      "sha256": "48b991b9b8420b7c7dc0b66eba140e7314c1b14612522e6e1c70d44303377ed1"
+    },
+    {
+      "path": "reports/external_raw/terminal_199_to_196_nominatim.json",
+      "bytes": 810,
+      "sha256": "fada29332e2b347cf47906fcca39694ff94956715147f3b6d8158483a0fc39df"
+    },
+    {
+      "path": "reports/external_raw/terminal_199_to_196_overpass.json",
+      "bytes": 29100,
+      "sha256": "7458e078f5fa3b83098eac965b8feb178fd40461a6293382d2c48ec85ddf74e0"
+    },
+    {
+      "path": "reports/external_raw/terminal_64_to_59_nominatim.json",
+      "bytes": 713,
+      "sha256": "6aa524483546ae07926adbe95b02ef2a564347528cfbf7d156c8cc59bb67638a"
+    },
+    {
+      "path": "reports/external_raw/terminal_64_to_59_overpass.json",
+      "bytes": 48794,
+      "sha256": "dfdd3ece1829f8f3ddb6f8b57f2616f68b4cb698f8f1d18e287d48afd022c4b7"
+    },
+    {
+      "path": "reports/full_reach_risk_registry.csv",
+      "bytes": 132685,
+      "sha256": "6e54ea3b63154af18983c2b37be1a2e4dbe8f7370c40c8552ffda9b44fa3e281"
+    },
+    {
+      "path": "reports/legacy_lowflow_vs_other_topology_risk.csv",
+      "bytes": 506,
+      "sha256": "2184816e75f54c233d9f35b75086a4b9f4e2a81310678cfcc09eb206bf6c22a1"
+    },
+    {
+      "path": "reports/reach_catchment_area_audit.csv",
+      "bytes": 52805,
+      "sha256": "939180e7fb87158c70611e1eec8f379a9bce2b7356dd9a047917cfc7618f7608"
+    },
+    {
+      "path": "reports/reach_graph_endpoint_dem_audit.csv",
+      "bytes": 25284,
+      "sha256": "e37fb6fdfba7ec0cec268c087e4e483062d29175cafceff00b5e5a57476f3959"
+    },
+    {
+      "path": "reports/reach_pairwise_intersections.csv",
+      "bytes": 44530,
+      "sha256": "60ef7be0be3bb53f09c3b6a4d9242fc6de251494052a3655efd7bbf724181b60"
+    },
+    {
+      "path": "reports/same_reach_representative_selection_validation.csv",
+      "bytes": 10738,
+      "sha256": "f3f16f2b293252b70c30fa1d16c4375075aa5ad9386cea9128033b0bf5a9ddcb"
+    },
+    {
+      "path": "reports/simultaneous_candidate_edge_counterfactual.json",
+      "bytes": 2073,
+      "sha256": "039a5fcd83b5ca74aca5cd2f3fd4d14089d2c2f3c66c5619074f508b14a4d6c9"
+    },
+    {
+      "path": "reports/source_stream_length_reconciliation.csv",
+      "bytes": 11333,
+      "sha256": "9f12c9f1feb5810761f0b4c2f3787371bb13b19e98e1e3060270b22582f2787e"
+    },
+    {
+      "path": "reports/station_spatial_and_same_reach_summary.json",
+      "bytes": 1287,
+      "sha256": "a1fa8e2ead0fb66cbbba88a93c85f0f0068e13f54929f768b1c3a87f8206de54"
+    },
+    {
+      "path": "reports/terminal_summary.json",
+      "bytes": 1458,
+      "sha256": "62dfd38c3158a26fb49cbec0c0956f6eeba08f0db499190a7603ffe960dfb903"
+    },
+    {
+      "path": "scripts/__pycache__/run_full_topology_audit.cpython-311.pyc",
+      "bytes": 57117,
+      "sha256": "b6ebedeee171ed8480f930c6c4fa94df9e29a8669b2b4cbe7f29ddccb449b896"
+    },
+    {
+      "path": "scripts/build_portable_report_artifact.py",
+      "bytes": 23589,
+      "sha256": "da2cd57415e38d03233e2c837924d4855752951299f78e64cd56b19eb22d84aa"
+    },
+    {
+      "path": "scripts/fetch_coordinate_geography_crosscheck.py",
+      "bytes": 14148,
+      "sha256": "88958a7ec80c926457b3c65ed002d47502aca23220cbae3598c86e4a6c2e82ff"
+    },
+    {
+      "path": "scripts/refine_station_spatial_and_same_reach_audit.py",
+      "bytes": 6319,
+      "sha256": "643e398cc96c4c980a02e540e088a16c085115435dc2f797176e7a4b9ed7e63b"
+    },
+    {
+      "path": "scripts/run_counterfactual_topology_impact.py",
+      "bytes": 9777,
+      "sha256": "8ccf4fd941f69325353767961df77774ac73b27fb09336e605b6a862356e7edc"
+    },
+    {
+      "path": "scripts/run_full_topology_audit.py",
+      "bytes": 37332,
+      "sha256": "d9094d4f44b4d5b4ea957edcb52ca1d8efa225f340e04190823d11a50b83d0ee"
+    },
+    {
+      "path": "scripts/validate_run.py",
+      "bytes": 7169,
+      "sha256": "662e91d74940b61d2d16a0d324a27b3189fc865fafe1f0a6b90ee09c6c69d64f"
+    },
+    {
+      "path": "SPARROW_full_topology_coordinate_audit_report.md",
+      "bytes": 13480,
+      "sha256": "65378b87a94e99a71be11f7f489ac59fa95e6505485ccf2b2816d4251b3d8f01"
+    }
+  ]
+}

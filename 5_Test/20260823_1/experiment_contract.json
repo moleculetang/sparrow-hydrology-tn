@@ -1,0 +1,32 @@
+{
+  "stage": "20260823_1",
+  "parent_is_immutable": true,
+  "authoritative_parent": "E:/SPARROW/5_Test/20260813_54",
+  "required_runtime": "conda:sparrow",
+  "metric_contract": {
+    "kge_2012_variability_term": "CV_prediction/CV_observation",
+    "legacy_standard_deviation_ratio_metric_name": "KGE_2009_style_legacy_reported",
+    "primary_loss": "station_macro_log_RMSE",
+    "pooled_metrics_are_supporting": true
+  },
+  "fold_contract": {
+    "outer_folds": [
+      {"train": "2006-2011", "evaluate": "2012-2013"},
+      {"train": "2006-2013", "evaluate": "2014-2015"},
+      {"train": "2006-2015", "evaluate": "2016-2018"}
+    ],
+    "outer_predictions_must_be_materialized_only_for_registered_evaluation_rows": true,
+    "retrospective_2019_2022_not_used_for_candidate_selection": true
+  },
+  "memory_claim_contract": {
+    "allowed": ["observed_delayed_response_signal_present", "slow_memory_structure_retained"],
+    "forbidden": ["observed_old_water_fraction_present", "true_water_age_identified"]
+  },
+  "historical_invalidation": {
+    "20260814_2": "invalidated_by_network_input_and_highflow_configuration_mismatch",
+    "20260814_3": "invalidated_by_inherited_network_input_configuration_mismatch",
+    "20260814_4": "skipped_decision_requires_reassessment_after_corrected_branches",
+    "20260814_5": "operational_artifact_retained_but_scientific_structure_lock_is_provisional"
+  }
+}
+

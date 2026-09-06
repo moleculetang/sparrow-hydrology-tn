@@ -1,0 +1,22 @@
+{
+  "stage": "20260826_28",
+  "registered_before_refit": true,
+  "locked_structure": "DYN2P conserving fast-response plus slow-response",
+  "fit_period": "2010-2018 all eligible development discharge",
+  "spinup_forcing": "2006-2009",
+  "fixed_hyperparameters": {
+    "seeds": [
+      260826,
+      260827,
+      260828
+    ],
+    "epochs": 60,
+    "learning_rate": 0.008,
+    "weight_decay": 0.0001,
+    "prior_sigma": 0.5,
+    "prior_weight": 0.002
+  },
+  "selection": "lowest full-development registered objective across the three fixed seeds",
+  "2019_2022_discharge_read": false,
+  "TN_read": false
+}

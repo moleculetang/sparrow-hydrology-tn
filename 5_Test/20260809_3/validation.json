@@ -1,0 +1,179 @@
+{
+  "run_id": "20260809_3",
+  "validated": true,
+  "terminal_status": "FULL_TOPOLOGY_AUDIT_VALIDATED_WITH_CONFIRMED_LOCAL_BREAKS",
+  "scientific_status": "LOWFLOW_ANOMALY_NOT_EXPLAINED_BY_TOPOLOGY_AS_A_COMMON_CAUSE",
+  "report_packaging": "structural_only: canonical artifact validation and payload equality passed; Chromium visual smoke unavailable",
+  "checks": [
+    {
+      "name": "required_outputs_exist",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "reach_registry_230_unique",
+      "pass": true,
+      "detail": {
+        "rows": 230,
+        "unique": 230
+      }
+    },
+    {
+      "name": "five_confirmed_internal_breaks",
+      "pass": true,
+      "detail": [
+        14,
+        64,
+        132,
+        180,
+        199
+      ]
+    },
+    {
+      "name": "eight_coordinate_cases",
+      "pass": true,
+      "detail": 8
+    },
+    {
+      "name": "five_terminal_coordinate_support",
+      "pass": true,
+      "detail": [
+        {
+          "case_id": "terminal_14_to_19",
+          "external_coordinate_decision": "COORDINATE_NETWORK_STRONGLY_SUPPORTS_JOIN"
+        },
+        {
+          "case_id": "terminal_64_to_59",
+          "external_coordinate_decision": "COORDINATE_NETWORK_STRONGLY_SUPPORTS_JOIN"
+        },
+        {
+          "case_id": "terminal_132_to_149",
+          "external_coordinate_decision": "COORDINATE_NETWORK_STRONGLY_SUPPORTS_JOIN"
+        },
+        {
+          "case_id": "terminal_180_to_168",
+          "external_coordinate_decision": "COORDINATE_NETWORK_STRONGLY_SUPPORTS_JOIN"
+        },
+        {
+          "case_id": "terminal_199_to_196",
+          "external_coordinate_decision": "COORDINATE_NETWORK_STRONGLY_SUPPORTS_JOIN"
+        }
+      ]
+    },
+    {
+      "name": "three_catchment_coordinate_support",
+      "pass": true,
+      "detail": [
+        {
+          "case_id": "catchment_23",
+          "external_coordinate_decision": "LOCAL_RIVER_GEOMETRY_EXTERNALLY_SUPPORTED_CATCHMENT_PARTITION_IS_PRIMARY_SUSPECT"
+        },
+        {
+          "case_id": "catchment_47",
+          "external_coordinate_decision": "LOCAL_RIVER_GEOMETRY_EXTERNALLY_SUPPORTED_CATCHMENT_PARTITION_IS_PRIMARY_SUSPECT"
+        },
+        {
+          "case_id": "catchment_146",
+          "external_coordinate_decision": "LOCAL_RIVER_GEOMETRY_EXTERNALLY_SUPPORTED_CATCHMENT_PARTITION_IS_PRIMARY_SUSPECT"
+        }
+      ]
+    },
+    {
+      "name": "counterfactual_graph_dag",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "counterfactual_components_19_to_14",
+      "pass": true,
+      "detail": {
+        "before": 19,
+        "after": 14
+      }
+    },
+    {
+      "name": "counterfactual_24_reaches_11_stations",
+      "pass": true,
+      "detail": {
+        "reaches": 24,
+        "stations": 11
+      }
+    },
+    {
+      "name": "counterfactual_no_legacy_target_self_affected",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "q72_121_representatives_spatially_resolved",
+      "pass": true,
+      "detail": 121
+    },
+    {
+      "name": "same_reach_27_collision_groups",
+      "pass": true,
+      "detail": 27
+    },
+    {
+      "name": "same_reach_highest_flow_no_violation",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "lowflow_denominators_28_and_202",
+      "pass": true,
+      "detail": [
+        28,
+        202
+      ]
+    },
+    {
+      "name": "artifact_has_no_absolute_workspace_path",
+      "pass": true,
+      "detail": "relative provenance only"
+    },
+    {
+      "name": "report_html_nontrivial",
+      "pass": true,
+      "detail": 498181
+    },
+    {
+      "name": "conda_sparrow_runtime",
+      "pass": true,
+      "detail": {
+        "python": "D:\\ProgramData\\anaconda3\\envs\\sparrow\\python.exe",
+        "CONDA_DEFAULT_ENV": "sparrow"
+      }
+    },
+    {
+      "name": "compile_build_portable_report_artifact.py",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "name": "compile_fetch_coordinate_geography_crosscheck.py",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "name": "compile_refine_station_spatial_and_same_reach_audit.py",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "name": "compile_run_counterfactual_topology_impact.py",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "name": "compile_run_full_topology_audit.py",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "name": "compile_validate_run.py",
+      "pass": true,
+      "detail": "ok"
+    }
+  ]
+}

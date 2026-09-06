@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "program_id": "20260824_unified_tn_structure_optimization_v3",
+  "status": "REGISTERED_BEFORE_STAGE44_RESULTS",
+  "authorized_by_user": true,
+  "authorization_date": "2026-08-30",
+  "supersedes_without_modifying": "E:/SPARROW/5_Test/20260824_39/program_manifest.json",
+  "production_reference": "20260824_32 locked L0 mainline",
+  "method_mainline": "one_fit_constrained_differentiable_state_space_training",
+  "method_promotion_rule": "The one-fit three-output architecture is mandatory for all new TN research. Production prediction artifacts remain Stage32 until predictive and spatial gates pass.",
+  "folder_family": [
+    "20260824_44",
+    "20260824_45",
+    "20260824_46",
+    "20260824_47",
+    "20260824_48",
+    "20260824_49"
+  ],
+  "hard_stop_after": "20260824_49",
+  "stages": [
+    {"folder": "20260824_44", "hypothesis": "population_conditional_composite_objective_restores_unified_parity", "status": "registered"},
+    {"folder": "20260824_45", "hypothesis": "canonical_l0_v2_source_tagged_parent_is_mass_exact", "status": "closed_pending_stage44"},
+    {"folder": "20260824_46", "hypothesis": "independent_low_capacity_structure_candidates_improve_transferable_tn", "status": "closed_pending_stage45"},
+    {"folder": "20260824_47", "hypothesis": "temporally_eligible_candidates_transfer_to_unseen_reaches_and_trees", "status": "closed_pending_stage46"},
+    {"folder": "20260824_48", "hypothesis": "only_registered_regionalization_plus_dynamic_delivery_joint_is_additive_and_temperature_data_are_fit_for_scope", "status": "closed_pending_stage47"},
+    {"folder": "20260824_49", "hypothesis": "selected_architecture_meets_full_mainline_and_lock_contract", "status": "closed_pending_stage48"}
+  ],
+  "global_boundaries": {
+    "hydrology": "frozen 20260828_9 canonical; TN refit forbidden",
+    "selection_layer": "population_transferable",
+    "conditional_scope": "known training-history stations only",
+    "agricultural_active_legacy": "nonproduction frozen scenario; excluded from selection",
+    "temperature": "all-reach aquatic Q10 blocked without valid river-water temperature forcing",
+    "forbidden": [
+      "Protected pool",
+      "free SAS or groundwater age",
+      "second groundwater store",
+      "extra empirical TN lag",
+      "free fitted all-reach temperature response",
+      "post-hoc station correction",
+      "create 20260824_50 or higher"
+    ]
+  },
+  "formats": ["Markdown", "JSON", "Parquet"]
+}

@@ -1,0 +1,58 @@
+{
+  "program": "20260824_25_32_LONG_HISTORY_TN_LEGACY_REBUILD",
+  "status": "completed_tn_mainline_locked_20260824_32",
+  "authorization": "project owner explicitly authorized continuation from 20260824_25",
+  "immutable_parent": "20260824_24 TN_MAINLINE_LOCKED_20260824_24",
+  "primary_goal": "1961-2024 hydrology-driven monthly TN model with an explicit decades-scale agricultural N legacy pool",
+  "formal_hydrology": "state-continuous frozen reconstruction for 1961-2009 plus exact 20260828_9 canonical rows for 2010-2024",
+  "formal_tn_observations": "20260824_18 audited river-channel TN observations, 2016-2024",
+  "allowed_parameters": [
+    "global hydrologic contact alpha_D and beta_D",
+    "one global fast-vs-slow pathway contrast",
+    "global hydraulic exposure v_f",
+    "global C-Q hinge coefficients",
+    "global Student-t scale",
+    "P2 station ridge intercept for previously monitored stations only"
+  ],
+  "fixed_structural_members": {
+    "L0": "no decades-scale agricultural legacy pool",
+    "LEG10": "k_L=0.10 yr-1",
+    "LEG20": "k_L=0.05 yr-1, production candidate",
+    "LEG50": "k_L=0.02 yr-1"
+  },
+  "forbidden": [
+    "hydrology parameter refit from TN",
+    "fixed 36-month generic availability memory in the new candidates",
+    "additional empirical TN lag",
+    "free legacy entry fractions",
+    "TN-selected k_L grid expansion",
+    "temperature",
+    "WWTP",
+    "reservoir operator",
+    "SAS or fitted groundwater age",
+    "second agricultural legacy pool",
+    "dual groundwater store",
+    "station/reach/tree identity in P1",
+    "Andreadis reference discharge"
+  ],
+  "stages": [
+    {"stage": "20260824_25", "role": "program registry, P2 mechanism audit, required N data coverage", "status": "completed_pass"},
+    {"stage": "20260824_26", "role": "CHM 1961-1962 download and historical hydrology bridge", "status": "completed_pass"},
+    {"stage": "20260824_27", "role": "long-history source interface, independent spin-up and mass tests", "status": "completed_pass"},
+    {"stage": "20260824_28", "role": "L0 conservative core and OLD36 benchmark", "status": "completed_pass_parameter_consistent_l0_temporal_supported"},
+    {"stage": "20260824_29", "role": "LEG10/20/50 rolling temporal OOF", "status": "completed_pass_parameter_consistent_l0_ranked_first"},
+    {"stage": "20260824_30", "role": "nested spatial, natural expansion and P2 preservation", "status": "completed_pass_parameter_consistent_reach_supported_tree_uncertain"},
+    {"stage": "20260824_31", "role": "forcing and fixed-timescale sensitivity", "status": "completed_pass_parameter_consistent_calendar_robust"},
+    {"stage": "20260824_32", "role": "full refit, retrospective back-report and final lock", "status": "completed_pass_tn_mainline_locked"}
+  ],
+  "parameter_dependent_spinup_correction": {
+    "finding": "The first Stage 28-31 run used alpha=1,beta=1 diagnostic initial states with fitted contact parameters and was materially inconsistent.",
+    "remediation": "An exact differentiable piecewise-affine 1961-1970 periodic equilibrium was implemented and independently verified against 3447 explicit cycles; Stages 28-31 were fully rerun.",
+    "superseded_artifacts": "Each affected stage preserves its original outputs and reports under superseded_parameter_inconsistent_spinup_20260829.",
+    "formal_results": "Only the current parameter-consistent outputs and hashes are authoritative."
+  },
+  "final_lock": "E:\\SPARROW\\5_Test\\20260824_32\\locks\\tn_mainline_lock.json",
+  "production_output": "E:\\SPARROW\\0_reach_topology\\data\\processed\\tn_long_history_mainline\\canonical_tn_reach_monthly_1961_2024.parquet",
+  "hard_stop_after": "20260824_32",
+  "no_automatic_extension": true
+}

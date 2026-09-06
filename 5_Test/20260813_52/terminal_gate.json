@@ -1,0 +1,106 @@
+{
+  "terminal": "COVERAGE_ADEQUATE_ZERO_NEGATIVE_STATION_CONFIGURATION_FOUND",
+  "operational_terminal": "ZERO_NEGATIVE_CONFIGURATION_FOUND_BUT_PROTECTION_NOT_ACCEPTABLE",
+  "secondary_terminal": "POST_HOC_STATION_COMBINATION_SENSITIVITY_COMPLETE",
+  "checks": {
+    "eight_scenarios_complete": true,
+    "s111_unique_passing_initial_scenario": true,
+    "selected_zero_negative": true,
+    "selected_eval_coverage_ge_90": true,
+    "shijiao_protected_and_nonnegative": true,
+    "shijiao_degradation_within_0_05": true,
+    "deterministic_reproduction": true,
+    "forcing_and_reach_identity": true,
+    "figure_audit": true,
+    "selected_prediction_integrity": true,
+    "same_population_protection_gate": false
+  },
+  "selected": {
+    "selected_scenario": "S111",
+    "selection_is_post_hoc": true,
+    "excluded_station_count": 15,
+    "excluded_stations": [
+      "严洞站",
+      "八达（坝上）站",
+      "六陈水库（渠道）站",
+      "北流站",
+      "天峨站",
+      "天生桥站",
+      "官良站",
+      "富宁_2",
+      "尤家寨站",
+      "岔江站",
+      "峨山站",
+      "榕峰（三）站",
+      "河步（二）站",
+      "泸江站",
+      "百色（三）站"
+    ],
+    "protected_station": "石角站",
+    "oof_rows": 7755,
+    "oof_stations": 97,
+    "evaluation_rows": 4509,
+    "evaluation_stations": 96,
+    "zero_negative_station_count": 0,
+    "protection_effects": {
+      "2012-2018 OOF": {
+        "delta_raw_nse": -0.010843639847076592,
+        "delta_log_nse": 0.00046522531340875695,
+        "delta_kge": -0.05443351122049023,
+        "delta_abs_pbias_percentage_points": 2.8590475707329355
+      },
+      "2019-2022 diagnostic": {
+        "delta_raw_nse": -0.0004209323284002364,
+        "delta_log_nse": 0.00015299708944949142,
+        "delta_kge": 0.0013117698078929374,
+        "delta_abs_pbias_percentage_points": -0.5546193506680495
+      }
+    }
+  },
+  "selected_prediction_integrity": {
+    "oof_duplicate_keys": 0,
+    "evaluation_duplicate_keys": 0,
+    "oof_missing_actual_or_prediction": 0,
+    "evaluation_missing_actual_or_prediction": 0,
+    "oof_nonpositive_actual_or_prediction": 0,
+    "evaluation_nonpositive_actual_or_prediction": 0
+  },
+  "population_accounting": {
+    "parent_oof_stations": 111,
+    "parent_2019_2022_stations": 110,
+    "selected_oof_stations": 97,
+    "selected_2019_2022_stations": 96
+  },
+  "figure_audit": [
+    {
+      "stem": "figure_1_station_combination_sensitivity",
+      "all_formats": true,
+      "editable_svg_text": true,
+      "pdf_pages": 1,
+      "tiff_dpi": [
+        600.0,
+        600.0
+      ]
+    },
+    {
+      "stem": "figure_2_problem_station_scenario_heatmap",
+      "all_formats": true,
+      "editable_svg_text": true,
+      "pdf_pages": 1,
+      "tiff_dpi": [
+        600.0,
+        600.0
+      ]
+    },
+    {
+      "stem": "figure_3_shijiao_protected_hydrograph",
+      "all_formats": true,
+      "editable_svg_text": true,
+      "pdf_pages": 1,
+      "tiff_dpi": [
+        600.0,
+        600.0
+      ]
+    }
+  ]
+}

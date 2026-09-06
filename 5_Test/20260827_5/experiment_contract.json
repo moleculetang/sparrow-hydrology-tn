@@ -1,0 +1,27 @@
+{
+  "stage": "20260827_5",
+  "purpose": "full-development refit followed by blind all-Reach prediction export and immutable hash lock",
+  "fixed_algorithm": {
+    "model": "DYN2P alpha=0.5 plus authorized SIG2P conservative component operator",
+    "station_cohort": "the same 65 strict-complete screened development stations used in 20260827_2",
+    "parent_fit": "2010-2018",
+    "candidate_fit": "2010-2018, seed 260827, exactly 60 epochs",
+    "signature_fit": "2010-2018 BFI proxy, ridge 12, 22 frozen multiscale features, offset bound 2",
+    "formal_test_observation_use": false
+  },
+  "prediction_period": "2006-2022 forcing only",
+  "spinup_period": "2006-2009 outputs marked is_spinup_period=true and excluded from formal performance",
+  "test_firewall": {
+    "2019_2022_observed_discharge": "must not be opened",
+    "four_station_observations": "must not be opened",
+    "four_station_names_and_reach_mapping": "must not be opened",
+    "unlock": "only after model lock, input/code registry and daily/monthly prediction SHA-256 are written"
+  },
+  "formal_output": {
+    "total": "routed_total_m3_s",
+    "components": ["routed_fast_response_m3_s", "routed_slow_response_m3_s"],
+    "semantics": "signature-constrained operational fast/slow hydrologic responses",
+    "forbidden_claims": ["observed groundwater", "observed surface runoff", "new water", "old water", "water age"]
+  },
+  "authorized_successor": "20260827_6"
+}

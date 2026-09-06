@@ -1,0 +1,19 @@
+{
+  "g0_runtime_and_input": "PASS",
+  "g1_b0_exact_reproduction": true,
+  "g2_literal_rho_mass_closure": "PASS_7_UNIT_TEST_SUITE",
+  "g3_incarea_topology_closure": "PASS_ATOL_1E-8",
+  "g4_bad_highflow_composite_removed": "PASS",
+  "g5_identifiability": "FAIL_POSTERIOR_SHRINKAGE",
+  "g6_synthetic_recovery": "FAIL_NEGATIVE_BETA",
+  "g7_i0_oof": true,
+  "g7_fold_rows": {
+    "fit_2006_2011_eval_2012_2013": 2434,
+    "fit_2006_2013_eval_2014_2015": 2582,
+    "fit_2006_2015_eval_2016_2018": 3722
+  },
+  "g7_persistence_population_gate": true,
+  "g8_i1_scientific_run": "STOPPED_BY_G5_G6",
+  "g9_i0_protection": true,
+  "terminal": "I0_ACCOUNTING_REPAIR_PREDICTIVE_PROMOTION_SUPPORTED__DYNAMIC_CONNECTIVITY_NOT_IDENTIFIABLE"
+}

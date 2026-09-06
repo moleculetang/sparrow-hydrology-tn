@@ -1,0 +1,23 @@
+{
+  "stage": "20260904_7",
+  "status": "REGISTERED_BEFORE_FINAL_FIT",
+  "product": "F25_TRAINING_SENSITIVITY",
+  "training_years": [2021, 2022, 2023, 2024, 2025],
+  "hydrology": "20260828_38 forced 1961-2025 sensitivity product",
+  "capacity": "H7",
+  "required_structure": "single joint fit of process parameters, transferable Reach attributes and strongly-shrunk centered station residual",
+  "optimizer": "five deterministic starts; AdamW plus strong-Wolfe L-BFGS; fixed-v_f discrete profile; projected KKT target 1e-5",
+  "formal_status": "SENSITIVITY_ONLY",
+  "mandatory_quality_flags": [
+    "PET_EXTENSION_CONFOUNDED",
+    "SOURCE_2025_CARRYFORWARD_CONFOUNDED",
+    "2025_TN_INCOMPLETE_DECEMBER",
+    "SENSITIVITY_ONLY"
+  ],
+  "forbidden": [
+    "use 2025 as formal hydrologic validation",
+    "impute 2025-12 TN",
+    "drop transferable spatial head",
+    "replace process model with station-only calibration"
+  ]
+}

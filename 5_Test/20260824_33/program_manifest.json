@@ -1,0 +1,57 @@
+{
+  "program": "20260824_33_PLUS_AGRICULTURAL_FRESH_PROTECTED_N",
+  "status": "closed_fp_central_scientific_scenario_retained_l0_production_unchanged",
+  "authorization": "Project owner explicitly instructed implementation of the approved agricultural legacy plan after reviewing and selecting the 1961 incremental initialization option.",
+  "immutable_parent": {
+    "stage": "20260824_32",
+    "lock": "TN_MAINLINE_LOCKED_20260824_32",
+    "production_structure": "L0",
+    "production_path": "E:/SPARROW/0_reach_topology/data/processed/tn_long_history_mainline/canonical_tn_reach_monthly_1961_2024.parquet",
+    "preservation_rule": "Do not edit or overwrite the parent lock, report, parameters or product."
+  },
+  "primary_hypothesis": "Explicit manure-organic and internally recycled crop-residue N stored in Fresh and Protected agricultural SON pools can be coupled to the frozen hydrology without violating mass conservation and without degrading transferable TN prediction.",
+  "primary_goal": "Build, audit and evaluate a monthly 1961-2024 Fresh/Protected agricultural N legacy scenario; promote it only if the preregistered temporal and spatial production gates pass.",
+  "formal_hydrology": "Frozen 20260828_9/10 state-consistent quick/slow interface and its registered 1961-2009 reconstruction.",
+  "formal_tn_observations": "Frozen 20260824_18 river-channel TN registry; 2021-2024 development with the existing three temporal OOF folds and nested spatial holdouts.",
+  "allowed_new_structure": [
+    "one Fresh agricultural SON pool",
+    "one Protected agricultural SON pool",
+    "manure mineral/organic bookkeeping",
+    "crop product/residue uptake bookkeeping with internal residue return",
+    "fixed literature-bracketed FP-FAST, FP-CENTRAL and FP-SLOW kinetic profiles",
+    "zero 1961 Fresh/Protected main initialization",
+    "fixed non-selective pre-1961 stock sensitivity"
+  ],
+  "allowed_fitted_parameters": [
+    "the existing P1 log_alpha_contact, beta_contact, v_f, delta_path, beta_low, beta_high and log_sigma",
+    "the existing P2 ridge=12 station-history intercept for previously monitored stations only"
+  ],
+  "fixed_structural_members": {
+    "L0": "exact immutable parent reproduction",
+    "FP_FAST": {"k_f_year_minus_1": 0.17, "humification_fraction": 0.14, "k_p_year_minus_1": 0.0006112469},
+    "FP_CENTRAL": {"k_f_year_minus_1": 0.13, "humification_fraction": 0.20, "k_p_year_minus_1": 0.0003571429},
+    "FP_SLOW": {"k_f_year_minus_1": 0.09, "humification_fraction": 0.26, "k_p_year_minus_1": 0.0002336449}
+  },
+  "initialization": {
+    "main": "Fresh=0 and Protected=0 immediately before 1961-01; parent-consistent mineral/lower short states remain parameter dependent.",
+    "prehistory_sensitivity": "50 and 100 kg N/ha of registered 1961 agricultural area, split 25% Fresh and 75% Protected, capped by Reach at 5% of SoilGrids 0-100 cm total N; never used for model selection."
+  },
+  "forbidden": [
+    "hydrology parameter refit from TN",
+    "TN-selected expansion of the Fresh/Protected kinetic grid",
+    "free crop-residue return or manure mineral fractions selected from TN",
+    "temperature or soil-moisture mineralization modifiers",
+    "SAS, fitted groundwater age, dual groundwater store or empirical output TN lag",
+    "WWTP or reservoir additions",
+    "station, Reach or tree identity in P1",
+    "P2 at unmonitored reaches",
+    "overwriting the 20260824_32 production lock or product"
+  ],
+  "execution_boundary": {
+    "successors": "Create only the minimum subsequent 20260824_* stages needed for data QA, core tests, OOF/spatial evaluation, sensitivity and final locking. Every successor must be registered here before reading its TN result.",
+    "stop": "Stop after a final scenario or production decision; no automatic structural expansion."
+  },
+  "runtime": {"environment": "sparrow", "threads": 1, "warning_rss_gib": 12, "hard_stop_rss_gib": 16},
+  "current_stage": "20260824_38",
+  "registered_successor": null
+}

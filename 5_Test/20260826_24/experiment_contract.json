@@ -1,0 +1,20 @@
+{
+  "stage": "20260826_24",
+  "candidate_training_performed": false,
+  "land_states": [
+    "soil",
+    "upper",
+    "lower"
+  ],
+  "response_components": [
+    "fast",
+    "intermediate",
+    "slow"
+  ],
+  "gate": "shared 16->8->8 tanh residual gate; conserving 2/4/2 flux groups; lambda_gate<=0.5",
+  "routing": "component-tag preserving shared hydraulic linear stores; lambda_channel<=1; travel-time cap 0.02-30 day",
+  "hydraulic_discharge": "own candidate instantaneous accumulated total flow",
+  "geometry": "Andreadis width/depth only; reference discharge forbidden",
+  "null_identity": "force_parent and force_instantaneous recover registered ordered HBV R0",
+  "TN_read": false
+}

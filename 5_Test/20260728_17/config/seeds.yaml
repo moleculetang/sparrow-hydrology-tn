@@ -1,0 +1,2 @@
+deterministic_baseline_seed: 1729
+future_nonlinear_starts: [1729, 2718, 31415]

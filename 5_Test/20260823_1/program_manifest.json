@@ -1,0 +1,90 @@
+{
+  "program_id": "20260823_hydrology_revision",
+  "created_date": "2026-08-23",
+  "parent": "E:/SPARROW/5_Test/20260813_54",
+  "operational_domain": "S111_fixed_gauged_station_domain",
+  "state_domain": "230_reaches_monthly_2006_2022",
+  "development_period": "2006-2018",
+  "blocked_temporal_oof_period": "2012-2018",
+  "retrospective_period": "2019-2022",
+  "mainline_upgrade_policy": {
+    "temporal_gate_is_primary": true,
+    "nested_loso_loto_are_hard_veto": false,
+    "spatial_tests_role": "diagnostic_only",
+    "claim_limit_before_spatial_success": "gauged_station_operational_hydrology_not_ungauged_reach_generalization"
+  },
+  "experiment_boundary": {
+    "allowed_folders": [
+      "20260823_1",
+      "20260823_2",
+      "20260823_3",
+      "20260823_4",
+      "20260823_5",
+      "20260823_6",
+      "20260823_7"
+    ],
+    "automatic_extension_beyond_7": false,
+    "no_further_station_deletion": true,
+    "candidate_changes_must_be_registered_before_outer_results": true
+  },
+  "stages": {
+    "20260823_1": {
+      "hypothesis": "The frozen S111 parent can be audited and its evaluation contracts repaired without changing parent artifacts.",
+      "status": "passed",
+      "allowed": [
+        "read_only_parent_audit",
+        "metric_correction",
+        "configuration_audit",
+        "delayed_response_observation_test"
+      ],
+      "forbidden": [
+        "parent_mutation",
+        "station_deletion",
+        "candidate_selection"
+      ],
+      "stage_gate": "reports/stage_gate.json"
+    },
+    "20260823_2": {
+      "hypothesis": "A corrected, fold-isolated H0 reproduction establishes an admissible numerical baseline.",
+      "status": "passed",
+      "stage_gate": "../20260823_2/reports/stage_gate.json"
+    },
+    "20260823_3": {
+      "hypothesis": "Registered low-dimensional process branches can improve blocked temporal prediction under identical forcing semantics.",
+      "status": "confounded",
+      "stage_gate": "../20260823_3/reports/stage_gate.json",
+      "reason": "main gain is multistore readout-feature ablation; process parameters equal H0"
+    },
+    "20260823_4": {
+      "hypothesis": "A transferable hierarchical readout can reduce station-specific capacity without destroying temporal performance.",
+      "status": "passed",
+      "stage_gate": "../20260823_4/reports/stage_gate.json"
+    },
+    "20260823_5": {
+      "hypothesis": "A small data-driven challenger is useful only if residual evidence and sample-size gates from Stage 4 authorize it.",
+      "status": "closed",
+      "reason": "No residual/capacity trigger; LSTM challenger not authorized."
+    },
+    "20260823_6": {
+      "hypothesis": "Locked candidates can be compared with temporal, regime, spatial-diagnostic and negative-control evidence.",
+      "status": "passed",
+      "stage_gate": "../20260823_6/reports/stage_gate.json"
+    },
+    "20260823_7": {
+      "hypothesis": "The program can freeze one gauged-station hydrology mainline and a bounded TN interface with explicit claim limits.",
+      "status": "passed",
+      "stage_gate": "../20260823_7/reports/final_decision.json"
+    }
+  },
+  "terminal_states": [
+    "MAINLINE_UPGRADED_GAUGED_STATION_DOMAIN",
+    "PARENT_RETAINED_NO_RELIABLE_IMPROVEMENT",
+    "ANSWER_TARGETING_OR_CAPACITY_CONFOUNDED",
+    "NUMERICAL_OR_WATER_ACCOUNTING_BLOCKED"
+  ],
+  "baseline_hashes": "reports/baseline_artifact_hashes.json",
+  "program_status": "closed",
+  "terminal_status": "GAUGED_STATION_TEMPORAL_MAINLINE_UPGRADED",
+  "physical_interface_status": "PROVISIONAL_PHYSICAL_INTERFACE",
+  "automatic_extension_beyond_7": false
+}

@@ -1,0 +1,13 @@
+{
+  "stage": "20260828_10",
+  "required_predecessor": "20260828_9 PARENT_PRESERVING_STATE_PRODUCT_LOCKED",
+  "purpose": "Retrospective evaluation of the parent-preserving state-consistent product using the unchanged 20260828_8 metrics and margins.",
+  "interpretation": "not a new blind test; 2019-2022 observations were already opened in 20260828_8",
+  "noninferiority_vs_20260827_6": {
+    "pooled_log_RMSE_increase_max": 0.01,
+    "pooled_NSE_drop_max": 0.02,
+    "station_median_NSE_drop_max": 0.03,
+    "station_median_absolute_PBIAS_worsening_max_pct_point": 2.0
+  },
+  "model_mutation": "forbidden"
+}

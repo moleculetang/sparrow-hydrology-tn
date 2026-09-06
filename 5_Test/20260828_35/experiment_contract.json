@@ -1,0 +1,49 @@
+{
+  "stage": "20260828_35",
+  "title": "TN-ready hydrology, water-age and bankfull hydraulic-exposure interface",
+  "status": "REGISTERED_BLOCKED_ON_20260828_34",
+  "parent": "E:/SPARROW/5_Test/20260828_34/locks/long_simulation_lock.json",
+  "reach_products": {
+    "daily": "One row per date and Reach",
+    "monthly": "One row per calendar month and Reach, preserving mean discharge and integrated water volumes",
+    "minimum_fields": [
+      "routed total, fast, slow and direct discharge",
+      "fast, slow and direct fractions",
+      "integrated total, fast, slow and direct volume",
+      "soil, upper and lower storage",
+      "percolation and actual evapotranspiration",
+      "modeled routed water-age moment and mean age where defined",
+      "forcing-source flag and air temperature as a covariate, not water temperature"
+    ]
+  },
+  "reservoir_products": {
+    "daily_and_monthly": true,
+    "minimum_fields": [
+      "activation and uncertainty flags",
+      "captured and bypass inflow",
+      "storage, controlled release, spill and total release",
+      "fast, slow and direct source masses/fractions",
+      "storage/release age moments and mean ages",
+      "water, source-tracer and age-moment closure errors"
+    ]
+  },
+  "channel_geometry": {
+    "source": "Andreadis et al. 2025 bankfull width and depth matched to Reach",
+    "allowed_fields": ["bankfull width", "bankfull depth", "P05/P95 geometry bounds", "match-distance diagnostics"],
+    "forbidden_field": "wqd_reference_discharge_m3_s"
+  },
+  "hydraulic_exposure": {
+    "formula": "reach_length_m * bankfull_width_m * bankfull_depth_m / routed_total_m3_s / 86400",
+    "outputs": ["central", "geometry_P05", "geometry_P95"],
+    "zero_flow_semantics": "Set exposure to null and emit a zero-flow flag; do not insert an arbitrary discharge floor",
+    "formal_name": "channel_bankfull_hydraulic_exposure_day",
+    "claim_boundary": "Geometry-and-flow exposure proxy, not tracer-validated residence time; P05/P95 are geometry sensitivity bounds, not a joint hydraulic confidence interval"
+  },
+  "tn_boundary": {
+    "hydrology_only": true,
+    "no_tn_observations": true,
+    "no_reaction_or_temperature_coefficient": true,
+    "state_consistency": "TN may later be coupled to the exported fast/slow stocks and fluxes without re-splitting total flow"
+  },
+  "pass_status": "PASS_TN_READY_HYDROLOGY_INTERFACE"
+}

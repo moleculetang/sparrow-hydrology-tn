@@ -1,0 +1,42 @@
+{
+  "selected_scenario": "S111",
+  "selection_is_post_hoc": true,
+  "excluded_station_count": 15,
+  "excluded_stations": [
+    "严洞站",
+    "八达（坝上）站",
+    "六陈水库（渠道）站",
+    "北流站",
+    "天峨站",
+    "天生桥站",
+    "官良站",
+    "富宁_2",
+    "尤家寨站",
+    "岔江站",
+    "峨山站",
+    "榕峰（三）站",
+    "河步（二）站",
+    "泸江站",
+    "百色（三）站"
+  ],
+  "protected_station": "石角站",
+  "oof_rows": 7755,
+  "oof_stations": 97,
+  "evaluation_rows": 4509,
+  "evaluation_stations": 96,
+  "zero_negative_station_count": 0,
+  "protection_effects": {
+    "2012-2018 OOF": {
+      "delta_raw_nse": -0.010843639847076592,
+      "delta_log_nse": 0.00046522531340875695,
+      "delta_kge": -0.05443351122049023,
+      "delta_abs_pbias_percentage_points": 2.8590475707329355
+    },
+    "2019-2022 diagnostic": {
+      "delta_raw_nse": -0.0004209323284002364,
+      "delta_log_nse": 0.00015299708944949142,
+      "delta_kge": 0.0013117698078929374,
+      "delta_abs_pbias_percentage_points": -0.5546193506680495
+    }
+  }
+}

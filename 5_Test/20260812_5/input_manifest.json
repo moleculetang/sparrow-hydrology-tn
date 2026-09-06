@@ -1,0 +1,962 @@
+{
+  "root": "E:\\SPARROW\\5_Test\\20260812_5",
+  "terminal": "EMPIRICAL_035_SCALE_REMOVED_WITH_PREDICTIVE_EQUIVALENCE",
+  "missing_required": [],
+  "a0_exact_reproduction": {
+    "rows_a0": 8738,
+    "rows_reference_i0": 8738,
+    "keys_equal": true,
+    "actual_max_abs_difference": 0.0,
+    "prediction_max_abs_difference": 0.0,
+    "pass": true,
+    "reference_sha256": "e5ff8856f5e410c4c6dd4ae0837c694276156901915a43b45e16e6a77251e99b"
+  },
+  "file_count": 189,
+  "files": [
+    {
+      "relative_path": "experiment_contract.md",
+      "size_bytes": 1686,
+      "sha256": "05bd7d4f91df93d7387c90c417dcdd51fec419331569b46ebee03d28da5b90df"
+    },
+    {
+      "relative_path": "inputs/canonical_signal_registry.csv",
+      "size_bytes": 105000,
+      "sha256": "046e290e473d870704b6480c24864b95ddd609060cda915ac76306e25ece19a7"
+    },
+    {
+      "relative_path": "inputs/confirmed_evaluable_nearest_downstream_paths.csv",
+      "size_bytes": 7639,
+      "sha256": "ca88aad60a412e4d944ea23d3d04114d7adee33bbe6c4ab1ff92bd155fe1e739"
+    },
+    {
+      "relative_path": "inputs/scenarios/I0_indata.parquet",
+      "size_bytes": 5072883,
+      "sha256": "230a3c750602d8cd74ef2dc28e978b59ddacab99c49138309078fd499336b72f"
+    },
+    {
+      "relative_path": "inputs/topology/topology_edges.csv",
+      "size_bytes": 18988,
+      "sha256": "2daa0a1df1e8b4d5cf364492068be88e410c3d6228fe417275fda3bc4afd37f9"
+    },
+    {
+      "relative_path": "logs/A0_exact_reproduction_gate.json",
+      "size_bytes": 262,
+      "sha256": "b68ebcf7efb4b33f3042ee21cc4c918658900e632ecbdf7544717ccdd260b489"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_fold_manifest.csv",
+      "size_bytes": 558,
+      "sha256": "36afab9cfa75330c18b51af2db37920f8af220e2e8b81e9459eb09affffdbe27"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/evaluation_predictions.csv",
+      "size_bytes": 2686720,
+      "sha256": "31b4c15d46198aa01d81b6231615028e8ac59bcc60d3c303ecf42451811ba0d3"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/evaluation_predictions.parquet",
+      "size_bytes": 964771,
+      "sha256": "a112201ff75b6fd7c19eb9856760b60f286aa005ffc0bcd99f0b34d19fa6c0a3"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/feature_accounting_audit.json",
+      "size_bytes": 485,
+      "sha256": "e75afff9935c69b849d7759ba07524c1689be3eafa29dace9c0a396b1fd4db33"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/design_matrix/augmented_map_design_matrix.npz",
+      "size_bytes": 63655,
+      "sha256": "1905a950666b24cd563354ad43f0e83eccc05768b489f740ad2b3d2a8b3863fe"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/design_matrix/augmented_map_response.npy",
+      "size_bytes": 94040,
+      "sha256": "0be536528d0c699304d105741feeef860d4c110ead0ca7389d8f04510331334f"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/design_matrix/design_matrix_columns.csv",
+      "size_bytes": 403659,
+      "sha256": "243c162fc737eb55b4c928a62faa916e7282a52069e5fceb01f12aa7d49c043b"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/design_matrix/design_matrix_manifest.json",
+      "size_bytes": 635,
+      "sha256": "6dcf8d3e4cce69a3c3c46817b9f2119e376676f4672ec1d6dae003e6cc0cad70"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/design_matrix/observation_design_matrix.npz",
+      "size_bytes": 2804752,
+      "sha256": "4c4caa1fd87927d24646547bb993f30f4eb6eea97e79b6b7d8c690cdc22a8715"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/design_matrix/observation_log_flow_response.npy",
+      "size_bytes": 61408,
+      "sha256": "4bedddb11a0f9e386ccfec4c45aeab2caf51b7bd97ddf68284f6a8158756f093"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/design_matrix/ridge_curvature_and_approx_covariance_diagonal.csv",
+      "size_bytes": 553838,
+      "sha256": "3cd86a9b407239f20143464fd8129676f1a5b139e106f583e5391040a4ca8713"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/design_standardization.csv",
+      "size_bytes": 3445,
+      "sha256": "32b67b1c8d86b5eb373098fe64398137ab85b52566c65be14d4a452a46008f54"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/model_population_audit.json",
+      "size_bytes": 345,
+      "sha256": "33d6d6359cc4db6e8e3770fbde098f04a26b7fbf33c5dd1546ad9158c56511c3"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_fixed_parameters.csv",
+      "size_bytes": 4310,
+      "sha256": "104eaa2125914a62ca41d109a52763f5fb36cc41986c92a0a1ebdd37f8e3bfaa"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_good_validation_stations.csv",
+      "size_bytes": 38219,
+      "sha256": "fb3334516682292f3d6745909bb7e80a20a940f2e1184592523c1828e4202db7"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_hyperparameter_grid.csv",
+      "size_bytes": 432,
+      "sha256": "0ee7617b266cebee443a92998b346c9bc06fe712b3d5a71345b77470342a1c6e"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_metric_summary.csv",
+      "size_bytes": 449,
+      "sha256": "28b3690e22d768ee17a55cce31515e40ad6dfd1ead210bb78e41d5bd501e33f9"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_metrics_by_station.csv",
+      "size_bytes": 56116,
+      "sha256": "c4c9b16f40863dbe02711387d2ad8837dfb56d1aedf8580148889fc74faa1482"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_not_good_validation_stations.csv",
+      "size_bytes": 18311,
+      "sha256": "6201649cc0f873e91951829482a75381167fe92e61f5387487d50fa0425e3be8"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_parameter_group_strength.csv",
+      "size_bytes": 1183,
+      "sha256": "315fe9a05e7b655e0ac949806678aaebb771919ad50b24b092345ecd7c97640a"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_prediction_vs_observed_2006_2022.csv",
+      "size_bytes": 5522088,
+      "sha256": "a85be04b6bced5355cd0680bb670c492755e6e32bf349616ba5fd50a6967cf2d"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_prediction_vs_observed_2006_2022.parquet",
+      "size_bytes": 8150260,
+      "sha256": "3ff2c68b1de3634f4733721823f144018c7df7b152c41219715f277ac7a812e0"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_regime_slope_parameters.csv",
+      "size_bytes": 461264,
+      "sha256": "ad206679ed98dcf645f2065b61e9a255a49c9fc9bacca720c7b4431e3b4f1018"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_spatial_group_parameters.csv",
+      "size_bytes": 7851,
+      "sha256": "f6ecca90d138e4bde468a13e78e1d1e664860c30c9df536894b47cd48377da53"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_station_random_effects.csv",
+      "size_bytes": 83033,
+      "sha256": "fa7fe64dec18b90641a90517adb182681bd4fd95793b2cac02cffc2bc928b46f"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_station_slope_parameters.csv",
+      "size_bytes": 176389,
+      "sha256": "dab8461b4cbbba31aef148753a5d36eacdd59b8363f7c34532aac4a889c54672"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/evaluation_predictions.csv",
+      "size_bytes": 2862395,
+      "sha256": "1b9df662dbdcf68e6a2fa8f161a3740ff9687ecfd224f5d249b17ee8cba16381"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/evaluation_predictions.parquet",
+      "size_bytes": 1024777,
+      "sha256": "6f4d320649998ccbc0b719deeb1bd1a673a5ef6a17b08090c2355d60462f9f14"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/feature_accounting_audit.json",
+      "size_bytes": 485,
+      "sha256": "432960dc13e6889e44110d55e5e3c15f415f9d0a2a690ea7fc1b279f453c2ea1"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/design_matrix/augmented_map_design_matrix.npz",
+      "size_bytes": 73179,
+      "sha256": "7a05c013766f28969fbdaab873fc2b4a81ebb64493919a5224000a44d1c8a51f"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/design_matrix/augmented_map_response.npy",
+      "size_bytes": 113512,
+      "sha256": "c6e8e054a014f10a46af65fd9a0312fbe3af5c80d0c8bb3f0196f6647ac2343a"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/design_matrix/design_matrix_columns.csv",
+      "size_bytes": 403659,
+      "sha256": "243c162fc737eb55b4c928a62faa916e7282a52069e5fceb01f12aa7d49c043b"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/design_matrix/design_matrix_manifest.json",
+      "size_bytes": 638,
+      "sha256": "df3880e740f55a4c2bc3e3413491b1d6ad3e155d521962b9c8a50ec0857bfd22"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/design_matrix/observation_design_matrix.npz",
+      "size_bytes": 3707372,
+      "sha256": "9923e3def3bd8391c6ffff9382dd690ca1a562c92b6112aa3f82e3798b7cced2"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/design_matrix/observation_log_flow_response.npy",
+      "size_bytes": 80880,
+      "sha256": "d1bea0304b2669f23071f85d678664e4a432f6baa247f3043190e6c751b881e7"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/design_matrix/ridge_curvature_and_approx_covariance_diagonal.csv",
+      "size_bytes": 554367,
+      "sha256": "fe1ead142c9eaf63c4dca4370a0757514fb77d87a9dc958d735f4d657dd0d017"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/design_standardization.csv",
+      "size_bytes": 3448,
+      "sha256": "bb642c61b6180ed055c56abbc3e6a401a59351e68d8e487a3e987399c055ad71"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/model_population_audit.json",
+      "size_bytes": 346,
+      "sha256": "1737d9f2c1eed0bb6de5fa0e2749d7179580e2f3843cfd94c0ca8e080ac3fb7e"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_fixed_parameters.csv",
+      "size_bytes": 4319,
+      "sha256": "2f8c5548d407a95689e80a93bd3cec0df88d097fa4893852dcede2f3a3ef0c45"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_good_validation_stations.csv",
+      "size_bytes": 35389,
+      "sha256": "dccd07c217c539a6190f6aec1dc9889e1571715a39fe5f4aac897a35532fb276"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_hyperparameter_grid.csv",
+      "size_bytes": 432,
+      "sha256": "0ee7617b266cebee443a92998b346c9bc06fe712b3d5a71345b77470342a1c6e"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_metric_summary.csv",
+      "size_bytes": 451,
+      "sha256": "b973705452cb3b5e11e40bfa92323ef081092fd69d59a1fbb65a5f242f74f2fa"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_metrics_by_station.csv",
+      "size_bytes": 56158,
+      "sha256": "18ff23c1e3e83483f71993dea7f0af97c52269d28c71e8013c55a55cfb808f70"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_not_good_validation_stations.csv",
+      "size_bytes": 21183,
+      "sha256": "17949152e5be68045b510516633bb14f141c711c4761d9e6f8b0de3c59b6424c"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_parameter_group_strength.csv",
+      "size_bytes": 1179,
+      "sha256": "41d4ee8582aee8f98e885b990399d6365f02dcfa9c51cc4c3d3218ab7a37e423"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_prediction_vs_observed_2006_2022.csv",
+      "size_bytes": 5526729,
+      "sha256": "97b225f022828b49dcf85f2cb79df475d14408271ef822afac3fca66ef084e81"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_prediction_vs_observed_2006_2022.parquet",
+      "size_bytes": 8150266,
+      "sha256": "6e25483508e181ea10978c1dc66cfac1c4d104a22f755cbf0d64c8f46bb45455"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_regime_slope_parameters.csv",
+      "size_bytes": 461250,
+      "sha256": "103357b0544d13c085f67f5dbeb192ae6eddab0c5f2571f409688b5387207e25"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_spatial_group_parameters.csv",
+      "size_bytes": 7853,
+      "sha256": "f8b1a0967658a2a58bb51f1b4de2915a4e7b1b314d83b4c7fcacdb077f141844"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_station_random_effects.csv",
+      "size_bytes": 82946,
+      "sha256": "92d5c4129bd7e11066065847ff03ef9e3d0c92a724e76a254a494943c7d58f49"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_station_slope_parameters.csv",
+      "size_bytes": 176314,
+      "sha256": "7fc1169bdbe997d2090c6256e6e17b53d30908aea9a2d8ca93a4c7b756d94aff"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/evaluation_predictions.csv",
+      "size_bytes": 1150271,
+      "sha256": "f75bf44bab004151a41e6bed2aa6714b428c0308dbbad762941952d6e796938a"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/evaluation_predictions.parquet",
+      "size_bytes": 1439031,
+      "sha256": "c53a903011d44299d8c161cae159977577bcfc8969f0e79b9d68cc4938943881"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/feature_accounting_audit.json",
+      "size_bytes": 485,
+      "sha256": "e908edc199040a3859179f407375a63008a8b8fd8c1d351439c4ce0eacb25810"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/design_matrix/augmented_map_design_matrix.npz",
+      "size_bytes": 4813530,
+      "sha256": "5a624349094679343eed6f0b09cdcf7469058c7132188762c5b50ebb11d9523f"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/design_matrix/augmented_map_response.npy",
+      "size_bytes": 134168,
+      "sha256": "bd14450f824fccd68caf1296e9d4766a11fee411cc81f176de48abe108be585b"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/design_matrix/design_matrix_columns.csv",
+      "size_bytes": 403659,
+      "sha256": "243c162fc737eb55b4c928a62faa916e7282a52069e5fceb01f12aa7d49c043b"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/design_matrix/design_matrix_manifest.json",
+      "size_bytes": 637,
+      "sha256": "d2da28edffcbdd15c5e189421612760779055da94171b49ede0dc686651907a8"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/design_matrix/observation_design_matrix.npz",
+      "size_bytes": 4669339,
+      "sha256": "bd408cff9c895ae64c53845e19d727b97e2a54f1a4722e920368c3ac91e372a5"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/design_matrix/observation_log_flow_response.npy",
+      "size_bytes": 101536,
+      "sha256": "42fc1ca1dd2bd94ef0bf2b6c388bd8cb4a0c4dded54bc303ced139fe935a1a93"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/design_matrix/ridge_curvature_and_approx_covariance_diagonal.csv",
+      "size_bytes": 555354,
+      "sha256": "0fab1ff4ad06114fa589514904de2ac7ff5091fccbf6f53e602131fb465510d6"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/design_standardization.csv",
+      "size_bytes": 3440,
+      "sha256": "19128e96dcb6411bb8bf915220e9e514336511e5754d0853112028837e7ca91d"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/model_population_audit.json",
+      "size_bytes": 346,
+      "sha256": "c6eea614e49e7c65d0d00177468868e32050df3e1dc6db28aa7213c11e45cc69"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_fixed_parameters.csv",
+      "size_bytes": 4312,
+      "sha256": "2d3db260c9f8f533101cd876fa5d139cac7b010f86151c27b98a6a39d1e18d89"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_good_validation_stations.csv",
+      "size_bytes": 35410,
+      "sha256": "b61babc85a15dc6a2f3fb1f1c1c20eb5ee691ea7e6dc72346218ca8ce7e35a19"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_hyperparameter_grid.csv",
+      "size_bytes": 432,
+      "sha256": "0ee7617b266cebee443a92998b346c9bc06fe712b3d5a71345b77470342a1c6e"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_metric_summary.csv",
+      "size_bytes": 447,
+      "sha256": "0cb38ecddcfb819a7b1e8d8955ace4e56a15ffb7945c35c42b26f92ce96be8df"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_metrics_by_station.csv",
+      "size_bytes": 56032,
+      "sha256": "8c0c791c8ec9b3a385a70f2499beb45545033bc7ac1d6cb71a92a7143281c1ae"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_not_good_validation_stations.csv",
+      "size_bytes": 21036,
+      "sha256": "188ee6ca46291ebbe6e10753ce427776ab3adfcd21e8ec4b5987c88d44f64695"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_parameter_group_strength.csv",
+      "size_bytes": 1184,
+      "sha256": "f4497906f508316b81acce5c3260296fb465b95f7abb3ed0e791d9e99023390b"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_prediction_vs_observed_2006_2022.csv",
+      "size_bytes": 5525778,
+      "sha256": "12b41f9881b155aabb1a2e488330ff544d184f6749515f80dff152062976695d"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_prediction_vs_observed_2006_2022.parquet",
+      "size_bytes": 8150275,
+      "sha256": "c4c1994093ec9e46404954e2e9c99df823828c6af8f6376ca7f370f95ca4be7c"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_regime_slope_parameters.csv",
+      "size_bytes": 461135,
+      "sha256": "69584bc6a0e441be6d6b029c9292251c050a2bfa0a0b59a69b25dfe68b907472"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_spatial_group_parameters.csv",
+      "size_bytes": 7855,
+      "sha256": "0a32de4ac8765507b01d7e0185d59f268783c412de2757c7d40e0934eab72ec6"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_station_random_effects.csv",
+      "size_bytes": 82773,
+      "sha256": "fe545c1e79802e89b0e099dc882029231f913aafae3d5c8059babbc88f903727"
+    },
+    {
+      "relative_path": "outputs/A0/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_station_slope_parameters.csv",
+      "size_bytes": 176275,
+      "sha256": "18f0be719c505dbb67eda4913a1c5d4f8e36dfe684e1589b11b0ba7f17b70a94"
+    },
+    {
+      "relative_path": "outputs/A0/q72_three_fold_oof_predictions.csv",
+      "size_bytes": 9651087,
+      "sha256": "6f361ffceb79a96321b5ab486ac461e621286bfcbad9c4565ac2f34dea207947"
+    },
+    {
+      "relative_path": "outputs/A0/q72_three_fold_oof_predictions.parquet",
+      "size_bytes": 3367045,
+      "sha256": "bc70afb92b8c56489dc82e9cc85adf2b4073b8c877a7316df06c29f5dbc0a755"
+    },
+    {
+      "relative_path": "outputs/A0/run_manifest.json",
+      "size_bytes": 2075,
+      "sha256": "3c6a4ec33cdf3642fcc59c8245f8407ea47fa44ec074caf1cb6ae58cfaf0c0a1"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_fold_manifest.csv",
+      "size_bytes": 551,
+      "sha256": "038f5b59a41f44314892f6b57c666cfebf7693be52fdb16abd091e02e02d2478"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/evaluation_predictions.csv",
+      "size_bytes": 2696398,
+      "sha256": "29d84eab78e4f3f7b627d92f1bcc0bb539b9589113d977efa527f1d16cbc9e06"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/evaluation_predictions.parquet",
+      "size_bytes": 964796,
+      "sha256": "c37e5e673514fe545058d28d6c8ce434cabe33128e5497e79f6f6d429f56d16f"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/feature_accounting_audit.json",
+      "size_bytes": 488,
+      "sha256": "fa330e8b69ee3bbe6235bd6b774ca7136ff5c9a021c7a13cd5fba6e48845a5df"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/design_matrix/augmented_map_design_matrix.npz",
+      "size_bytes": 2949267,
+      "sha256": "bf4a7439b4f42e86eb837f32f0f98028616f6ee030ede925e577d6ef5539d9b3"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/design_matrix/augmented_map_response.npy",
+      "size_bytes": 94040,
+      "sha256": "0be536528d0c699304d105741feeef860d4c110ead0ca7389d8f04510331334f"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/design_matrix/design_matrix_columns.csv",
+      "size_bytes": 403659,
+      "sha256": "243c162fc737eb55b4c928a62faa916e7282a52069e5fceb01f12aa7d49c043b"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/design_matrix/design_matrix_manifest.json",
+      "size_bytes": 634,
+      "sha256": "cd57b95af675647d04140e468d512be8030bed15bea31919100c111ced3fb145"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/design_matrix/observation_design_matrix.npz",
+      "size_bytes": 41092,
+      "sha256": "02be8dfa4231040659be1caa66aa5725c5b054635838de045643e7b33e13b020"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/design_matrix/observation_log_flow_response.npy",
+      "size_bytes": 61408,
+      "sha256": "4bedddb11a0f9e386ccfec4c45aeab2caf51b7bd97ddf68284f6a8158756f093"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/design_matrix/ridge_curvature_and_approx_covariance_diagonal.csv",
+      "size_bytes": 553890,
+      "sha256": "3fe2a9b5341076f4d09214cade3226373734e5f3e314433209af2c6ea2e40b57"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/design_standardization.csv",
+      "size_bytes": 3444,
+      "sha256": "1be118530f9a5140db413e98da4433fd65d08ee4c89cdf3a478d57d4b70fd5da"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/model_population_audit.json",
+      "size_bytes": 345,
+      "sha256": "33d6d6359cc4db6e8e3770fbde098f04a26b7fbf33c5dd1546ad9158c56511c3"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_fixed_parameters.csv",
+      "size_bytes": 4308,
+      "sha256": "8d1ec478b8dbfe536248acda3b3e5fd4add77d901b4b66b457decd017751a575"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_good_validation_stations.csv",
+      "size_bytes": 38222,
+      "sha256": "7d276ded2e40630102d75bd62d060ce969d7188be403eea45e10b2ce5a9b3d85"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_hyperparameter_grid.csv",
+      "size_bytes": 431,
+      "sha256": "4f9305bc6f57bea5c2667361e25ce225df99ac275664375dbd81f767d63ca4fc"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_metric_summary.csv",
+      "size_bytes": 450,
+      "sha256": "97e0a5bffadae6a5cdf5e9a3f7a2679b46e9b3b606723c8f9cdfe9ab2ba2637b"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_metrics_by_station.csv",
+      "size_bytes": 56133,
+      "sha256": "9b3aff2537814c5936bb06dce3d37f92bb3f021460d14380744a47e5a9ec51cc"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_not_good_validation_stations.csv",
+      "size_bytes": 18325,
+      "sha256": "0f18ae2405b3e317a84b95affcbec6b42a893eba4b46036fca5184aabebb2d41"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_parameter_group_strength.csv",
+      "size_bytes": 1180,
+      "sha256": "885e001d869afa50b44a8173b5f61a0763a30c4f73efbc08245ee6adb6fafbc3"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_prediction_vs_observed_2006_2022.csv",
+      "size_bytes": 5607514,
+      "sha256": "3b5f6f110b22b1f35a334fd42dc9154ca07f19b6429cbcbf17c91cbb79d375d3"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_prediction_vs_observed_2006_2022.parquet",
+      "size_bytes": 8150295,
+      "sha256": "a59f0ce2d68590d55c3862b1cbdbaf37ed94224572158b43c3a27c3477f12327"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_regime_slope_parameters.csv",
+      "size_bytes": 461260,
+      "sha256": "f427bffb4e93b4a23e8815aa5baa5626270ba20ee12fbddd03caa9f0175091ed"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_spatial_group_parameters.csv",
+      "size_bytes": 7849,
+      "sha256": "b754724a8109d051450a20fa3791b1aa70c22609747b256c5f89df8d957e7d3b"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_station_random_effects.csv",
+      "size_bytes": 82996,
+      "sha256": "c32ad18f1eaaaea4c9d5eb30c784342bedd34df016d3fe7ea4effecc44bc8d3c"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2011_eval_2012_2013/reports/monthly_bayes_seasonal_hysteresis_station_slope_parameters.csv",
+      "size_bytes": 176365,
+      "sha256": "d40eb974be01e96c3322fbbeb986d410c917bf035ae41aab3843e4dace447aaf"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/evaluation_predictions.csv",
+      "size_bytes": 2872399,
+      "sha256": "28e4b61e63b6ca33ca553975515456d660c9770c4a87c327bbf3f3fb19c68a8c"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/evaluation_predictions.parquet",
+      "size_bytes": 1024802,
+      "sha256": "b07c41d63e0a9025260d077d4cfa615a710d84d986bfe9804f70575e6f23511b"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/feature_accounting_audit.json",
+      "size_bytes": 488,
+      "sha256": "6b63bd9d4b67d991374ae0169095db4fbd1bc21659380226ca4bb29dc4f89cc0"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/design_matrix/augmented_map_design_matrix.npz",
+      "size_bytes": 3851608,
+      "sha256": "3751fac0b465909601f53d22bdf0e37f4a497004a950471e907c6d493ed98312"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/design_matrix/augmented_map_response.npy",
+      "size_bytes": 113512,
+      "sha256": "c6e8e054a014f10a46af65fd9a0312fbe3af5c80d0c8bb3f0196f6647ac2343a"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/design_matrix/design_matrix_columns.csv",
+      "size_bytes": 403659,
+      "sha256": "243c162fc737eb55b4c928a62faa916e7282a52069e5fceb01f12aa7d49c043b"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/design_matrix/design_matrix_manifest.json",
+      "size_bytes": 636,
+      "sha256": "ae4d5ed3201adf115b5338df0191ebdd54cff503930c30ee96ff63fad5a41547"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/design_matrix/observation_design_matrix.npz",
+      "size_bytes": 3707170,
+      "sha256": "48119b1f9a97f127457b04eea46bb3be4e743637ef5afd0fe093328caaf7513c"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/design_matrix/observation_log_flow_response.npy",
+      "size_bytes": 80880,
+      "sha256": "d1bea0304b2669f23071f85d678664e4a432f6baa247f3043190e6c751b881e7"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/design_matrix/ridge_curvature_and_approx_covariance_diagonal.csv",
+      "size_bytes": 554392,
+      "sha256": "ba6b7398104755e5893279efda621999bbdf9fe2407256cc146a4d4ea6a73489"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/design_standardization.csv",
+      "size_bytes": 3445,
+      "sha256": "01f63819a69124d9f781c9717f9b087f063e8f497ef9fd10de81575281ce6779"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/model_population_audit.json",
+      "size_bytes": 346,
+      "sha256": "1737d9f2c1eed0bb6de5fa0e2749d7179580e2f3843cfd94c0ca8e080ac3fb7e"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_fixed_parameters.csv",
+      "size_bytes": 4325,
+      "sha256": "6b07008ced629ee77074dd681fc541aa9557c0f67c4689d3fbdf7c7bca4fca3b"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_good_validation_stations.csv",
+      "size_bytes": 35376,
+      "sha256": "e3a75c5c7de5937a7b1ca0ad8c1ce1713d6f76090d145316df3237b30c7116ae"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_hyperparameter_grid.csv",
+      "size_bytes": 431,
+      "sha256": "4f9305bc6f57bea5c2667361e25ce225df99ac275664375dbd81f767d63ca4fc"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_metric_summary.csv",
+      "size_bytes": 450,
+      "sha256": "f1b13e767896b117b3f1762be994b550ed87ae7a83a71d508f289249a7aceb72"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_metrics_by_station.csv",
+      "size_bytes": 56155,
+      "sha256": "0ce58b6aeeb027ad0a5d39065f96900004934e07c4ac3685062e3a80bfef3234"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_not_good_validation_stations.csv",
+      "size_bytes": 21193,
+      "sha256": "19057a699dafc837a25cfce918ef3d58675f853e5440200bb07a0b660e63667d"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_parameter_group_strength.csv",
+      "size_bytes": 1177,
+      "sha256": "bbd3802dcc54f68e406e06bbb16c31edaa1776e257b1baf859f2bcaac4c25122"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_prediction_vs_observed_2006_2022.csv",
+      "size_bytes": 5611124,
+      "sha256": "128ffc54ff76fa72ba0c2ae3d2ffc7fb958447fde4f959e3bb183f4e2a3fd3dc"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_prediction_vs_observed_2006_2022.parquet",
+      "size_bytes": 8150301,
+      "sha256": "81ac353be53097e1f86cb62c78be03d46fb63ee0ea4685de243275d39e010497"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_regime_slope_parameters.csv",
+      "size_bytes": 461235,
+      "sha256": "81dbc8322b8496049aee6e6beec85fbdcfbc060dbbdd0ede2d0bb6baef277e8f"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_spatial_group_parameters.csv",
+      "size_bytes": 7851,
+      "sha256": "7bf3d0fff818182b51b95a6d0036cb1feb51fa7f988b5cd01c2ccb7d24043922"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_station_random_effects.csv",
+      "size_bytes": 82927,
+      "sha256": "5d447407eacf16af75b23335317a2d1fba7cc693f0692ba8d815b3bc3fa74a96"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2013_eval_2014_2015/reports/monthly_bayes_seasonal_hysteresis_station_slope_parameters.csv",
+      "size_bytes": 176315,
+      "sha256": "14a94f508ef50b5aba16c0e66b2e43d71fee74158f92ffb46c7b00944f0e6bec"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/evaluation_predictions.csv",
+      "size_bytes": 1153719,
+      "sha256": "15cf749d3dd16fd8ee28a4e9a49737f035b553df23fad49eaeb6cd8738f63595"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/evaluation_predictions.parquet",
+      "size_bytes": 1439056,
+      "sha256": "9fb8fa352ecaaba8b0cca3ec7666a9caaab0a3782a45400ce45b260e4d1372e3"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/feature_accounting_audit.json",
+      "size_bytes": 488,
+      "sha256": "01b2104661e120052c058c120267303b543786e27f40816dc39457907c74672b"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/design_matrix/augmented_map_design_matrix.npz",
+      "size_bytes": 83259,
+      "sha256": "d8dd372fd1a07ef36f41ae7ae81259ced915f168a2e8813e561fbda9d571b690"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/design_matrix/augmented_map_response.npy",
+      "size_bytes": 134168,
+      "sha256": "bd14450f824fccd68caf1296e9d4766a11fee411cc81f176de48abe108be585b"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/design_matrix/design_matrix_columns.csv",
+      "size_bytes": 403659,
+      "sha256": "243c162fc737eb55b4c928a62faa916e7282a52069e5fceb01f12aa7d49c043b"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/design_matrix/design_matrix_manifest.json",
+      "size_bytes": 637,
+      "sha256": "736e20f41fc1d0925b195f85faef16037c6f74c75a0c433c0300f089493775b1"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/design_matrix/observation_design_matrix.npz",
+      "size_bytes": 4669172,
+      "sha256": "f45cd447eec611c492c8f212e7ecad654129d5822cc0d32840c8c6ba2afcfcf5"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/design_matrix/observation_log_flow_response.npy",
+      "size_bytes": 101536,
+      "sha256": "42fc1ca1dd2bd94ef0bf2b6c388bd8cb4a0c4dded54bc303ced139fe935a1a93"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/design_matrix/ridge_curvature_and_approx_covariance_diagonal.csv",
+      "size_bytes": 555298,
+      "sha256": "5d65402bc2fdacde344062476317a76219da3dbb3581eda6856158241b5c5a88"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/design_standardization.csv",
+      "size_bytes": 3439,
+      "sha256": "3268639516b2dda8acaad9d21e1e9239e9287700ef94abaa96ed80dc56c49028"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/model_population_audit.json",
+      "size_bytes": 346,
+      "sha256": "c6eea614e49e7c65d0d00177468868e32050df3e1dc6db28aa7213c11e45cc69"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_fixed_parameters.csv",
+      "size_bytes": 4315,
+      "sha256": "04b5b1b5724d54784cf127151d8ff59dde8fb52b96172eef6990d0e3b619c1b4"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_good_validation_stations.csv",
+      "size_bytes": 35402,
+      "sha256": "56af49771bc2b7c07ab8bd6c56ffd1322053e2b1d7250edff49f558801245d54"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_hyperparameter_grid.csv",
+      "size_bytes": 431,
+      "sha256": "4f9305bc6f57bea5c2667361e25ce225df99ac275664375dbd81f767d63ca4fc"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_metric_summary.csv",
+      "size_bytes": 447,
+      "sha256": "e9fdf7739616af1122d72a2ebee8e098f32de8a12427431c96ae244fef94975f"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_metrics_by_station.csv",
+      "size_bytes": 56054,
+      "sha256": "f720d7cae8791edac613a68fce0d244bb417c98115213b22c053fe45acb481a1"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_not_good_validation_stations.csv",
+      "size_bytes": 21066,
+      "sha256": "5b374e3a83137d81582899460c4dbf9dcaa6838b337b4121c893fe829a567f8f"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_parameter_group_strength.csv",
+      "size_bytes": 1187,
+      "sha256": "a2ffd3d8294d924ac0471430ef1e987c07660747244204a5a4d33dfd0ed3ca61"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_prediction_vs_observed_2006_2022.csv",
+      "size_bytes": 5618256,
+      "sha256": "79f94f5c9c51493f38aa33bd1c77ac43b7b2c3510a2f12d326584225574a30b8"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_prediction_vs_observed_2006_2022.parquet",
+      "size_bytes": 8150310,
+      "sha256": "7ff43634a15b4abce3c32c50c2301c530f7b78fbcb54b520e443cf08c40dd012"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_regime_slope_parameters.csv",
+      "size_bytes": 461095,
+      "sha256": "c140e178d5091a4a7da544c60f8f7eb3f98feb9e7ff4a5c7c6d33371f2a1c23a"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_spatial_group_parameters.csv",
+      "size_bytes": 7856,
+      "sha256": "3c7e291cba4e8e38ad40c891ac8a0f0cd6a0b6f6d88109ff0bb4a9022ca6d83b"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_station_random_effects.csv",
+      "size_bytes": 82739,
+      "sha256": "b080e7fd742eeda691335b433ce08b9f245e6055145871f73a8568afe6268d12"
+    },
+    {
+      "relative_path": "outputs/A1/blocked_folds/fit_2006_2015_eval_2016_2018/reports/monthly_bayes_seasonal_hysteresis_station_slope_parameters.csv",
+      "size_bytes": 176278,
+      "sha256": "3c4120a838c2bc5af40b0f43b5119892dae6d469cd2c4324b456fdf21c4cc472"
+    },
+    {
+      "relative_path": "outputs/A1/q72_three_fold_oof_predictions.csv",
+      "size_bytes": 9686733,
+      "sha256": "1714282de7bed0edca506c47c36df26439b3a7c5b5bef06b59e0227504dcd2fd"
+    },
+    {
+      "relative_path": "outputs/A1/q72_three_fold_oof_predictions.parquet",
+      "size_bytes": 3367070,
+      "sha256": "e34aefed3932e8b5e6dc6a6c0cd659f5980d777feb5003170fcf1d272dedef60"
+    },
+    {
+      "relative_path": "outputs/A1/run_manifest.json",
+      "size_bytes": 2067,
+      "sha256": "52b317521ed006ce353d3ab98a6d9d9cddba408d6a79f75e03f3a524e75cd53e"
+    },
+    {
+      "relative_path": "README.md",
+      "size_bytes": 2695,
+      "sha256": "e0718608e3a97dea34e5edcf04cdbffadabd0dea9ab44dfba8f21b8343be1878"
+    },
+    {
+      "relative_path": "reports/completion_audit.json",
+      "size_bytes": 287,
+      "sha256": "58d72b34972f5ee242e1c85dfc8551ee92a093f8b01a9a884f998c938b5be09e"
+    },
+    {
+      "relative_path": "reports/feature_accounting_audit.csv",
+      "size_bytes": 1153,
+      "sha256": "d7d52d280eaff01a8335519a88ff48fc27f7a623398b5950ca7de019bb67b1b5"
+    },
+    {
+      "relative_path": "reports/fold_metrics.csv",
+      "size_bytes": 978,
+      "sha256": "538f6448340203bee49e52e1e37ba00395ceba6ffacd309811707cf99a4f0528"
+    },
+    {
+      "relative_path": "reports/legacy_lowflow_metrics.csv",
+      "size_bytes": 22811,
+      "sha256": "5b6e7903b192c6f485982b4f1bed15f431ae50f59aa76872241f6498119f6f0b"
+    },
+    {
+      "relative_path": "reports/scale_transform_and_coefficient_audit.csv",
+      "size_bytes": 826,
+      "sha256": "2da357baf9139f7ba42dc55cc4d66e03604911d7f1d1dde687a2dbbb77cd73e6"
+    },
+    {
+      "relative_path": "reports/scale_transform_and_coefficient_audit.json",
+      "size_bytes": 295,
+      "sha256": "9d3a9ec04b37cbdcfa856436c727f0150da196eb501b26544b462007fbc8693a"
+    },
+    {
+      "relative_path": "reports/scenario_metrics.csv",
+      "size_bytes": 309,
+      "sha256": "80fb4bc01944ae6bf76fd1ab1b3ba499854bc29770a605d591bce5d6d6c31127"
+    },
+    {
+      "relative_path": "reports/station_metrics.csv",
+      "size_bytes": 34379,
+      "sha256": "4238f3d1e06f3425aac99a995522d534d95dc545abc5f9476672f354d8a57bc6"
+    },
+    {
+      "relative_path": "reports/topology_path_metrics.csv",
+      "size_bytes": 3486,
+      "sha256": "9c51d009c4b34c016299f7fc318aff131d4064e7e23e1f92d61a654a56248db3"
+    },
+    {
+      "relative_path": "scripts/__pycache__/audit_scale_transform.cpython-311.pyc",
+      "size_bytes": 6879,
+      "sha256": "b60da5361076da7eb59009490d10d389669861c376bf4f8d670e8bf824e321ba"
+    },
+    {
+      "relative_path": "scripts/__pycache__/evaluate_stage_a.cpython-311.pyc",
+      "size_bytes": 20155,
+      "sha256": "71688e6429125dce3bba3e63488c02fba5f0eac5867910b5aefee85e31d048f0"
+    },
+    {
+      "relative_path": "scripts/__pycache__/finalize_stage_a.cpython-311.pyc",
+      "size_bytes": 10530,
+      "sha256": "744a2f6cf240401b3edb42eef5786b419deed52a57b9f880226f140c41dbcc5e"
+    },
+    {
+      "relative_path": "scripts/__pycache__/run_stage_a.cpython-311.pyc",
+      "size_bytes": 21071,
+      "sha256": "0542d52c132d7501cb8e710f9f98c085aa5b8f724f02a2f3e1638ffd8a4f9a5e"
+    },
+    {
+      "relative_path": "scripts/__pycache__/runtime_guard.cpython-311.pyc",
+      "size_bytes": 2796,
+      "sha256": "e55dffa720ff1ac3f6a941b82c5421855ce32fe4c8af6ec57581c90fa195eda9"
+    },
+    {
+      "relative_path": "scripts/audit_scale_transform.py",
+      "size_bytes": 3995,
+      "sha256": "b240c0ae32ecc475e34b13b1b1bf303f6e4fd20d6eac66764dd61317b6150f05"
+    },
+    {
+      "relative_path": "scripts/components/__pycache__/q72_input_scale_component.cpython-311.pyc",
+      "size_bytes": 114447,
+      "sha256": "1ee07a3b6f061a3d54ac266e3b1d99450420327f9e760b95106815aeaac2e7ac"
+    },
+    {
+      "relative_path": "scripts/components/q72_input_scale_component.py",
+      "size_bytes": 82267,
+      "sha256": "5826e1b3b8d53cf8a771ec3c23f55c3aa6f862f88ad2f6202f4a146544cceb9f"
+    },
+    {
+      "relative_path": "scripts/evaluate_stage_a.py",
+      "size_bytes": 9527,
+      "sha256": "f2d7ba3f3ba2639d8f3d98a3d0ad13d3d9ae73654fbd539dfffafa8e310ac3ae"
+    },
+    {
+      "relative_path": "scripts/finalize_stage_a.py",
+      "size_bytes": 7291,
+      "sha256": "7014f159360b3821bc351b8c39635ec3c3990114b443f16096fa53b07ff108be"
+    },
+    {
+      "relative_path": "scripts/run_stage_a.py",
+      "size_bytes": 12426,
+      "sha256": "c530ca770b9b5561bbead339bf19973f14db9fc9bb583284b9f9b3b9c3ea6e24"
+    },
+    {
+      "relative_path": "scripts/runtime_guard.py",
+      "size_bytes": 1355,
+      "sha256": "bd6508e4c5b524634355c28e024f05fb127771712fde5caf831f6e675061d560"
+    },
+    {
+      "relative_path": "scripts/tests/__pycache__/test_stage_a_contract.cpython-311.pyc",
+      "size_bytes": 7087,
+      "sha256": "41601181f8f2ecba482260446fedd105c55942f5900666bb7390783065b9e710"
+    },
+    {
+      "relative_path": "scripts/tests/test_stage_a_contract.py",
+      "size_bytes": 3721,
+      "sha256": "fc47876faa5321be5ea9c6a91208f3ecfc6e5587cfcd48519b54c826eb0a7211"
+    },
+    {
+      "relative_path": "terminal_gate.json",
+      "size_bytes": 1839,
+      "sha256": "dfd4dab744da2769ce4baa63a6769d35c83a718214a0fb3904e0f3a77850d01e"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "program_id": "20260824_monthly_tn_structural_diagnosis_and_upgrade",
+  "manifest_revision": 1,
+  "status": "running",
+  "current_folder": "20260824_4",
+  "registered_before_new_candidate_tn_results": true,
+  "objective": "Determine why the Q72-coupled monthly SPARROW-Legacy TN model has almost no within-station monthly anomaly skill, and test a bounded set of statistically and mechanistically nested upgrades.",
+  "immutable_ancestors": [
+    "20260824_1",
+    "20260824_2",
+    "20260824_3"
+  ],
+  "candidate_graph": [
+    {
+      "family": "F1_READOUT",
+      "candidates": [
+        "GAUSSIAN_PARENT",
+        "STUDENT_T_NU4",
+        "GAUSSIAN_CQ_HINGE",
+        "STUDENT_T_NU4_CQ_HINGE"
+      ],
+      "diagnostic_only": [
+        "NO_ID_SHALLOW_NONLINEAR_RESIDUAL_BENCHMARK",
+        "ETA_UPPER_BOUND_2_SOURCE_SCALE_AUDIT"
+      ],
+      "status": "passed_gaussian_cq_hinge"
+    },
+    {
+      "family": "F2_TERRESTRIAL_INTERFACE",
+      "candidates": [
+        "L1_SHARED_CATCHMENT_MEMORY_REPLACES_T1",
+        "L2_Q72_ANTECEDENT_WETNESS_EFFECTIVE_LOSS",
+        "L3_PATHWAY_MPR_SLOPE_PERMEABILITY"
+      ],
+      "status": "registered"
+    },
+    {
+      "family": "F3_AQUATIC",
+      "candidates": [
+        "H1_AREAL_EXPOSURE_PARENT",
+        "TRUE_RESIDENCE_TIME_ATTENUATION",
+        "H1_CONCENTRATION_SATURATION_KN_GRID"
+      ],
+      "status": "registered"
+    },
+    {
+      "family": "JOINT",
+      "candidates": [
+        "ONE_NESTED_COMBINATION_OF_INDEPENDENT_F2_AND_F3_WINNERS"
+      ],
+      "opening_condition": "at least one F2 and one F3 candidate independently pass every registered mechanistic gate",
+      "status": "closed_pending_condition"
+    }
+  ],
+  "forbidden_expansion": [
+    "new candidate family outside F1/F2/F3",
+    "temperature or reservoir module",
+    "HLEG BULK or AGE",
+    "basin-wide harmonic source timing",
+    "new WWTP direct-input experiment",
+    "additional groundwater mu values",
+    "second SON or groundwater pool",
+    "unrestricted station, reach or tree process parameters",
+    "2022 TN before both development locks"
+  ],
+  "terminal_states": [
+    "MECHANISTIC_TEMPORAL_UPGRADE_SUPPORTED",
+    "MONITORED_STATION_PREDICTION_UPGRADE_ONLY",
+    "NO_REGISTERED_UPGRADE_SUPPORTED",
+    "IDENTIFIABILITY_BLOCKED",
+    "IMPLEMENTATION_BLOCKED"
+  ],
+  "folder_policy": {
+    "continuation_pattern": "20260824_<next unused integer>",
+    "precreate_future_folders": false,
+    "candidate_graph_may_expand": false,
+    "maximum_engineering_repair_reruns_per_family": 2
+  },
+  "output_formats": [
+    "Markdown",
+    "JSON",
+    "Parquet"
+  ]
+}

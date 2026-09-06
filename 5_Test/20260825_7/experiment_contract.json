@@ -1,0 +1,52 @@
+{
+  "stage": "20260825_7",
+  "status": "registered_before_execution",
+  "title": "Full-development global HBV lock, retrospective check and TN hydrology bridge",
+  "selected_structure": "GLOBAL_HBV_R0",
+  "development_fit": "2010-2018 discharge with 2006-2009 periodic spin-up forcing",
+  "retrospective_period": "2019-2022",
+  "retrospective_name": "locked post-development retrospective temporal check, not independent external validation",
+  "known_prelock_access": {
+    "event": "orchestrator schema inspection before this contract was persisted",
+    "scope": "row count, six column names and first five displayed records",
+    "aggregate_performance_computed": false,
+    "parameter_or_gate_changed_from_access": false,
+    "consequence": "must not claim first-ever read or independent validation"
+  },
+  "lock_order": [
+    "refit final parameters using development discharge only",
+    "write development_mechanism_lock.json",
+    "write full_development_parameter_lock.json",
+    "record both lock hashes",
+    "read the retrospective discharge file once in the formal script",
+    "evaluate without refitting"
+  ],
+  "retrospective_total_flow_gates": {
+    "daily_pooled_NSE_minimum": 0.75,
+    "daily_station_median_NSE_minimum": 0.50,
+    "monthly_pooled_NSE_minimum": 0.85,
+    "monthly_station_median_NSE_minimum": 0.65,
+    "monthly_station_median_absolute_PBIAS_maximum_pct": 20.0
+  },
+  "TN_bridge": {
+    "domain": "230 Reaches",
+    "period": "2006-2022 daily and monthly",
+    "monthly_flow_equation": "sum daily volume divided by exact month seconds",
+    "authorized_primary_field": "routed_total_m3_s",
+    "hydraulic_exposure": "diagnostic bankfull travel time from candidate-own Q and Andreadis width/depth",
+    "response_components": "Q0/Q1/Q2 and quick/slow are retained as non-identified model diagnostics only"
+  },
+  "path_lock": "TOTAL_FLOW_SUPPORTED_FAST_SLOW_NOT_IDENTIFIED",
+  "forbidden": [
+    "refit after retrospective discharge is read",
+    "station-specific Gauge correction",
+    "MPR promotion after Stage-5 failure",
+    "R1 routing promotion after Stage-4 and Stage-5 failure",
+    "TN observations selecting hydrology",
+    "temperature entering TN reaction",
+    "reservoir equation",
+    "wqd_reference_discharge_m3_s",
+    "wqd_upstream_area_km2",
+    "claim observed groundwater, new water, old water or water age"
+  ]
+}

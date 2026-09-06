@@ -1,0 +1,127 @@
+{
+  "conda_default_env": "sparrow",
+  "python_executable": "D:\\ProgramData\\anaconda3\\envs\\sparrow\\python.exe",
+  "python_version": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26100-SP0",
+  "thread_limits": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "pyarrow": "23.0.1",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "openpyxl": "3.1.5",
+    "geopandas": "1.1.3"
+  },
+  "source_snapshot": [
+    {
+      "relative_path": "inputs/source_snapshot/baseline_reference/contracts/blocked_fold_manifest.csv",
+      "bytes": 815,
+      "sha256": "ee61c31116756a50a99f7c1bfa10ee258cce9ee9596573bbb735cfc23a3237aa"
+    },
+    {
+      "relative_path": "inputs/source_snapshot/baseline_reference/contracts/blocked_fold_manifest.json",
+      "bytes": 1468,
+      "sha256": "842ad60fc80348175e31f910d8c72b76751b8aa4e3f089f3ad1fcfcb39a30fc9"
+    },
+    {
+      "relative_path": "inputs/source_snapshot/baseline_reference/contracts/climate_reaggregation_manifest.json",
+      "bytes": 900,
+      "sha256": "3459b0e78a8aca6ce74e096ebb4ac4c439965c519269421dedb97c5b71b9bb77"
+    },
+    {
+      "relative_path": "inputs/source_snapshot/baseline_reference/contracts/corrected_topology_validation.json",
+      "bytes": 1282,
+      "sha256": "1d3771edcd3177c1c67aa3302fddee6b603b7c96f5a93cd6fc307a7c59cf03cb"
+    },
+    {
+      "relative_path": "inputs/source_snapshot/baseline_reference/contracts/environment.json",
+      "bytes": 780,
+      "sha256": "b462418234e22e3632643bdf20fbe56ae2a6587296c408bdbcea23b093b8b142"
+    },
+    {
+      "relative_path": "inputs/source_snapshot/baseline_reference/contracts/model_exclusion_policy_used.csv",
+      "bytes": 3499,
+      "sha256": "1e04f1dbc4fc465e1d06eef7cf1d7461f2b8e8a2af161fffad2b2bd8bcbe9daf"
+    },
+    {
+      "relative_path": "inputs/source_snapshot/baseline_reference/contracts/q72_input_build_summary.json",
+      "bytes": 1338,
+      "sha256": "b4e161933e1a922788b03d26e0130bd7627d567773ed717e2854abdb41d7cd12"
+    },
+    {
+      "relative_path": "inputs/source_snapshot/baseline_reference/contracts/q72_model_gate.json",
+      "bytes": 1152,
+      "sha256": "a264d04fafb0af4379fdbb56795d87670d7fcbad45334f2dd270a653d52c2944"
+    },
+    {
+      "relative_path": "inputs/source_snapshot/baseline_reference/contracts/selected_representative_stations.csv",
+      "bytes": 17723,
+      "sha256": "6cf455664fe6a1e6b5688b45367908213704e9a832aca981f619d450eb906b7d"
+    },
+    {
+      "relative_path": "inputs/source_snapshot/baseline_reference/contracts/source_config.json",
+      "bytes": 572,
+      "sha256": "ed86651e1cdc8d75a1dfe101f7d3d39cffaf1cb8e751e2718f23b408ecf6d223"
+    },
+    {
+      "relative_path": "inputs/source_snapshot/baseline_reference/contracts/source_terminal_gate.json",
+      "bytes": 1829,
+      "sha256": "d1904fdcad7200077532bc022b11621fbf8f2d191425138afe1d4c4c60d90bee"
+    },
+    {
+      "relative_path": "inputs/source_snapshot/baseline_reference/contracts/source_validation.json",
+      "bytes": 1829,
+      "sha256": "d1904fdcad7200077532bc022b11621fbf8f2d191425138afe1d4c4c60d90bee"
+    },
+    {
+      "relative_path": "inputs/source_snapshot/baseline_reference/folds/fit_2006_2011_eval_2012_2013/evaluation_predictions.csv",
+      "bytes": 2003182,
+      "sha256": "75fe2efc1556e1d32e4994857667a6aaa0aeb29c95276ccea71dcb663041711a"
+    },
+    {
+      "relative_path": "inputs/source_snapshot/baseline_reference/folds/fit_2006_2013_eval_2014_2015/evaluation_predictions.csv",
+      "bytes": 2127342,
+      "sha256": "5c60d5640bda2f94d193fb83250c135ca341566080091e95762864eb50be00c3"
+    },
+    {
+      "relative_path": "inputs/source_snapshot/baseline_reference/folds/fit_2006_2015_eval_2016_2018/evaluation_predictions.csv",
+      "bytes": 3057194,
+      "sha256": "35a51b653a13ae7765fadbb44a1d4e47bdf677e0687469e5788f61140fede492"
+    },
+    {
+      "relative_path": "inputs/source_snapshot/baseline_reference/inputs/covariate_backbone.parquet",
+      "bytes": 4186126,
+      "sha256": "9c6d82569f66aa59d3eb0558cb2cefff65907a1aade40c0c6fc6d7cfa165505f"
+    },
+    {
+      "relative_path": "inputs/source_snapshot/baseline_reference/inputs/indata.parquet",
+      "bytes": 4416399,
+      "sha256": "6d6f178cf96bc22d095ce13588d225edd0f8143422b1b67b2163c93ba6fd0f18"
+    },
+    {
+      "relative_path": "inputs/source_snapshot/baseline_reference/inputs/topology/topology_edges.csv",
+      "bytes": 18988,
+      "sha256": "2daa0a1df1e8b4d5cf364492068be88e410c3d6228fe417275fda3bc4afd37f9"
+    },
+    {
+      "relative_path": "inputs/source_snapshot/baseline_reference/outputs/q72_three_fold_oof_predictions.parquet",
+      "bytes": 3191673,
+      "sha256": "e2ef0ff95792507e0bf039c8ac71defdb4d625bb92ea7bf2ff06e20808cf02d7"
+    },
+    {
+      "relative_path": "inputs/source_snapshot/DischargeData_2006_2009.xlsx",
+      "bytes": 296590,
+      "sha256": "eb632f4ebafc624dcbd337dc4372ea1cce0ce0c045c9b2fe5d78412e79a0a07b"
+    },
+    {
+      "relative_path": "inputs/source_snapshot/水文年鉴录入表-珠江流域2006-2009-202512.xlsx",
+      "bytes": 2679503,
+      "sha256": "399fbea66de6208fae85c2d5332f96a351ddead1be12188f32ad2dce3aed625b"
+    }
+  ]
+}

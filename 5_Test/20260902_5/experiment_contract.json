@@ -1,0 +1,30 @@
+{
+  "stage": "20260902_5",
+  "status": "REGISTERED_BEFORE_SPATIAL_RESULTS",
+  "candidate": "H22_TRANSFER_HEAD",
+  "reference": "20260824_47 MINERAL_LIFETIME nested predictions",
+  "folds": {
+    "LORO": "309 time x held-out-reach folds",
+    "LOTO": "21 time x held-out-terminal-tree folds",
+    "FIRST_OBSERVED_2021": "one natural-expansion stress test"
+  },
+  "fit_contract": {
+    "held_out_TN": "never enters preprocessing, initialization, parameter fitting or model selection",
+    "process_initialization": "matching 20260824_47 MINERAL_LIFETIME nested-fold solution trained without the held-out block",
+    "gamma_and_station_initialization": "five deterministic data-independent starts",
+    "all_parameters": "process, gamma and remaining-station residuals jointly optimized",
+    "preprocessing": "winsorization, centering and scaling refit from training reaches within every fold",
+    "optimizer": "five-start screen with 30 AdamW plus up to 60 strong-Wolfe L-BFGS iterations; then deep L-BFGS polish of the selected solution until projected KKT <=1e-5 or a preflight-corrected maximum of five 200-iteration polish blocks",
+    "preflight_amendment": "Before inspecting predictive performance, the first fold exposed an optimizer-state bug: the deep-polish restart reconstructed the centered station effect instead of preserving the selected raw station vector, and stalled at 1.3e-5 after five blocks. Preserving the exact selected raw vector reached 8.84e-6 in the first polish block. Subsequent engineering-only monitoring found that rare folds can stop with only the physical v_f gradient at 1.3e-5 to 1.7e-5 because the raw sigmoid gradient and function change are already tiny. Such folds receive a bounded one-dimensional physical-scale v_f minimization followed by one final joint L-BFGS polish; R037 and R105 verified KKT values of 9.31e-6 and 6.34e-6. Once this rescue was verified without inspecting predictions, the trigger was moved immediately after any polish block for which v_f is the sole remaining KKT violation, rather than wasting all five identical-condition blocks. Engineering-only replay of R033 then showed that v_f correction can expose a different physical-process coordinate as the sole residual violation. Before inspecting predictions, the rescue was therefore generalized to at most eight deterministic Gauss-Seidel bounded one-dimensional minimizations of the currently largest physical-process KKT residual, with joint L-BFGS used only when the remaining violation lies in the station or gamma block. The terminal-tree stress fold T020 further showed joint Hessian scale competition across the gamma/site and process blocks. For such rare unresolved folds, up to eight deterministic alternating rounds optimize gamma plus site residuals conditionally on a cached fixed-process prediction, then optimize process parameters conditionally on the fitted head, followed when needed by the same exact physical-coordinate correction. If a process update leaves the final gamma gradient above tolerance, a final head-ending Gauss-Seidel sweep of at most 24 cached head fits and exact physical-coordinate corrections is allowed; a deterministic 1,000-step low-rate Adam bridge is used only when the cached conditional head itself fails the unchanged gradient gate before its final L-BFGS. If related process coordinates still cycle, at most six final block rounds use exact-gradient bounded L-BFGS-B on the eight-dimensional physical process vector followed by the same cached conditional head fit. The cached head losses omit only process-only constants and therefore have exactly the same gamma/site gradient as the registered objective; the physical L-BFGS-B gradient is obtained from the registered raw-parameter autograd gradient by the exact sigmoid Jacobian. Failure to meet the unchanged 1e-5 gate still aborts the worker. The model equation, objective, bounds, starts, initialization, likelihood and gate were not changed; every rescue round and corrected coordinate is recorded per fold.",
+    "workers": 8,
+    "threads_per_worker": 2,
+    "resource_amendment": "The host exposes 32 logical processors. Before any aggregate predictive result was inspected, profiling compared safe checkpoint layouts. Four two-thread workers underused the host; fourteen single-thread workers stayed below 28 GiB but required about 25 minutes per fold. The validated two-thread preflight required about 8-10 minutes per fold, so the formal layout is eight two-thread workers (at most 16 threads, 50% of logical processors). Nine valid KKT-passing folds produced by the single-thread engineering probe are reused; one 1.3e-5 fold is automatically rejected and recomputed, while incomplete work is discarded through fold-atomic writes. When two failed shard-front folds left all remaining work concentrated in only two shards, an engineering-only fold-id mode was added before aggregate predictions were inspected. It uses the identical fit function and writes one independent atomic checkpoint triplet per requested fold, allowing up to eight two-thread workers to recover the remaining registered folds without changing fold membership, preprocessing, initialization, objective, predictions or gates."
+  },
+  "gates": {
+    "relative": "LORO and LOTO candidate-minus-reference paired block bootstrap CI95 upper <0.005",
+    "absolute": "LORO and LOTO station-blind Skill_log bootstrap CI95 lower >0",
+    "first_observed_2021": "noninferior at 0.005",
+    "formal_layer": "population_transferable",
+    "held_out_conditional": "unavailable"
+  }
+}

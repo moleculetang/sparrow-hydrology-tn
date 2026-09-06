@@ -1,0 +1,22 @@
+{
+  "scenario_id": "20260820_18",
+  "status": "frozen_complete",
+  "decision": "hydraulic_temporal_screen_not_supported",
+  "selected_mechanism": "UNIFORM_PARENT",
+  "temperature_fit_authorized": false,
+  "retrospective_2022_TN_read": false,
+  "authoritative_outputs": {
+    "E:\\SPARROW\\5_Test\\20260820_11\\program_manifest.json": "44894ff073cb4c0e918da8c890a640de3d9ea8dd112f268ce0fb2f793a66aebc",
+    "E:\\SPARROW\\5_Test\\20260820_18\\experiment_contract.json": "b496b11398e2f3eb2e24ebf3f22aa980888a50cdc96f23093b97a1ce2ac47e6a",
+    "E:\\SPARROW\\5_Test\\20260820_18\\reports\\stage0_preflight.json": "06fc84fe3473d47a021a853819c67eeb588103c877058708cd19b09efb30660a",
+    "E:\\SPARROW\\5_Test\\20260820_18\\reports\\stage0_plausibility.json": "e98527ca5e1267c7f05cc17a224ef52067708105fb5780296ea3e90b1442e245",
+    "E:\\SPARROW\\5_Test\\20260820_18\\reports\\stage1_hydraulic_temporal_decision.json": "df37f192ecd899d7129cfd0d563284037577f86fb1516c1e3325704e4596c4a4",
+    "E:\\SPARROW\\5_Test\\20260820_18\\reports\\technical_report.md": "dbcc65e7a756d7fd6df847ad093a94e0c8b96c1d019e55d9cf124e6ab61c329f",
+    "E:\\SPARROW\\5_Test\\20260820_18\\reports\\completion_audit.json": "6bb23df10b7cce996ced73a0788e44926a5f2e13da54a1e89778b14931e92c28",
+    "E:\\SPARROW\\5_Test\\20260820_18\\outputs\\reach_month_aquatic_uptake_exposure_2006_2021.parquet": "703d116d253462677f974b36267dbc8adbb7764e6108dae435b327cb6927e873",
+    "E:\\SPARROW\\5_Test\\20260820_18\\outputs\\hydraulic_only_temporal_metrics.parquet": "57946b03fdc534449304effb1eee9c8527abf36f9708db5c849035f996971d58",
+    "E:\\SPARROW\\5_Test\\20260820_18\\outputs\\hydraulic_only_temporal_gate_matrix.parquet": "bffcee708041da277f93e6ad7c56e8b3d784f758b27e089771fca9e4edf5cb67",
+    "E:\\SPARROW\\5_Test\\20260820_18\\outputs\\hydraulic_only_candidate_fold_parameters.parquet": "63e159f4b3b3b15b38690ca74150140c4c4cc97e6b9d13fde7b0b08bd4e40487"
+  }
+}
+

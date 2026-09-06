@@ -1,0 +1,25 @@
+{
+  "stage": "20260828_3",
+  "required_predecessor": "20260828_2 CANDIDATE_LOCKED_WITHOUT_DEVELOPMENT_READ",
+  "purpose": "Reproduce the frozen 2017-2018 development decision using only physically isolated development observations.",
+  "frozen_parent_contract": "20260827_9/experiment_contract.json",
+  "temporal_gates": {
+    "pooled_log_RMSE_increase_max": 0.01,
+    "monthly_pooled_NSE_drop_max": 0.02,
+    "monthly_station_median_NSE_drop_max": 0.03,
+    "monthly_station_median_abs_PBIAS_worsening_max_pct_point": 2.0
+  },
+  "component_gates": {
+    "BFI_spearman_min": 0.30,
+    "BFI_spearman_drop_from_SIG2P_O_max": 0.05,
+    "SIG2P_O_BFI_spearman": 0.3623688811188811,
+    "BFI_RMSE_max": 0.20,
+    "BFI_RMSE_increase_from_SIG2P_O_max": 0.02,
+    "SIG2P_O_BFI_RMSE": 0.15605906997654898,
+    "high_flow_fast_direction_fraction_min": 0.80,
+    "slow_memory_direction_fraction_min": 0.80,
+    "regionalized_score_boundary_fraction_max": 0.10
+  },
+  "formal_test_firewall": ["2019-2022 observation values", "four spatial station observation values", "TN"],
+  "stop_rule": "If either registered BFI magnitude gate fails, close without spatial refits or formal-test evaluation."
+}

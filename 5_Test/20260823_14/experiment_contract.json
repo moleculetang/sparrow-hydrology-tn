@@ -1,0 +1,22 @@
+{
+  "stage": "20260823_14",
+  "status": "needs_user_topology_decisions",
+  "purpose": "Reassemble all usable active discharge observations before refitting MAP and recursive assimilation.",
+  "authoritative_registry": "E:\\SPARROW\\1_Inputs\\DischargeData\\registry\\stage2_result_revised_sync_operations.csv",
+  "allowed_source_groups": ["complete_2010_2022", "noncomplete_2010_2022", "monthly_mean_2006_2009"],
+  "forbidden_source_group": "excluded_stations",
+  "exclusions": ["archive model_exclusion_policy", "20260813_54 S111 exclusions and normalized aliases"],
+  "daily_month_coverage_min": 0.75,
+  "training_eligibility": "at least 60 usable months in 2006-2018 spanning at least 4 calendar years",
+  "checking_eligibility": "training eligible plus at least 18 usable months in 2019-2022 spanning at least 2 calendar years",
+  "same_reach_rule": "one representative station per Reach; among training-eligible stations prefer ordinary river gauges and the most downstream location on the Reach, then greater coverage and shorter snap distance",
+  "spatial_evaluation": "PAUSED_BY_USER",
+  "next_stage_primary_results": [
+    "MAP_2006_2018_FIT",
+    "MAP_RECURSIVE_ASSIMILATION_2006_2018_FIT",
+    "MAP_FROZEN_2019_2022_CHECK",
+    "MAP_RECURSIVE_ASSIMILATION_FROZEN_AFTER_2018_2019_2022_CHECK"
+  ],
+  "assimilation_contract": "one-step prediction; month t observation may update only t+1 and later; no observation updates after 2018-12",
+  "q72_role": "physical reference and mass-balance audit, not one of the four primary result groups"
+}
