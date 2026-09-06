@@ -1,0 +1,12 @@
+{
+  "stage": "20260826_3",
+  "status": "registered_before_execution",
+  "purpose": "Equation implementation and numerical/semantic preflight before real-data fitting",
+  "registered_models": ["HBV3_PARENT", "RAVEN_SACSMA3", "RAVEN_TOPMODEL3", "HYPE3L_HYDROLOGY", "MTRS3"],
+  "required_tests": ["nonnegative states and fluxes", "daily water balance", "periodic spin-up", "restart equivalence", "fast-intermediate-slow pulse centroid ordering"],
+  "claim_boundary": "All three outputs are model response components, not directly observed flow sources or water ages",
+  "observed_discharge_used": false,
+  "TN_used": false,
+  "authorized_successor": "20260826_4"
+}
+

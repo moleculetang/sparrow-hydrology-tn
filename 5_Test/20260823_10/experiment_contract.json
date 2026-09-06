@@ -1,0 +1,18 @@
+{
+  "stage": "20260823_10",
+  "authoritative_population": "S000_unscreened",
+  "temporal_folds": [
+    {"fold_id": "F1", "train": "2006-2011", "evaluate": "2012-2013"},
+    {"fold_id": "F2", "train": "2006-2013", "evaluate": "2014-2015"},
+    {"fold_id": "F3", "train": "2006-2015", "evaluate": "2016-2018"}
+  ],
+  "spatial_modes": ["LOSO", "LOTO"],
+  "target_history_rule": "all target-station or target-tree discharge rows are deleted before fitting",
+  "eligible_candidates": ["P0_Q72_PROCESS", "REGIONALIZED_ROUTED_CORRECTION"],
+  "diagnostic_candidates": ["P1_GLOBAL_COMPACT", "P2_COMPACT_ZERO_HISTORY_COLDSTART", "P2_36_MONTH_GAUGED_ADAPTATION"],
+  "primary_loss": "station-macro ln(1+Q) RMSE",
+  "spatial_improvement_gate": "paired CI95 upper of candidate-minus-reference logRMSE < 0",
+  "noninferiority_margin": 0.005,
+  "boundary_fraction_max": 0.05,
+  "forbidden": ["post-hoc station deletion", "reservoir equation changes", "TN", "target history in eligible candidates", "2019-2022 before lock"]
+}

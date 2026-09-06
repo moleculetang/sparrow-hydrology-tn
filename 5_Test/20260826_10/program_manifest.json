@@ -1,0 +1,25 @@
+{
+  "program": "20260826 multi-structure conserving hydrologic response ensemble",
+  "status": "COMPLETE",
+  "stages": {
+    "1": "PASS_PROGRAM_REGISTRY_AND_PARENT_AUDIT",
+    "2": "PASS_STATIC_REPAIR_CONTRACT_AND_PARENT_REPRODUCTION",
+    "3": "PASS_ALL_STRUCTURE_NUMERICAL_AND_SEMANTIC_PREFLIGHTS",
+    "4": "PASS_GLOBAL_COARSE_FIT_COMPLETED",
+    "5": "PASS_DEVELOPMENT_COMPARISON_AND_EQUIFINALITY_AUDIT",
+    "6": "PASS_SPATIAL_MAP_FITS_COMPLETED",
+    "7": "PASS_ML_TOTAL_FLOW_CEILING_COMPLETED",
+    "8": "PASS_NESTED_SPATIAL_EVALUATION_COMPLETED",
+    "9": "PRIMARY_TOTAL_FLOW_RETAINED_STRUCTURAL_COMPONENT_ENSEMBLE_DIAGNOSTIC_ONLY",
+    "10": "PROGRAM_COMPLETE_PRIMARY_HBV_TOTAL_FLOW_RESPONSE_ENSEMBLE_DIAGNOSTIC"
+  },
+  "primary_total_flow": "20260825_7 HBV3/GLOBAL_HBV_R0 routed_total_m3_s",
+  "sensitivity_members": [
+    "HBV3_PARENT",
+    "RAVEN_SACSMA3",
+    "MTRS3"
+  ],
+  "response_component_authorization": "DIAGNOSTIC_STRUCTURAL_SENSITIVITY_ONLY",
+  "repair_slots": "20260826_11_to_12_only_if_a_later_integrity_failure_is_found",
+  "automatic_extension_beyond_12": "FORBIDDEN"
+}

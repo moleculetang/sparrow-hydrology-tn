@@ -1,0 +1,18 @@
+{
+  "stage": "20260824_48",
+  "status": "REGISTERED_BEFORE_AUDIT_OUTPUT",
+  "inputs": {
+    "stage47_lock": "E:/SPARROW/5_Test/20260824_47/locks/stage47_lock.json",
+    "groundwater_temperature": "E:/SPARROW/5_Test/20260814_9/inputs/model_ready/static/groundwater_temperature_benz_2024_by_reach.parquet",
+    "lake_temperature_proxy": "E:/SPARROW/5_Test/20260814_9/inputs/model_ready/monthly/lake_mix_layer_temperature_era5_land_by_reach_month_2006_2022.parquet",
+    "temperature_qa": "E:/SPARROW/5_Test/20260814_9/inputs/provenance/temperature_covariates_qa.json",
+    "canonical_hydrology": "E:/SPARROW/5_Test/20260828_9/outputs/canonical_reach_monthly_2006_2024.parquet"
+  },
+  "decisions": {
+    "joint": "run only if REG3_OBSERVATION and DYN_HYDRO_DELIVERY are both listed in eligible_candidates",
+    "groundwater_temperature": "static spatial covariate only; not a monthly groundwater-temperature forcing",
+    "lake_temperature": "lake/reservoir proxy sensitivity only; blocked for all-reach river reaction",
+    "missing_2023_2024": "blocks use as formal 2021-2024 aquatic-temperature forcing"
+  },
+  "outputs": ["reports/stage48_decision.json", "reports/technical_report.md", "locks/stage48_lock.json"]
+}

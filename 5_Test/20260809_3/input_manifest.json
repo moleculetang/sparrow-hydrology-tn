@@ -1,0 +1,214 @@
+{
+  "run_id": "20260809_3",
+  "runtime": {
+    "python": "D:\\ProgramData\\anaconda3\\envs\\sparrow\\python.exe",
+    "python_version": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+    "conda_default_env": "",
+    "conda_prefix": "",
+    "platform": "Windows-10-10.0.26100-SP0",
+    "geopandas": "1.1.3",
+    "pandas": "3.0.2",
+    "networkx": "3.6.1"
+  },
+  "thresholds": {
+    "endpoint_tolerance_m": 1.0,
+    "catchment_buffer_m": 60.0,
+    "station_review_m": 1000.0,
+    "station_high_m": 2000.0,
+    "station_severe_m": 5000.0,
+    "own_catchment_pass": 0.95,
+    "own_catchment_high": 0.9
+  },
+  "sources": [
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\results\\vectors\\reaches_topology.shp",
+      "bytes": 302196,
+      "sha256": "f89a8e097a56466a5419c590b7f9490c0392f1960f5e54c8537d3666d7cf94fb"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\results\\vectors\\reaches_topology.shx",
+      "bytes": 1940,
+      "sha256": "0728577259793e6b87817bf8d150ec51a340e9dde39cbe42bc3599d2f054aacc"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\results\\vectors\\reaches_topology.dbf",
+      "bytes": 92712,
+      "sha256": "9fcff746c8edcc8080a7f3409b12a595bbcd75f6b3148182cb2c657381d8f2fa"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\results\\vectors\\reaches_topology.prj",
+      "bytes": 423,
+      "sha256": "48a44261fed6ba2892b50afe8b76ecbf3857bf39c493543ac99efd3a16f6a03b"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\results\\vectors\\reaches_topology.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\results\\vectors\\reach_catchments.shp",
+      "bytes": 28324340,
+      "sha256": "f19fcb40ebb9254a71d20510669f319b7ac2e75c4cbff3944bfb862e77d438dc"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\results\\vectors\\reach_catchments.shx",
+      "bytes": 1940,
+      "sha256": "0754634ab68df7542c0d43b0cdb87995efd7a823a0d362a27c12367efe54a461"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\results\\vectors\\reach_catchments.dbf",
+      "bytes": 33972,
+      "sha256": "62822e3319baa0b07545ee029c807c1629aeb4cbb21c73f98595c2f67849c3a3"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\results\\vectors\\reach_catchments.prj",
+      "bytes": 423,
+      "sha256": "48a44261fed6ba2892b50afe8b76ecbf3857bf39c493543ac99efd3a16f6a03b"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\results\\vectors\\reach_catchments.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\results\\vectors\\nodes.shp",
+      "bytes": 7044,
+      "sha256": "b22ec0ffa54210256763fcf22bb71ada2090509472979b2e94b15f4076067d07"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\results\\vectors\\nodes.shx",
+      "bytes": 2084,
+      "sha256": "4df264f8f9d9cfc87a1c2d46196f753e597c10c80a78bb7cd464847b86eb9bc4"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\results\\vectors\\nodes.dbf",
+      "bytes": 65482,
+      "sha256": "166e98aad1e9ab28dfaf110bfd92db780b045a51da65d3c652abad3f79e0d721"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\results\\vectors\\nodes.prj",
+      "bytes": 423,
+      "sha256": "48a44261fed6ba2892b50afe8b76ecbf3857bf39c493543ac99efd3a16f6a03b"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\results\\vectors\\nodes.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\results\\tables\\reach_summary.csv",
+      "bytes": 29936,
+      "sha256": "4a15892a75e057f48cad0a999e7e33d00ebbc29f11b1e232fbe15e178f5a7e89"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\results\\tables\\topology_edges.csv",
+      "bytes": 12318,
+      "sha256": "3dda23377f59ed7e649003f851a0c64352ab777684929edca4ef63dedea29aee"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\results\\tables\\node_summary.csv",
+      "bytes": 14647,
+      "sha256": "ced03d684e6fcd75e6d5d76a935d044a208f7c7b0e5976399d987f45f2d23d01"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\results\\tables\\manual_review.csv",
+      "bytes": 794,
+      "sha256": "3d3a8f244a622c0bf785417fe90a6b7f989464b8f66494a0c6cefc667ef58c3f"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\processed\\vector\\pr_sparrow_streams.shp",
+      "bytes": 311012,
+      "sha256": "52514f4d81c11d7db974bd2f5379a08f8b556d3b4799afe1d043b0616532952e"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\processed\\vector\\pr_sparrow_streams.shx",
+      "bytes": 2916,
+      "sha256": "2c527e48daa0f336f352abfd16b3f0f144020bf0eb0a93c3862ca79dae3dd0a4"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\processed\\vector\\pr_sparrow_streams.dbf",
+      "bytes": 53730,
+      "sha256": "1f68b05cf055729f795e1d1a84798b75a4d8df3c45adbc97b921f0c70ced9b01"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\processed\\vector\\pr_sparrow_streams.prj",
+      "bytes": 176,
+      "sha256": "b10dbe4d6d1de908d340f892c90b3d31a552630af3742bb515bfe1bd26124f2c"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\processed\\vector\\pr_sparrow_streams.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\processed\\vector\\prb_boundary.shp",
+      "bytes": 331300,
+      "sha256": "aec909b6ea4373e425c53cf1fcf66077eb1925ee87dfc38a386b9c4631d80120"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\processed\\vector\\prb_boundary.shx",
+      "bytes": 196,
+      "sha256": "2f2618bba97bc3830dda86f9e81e2eca65015e31dd9fca7356f8682413389c73"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\processed\\vector\\prb_boundary.dbf",
+      "bytes": 994,
+      "sha256": "7b94800feb2008605242e7f6327adedebe18b9719f9dc7ff119789bfaf585303"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\processed\\vector\\prb_boundary.prj",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\processed\\vector\\prb_boundary.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\vector\\PRB水文站_全部.shp",
+      "bytes": 6764,
+      "sha256": "78c4191cfea8d412f2b3c4bc2ad035e5c98d2567d1a10ea741f3fb780b870bb8"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\vector\\PRB水文站_全部.shx",
+      "bytes": 2004,
+      "sha256": "2639edbb6f5dc8890ceb3639a7e7051a2656d1d66522041cd7c590ab42c37666"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\vector\\PRB水文站_全部.dbf",
+      "bytes": 68976,
+      "sha256": "ed0decdd0788c7d430d88ccda11cf902671205685fadb8e0403fe09b94eb9e5b"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\vector\\PRB水文站_全部.prj",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\vector\\PRB水文站_全部.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260805_2\\inputs\\source_metadata\\station_reach_match.csv",
+      "bytes": 51678,
+      "sha256": "946827c59c96d446d0d495ed0fa8305a5a5f80b8f01a071ea9f650a8712373cb"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260805_2\\inputs\\source_metadata\\same_reach_selection_audit.csv",
+      "bytes": 24210,
+      "sha256": "a702f1a93476f6a872c3dbeb029ab94a15fd43e0ab84885df00d5007a371326f"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260805_2\\inputs\\source_metadata\\selected_representative_stations.csv",
+      "bytes": 17723,
+      "sha256": "6cf455664fe6a1e6b5688b45367908213704e9a832aca981f619d450eb906b7d"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260730_12\\reports\\signal_registry\\canonical_signal_registry.csv",
+      "bytes": 105000,
+      "sha256": "046e290e473d870704b6480c24864b95ddd609060cda915ac76306e25ece19a7"
+    }
+  ]
+}

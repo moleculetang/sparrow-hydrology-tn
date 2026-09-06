@@ -1,0 +1,36 @@
+{
+  "stage": "20260824_43",
+  "status": "REGISTERED_FINAL_STOP_AND_LOCK",
+  "purpose": "Apply the pre-registered predictive stop rule, run nested spatial validation only for candidates still eligible after temporal OOF, and lock the final production/scientific status without creating 20260824_44+.",
+  "production_reference": "20260824_32 locked L0 mainline",
+  "eligible_new_candidates": ["L0_v2_R0", "L0_v2_R1", "ActiveLegacy_v2__IMM0"],
+  "clear_temporal_failure": "delta station-macro log-RMSE > 0.01 and paired station bootstrap CI95 lower > 0",
+  "early_stop": "If every new candidate is a clear temporal failure against the corresponding Stage32 P1/population layer, do not spend additional TN information or computation on nested LORO/LOTO, natural expansion, or full-development refit; retain the locked Stage32 production model.",
+  "dryad_completion_amendment_before_nested_results": {
+    "date": "2026-08-29",
+    "trigger": "After replacing the temporary Shao forcing with the already-registered Dryad primary constraint, ActiveLegacy_v2__IMM0 significantly improved over its identical-ledger KFAST control in temporal population OOF (CI95 upper < 0).",
+    "scope": "Run nested LORO, LOTO and natural expansion for ActiveLegacy_v2__IMM0 versus ActiveLegacy_v2__KFAST_CONTROL only. Stage41 R0/R1 remain stopped because they are clear failures versus Stage32 and R1 is additionally extrapolation-confounded.",
+    "production_boundary": "The nested run can support or reject the agricultural slow-release mechanism as a nonproduction scientific scenario; it cannot promote either Dryad-ledger candidate over Stage32 because both are already clear temporal failures versus Stage32.",
+    "cold_start_rule": "Every spatial fold uses only deterministic model.initial multistarts; no checkpoint or initialization that saw held-out Reach/tree/station TN is allowed.",
+    "noninferiority_margin_log_rmse": 0.005,
+    "bootstrap_replicates": 10000,
+    "required_comparisons": [
+      "Active versus KFAST LORO paired Reach-block CI95 upper < 0.005",
+      "Active versus KFAST LOTO paired tree-block CI95 upper < 0.005",
+      "Active versus KFAST natural expansion station-block and Reach-block CI95 upper < 0.005",
+      "LORO and LOTO station-blind log-skill CI95 lower > 0 for Active"
+    ]
+  },
+  "conditional_rule": "conditional performance is reported but cannot rescue a population clear failure",
+  "nested_spatial_if_temporally_eligible": {
+    "LORO": "refit all allowed shared parameters after removing the held-out Reach",
+    "LOTO": "refit all allowed shared parameters after removing the held-out terminal tree",
+    "natural_expansion": "2016-2020 training, first-observed-2021 stations held out",
+    "station_blind_benchmark": "training-station-equal mean log1p TN",
+    "skill_gate": "bootstrap CI95 lower > 0"
+  },
+  "final_refit_if_promoted": "2021-2024 all formal TN, same model and priors, before writing a new production artifact",
+  "no_promotion_action": "Do not overwrite E:/SPARROW/0_reach_topology/data/processed/tn_long_history_mainline or the 20260824_32 lock.",
+  "formats": ["Markdown", "JSON", "Parquet"],
+  "forbidden": ["create 20260824_44+", "relax thresholds after results", "promote conditional-only gains", "overwrite Stage32 production files on failure"]
+}

@@ -1,0 +1,12 @@
+{
+  "scenario_id": "20260817_4",
+  "purpose": "sixteen_model_TN_performance_audit",
+  "oof_evaluation_years": [2018, 2019, 2020, 2021],
+  "development_support_period": [2016, 2021],
+  "retrospective_locked_year": 2022,
+  "primary_metric": "station_macro_RMSE_ln1p_TN",
+  "tn_transform_inherited": "ln(1 + TN_mg_L)",
+  "r_squared_reported": false,
+  "locked_2022_refit_forbidden": true,
+  "kge_version": "KGE2012"
+}

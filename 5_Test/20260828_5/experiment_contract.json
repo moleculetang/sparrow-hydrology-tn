@@ -1,0 +1,55 @@
+{
+  "stage": "20260828_5",
+  "required_predecessor": "20260828_4 COMPONENT_SUPERVISED_REFIT_REQUIRED",
+  "purpose": "Train the existing conserving upper/lower state model to absorb the locked SIG2P fast/slow teacher while retaining strict total-flow noninferiority.",
+  "model_structure": {
+    "states": ["soil", "upper_response", "lower_slow"],
+    "operator": "logit(percolation_share_star)=logit(percolation_share)+lambda_S*regionalized_score",
+    "lambda_S": "one learnable global scalar constrained to [0,1]",
+    "new_reservoirs": 0,
+    "output_reallocation": "forbidden"
+  },
+  "teacher": "frozen same-91 regionalized score applied to the fixed seed-260827 lambda-zero development parent",
+  "component_loss": {
+    "monthly_slow_fraction_weight": 0.75,
+    "annual_slow_fraction_weight": 0.25,
+    "normalization": "raw-parent error relative to the same teacher",
+    "gamma_candidates": [0.1, 0.3, 1.0]
+  },
+  "candidates": {
+    "seeds": [260826, 260827, 260828],
+    "runs": 9,
+    "max_parallel_workers": 5,
+    "lambda_initial": 0.5,
+    "lambda_grid_expansion_forbidden": true
+  },
+  "periods": {
+    "spinup": "2006-2009",
+    "training": "2010-2015",
+    "stopping": "2016",
+    "development": "2017-2018 after candidate lock",
+    "formal_test": "2019-2022 after full-development 2006-2024 product lock"
+  },
+  "selection": {
+    "flow_noninferiority": "2016 normalized flow objective no more than 1% above the same-seed lambda-zero parent",
+    "primary_among_eligible": "minimum normalized teacher component error",
+    "tie_tolerance_fraction": 0.005,
+    "tie_break": "smaller gamma, then smaller lambda_S, then smaller seed",
+    "gamma_direction_stability": "at least two of three seeds select the same gamma"
+  },
+  "development_gates": {
+    "daily_pooled_log_RMSE_increase_max": 0.01,
+    "monthly_pooled_NSE_drop_max": 0.02,
+    "monthly_station_median_NSE_drop_max": 0.03,
+    "monthly_station_median_abs_PBIAS_worsening_max_pct_point": 2.0,
+    "teacher_direction_fraction_min": 0.90,
+    "tree_bootstrap_component_error_delta_CI95_upper_max": 0.0,
+    "high_flow_fast_direction_fraction_min": 0.80,
+    "slow_memory_direction_fraction_min": 0.80,
+    "mass_error_mm_max": 1e-8,
+    "lower_store_balance_error_mm_max": 1e-10,
+    "component_closure_m3_s_max": 1e-10
+  },
+  "BFI_role": "supporting diagnostic only",
+  "forbidden": ["2019-2022 observations", "four spatial station observations", "TN", "temperature", "SAS age", "new storage reservoir"]
+}

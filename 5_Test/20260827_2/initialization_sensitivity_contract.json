@@ -1,0 +1,14 @@
+{
+  "registered_role": "replace an inappropriate raw-state numerical equality gate with prediction-scale equivalence checks",
+  "reason": "The training objective begins after a four-year burn-in, whereas deployment uses candidate-specific periodic DYN2P spin-up. Exact 1e-8 mm/day component equality is not a scientifically meaningful prediction tolerance.",
+  "period_checked": "2010-2018",
+  "thresholds": {
+    "routed_total_p99_relative_delta_max": 0.0001,
+    "station_prediction_p99_relative_delta_max": 0.0001,
+    "pooled_NSE_absolute_delta_max": 0.0001,
+    "station_median_NSE_absolute_delta_max": 0.0001
+  },
+  "interface_rule": "2006-2009 must be marked is_spinup_period=true; formal prediction begins in 2010",
+  "2019_2022_read": false,
+  "TN_read": false
+}

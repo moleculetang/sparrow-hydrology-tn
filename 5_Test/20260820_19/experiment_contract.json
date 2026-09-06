@@ -1,0 +1,93 @@
+{
+  "experiment_id": "20260820_19",
+  "registered_before_candidate_TN_fit": true,
+  "scientific_question": "Can Q72-informed hierarchical Gaussian-prior partial pooling make the river hydraulic-exposure TN operator spatially transferable under nested LOSO and LOTO without temperature?",
+  "parent": {
+    "mechanism": "UNIFORM_PARENT",
+    "source": "E:/SPARROW/5_Test/20260820_12/final_lock.json",
+    "hydraulic_candidate": "E:/SPARROW/5_Test/20260820_18/final_lock.json",
+    "hydrology": "Q72_structural_canonical_main_only",
+    "legacy_ensemble": "S0/S1-12 x mu_T={12,36,60,96,144,240} months"
+  },
+  "time_boundary": {
+    "development_support": [2016, 2021],
+    "oof_evaluation_years": [2018, 2019, 2020, 2021],
+    "retrospective_locked_year": 2022,
+    "TN_2022_rule": "inaccessible until development_mechanism_lock and full_development_parameter_lock are written"
+  },
+  "observation_domain": {
+    "primary": ["river_channel", "dam_or_reservoir_outlet"],
+    "diagnostic_only": ["open_lake_or_reservoir_water", "uncertain_domain"],
+    "name_rules": {
+      "open_water_tokens": ["湖心", "库心"],
+      "outlet_tokens": ["坝下", "出口", "出水口"]
+    },
+    "classification_must_not_use_model_residuals": true,
+    "minimum_observed_terminal_trees": 6,
+    "tree_163_rule": "Fuxian Lake center is diagnostic only; river reaches in tree 163 are extrapolated_no_river_TN_anchor"
+  },
+  "spatial_covariates": {
+    "climatology_period": [2006, 2015],
+    "columns": [
+      "z_log_cumulative_area",
+      "z_q72_groundwater_fraction_median",
+      "z_q72_monthly_flow_cv",
+      "q72_reservoir_influenced"
+    ],
+    "TN_free": true,
+    "width_depth_slope_excluded_as_modifiers": "already represented in hydraulic exposure"
+  },
+  "candidate_family": {
+    "H0_PARENT": "v_f_r=0",
+    "H1_GLOBAL": "v_f_r=v0",
+    "H2_COVARIATE": "v_f_r=v0*exp(X_r*gamma)",
+    "H3_TREE_PARTIAL_POOL": "v_f_r=v0*exp(X_r*gamma+u_tree)",
+    "v0_bounds_m_per_day": [0.0, 0.5],
+    "effective_vf_bounds_m_per_day": [0.0, 0.5],
+    "gamma_prior_sd": 0.35,
+    "tree_effect_prior_sd": 0.35,
+    "exact_nesting_relative_tolerance": 1e-12
+  },
+  "readout": {
+    "P1": "globally_scaled_process_layer with eta_quick and eta_gw",
+    "P2": "existing monitored-station ridge=12 layer",
+    "P2R": "regionalized readout b_j=Z_j*delta+u_tree_b+e_station",
+    "delta_prior_sd": 0.35,
+    "tree_readout_prior_sd": 0.35,
+    "heldout_station_e": 0.0,
+    "heldout_tree_u": 0.0
+  },
+  "training": {
+    "optimizer": "deterministic bounded MAP with symmetric multistart",
+    "structure_objective": "equal mean of training station-macro and terminal-tree-macro log1p RMSE plus registered Gaussian penalties",
+    "structure_selection_layer": "P1 only; P2 and P2R independently refit their readout on the P1-selected routed process and may not select H1/H2/H3",
+    "independent_fit": "each candidate x model x fold and each nested holdout refits structure and P1 using only allowed training TN; P2 and P2R then independently refit the frozen-form readout on the selected route using the same allowed training TN",
+    "tie_rule": "within 1e-8 choose simpler candidate, then smaller parameter L2 norm"
+  },
+  "gates": {
+    "noninferiority_margin_log_rmse": 0.005,
+    "paired_bootstrap_replicates": 10000,
+    "models_required_noninferior": 10,
+    "models_required_improved": 8,
+    "boundary_models_max": 2,
+    "mass_balance_relative_tolerance": 1e-10
+  },
+  "posterior": {
+    "screening": "MAP for all candidates",
+    "all_winner_members": "Laplace covariance",
+    "representative_rule": "P1 OOF RMSE closest to 12-member median; lexical tie",
+    "representative_sampler": "PyMC DEMetropolisZ, four chains, 3000 tune and 3000 retained draws",
+    "rhat_max": 1.05,
+    "ess_min": 400
+  },
+  "forbidden": [
+    "temperature",
+    "Q10",
+    "open-water lake fitting",
+    "new HLEG",
+    "new mu_T",
+    "source timing refit",
+    "reach-specific free v_f",
+    "HTML output"
+  ]
+}

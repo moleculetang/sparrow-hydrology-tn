@@ -1,0 +1,146 @@
+{
+  "program": "20260824_25_32_LONG_HISTORY_TN_LEGACY_REBUILD",
+  "status": "PASS_FINAL_ARTIFACT_AUDIT",
+  "checks": {
+    "stage32_locked": true,
+    "lock_matches_validation": true,
+    "program_complete": true,
+    "hard_stop_registered": true,
+    "no_stage33_created": true,
+    "production_hash_matches_lock": true,
+    "production_grain_exact": true,
+    "production_key_unique": true,
+    "production_schema_complete": true,
+    "production_core_values_finite": true
+  },
+  "artifact_count": 25,
+  "artifacts": [
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_25\\program_manifest.json",
+      "bytes": 3727,
+      "sha256": "5eba6e88703225f629c59b985ba458d65452a47ce927f82c484e8d8e2d5c1eea"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_32\\experiment_contract.json",
+      "bytes": 2464,
+      "sha256": "65c0a8ead4a2b261bed4bbba10ad86f3ffb768141832b8a3059ebe8de54eee7d"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_32\\scripts\\run_stage32.py",
+      "bytes": 21034,
+      "sha256": "ca5ffa709b1da4437ffe6aa3a048ce8faa962b652ae43bf7518efc5c140fdee5"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_32\\scripts\\finalize_stage32.py",
+      "bytes": 4542,
+      "sha256": "56f65651a49714243063e0deb624367128fcf3960e5b3e8070512a92860127d4"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_32\\reports\\stage32_validation.json",
+      "bytes": 6493,
+      "sha256": "924d3c8398d6574b3ca4a95aceb86eedacdb01817e150a00c850b191b5511de2"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_32\\reports\\technical_report.md",
+      "bytes": 3156,
+      "sha256": "bd79742762e33730ddff2876eaa5b20b1d35e2f61da13ee7e881ad9a5cd682da"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_32\\locks\\tn_mainline_lock.json",
+      "bytes": 719,
+      "sha256": "d9c73214a6bc37ad80506bfb9ce0b7183fd7aa25d371c594f42aac9eb990a342"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_32\\outputs\\final_l0_parameters.parquet",
+      "bytes": 9132,
+      "sha256": "70be01d978a864ef67022f82428f30f2e69c8ee312a41dc391a840b69c52a8a0"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_32\\outputs\\final_p2_station_effects.parquet",
+      "bytes": 4721,
+      "sha256": "9e5d0e5b090641e58adc370631d37a9cd9d5d6922e40196f2842a0ad801f5c99"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_32\\outputs\\final_fit_and_backreport_predictions.parquet",
+      "bytes": 213051,
+      "sha256": "f303a8ddc6db50390f643cd0d407d490ffc193e37c333fdcb39ae44969ef0c4d"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_32\\outputs\\final_fit_and_backreport_metrics.parquet",
+      "bytes": 7782,
+      "sha256": "6817d20dd5c728686c886953dc1424bd36b8a8afcf9c47c636242203bda21656"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\processed\\tn_long_history_mainline\\canonical_tn_reach_monthly_1961_2024.parquet",
+      "bytes": 42150238,
+      "sha256": "300a5591399f499cac68b07d0467bd3a89c818db8bf32f2d892c9f2efa601906"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_25\\reports\\stage25_validation.json",
+      "bytes": 4781,
+      "sha256": "852761c83a63209f8c7a847ec8b4930ae2d10a250ff428d80682d0a508ac5305"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_25\\reports\\technical_report.md",
+      "bytes": 1832,
+      "sha256": "d9a15556e6a70a80651c201673b26def882ca8c8895a35779463d8e32a689ec2"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_26\\reports\\technical_report.md",
+      "bytes": 4250,
+      "sha256": "d2bf52d67d76df43f757cb96618ef7fc25c760c11bda0ea621daf1cb4e451bb8"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_27\\reports\\stage27_validation.json",
+      "bytes": 8252,
+      "sha256": "e7117f0cbfae51a86fb81617b3cf13def27a2eafcdee375c7cc8db73cb217858"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_27\\reports\\technical_report.md",
+      "bytes": 1328,
+      "sha256": "4405cced8460253edd0031ab635fd9667e5a27166b3185e76495ad458ddcb339"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_28\\reports\\stage28_validation.json",
+      "bytes": 3079,
+      "sha256": "affcafe187ca252976773c886124b523b99dffa5d96cef03ab2686063b8434c7"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_28\\reports\\technical_report.md",
+      "bytes": 817,
+      "sha256": "4e672df242988e8245d40ef23065557e245b50cd948a225eadf8f6c3eb4aaf93"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_29\\reports\\stage29_validation.json",
+      "bytes": 7308,
+      "sha256": "d7fb456558f470a864e7f3e11291260f26c7da81fc0644468d807d109cad2962"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_29\\reports\\technical_report.md",
+      "bytes": 805,
+      "sha256": "732d6c8e41e2b201e630bf1c328376234efc01d501288fc228fe706cb277af93"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_30\\reports\\stage30_validation.json",
+      "bytes": 4413,
+      "sha256": "986cb5037520a8a3b2a9876b943a0ada22107aa414bdf797cd38a25930dbb052"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_30\\reports\\technical_report.md",
+      "bytes": 1521,
+      "sha256": "1295d885e33fc0344554955543064dc6f2e58ef9c36f9f72815af5b1cf1346e7"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_31\\reports\\stage31_validation.json",
+      "bytes": 5286,
+      "sha256": "ef7e260874b9a9178358e0e73e53e153c56e922177b553248fb6f31b17dcf5a6"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_31\\reports\\technical_report.md",
+      "bytes": 866,
+      "sha256": "3d037a1e3432a260ed0762ec3891b20641e47d9ef40994fd075e4dc75c7b4ab0"
+    }
+  ],
+  "authoritative_production": "E:\\SPARROW\\0_reach_topology\\data\\processed\\tn_long_history_mainline\\canonical_tn_reach_monthly_1961_2024.parquet",
+  "no_successor": true
+}

@@ -1,0 +1,13 @@
+{
+  "stage": "20260826_8",
+  "status": "registered_before_execution",
+  "models": ["RAVEN_SACSMA3_SPATIAL", "MTRS3_SPATIAL"],
+  "fold": "one complete observed terminal river tree held out",
+  "fit_rule": "start from literature/default parameters; refit global parameters and static-attribute mapping after removing target-tree discharge",
+  "allowed_target_information": ["meteorological forcing", "static attributes", "PML AET soft observation available independently of gauges"],
+  "forbidden_target_information": ["target-tree discharge", "target station identity", "target-tree Q-derived signatures", "2019-2022 discharge", "TN"],
+  "parent_reference": "20260825_5 fold-retrained GLOBAL_HBV predictions under the identical eight-tree split",
+  "noninferiority": "tree-block paired log-RMSE delta CI95 upper < 0.01",
+  "authorized_successor": "20260826_9"
+}
+

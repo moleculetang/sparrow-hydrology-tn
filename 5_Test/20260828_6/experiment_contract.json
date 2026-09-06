@@ -1,0 +1,38 @@
+{
+  "stage": "20260828_6",
+  "required_predecessor": "20260828_5 NO_FLOW_ELIGIBLE_COMPONENT_CANDIDATE",
+  "purpose": "Project the component-supervised state model back into the registered total-flow trust region without changing the hydrologic equations.",
+  "fixed_path": {
+    "parent": "same-seed 20260828_2 lambda-zero fitted model",
+    "component_endpoint": "same-seed 20260828_5 gamma=0.1 model",
+    "interpolation": "theta(alpha)=theta_parent+alpha*(theta_endpoint-theta_parent); lambda(alpha)=alpha*lambda_endpoint",
+    "alpha_grid": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+  },
+  "selection": {
+    "2016_flow_ratio_to_same_seed_parent_max": 1.01,
+    "among_eligible": "minimum normalized teacher component error",
+    "seed_stability": "at least two of three seeds select alpha values within 0.1",
+    "selected_seed": "minimum component error among stable eligible candidates"
+  },
+  "development_gates": {
+    "daily_pooled_log_RMSE_increase_max": 0.01,
+    "monthly_pooled_NSE_drop_max": 0.02,
+    "monthly_station_median_NSE_drop_max": 0.03,
+    "monthly_station_median_abs_PBIAS_worsening_max_pct_point": 2.0,
+    "teacher_direction_fraction_min": 0.90,
+    "tree_bootstrap_component_error_delta_CI95_upper_max": 0.0,
+    "high_flow_fast_direction_fraction_min": 0.80,
+    "slow_memory_direction_fraction_min": 0.80,
+    "mass_error_mm_max": 1e-8,
+    "lower_store_balance_error_mm_max": 1e-10,
+    "component_closure_m3_s_max": 1e-10
+  },
+  "periods": {
+    "projection_selection": "2016 and earlier only",
+    "development_evaluation": "2017-2018 after projection lock",
+    "formal_test": "2019-2022 after all-Reach product hash lock"
+  },
+  "BFI_role": "supporting diagnostic only",
+  "max_parallel_workers": 5,
+  "forbidden": ["2019-2022 observations", "four spatial station observations", "TN", "temperature", "SAS age", "new reservoir", "output-only fast/slow reallocation"]
+}

@@ -1,0 +1,8 @@
+{
+  "scenario_id": "20260818_6",
+  "purpose": "assemble only modules that passed registered upstream evidence",
+  "reselection_of_mu": false,
+  "new_parameters": false,
+  "selection_uses_2022": false,
+  "WWTP_2020_2022_forcing": "unavailable_not_filled"
+}

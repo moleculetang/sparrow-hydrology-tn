@@ -1,0 +1,122 @@
+{
+  "stage": "20260904_2",
+  "status": "PASS_2025_INPUTS_READY",
+  "tn": {
+    "status": "PASS_2025_TN_IDENTITY_AND_QUALITY",
+    "formal_station_count": 119,
+    "historical_identity_count": 119,
+    "raw_geo_matched_rows": 1317,
+    "exact_duplicates_removed": 40,
+    "negative_missing_sentinel_rows": 202,
+    "null_tn_rows": 0,
+    "valid_rows": 1075,
+    "valid_stations": 119,
+    "months_present": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "december_present": false,
+    "minimum_valid_months_per_station": 4,
+    "median_valid_months_per_station": 11.0,
+    "monthly_coverage": [
+      {
+        "year": 2025,
+        "month": 1,
+        "rows": 119,
+        "stations": 119
+      },
+      {
+        "year": 2025,
+        "month": 2,
+        "rows": 87,
+        "stations": 87
+      },
+      {
+        "year": 2025,
+        "month": 3,
+        "rows": 82,
+        "stations": 82
+      },
+      {
+        "year": 2025,
+        "month": 4,
+        "rows": 119,
+        "stations": 119
+      },
+      {
+        "year": 2025,
+        "month": 5,
+        "rows": 89,
+        "stations": 89
+      },
+      {
+        "year": 2025,
+        "month": 6,
+        "rows": 84,
+        "stations": 84
+      },
+      {
+        "year": 2025,
+        "month": 7,
+        "rows": 119,
+        "stations": 119
+      },
+      {
+        "year": 2025,
+        "month": 8,
+        "rows": 91,
+        "stations": 91
+      },
+      {
+        "year": 2025,
+        "month": 9,
+        "rows": 87,
+        "stations": 87
+      },
+      {
+        "year": 2025,
+        "month": 10,
+        "rows": 119,
+        "stations": 119
+      },
+      {
+        "year": 2025,
+        "month": 11,
+        "rows": 79,
+        "stations": 79
+      }
+    ],
+    "matching_contract": "NFKC/parentheses/whitespace normalized name + historical Pearl-River geographic tuple -> unique SectionCode; no fuzzy matching",
+    "required_labels": [
+      "PET_EXTENSION_CONFOUNDED",
+      "SOURCE_2025_CARRYFORWARD_CONFOUNDED",
+      "2025_TN_INCOMPLETE_DECEMBER",
+      "SENSITIVITY_ONLY"
+    ],
+    "source_sha256": "b30ed39320a286f4b8c1dd2d25a7319494370035a103ec3febfa72fa38d704ea",
+    "output": "E:\\SPARROW\\0_water_quality\\data\\preprocess\\model_ready\\tn_station_month_2025_prb_sensitivity.parquet",
+    "output_sha256": "51e3b6753a0a3c5d6d687e018ccd1c908613899e28b44d897b333987fe74ea9f"
+  },
+  "source": {
+    "status": "PASS_2025_SOURCE_SENSITIVITY_BRIDGE",
+    "rows_1961_2025": 538200,
+    "extension_rows": 8280,
+    "maximum_annual_mass_difference_from_2024_kg_n": 3.725290298461914e-09,
+    "annual_mass_closed_le_1e_6": true,
+    "required_label": "SOURCE_2025_CARRYFORWARD_CONFOUNDED",
+    "claim_boundary": "Not observed 2025 source timing or source mass",
+    "source_sha256": "5bcdde950c8308041743f04ac1ecee580bb61bd6bba83a27d31079b52084af72",
+    "output": "E:\\SPARROW\\5_Test\\20260904_2\\outputs\\monthly_source_forcing_1961_2025_sensitivity.parquet",
+    "output_sha256": "c7010ac9490bd9fe4e2d8a88bc366fa84ffdeffa73140663f8eff1b75db48b1b"
+  },
+  "use": "F24 held-out 2025 sensitivity and F25 2021-2025 sensitivity training"
+}

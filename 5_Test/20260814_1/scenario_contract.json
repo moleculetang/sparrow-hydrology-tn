@@ -1,0 +1,78 @@
+{
+  "scenario_id": "20260814_1",
+  "stage": "infrastructure",
+  "plan_status": "execution_contract",
+  "parent": "E:/SPARROW/5_Test/20260813_54",
+  "directory_rule": "fixed_stage_numbering_with_SKIPPED_json",
+  "runtime": "conda --no-plugins run -n sparrow python",
+  "random_seed": 20260814,
+  "thread_limits": {"OMP_NUM_THREADS": 1, "MKL_NUM_THREADS": 1, "OPENBLAS_NUM_THREADS": 1},
+  "development_folds": [
+    {"fold_id": "fit_2006_2011_eval_2012_2013", "train_end": 2011, "inner_train_end": 2009, "eval_start": 2012, "eval_end": 2013},
+    {"fold_id": "fit_2006_2013_eval_2014_2015", "train_end": 2013, "inner_train_end": 2011, "eval_start": 2014, "eval_end": 2015},
+    {"fold_id": "fit_2006_2015_eval_2016_2018", "train_end": 2015, "inner_train_end": 2013, "eval_start": 2016, "eval_end": 2018}
+  ],
+  "fixed_branch_gate": {
+    "pooled_delta_raw_nse_min": -0.005,
+    "pooled_delta_log_nse_min": -0.005,
+    "pooled_abs_pbias_max_worsening_percentage_points": 3.0,
+    "lowflow_point_improvement_min_folds": 2,
+    "tail_point_improvement_min_folds": 2,
+    "lowflow_paired_bootstrap_ci95_upper_must_be_below": 0.0,
+    "tail_paired_bootstrap_ci95_upper_must_be_below": 0.0,
+    "tail_shape_nonworsening": true,
+    "event_volume_nonworsening": true
+  },
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 20260814,
+    "flow_unit": "station_id_with_all_outer_folds_months_and_events",
+    "spatial_unit": "terminal_drainage_tree_with_all_members_and_folds",
+    "groundwater_unit": "terminal_drainage_tree"
+  },
+  "groundwater": {
+    "development_pixel_period": ["2005-01", "2018-12"],
+    "development_pairing_period": ["2006-01", "2017-12"],
+    "stable_state_period": ["2010-01", "2017-12"],
+    "locked_pixel_period": ["2019-01", "2022-12"],
+    "break_transitions": ["2008-12_to_2009-01", "2009-12_to_2010-01", "2017-12_to_2018-01"],
+    "segment_offset_correction": false,
+    "status_values": ["identifying", "supportive", "non_identifying", "contradictory"],
+    "minimum_valid_area_fraction": 0.95,
+    "minimum_terminal_blocks_per_fold": 10,
+    "minimum_valid_catchment_fraction": 0.8
+  },
+  "conditional_grid": {
+    "performance_type": "conditional_parameter_oof_after_structure_selection",
+    "parameterization": "anchor_centered_discrete_mean_response_time",
+    "multipliers": [0.5, 0.6666666666666666, 1.0, 1.5, 2.0],
+    "n_combinations": 25,
+    "requires_pbias_guard": true,
+    "requires_pooled_lowflow_or_tail_improvement": true,
+    "protective_max_worsening": 0.01,
+    "groundwater_used_in_inner_selection": false,
+    "expand_after_failure": false
+  },
+  "locked_confirmation": {
+    "period": ["2019-01", "2022-12"],
+    "confirmation_runs": 1,
+    "q20_q75_lowflow_tail_registry_frozen_before_prediction_access": true,
+    "lowflow_and_tail_cannot_both_worsen": true,
+    "pbias_guard_percentage_points": 3.0,
+    "development_pixel_value_access": false
+  },
+  "tail_registry_expected": {"events": 369, "tail_station_months": 1206, "events_by_fold": [132, 76, 161]},
+  "design_columns_expected": {"H0_hybrid": 3391, "single_production": 3383, "single_no_sas_old": 2737, "sas_old_columns_removed": 646},
+  "row_counts_expected": {
+    "forcing_full_parent": 46920,
+    "fixed_branch_states": 234600,
+    "selected_interface": 46920,
+    "groundwater_development_2005_2018": 38640,
+    "groundwater_locked_2019_2022": 11040
+  },
+  "interface_required_fields": ["source_water_capacity_mm", "catchment_area_km2"],
+  "reproducibility_required": ["parameter_manifest", "spinup_contract", "instrumentation_neutrality", "environment_and_thread_manifest", "code_input_registry_hashes"],
+  "performance_types": ["fixed_structure_oof", "conditional_parameter_oof_after_structure_selection", "final_refit_in_development", "locked_time_confirmation"],
+  "fallback": {"decision": "operational_retained_interface_provisional", "operational_flow_model_id": "H0_hybrid", "interface_branch_id": "main", "interface_status": "provisional_unresolved"},
+  "scope_exclusions": ["nitrogen equations", "mu_N", "eta_N", "denitrification", "new groundwater stores", "pumping", "leakage", "grid expansion after failure"]
+}

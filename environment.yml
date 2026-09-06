@@ -1,0 +1,19 @@
+name: sparrow
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - blas=*=openblas
+  - libblas=*=*openblas
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - pyarrow
+  - pyyaml
+  - scikit-learn
+  - rasterio
+  - netcdf4
+  - seaborn
+  - pip

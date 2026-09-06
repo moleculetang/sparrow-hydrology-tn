@@ -1,0 +1,117 @@
+{
+  "program": "20260824_10-11",
+  "status": "COMPLETE",
+  "files": [
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_10\\experiment_contract.json",
+      "size_bytes": 2873,
+      "sha256": "5040715b3384d9d42e42c7d91cf674eff9434781bc785c0fcc957a83f119d7af"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_10\\reports\\hydrology_tn_interface_audit.json",
+      "size_bytes": 1793,
+      "sha256": "1b2ff38e15498ec7730089e8227e7996d995771a4b37115148fd540c496c0294"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_10\\reports\\mainline_data_quality_audit.json",
+      "size_bytes": 1707,
+      "sha256": "208a99232f1b3008fab790e5b511aa9bcf874177991abb38d081bcaa6d6f2d39"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_10\\reports\\dyn2p_h1_exposure_audit.json",
+      "size_bytes": 615,
+      "sha256": "b82f913669bc0cd56a394722bab7088149f295426a75079669abe88471e960b3"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_10\\reports\\download_decision_manifest.json",
+      "size_bytes": 345,
+      "sha256": "c2c09b96cc57a5037587de6f3a757694e851d2c33fbfc14e50c8984390a08960"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_10\\reports\\technical_report.md",
+      "size_bytes": 4945,
+      "sha256": "6534e167b9126e07707da060472f40faa917679b6b02e031d51614a02c1e9c4c"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_10\\outputs\\dyn2p_sig2p_tn_hydrology_interface_2006_2024.parquet",
+      "size_bytes": 10466925,
+      "sha256": "fe719ee9dd802c1af5a5a5e455bf36468ca2ab44eb6c2c3a849537dba6855872"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_10\\outputs\\dyn2p_sig2p_tn_hydrology_interface_1961_2024.parquet",
+      "size_bytes": 11996554,
+      "sha256": "627f0d4cbe066e5494fae9e6a973baa04aed7e6f5f53bef33c01f6163a5b6568"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_10\\outputs\\mainline_reach_year_n_ledger_1961_2024.parquet",
+      "size_bytes": 1147592,
+      "sha256": "3b575d5223d070a8651e5d00a601525fb4d5ba9442fd0445d21f2fa3d9cb33c5"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_10\\outputs\\mainline_reach_month_n_hydrology_1961_2024.parquet",
+      "size_bytes": 13706061,
+      "sha256": "9a52c757615f72718b2166a18814151e873d98ee41df04b4d88a14d3c1971e1d"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_10\\outputs\\formal_mainline_data_inventory.parquet",
+      "size_bytes": 7840,
+      "sha256": "7230bb461242fe645c7f0ef67028f08fb1f5c22671d39f5b7946f6b5349e72ed"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_11\\experiment_contract.json",
+      "size_bytes": 2256,
+      "sha256": "c618a0d8a7ed68b57ada5a0aaca565a8a8272207e1cd5317a0d7d534d36be8bb"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_11\\reports\\tn_refit_decision.json",
+      "size_bytes": 11533,
+      "sha256": "04cc5b46f64642dbfe93ed371c22cccfe124cd86ba5a95717aa328fd2ce48212"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_11\\reports\\independent_verification.json",
+      "size_bytes": 965,
+      "sha256": "7eda56879bee7718897f1168c39418357cd7712661568d319aaf4d68c9499318"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_11\\reports\\technical_report.md",
+      "size_bytes": 4481,
+      "sha256": "030f5c62f5ef29a4b67c407067e3009970a41324c7a43d0835b58b3cbf2ec491"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_11\\outputs\\dyn2p_tn_ensemble_predictions.parquet",
+      "size_bytes": 682883,
+      "sha256": "1757ec51aedd64030ea74670b629d91c677b4f02b39f1c365025d75b479cc39e"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_11\\outputs\\dyn2p_tn_map_parameters.parquet",
+      "size_bytes": 18185,
+      "sha256": "6c544fd5352c80e4ea36207ae8b91c64a99ca922ec1887685d5466e8ab096dad"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_11\\outputs\\dyn2p_tn_performance_metrics.parquet",
+      "size_bytes": 8995,
+      "sha256": "ab783875ab8160232371f301e3a0587ee2cd3dca447ba1117b8b4dcdd8cd7dcd"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_11\\outputs\\old_new_hydrology_tn_comparison.parquet",
+      "size_bytes": 7597,
+      "sha256": "088b224f762661f5eb99798fe70a2fd3c18928c75fc408acf33c4c351f72bc2c"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_11\\outputs\\old_new_hydrology_paired_station_bootstrap.parquet",
+      "size_bytes": 4569,
+      "sha256": "820b3923e23ea8df54431ab02498d2484541fed13effbb81ea778c1ecd9b06df"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_11\\reports\\final_program_decision.json",
+      "size_bytes": 897,
+      "sha256": "41864e0e54d7c96eadb132a48a1037623f5d90c3eed6c2107a53a6c027a95c76"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260824_10\\reports\\data_mainline_inventory.md",
+      "size_bytes": 3417,
+      "sha256": "e64301b6daef2c1bc059c9dc25b80e9141100449609165e61a6b9e1f9bd5a86f"
+    }
+  ],
+  "html_files": []
+}

@@ -1,0 +1,22 @@
+{
+  "stage": "20260823_9",
+  "population": "S000_unscreened",
+  "candidate_roles": {
+    "P0_Q72_PROCESS": "eligible_parent",
+    "P1_GLOBAL_COMPACT": "spatial_benchmark_only",
+    "P2_COMPACT_ZERO_HISTORY_COLDSTART": "diagnostic_only",
+    "REGIONALIZED_ROUTED_CORRECTION": "eligible_challenger"
+  },
+  "regionalized_formula": {
+    "pathways": ["quick", "slow"],
+    "basis": ["intercept", "four_training_only_static_PCs", "month_sin", "month_cos", "Q72_antecedent_wetness"],
+    "correction": "0.25 + 3.75*logistic(v)",
+    "routing": "correct local pathway releases then reaggregate with frozen topology"
+  },
+  "solver": {
+    "primary": "multi-start L-BFGS-B Gaussian-prior MAP",
+    "independent_check": "deterministic DDS implementation",
+    "selection_data": "training observations only"
+  },
+  "forbidden": ["station ID in eligible candidate", "target-station history", "reservoir equation change", "TN", "post-hoc station deletion"]
+}

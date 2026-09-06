@@ -1,0 +1,47 @@
+run_id: 20260728_7
+logical_parent_run: 20260727_6
+contract_predecessor: 20260728_6
+contract_id: C01_gauged_history_low_flow_residual_expert
+phase: nested_oof_station_gate_audit
+generation_type: diagnostic_only_no_residual_correction
+model_change: none
+forbidden_evidence_years: 2019-2022
+new_nested_blocks:
+  - fit_2006_2007_eval_2008_2009
+  - fit_2006_2009_eval_2010_2011
+reused_nested_blocks:
+  - fit_2006_2011_eval_2012_2013
+  - fit_2006_2013_eval_2014_2015
+outer_evaluations:
+  - eval_2012_2013
+  - eval_2014_2015
+  - eval_2016_2018
+station_gate:
+  minimum_low_months_per_inner_block: 3
+  minimum_eligible_inner_blocks: 2
+  material_bias_pct: 10.0
+  stable_positive_fraction: 0.6666666666666666
+  soft_score: sigmoid((median_bias_pct-10)/10)
+  hard_zero:
+    - reservoir_related
+    - data_quality_suspicious
+    - insufficient_inner_blocks
+next_period_scientific_gate:
+  minimum_identified_targets: 10
+  minimum_passing_outer_folds: 2
+  minimum_target_median_low_flow_bias_pct: 10.0
+  minimum_target_positive_station_fraction: 0.60
+  minimum_gate_auc_for_material_overprediction: 0.60
+  minimum_target_minus_nontarget_median_bias_pct_points: 5.0
+station_policy:
+  active_exclusions: [劳村站, 富罗（二）站, 隆安站]
+  protected_from_exclusion: [石角站]
+  allow_new_exclusions: false
+reservoir_scope: report_only_gate_zero
+data_quality_scope: report_only_gate_zero
+full_series_20260728_5_label_use: diagnostic_comparison_only
+runtime:
+  heartbeat_seconds: 30
+  default_step_timeout_seconds: 300
+  nested_oof_timeout_seconds: 1200
+status: completed_nested_gate_supported_2_of_3_outer_folds

@@ -1,0 +1,24 @@
+name: sparrow
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - pyarrow
+  - numba
+  - matplotlib
+  - pyyaml
+  - scikit-learn
+  - netcdf4
+  - xarray
+  - rasterio
+  - geopandas
+  - shapely
+  - pyproj
+  - psutil
+  - requests
+  - pip
+  - pip:
+      - torch

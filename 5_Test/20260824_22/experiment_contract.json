@@ -1,0 +1,17 @@
+{
+  "stage": "20260824_22",
+  "parent": "20260824_21 P1 differentiable transferable parent",
+  "equations": {
+    "pre_pool": "O_t_pre = O_t-1 + (1-f_M) MAN_t",
+    "release": "R_t = (1-exp(-k_M/12)) O_t_pre",
+    "post_pool": "O_t = O_t_pre - R_t",
+    "mineral_input": "FERT_t + f_M MAN_t + BNF_t + DEP_t + R_t",
+    "available": "max(mineral_input - CROP_t, 0)"
+  },
+  "fixed_k_year_minus_1": [0.05, 0.16, 0.30, 0.75],
+  "f_M_bounds": [0, 1],
+  "strict_parent": "f_M=1",
+  "selection": "P1 2022-2024 rolling temporal OOF only; winning k then nested LORO/LOTO and 2021 natural expansion",
+  "forbidden": ["fertilizer immobilization", "second soil pool", "fitted k_M", "SAS", "groundwater age", "hydrology refit", "temperature", "WWTP"],
+  "authorized_successor": "20260824_23"
+}

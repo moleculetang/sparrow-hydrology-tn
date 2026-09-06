@@ -1,0 +1,67 @@
+{
+  "program": "20260904_unified_tn_extended_training",
+  "status": "closed_operational_h7_fast_track",
+  "mandatory_architecture": "MINERAL_LIFETIME + conservative R2 TN carrier + mandatory H7/H14/H22 transferable spatial head + shrunk station residual in one joint MAP fit",
+  "formal_product": "F24 train 2021-2024 with Stage35 hydrology",
+  "sensitivity_product": "F25 train 2021-2025 with Stage38 hydrology and 2025 source/TN limitations",
+  "stages": {
+    "20260904_1": "program registry and dual-hydrology lock",
+    "20260904_2": "2025 TN identity/quality and source bridge",
+    "20260904_3": "Stage35/38 conservative TN carrier port and structural validation",
+    "20260904_4": "H7/H14/H22 temporal OOF",
+    "20260904_5": "nested LORO/LOTO capacity selection",
+    "20260904_6": "F24 fit, 2025 holdout sensitivity and training-length ladder",
+    "20260904_7": "F25 inclusive fit and paired 2025-increment diagnostics",
+    "20260904_8": "final lock and 230-Reach products"
+  },
+  "noneligible_control": "same process and carrier without spatial head; diagnostic only",
+  "performance_policy": "Performance labels quantify gains/costs but cannot return the mainline to a station-only architecture",
+  "engineering_blockers": [
+    "mass closure failure",
+    "input leakage",
+    "nonfinite result",
+    "optimizer contract failure"
+  ],
+  "forbidden": [
+    "temperature",
+    "new TN lag",
+    "new groundwater/SAS states",
+    "reservoir TN reaction",
+    "WQD reference discharge"
+  ],
+  "no_automatic_successor_after": "20260904_8",
+  "input_status": {
+    "hydrology": "PASS_DUAL_HYDROLOGY_LOCK",
+    "tn_2025": "PASS_2025_TN_IDENTITY_AND_QUALITY",
+    "source_2025": "PASS_2025_SOURCE_SENSITIVITY_BRIDGE",
+    "unified_core": "PASS_UNIFIED_TN_CORE_READY_FOR_FITTING",
+    "f25_sensitivity": "PASS_F25_TRAINING_SENSITIVITY",
+    "f25_release_audit": "PASS_F25_RELEASE_AUDIT"
+  },
+  "stage_status": {
+    "20260904_1": "complete",
+    "20260904_2": "complete",
+    "20260904_3": "complete",
+    "20260904_4": "H7_complete_H14_H22_closed_by_user_fast_track",
+    "20260904_5": "closed_not_run",
+    "20260904_6": "closed_not_run",
+    "20260904_7": "complete_sensitivity_only",
+    "20260904_8": "closed_not_run"
+  },
+  "closure": {
+    "decision": "retain the completed H7 unified TN fit as the operational candidate",
+    "reason": "user requested rapid closure without completing the full strict validation program",
+    "stopped_at": "2026-09-05T12:47:59+08:00",
+    "completed_evidence": [
+      "H7 T1/T2/T3 temporal fits passed projected KKT and mass closure",
+      "F25 2021-2025 H7 joint fit and 2016-2020 backcast are available in 20260904_7"
+    ],
+    "not_completed": [
+      "H14/H22 temporal OOF",
+      "strict nested LORO/LOTO",
+      "formal F24 fit and 2025 holdout",
+      "final 230-Reach lock"
+    ],
+    "claim_boundary": "operational fitted candidate, not fully spatially validated mainline"
+  }
+}

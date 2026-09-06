@@ -1,0 +1,36 @@
+{
+  "runtime": {
+    "environment_name": "sparrow",
+    "expected_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "sys_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "sys_executable": "D:\\ProgramData\\anaconda3\\envs\\sparrow\\python.exe",
+    "conda_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "conda_default_env": "sparrow"
+  },
+  "checks": {
+    "runtime_exact_conda_sparrow": true,
+    "input_gate_passed": true,
+    "d0_numerical_equivalence_passed": true,
+    "d0_strict_absolute_result_retained": true,
+    "formal_d0_exact_canonical_predictions": true,
+    "formal_d0_exact_canonical_observations": true,
+    "core_scenarios_same_8738_keys": true,
+    "shuffle_gate_passed": true,
+    "shuffle_replicates_exact_1_to_99": true,
+    "shuffle_each_8738_rows": true,
+    "shuffle_each_same_keys": true,
+    "shuffle_scenario_names_match": true,
+    "shuffle_invariance_passed": true,
+    "operator_equivalence_passed": true,
+    "terminal_decision_allowed": true,
+    "terminal_stop_rule_present": true,
+    "shijiao_report_present": true,
+    "required_deliverables_present": true,
+    "readme_contains_terminal_decision": true
+  },
+  "passed": true,
+  "terminal_decision": "DAILY_TO_MONTHLY_PREMATURE_AGGREGATION_HYPOTHESIS_FALSIFIED",
+  "shuffle_replicates": 99,
+  "canonical_key_sha256": "1aa70b271a3f2e1734d52aad72d41352dc874eaa297b7f5a44564a1749207c1a",
+  "interpretation": "Validation checks implementation completeness and frozen-contract invariants; it does not reinterpret scientific gates."
+}

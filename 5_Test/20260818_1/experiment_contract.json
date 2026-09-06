@@ -1,0 +1,14 @@
+{
+  "scenario_id": "20260818_1",
+  "purpose": "readout_and_station_blind_spatial_skill_audit",
+  "formal_model_count": 12,
+  "oof_evaluation_years": [2018, 2019, 2020, 2021],
+  "development_support_period": [2016, 2021],
+  "locked_2022_used": false,
+  "layers": {
+    "P0": "unscaled_process_layer",
+    "P1": "globally_scaled_process_layer",
+    "P2": "station_conditioned_prediction"
+  },
+  "spatial_skill": "1 - station_macro_MSE_P1 / station_macro_MSE_station_equal_training_baseline"
+}

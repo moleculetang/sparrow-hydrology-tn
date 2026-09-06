@@ -1,0 +1,57 @@
+{
+  "experiment_id": "20260824_6",
+  "family": "F3_AQUATIC",
+  "registered_before_observed_candidate_fitting": true,
+  "parent_program": "E:/SPARROW/5_Test/20260824_4/program_manifest.json",
+  "preceding_F2_decision": "E:/SPARROW/5_Test/20260824_5/reports/f2_decision.json",
+  "parent": "Q72 -> F00 -> S0/S1-12 -> fixed T1 -> H1_GLOBAL areal exposure -> P1/P2",
+  "candidates": {
+    "TRUE_RESIDENCE_TIME_ATTENUATION": {
+      "equation": "survival=exp(-k_day*travel_time_days)",
+      "hydrology": "Q72 routed discharge only",
+      "geometry": "Andreadis central width/depth and model reach length only; reference discharge forbidden",
+      "complexity": "one fitted nonnegative global k_day, equal to H1's one fitted global v_f",
+      "comparison": "equal-complexity non-nested challenge; a convex H1-to-residence bridge is synthetic-only"
+    },
+    "H1_CONCENTRATION_LIMITED_KN_GRID": {
+      "K_N_mg_L": [0.0, 0.5, 1.0, 2.0],
+      "equation": "f_C=C_in/(C_in+K_N), survival=exp(-v_f*H1*f_C); for K_N=0 define f_C=1 exactly",
+      "concentration": "joint incoming quick+GW TN divided by Q72 outlet water before attenuation; readout eta is not used inside routing",
+      "accounting": "the same f_C is applied while preserving separate quick and GW mass outputs",
+      "parent_endpoint": "K_N=0 exactly reproduces H1"
+    }
+  },
+  "frozen": [
+    "12 formal S0/S1-12 x mu members",
+    "Q72-only water and hydrologic states",
+    "F00, source structures and fixed T1",
+    "eta bounds, station ridge=12, log1p TN and solvers",
+    "OOF evaluation 2018-2021"
+  ],
+  "forbidden": [
+    "temperature", "reservoir module", "Andreadis or WQD reference discharge",
+    "reach, station or tree reaction parameters", "F1 hinge inside F3 attribution",
+    "2022 TN before final development locks"
+  ],
+  "candidate_selection": "P1 training TN only within each fold; P2 cannot select K_N or aquatic structure; ties select K_N=0",
+  "synthetic_gate": {
+    "candidate_specific": true,
+    "failure_action": "close the failed candidate before observed fitting; other preflight-passing registered candidates may proceed without changing their equations or thresholds",
+    "replicates_per_scenario_per_candidate": 500,
+    "false_upgrade_rate_max": 0.05,
+    "power_min": 0.8,
+    "condition_number_max": 30.0,
+    "maximum_key_parameter_correlation": 0.9
+  },
+  "formal_gate": {
+    "primary": "P1 station-macro station-demeaned log1p anomaly RMSE",
+    "simultaneous_test": "studentized Westfall-Young/max-T over both F3 candidates with identical paired station/tree bootstrap indices",
+    "required": "at least 10/12 point and simultaneous P1 anomaly improvements; at least 10/12 P1 station and tree absolute noninferiority; at least 10/12 P2 station and tree absolute noninferiority; no repeated eta, reaction, optimizer or K_N boundary confounding"
+  },
+  "time_boundary": {
+    "development_support_period": [2016, 2021],
+    "oof_evaluation_years": [2018, 2019, 2020, 2021],
+    "retrospective_locked_year": 2022,
+    "tn_2022_may_be_read": false
+  }
+}

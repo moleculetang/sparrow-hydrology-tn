@@ -1,0 +1,310 @@
+{
+  "schema_version": "1.0",
+  "program_id": "20260824_unified_tn_agricultural_legacy_v2",
+  "stage_namespace_date": "20260824",
+  "created_at": "2026-08-29T17:50:00+08:00",
+  "updated_at": "2026-08-30T11:40:00+08:00",
+  "status": "PROGRAM_COMPLETE_RETAIN_20260824_32_MAINLINE",
+  "tn_execution_status": "NO_NEW_PRODUCTION_PROMOTION__L0_V2_AND_ACTIVELEGACY_RETAINED_NONPRODUCTION",
+  "current_folder": "20260824_43",
+  "manifest_revision": 5,
+  "program_state_components": {
+    "engineering_gate": "PASS",
+    "u0_result": "PASS_U0_ENGINEERING_HARD_GATE",
+    "u1_nonproduction_architecture_test": "PASS_U1_UNIFIED_ENGINEERING_READY_FOR_L0_V2",
+    "hydraulic_driver_interface": "PASS",
+    "candidate_specific_daily_upper_tn_forward": "PASS",
+    "station_position_q_observation_implementation": "PASS",
+    "l0_v2_scientific_parent": "RETAIN_NONPRODUCTION_TEMPORAL_CLEAR_FAILURE",
+    "agricultural_structure_confirmation": "CONFIRMED_SINGLE_ACTIVE_FRESH_PRIMARY",
+    "scientific_execution_authorization": "COMPLETE_CLOSED",
+    "selected_candidate": "ActiveLegacy_v2"
+  },
+  "folder_family_rule": "Continue only in the 20260824_* family through 20260824_43. Do not create 20260824_44 or higher without both a new user-approved program revision and a pre-result registered hypothesis.",
+  "scientific_goal": "Unify TN inference with the accepted hydrologic-model training philosophy while replacing the implicit centuries-long mineral carryover with an explicit, externally constrained agricultural-N legacy structure.",
+  "authoritative_contracts": [
+    {
+      "role": "stage_experiment_contract",
+      "path": "E:/SPARROW/5_Test/20260824_39/experiment_contract.json",
+      "sha256": "f39ea3f7b1e5519d2c84167770e16cf91d809ce689d7a856cd6fdaf1de98362e"
+    },
+    {
+      "role": "unified_map_contract",
+      "path": "E:/SPARROW/5_Test/20260824_39/reports/unified_tn_hierarchical_map_contract.json",
+      "sha256": "e54c7e57ee53a582386801534bd8fd264cc768ad06231b8bc5468eeb00962f06"
+    },
+    {
+      "role": "legacy_fp_audit_and_protected_sensitivity_equation_contract",
+      "path": "E:/SPARROW/5_Test/20260824_39/reports/fresh_protected_equation_and_hydrology_audit.json",
+      "sha256": "627ea6498432f4bde47caafe8b3378f33f6a4788536e754ccaa736765b4ec0d6"
+    },
+    {
+      "role": "daily_hydrology_interface_contract",
+      "path": "E:/SPARROW/5_Test/20260824_39/reports/canonical_daily_to_monthly_tn_interface_contract.json",
+      "sha256": "2f4e6b2134c93eff0a8a5c2802db149974bf5fc25de6149eedf0642d737a6d78"
+    },
+    {
+      "role": "public_data_registry",
+      "path": "E:/SPARROW/5_Test/20260824_39/reports/agricultural_n_public_data_source_registry.json",
+      "sha256": "ae1db286d32275fa8e9bf23bc6706816e372591d2c6d716c424fa343225ee349"
+    },
+    {
+      "role": "agricultural_data_acquisition_matrix",
+      "path": "E:/SPARROW/5_Test/20260824_39/reports/agricultural_n_data_acquisition_matrix.json",
+      "sha256": "b78018d82dd8300353b05812ab7c19384907a3e2824d4d528eb3d5ce17ff9afb"
+    },
+    {
+      "role": "u0_engineering_reproduction_result",
+      "path": "E:/SPARROW/5_Test/20260824_39/reports/u0_engineering_reproduction.json",
+      "sha256": "0c48086e24a002e0bc127d6e7972c77161ecf9977148c93fe3e97043630b2e7c"
+    },
+    {
+      "role": "u1_unified_training_engineering_result",
+      "path": "E:/SPARROW/5_Test/20260824_40/reports/u1_unified_training_audit.json",
+      "sha256": "dbb5d3b4c31d3b992bb1890a0b11669e19d7cf8c147dbf2464b6c11203863796"
+    },
+    {
+      "role": "u1_unified_training_implementation",
+      "path": "E:/SPARROW/5_Test/20260824_40/scripts/run_u1_unified_training.py",
+      "sha256": "398ba88c37fd6da20109c170059df1681a5fede7968050db34ea683025fe78ff"
+    },
+    {
+      "role": "l0_v2_contract",
+      "path": "E:/SPARROW/5_Test/20260824_41/experiment_contract.json",
+      "sha256": "19d7f4990fe42e46687191257a3967effe551abd54bd84ebb9af6b7cf63e698e"
+    },
+    {
+      "role": "l0_v2_result",
+      "path": "E:/SPARROW/5_Test/20260824_41/reports/stage41_validation.json",
+      "sha256": "5639d95bc2c95068fcde0914c1ca7772e39a2279b2b9ba73c24a51c9f67b6c33"
+    },
+    {
+      "role": "activelegacy_v2_contract",
+      "path": "E:/SPARROW/5_Test/20260824_42/experiment_contract.json",
+      "sha256": "345963e5c746b3aeac79845b0b820de51d467e07792332f1cb0b770c0cb1cf32"
+    },
+    {
+      "role": "activelegacy_v2_result",
+      "path": "E:/SPARROW/5_Test/20260824_42/reports/stage42_validation.json",
+      "sha256": "4223411785b204260fa7fe3f300d42ede6bcb57cd6273b530ea84556222d6547"
+    },
+    {
+      "role": "final_stop_contract",
+      "path": "E:/SPARROW/5_Test/20260824_43/experiment_contract.json",
+      "sha256": "3b41dfa65146b9f4fff7eeb333df151c131697d4756312ca0e86bf2c1598d87a"
+    },
+    {
+      "role": "final_synthesis",
+      "path": "E:/SPARROW/5_Test/20260824_43/reports/final_synthesis.json",
+      "sha256": "ec98b8bba6df4eee814ffd1f91df66addd1ef1da4c04895d0f44c3e4a1ee2526"
+    },
+    {
+      "role": "final_program_lock",
+      "path": "E:/SPARROW/5_Test/20260824_43/locks/final_program_lock.json",
+      "sha256": "b0738230a461c26c6167b35560673be10a39ad853de0bb1a9c9019e406e265e1"
+    },
+    {
+      "role": "required_external_data_status",
+      "path": "E:/SPARROW/5_Test/20260824_39/reports/required_external_data_status.json",
+      "sha256": "89827a52017bb6138b31d021638f956a33d9a8316831e2c9dd8d03e77bac873a"
+    },
+    {
+      "role": "final_technical_report",
+      "path": "E:/SPARROW/5_Test/20260824_43/reports/technical_report.md",
+      "sha256": "ba63b42fbb483363f90642a20d3e6bd4b65144cb0494e33320803e2c89e638f3"
+    },
+    {
+      "role": "final_completion_audit",
+      "path": "E:/SPARROW/5_Test/20260824_43/reports/final_completion_audit.json",
+      "sha256": "7afa98b86ada8e83f73aea70af341dcca0feb704730ab93a58f1649a102ef071"
+    }
+  ],
+  "canonical_inputs": [
+    {
+      "role": "formal_tn_observations",
+      "path": "E:/SPARROW/5_Test/20260824_18/outputs/tn_observations_audited.parquet",
+      "sha256": "71a194b39e735b53bf37da80ce52c7f0f63841d49af7c53a34d7dd05c1e65cab"
+    },
+    {
+      "role": "canonical_daily_hydrology_2006_2024",
+      "path": "E:/SPARROW/5_Test/20260828_9/outputs/canonical_reach_daily_2006_2024.parquet",
+      "sha256": "a8c2b57d35de374a57798ab3e837dbf5c75cbd644275b6e52f888b20e16ca471"
+    },
+    {
+      "role": "canonical_monthly_hydrology_2006_2024",
+      "path": "E:/SPARROW/5_Test/20260828_9/outputs/canonical_reach_monthly_2006_2024.parquet",
+      "sha256": "045c639d9480baff939ee0bec1dc034568ff626efb9e3666f4778e315c14707c"
+    },
+    {
+      "role": "canonical_monthly_hydraulic_interface_2006_2024",
+      "path": "E:/SPARROW/0_reach_topology/data/processed/tn_legacy_long_history/hydrology/canonical_daily_to_monthly_tn_transfer_2006_2024.parquet",
+      "sha256": "fe138545a2486d2f666052de408b1042b97767ce07489a90922124413bffecf7",
+      "data_role": "QA and sufficient frozen hydraulic driver; not a complete candidate-independent upper-layer TN forward operator"
+    },
+    {
+      "role": "long_history_monthly_hydraulic_interface_1961_2024",
+      "path": "E:/SPARROW/0_reach_topology/data/processed/tn_legacy_long_history/hydrology/long_history_daily_to_monthly_tn_transfer_1961_2024.parquet",
+      "sha256": "f0ef47416a5dc51a0258ebeed37a28be5cba78a5bb90baf6d5269955ceee9424",
+      "data_role": "QA and sufficient frozen hydraulic driver; not a complete candidate-independent upper-layer TN forward operator"
+    }
+  ],
+  "observation_domain": {
+    "rows": 8893,
+    "stations": 119,
+    "reaches": 103,
+    "terminal_trees": 7,
+    "temporal_folds": 3,
+    "loro_folds": 309,
+    "loto_folds": 21,
+    "natural_expansion_folds": 1
+  },
+  "model_unification_principle": {
+    "shared_between_hydrology_and_tn": [
+      "conserved state and flux equations",
+      "low-capacity process-embedded learnable terms",
+      "static-attribute regionalization",
+      "station- and terminal-tree-balanced objectives",
+      "explicit Gaussian priors in one constrained differentiable state-space objective",
+      "temporal and open-loop spatial validation"
+    ],
+    "allowed_to_differ": [
+      "physical and biogeochemical state equations",
+      "observation likelihood and target-specific diagnostics"
+    ],
+    "forbidden_interpretation": "The current canonical hydrology does not contain a station residual intercept. Station flow history is compressed into BFI signatures and regionalized through static attributes before being embedded in conserved fast/percolation states."
+  },
+  "authoritative_hydrology": {
+    "product_stage": "20260828_9",
+    "documentation_stage": "20260828_10",
+    "monthly_product": "E:/SPARROW/5_Test/20260828_9/outputs/canonical_reach_monthly_2006_2024.parquet",
+    "daily_product": "E:/SPARROW/5_Test/20260828_9/outputs/canonical_reach_daily_2006_2024.parquet",
+    "model_family": "conserved DYN2P with BFI-signature static-attribute regionalization embedded in fast-versus-percolation state recursion",
+    "station_id_parameter": false,
+    "tn_hydrology_parameter_refit": "forbidden",
+    "channel_geometry_role": "Andreadis width/depth and topology reach length may be used only with canonical simulated flow to calculate channel hydraulic exposure."
+  },
+  "tn_hydrology_interface": {
+    "status": "PASS_HYDRAULIC_INTERFACE_ONLY",
+    "interface_scope": "hydraulic drivers and lower-release diagnostics only",
+    "production_tn_forward_ready": false,
+    "contract": "E:/SPARROW/5_Test/20260824_39/reports/canonical_daily_to_monthly_tn_interface_contract.json",
+    "qa": "E:/SPARROW/5_Test/20260824_39/reports/canonical_daily_to_monthly_tn_interface_qa.json",
+    "canonical_monthly_hydraulic_product": "E:/SPARROW/0_reach_topology/data/processed/tn_legacy_long_history/hydrology/canonical_daily_to_monthly_tn_transfer_2006_2024.parquet",
+    "long_history_monthly_hydraulic_product": "E:/SPARROW/0_reach_topology/data/processed/tn_legacy_long_history/hydrology/long_history_daily_to_monthly_tn_transfer_1961_2024.parquet",
+    "semantic_boundary": "The monthly hydraulic fractions are diagnostics/sufficient frozen drivers, not a candidate-independent upper-layer TN operator. Every fitted alpha/beta candidate still requires daily N-mobilization compilation from frozen daily hydrology."
+  },
+  "reference_roles": {
+    "engineering_parent": "20260824_32 old L0",
+    "historical_reference_scenario": "20260824_38 FP_CENTRAL",
+    "scientific_parent_after_repair": "L0-v2 new registered artifact",
+    "role_boundary": "Old L0 may support U0/U1 software and inference-architecture tests only. FP_CENTRAL is not a parent. Scientific U2/U3 require L0-v2 first."
+  },
+  "tn_output_layers": {
+    "raw_mass_process": "Conserved N states and raw fast/slow mass fluxes.",
+    "population_transferable": "Calibrated pathway readout plus global C-Q head; eta does not overwrite raw mass fluxes.",
+    "gauged_conditional": "The same population prediction plus a training-history site effect in the observation head only.",
+    "structure_selection_output": "population_transferable",
+    "unknown_station_rule": "conditional_unavailable"
+  },
+  "data_governance": {
+    "raw_first": true,
+    "raw_root": "E:/SPARROW/0_reach_topology/data/raw/agriculture/nitrogen_legacy",
+    "processed_root": "E:/SPARROW/0_reach_topology/data/processed/agricultural_n_legacy",
+    "processed_external_constraints_root": "E:/SPARROW/0_reach_topology/data/processed/agricultural_n_legacy_constraints",
+    "downloads_into_test_folders": "forbidden",
+    "preserve_source_archives": true,
+    "record_required": [
+      "official landing page and direct URL",
+      "DOI or persistent identifier",
+      "license",
+      "download date and SHA256",
+      "original spatial and temporal grain",
+      "preprocessing script and QA"
+    ],
+    "large_download_rule": "The approximately 1.1 GB Smerald crop-residue product is not authorized for download in 20260824_39. Its public same-session download route is verified, but acquisition remains deferred until explicit agricultural-structure confirmation and a future authorized acquisition stage. Raw data must go to the central raw root; 1997-2021 processed products first go to data/processed/agricultural_n_legacy_constraints/smerald_2023_crop_residue_management. Any 1961-2024 carryback/carry-forward or model-ready forcing requires a separate pre-result locked derivation contract."
+  },
+  "training_environment": {
+    "conda_environment": "D:/ProgramData/anaconda3/envs/sparrow",
+    "dtype": "float64",
+    "default_parallelism": "one fold at a time",
+    "rss_warning_gib": 8,
+    "rss_hard_stop_gib": 12
+  },
+  "entries": [
+    {
+      "folder": "20260824_39",
+      "hypothesis_id": "UNIFIED_TN_AND_AGRICULTURAL_LEGACY_REDESIGN",
+      "purpose": "Audit hydrologic evolution; replace sequential P1/post-hoc P2 with one unified constrained differentiable state-space training design; correct agricultural-N equations; and separate the U0 engineering hard gate from production-science blockers.",
+      "status": "u0_engineering_pass_production_science_blocked",
+      "tn_result_access": "U0 reproduced the frozen old P1/P2 engineering parent. No new scientific TN candidate is authorized while station-position Q, candidate-specific daily alpha/beta TN forward, L0-v2 and agricultural-structure confirmation remain open.",
+      "completed_nonselecting_preflight": "U0 engineering reproduction and the canonical daily-to-monthly hydraulic-driver interface passed; candidate-specific daily alpha/beta TN forward integration remains required.",
+      "legal_successors": [
+        "20260824_40_U1_NONPRODUCTION_UNIFIED_CONSTRAINED_STATE_SPACE_IF_ENGINEERING_GATE_PASSES",
+        "STOP_ENGINEERING_REPRODUCTION_OR_INVARIANT_FAILED",
+        "20260824_41_L0_V2_REPAIR_REQUIRED_BEFORE_SCIENTIFIC_INFERENCE"
+      ]
+    },
+    {
+      "folder": "20260824_40",
+      "hypothesis_id": "U1_NONPRODUCTION_UNIFIED_CONSTRAINED_STATE_SPACE_ARCHITECTURE_TEST",
+      "purpose": "On old L0, test the unified constrained differentiable state-space software/inference architecture while keeping site effects strictly in the observation head; explicit priors retain a MAP interpretation but MAP is not a separate solver. This stage cannot authorize a production or mechanistic lock.",
+      "status": "pass_nonproduction_engineering",
+      "open_condition": "Satisfied: 20260824_39 U0 engineering_hard_gate passed. Production-science blockers remain open, so all U1 results are nonproduction and cannot select agricultural structure.",
+      "legal_successors": [
+        "20260824_41_L0_V2_SCIENTIFIC_PARENT_REPAIR",
+        "STOP_UNIFIED_TRAINING_IMPLEMENTATION_INVALID"
+      ],
+      "production_eligible": false
+    },
+    {
+      "folder": "20260824_41",
+      "hypothesis_id": "L0_V2_SCIENTIFIC_PARENT_REPAIR_THEN_U2_STATIC_REGIONALIZATION",
+      "purpose": "First create L0-v2 with zero 1961 incremental anthropogenic N, finite mineral carryover, station-position Q and canonical daily transfer. Only after L0-v2 passes, perform one process-embedded static regionalization test.",
+      "status": "pass_engineering_retain_nonproduction_temporal_clear_failure",
+      "open_condition": "Satisfied for implementation: U0 and U1 engineering gates passed. Stage 41 must now register and pass L0-v2 equations, frozen inputs, station-position Q and candidate-specific daily TN-forward tests before scientific promotion.",
+      "promotion_gate_before_u2": "Within Stage 41, L0-v2 must pass conservation, zero-anthropogenic initialization, finite mineral-lifetime, external-endpoint, temporal OOF and spatial OOF gates before any U2 regionalization result is eligible.",
+      "legal_successors": [
+        "20260824_42_U3_ACTIVE_LEGACY_V2",
+        "CLOSE_STATIC_REGIONALIZATION"
+      ]
+    },
+    {
+      "folder": "20260824_42",
+      "hypothesis_id": "U3_ACTIVE_LEGACY_V2",
+      "purpose": "Fairly compare scientific parent L0-v2 with the one-pool ActiveLegacy_v2 under the same unified inference and frozen daily hydrology operator; ActivePlusFixedProtectedSink_v2 is nonselecting sensitivity only.",
+      "status": "pass_engineering_retain_nonproduction_scenario",
+      "open_condition": "Requires U0 engineering PASS; candidate-specific daily TN forward and station-position Q PASS; L0-v2 Stage-41 promotion gate PASS; and all required data roles locked. The user has confirmed the single Active/Fresh primary structure.",
+      "candidate_id": "ActiveLegacy_v2",
+      "selection_state": "EVALUATED_NOT_PROMOTED",
+      "selected_candidate": "ActiveLegacy_v2__IMM0",
+      "legal_successors": [
+        "20260824_43_FINAL_SYNTHESIS",
+        "RETAIN_L0_V2_AND_CLOSE_AGRICULTURAL_EXTENSION"
+      ]
+    },
+    {
+      "folder": "20260824_43",
+      "hypothesis_id": "FINAL_SYNTHESIS_AND_OPTIONAL_MAINLINE_LOCK",
+      "purpose": "Lock the final architecture only if transferable temporal and spatial gates pass; otherwise retain the best validated parent and close the program.",
+      "status": "complete_retain_20260824_32_mainline",
+      "legal_successors": [
+        "PROGRAM_COMPLETE"
+      ]
+    }
+  ],
+  "global_forbidden": [
+    "reintroduce the old high-dimensional P2 station slopes",
+    "put station effects into N states, fluxes, routing or Reach products",
+    "fit hydrologic parameters in the TN model",
+    "reuse the old periodic anthropogenic-N equilibrium as a scientific 1961 initial state",
+    "jointly fit immobilization, Fresh turnover, Protected formation and Protected turnover from 2021-2024 river TN",
+    "add temperature, SAS, groundwater age, a second groundwater store, particulate N or an empirical extra TN lag in this program",
+    "download source data directly into 5_Test",
+    "create 20260824_44 or higher without both a new user-approved program revision and a pre-result registered hypothesis"
+  ],
+  "output_formats": [
+    "Markdown",
+    "JSON",
+    "Parquet"
+  ]
+}

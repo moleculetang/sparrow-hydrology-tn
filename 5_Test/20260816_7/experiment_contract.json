@@ -1,0 +1,35 @@
+{
+  "scenario_id": "20260816_7",
+  "purpose": "final legacy attribution lock and single-use 2022 retrospective consistency",
+  "prelock_rule": "write selected region and representative before loading any 2022 TN observation",
+  "selection_source": "20260816_5 only",
+  "regionalization_source": "20260816_6 conditional decision only",
+  "locked_year": 2022,
+  "locked_year_role": "retrospective_consistency_not_selection",
+  "canonical_outputs": [
+    "representative_n_legacy_interface_1961_2022.parquet",
+    "representative_r0_routed_tn_1961_2022.parquet",
+    "representative_cohort_state_end_2022.parquet",
+    "admissible_ensemble_r0_routed_tn_1961_2022.parquet",
+    "admissible_ensemble_structural_quantiles_1961_2022.parquet",
+    "locked_2022_predictions.parquet"
+  ],
+  "structural_uncertainty": {
+    "representative_role": "canonical single run only; not point identification",
+    "ensemble_role": "all development-admissible parameter pairs define scenario structural uncertainty",
+    "quantiles": ["min", "p05", "p25", "p50", "p75", "p95", "max"],
+    "future_scenario_rule": "future scenarios must propagate every admissible pair rather than only the representative pair"
+  },
+  "external_hydrology_diagnostics": {
+    "source": "E:/SPARROW/5_Test/20260815_1/reports/external_hydrology_diagnostics.json",
+    "watergap_recharge_role": "benchmark_only",
+    "groundwater_level_role": "unresolved_auxiliary_validation",
+    "selection_role": "diagnostic_only_not_in_N_loss_Q72_calibration_or_mu_selection"
+  },
+  "semantics": {
+    "soil_tau": "effective anthropogenic source legacy memory",
+    "delivery_mu": "effective TN subsurface delivery memory, not nitrate-specific water age",
+    "cohort_age": "N input-month mass cohort age, not hydrologic water age",
+    "pre1961_age": "lower bound only"
+  }
+}

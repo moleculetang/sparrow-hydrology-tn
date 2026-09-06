@@ -1,0 +1,12 @@
+{
+  "stage": "20260826_10",
+  "status": "registered_before_execution",
+  "primary_total_flow": "20260825_7 HBV3/GLOBAL_HBV_R0 routed_total_m3_s",
+  "sensitivity_members": ["HBV3_PARENT", "RAVEN_SACSMA3", "MTRS3"],
+  "retrospective": "2019-2022 locked post-development diagnostic read after 20260826_9 decision lock; no refit",
+  "daily_delivery": "one immutable Parquet per candidate plus authoritative parent reference",
+  "monthly_delivery": "combined member table and cross-structure uncertainty summary",
+  "claim_boundary": "candidate response components and hydraulic exposure are diagnostic only; no verified source-water or age claim",
+  "html": false
+}
+

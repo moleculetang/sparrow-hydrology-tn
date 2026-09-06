@@ -1,0 +1,31 @@
+{
+  "stage": "20260823_4",
+  "registered_before_outer_run": true,
+  "process_state": "20260823_3/main",
+  "models": {
+    "P0_PROCESS": "routed_quick_cfs + routed_base_cfs, no readout fit",
+    "P1_GLOBAL": "global standardized process features and registered spatial-group slopes only",
+    "P1_TREE": "P1 plus terminal-tree Gaussian random intercept",
+    "P2_HIER": "P1_TREE plus gauged-station Gaussian random intercept",
+    "P2_CURRENT": "existing 3383-column composite MAP selected in 20260823_3",
+    "P2_OBS_ONLY": "same implemented 3383-column space, observation likelihood plus Gaussian priors, no contrast pseudo-response",
+    "P2_STRONG_SHRINK": "P2_OBS_ONLY with station and slope prior SD halved",
+    "STATION_ID_ONLY": "intercept plus station Gaussian random intercept",
+    "PERMUTED_STATE_NULL": "P2_HIER capacity with dynamic process columns permuted within station and calendar month across years"
+  },
+  "hierarchy": {
+    "tree_prior_sd": 0.5,
+    "station_prior_sd": 0.5,
+    "global_priors": "same implemented parent block priors",
+    "terminal_tree_mapping": "topology downstream terminal reach"
+  },
+  "strong_shrinkage": {
+    "station_sigma": 0.5,
+    "slope_sigma": 0.075,
+    "regime_slope_sigma": 0.125
+  },
+  "negative_control_gate": "selected candidate must significantly beat both STATION_ID_ONLY and PERMUTED_STATE_NULL in paired station bootstrap",
+  "mainline_policy": "temporal OOF is primary; station-blind P1 and later LOSO/LOTO are transfer diagnostics",
+  "forbidden": ["station deletion", "new feature after outer access", "station embedding in P1", "claiming full posterior covariance", "claiming full prior-space restoration"]
+}
+

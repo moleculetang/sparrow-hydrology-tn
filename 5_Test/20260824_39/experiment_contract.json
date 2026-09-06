@@ -1,0 +1,188 @@
+{
+  "stage": "20260824_39",
+  "status": "U0_ENGINEERING_PASS_ACTIVE_FRESH_CONFIRMED_ENGINEERING_IMPLEMENTATION_PENDING",
+  "tn_execution_status": "NO_NEW_SCIENTIFIC_OR_PRODUCTION_CANDIDATE_TN_RUN_AUTHORIZED__U1_NONPRODUCTION_ARCHITECTURE_TEST_ELIGIBLE",
+  "folder_family_rule": "Do not create 20260824_44 or higher without both a new user-approved program revision and a pre-result registered hypothesis.",
+  "purpose": "Complete the design and preflight contract for unified TN inference and corrected agricultural-N legacy before any new candidate TN result is read.",
+  "reference_inputs": {
+    "canonical_hydrology": "E:/SPARROW/5_Test/20260828_9/outputs/canonical_reach_daily_2006_2024.parquet",
+    "canonical_hydrology_monthly": "E:/SPARROW/5_Test/20260828_9/outputs/canonical_reach_monthly_2006_2024.parquet",
+    "legacy_reproduction_only_hydrology_bridge": "E:/SPARROW/0_reach_topology/data/processed/tn_legacy_long_history/hydrology/long_history_hydrology_monthly_1961_2024.parquet",
+    "formal_l0_v2_hydraulic_driver_interface": "E:/SPARROW/0_reach_topology/data/processed/tn_legacy_long_history/hydrology/long_history_daily_to_monthly_tn_transfer_1961_2024.parquet",
+    "historical_hydrology_bridge_role": "legacy monthly reproduction reference only; not the canonical daily-to-monthly TN interface and not a complete TN forward driver",
+    "agricultural_forcing": "E:/SPARROW/0_reach_topology/data/processed/agricultural_n_legacy/agricultural_legacy_monthly_forcing_1961_2024.parquet",
+    "formal_tn_observations": "E:/SPARROW/5_Test/20260824_18/outputs/tn_observations_audited.parquet",
+    "engineering_parent_old_l0_code": "E:/SPARROW/5_Test/20260824_27/scripts/long_history_tn_core.py",
+    "historical_reference_fp_central_code": "E:/SPARROW/5_Test/20260824_35/scripts/fresh_protected_tn_core.py",
+    "scientific_parent_after_repair": "L0-v2 new registered artifact",
+    "canonical_hydrology_product_stage": "20260828_9",
+    "canonical_hydrology_documentation_stage": "20260828_10"
+  },
+  "environment": {
+    "python": "D:/ProgramData/anaconda3/envs/sparrow/python.exe",
+    "required_conda_environment": "sparrow",
+    "dtype": "float64",
+    "single_fold_serial": true,
+    "rss_warning_gib": 8,
+    "rss_hard_stop_gib": 12
+  },
+  "u0_gate_split": {
+    "engineering_hard_gate": {
+      "checks": [
+        "fixed-parameter and refit reproduction of old P1/P2",
+        "old P2 closed-form ridge algebra reproduction",
+        "site effects do not alter process state or raw mass flux",
+        "fold initialization and checkpoint hash leakage audit",
+        "optimizer, JSON, input-hash and row-grain validation"
+      ],
+      "result": "PASS_U0_ENGINEERING_HARD_GATE",
+      "result_artifact": "E:/SPARROW/5_Test/20260824_39/reports/u0_engineering_reproduction.json",
+      "failure_action": "stop; U1 forbidden"
+    },
+    "production_science_gate": {
+      "checks": [
+        "1961_anthropogenic_n_initial_state_scale",
+        "station_position_Q_semantics",
+        "canonical_daily_to_monthly_hydraulic_interface",
+        "candidate_specific_daily_alpha_beta_tn_forward",
+        "finite_explicit_mineral_carryover"
+      ],
+      "current_check_status": {
+        "1961_anthropogenic_n_initial_state_scale": "failed_old_L0_repair_required",
+        "canonical_daily_to_monthly_hydraulic_interface": "pass",
+        "candidate_specific_daily_alpha_beta_tn_forward": "not_implemented",
+        "station_position_Q_semantics": "interface_rule_locked_observation_level_implementation_pending",
+        "finite_explicit_mineral_carryover": "failed_old_L0_repair_required"
+      },
+      "failure_action": "old-L0 U1 architecture test may run as nonproduction; scientific U2/U3 and production lock remain forbidden until L0-v2 passes"
+    }
+  },
+  "unified_inference_contract": {
+    "single_fit_outputs": [
+      "raw_mass_process",
+      "population_transferable",
+      "gauged_conditional"
+    ],
+    "structure_selection_output": "population_transferable",
+    "site_effect_location": "observation head only",
+    "unknown_station_conditional_status": "conditional_unavailable",
+    "site_prior": "b_j = weighted_center(b_raw_j); Phi_b = 0.5 * 12 * sum(b_j^2), scaled once by fixed J_ref=119",
+    "site_prior_basis": "direct ridge=12 in log units, using the registered station/tree weighted centering; no fixed tau0 rescaling",
+    "site_prior_counting": "once outside balanced data terms",
+    "objective": "0.5 station-macro Student-t + 0.5 terminal-tree-macro Student-t + explicit priors scaled by fixed J_ref=119",
+    "adamw_weight_decay": 0.0,
+    "heldout_initialization": "cold or same-fold training-only multistart",
+    "heldout_tn_checkpoint_access": "forbidden",
+    "required_site_leverage_audit": [
+      "n_training_observations",
+      "training_tree",
+      "training_stations_in_tree",
+      "a_j=1/(2S)+1/(2T*S_g)",
+      "local_likelihood_curvature",
+      "fixed_prior_curvature",
+      "diagonal_approximate_shrinkage",
+      "fitted_b_station"
+    ]
+  },
+  "observation_readout_layers": {
+    "raw": "L_fast_raw and L_slow_raw are conserved process mass fluxes and are never overwritten by a readout parameter.",
+    "pathway": "L_readout_local = exp(delta_path)*L_fast_raw + exp(-delta_path)*L_slow_raw; this is a calibrated observation load, not a mass-balance flux.",
+    "routing": "Route the calibrated load with the frozen Stage 28 hydraulic exposure/topology operator to the station position.",
+    "cq": "mu_population = log1p(C_readout) + beta_low*zq_negative + beta_high*zq_positive, using the same station-position canonical Q in features and concentration denominator.",
+    "site": "mu_conditional = mu_population + b_station; b_station never enters N states, raw fluxes or routing.",
+    "point_source_rule": "Stage 32 has no formal municipal point-source term. Any future L_point_raw is unscaled by eta and routed once unless a separate contract authorizes otherwise."
+  },
+  "agricultural_parent_correction": {
+    "old_l0_role": "U0/U1 engineering reproduction and architecture test only",
+    "scientific_parent": "L0-v2",
+    "l0_v2_1961_incremental_states": {
+      "fresh": 0.0,
+      "protected": 0.0,
+      "mineral": 0.0,
+      "lower_dissolved": 0.0
+    },
+    "mineral_carryover": "must have an explicit finite lifetime and explicit crop, immobilization, hydrologic export and denitrification/other bookkeeping; contact_alpha may not create an unnamed centuries-long mineral reservoir",
+    "eleMent_h_semantics": "If used, h partitions new SON input into Fresh and Protected; it does not multiply Fresh decomposition.",
+    "new_son_inputs": [
+      "organic manure",
+      "returned crop residue",
+      "externally constrained immobilized mineral N"
+    ],
+    "structure_confirmation_state": "CONFIRMED_SINGLE_ACTIVE_FRESH_PRIMARY",
+    "recommended_candidate": "ActiveLegacy_v2",
+    "selected_candidate": "ActiveLegacy_v2",
+    "recommended_structure": "one active/Fresh multi-year pool with IMM0 null versus an externally constrained IMM_FIXED endpoint contract; no h and no kP",
+    "registered_subcandidates_if_recommendation_confirmed": [
+      "ActiveLegacy_v2__IMM0",
+      "ActiveLegacy_v2__IMM_FIXED"
+    ],
+    "immobilization_selection_rule": "IMM_FIXED is fixed from an external endpoint contract and IMM0 is its nested ablation/null. River TN may compare their consequences but may not tune, interpolate or select the immobilization value; if the external endpoint contract fails, IMM_FIXED is biogeochemical_prior_confounded rather than re-estimated from TN.",
+    "protected_primary_role": "absent",
+    "protected_sensitivity": "ActivePlusFixedProtectedSink_v2 with externally fixed h and kP; nonselecting",
+    "maximum_primary_agricultural_kinetics": "one Active/Fresh multi-year turnover parameter"
+  },
+  "hydrology_coupling": {
+    "source": "20260828_9 canonical daily DYN2P states and fluxes",
+    "water_parameters_fitted_by_tn": false,
+    "upper_transport": "fast flow and percolation compete for the same mineral N stock",
+    "lower_transport": "percolated N enters the lower dissolved state and exits only with canonical slow water",
+    "monthly_interface_status": "PASS_HYDRAULIC_INTERFACE_ONLY",
+    "monthly_interface_scope": "hydraulic drivers and lower-release diagnostics only",
+    "production_tn_forward_ready": false,
+    "monthly_interface_contract": "E:/SPARROW/5_Test/20260824_39/reports/canonical_daily_to_monthly_tn_interface_contract.json",
+    "canonical_monthly_hydraulic_product": "E:/SPARROW/0_reach_topology/data/processed/tn_legacy_long_history/hydrology/canonical_daily_to_monthly_tn_transfer_2006_2024.parquet",
+    "long_history_monthly_hydraulic_product": "E:/SPARROW/0_reach_topology/data/processed/tn_legacy_long_history/hydrology/long_history_daily_to_monthly_tn_transfer_1961_2024.parquet",
+    "monthly_interface": "The products compile exact parameter-independent hydrologic states and lower release diagnostics from daily canonical states; do not divide monthly flux totals by month-end stores.",
+    "upper_tn_forward_rule": "Hydraulic upper coefficients do not replace TN transport. Every candidate must compile daily N mobilization from frozen daily stores/flows and its own alpha/beta unless alpha/beta are separately frozen by a future contract.",
+    "river_hydraulic_exposure": "canonical simulated routed flow plus Andreadis width/depth plus topology reach length",
+    "andreadis_reference_discharge_used": false
+  },
+  "data_roles": {
+    "existing_reach_forcing": [
+      "HaNi-Crop 1961-2023 fertilizer and manure",
+      "registered BNF and deposition histories",
+      "MIRCA/Sacks monthly crop calendars",
+      "FAOSTAT production and crop-N coefficients"
+    ],
+    "existing_external_constraints": [
+      "SoilGrids total N, SOC and bulk density as stock upper bounds",
+      "IPCC 2019 livestock and soil guidance",
+      "Shao 2023 China crop-residue evidence",
+      "You et al. 2023 structured Source Data as a crop-recovery/management prior or external endpoint only; the same rows may not also be claimed as independent validation"
+    ],
+    "candidate_downloads_deferred_not_authorized_in_current_stage": [
+      "Smerald et al. 2023 global crop-residue management dataset, DOI 10.35097/989; public same-session download verified, local status not_downloaded; after authorization, 1997-2021 processed products first belong under data/processed/agricultural_n_legacy_constraints/smerald_2023_crop_residue_management",
+      "public long-term 15N fertilizer-fate supplementary tables",
+      "official animal-specific TAN/default tables if not already covered by the existing IPCC material"
+    ],
+    "river_tn_cannot_identify": [
+      "true soil legacy stock",
+      "Protected turnover",
+      "fertilizer immobilization endpoint",
+      "source-tag causal fractions"
+    ]
+  },
+  "agricultural_structure_draft": {
+    "confirmation_state": "CONFIRMED_SINGLE_ACTIVE_FRESH_PRIMARY",
+    "recommended_primary": "ActiveLegacy_v2",
+    "selected_candidate": "ActiveLegacy_v2",
+    "nonselecting_sensitivity": "ActivePlusFixedProtectedSink_v2",
+    "forbidden": "Free two-pool fitting or river-TN selection of h/kP"
+  },
+  "download_boundary": "Only assets with a locked parameter/endpoint role, verified official URL and license, and explicit acquisition authorization may be acquired. Raw archives go to the central raw root and are never downloaded into 5_Test. Smerald 1997-2021 processed products first go to the external-constraint root; any 1961-2024 carryback/carry-forward or model-ready forcing requires a separate pre-result locked derivation contract.",
+  "u1_nonproduction_architecture_test_after_u0": "pass_u1_unified_engineering",
+  "new_scientific_or_production_candidate_tn_fit": "completed_without_promotion; see 20260824_41-43 final lock",
+  "legacy_files_modified": "forbidden except explicitly documented metadata corrections",
+  "deliverables": [
+    "reports/unified_tn_hierarchical_map_design.md",
+    "reports/unified_tn_hierarchical_map_contract.json",
+    "reports/agricultural_n_legacy_constraint_and_equation_audit.md",
+    "reports/fresh_protected_equation_and_hydrology_audit.md",
+    "reports/fresh_protected_equation_and_hydrology_audit.json",
+    "reports/data_acquisition_and_preprocessing_plan.md",
+    "reports/agricultural_n_data_acquisition_matrix.json",
+    "reports/u0_engineering_reproduction.json",
+    "reports/u0_engineering_reproduction.md",
+    "reports/technical_report.md"
+  ]
+}

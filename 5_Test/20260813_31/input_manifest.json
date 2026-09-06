@@ -1,0 +1,81 @@
+{
+  "runtime": {
+    "environment_name": "sparrow",
+    "expected_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "sys_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "sys_executable": "D:\\ProgramData\\anaconda3\\envs\\sparrow\\python.exe",
+    "conda_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "conda_default_env": "sparrow"
+  },
+  "authority_path": "E:\\SPARROW\\5_Test\\20260813_31\\inputs\\source_snapshot\\水文年鉴录入表-珠江流域2006-2009-202512.xlsx",
+  "authority_sha256": "399fbea66de6208fae85c2d5332f96a351ddead1be12188f32ad2dce3aed625b",
+  "source_snapshot_files": 3080,
+  "source_snapshot_bytes": 27718564,
+  "source_profile": {
+    "source_rows": 10356,
+    "role_status_counts": {
+      "AS_RECORDED": 10296,
+      "SWAPPED_REGISTRY_VERIFIED": 60
+    },
+    "station_name_fill_rule_counts": {
+      "AS_RECORDED": 10355,
+      "BLANK_FILLED_FROM_NEXT_CONTIGUOUS_MONTH_SAME_RIVER_YEAR": 1
+    },
+    "negative_daily_cells": 84,
+    "nonempty_cells_outside_calendar": 67,
+    "source_columns": [
+      "站点",
+      "河流",
+      "年",
+      "月",
+      "1日",
+      "2日",
+      "3日",
+      "4日",
+      "5日",
+      "6日",
+      "7日",
+      "8日",
+      "9日",
+      "10日",
+      "11日",
+      "12日",
+      "13日",
+      "14日",
+      "15日",
+      "16日",
+      "17日",
+      "18日",
+      "19日",
+      "20日",
+      "21日",
+      "22日",
+      "23日",
+      "24日",
+      "25日",
+      "26日",
+      "27日",
+      "28日",
+      "29日",
+      "30日",
+      "31日"
+    ]
+  },
+  "historical_conflict_decisions": 198,
+  "historical_confidence_counts": {
+    "HIGH": 132,
+    "LOW": 54,
+    "MEDIUM": 12
+  },
+  "true_conflict_decisions": 126,
+  "full_authority_unique_keys": 10082,
+  "full_authority_duplicate_keys_after_resolution": 0,
+  "merged_daily_rows": 1403348,
+  "merged_station_date_duplicates": 0,
+  "merged_monthly_rows": 46216,
+  "zero_daily_observations_retained": 49160,
+  "negative_daily_observations_in_merged": 0,
+  "candidate_alternatives_preserved": true,
+  "data_terminal": "ALL_DISCHARGE_CONFLICTS_RESOLVED_WITH_CONFIDENCE_LABELS",
+  "merge_terminal": "MERGED_2006_2022_INPUT_COMPLETE"
+}

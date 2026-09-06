@@ -1,0 +1,40 @@
+{
+  "stage": "20260828_33",
+  "title": "Frozen-parent reproduction, runtime audit and actual-date spin-up",
+  "status": "REGISTERED_BLOCKED_ON_20260828_31",
+  "parents": [
+    "E:/SPARROW/5_Test/20260828_31/locks/forcing_integrity_lock.json",
+    "E:/SPARROW/5_Test/20260828_32/locks/historical_reservoir_activation_lock.json",
+    "E:/SPARROW/5_Test/20260828_26/locks/program_completion_lock.json"
+  ],
+  "runtime": "D:/ProgramData/anaconda3/envs/sparrow/python.exe",
+  "environment_audit": {
+    "required": ["Python and package versions", "PyTorch checkpoint load", "CUDA visibility", "single active libiomp5md runtime", "code and checkpoint SHA256"],
+    "openmp_amendment": "Use the Conda Intel OpenMP runtime; the duplicate Torch libiomp5md.dll remains archived as libiomp5md.dll.codex_backup_20260902"
+  },
+  "frozen_checkpoint": "E:/SPARROW/5_Test/20260828_9/outputs/parent_preserving_state_consistent_model.pt",
+  "reproduction": {
+    "period": "2006-01-01 through 2024-12-31",
+    "reference": "E:/SPARROW/5_Test/20260828_24",
+    "required_reach_daily_rows": 1596200,
+    "required_reservoir_daily_rows": 90220,
+    "comparison": "The DYN2P/Q72 process layer must reproduce Stage 9 within numpy allclose rtol=1e-8 and atol=1e-8. Separately, the unchanged R2 implementation is replayed with the legacy 2006 activation registry and must reproduce Stage 24. Historical activation is applied only after both parity tests pass.",
+    "failure_behavior": "Stop before the historical run and diagnose implementation/runtime drift; never accept a merely similar NSE"
+  },
+  "spinup": {
+    "forcing_window": "actual calendar dates 1961-01-01 through 1970-12-31",
+    "maximum_cycles": 500,
+    "convergence_threshold_mm": 1e-8,
+    "land_states": "periodic convergence of all frozen DYN2P states",
+    "reservoir_states": "Later reservoirs remain zero until their registered activation date. Xinfengjiang, commissioned 1960-10-01, is initialized from an empty state with one registered 92-day October-December donor climatology from the spun-up 1961 cycle; it is not assigned an artificial multi-year equilibrium storage.",
+    "diagnostic_sensitivity": "Zero-state and a longer repeated-window initialization may be reported only as decay/convergence diagnostics and cannot replace the registered primary initialization after seeing discharge"
+  },
+  "forbidden": [
+    "training or parameter optimization",
+    "discharge or TN observation access",
+    "changing the checkpoint or R2 parameters",
+    "using fixed 2006 dates inside the historical periodic spin-up",
+    "overwriting the accepted 2006-2024 interface"
+  ],
+  "pass_status": "PASS_FROZEN_REPRODUCTION_AND_SPINUP"
+}

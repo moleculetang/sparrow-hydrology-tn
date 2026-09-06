@@ -1,0 +1,9 @@
+{
+  "program_id": "20260824_monthly_tn_structural_diagnosis_and_upgrade",
+  "F1_temporal_status": "F1_MEAN_LAYER_TEMPORAL_UPGRADE_SUPPORTED",
+  "F2_status": "NO_REGISTERED_F2_UPGRADE_SUPPORTED",
+  "F3_status": "NO_REGISTERED_F3_UPGRADE_SUPPORTED",
+  "joint_status": "closed_condition_not_met",
+  "F1_nested_spatial_status": "F1_MONITORED_STATION_TEMPORAL_ONLY",
+  "TN_2022_values_read": false
+}

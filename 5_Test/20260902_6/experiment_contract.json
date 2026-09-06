@@ -1,0 +1,30 @@
+{
+  "stage": "20260902_6",
+  "status": "REGISTERED_BEFORE_SPATIAL_RESULTS",
+  "execution_condition": "20260902_5 stage5_lock status equals PASS_H22_SPATIAL_GATES",
+  "candidate": "H22_TRANSFER_HEAD",
+  "process_parent": "MINERAL_LIFETIME",
+  "fit_period": [2021, 2024],
+  "fit_contract": {
+    "objective": "same U3_P90_S90 Student-t4 joint population/conditional objective used in temporal and spatial validation",
+    "station_residual_ridge_precision": 12.0,
+    "starts": 5,
+    "optimizer": "AdamW then strong-Wolfe L-BFGS with projected KKT <=1e-5",
+    "attribute_preprocessing": "fit once from reaches represented in the full 2021-2024 development observations",
+    "hydrology": "frozen 20260828_9 canonical hydrology only"
+  },
+  "products": {
+    "population_transferable": "monthly TN predictions for all 230 reaches in 2021-2024, with reach outlet fraction=1",
+    "gauged_conditional": "descriptive full-development fitted predictions for monitored stations only",
+    "uncertainty_boundary": "nested OOF intervals are validation uncertainty; the full-refit product does not claim per-cell predictive intervals"
+  },
+  "promotion_rule": "promote only if Stage5 spatial gates passed, full refit satisfies KKT and finite-output checks, and transferable offset remains within the registered 1.0 log-unit envelope",
+  "forbidden": [
+    "temperature",
+    "coordinates",
+    "reach-specific free parameters",
+    "regionalized process parameters",
+    "new TN lag or groundwater store",
+    "overwriting prior locks or prior production products"
+  ]
+}

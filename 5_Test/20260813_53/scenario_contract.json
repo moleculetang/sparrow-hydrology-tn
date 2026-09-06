@@ -1,0 +1,30 @@
+{
+  "scenario_id": "S111",
+  "excluded_station_count": 15,
+  "excluded_stations": [
+    "严洞站",
+    "八达（坝上）站",
+    "六陈水库（渠道）站",
+    "北流站",
+    "天峨站",
+    "天生桥站",
+    "官良站",
+    "富宁_2",
+    "尤家寨站",
+    "岔江站",
+    "峨山站",
+    "榕峰（三）站",
+    "河步（二）站",
+    "泸江站",
+    "百色（三）站"
+  ],
+  "protected_stations": [
+    "石角站"
+  ],
+  "source_rows": 46920,
+  "filtered_rows": 46920,
+  "reaches": 230,
+  "positive_observations_masked": 2572,
+  "source_input_sha256": "7eecf39cb6a22ea31faf0de5461ea61e33258d61be395221a269ac7d4fa831ad",
+  "filtered_input_sha256": "f82b39365785cf51c96a2b9327692e086260418b8ab99c6c11592599761ae9d4"
+}

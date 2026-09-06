@@ -1,0 +1,24 @@
+{
+  "stage": "20260823_34",
+  "status": "registered_before_final_evaluation",
+  "title": "Frozen final evaluation of the accepted open-loop hydrology",
+  "accepted_candidate": "H0_LOCKED_PARENT from 20260823_27/30",
+  "reason": "H1 global adjustment was Gauge-gain only; H2 and R1 failed registered delayed-path spatial/phase gates; state analysis is diagnostic and unstable.",
+  "evaluations": [
+    "2006-2018 year-resolved internal diagnostic",
+    "2019-2022 no-update temporal check",
+    "zero-target-history grouped station evaluation inherited from 20260823_31",
+    "zero-target-history complete terminal-tree refits",
+    "locked retrospective report for 珠坑, 昭平, 瓦村（二）, 盘江桥（三）"
+  ],
+  "terminal_tree_refit": "five global physical parameters refit using no monthly flow or daily proxy from the target tree; no station Gauge prediction at target",
+  "forbidden": [
+    "model changes after reading evaluation",
+    "Gauge observation output as TN flow",
+    "diagnostic state analysis as TN flow",
+    "temperature",
+    "reservoir equation",
+    "TN-based selection"
+  ],
+  "claim_boundary": "The accepted product is a conserving Reach hydrology with unresolved fast/delayed spatial ranking and phase. Four-station results are locked retrospective checks, not independent external validation."
+}

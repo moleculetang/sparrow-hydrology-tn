@@ -1,0 +1,10 @@
+{
+  "scenario_id":"20260814_3",
+  "stage":"conditional_anchor_centered_grid",
+  "anchor":"main",
+  "performance_type":"conditional_parameter_oof_after_structure_selection",
+  "multipliers":[0.5,0.6666666666666666,1.0,1.5,2.0],
+  "combinations":25,
+  "groundwater_in_inner_selection":false,
+  "expand_after_failure":false
+}

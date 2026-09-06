@@ -1,0 +1,53 @@
+{
+  "stage": "20260828_34",
+  "title": "Locked 1961-2025 state-consistent fast/slow and reservoir simulation",
+  "status": "REGISTERED_BLOCKED_ON_20260828_33",
+  "parents": [
+    "E:/SPARROW/5_Test/20260828_31/locks/forcing_integrity_lock.json",
+    "E:/SPARROW/5_Test/20260828_32/locks/historical_reservoir_activation_lock.json",
+    "E:/SPARROW/5_Test/20260828_33/locks/frozen_reproduction_spinup_lock.json"
+  ],
+  "model": {
+    "hydrology": "Frozen DYN2P/Q72 state-consistent two-path model",
+    "reservoir": "Frozen R2 tau=180 day, inflow_response=0.25, drawdown_fraction=0",
+    "fit_parameters": 0
+  },
+  "formal_period_rule": {
+    "pet_bridge_pass": "1961-01-01 through 2025-12-31",
+    "pet_bridge_fail": "1961-01-01 through 2024-12-31 formal, with 2025 kept in a separately labelled sensitivity product"
+  },
+  "reservoir_activation": {
+    "before_activation": "identity pass-through: disabled flag, zero storage and spill, controlled/total release exactly equal to inflow, and release source components close",
+    "active_before_start": "use the Stage 33 spun-up state",
+    "active_after_start": "start empty and fill only from modeled inflow",
+    "target_storage_injection": false
+  },
+  "shared_reservoir_export_semantics": "A disabled multi-arm reservoir is evaluated independently on each arm inside the frozen router to preserve exact parent arithmetic, but those disabled arm diagnostics are summed into one physical reservoir entity-day row before export. Enabled entity-day duplicates are forbidden.",
+  "required_states_and_fluxes": [
+    "local fast response",
+    "local slow response",
+    "percolation to lower store",
+    "soil, upper and lower storages",
+    "routed fast, slow, direct and total flow",
+    "reservoir storage and controlled/spill release",
+    "reservoir fast/slow/direct source tracers",
+    "reservoir storage and release age moments"
+  ],
+  "numerical_gates": {
+    "flow_component_closure": "absolute error <= 1e-10 * max(1, abs(total_flow)) for every row",
+    "positive_flow_fraction_closure": "absolute sum error <= 1e-10",
+    "reservoir_balance": "water, each source tracer and age moment close at a scale-aware relative tolerance of 1e-10",
+    "nonnegative": "no flow or state below -1e-10 in its stored unit",
+    "unique_keys": true,
+    "complete_daily_calendar": true,
+    "no_output_only_component_reallocation": true
+  },
+  "forbidden": [
+    "all parameter refitting",
+    "discharge or TN observation access",
+    "Gauge correction",
+    "SIG2P-style output-only fast/slow correction",
+    "editing reservoir activation dates after output inspection"
+  ],
+  "pass_status": "PASS_LOCKED_LONG_SIMULATION"
+}

@@ -1,0 +1,43 @@
+{
+  "experiment_id": "20260824_8",
+  "purpose": "Final development lock and locked 2022 retrospective for the registered monitored-station TN upgrade",
+  "registered_before_2022_TN_read": true,
+  "fixed_core": [
+    "SPARROW directed-network nitrogen mass routing",
+    "Q72 canonical hydrology as the only water source",
+    "F00 source-water operator",
+    "S0/S1-12 x mu={12,36,60,96,144,240}",
+    "fixed T1 legacy delivery",
+    "H1_GLOBAL hydraulic exposure using Q72 flow and Andreadis geometry only"
+  ],
+  "selected_temporal_upgrade": "GAUSSIAN_CQ_HINGE",
+  "reference": "GAUSSIAN_PROCESS_PARENT",
+  "final_architecture": "Q72 -> F00 -> S0/S1-12 x six mu -> fixed T1 -> H1_GLOBAL -> Gaussian Q72 C-Q hinge",
+  "scope": "monitored-station monthly temporal prediction only",
+  "spatial_claim": "not supported; no 230-reach or unseen-terminal-tree upgrade",
+  "full_development_refit": {
+    "TN_years": [2016, 2017, 2018, 2019, 2020, 2021],
+    "H1_fit_layer": "globally scaled P1 without station effects and without C-Q hinge, preserving the registered sequential design",
+    "readout": "Parent and hinge independently refit for P1 and P2 with identical bounds, ridge, solver, initialization and tolerance",
+    "q_center": "2016-2021 all-month Q72 log-discharge median by reach"
+  },
+  "retrospective": {
+    "year": 2022,
+    "name": "locked 2022 retrospective temporal check",
+    "TN_values_may_be_read_only_after": [
+      "development_mechanism_lock.json",
+      "full_development_parameter_lock.json"
+    ],
+    "forbidden": "No 2022 structure choice, parameter refit, threshold change or gate redesign"
+  },
+  "closed": [
+    "temperature",
+    "reservoir operator",
+    "HLEG BULK/AGE",
+    "additional mu",
+    "second SON or groundwater pool",
+    "source-specific lag",
+    "F2 land-interface candidates",
+    "F3 travel-time or concentration-limited candidates"
+  ]
+}

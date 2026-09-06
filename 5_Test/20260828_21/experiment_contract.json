@@ -1,0 +1,28 @@
+{
+  "stage": "20260828_21",
+  "title": "Physical-null boundary completion for shared reservoir hyperparameters",
+  "status": "REGISTERED_AUTHORIZED_DEVELOPMENT_ONLY",
+  "parent_stage": "20260828_20",
+  "trigger": "Both selected layers reached the registered lower values inflow_response=0.25 and drawdown_fraction=0.05.",
+  "formal_fit_authorized": true,
+  "authorization_scope": "Development-only completion using the same 89 stations and 2010-2018 firewall data.",
+  "added_values": {
+    "inflow_response": [0.0],
+    "seasonal_drawdown_fraction": [0.0]
+  },
+  "completed_grid": {
+    "tau_day": [60.0, 180.0, 365.0],
+    "inflow_response": [0.0, 0.25, 0.5, 0.75],
+    "seasonal_drawdown_fraction": [0.0, 0.05, 0.15]
+  },
+  "forbidden": [
+    "negative inflow response",
+    "negative seasonal drawdown",
+    "larger positive bounds",
+    "new reservoir parameters",
+    "2019-2022 observations",
+    "TN observations"
+  ],
+  "interpretation": "Selection at zero is a supported null effect, not unresolved boundary confounding. Selection at another interior value is stable. No other grid expansion is authorized.",
+  "workers": 5
+}

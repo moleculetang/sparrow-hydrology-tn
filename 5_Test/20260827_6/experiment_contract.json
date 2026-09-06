@@ -1,0 +1,36 @@
+{
+  "stage": "20260827_6",
+  "purpose": "post-lock evaluation only; no refit, stopping, candidate selection or model mutation",
+  "required_lock": "20260827_5 BLIND_230_REACH_EXPORT_LOCKED with matching model and prediction SHA-256",
+  "time_extrapolation": {
+    "observations": "2019-2022 daily discharge at the frozen 65 development stations",
+    "prediction": "directly extracted from the already locked 230-Reach export using the registered within-Reach gauge fraction",
+    "daily_gates": {"pooled_NSE_min": 0.75, "station_median_NSE_min": 0.5},
+    "monthly_gates": {
+      "pooled_NSE_min": 0.85,
+      "station_median_NSE_min": 0.6,
+      "negative_station_fraction_max": 0.25,
+      "station_median_absolute_PBIAS_max_pct": 20.0
+    }
+  },
+  "space_extrapolation": {
+    "stations": ["珠坑", "昭平", "瓦村（二）", "盘江桥（三）"],
+    "history_use": "zero observations and zero station identity terms in simulation",
+    "prediction": "direct locked routed Reach flow; no station correction and no within-Reach fraction unavailable in the supplemental registry",
+    "evaluation_period": "usable monthly observations from 2010 onward; 2006-2009 spin-up excluded",
+    "gates": {
+      "pooled_NSE_min": 0.75,
+      "station_median_NSE_min": 0.5,
+      "negative_station_count_max": 1,
+      "station_median_absolute_PBIAS_max_pct": 25.0
+    }
+  },
+  "reporting": {
+    "required_NSE": ["pooled", "station_median", "station_mean", "P10", "P25", "negative_count", "negative_fraction"],
+    "required_PBIAS": ["pooled", "station_median", "station_mean", "absolute_median", "absolute_P95"],
+    "required_breakouts": ["station", "terminal_tree for time test"],
+    "no_typical_station_label": true
+  },
+  "claim_boundary": "2019-2022 and the four stations were historically known in the project; this rerun has strict computational zero-read before lock, but is not claimed as never-seen external validation",
+  "hard_stop": "no automatic 20260827_7+"
+}

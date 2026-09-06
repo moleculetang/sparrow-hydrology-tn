@@ -1,0 +1,44 @@
+{
+  "scenario_id": "20260814_5",
+  "terminal_state": "operational_retained_interface_provisional",
+  "operational_flow_model_id": "H0_hybrid",
+  "interface_branch_id": "main",
+  "interface_status": "provisional_unresolved",
+  "groundwater_status": "non_identifying",
+  "development_result": "no fixed or conditional single-production model passed the complete flow gate",
+  "parameter_search_status": "stopped_without_expansion",
+  "sas_old_ablation_status": "skipped_no_qualified_single_production_winner",
+  "locked_confirmation": {
+    "performance_type": "locked_time_confirmation",
+    "runs": 1,
+    "rows": 4509,
+    "raw_nse": 0.928822021683241,
+    "log_nse": 0.9500815005128895,
+    "pbias_pct": 1.9865189478124483,
+    "reference_max_abs_prediction_difference_cfs": 0.0,
+    "model_recall_permitted": false
+  },
+  "groundwater_locked_descriptive": {
+    "rows": 11040,
+    "reaches": 230,
+    "months": 48,
+    "median_change_correlation_area_mean": 0.1071346584259776,
+    "median_change_correlation_weighted_median": 0.11242334714444047,
+    "seasonal_peak_month_error": 2,
+    "role": "descriptive_only_not_structure_selection"
+  },
+  "interface": {
+    "rows": 46920,
+    "reaches": 230,
+    "months": 204,
+    "contains_source_water_capacity_mm": true,
+    "contains_catchment_area_km2": true,
+    "overflow_double_counted": false
+  },
+  "sha256": {
+    "model_lock": "74A06BDAE9C415A2C58D4E6CCC81321B7E5F5C99F60C8A1F36DE9691B7D44BF2",
+    "locked_confirmation": "9178FD6AD6525C6A44A66F5A0CB2083647C2BBC2D52927D5E29909BC5B8E0185",
+    "locked_groundwater": "7BAF8CDCECCCC50D54D477EFC9F7C2426EF29BA99A7122A1EB710CD208AEC5C5",
+    "provisional_main_interface": "2AADDDA0EC6F512B6289E788C053E0B793A525BF4936BB88F7A03AC004415F2B"
+  }
+}

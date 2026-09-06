@@ -1,0 +1,12 @@
+{
+  "stage": "20260828_29",
+  "title": "CHM_PRE plus CMFD daily Reach forcing 1961-2024",
+  "status": "REGISTERED",
+  "parents": ["E:/SPARROW/5_Test/20260828_27", "E:/SPARROW/5_Test/20260827_6/extension_2023_2024"],
+  "new_calculation_period": "1961-01-01 through 2005-12-31",
+  "reused_locked_period": "2006-01-01 through 2024-12-31",
+  "workers": 5,
+  "precipitation": "CHM_PRE V2 daily",
+  "pet": "CMFD V2.0 six-variable three-hour FAO-56",
+  "forbidden": ["monthly precipitation disaggregation", "monthly AET disaggregation", "parameter refitting", "observation access"]
+}

@@ -1,0 +1,32 @@
+{
+  "scenario_id": "20260814_6",
+  "nse_margin": -0.005,
+  "log_rmse_margin": 0.005,
+  "log_rmse_ci_rule": "percentile_ci95_upper_strictly_less_than_margin",
+  "ci_equal_to_margin_passes": false,
+  "pbias_absolute_worsening_margin_percentage_points": 3.0,
+  "numerical_nonworsening_tolerance": 1e-12,
+  "water_identity_tolerance_mm": 1e-9,
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 20260814,
+    "confidence_interval": "percentile_95",
+    "station_block": "station_with_all_folds_months_and_events",
+    "terminal_tree_block": "complete_terminal_drainage_tree_with_all_member_stations_folds_months_and_events"
+  },
+  "required_gates": [
+    "foundation_and_exact_oof_keys",
+    "nonnegative_physical_storage_and_flux",
+    "mass_and_water_identities",
+    "delta_raw_nse",
+    "delta_log_nse",
+    "absolute_pbias_guard",
+    "station_lowflow_ci",
+    "station_tail_ci",
+    "terminal_tree_lowflow_ci",
+    "terminal_tree_tail_ci",
+    "tail_shape_nonworsening",
+    "event_volume_nonworsening",
+    "complete_unique_interface_chain"
+  ]
+}

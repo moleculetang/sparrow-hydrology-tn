@@ -1,0 +1,16 @@
+{
+  "stage": "20260826_29",
+  "registered_before_retrospective_read": true,
+  "model_lock": "E:\\SPARROW\\5_Test\\20260826_28\\reports\\full_development_parameter_lock.json",
+  "model_state": "E:\\SPARROW\\5_Test\\20260826_28\\outputs\\full_development_model_state.parquet",
+  "evaluation": "locked 2019-2022 retrospective temporal check",
+  "primary_scale_for_TN": "monthly",
+  "promotion_gates": {
+    "monthly_pooled_NSE_drop_vs_old_max": 0.02,
+    "monthly_station_median_NSE_drop_vs_old_max": 0.03,
+    "daily_pooled_NSE_drop_vs_old_max": 0.02,
+    "monthly_median_absolute_PBIAS_worsening_max_points": 2.0,
+    "component_closure_max_m3_s": 1e-10
+  },
+  "TN_read": false
+}

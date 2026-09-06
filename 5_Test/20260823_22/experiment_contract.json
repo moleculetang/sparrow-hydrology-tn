@@ -1,0 +1,25 @@
+{
+  "stage": "20260823_22",
+  "status": "registered_before_audit",
+  "hypothesis": "A material part of the five local station-MAP effects is an observation-support correction between an internal gauge location and an aggregated Reach outlet, not a transferable Reach-flow parameter.",
+  "audit_population": "all 105 locked development stations; no outcome-based station removal",
+  "development_period": "2006-2018",
+  "locked_check_period": "2019-2022 diagnostic only",
+  "registered_support_indicators": {
+    "interior_location": "downstream_fraction_on_reach < 0.8",
+    "moderate_Q72_observation_scale_mismatch": "median monthly Q72/observed outside [1/3,3]",
+    "severe_Q72_observation_scale_mismatch": "median monthly Q72/observed outside [0.1,10]",
+    "spatial_match_risk": "snap_distance_m > 5000 or line_catchment_override"
+  },
+  "primary_tests": [
+    "correlation of station-MAP intercept with negative median log Q72/observation ratio",
+    "mismatch frequency by within-Reach location",
+    "performance sensitivity on outlet-compatible stations without changing the authoritative 105-station metrics"
+  ],
+  "forbidden": [
+    "dropping stations from authoritative metrics",
+    "retuning Q72 or MAP5",
+    "reading four external target stations",
+    "calling a gauge record bad solely because it differs from the Reach outlet"
+  ]
+}

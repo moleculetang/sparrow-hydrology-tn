@@ -1,0 +1,57 @@
+{
+  "stage": "CANONICAL_SIGNAL_REGISTRY_RECONSTRUCTION",
+  "terminal_status": "CANONICAL_SIGNAL_REGISTRY_REPRODUCED",
+  "passed": true,
+  "runtime": "conda --no-plugins run -n sparrow python",
+  "unit_tests": {
+    "framework": "unittest",
+    "passed": 15,
+    "failed": 0
+  },
+  "frozen_oof": {
+    "rows": 9067,
+    "stations": 114,
+    "year_min": 2012,
+    "year_max": 2018,
+    "folds": 3,
+    "unique_key": true
+  },
+  "legacy_registry": {
+    "expected_count": 28,
+    "reconstructed_count": 28,
+    "missing_count": 0,
+    "added_count": 0,
+    "exact_set_match": true,
+    "fixed_exclusions_absent": true,
+    "shijiao_present": true
+  },
+  "enhanced_audit": {
+    "passed": true,
+    "status": "PROVISIONAL",
+    "eligible_station_count": 99,
+    "bh_population_count": 90,
+    "bootstrap_replicates": 1000,
+    "bootstrap_seed": 20260731,
+    "required_contract_columns_present": true,
+    "class_counts": {
+      "STRONG_SIGNAL": 3,
+      "CONFIRMED_STABLE_SIGNAL": 2,
+      "CANDIDATE_SIGNAL": 58,
+      "NO_STABLE_SIGNAL": 36
+    },
+    "legacy_28_class_counts": {
+      "STRONG_SIGNAL": 3,
+      "CONFIRMED_STABLE_SIGNAL": 2,
+      "CANDIDATE_SIGNAL": 23
+    },
+    "redefines_legacy_membership": false
+  },
+  "forbidden_actions_observed": {
+    "model_retraining": false,
+    "read_2019_2022": false,
+    "source_data_write": false,
+    "threshold_tuning_to_force_28": false,
+    "manual_image_review": false,
+    "ocr": false
+  }
+}

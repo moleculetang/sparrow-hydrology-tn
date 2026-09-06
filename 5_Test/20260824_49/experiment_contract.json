@@ -1,0 +1,17 @@
+{
+  "stage": "20260824_49",
+  "status": "REGISTERED_BEFORE_FINAL_OUTPUT",
+  "required_locks": [
+    "E:/SPARROW/5_Test/20260824_44/objective_calibration_revision/locks/objective_calibration_lock.json",
+    "E:/SPARROW/5_Test/20260824_45/locks/stage45_lock.json",
+    "E:/SPARROW/5_Test/20260824_46/locks/stage46_lock.json",
+    "E:/SPARROW/5_Test/20260824_47/locks/stage47_lock.json",
+    "E:/SPARROW/5_Test/20260824_48/locks/stage48_lock.json"
+  ],
+  "two_track_lock": {
+    "method": "The unified one-fit architecture is mandatory for subsequent TN research and supersedes the P1/P2 split as a fitting design.",
+    "prediction_product": "The Stage32 product remains authoritative unless at least one new candidate passes all registered temporal and spatial gates."
+  },
+  "no_candidate_action": "Do not run a 2021-2024 refit of an ineligible model; rank candidates for research only and retain Stage32 production.",
+  "formats": ["Markdown", "JSON", "Parquet"]
+}

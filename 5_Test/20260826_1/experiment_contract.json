@@ -1,0 +1,42 @@
+{
+  "stage": "20260826_1",
+  "status": "registered_before_execution",
+  "title": "Multi-structure conserving hydrologic response ensemble program registry",
+  "parent": "20260825_7 GLOBAL_HBV_R0",
+  "purpose": "Broaden hydrologic structures while preserving total-flow accuracy, mass conservation, spatial transfer tests and bounded model-response claims for TN.",
+  "claim_level": "STANDARD_MODEL_RESPONSE_COMPONENTS_NOT_INDEPENDENTLY_OBSERVED_PATHS",
+  "model_families": [
+    "HBV3_PARENT",
+    "RAVEN_SACSMA3",
+    "RAVEN_TOPMODEL3",
+    "HYPE3L_HYDROLOGY",
+    "MTRS3"
+  ],
+  "standard_response_fields": [
+    "fast_response",
+    "intermediate_response",
+    "slow_response"
+  ],
+  "time_contract": {
+    "spinup_forcing": "2006-2009",
+    "development": "2010-2018",
+    "locked_retrospective": "2019-2022",
+    "retrospective_name": "locked_post-development_retrospective_check"
+  },
+  "allowed_dynamic_evidence": [
+    "daily discharge",
+    "PML V2.2a monthly AET soft target",
+    "Q-derived FDC, recession, low-flow, autocorrelation and BFI response signatures"
+  ],
+  "forbidden": [
+    "TN observations in hydrologic fitting or selection",
+    "Gauge/P2 station-history correction in the 230-Reach product",
+    "station identity or terminal-tree random intercepts",
+    "reservoir or dam operation equations",
+    "wqd_reference_discharge_m3_s or WQD upstream area",
+    "unproven nationwide 1-km groundwater-level raster in fitting",
+    "calling response components observed groundwater, new water, old water or water age",
+    "automatic folders beyond 20260826_12"
+  ],
+  "authorized_successor": "20260826_2"
+}

@@ -1,0 +1,33 @@
+{
+  "stage": "20260824_40",
+  "status": "REGISTERED_ENGINEERING_NOT_RUN",
+  "purpose": "Validate one unified constrained differentiable state-space TN fit on the frozen old-L0 engineering parent; no scientific or production promotion is allowed.",
+  "method_name": "constrained_differentiable_state_space_training",
+  "map_semantics": "Explicit priors permit a MAP interpretation but MAP is not a separate solver family.",
+  "input_parent": "E:/SPARROW/5_Test/20260824_28/scripts/run_stage28.py",
+  "outputs": ["raw_mass_process", "population_transferable", "gauged_conditional"],
+  "structure_selection_output": "population_transferable",
+  "site_effect_location": "observation_head_only",
+  "site_effect_parameterization": "direct weighted-centered b_station in log unit",
+  "site_effect_ridge": 12.0,
+  "unknown_station_rule": "conditional_unavailable",
+  "objective": "0.5 station-macro Student-t + 0.5 terminal-tree-macro Student-t + explicit global and site priors / J_ref=119",
+  "optimizer": {
+    "process_starts": 2,
+    "site_starts": 2,
+    "adamw_steps": 120,
+    "adamw_lr": 0.035,
+    "adamw_weight_decay": 0.0,
+    "lbfgs_max_iter": 60,
+    "gradient_clip_norm": 10.0
+  },
+  "environment": "conda sparrow",
+  "dtype": "float64",
+  "rss_hard_stop_gib": 12,
+  "forbidden": [
+    "modify process states or mass fluxes using station effects",
+    "read held-out TN during fitting or initialization",
+    "call the old P1/P2 sequential workflow the new unified model",
+    "promote old L0 as the repaired scientific parent"
+  ]
+}

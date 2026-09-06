@@ -1,0 +1,39 @@
+{
+  "stage": "20260828_37",
+  "title": "Independent read-only QA, synthesis and final program lock",
+  "status": "REGISTERED_BLOCKED_ON_20260828_35_AND_36",
+  "parents": [
+    "E:/SPARROW/5_Test/20260828_31/locks/forcing_integrity_lock.json",
+    "E:/SPARROW/5_Test/20260828_32/locks/historical_reservoir_activation_lock.json",
+    "E:/SPARROW/5_Test/20260828_33/locks/frozen_reproduction_spinup_lock.json",
+    "E:/SPARROW/5_Test/20260828_34/locks/long_simulation_lock.json",
+    "E:/SPARROW/5_Test/20260828_35/locks/tn_hydrology_interface_lock.json"
+  ],
+  "qa_independence": "A read-only verifier must recompute schema, calendar, hashes, row counts and conservation identities from exported files rather than trusting exporter summaries.",
+  "required_checks": [
+    "forcing and model provenance hashes",
+    "unique Reach-day, Reach-month, reservoir-day and reservoir-month keys",
+    "complete calendar and conditional formal period",
+    "fast/slow/direct flow and fraction closure",
+    "nonnegative states and flows",
+    "reservoir pre-activation identity and post-activation state continuity",
+    "reservoir mass, source-tracer and age-moment closure",
+    "daily-to-monthly volume reconciliation",
+    "hydraulic exposure recomputation from model flow and Andreadis geometry",
+    "2025 source flag and PET bridge decision consistency",
+    "absence of TN observations and forbidden reference-discharge use"
+  ],
+  "final_statuses": {
+    "full_pass": "COMPLETE_VERIFIED_READY_FOR_TN_1961_2025",
+    "bridge_fail_but_1961_2024_pass": "COMPLETE_VERIFIED_READY_FOR_TN_1961_2024_WITH_2025_SENSITIVITY",
+    "bridge_pending_but_1961_2024_pass": "COMPLETE_VERIFIED_READY_FOR_TN_1961_2024_2025_PENDING",
+    "reproduction_or_conservation_failure": "BLOCKED_NOT_READY_FOR_TN"
+  },
+  "deliverables": [
+    "reports/technical_report.md",
+    "reports/final_independent_qa.json",
+    "reports/program_decision.json",
+    "locks/program_completion_lock.json"
+  ],
+  "forbidden": ["modifying upstream outputs", "refitting", "promoting 2025 after a failed bridge", "calling modeled ages tracer-validated"]
+}

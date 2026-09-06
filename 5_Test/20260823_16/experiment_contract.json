@@ -1,0 +1,73 @@
+{
+  "stage": "20260823_16",
+  "title": "Q72 MAP5 spatial regionalization audit and registration",
+  "status": "registered_before_candidate_fitting",
+  "parent": "20260823_15",
+  "mainline": "Q72 plus five spatially transferable MAP effects",
+  "development_window": "2006-01 through 2018-12",
+  "locked_temporal_check": "2019-01 through 2022-12",
+  "external_spatial_targets": [
+    {"station": "珠坑", "reach_id": 44},
+    {"station": "昭平", "reach_id": 84},
+    {"station": "瓦村（二）", "reach_id": 134},
+    {"station": "盘江桥（三）", "reach_id": 206}
+  ],
+  "map5_effects": [
+    "intercept",
+    "standardized_log_q72_total_slope",
+    "standardized_quick_fraction_slope",
+    "month_sine_slope",
+    "month_cosine_slope"
+  ],
+  "eligible_candidates": [
+    "R0_GLOBAL_ZERO",
+    "R1_HB5_ATTRIBUTES",
+    "R2_HB5_ATTRIBUTES_EUCLIDEAN",
+    "R3_HB5_ATTRIBUTES_RIVER_NETWORK"
+  ],
+  "diagnostic_only_candidate": "P2_LOCAL_MAP_UPPER_BOUND",
+  "mandatory_constraints": {
+    "station_id_free_effect_in_final_product": false,
+    "unknown_reach_zero_default": false,
+    "all_230_reaches_receive_map5": true,
+    "q72_process_parameters_reopened": false,
+    "reservoir_equation_reopened": false,
+    "post_2018_observations_used_for_selection": false,
+    "external_four_station_observations_read_before_lock": false,
+    "network_conservation_claim": "routed discharge equals the upstream sum of nonnegative local increments",
+    "full_P_ET_storage_closure_claim": false
+  },
+  "candidate_parameter_model": "b_k,r = A_r gamma_k; fitted jointly with the global response under Gaussian priors",
+  "retention_limits_relative_to_local_map_2019_2022": {
+    "pooled_NSE_decline_max": 0.02,
+    "station_median_NSE_decline_max": 0.03,
+    "log_RMSE_increase_max": 0.03,
+    "absolute_PBIAS_pct_max": 5.0
+  },
+  "spatial_validation": {
+    "station_groups": 10,
+    "whole_terminal_tree_groups": 8,
+    "station_grouping": "deterministic balance by terminal tree and observed flow size",
+    "target_history_allowed": false,
+    "candidate_selection_period": "2006-2018 only",
+    "station_holdout_log_RMSE_improvement_fraction_min": 0.60,
+    "station_holdout_log_RMSE_margin_vs_Q72": 0.03,
+    "whole_tree_log_RMSE_margin_vs_global_map": 0.03
+  },
+  "routing_reconciliation": {
+    "objective": "min ||W(Ul-Q_target)||^2 + lambda ||D(l-l_Q72)||^2 subject to l>=0",
+    "lambda_grid": [0.01, 0.1, 1.0, 10.0],
+    "selection_period": "2006-2018 only",
+    "quick_slow_split": "Q72 local quick fraction, then independently rerouted",
+    "correction_flux_must_be_reported": true
+  },
+  "external_four_station_gate": {
+    "mean_log_RMSE_better_than_transferable_global_map": true,
+    "stations_improved_over_global_map_min": 3,
+    "combined_NSE_decline_vs_Q72_max": 0.02
+  },
+  "terminal_success_status": "Q72_MAP5_SPATIAL_NETWORK_CONSERVING_PROMOTED",
+  "terminal_failure_status": "Q72_MAP5_SPATIAL_NOT_PROMOTED",
+  "authorized_successor": "20260823_17",
+  "forbidden_successor_without_new_hypothesis": "20260823_21+"
+}

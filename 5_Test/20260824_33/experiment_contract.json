@@ -1,0 +1,18 @@
+{
+  "stage": "20260824_33",
+  "role": "program registry, literature/model audit, local-data sufficiency audit and source/state contract",
+  "parent": "20260824_32 PASS_STAGE32_TN_MAINLINE_LOCKED",
+  "tn_result_access": "No new TN candidate result may be inspected in this stage.",
+  "hydrology": "immutable 20260828_9/10 canonical quick/slow interface",
+  "source_tags": ["FERT", "MAN", "BNF", "DEP"],
+  "new_internal_states": ["fresh_son_kg_n", "protected_son_kg_n"],
+  "claim_boundary": "The pools are registered internal agricultural-N states. Current TN, SoilGrids total N and literature priors do not independently observe their true mass, age or source composition.",
+  "required_outputs": [
+    "reports/agricultural_n_legacy_literature_and_model_audit.md",
+    "reports/existing_agricultural_n_data_audit.json",
+    "outputs/existing_agricultural_n_data_inventory.parquet",
+    "locks/source_and_state_contract.json"
+  ],
+  "authorized_successor": "20260824_34 after all Stage 33 validations pass"
+}
+

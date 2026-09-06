@@ -1,0 +1,12 @@
+{
+  "stage": "20260826_6",
+  "status": "registered_before_execution",
+  "purpose": "Unify calibrated and ungauged reaches through a low-rank static-attribute parameter field",
+  "models": ["RAVEN_SACSMA3", "MTRS3"],
+  "mapping": "global raw parameter + fixed process loading times two learned latent attribute indices",
+  "attributes": ["log AWC", "bulk density", "GLHYMPS log permeability", "GLHYMPS porosity", "log DEM-recomputed slope", "climatic aridity", "log local catchment area"],
+  "prior": "independent zero-mean Gaussian coefficients, sigma 0.25; MAP penalty fixed before fit",
+  "forbidden": ["station identity", "terminal-tree identity", "target-station history correction", "TN", "2019-2022 discharge"],
+  "authorized_successor": "20260826_7"
+}
+

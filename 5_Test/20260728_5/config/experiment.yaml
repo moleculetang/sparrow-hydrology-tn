@@ -1,0 +1,62 @@
+run_id: 20260728_5
+logical_parent_run: 20260727_6
+input_anchor_run: 20260727_6
+diagnostic_predecessor: 20260728_4
+phase: low_flow_heterogeneity_and_attribute_separability
+hypothesis_id: D03_stable_low_flow_overprediction_is_identifiable
+generation_type: diagnostic_only_no_model_change
+model_change: none
+evidence_years:
+  oof_labels: 2012-2018
+  common_signature_window: 2006-2011
+  climate_normal_window: 2006-2011
+forbidden_evidence_years: 2019-2022
+baseline_oof_prediction: Q_original_fusion_cfs
+low_flow_definition: observed_q_at_or_below_fold_training_q25
+heterogeneity_thresholds:
+  minimum_low_months_per_fold: 3
+  minimum_eligible_folds: 2
+  material_bias_pct: 10.0
+  stable_positive_fold_fraction: 0.6666666666666666
+  stable_median_low_flow_bias_pct: 10.0
+class_priority:
+  - reservoir_or_regulation_possible
+  - data_quality_suspicious
+  - stable_low_flow_overprediction
+  - material_sign_reversal
+  - episodic_low_flow_overprediction
+  - not_stably_overpredicted
+separability_models:
+  deployable_static:
+    estimator: standardized_l2_logistic_regression
+    class_weight: balanced
+    C: 1.0
+    validation: fixed_5_fold_stratified_oof
+  location_sensitivity:
+    estimator: deployable_static_plus_projected_location
+    promotion_use: forbidden
+  gauged_signature_upper_bound:
+    estimator: deployable_static_plus_2006_2011_observed_signatures
+    promotion_use: forbidden_for_ungauged_gate
+separability_thresholds:
+  minimum_positive_class_stations: 10
+  minimum_negative_class_stations: 10
+  minimum_roc_auc: 0.70
+  minimum_balanced_accuracy: 0.65
+  maximum_permutation_pvalue: 0.05
+  permutation_repetitions: 500
+stable_signal_thresholds:
+  minimum_stable_stations: 10
+  minimum_positive_pooled_folds: 2
+  minimum_stable_group_median_bias_pct: 15.0
+station_policy:
+  active_exclusions: [劳村站, 富罗（二）站, 隆安站]
+  protected_from_exclusion: [石角站]
+  allow_new_exclusions: false
+reservoir_scope: report_only_excluded_from_target_and_separability
+random_seed: 1729
+runtime:
+  heartbeat_seconds: 30
+  default_step_timeout_seconds: 300
+  analysis_timeout_seconds: 900
+status: completed_stable_target_supported_static_attribute_gate_failed

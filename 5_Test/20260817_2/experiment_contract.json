@@ -1,0 +1,13 @@
+{
+  "scenario_id": "20260817_2",
+  "purpose": "standardized long-tail impulse experiments",
+  "pulse_b_input": "1 kg N per reach applied in one monthly timestep after annual-to-monthly ledger construction",
+  "pulse_b_input_field": "post_ledger_positive_surplus_kg_n_month",
+  "maximum_horizon_month": 2400,
+  "completion_fraction": 0.9999,
+  "cdf_denominator": "initial_injected_mass_or_water",
+  "paper_time": "elapsed_month=(lag_month+1)",
+  "spatial_weights": ["2016_2021_positive_diffuse_n", "catchment_area"],
+  "eta_used": false,
+  "locked_2022_used": false
+}

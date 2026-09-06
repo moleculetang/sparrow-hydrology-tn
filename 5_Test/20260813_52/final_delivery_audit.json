@@ -1,0 +1,95 @@
+{
+  "terminal": "STATION_COMBINATION_SENSITIVITY_DELIVERY_COMPLETE",
+  "checks": {
+    "all_required_artifacts_nonempty": true,
+    "eight_scenarios": true,
+    "only_s111_passes": true,
+    "selected_both_periods_zero_negative": true,
+    "selected_coverage_ge_90": true,
+    "selected_outputs_nonempty": true,
+    "deterministic_oof_and_validation": true,
+    "scientific_terminal_correct": true,
+    "operational_nonpromotion_recorded": true,
+    "shijiao_protected": true,
+    "figures_pass": true,
+    "completion_audit_pass": true
+  },
+  "required_artifacts": [
+    {
+      "path": "README.md",
+      "sha256": "4c3122aaf526b63665e7bc010998c52832bb46924dc9828b08f8a93f32094ea4"
+    },
+    {
+      "path": "experiment_contract.md",
+      "sha256": "6e01505c95a30fbb02db84df15c50bf089e3c22d5cf242c77996ee7c01f8c2d6"
+    },
+    {
+      "path": "station_group_registry.csv",
+      "sha256": "e6e589d38de8d439fe3e37ad88b89bb1029552a9b771540c6c6e85c480c6be54"
+    },
+    {
+      "path": "scenario_exclusion_registry.csv",
+      "sha256": "099aad84aa649fa87326a4f32d5bc33ad13715fe1cb3f3fcdffee02cf4e527fd"
+    },
+    {
+      "path": "scenario_metrics.csv",
+      "sha256": "dc1a2e0876966a1be8bfee35f78c54faab2c33b9335c9513700ece0dc818177e"
+    },
+    {
+      "path": "scenario_station_metrics.csv",
+      "sha256": "9f091e4dffdcae52d0a118e529b4785e717f350ba8d1735940c6cafabd223a93"
+    },
+    {
+      "path": "scenario_fold_metrics.csv",
+      "sha256": "266dcf0e42b68077c7b917c0b947e17b55c3b6f063e62bad43df4ed8a6876bd7"
+    },
+    {
+      "path": "negative_station_generation_log.csv",
+      "sha256": "e985c8293b01f3738ebbbadb2b19329f187f736da795921deb90f89bba084d34"
+    },
+    {
+      "path": "coverage_performance_tradeoff.csv",
+      "sha256": "bc83dd990070254daa0f5e1368e74a2e401fbc858ce69348512d73157b53648a"
+    },
+    {
+      "path": "selected_station_configuration.json",
+      "sha256": "a784af7b3cc04988efbb39216885398f8a8ad87630c0b779b088642a042718a2"
+    },
+    {
+      "path": "stone_corner_shijiao_audit.csv",
+      "sha256": "f8a0ce3b6cc227e11cc77f303d661051bb8ea61c1836b6c92db8d6e251c17a43"
+    },
+    {
+      "path": "final_oof_predictions.parquet",
+      "sha256": "6712d2f265532b759505d3a9de2d4112f033961be43221fe7b42971ba373bccc"
+    },
+    {
+      "path": "final_2019_2022_predictions.parquet",
+      "sha256": "789d9bb13b18d453a9399e593ecea071df271164ef8d45b9dc5aba8da1b9a142"
+    },
+    {
+      "path": "deterministic_reproduction_gate.json",
+      "sha256": "32e32ce0ba503b9562abce46a7f7651c282705f0e51c18bfa9bac0cc4c945bb4"
+    },
+    {
+      "path": "terminal_gate.json",
+      "sha256": "62d9f363961560a9fd7166d13819d3dc6fed7f01406a4bf32049d4aa1429dfae"
+    },
+    {
+      "path": "completion_audit.json",
+      "sha256": "07dc188eefc8d6b96d854011bc995ab07f5cb140d0b6e5436c8c0e6346668841"
+    },
+    {
+      "path": "input_code_manifest.json",
+      "sha256": "ba169a1996af3432859118a228568a6f3b59ceabb70310f73abde0934694410a"
+    },
+    {
+      "path": "environment_pip_freeze.txt",
+      "sha256": "61ec8638b526a8b2312418f62fb3c00ed14b718aae175a2c62268a0279a593df"
+    },
+    {
+      "path": "SPARROW_Q72_station_combination_sensitivity_results.md",
+      "sha256": "504b7b7449d0593d9c384b2b870ae402b73478d572f6de9a77e4ae810fc240af"
+    }
+  ]
+}

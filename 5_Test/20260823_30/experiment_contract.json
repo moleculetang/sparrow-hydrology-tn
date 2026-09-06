@@ -1,0 +1,56 @@
+{
+  "stage": "20260823_30",
+  "status": "registered_before_fitting",
+  "title": "Global joint MAP for a TN-facing fast-response and delayed-storage hydrology",
+  "hypothesis": "Gauge observations can update the five global physical hydrology parameters, and daily hydrograph separation can add independent soft information about the delayed-flow partition, while the five Gauge coefficients remain observation nuisances rather than terminal flow multipliers.",
+  "candidates": {
+    "H0": "locked 20260823_15 physical parameters",
+    "H1": "monthly total flow plus profiled station Gauge observation nuisance",
+    "H2": "H1 plus development-only delayed-flow proxy likelihood"
+  },
+  "physical_parameters": [
+    "prod_capacity",
+    "runoff_gamma",
+    "quick_rho",
+    "base_release",
+    "base_rho"
+  ],
+  "gauge_nuisance_basis": [
+    "intercept",
+    "frozen_standardized_log_support_total",
+    "frozen_standardized_support_fast_fraction",
+    "month_sine",
+    "month_cosine"
+  ],
+  "gauge_ridge_precision": 10.0,
+  "physical_raw_prior_precision": 0.1,
+  "proxy_likelihood_weight": 0.1,
+  "proxy_min_fraction_sigma": 0.05,
+  "training_period": "2006-2018 total flow; 2010-2018 usable daily separation proxy",
+  "frozen_temporal_check": "2019-2022; no parameter or state update",
+  "differentiable_periodic_spinup": {
+    "forcing": "2006-2011 repeated",
+    "cycles_during_fit": 8,
+    "postfit_audit_tolerance_mm": 1e-6,
+    "postfit_max_cycles": 1000
+  },
+  "candidate_selection": "minimum preregistered penalized development objective across deterministic starts",
+  "forbidden": [
+    "terminal Gauge multiplication of Reach flow",
+    "Gauge-corrected fast/delayed partition",
+    "2019-2022 parameter selection",
+    "TN-based hydrology selection",
+    "reservoir equation",
+    "temperature",
+    "extra slow store",
+    "SAS expansion",
+    "LSTM"
+  ],
+  "hard_numerical_gates": {
+    "local_mass_balance_max_abs_mm": 1e-8,
+    "routing_relative_error": 1e-10,
+    "spinup_terminal_max_abs_delta_mm": 1e-6,
+    "nonnegative_states_and_fluxes": true
+  },
+  "interpretation_boundary": "Hydrograph separation is a delayed-response proxy, not observed groundwater. Gauge coefficients are observation nuisances. Promotion evidence must be computed on the latent support/Reach hydrology as well as Gauge predictions."
+}

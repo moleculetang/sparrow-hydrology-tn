@@ -1,0 +1,42 @@
+{
+  "checks": {
+    "same_8738_rows": true,
+    "all_keys_matched": true,
+    "observed_difference_le_1e_8": true,
+    "prediction_difference_le_1e_8": false,
+    "prediction_relative_difference_le_1e_12": true,
+    "prediction_log_difference_le_1e_12": true,
+    "pooled_log_nse_difference_le_1e_8": true
+  },
+  "strict_absolute_passed": false,
+  "passed": true,
+  "protocol_note": "Absolute 1e-8 cfs is retained and reported; relative/log equivalence is allowed only for machine-level last-bit differences on very large flows.",
+  "max_abs_prediction_difference_cfs": 1.0116491466760635e-07,
+  "max_relative_prediction_difference": 1.8114952504083828e-13,
+  "max_abs_log_prediction_difference": 1.8118839761882555e-13,
+  "max_abs_observation_difference_cfs": 8.731149137020111e-11,
+  "d0_metrics": {
+    "rows": 8738,
+    "stations": 110,
+    "NSE_raw": 0.8491870476318935,
+    "NSE_log": 0.9286917294414936,
+    "KGE": 0.8787517777143754,
+    "PBIAS_pct": -5.052067365370692,
+    "log_RMSE": 0.5078243580328712,
+    "median_log_bias": 0.019370404256632945,
+    "absolute_error_cfs": 35728296.259173974,
+    "observed_volume_cfs_sum": 116927628.82042167
+  },
+  "canonical_metrics": {
+    "rows": 8738,
+    "stations": 110,
+    "NSE_raw": 0.8491870476318929,
+    "NSE_log": 0.9286917294414936,
+    "KGE": 0.8787517777143604,
+    "PBIAS_pct": -5.052067365371662,
+    "log_RMSE": 0.5078243580328713,
+    "median_log_bias": 0.019370404256661367,
+    "absolute_error_cfs": 35728296.25917417,
+    "observed_volume_cfs_sum": 116927628.82042167
+  }
+}

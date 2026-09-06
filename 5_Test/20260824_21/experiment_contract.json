@@ -1,0 +1,18 @@
+{
+  "stage": "20260824_21",
+  "parent": "20260824_20 supported factors on the locked 20260824_19 hydrology interface",
+  "formal_input_calendar": "MIRCA monthly source forcing; no annual/12 replacement in the candidate parent",
+  "fixed_source_availability_memory_month": 36,
+  "pathway_parameterization": "eta_fast=exp(delta_path), eta_slow=exp(-delta_path); one relative contrast with Gaussian shrinkage",
+  "layers": {
+    "P0": "calibrated process output without C-Q readout",
+    "P1": "transferable calibrated process plus global C-Q hinge; no station/reach/tree identity",
+    "P2": "P1 plus station residual ridge lambda=12 for previously monitored stations only"
+  },
+  "likelihood": "station-equal Student-t on log1p(TN), nu=4, fitted global scale",
+  "optimizer": "float64 AdamW, gradient clipping, multistart temporal fits, full-batch LBFGS refinement",
+  "evaluation": ["2022-2024 rolling temporal OOF", "nested LORO", "nested LOTO", "2021 natural expansion"],
+  "forbidden": ["hydrology refit", "station/reach/tree identity in P1", "temperature", "WWTP", "SAS", "groundwater age", "second groundwater store", "reservoir operator"],
+  "memory_contract_gib": {"warning": 12, "hard_stop": 16},
+  "authorized_successor": "20260824_22"
+}

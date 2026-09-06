@@ -1,0 +1,32 @@
+{
+  "stage": "20260823_23",
+  "status": "registered_before_fitting",
+  "title": "Unified gauge observation operator above frozen conserving Reach flow",
+  "reach_flow_layer": "20260823_21 monthly_network_native_hydrology; frozen and not refitted",
+  "gauge_equation": "log1p(Q_gauge)=log1p(Q_reach)+sum_k z_k delta_k,gauge",
+  "five_observation_effects": ["intercept", "log_reach_flow", "quick_fraction", "month_sin", "month_cos"],
+  "operator_parameter_model": "delta_k,r=A_reach_and_support gamma_k+u_k,r with Gaussian graph-smooth prior on all 230 Reach nodes",
+  "support_features": ["within-Reach downstream fraction", "snap distance", "best line distance", "line/catchment override"],
+  "hypothetical_reach_outlet_defaults": {
+    "downstream_fraction": 0.999,
+    "snap_distance_m": 0,
+    "best_line_distance_m": 0,
+    "line_catchment_override": false
+  },
+  "smooth_precision_grid": [0.001, 0.01, 0.1, 1.0, 10.0],
+  "ridge_precision_grid": [0.001, 0.01, 0.1, 1.0, 10.0],
+  "attribute_precision": 1.0,
+  "hyperparameter_training": "2006-2014",
+  "hyperparameter_validation": "2015-2018 station-mean log-RMSE",
+  "final_refit": "2006-2018",
+  "locked_temporal_check": "2019-2022",
+  "required_boundaries": {
+    "gauge_operator_changes_reach_flow": false,
+    "free_station_identity_design": false,
+    "all_230_nodes_have_operator_prior": true,
+    "known_gauge_history_conditions_its_node_posterior": true,
+    "unknown_gauge_history_allowed_in_spatial_test": false,
+    "external_four_station_outcomes_read": false
+  },
+  "claim_boundary": "Gauge operator predicts the measurement support at a station; it is not a second water-routing model and is not the TN water interface."
+}

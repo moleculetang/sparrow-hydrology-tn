@@ -1,0 +1,216 @@
+{
+  "runtime": {
+    "environment_name": "sparrow",
+    "expected_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "sys_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "sys_executable": "D:\\ProgramData\\anaconda3\\envs\\sparrow\\python.exe",
+    "conda_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "conda_default_env": "sparrow"
+  },
+  "backup_file_count": 36,
+  "backup_bytes": 48523752,
+  "files": [
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\config.json",
+      "bytes": 396,
+      "sha256": "8bfbe87033ecce6d88fed497d18f5f5fdf45e8fd54c56770e47182909203c343"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\covariate_backbone.parquet",
+      "bytes": 4186402,
+      "sha256": "545f687b4403a2d1f0a5120cae3097445c102b3c6b01eaf14c2758077c092e2b"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\indata.parquet",
+      "bytes": 4416687,
+      "sha256": "dd038333ac37e9dca4592e6c6aea85d1e6eecb0a95d0d81a07e82269f311c8f6"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\outputs\\q72_three_fold_oof_predictions.csv",
+      "bytes": 7516326,
+      "sha256": "b07671946050b8e878e50b77ea87308e562bb707ac1995a58220874150bef5a3"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\outputs\\q72_three_fold_oof_predictions.parquet",
+      "bytes": 3191984,
+      "sha256": "13b8d77015681804cc3362fe3854675c94e63aa83a96227bc85b4a66524b4d62"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\scripts\\__pycache__\\build_updated_input.cpython-311.pyc",
+      "bytes": 40571,
+      "sha256": "73fff5da0d31981261a07f2d093ebb5e6b0bb40dee4b24e40955dd22b55bdc40"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\scripts\\__pycache__\\runtime_guard.cpython-311.pyc",
+      "bytes": 2796,
+      "sha256": "e9baccbfd63f5121b82af071f5ba86db02d3a725f3fff27964a4202a9543717d"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\scripts\\build_model_audit.py",
+      "bytes": 13438,
+      "sha256": "0c1b114d2f0767b7a6843a407d0f4f99a4991b3750e32b859b019571077929f6"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\scripts\\build_updated_input.py",
+      "bytes": 29159,
+      "sha256": "d574ee095f5b5be07433d0d5f489fea0e81f19d9ae98aecadd67851414de3e0c"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\scripts\\components\\__pycache__\\fit_monthly_bayes_seasonal_hysteresis.cpython-311.pyc",
+      "bytes": 91213,
+      "sha256": "a15c9f0654fd6c6f49b05e076c73b843ae015e7f0bf3216b8af0fdd6ae708c3d"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\scripts\\components\\fit_monthly_bayes_seasonal_hysteresis.py",
+      "bytes": 62025,
+      "sha256": "8e803e291a83fc3c5beb451ce2c3f9616e66b9f6eec545b3fa4cd6d54a1df666"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\scripts\\run_all.py",
+      "bytes": 1842,
+      "sha256": "9a1324506efc2740f5331723e9fbb80b7c87701b07333c907caa0ecb23977622"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\scripts\\run_q72_baseline.py",
+      "bytes": 4950,
+      "sha256": "01f1a47b98bdd03fbb88e80acc9507a0041fb618ed115a6dd6c51c28de8f535a"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\scripts\\runtime_guard.py",
+      "bytes": 1355,
+      "sha256": "bd6508e4c5b524634355c28e024f05fb127771712fde5caf831f6e675061d560"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\scripts\\validate_baseline.py",
+      "bytes": 7302,
+      "sha256": "18cd906ac96bc8d7b00b33a7c4275e226fb5049af4a9cb24d009eb6a03763868"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\scripts\\write_readme.py",
+      "bytes": 5762,
+      "sha256": "cd33404d41b8fb7907ec29828b8256b3ce0feafcec56787fa900e237528d6d01"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\spatial\\PRB水文站_全部.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\spatial\\PRB水文站_全部.dbf",
+      "bytes": 68976,
+      "sha256": "ed0decdd0788c7d430d88ccda11cf902671205685fadb8e0403fe09b94eb9e5b"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\spatial\\PRB水文站_全部.prj",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\spatial\\PRB水文站_全部.shp",
+      "bytes": 6764,
+      "sha256": "78c4191cfea8d412f2b3c4bc2ad035e5c98d2567d1a10ea741f3fb780b870bb8"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\spatial\\PRB水文站_全部.shx",
+      "bytes": 2004,
+      "sha256": "2639edbb6f5dc8890ceb3639a7e7051a2656d1d66522041cd7c590ab42c37666"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\spatial\\reach_catchments.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\spatial\\reach_catchments.dbf",
+      "bytes": 33972,
+      "sha256": "62822e3319baa0b07545ee029c807c1629aeb4cbb21c73f98595c2f67849c3a3"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\spatial\\reach_catchments.prj",
+      "bytes": 423,
+      "sha256": "48a44261fed6ba2892b50afe8b76ecbf3857bf39c493543ac99efd3a16f6a03b"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\spatial\\reach_catchments.shp",
+      "bytes": 28324340,
+      "sha256": "f19fcb40ebb9254a71d20510669f319b7ac2e75c4cbff3944bfb862e77d438dc"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\spatial\\reach_catchments.shx",
+      "bytes": 1940,
+      "sha256": "0754634ab68df7542c0d43b0cdb87995efd7a823a0d362a27c12367efe54a461"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\spatial\\reaches_topology.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\spatial\\reaches_topology.dbf",
+      "bytes": 92712,
+      "sha256": "9fcff746c8edcc8080a7f3409b12a595bbcd75f6b3148182cb2c657381d8f2fa"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\spatial\\reaches_topology.prj",
+      "bytes": 423,
+      "sha256": "48a44261fed6ba2892b50afe8b76ecbf3857bf39c493543ac99efd3a16f6a03b"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\spatial\\reaches_topology.shp",
+      "bytes": 302196,
+      "sha256": "f89a8e097a56466a5419c590b7f9490c0392f1960f5e54c8537d3666d7cf94fb"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\spatial\\reaches_topology.shx",
+      "bytes": 1940,
+      "sha256": "0728577259793e6b87817bf8d150ec51a340e9dde39cbe42bc3599d2f054aacc"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\topology\\topology_edges.csv",
+      "bytes": 12318,
+      "sha256": "3dda23377f59ed7e649003f851a0c64352ab777684929edca4ef63dedea29aee"
+    },
+    {
+      "relative_path": "backup_before_correction\\legacy_baseline\\validation.json",
+      "bytes": 1118,
+      "sha256": "861e45f13a853d8ce4308b8ba668675604735f1532c84017b7059b4c18a7a79b"
+    },
+    {
+      "relative_path": "backup_before_correction\\topology_audit\\all_station_coordinate_based_spatial_classification.csv",
+      "bytes": 87578,
+      "sha256": "8894c0cedd75cb8fb88b7d8afb1aa162a59dac2a8edc39bbced2a0c99484b108"
+    },
+    {
+      "relative_path": "backup_before_correction\\topology_audit\\candidate_edge_counterfactual_summary.csv",
+      "bytes": 1200,
+      "sha256": "314d1ce740305476a786af2f386ebe9af59b2740f62aca2286ef77a135f83291"
+    },
+    {
+      "relative_path": "backup_before_correction\\topology_audit\\SPARROW_full_topology_coordinate_audit_report.md",
+      "bytes": 13480,
+      "sha256": "65378b87a94e99a71be11f7f489ac59fa95e6505485ccf2b2816d4251b3d8f01"
+    }
+  ],
+  "external_large_sources": [
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\work\\rasters\\flow_dir.tif",
+      "bytes": 1856297464,
+      "sha256": "2bac0d6b0ef955c882aa43dd4ac266a13b558e0d3ff5ccb2b28bee64cd3bded8"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\rainfall_2\\CHM_PRE V2\\monthly\\CHM_PRE_V2_monthly.nc",
+      "bytes": 1437726812,
+      "sha256": "4ae2e5de801f0b54757effc16b5dd55b0ce490e9e7fb22747e22f509b5bea108"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\CMFD\\temp_CMFD_V0200_B-01_01mo_010deg_195101-202412.nc",
+      "bytes": 994639159,
+      "sha256": "6908ceb66ae30341a7a42cf48c754067678b80217885b823e1ba3908152f3752"
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\era5_land\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2006.nc",
+      "bytes": 1896623,
+      "sha256": "a883a214fa56cacf5be04d9fb27dfced4f784b3d986e9b18341202296043da3b"
+    }
+  ]
+}

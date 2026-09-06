@@ -1,0 +1,68 @@
+{
+  "program": "20260902_TN_transferable_spatial_head",
+  "registered_at": "2026-09-02T00:00:00+08:00",
+  "status": "running",
+  "objective": "Replace non-transferable station-only offsets with a globally transferable catchment-attribute observation head while retaining a strongly shrunk residual station effect.",
+  "authoritative_parent_resolution": {
+    "authoritative_lock": "E:\\SPARROW\\5_Test\\20260824_49\\locks\\final_program_lock.json",
+    "method_mainline": "U3_P90_S90",
+    "research_parent": "MINERAL_LIFETIME",
+    "production_product": "STAGE32_L0",
+    "hydrology": "frozen canonical 20260828_9",
+    "historical_conflict": "20260831_6 describes MINERAL_LIFETIME as a prediction mainline; 20260824_49 remains authoritative and historical locks are not edited"
+  },
+  "shared_fit_contract": {
+    "population_weight": 0.9,
+    "conditional_weight": 0.1,
+    "station_macro_weight": 0.9,
+    "terminal_tree_weight": 0.1,
+    "likelihood": "Student-t df=4 on ln(1+TN)",
+    "station_residual_ridge_precision": 12.0,
+    "prior_normalization_J_ref": 119.0,
+    "deterministic_starts": 5,
+    "optimizer": "AdamW then L-BFGS",
+    "projected_kkt_tolerance": 1e-05
+  },
+  "candidates": [
+    "PARENT",
+    "H22_TRANSFER_HEAD",
+    "TN82_TRANSFER_HEAD"
+  ],
+  "authorized_stages": {
+    "20260902_1": "program registry, literature audit and parent authority resolution",
+    "20260902_2": "HydroATLAS ingestion and provenance lock",
+    "20260902_3": "230-reach multiscale attribute preprocessing and QA",
+    "20260902_4": "2021-2024 temporal OOF fitting",
+    "20260902_5": "nested LORO/LOTO and first-observed-2021 validation for temporally eligible candidates",
+    "20260902_6": "decision, full-development refit and final lock"
+  },
+  "forbidden": [
+    "temperature",
+    "latitude_or_longitude_predictors",
+    "reach-specific free parameters",
+    "regionalized TN process parameters",
+    "new TN lag",
+    "SAS",
+    "additional groundwater stores",
+    "RiverATLAS flow, runoff, temperature or substitute hydrology",
+    "automatic creation of 20260902_7 or later"
+  ],
+  "development_boundary": {
+    "temporal_folds": [
+      "train 2021; evaluate 2022",
+      "train 2021-2022; evaluate 2023",
+      "train 2021-2023; evaluate 2024"
+    ],
+    "spatial_fits": "all process, transferable-head, station-residual, scaling and initialization choices are refit within each fold",
+    "held_out_TN": "never used for fitting, preprocessing, scaling or model selection",
+    "formal_spatial_layer": "population_transferable"
+  },
+  "stage_status": {
+    "20260902_1": "registered_complete",
+    "20260902_2": "PASS_HYDROATLAS_INGESTION",
+    "20260902_3": "authorized_next",
+    "20260902_4": "pending",
+    "20260902_5": "pending",
+    "20260902_6": "pending"
+  }
+}

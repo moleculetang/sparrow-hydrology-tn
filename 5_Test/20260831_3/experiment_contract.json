@@ -1,0 +1,47 @@
+{
+  "stage": "20260831_3",
+  "status": "REGISTERED_BEFORE_RESULTS",
+  "parent": "20260831_2 conservative R2 TN carrier + MINERAL_LIFETIME",
+  "purpose": "Compare three fitting objectives while holding all process equations, priors, data and folds fixed.",
+  "candidates": ["O0_LOG_T4", "O1_HET_T4", "O2_DYN_BALANCED"],
+  "folds": [
+    {"fold_id": "T1", "train_start": 2021, "train_end": 2021, "test": 2022},
+    {"fold_id": "T2", "train_start": 2021, "train_end": 2022, "test": 2023},
+    {"fold_id": "T3", "train_start": 2021, "train_end": 2023, "test": 2024}
+  ],
+  "objectives": {
+    "O0_LOG_T4": "registered station/tree weighted Student-t likelihood on ln(1+TN)",
+    "O1_HET_T4": "Student-t likelihood on TN mg/L with scale exp(log_sigma)*(0.25+prediction)",
+    "O2_DYN_BALANCED": {
+      "components": {
+        "log_amplitude": 0.45,
+        "regularized_station_nse_loss": 0.30,
+        "adjacent_month_change": 0.15,
+        "station_mean_bias": 0.10
+      },
+      "regularized_nse_variance_floor_log2": 0.01,
+      "normalization": "fold-specific O0-parent training component",
+      "normalization_floor": 0.0001
+    }
+  },
+  "optimizer": {
+    "method": "deterministic warm-start block-coordinate AdamW + strong-Wolfe LBFGS",
+    "initial_v_f": "same-fold locked MINERAL_LIFETIME value",
+    "fixed_v_f_first_block": {"adam_steps": 3, "adam_lr": 0.02, "lbfgs_max_iter": 6},
+    "v_f_profile_offsets_m_per_day": [-0.05, 0.0, 0.05],
+    "v_f_bounds": [0.0, 0.5],
+    "profile_refit_if_changed": {"adam_steps": 2, "adam_lr": 0.01, "lbfgs_max_iter": 4},
+    "single_warm_start": "same-fold prior MINERAL_LIFETIME process and raw station effects",
+    "retry": "one deterministic zero-site retry only after nonfinite result",
+    "same_for_all_candidates": true
+  },
+  "runtime": {"maximum_workers": 6, "threads_per_worker": 2, "maximum_total_rss_gib": 28},
+  "primary_gate_rows": "exclude reach_id=17 and terminal_tree_id=163; preserve both in diagnostics",
+  "eligibility": {
+    "log_rmse": "population and conditional station/tree paired bootstrap CI95 upper < 0.005 relative to O0",
+    "dynamics": "conditional paired station-NSE delta CI95 lower > 0 and population point station-NSE delta >= 0",
+    "selection": "eligible candidate with highest conditional station-median NSE; if multiple candidates are not significantly ordered, declare no unique winner and stop"
+  },
+  "fallback": "If neither alternative is dynamically eligible, retain O0 as the unique objective winner.",
+  "authorized_successor": "20260831_4 only after a unique winner is locked"
+}

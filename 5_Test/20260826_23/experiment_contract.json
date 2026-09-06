@@ -1,0 +1,36 @@
+{
+  "stage": "20260826_23",
+  "status": "registered_before_candidate_training",
+  "parent_role": "GLOBAL_HBV_R0 is an implementation oracle only; every evaluation fold independently refits its parent using permitted training observations.",
+  "models": [
+    "FOLD_PARENT",
+    "DYN_FLUX",
+    "HYD_ROUTE",
+    "JOINT_DYN3P"
+  ],
+  "allowed_parameters": [
+    "eight bounded GLOBAL_HBV parameters refit independently within each fold",
+    "one shared width-8 conserving dynamic flux gate",
+    "bounded gate mixture strength lambda_gate",
+    "bounded component-preserving channel routing scale lambda_channel"
+  ],
+  "forbidden": [
+    "station identity or station-specific correction",
+    "target station or target tree discharge history in spatial prediction",
+    "full-development parameter lock as an evaluation-fold prior center",
+    "unrestricted LSTM or residual total-Q correction",
+    "reservoir equations, temperature, TN, WQD reference discharge",
+    "claims of observed groundwater, surface water, new water, old water or water age"
+  ],
+  "time_contract": {
+    "spinup": "2006-2009",
+    "optimization": "2010-2015",
+    "early_stopping": "2016",
+    "locked_temporal_evaluation": "2017-2018",
+    "full_development_refit_after_structure_lock": "2010-2018",
+    "retrospective": "2019-2022 read only after structure and parameter locks"
+  },
+  "path_contract": "Three operational response paths are authorized only after predictive-need and stability gates; otherwise retrain two paths, otherwise total-only.",
+  "tn_read": false,
+  "candidate_training_performed": false
+}

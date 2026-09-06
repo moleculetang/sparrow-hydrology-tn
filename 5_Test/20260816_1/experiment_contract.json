@@ -1,0 +1,106 @@
+{
+  "scenario_id": "20260816_1",
+  "series_title": "Legacy compartment attribution and progressive constraining",
+  "evidence_order": [
+    "engineering_and_mass",
+    "soil_state",
+    "hydrogeologic_ttd",
+    "groundwater_n_context",
+    "river_tn_oof"
+  ],
+  "frozen_parents": {
+    "flow_model": "E:/SPARROW/5_Test/20260813_54",
+    "hydrology_n_interface": "E:/SPARROW/5_Test/20260814_6",
+    "n_inputs_and_folds": [
+      "E:/SPARROW/5_Test/20260815_1",
+      "E:/SPARROW/5_Test/20260815_2",
+      "E:/SPARROW/5_Test/20260815_3"
+    ],
+    "predictive_reference": "E:/SPARROW/5_Test/20260815_7",
+    "external_evidence_provider_only": "E:/SPARROW/5_Test/20260814_9"
+  },
+  "candidate_space": {
+    "soil_tau_month": [12, 36, 60, 96, 144, 240, 480],
+    "delivery_mu_month": [0, 12, 36, 60, 96, 144, 240],
+    "S1_candidates": 49,
+    "M0_controls": 7,
+    "S0_controls": 7,
+    "total_candidates": 63,
+    "grid_expansion_forbidden": true
+  },
+  "transport_contract": {
+    "T0": "mu=0 uses the frozen Q72 base-response rho=0.85",
+    "T1": "mu>0 replaces T0 and uses rho=mu/(1+mu)",
+    "serial_T1_plus_T0_forbidden": true,
+    "water_gate": "N release is zero when the corresponding Q72 water release is zero",
+    "kernel_hydrogeo_comparison": "ungated",
+    "realized_mass_water_diagnostic": "water_gated"
+  },
+  "nuisance_efficiency_contract": {
+    "parameters": ["eta_quick", "eta_gw"],
+    "scope": "two basin-wide parameters re-estimated independently in every candidate and OOF fold",
+    "training_data": "river TN training period only",
+    "bounds": [0.0, 1.0],
+    "eta_prior_center": 1.0,
+    "eta_ridge_lambda": 1.0,
+    "station_log_effect_ridge_lambda": 12.0,
+    "solver": "scipy.optimize.least_squares(method=trf)",
+    "boundary_tolerance": 0.01,
+    "reach_station_tree_specific_eta_forbidden": true,
+    "external_evidence_for_eta_forbidden": true
+  },
+  "soil_operator_contract": {
+    "formal_pattern": "cropland TN enrichment, not whole-reach total TN",
+    "crop_dominant_fraction_min": 0.70,
+    "noncrop_dominant_fraction_max": 0.30,
+    "minimum_each_class_fraction": 0.10,
+    "minimum_each_class_area_km2": 5.0,
+    "minimum_independent_1km_cells_each_class": 5,
+    "clcd_years": [2010, 2014, 2018],
+    "minimum_eligible_reaches": 30,
+    "minimum_terminal_trees": 4,
+    "total_soil_tn_role": "physical ceiling and descriptive evidence only",
+    "csdl_role": "rank sensitivity only because units are unconfirmed"
+  },
+  "glhymps_contract": {
+    "permeability_field": "logK_Ferr_",
+    "porosity_field": "Porosity_x",
+    "layer": "near_surface_without_permafrost",
+    "native_permeability_encoding": "log10(permeability_m2)*100",
+    "permeability_transform": "k_m2=10**(logK_Ferr_/100)",
+    "porosity_transform": "n=Porosity_x/100",
+    "deep_layer_available": false,
+    "path_operator": "sum(delta_L*n/(K*i))",
+    "reach_weighting": "effective-area uniform-recharge approximation",
+    "hard_contradiction_requires": "agreement of local-gradient and path-gradient methods"
+  },
+  "groundwater_n_contract": {
+    "independent_unit": "aquifer_id_x_decade",
+    "trend_requires": "matched decades within the same aquifer_id",
+    "formal_pattern_excludes_eta_gw": true,
+    "role": "contextual_not_hard_gate",
+    "point_and_decadal_products_are_one_evidence_family": true
+  },
+  "reproduction_gate": {
+    "model": "S1_tau_480m + T0",
+    "expected_oof_keys": 4097,
+    "rtol": 1e-12,
+    "atol": 1e-9,
+    "metric_absolute_tolerance": 1e-12,
+    "failure_status": "STOP_PARENT_NOT_REPRODUCED"
+  },
+  "selection_contract": {
+    "river_tn_development_years": [2016, 2017, 2018, 2019, 2020, 2021],
+    "year_2022_role": "retrospective_locked_period_consistency_only",
+    "river_log_rmse_noninferiority_margin": 0.01,
+    "empty_set_status": "external_constraints_incompatible_or_operator_nonidentifying",
+    "empty_set_predictive_reference": "20260815_7/S1_tau_480m+T0",
+    "gate_relaxation_forbidden": true
+  },
+  "runtime": {
+    "python": "conda --no-plugins run -n sparrow python",
+    "OMP_NUM_THREADS": 1,
+    "MKL_NUM_THREADS": 1,
+    "OPENBLAS_NUM_THREADS": 1
+  }
+}

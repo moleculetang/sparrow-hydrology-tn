@@ -1,0 +1,12 @@
+{
+  "scenario_id": "20260815_6",
+  "parent": "E:\\SPARROW\\5_Test\\20260815_5",
+  "question": "deliver_full_history_same_month_mass_conserving_R0_network_routing",
+  "source_model": "frozen_20260815_4_winner",
+  "delivery_model": "frozen_20260815_5_winner",
+  "routing_model": "R0_same_month_no_loss",
+  "R1_status": "not_run_no_reliable_reach_residence_time_tau_r",
+  "point_source_tn": "missing_not_fabricated",
+  "network_mass_gate": {"max_abs_error_kg_n": 1e-6, "max_relative_error": 1e-14, "both_required": true},
+  "locked_year_2022_role": "state_continuity_only_not_used_for_structure_selection"
+}

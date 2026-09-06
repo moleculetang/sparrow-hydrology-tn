@@ -1,0 +1,92 @@
+{
+  "run_id": "20260807_5",
+  "atomic_question": "Do the frozen Q72 baseline, canonical OOF, topology, and daily/monthly CHM_PRE forcing satisfy the pre-analysis contract?",
+  "runtime": {
+    "sys_executable": "D:\\ProgramData\\anaconda3\\envs\\sparrow\\python.exe",
+    "expected_executable": "D:\\ProgramData\\anaconda3\\envs\\sparrow\\python.exe",
+    "runtime_exact_conda_sparrow": true,
+    "python_version": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+    "packages": {
+      "numpy": "2.4.4",
+      "pandas": "3.0.2",
+      "scipy": "1.17.1",
+      "xarray": "2026.4.0",
+      "pyarrow": "23.0.1",
+      "h5py": "3.16.0",
+      "scikit-learn": "1.8.0"
+    }
+  },
+  "checks": {
+    "runtime_exact_conda_sparrow": true,
+    "canonical_oof_8738_rows": true,
+    "canonical_oof_110_stations": true,
+    "canonical_oof_key_unique": true,
+    "canonical_oof_fold_contract": true,
+    "canonical_oof_positive_finite": true,
+    "fold_sources_reconstruct_canonical_oof": true,
+    "daily_panel_key_unique": true,
+    "daily_panel_complete_2006_2018": true,
+    "daily_panel_finite_nonnegative": true,
+    "daily_monthly_mass_within_tolerance": true,
+    "q72_monthly_ppt_matches_chm_pre": true,
+    "topology_cycle_free": true,
+    "area_closure_within_1pct": true
+  },
+  "passed_count": 14,
+  "check_count": 14,
+  "passed": true,
+  "decision": "GATE_0_PASS_READY_FOR_FORCING_SEMANTIC_AUDIT",
+  "oof_contract": {
+    "canonical_format": "parquet",
+    "canonical_selection_basis": "20260805_2 validation.json and reports/model_audit/gate.json both register 8738 OOF rows",
+    "canonical_rows": 8738,
+    "canonical_stations": 110,
+    "canonical_key_duplicates": 0,
+    "canonical_year_min": 2012,
+    "canonical_year_max": 2018,
+    "canonical_positive_finite": true,
+    "fold_contract_passed": true,
+    "noncanonical_csv_rows": 5796,
+    "noncanonical_csv_stations": 109,
+    "noncanonical_csv_matches_canonical": false,
+    "noncanonical_csv_disposition": "INTERNALLY_INCONSISTENT_NONCANONICAL_CSV; ROOT_CAUSE_NOT_ESTABLISHED; DO_NOT_USE",
+    "reconstructed_from_fold_sources_rows": 8738,
+    "reconstructed_from_fold_sources_matches_canonical": true,
+    "reconstructed_numeric_max_abs_difference": 0.0,
+    "fold_source_sha256": {
+      "fit_2006_2011_eval_2012_2013": "9be6fb0872267c2e79b9310dfa059d205d9d28156276f21686972be75199206b",
+      "fit_2006_2013_eval_2014_2015": "25d380eb85cb072eadc9fea0face385695903cc4d2996c35bfb727ea72cc7335",
+      "fit_2006_2015_eval_2016_2018": "3727075669517f454d050e52bae6a6139fe92b056d449e0ce16a60b938505bac"
+    }
+  },
+  "daily_panel": {
+    "rows": 1092040,
+    "reaches": 230,
+    "days": 4748,
+    "date_min": "2006-01-01",
+    "date_max": "2018-12-31",
+    "key_duplicates": 0,
+    "minimum_valid_grid_fraction": 1.0,
+    "all_ppt_finite_nonnegative": true
+  },
+  "daily_monthly_mass": {
+    "rows": 35880,
+    "all_reach_months_within_tolerance": true,
+    "max_absolute_difference_mm": 6.821210263296962e-13,
+    "max_absolute_relative_difference": 1.2474775394829216e-15
+  },
+  "q72_monthly_forcing_identity": {
+    "rows": 35880,
+    "q72_ppt_matches_processed_monthly": true,
+    "max_absolute_difference_mm": 1.1368683772161603e-13
+  },
+  "area_closure": {
+    "reaches": 230,
+    "topology_cycle_free": true,
+    "all_reaches_close_within_1pct": true,
+    "max_absolute_difference_km2": 1.1641532182693481e-10,
+    "max_absolute_relative_difference": 4.0166193737975457e-16
+  },
+  "manifest_source_count": 23,
+  "blind_period_policy": "2019-2022 not read for statistics, feature selection, or model selection"
+}

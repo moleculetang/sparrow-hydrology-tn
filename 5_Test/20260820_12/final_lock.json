@@ -1,0 +1,17 @@
+{
+  "scenario_id": "20260820_12",
+  "status": "frozen_complete",
+  "decision": "source_timing_not_supported",
+  "selected_mechanism": "UNIFORM_PARENT",
+  "authoritative_outputs": {
+    "E:\\SPARROW\\5_Test\\20260820_12\\reports\\development_mechanism_lock.json": "f9eb71b84dbae8664b8e3d8450754e037367b463ebbb303d6a7b33d063b3f459",
+    "E:\\SPARROW\\5_Test\\20260820_12\\reports\\full_development_parameter_lock.json": "c093dbf4294c7d8ee1fba86ae33de5a178a8e717c01c31a64d956922e4a9e130",
+    "E:\\SPARROW\\5_Test\\20260820_12\\reports\\source_availability_decision.json": "dd4a6b10c70a6034bcd31a9779faacc277f4046bf44c3c56b51cb8b99cefdcd2",
+    "E:\\SPARROW\\5_Test\\20260820_12\\reports\\technical_report.md": "7481879dd117957fa59ba2f73355f30b0c409a599daf4427cde542b3c9cfd3a6",
+    "E:\\SPARROW\\5_Test\\20260820_12\\outputs\\final_performance_metrics.parquet": "2a1e43b9429b92ff40c89d06ac344f62477a3c169379f75a74625b14340dd61b",
+    "E:\\SPARROW\\5_Test\\20260820_12\\outputs\\registered_month_direction_metrics.parquet": "a65b7f648ff812a5fe55c7ebf618c0e6ee2083d060fb5a259f314c50d837f4eb",
+    "E:\\SPARROW\\5_Test\\20260820_12\\outputs\\availability_eta_compensation_diagnostic.parquet": "869509939f1903438f970ed52ddce6b83ba1a2fc82a0a383c99e0fce9d62cad7"
+  },
+  "A1": "closed_pending_new_registered_hypothesis",
+  "A2": "closed"
+}

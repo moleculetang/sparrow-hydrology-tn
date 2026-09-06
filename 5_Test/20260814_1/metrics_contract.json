@@ -1,0 +1,12 @@
+{
+  "version": "2026-08-14-execution",
+  "paired_bootstrap": {"replicates": 10000, "seed": 20260814, "ci": "percentile_95", "flow_cluster": "station_id_across_all_outer_folds", "spatial_cluster": "terminal_tree_across_all_folds"},
+  "core_improvement_gates": {
+    "lowflow_log_rmse": "point_improves_in_at_least_2_of_3_folds_and_ci95_upper_of_candidate_minus_H0_below_zero",
+    "tail_log_rmse": "point_improves_in_at_least_2_of_3_folds_and_ci95_upper_of_candidate_minus_H0_below_zero"
+  },
+  "overall_protection": {"raw_nse_delta_min": -0.005, "log_nse_delta_min": -0.005, "abs_pbias_max_worsening_percentage_points": 3.0},
+  "sequential_ranking": ["tail_log_rmse", "lowflow_log_rmse", "log_nse", "raw_nse", "groundwater_if_tied", "prefer_main_if_tied"],
+  "groundwater_status": ["identifying", "supportive", "non_identifying", "contradictory"],
+  "performance_type": ["fixed_structure_oof", "conditional_parameter_oof_after_structure_selection", "final_refit_in_development", "locked_time_confirmation"]
+}

@@ -1,0 +1,73 @@
+{
+  "run_id": "20260808_4",
+  "decision": "DAILY_TO_MONTHLY_PREMATURE_AGGREGATION_HYPOTHESIS_FALSIFIED",
+  "daily_state": "NOT_SUPPORTED",
+  "checks": {
+    "D1_pooled_log_nse_gain_ge_0_01": false,
+    "D1_all_folds_nonnegative": true,
+    "D1_at_least_two_folds_positive": true,
+    "D1_above_shuffle_nse_q95": true,
+    "D1_randomization_p_nse_le_0_05": true,
+    "D1_better_than_Dflat": true,
+    "legacy_at_least_14_improved": true,
+    "legacy_improvement_above_shuffle_q95": false,
+    "legacy_randomization_p_le_0_05": false,
+    "legacy_lowflow_log_rmse_gain_ge_5pct": false,
+    "next_month_lowflow_abs_bias_toward_zero": true,
+    "residual_lag1_abs_acf_improved": false,
+    "residual_at_least_two_of_lag_1_3_6_improved": false,
+    "highflow_log_rmse_protected": true,
+    "major_station_log_rmse_protected": true,
+    "absolute_pbias_protected": true
+  },
+  "core_pass": false,
+  "lowflow_pass": false,
+  "memory_pass": false,
+  "protection_pass": true,
+  "metrics": {
+    "D0_NSE_log": 0.9286917294414936,
+    "Dflat_NSE_log": 0.9288236505522747,
+    "D1_NSE_log": 0.9302801341903258,
+    "D1_log_nse_gain_vs_D0": 0.0015884047488322617,
+    "shuffle_NSE_log_q95": 0.9291688260165912,
+    "randomization_p_NSE_log": 0.01,
+    "legacy_improved_count": 19,
+    "legacy_evaluable_count": 27,
+    "legacy_improved_fraction": 0.7037037037037037,
+    "shuffle_legacy_improvement_q95": 0.7407407407407407,
+    "randomization_p_legacy_improvement": 0.22,
+    "legacy_lowflow_log_rmse_relative_gain": 0.014250608571579448,
+    "next_month_D0_median_abs_log_bias": 0.33654822640734894,
+    "next_month_D1_median_abs_log_bias": 0.3155266304515445,
+    "highflow_log_rmse_relative_degradation": -0.02229228993194535,
+    "major_station_log_rmse_relative_degradation": 0.001364780749561065,
+    "absolute_pbias_degradation_percentage_points": 1.6714341160833488
+  },
+  "fold_log_nse": [
+    {
+      "fold_id": "fit_2006_2011_eval_2012_2013",
+      "D0_NSE_log": 0.9350051820810699,
+      "D1_NSE_log": 0.935535668282231,
+      "delta": 0.00053048620116114
+    },
+    {
+      "fold_id": "fit_2006_2013_eval_2014_2015",
+      "D0_NSE_log": 0.9358216212602524,
+      "D1_NSE_log": 0.9379148237020548,
+      "delta": 0.002093202441802444
+    },
+    {
+      "fold_id": "fit_2006_2015_eval_2016_2018",
+      "D0_NSE_log": 0.9194144238251671,
+      "D1_NSE_log": 0.9213424625140246,
+      "delta": 0.0019280386888574919
+    }
+  ],
+  "acf_improved": {
+    "1": false,
+    "3": true,
+    "6": false
+  },
+  "interpretation_boundary": "Simulated states are model sensitivities, not observed storage. No authoritative daily ET was used.",
+  "stop_rule": "No second daily-state parameter, feature, storage, or target-station search is permitted after this terminal result."
+}

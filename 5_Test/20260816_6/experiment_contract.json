@@ -1,0 +1,21 @@
+{
+  "scenario_id": "20260816_6",
+  "purpose": "conditional terminal-tree delivery regionalization",
+  "preconditions": [
+    "soil_memory_status == bounded",
+    "nonempty globally admissible S1 parameter region",
+    "fast <= medium <= slow signal is stable for every soil-admissible tau",
+    "tree signal is directionally stable under local-gradient and path-gradient GIS-TTD"
+  ],
+  "tree_signal_rule": {
+    "best_mu_basis": "terminal-tree OOF log-RMSE among globally admissible mu levels",
+    "required_spearman_each_tau_and_gradient": 0.3,
+    "required_group_medians": "fast <= medium <= slow",
+    "minimum_local_path_group_agreement_fraction": 0.75
+  },
+  "not_run_status": "soil_uncertainty_confounded_not_run or hydrogeo_or_tree_signal_nonidentifying_not_run",
+  "regional_mu_constraint": "fast <= medium <= slow",
+  "registered_mu_only": true,
+  "eta_rule": "same basin-wide eta_quick/eta_gw refitted in every candidate and fold",
+  "locked_2022_excluded": true
+}

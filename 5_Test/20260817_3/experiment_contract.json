@@ -1,0 +1,17 @@
+{
+  "scenario_id": "20260817_3",
+  "purpose": "historical_N_cohort_age_accounting",
+  "parent": "20260817_2",
+  "history": "1961-2022 real monthly post-ledger N inputs",
+  "pre1961": "separate equilibrium cohort with lower-bound age only",
+  "age_outputs": [
+    "structural_routed_n_age",
+    "eta_weighted_predicted_n_age"
+  ],
+  "eta_fit_support": "2016-2021 development only",
+  "locked_year": 2022,
+  "locked_year_refit_forbidden": true,
+  "station_readout_age_claim": "stops before station effects because they are not mass-decomposable",
+  "age_unit": "month",
+  "eta_boundary_confounding_role": "diagnostic_only_not_hard_gate"
+}

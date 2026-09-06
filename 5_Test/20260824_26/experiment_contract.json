@@ -1,0 +1,25 @@
+{
+  "stage": "20260824_26",
+  "parent": "20260824_25 PASS_STAGE25_READY_FOR_20260824_26",
+  "hypothesis": "A frozen-parameter mixed-forcing reconstruction can provide usable 1961-2005 hydrologic states without TN calibration.",
+  "downloads": [
+    {"year": 1961, "file_id": "e51b3a83-2b68-4869-a5e1-7ee4b2598196", "size_bytes": 672795741},
+    {"year": 1962, "file_id": "9579c616-ebf0-43ff-8a24-6944fa7378f9", "size_bytes": 672795741}
+  ],
+  "formal_hydrology": {
+    "1961_2009": "state-continuous reconstruction with CHM daily precipitation, corrected CMFD monthly FAO56 PET, and frozen canonical parameters",
+    "2010_2024": "exact 20260828_9 canonical values after the canonical spin-up period"
+  },
+  "handoff_contract": "Compare reconstructed and canonical states at the same 2010-01 timestamp; do not compare consecutive 2009-12 and 2010-01 states as if a normal monthly transition were a discontinuity.",
+  "hydrology_only_overlap": {"pet_correction_development": "2006-2015", "validation": "2016-2024"},
+  "forbidden": [
+    "TN reading during hydrology fitting or bridge selection",
+    "hydrology parameter refit",
+    "three-hour CMFD historical bulk download",
+    "Zenodo bulk download after failed speed preflight",
+    "silent state reset at 2006",
+    "Andreadis reference discharge"
+  ],
+  "memory_contract_gib": {"warning": 12, "hard_stop": 16},
+  "authorized_successor": "20260824_27"
+}

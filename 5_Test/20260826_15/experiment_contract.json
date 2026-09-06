@@ -1,0 +1,8 @@
+{
+  "stage": "20260826_15",
+  "status": "PASS_MULTISCALE_STATIC_ATTRIBUTE_QA",
+  "candidate_training_performed": false,
+  "discharge_read": false,
+  "TN_read": false,
+  "authorized_successor": "20260826_16"
+}

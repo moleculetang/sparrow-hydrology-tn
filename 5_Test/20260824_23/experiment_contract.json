@@ -1,0 +1,10 @@
+{
+  "stage": "20260824_23",
+  "parent": "20260824_21 P1; 20260824_22 manure legacy excluded as boundary-confounded",
+  "operator": "log1p(TN)_regionalized = log1p(TN)_P1 + intercept + X_reach beta",
+  "features": ["cropland_fraction", "agricultural_n_intensity", "soc_0_30cm", "clay_0_20cm", "dem_slope", "canonical_fast_fraction", "logQ_variability", "lower_storage_signature"],
+  "identity_forbidden": ["station_key", "reach_id as a predictor", "terminal_tree_id"],
+  "inference": "Gaussian hierarchical MAP with beta SD=0.25 and exact Gaussian/Laplace covariance; refit inside every temporal/LORO/LOTO/natural-expansion fold",
+  "primary_gates": ["temporal station-macro", "nested LORO", "nested LOTO", "2021 natural expansion", "station-blind spatial skill"],
+  "authorized_successor": "20260824_24"
+}

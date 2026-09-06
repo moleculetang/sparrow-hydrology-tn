@@ -1,0 +1,28 @@
+{
+  "stage": "20260828_27",
+  "title": "1961-2025 locked hydrology forcing acquisition and extension registry",
+  "status": "REGISTERED",
+  "objective": "Extend the accepted state-consistent Reach and reservoir hydrology interface to 1961-2025 without refitting model parameters.",
+  "authoritative_precipitation": "CHM_PRE V2 daily 1961-2025",
+  "authoritative_pet": {
+    "1961_2024": "CMFD V2.0 temp/pres/shum/wind/srad/lrad, preserving the accepted FAO-56 calculation",
+    "2025": "ERA5-Land hourly meteorology harmonized to CMFD on a locked overlap period"
+  },
+  "allowed": [
+    "download and integrity validation of frozen meteorological forcing",
+    "source harmonization using development-only overlap years",
+    "historically correct reservoir activation dates",
+    "periodic state spin-up",
+    "forcing-driven model execution with frozen parameters"
+  ],
+  "forbidden": [
+    "hydrology parameter refitting",
+    "reservoir parameter refitting",
+    "discharge observations in source or model selection",
+    "TN observations",
+    "output-only fast/slow reallocation",
+    "embedding API credentials in repository files or logs"
+  ],
+  "runtime": "D:/ProgramData/anaconda3/envs/sparrow/python.exe",
+  "successor_rule": "Use the next free 20260828_* folder; every repair or new experiment requires its own contract before result access."
+}

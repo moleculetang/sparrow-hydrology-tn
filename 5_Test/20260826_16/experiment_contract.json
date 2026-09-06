@@ -1,0 +1,30 @@
+{
+  "stage": "20260826_16",
+  "registered_before_training": true,
+  "models": {
+    "DPL_HBV_LOCAL_STATIC": "7->16->8",
+    "DPL_HBV_MULTISCALE_STATIC": "22->16->8"
+  },
+  "seeds": [
+    260826,
+    260827,
+    260828
+  ],
+  "optimizer": "AdamW",
+  "learning_rate": 0.01,
+  "weight_decay": 0.0001,
+  "max_epochs": 120,
+  "minimum_epochs": 30,
+  "early_stopping_patience": 20,
+  "gradient_clip": 1.0,
+  "raw_offset_bound": 1.5,
+  "prior_weight": 0.002,
+  "prior_sigma": 0.5,
+  "device": "CPU selected by pre-registered actual-recursion benchmark; GPU retained for later scalable experiments",
+  "training": "2010-2015",
+  "early_stopping": "2016",
+  "locked_temporal_evaluation": "2017-2018",
+  "retrospective_2019_2022_read": false,
+  "TN_read": false,
+  "candidate_gate": "at least 2/3 seeds: tree-block log-RMSE CI95 upper<0.01, median NSE drop<=0.02, median abs PBIAS worsening<=2 points, high and low log-RMSE CI95 upper<0.01, warmup-vs-periodic RMSE<=1e-4, boundary fraction<=0.10"
+}

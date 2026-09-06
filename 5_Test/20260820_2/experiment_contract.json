@@ -1,0 +1,20 @@
+{
+  "stage": "20260820_2",
+  "water_source": "Q72 only",
+  "segment_flow_formula": "Q_upstream + x_midpoint*Q_local",
+  "full_exposure": "sum(segment_length/segment_velocity)",
+  "local_exposure": "geometric_midpoint_to_outlet segment integration",
+  "wqd_reference_discharge_used": false,
+  "manning_n": [
+    0.025,
+    0.035,
+    0.05
+  ],
+  "geometry": [
+    "central",
+    "lower95",
+    "upper95"
+  ],
+  "main": "central_n0035",
+  "low_ab_subset": "pre-aquatic local N mass and cumulative split weighted F_AB <= 0.05"
+}

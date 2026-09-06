@@ -1,0 +1,46 @@
+{
+  "stage": "20260828_14",
+  "title": "Conserving reservoir state operator and synthetic verification",
+  "status": "AUTHORIZED_SYNTHETIC_ONLY",
+  "formal_fit_authorized": false,
+  "required_predecessor": "20260828_13 reservoir preflight",
+  "parent_hydrology": {
+    "release_stage": "20260828_10",
+    "daily_product": "E:\\SPARROW\\5_Test\\20260828_9\\outputs\\canonical_reach_daily_2006_2024.parquet",
+    "sha256": "a8c2b57d35de374a57798ab3e837dbf5c75cbd644275b6e52f888b20e16ca471",
+    "mutation": "forbidden"
+  },
+  "purpose": "Implement and verify a daily storage-release operator that conserves total water, fast/slow source tracers and an explicit residence-time age moment.",
+  "hard_constraints": [
+    "one storage state per reservoir entity",
+    "one release location per reservoir entity",
+    "nonnegative storage and fluxes",
+    "storage never exceeds capacity after spill",
+    "fast-origin, slow-origin and direct-water tracers close within scale-aware numerical tolerance",
+    "each authorized reservoir control edge must equal the locked Reach downstream edge",
+    "reservoir cascades follow the real Reach graph even when ordinary Reaches separate two reservoirs",
+    "upstream reservoir release enters a downstream reservoir exactly once",
+    "disabled operator exactly recovers the no-reservoir routing parent"
+  ],
+  "assumptions": {
+    "mixing": "complete mixing of conservative water-source tracers within each reservoir; fast and slow labels denote origin, not separate outlet pathways",
+    "age": "old stock ages one day, new inflow and precipitation enter at age zero, then E, W, controlled release and spill remove the mixed stock; the saved value is the first moment, not a full age distribution",
+    "precipitation": "separate direct-water tracer, not silently assigned to fast or slow water",
+    "water_level": "not converted to storage without a registered elevation-storage curve",
+    "within_step_flux_order": "evaporation, withdrawal above its registered intake floor, controlled release above dead storage, then unlimited emergency spill",
+    "spill": "unlimited emergency spill is a structural overflow safeguard; flood-routing claims require a later registered spillway-capacity module"
+  },
+  "seasonal_target_curve": {
+    "form": "low-dimensional periodic baseline plus one smooth flood-season drawdown window",
+    "free_monthly_coefficients": 0,
+    "calendar_rule": "month-day phase is preserved across leap and non-leap years",
+    "interpretation": "literature constrains phase, width and magnitude priors; it does not hard-code monthly releases"
+  },
+  "forbidden": [
+    "read streamflow or storage observations",
+    "fit parameters",
+    "route a reservoir twice because it spans multiple Reach features",
+    "re-split reservoir release by the current inflow fast fraction"
+  ],
+  "success": "All deterministic synthetic tests pass with absolute tolerance 1e-6 m3 plus relative tolerance 1e-12, including a 1e10 m3 large-reservoir test."
+}

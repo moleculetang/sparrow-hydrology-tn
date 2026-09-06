@@ -1,0 +1,21 @@
+{
+  "stage": "20260824_20",
+  "hypothesis": "The loss of TN skill can be localized to monthly source timing, fast/slow pathway scaling, C-Q nonlinearity, or a generic fixed source-availability memory rather than to the locked hydrology or an optimizer failure.",
+  "parent": "20260824_19 corrected M3 river-channel baseline",
+  "formal_domain": "river_channel",
+  "development_folds": [[2021, 2022], [2021, 2022, 2023], [2021, 2022, 2023, 2024]],
+  "registered_binary_factors": {
+    "calendar": ["MIRCA_monthly", "reach_year_uniform_mass_preserving"],
+    "pathway_readout": ["implicit_equal_unit", "eta_fast_eta_slow_0_1"],
+    "cq_hinge": ["off", "reach_centered_logQ_low_high"],
+    "generic_tn_memory": ["off", "fixed_geometric_mu_36_month"]
+  },
+  "always_refit_per_fold": ["alpha_D", "beta_D", "v_f_m_per_day"],
+  "selection_layer": "P1 transferable only",
+  "p2": "station residual ridge lambda=12 diagnostic only; forbidden for structure selection",
+  "optimizer_audit": ["SciPy L-BFGS-B analytic gradient", "float64 PyTorch AdamW plus LBFGS"],
+  "generic_memory_claim_boundary": "A positive result indicates source-availability memory only; it is not identified as groundwater travel time.",
+  "forbidden": ["temperature", "WWTP", "SAS", "groundwater age selection", "second groundwater store", "reservoir operator", "hydrology refit", "station or reach identity in P1"],
+  "memory_contract_gib": {"warning": 12, "hard_stop": 16},
+  "authorized_successor": "20260824_21"
+}

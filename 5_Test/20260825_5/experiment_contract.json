@@ -1,0 +1,56 @@
+{
+  "stage": "20260825_5",
+  "status": "registered_before_execution",
+  "title": "MPR-lite complete-terminal-tree spatial evaluation",
+  "parent": "20260825_4 GLOBAL_HBV_R0",
+  "development_discharge": "2010-2018 only",
+  "locked_discharge_forbidden": "2019-2022 discharge file must not be opened",
+  "fold_unit": "one complete observed terminal tree",
+  "observed_terminal_tree_count": 8,
+  "models": {
+    "FOLD_GLOBAL_HBV": "eight global raw HBV parameters refitted without the target tree",
+    "FOLD_MPR_LITE": "the same eight intercepts plus exactly one registered static-attribute slope per parameter"
+  },
+  "mpr_attribute_edges": {
+    "fc_mm": "log full-profile SoilGrids available water capacity",
+    "beta": "top-30-cm SoilGrids bulk-density low-retention proxy",
+    "lp": "log 2010-2018 PET/precipitation aridity",
+    "perc_mm_day": "GLHYMPS log10 permeability",
+    "uzl_mm": "log available-water-capacity divided by slope",
+    "tau0_day": "log slope",
+    "delta_tau10_day": "slope-permeability interaction",
+    "delta_tau21_day": "permeability-porosity diffusivity index"
+  },
+  "fold_refit_contract": [
+    "delete every discharge observation in the target terminal tree",
+    "refit the eight-parameter global HBV from the fixed physical prior",
+    "recompute attribute mean and standard deviation excluding all Reaches in the target tree",
+    "fit all eight MPR slopes using only remaining-tree discharge",
+    "re-evaluate no-refit R0 versus R1 routing using only remaining-tree discharge",
+    "predict the deleted tree with static attributes, forcing, topology and geometry only"
+  ],
+  "objective": "terminal-tree equal, then station equal ln(1+Q) MSE + 0.1 volume loss + 0.002 Gaussian raw prior",
+  "raw_bounds": {
+    "intercept": [-5.5, 5.5],
+    "slope": [-1.5, 1.5]
+  },
+  "spatial_noninferiority": {
+    "delta": "held-out log-RMSE(MPR) - held-out log-RMSE(fold-global)",
+    "station_bootstrap_CI95_upper_lt": 0.01,
+    "terminal_tree_bootstrap_CI95_upper_lt": 0.01,
+    "monthly_station_median_absolute_PBIAS_worsening_max_percentage_points": 2.0
+  },
+  "selection": "MPR advances if all spatial noninferiority gates pass and fewer than two folds are raw-boundary-confounded; otherwise fold-global advances to the identifiability audit",
+  "routing": "R0 is the registered parent. In every fold, R1 is tested without land refit and selected only if training-only station and tree paired CI95 upper bounds are both <0 and monthly absolute PBIAS does not worsen by >1 percentage point.",
+  "forbidden": [
+    "station identity or station-specific parameter",
+    "coordinates or graph eigenvectors controlling land parameters",
+    "target-tree discharge, hydrograph separation, or Q-derived signature in fitting or selection",
+    "TN observations",
+    "2019-2022 discharge",
+    "reservoir equation",
+    "wqd_reference_discharge_m3_s",
+    "wqd_upstream_area_km2"
+  ],
+  "claim_boundary": "The experiment tests spatial transfer of total flow and model response components. It does not observe groundwater, new/old water or water age."
+}

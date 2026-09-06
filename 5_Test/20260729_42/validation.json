@@ -1,0 +1,17 @@
+{
+  "run_id": "20260729_42",
+  "runtime": {
+    "environment_name": "sparrow",
+    "expected_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "sys_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "sys_executable": "D:\\ProgramData\\anaconda3\\envs\\sparrow\\python.exe",
+    "conda_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "conda_default_env": "sparrow"
+  },
+  "all_required_artifacts_exist": true,
+  "gate_passed": true,
+  "passed_count": 18,
+  "check_count": 18,
+  "decision": "FREEZE_Q72_B0_BASELINE",
+  "passed": true
+}

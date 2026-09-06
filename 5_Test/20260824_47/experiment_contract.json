@@ -1,0 +1,29 @@
+{
+  "stage": "20260824_47",
+  "status": "REGISTERED_BEFORE_RESULTS",
+  "folds": {
+    "LORO": "309 T1/T2/T3 reach holdouts; remove the entire evaluation reach from training TN and refit all process and remaining-site parameters",
+    "LOTO": "21 T1/T2/T3 terminal-tree holdouts; remove the entire evaluation tree from training TN and refit all process and remaining-site parameters",
+    "FIRST_OBSERVED_2021": "train only 2016-2020 established stations and evaluate stations first observed in 2021"
+  },
+  "models": ["PARENT", "REG3_OBSERVATION", "DYN_HYDRO_DELIVERY", "MINERAL_LIFETIME", "AQ_SIZE"],
+  "optimizer": {
+    "LORO_LOTO": "matching temporal-fold solution as numerical start followed by 35-step strong-Wolfe LBFGS on the reduced training data",
+    "FIRST_OBSERVED_2021": "three generic starts, 60 AdamW plus 80 LBFGS; no 2021-derived initialization",
+    "objective": "locked U3_P90_S90"
+  },
+  "prediction": {
+    "formal_layer": "population_transferable",
+    "conditional": "unavailable for every held-out station; must equal population numerically where materialized",
+    "baseline": "training-station-equal mean of log(1+TN)"
+  },
+  "gates": {
+    "relative": "LORO and LOTO paired block bootstrap CI95 upper candidate-minus-parent macro log-RMSE < 0.005",
+    "absolute": "LORO and LOTO station-blind Skill_log bootstrap CI95 lower > 0",
+    "boundary": "extra-parameter boundary frequency <=5% separately in LORO and LOTO",
+    "natural_expansion": "reported stress test, not a standalone promotion gate",
+    "tree_163": "open-lake-center diagnostic domain excluded from the formal river gate"
+  },
+  "checkpoint": "atomic per model after every completed fold; safe resume by fold_id",
+  "successor_rule": "Only candidates passing both relative and absolute LORO/LOTO gates remain spatially eligible."
+}

@@ -1,0 +1,31 @@
+{
+  "run_id": "20260729_23",
+  "required_parent_action": "TEST_Q78_NAT_GROUNDWATER_BASEFLOW_SIGNATURE_WITH_PML_AET_REFERENCE",
+  "actual_period": [2006, 2018],
+  "spinup_period": [2006, 2011],
+  "spinup_cycles": 10,
+  "expected_reaches": 230,
+  "expected_reach_months": 35880,
+  "minimum_valid_days_per_year": 300,
+  "minimum_valid_years_per_station": 5,
+  "minimum_eligible_natural_stations": 60,
+  "eckhardt_primary": {"alpha": 0.925, "bfi_max": 0.8},
+  "eckhardt_sensitivity": {
+    "alpha": [0.9, 0.925, 0.95],
+    "bfi_max": [0.7, 0.8, 0.9]
+  },
+  "thresholds": {
+    "median_absolute_bfi_difference_max": 0.2,
+    "fraction_absolute_bfi_difference_le_0_25_min": 0.6,
+    "spatial_bfi_spearman_min": 0.3,
+    "median_seasonal_correlation_min": 0.5,
+    "median_peak_month_circular_difference_max": 2.0,
+    "median_lowflow_persistence_absolute_difference_max": 0.2
+  },
+  "fixed_excluded_stations": ["劳村站", "富罗（二）站", "隆安站", "灵渠（三）站", "马口站"],
+  "protected_station": "石角站",
+  "next_action_if_pass": "Q78_NAT_GROUNDWATER_BASEFLOW_SIGNATURE_ACCEPTED",
+  "next_action_if_fail": "STOP_CURRENT_Q78_NAT_GROUNDWATER_PARAMETERIZATION_AND_DIAGNOSE_FAILURE_MODES",
+  "next_action_if_data_fail": "STOP_AT_DAILY_DISCHARGE_DATA_SUFFICIENCY_GATE"
+}
+

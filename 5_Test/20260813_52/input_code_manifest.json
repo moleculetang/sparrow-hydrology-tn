@@ -1,0 +1,303 @@
+{
+  "root": "E:\\SPARROW\\5_Test\\20260813_52",
+  "python": "D:\\ProgramData\\anaconda3\\envs\\sparrow\\python.exe",
+  "sys_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+  "conda_default_env": "sparrow",
+  "platform": "Windows-10-10.0.26100-SP0",
+  "manifest_exclusions": [
+    "input_code_manifest.json (self-reference)",
+    "final_delivery_audit.json (written after this manifest)"
+  ],
+  "files": [
+    {
+      "path": "completion_audit.json",
+      "size": 5581,
+      "sha256": "07dc188eefc8d6b96d854011bc995ab07f5cb140d0b6e5436c8c0e6346668841"
+    },
+    {
+      "path": "coverage_performance_tradeoff.csv",
+      "size": 1129,
+      "sha256": "bc83dd990070254daa0f5e1368e74a2e401fbc858ce69348512d73157b53648a"
+    },
+    {
+      "path": "deterministic_reproduction_gate.json",
+      "size": 853,
+      "sha256": "32e32ce0ba503b9562abce46a7f7651c282705f0e51c18bfa9bac0cc4c945bb4"
+    },
+    {
+      "path": "experiment_contract.md",
+      "size": 1381,
+      "sha256": "6e01505c95a30fbb02db84df15c50bf089e3c22d5cf242c77996ee7c01f8c2d6"
+    },
+    {
+      "path": "figure_qa.md",
+      "size": 677,
+      "sha256": "6d140d2e63b571bd3cb543eee36e1c2c8a742d6ab504a87b7c588cf4bd78aba8"
+    },
+    {
+      "path": "figures/figure_1_station_combination_sensitivity.pdf",
+      "size": 17089,
+      "sha256": "4bcf2ab4635ba8d4a8803dd77281648739023064dabf25b44a984e5dd33c00f0"
+    },
+    {
+      "path": "figures/figure_1_station_combination_sensitivity.png",
+      "size": 132626,
+      "sha256": "b4c19b67ddd86ab5d310fbc49dff0743ef79d23c84368b3a0ec72af46d8a3a9d"
+    },
+    {
+      "path": "figures/figure_1_station_combination_sensitivity.svg",
+      "size": 38542,
+      "sha256": "739641da199ea30ff84a09790c57e7b0159bdcdb7edb01b2fe227693b283a8c9"
+    },
+    {
+      "path": "figures/figure_1_station_combination_sensitivity.tiff",
+      "size": 27018890,
+      "sha256": "36f71556775547cbcf1793c05571e7c911b705046f15fea9e013f79daa46ddee"
+    },
+    {
+      "path": "figures/figure_2_problem_station_scenario_heatmap.pdf",
+      "size": 35188,
+      "sha256": "1960314284ab7cf1ed1ef301c382494ba73bdf67a04545837467e0c4ba13c9dc"
+    },
+    {
+      "path": "figures/figure_2_problem_station_scenario_heatmap.png",
+      "size": 195076,
+      "sha256": "78d2d7533084a63f541339b2ae58dec647e0af483ca143096aa90f6218a9fb72"
+    },
+    {
+      "path": "figures/figure_2_problem_station_scenario_heatmap.svg",
+      "size": 92947,
+      "sha256": "20f98c2593c4066728f1c065f4e3e3ba7db1c2108e1ae6ca30b3ac4cf210e1d8"
+    },
+    {
+      "path": "figures/figure_2_problem_station_scenario_heatmap.tiff",
+      "size": 51678482,
+      "sha256": "71edbdd2c96a145b8ef53c147ed2cbddd60afcc0136c2e3539dd896a8fe9ed87"
+    },
+    {
+      "path": "figures/figure_3_shijiao_protected_hydrograph.pdf",
+      "size": 18641,
+      "sha256": "1a3bcecea3de1228d6eb03eab0ecf91e5930f17272dda082c4243a9c2cc2c2c9"
+    },
+    {
+      "path": "figures/figure_3_shijiao_protected_hydrograph.png",
+      "size": 324209,
+      "sha256": "6fce4a6be7735e03fe76989cfe2d549db7cede1c03daaeabad546cdb558d615f"
+    },
+    {
+      "path": "figures/figure_3_shijiao_protected_hydrograph.svg",
+      "size": 28046,
+      "sha256": "fe15e8ed19ac7a90bfc2abb7b1c778c11d3658584a4131378e7e33b739c7e7b2"
+    },
+    {
+      "path": "figures/figure_3_shijiao_protected_hydrograph.tiff",
+      "size": 49666130,
+      "sha256": "a34142053593d0d8a174e7b92dbd0d7ab0dc896218e678f8f938eae1ac48c93f"
+    },
+    {
+      "path": "final_2019_2022_predictions.parquet",
+      "size": 1725984,
+      "sha256": "789d9bb13b18d453a9399e593ecea071df271164ef8d45b9dc5aba8da1b9a142"
+    },
+    {
+      "path": "final_oof_predictions.parquet",
+      "size": 2975921,
+      "sha256": "6712d2f265532b759505d3a9de2d4112f033961be43221fe7b42971ba373bccc"
+    },
+    {
+      "path": "initial_matrix_gate.json",
+      "size": 185,
+      "sha256": "c7540e0b565eeae2b40bde830675d8ff8555c553f79aaf99847f1ecb037ffd05"
+    },
+    {
+      "path": "negative_station_generation_log.csv",
+      "size": 7919,
+      "sha256": "e985c8293b01f3738ebbbadb2b19329f187f736da795921deb90f89bba084d34"
+    },
+    {
+      "path": "preparation_gate.json",
+      "size": 298,
+      "sha256": "96127e1c6e9c326376b6e982349761563120a6f827b12ddf526408c60ac03dc7"
+    },
+    {
+      "path": "README.md",
+      "size": 3784,
+      "sha256": "4c3122aaf526b63665e7bc010998c52832bb46924dc9828b08f8a93f32094ea4"
+    },
+    {
+      "path": "scenario_exclusion_registry.csv",
+      "size": 1231,
+      "sha256": "099aad84aa649fa87326a4f32d5bc33ad13715fe1cb3f3fcdffee02cf4e527fd"
+    },
+    {
+      "path": "scenario_fold_metrics.csv",
+      "size": 3860,
+      "sha256": "266dcf0e42b68077c7b917c0b947e17b55c3b6f063e62bad43df4ed8a6876bd7"
+    },
+    {
+      "path": "scenario_metrics.csv",
+      "size": 3775,
+      "sha256": "dc1a2e0876966a1be8bfee35f78c54faab2c33b9335c9513700ece0dc818177e"
+    },
+    {
+      "path": "scenario_station_metrics.csv",
+      "size": 300080,
+      "sha256": "9f091e4dffdcae52d0a118e529b4785e717f350ba8d1735940c6cafabd223a93"
+    },
+    {
+      "path": "scenarios/S000/inputs/excluded_stations.csv",
+      "size": 23,
+      "sha256": "6c4337c2e5203d0403d2df058dddffa8f19a9a76730e86387d1e96a2f2bd200b"
+    },
+    {
+      "path": "scenarios/S000/inputs/parent_indata.parquet",
+      "size": 5074172,
+      "sha256": "7eecf39cb6a22ea31faf0de5461ea61e33258d61be395221a269ac7d4fa831ad"
+    },
+    {
+      "path": "scenarios/S000/inputs/topology/topology_edges.csv",
+      "size": 19412,
+      "sha256": "24c22d4b2e01106c9ce0d3a8bd3d8213517890998eb38ef18805fb70e5423dc8"
+    },
+    {
+      "path": "scenarios/S001/inputs/excluded_stations.csv",
+      "size": 216,
+      "sha256": "8ad8b5123a4db9239cd5bb60ba1d3b9fbd1af9a5f1ccb10e2cb524a24fd1190c"
+    },
+    {
+      "path": "scenarios/S001/inputs/parent_indata.parquet",
+      "size": 5057167,
+      "sha256": "5894c9c3277042b5184230d4930e1920acc6e0a47f5cdc7ed956a8a48b679146"
+    },
+    {
+      "path": "scenarios/S001/inputs/topology/topology_edges.csv",
+      "size": 19412,
+      "sha256": "24c22d4b2e01106c9ce0d3a8bd3d8213517890998eb38ef18805fb70e5423dc8"
+    },
+    {
+      "path": "scenarios/S010/inputs/excluded_stations.csv",
+      "size": 97,
+      "sha256": "3c4364f0c9481b7378ee0438163c962b3b86db0913032b9ebc9e0e44bb58e5ad"
+    },
+    {
+      "path": "scenarios/S010/inputs/parent_indata.parquet",
+      "size": 5070825,
+      "sha256": "12343b7fe6190ce918b1e48322fc1d609486dc6aaeb7513b49bcb7930423e055"
+    },
+    {
+      "path": "scenarios/S010/inputs/topology/topology_edges.csv",
+      "size": 19412,
+      "sha256": "24c22d4b2e01106c9ce0d3a8bd3d8213517890998eb38ef18805fb70e5423dc8"
+    },
+    {
+      "path": "scenarios/S011/inputs/excluded_stations.csv",
+      "size": 290,
+      "sha256": "6c3882d14e6ff453d78f007922d8edee31a3370dabf66e1d0b5c210643f05432"
+    },
+    {
+      "path": "scenarios/S011/inputs/parent_indata.parquet",
+      "size": 5053817,
+      "sha256": "d133983a260262c9791e5374014c77782d4a363a468d574d0d2795fd53616980"
+    },
+    {
+      "path": "scenarios/S011/inputs/topology/topology_edges.csv",
+      "size": 19412,
+      "sha256": "24c22d4b2e01106c9ce0d3a8bd3d8213517890998eb38ef18805fb70e5423dc8"
+    },
+    {
+      "path": "scenarios/S100/inputs/excluded_stations.csv",
+      "size": 58,
+      "sha256": "a95a60370e850ee977472e390fc47f2b5952cd26baecbb6de653a81deb3794c1"
+    },
+    {
+      "path": "scenarios/S100/inputs/parent_indata.parquet",
+      "size": 5070346,
+      "sha256": "85092a0f1766858d00845d33a7dabe097723e31db9d6678ee20e36798e14521f"
+    },
+    {
+      "path": "scenarios/S100/inputs/topology/topology_edges.csv",
+      "size": 19412,
+      "sha256": "24c22d4b2e01106c9ce0d3a8bd3d8213517890998eb38ef18805fb70e5423dc8"
+    },
+    {
+      "path": "scenarios/S101/inputs/excluded_stations.csv",
+      "size": 251,
+      "sha256": "388bc51522ff5e16ec368da148c6cb80af5301daa449e7074a1b944443e2f6da"
+    },
+    {
+      "path": "scenarios/S101/inputs/parent_indata.parquet",
+      "size": 5053355,
+      "sha256": "a4f87c4950ae57ceda2edc28fea1c8a0513f8ca0b5ceae4f075c2858c094cd44"
+    },
+    {
+      "path": "scenarios/S101/inputs/topology/topology_edges.csv",
+      "size": 19412,
+      "sha256": "24c22d4b2e01106c9ce0d3a8bd3d8213517890998eb38ef18805fb70e5423dc8"
+    },
+    {
+      "path": "scenarios/S110/inputs/excluded_stations.csv",
+      "size": 132,
+      "sha256": "3d3d72ef39e7c0f15ea3a47b60b448faeec37a909cc93488f275429814659d04"
+    },
+    {
+      "path": "scenarios/S110/inputs/parent_indata.parquet",
+      "size": 5067007,
+      "sha256": "cfe384d5e78b670f7ac116904bc31ac632dd1a433be98b79bf0e4129b11403a7"
+    },
+    {
+      "path": "scenarios/S110/inputs/topology/topology_edges.csv",
+      "size": 19412,
+      "sha256": "24c22d4b2e01106c9ce0d3a8bd3d8213517890998eb38ef18805fb70e5423dc8"
+    },
+    {
+      "path": "scenarios/S111/inputs/excluded_stations.csv",
+      "size": 325,
+      "sha256": "7c4cefc84d2dd1d71649dc2d23006089f681cce83c5448f09739eb4e6fd74c2f"
+    },
+    {
+      "path": "scenarios/S111/inputs/parent_indata.parquet",
+      "size": 5049985,
+      "sha256": "f82b39365785cf51c96a2b9327692e086260418b8ab99c6c11592599761ae9d4"
+    },
+    {
+      "path": "scenarios/S111/inputs/topology/topology_edges.csv",
+      "size": 19412,
+      "sha256": "24c22d4b2e01106c9ce0d3a8bd3d8213517890998eb38ef18805fb70e5423dc8"
+    },
+    {
+      "path": "selected_same_population_protection_metrics.csv",
+      "size": 756,
+      "sha256": "0fa3251e6bc8072de4c8f9df1ce469ffacb51860cddc38c7fc544d5af1f90f0c"
+    },
+    {
+      "path": "selected_station_configuration.json",
+      "size": 1147,
+      "sha256": "a784af7b3cc04988efbb39216885398f8a8ad87630c0b779b088642a042718a2"
+    },
+    {
+      "path": "shijiao_metrics.csv",
+      "size": 376,
+      "sha256": "97532edd18299242a0b94f4b0d6c2281e3d8c8a854c96451c616d7e747fd07dd"
+    },
+    {
+      "path": "SPARROW_Q72_station_combination_sensitivity_results.md",
+      "size": 2541,
+      "sha256": "504b7b7449d0593d9c384b2b870ae402b73478d572f6de9a77e4ae810fc240af"
+    },
+    {
+      "path": "station_group_registry.csv",
+      "size": 418,
+      "sha256": "e6e589d38de8d439fe3e37ad88b89bb1029552a9b771540c6c6e85c480c6be54"
+    },
+    {
+      "path": "stone_corner_shijiao_audit.csv",
+      "size": 9895,
+      "sha256": "f8a0ce3b6cc227e11cc77f303d661051bb8ea61c1836b6c92db8d6e251c17a43"
+    },
+    {
+      "path": "terminal_gate.json",
+      "size": 3156,
+      "sha256": "62d9f363961560a9fd7166d13819d3dc6fed7f01406a4bf32049d4aa1429dfae"
+    }
+  ]
+}

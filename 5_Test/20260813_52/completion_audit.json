@@ -1,0 +1,186 @@
+{
+  "terminal": "STATION_COMBINATION_REQUIREMENT_BY_REQUIREMENT_AUDIT_PASS",
+  "checks": {
+    "eight_scenarios_present": true,
+    "all_eight_scenario_artifacts_valid": true,
+    "all_eight_scenario_summaries_match_recomputation": true,
+    "s111_only_passing_scenario": true,
+    "fifteen_unique_exclusions": true,
+    "excluded_stations_absent_from_selected_predictions": true,
+    "selected_oof_integrity": true,
+    "selected_2019_2022_integrity": true,
+    "selected_oof_zero_negative": true,
+    "selected_2019_2022_zero_negative": true,
+    "coverage_at_least_90": true,
+    "shijiao_present_and_protected": true,
+    "forcing_and_reach_population_unchanged": true,
+    "independent_deterministic_reproduction": true,
+    "minus_48_provenance_verified": true
+  },
+  "population_accounting": {
+    "parent_oof_stations": 111,
+    "parent_2019_2022_stations": 110,
+    "parent_oof_only": [
+      "富宁_2",
+      "河边站",
+      "邹圩（二）"
+    ],
+    "parent_2019_2022_only": [
+      "严洞站",
+      "长湖水库（大坝）站"
+    ],
+    "selected_oof_stations": 97,
+    "selected_2019_2022_stations": 96
+  },
+  "selected_oof_integrity": {
+    "rows": 7755,
+    "stations": 97,
+    "duplicate_keys": 0,
+    "missing_actual": 0,
+    "missing_predict": 0,
+    "nonpositive_actual": 0,
+    "nonpositive_predict": 0
+  },
+  "selected_2019_2022_integrity": {
+    "rows": 4509,
+    "stations": 96,
+    "duplicate_keys": 0,
+    "missing_actual": 0,
+    "missing_predict": 0,
+    "nonpositive_actual": 0,
+    "nonpositive_predict": 0
+  },
+  "selected_oof_station_gate": {
+    "stations": 97,
+    "negative_or_invalid_count": 0,
+    "minimum_efficiency": 0.35250744857558913,
+    "pass": true
+  },
+  "selected_2019_2022_station_gate": {
+    "stations": 96,
+    "negative_or_invalid_count": 0,
+    "minimum_efficiency": 0.08430335812292988,
+    "pass": true
+  },
+  "shijiao_rows": {
+    "2012_2018_oof": 84,
+    "2019_2022": 48
+  },
+  "minus_48_provenance": {
+    "scenario": "S101",
+    "station": "富宁_2",
+    "oof_months": 12,
+    "raw_nse": -48.771915145343776,
+    "s000_parent_raw_nse": -61.82265110124876
+  },
+  "scenario_recomputations": [
+    {
+      "scenario_id": "S000",
+      "excluded_stations": 0,
+      "oof_rows": 8822,
+      "oof_stations": 111,
+      "oof_negative_or_invalid": 5,
+      "evaluation_rows": 5090,
+      "evaluation_stations": 110,
+      "evaluation_negative_or_invalid": 12,
+      "union_negative_or_invalid": 15,
+      "artifact_valid": true,
+      "summary_matches_recomputation": true
+    },
+    {
+      "scenario_id": "S001",
+      "excluded_stations": 10,
+      "oof_rows": 8082,
+      "oof_stations": 102,
+      "oof_negative_or_invalid": 5,
+      "evaluation_rows": 4684,
+      "evaluation_stations": 100,
+      "evaluation_negative_or_invalid": 2,
+      "union_negative_or_invalid": 5,
+      "artifact_valid": true,
+      "summary_matches_recomputation": true
+    },
+    {
+      "scenario_id": "S010",
+      "excluded_stations": 3,
+      "oof_rows": 8663,
+      "oof_stations": 108,
+      "oof_negative_or_invalid": 2,
+      "evaluation_rows": 5011,
+      "evaluation_stations": 108,
+      "evaluation_negative_or_invalid": 12,
+      "union_negative_or_invalid": 12,
+      "artifact_valid": true,
+      "summary_matches_recomputation": true
+    },
+    {
+      "scenario_id": "S011",
+      "excluded_stations": 13,
+      "oof_rows": 7923,
+      "oof_stations": 99,
+      "oof_negative_or_invalid": 2,
+      "evaluation_rows": 4605,
+      "evaluation_stations": 98,
+      "evaluation_negative_or_invalid": 2,
+      "union_negative_or_invalid": 2,
+      "artifact_valid": true,
+      "summary_matches_recomputation": true
+    },
+    {
+      "scenario_id": "S100",
+      "excluded_stations": 2,
+      "oof_rows": 8654,
+      "oof_stations": 109,
+      "oof_negative_or_invalid": 3,
+      "evaluation_rows": 4994,
+      "evaluation_stations": 108,
+      "evaluation_negative_or_invalid": 9,
+      "union_negative_or_invalid": 12,
+      "artifact_valid": true,
+      "summary_matches_recomputation": true
+    },
+    {
+      "scenario_id": "S101",
+      "excluded_stations": 12,
+      "oof_rows": 7914,
+      "oof_stations": 100,
+      "oof_negative_or_invalid": 3,
+      "evaluation_rows": 4588,
+      "evaluation_stations": 98,
+      "evaluation_negative_or_invalid": 0,
+      "union_negative_or_invalid": 3,
+      "artifact_valid": true,
+      "summary_matches_recomputation": true
+    },
+    {
+      "scenario_id": "S110",
+      "excluded_stations": 5,
+      "oof_rows": 8495,
+      "oof_stations": 106,
+      "oof_negative_or_invalid": 0,
+      "evaluation_rows": 4915,
+      "evaluation_stations": 106,
+      "evaluation_negative_or_invalid": 9,
+      "union_negative_or_invalid": 9,
+      "artifact_valid": true,
+      "summary_matches_recomputation": true
+    },
+    {
+      "scenario_id": "S111",
+      "excluded_stations": 15,
+      "oof_rows": 7755,
+      "oof_stations": 97,
+      "oof_negative_or_invalid": 0,
+      "evaluation_rows": 4509,
+      "evaluation_stations": 96,
+      "evaluation_negative_or_invalid": 0,
+      "union_negative_or_invalid": 0,
+      "artifact_valid": true,
+      "summary_matches_recomputation": true
+    }
+  ],
+  "prediction_sha256": {
+    "oof": "6712d2f265532b759505d3a9de2d4112f033961be43221fe7b42971ba373bccc",
+    "2019_2022": "789d9bb13b18d453a9399e593ecea071df271164ef8d45b9dc5aba8da1b9a142"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "E:\\SPARROW\\5_Test\\20260817_1\\reports\\structural_reconciliation_decision.json": "ae51c7546e8deaa36c4e207640ea9c9274bffabb9cccfe687a1640a3deeb7391",
+  "E:\\SPARROW\\5_Test\\20260817_1\\outputs\\formal_12model_structural_ensemble.parquet": "c7b95134a57adc57204328ad1f21cac59771948b2f461b860bb440ec559cf9c5",
+  "E:\\SPARROW\\5_Test\\20260817_2\\outputs\\source_to_stream_tail_metrics.parquet": "4bf23a31c534aaa0405a6f8c1342fd9df8759b7aac7a564213e9de8e1b411ff5",
+  "E:\\SPARROW\\5_Test\\20260817_2\\outputs\\q72_hydraulic_response_metrics.parquet": "a3f9fe38913e621db355ab9c0a8ade5433c0bfcbe43a7980ec0de15c97f70895",
+  "E:\\SPARROW\\5_Test\\20260817_2\\outputs\\matched_n_vs_hydraulic_metrics.parquet": "06a41e00cea88fec9281d13d9bb0d086185a0b06bdeee1554c8b56b232df6eaa",
+  "E:\\SPARROW\\5_Test\\20260817_3\\outputs\\terminal_historical_n_age_summary_2016_2022.parquet": "732fd13620e05dfccfa8e7550c1258ef9129f85016cc11607066271081f13d78",
+  "E:\\SPARROW\\5_Test\\20260817_4\\outputs\\tn_performance_metrics_16models.parquet": "11ee4187e9c848c1d283493f128b6b8719e3dd6912d561e91dbdd9ee2ee59fa1",
+  "E:\\SPARROW\\5_Test\\20260817_4\\outputs\\primary_metric_differences_vs_old_incumbent.parquet": "5acfaf95bca52f6d17b3b80f0587c15cc0adb427b7007ba75f42170ddb9ae33a"
+}

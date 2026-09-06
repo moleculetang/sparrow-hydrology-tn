@@ -1,0 +1,83 @@
+{
+  "runtime": {
+    "environment_name": "sparrow",
+    "expected_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "sys_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "sys_executable": "D:\\ProgramData\\anaconda3\\envs\\sparrow\\python.exe",
+    "conda_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "conda_default_env": "sparrow"
+  },
+  "checks": {
+    "runtime_exact_conda_sparrow": true,
+    "monthly_years_2006_2018_only": true,
+    "monthly_key_unique": true,
+    "daily_key_unique": true,
+    "daily_years_2006_2018_only": true,
+    "daily_no_missing_ppt": true,
+    "daily_calendar_complete": true,
+    "daily_valid_grid_complete": true,
+    "daily_monthly_ppt_within_1e_8_mm": true,
+    "canonical_rows_8738": true,
+    "canonical_stations_110": true,
+    "canonical_three_folds": true,
+    "canonical_key_unique": true,
+    "legacy_registry_28": true,
+    "legacy_evaluable_27": true,
+    "tianhe_169_absent": true,
+    "shijiao_reach_56_present": true
+  },
+  "passed": true,
+  "monthly_rows": 35880,
+  "daily_rows": 1092040,
+  "daily_monthly_key_rows": 35880,
+  "max_abs_daily_monthly_ppt_difference_mm": 6.821210263296962e-13,
+  "canonical_fold_counts": [
+    {
+      "fold_id": "fit_2006_2011_eval_2012_2013",
+      "rows": 2434,
+      "stations": 104
+    },
+    {
+      "fold_id": "fit_2006_2013_eval_2014_2015",
+      "rows": 2582,
+      "stations": 110
+    },
+    {
+      "fold_id": "fit_2006_2015_eval_2016_2018",
+      "rows": 3722,
+      "stations": 106
+    }
+  ],
+  "legacy_registry_total": 28,
+  "legacy_evaluable": 27,
+  "legacy_evaluable_reaches": [
+    1,
+    2,
+    24,
+    25,
+    26,
+    38,
+    43,
+    54,
+    78,
+    83,
+    88,
+    89,
+    90,
+    99,
+    101,
+    114,
+    116,
+    132,
+    156,
+    157,
+    171,
+    186,
+    195,
+    199,
+    208,
+    218,
+    219
+  ],
+  "state_axis_semantics": "Only positive-observation station-month rows advance state, matching canonical Q72; missing months remain skipped."
+}

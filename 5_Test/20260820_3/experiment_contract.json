@@ -1,0 +1,13 @@
+{
+  "stage": "20260820_3",
+  "question": "same-two-parameter reaction architecture vs frozen eta parent",
+  "candidate": {
+    "q10_gw": 1.0,
+    "q10_aq": 1.0,
+    "eta_q": 1.0,
+    "eta_gw": 1.0
+  },
+  "optimizer": "each objective evaluation reruns parameter-specific pre1961 equilibrium and complete 1961-to-fold N states",
+  "R1a": "upstream full exposure plus local actual midpoint-to-outlet exposure",
+  "parent": "matched model/fold/layer frozen eta model"
+}

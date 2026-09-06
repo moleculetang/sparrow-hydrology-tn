@@ -1,0 +1,16 @@
+{
+  "stage": "20260824_24",
+  "selected_transferable_parent": "20260824_21 P1",
+  "final_training_period": "2021-2024",
+  "retrospective_backreport": "2016-2020",
+  "products": {
+    "P1": "230-Reach transferable monthly outlet product",
+    "P2": "observed-station product with training-period station residual ridge lambda=12"
+  },
+  "excluded": {
+    "20260824_22_manure_legacy": "boundary-confounded f_M near zero in every fold",
+    "20260824_23_spatial_regionalization": "leave-one-tree and 2021 natural-expansion spatial skill not supported"
+  },
+  "claim_boundary": "2016-2020 is a retrospective back-report after training on 2021-2024, not independent validation; 2021-2024 final fit is apparent fit.",
+  "authorized_successor": null
+}

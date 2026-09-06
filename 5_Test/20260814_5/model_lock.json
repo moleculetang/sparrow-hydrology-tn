@@ -1,0 +1,127 @@
+{
+  "scenario_id": "20260814_5",
+  "locked_at_utc": "2026-08-14T11:43:59.958548+00:00",
+  "terminal_state": "operational_retained_interface_provisional",
+  "operational_flow_model_id": "H0_hybrid",
+  "operational_model_reason": "no_fixed_or_conditional_single_production_candidate_passed_complete_development_gate",
+  "interface_branch_id": "main",
+  "interface_status": "provisional_unresolved",
+  "groundwater_status": "non_identifying",
+  "sas_old_status": "retained_in_operational_H0; single_production_ablation_not_triggered",
+  "performance_type": "locked_time_confirmation",
+  "confirmation_runs_allowed": 1,
+  "locked_period": [
+    "2019-01",
+    "2022-12"
+  ],
+  "parameters": {
+    "main": {
+      "branch_id": "main",
+      "prod_capacity": 240.0,
+      "runoff_gamma": 2.5,
+      "quick_rho": 0.25,
+      "base_release": 0.1,
+      "base_rho": 0.85,
+      "highflow_scale": 1.0
+    },
+    "flash": {
+      "branch_id": "flash",
+      "prod_capacity": 132.0,
+      "runoff_gamma": 1.7,
+      "quick_rho": 0.1,
+      "base_release": 0.06,
+      "base_rho": 0.76,
+      "highflow_scale": 1.2
+    },
+    "slow": {
+      "branch_id": "slow",
+      "prod_capacity": 432.0,
+      "runoff_gamma": 3.1,
+      "quick_rho": 0.48,
+      "base_release": 0.07,
+      "base_rho": 0.94,
+      "highflow_scale": 0.85
+    },
+    "buffer": {
+      "branch_id": "buffer",
+      "prod_capacity": 348.0,
+      "runoff_gamma": 3.3,
+      "quick_rho": 0.66,
+      "base_release": 0.12,
+      "base_rho": 0.96,
+      "highflow_scale": 0.65
+    },
+    "wet": {
+      "branch_id": "wet",
+      "prod_capacity": 288.0,
+      "runoff_gamma": 2.2,
+      "quick_rho": 0.34,
+      "base_release": 0.08,
+      "base_rho": 0.9,
+      "highflow_scale": 1.1
+    },
+    "statistical_fixed": {
+      "rho": 0.7,
+      "wm": 480.0,
+      "et_gamma": 0.75,
+      "sas_rho": 0.93,
+      "young_k": 1.5,
+      "storage_scale": 720.0,
+      "fixed_sigma": 3.0,
+      "production_sigma": 1.5,
+      "group_sigma": 1.5,
+      "multistore_sigma": 0.3,
+      "hysteresis_sigma": 3.0,
+      "station_sigma": 1.0,
+      "slope_sigma": 0.15,
+      "regime_slope_sigma": 0.25
+    }
+  },
+  "runtime": {
+    "environment_name": "sparrow",
+    "sys_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "sys_executable": "D:\\ProgramData\\anaconda3\\envs\\sparrow\\python.exe",
+    "conda_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "conda_default_env": "sparrow"
+  },
+  "thread_limits": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "locked_metric_registry": {
+    "frozen_before_locked_prediction_access": true,
+    "threshold_period": [
+      "2006-01",
+      "2018-12"
+    ],
+    "stations": 106,
+    "threshold_sha256": "fbed81173c9f0f49e3dc1e60b36529485d62ddcd5bfb89a6606a41102fe0d341",
+    "lowflow_definition": "locked_actual_cfs <= frozen_station_q20_cfs",
+    "tail_definition": "frozen_station_Q75_local_peak_then_2_to_6_consecutive_monotone_months_below_frozen_upstream_input_Q75_excluding_edges_and_right_censor",
+    "q20_q75_recomputed_after_access": false
+  },
+  "artifact_sha256": {
+    "experiment_contract": "bd411829594393be3c774c820f192a9876ffed4df25e0b388dd637a370307aad",
+    "scenario_contract": "29b3b8382947a215bafe753e4afc58b8ed046bb446b11ec86b7cc6654cf19956",
+    "metrics_contract": "1105664cfb7dbd374d2608630ab25d7b569601676cc9ea4cb0605489828e2a3e",
+    "parameter_manifest": "da59bd95475c8dba5a913f7f563ad1c17b397e080064efc72df08a13b1ffe300",
+    "spinup_contract": "c8f2532980d2c4528f303bd1b44bd6905f29ed29aad0873d9633897aeaeb70f6",
+    "environment": "62c9fde89fe64431c5806d8f4b43a7c04b34a6def6cc5f8105947caaeded0448",
+    "instrumentation_neutrality": "fa3c92ff36303818f54dcd9f103927b6042ddbc23115147b2c8d7169178612bd",
+    "topology": "24c22d4b2e01106c9ce0d3a8bd3d8213517890998eb38ef18805fb70e5423dc8",
+    "parent_input": "f82b39365785cf51c96a2b9327692e086260418b8ab99c6c11592599761ae9d4",
+    "fixed_states": "a6102e984e93ba93315d65ea1d1a978f6e835addda1ea78a9b58d284caabbc3c",
+    "stage2_gate": "8f2cab47f38d1914781a84080748b22019131531ff9e6cbd66ee9d956d779fb9",
+    "stage3_gate": "98877b51f1b611fe02ee06d40b2bb98d7426252afd9b299ea790eed45aa4669f",
+    "stage4_skip": "1dfb8f2d6b7b9131a1efda568ee1d7088f6261dfdc793a17c0973908ef0d6297",
+    "locked_registry": "9ff3841e44f1c7013bc11f72a1c667a116a09a7ea1de7eb76427942e3880135c",
+    "locked_thresholds": "fbed81173c9f0f49e3dc1e60b36529485d62ddcd5bfb89a6606a41102fe0d341",
+    "confirmation_code": "a8dd7b1f23e63e917e4176178c008af6b8345269042afbce49ad0aea4523660e",
+    "groundwater_code": "d79f1773cd97a509fc99cb27a6ee14d936a005172cfba21456d0027654111a90"
+  },
+  "confirmation_command": "conda --no-plugins run -n sparrow python E:/SPARROW/5_Test/20260814_5/scripts/run_locked_confirmation.py",
+  "groundwater_command": "conda --no-plugins run -n sparrow python E:/SPARROW/5_Test/20260814_5/scripts/aggregate_locked_groundwater.py",
+  "lock_written_before_locked_value_access": true,
+  "model_recall_after_confirmation_allowed": false
+}

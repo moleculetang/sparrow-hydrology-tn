@@ -1,0 +1,31 @@
+{
+  "stage": "20260823_37",
+  "status": "registered_before_fitting",
+  "parent": "20260823_36",
+  "hypothesis": "Daily precipitation-driven conservation states jointly constrained by daily total discharge and a soft hydrograph-separation proxy can improve latent Reach fast/delayed hydrology without a terminal Gauge correction.",
+  "development_period": "2010-2018",
+  "state_spinup_period": "2006-2009",
+  "sealed_period": "2019-2022 discharge and separation rows",
+  "objective": "station-macro mean squared log1p total-flow error + 0.1 times station-macro standardized delayed-fraction proxy error + Gaussian raw-parameter prior",
+  "proxy_likelihood_weight": 0.1,
+  "proxy_min_fraction_sigma": 0.05,
+  "physical_raw_prior_precision": 0.02,
+  "optimizer": "deterministic multi-start scipy L-BFGS-B on five unconstrained raw parameters; Numba float64 state recursion",
+  "primary_ET_schedule": "uniform within each month with exact prescribed monthly AET closure",
+  "observation_support": "all strict upstream Reach outflows plus the registered downstream fraction of the station's local Reach",
+  "gauge_parameters": "none",
+  "hard_numerical_gates": {
+    "mass_balance_max_abs_mm": 1e-8,
+    "nonnegative_tolerance_mm": 1e-10,
+    "optimizer_finite_objective": true,
+    "development_station_count": 103
+  },
+  "forbidden": [
+    "terminal Gauge multiplier or station-specific correction",
+    "read 2019-2022 discharge before development_parameter_lock.json exists",
+    "TN-based parameter selection",
+    "reservoir equation",
+    "temperature",
+    "call the separation proxy observed groundwater or old water"
+  ]
+}

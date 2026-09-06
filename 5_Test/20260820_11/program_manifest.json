@@ -1,0 +1,211 @@
+{
+  "program_id": "20260820_SourceAvailability",
+  "authoritative_parent": "E:/SPARROW/5_Test/20260820_10/final_lock.json",
+  "scientific_boundary": "improve the SPARROW land-to-water delivery interface without further complicating groundwater Legacy age structure",
+  "development_period": [
+    2016,
+    2021
+  ],
+  "oof_evaluation_years": [
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "retrospective_locked_year": 2022,
+  "allowed_status": [
+    "registered",
+    "running",
+    "passed",
+    "failed",
+    "confounded",
+    "closed"
+  ],
+  "scenarios": [
+    {
+      "scenario_id": "20260820_11",
+      "hypothesis": "registered residual fingerprint is compatible with an availability phase mismatch",
+      "allowed_parameters": [],
+      "forbidden_parameters": [
+        "model_fitting",
+        "new_registered_months",
+        "TN_2022"
+      ],
+      "entry_condition": "20260820_10=PARENT_RETAINED",
+      "stop_condition": "audit_written",
+      "legal_successors": [
+        "20260820_12"
+      ],
+      "status": "passed",
+      "decision": "hypothesis_plausible"
+    },
+    {
+      "scenario_id": "20260820_12",
+      "hypothesis": "a basin-wide two-parameter mass-conserving seasonal availability operator improves the registered residual fingerprint without degrading temporal or spatial-block OOF performance",
+      "allowed_parameters": [
+        "a",
+        "b",
+        "eta_quick",
+        "eta_gw",
+        "station_ridge_effect_P2"
+      ],
+      "forbidden_parameters": [
+        "new_mu",
+        "second_harmonic",
+        "regional_calendar",
+        "reach_specific_phase",
+        "temperature",
+        "groundwater_age",
+        "second_groundwater_store"
+      ],
+      "entry_condition": "20260820_11 audit complete; plausibility result is non-blocking",
+      "stop_condition": "source_availability_decision_written",
+      "legal_successors": [
+        "20260820_13",
+        "20260820_17"
+      ],
+      "status": "failed",
+      "decision": "source_timing_not_supported"
+    },
+    {
+      "scenario_id": "20260820_13",
+      "hypothesis": "source composition contains current-vs-legacy allocation information after A0 is locked",
+      "allowed_parameters": [
+        "theta_0",
+        "theta_1",
+        "theta_2"
+      ],
+      "forbidden_parameters": [
+        "gross_source_double_counting",
+        "unregistered_source_coefficients"
+      ],
+      "entry_condition": "20260820_12 decision and a new pre-TN experiment contract",
+      "stop_condition": "not_authorized_until_registered",
+      "legal_successors": [
+        "20260820_15",
+        "20260820_17"
+      ],
+      "status": "closed",
+      "entry_condition_satisfied_by_A0_completion": true
+    },
+    {
+      "scenario_id": "20260820_14",
+      "hypothesis": "reserved temperature direction",
+      "allowed_parameters": [],
+      "forbidden_parameters": [
+        "all_model_fitting"
+      ],
+      "entry_condition": "none",
+      "stop_condition": "NOT_AUTHORIZED",
+      "legal_successors": [],
+      "status": "closed"
+    },
+    {
+      "scenario_id": "20260820_15",
+      "hypothesis": "one basin-wide uptake velocity linked only to Q72 flow and Andreadis width/depth improves aquatic delivery",
+      "allowed_parameters": [
+        "v_f"
+      ],
+      "forbidden_parameters": [
+        "temperature",
+        "reservoir_residence_time",
+        "wqd_reference_discharge_m3_s"
+      ],
+      "entry_condition": "source structure locked, aquatic residual evidence registered, and a new pre-TN experiment contract",
+      "stop_condition": "not_authorized_until_registered",
+      "legal_successors": [
+        "20260820_16",
+        "20260820_17"
+      ],
+      "status": "closed"
+    },
+    {
+      "scenario_id": "20260820_16",
+      "hypothesis": "station effects can be regionalized under nested LOSO/LOTO",
+      "allowed_parameters": [
+        "pre_registered_low_dimensional_regionalization"
+      ],
+      "forbidden_parameters": [
+        "heldout_station_effect",
+        "heldout_TN_mean"
+      ],
+      "entry_condition": "temporal source and delivery structure locked and a new pre-TN contract",
+      "stop_condition": "not_authorized_until_registered",
+      "legal_successors": [
+        "20260820_17"
+      ],
+      "status": "closed"
+    },
+    {
+      "scenario_id": "20260820_17",
+      "hypothesis": "final synthesis and lock",
+      "allowed_parameters": [],
+      "forbidden_parameters": [
+        "new_structure_selection_from_2022"
+      ],
+      "entry_condition": "all authorized predecessors closed",
+      "stop_condition": "final_program_lock_written",
+      "legal_successors": [],
+      "status": "closed"
+    },
+    {
+      "scenario_id": "20260820_18",
+      "hypothesis": "a Parent-nested aquatic hydraulic-exposure operator that retains eta_quick and eta_gw may improve TN prediction; aquatic temperature modulation is conditional on the Q10=1 operator first passing",
+      "allowed_parameters": [
+        "v_f_at_20c_after_registered_preflight",
+        "q10_aquatic_only_after_q10_1_gate",
+        "fold_specific_parent_eta_quick",
+        "fold_specific_parent_eta_gw",
+        "frozen_form_station_effect_P2"
+      ],
+      "forbidden_parameters": [
+        "temperature_before_q10_1_gate",
+        "groundwater_temperature_in_aquatic_operator",
+        "wqd_reference_discharge_m3_s",
+        "reservoir_residence_time",
+        "Q72_refit",
+        "Legacy_refit",
+        "new_mu",
+        "TN_2022_during_development"
+      ],
+      "entry_condition": "20260820_12 completed with UNIFORM_PARENT retained; new contract must distinguish this nested operator from the eta-replacement failure in 20260820_3",
+      "stop_condition": "hydraulic temporal screen completed; terminal-tree gate failed; temperature closed",
+      "legal_successors": [
+        "20260820_19"
+      ],
+      "status": "failed",
+      "decision": "hydraulic_temporal_screen_not_supported_temperature_not_authorized"
+    },
+    {
+      "scenario_id": "20260820_19",
+      "hypothesis": "a river-domain, Q72-informed hierarchical Bayesian partial-pooling model can make the registered hydraulic-exposure operator spatially transferable under strict nested LOSO and LOTO without temperature",
+      "allowed_parameters": [
+        "v_f_global_amplitude",
+        "four_pre_registered_Q72_spatial_covariate_slopes",
+        "terminal_tree_partial_pooling_effect",
+        "regionalized_P2_readout",
+        "fold_specific_eta_quick",
+        "fold_specific_eta_gw",
+        "training_station_effect_P2_only"
+      ],
+      "forbidden_parameters": [
+        "temperature",
+        "lake_or_reservoir_open_water_operator",
+        "heldout_station_effect",
+        "heldout_tree_effect",
+        "heldout_TN_mean",
+        "wqd_reference_discharge_m3_s",
+        "Q72_refit",
+        "Legacy_refit",
+        "new_mu",
+        "TN_2022_before_development_lock"
+      ],
+      "entry_condition": "20260820_18 frozen complete; observation-domain contract and this manifest amendment written before any 20260820_19 candidate TN fit",
+      "stop_condition": "nested spatial decision, posterior audit, full-development locks, retrospective 2022 check and final lock written",
+      "legal_successors": [],
+      "status": "passed",
+      "decision": "river_hydraulic_exposure_H1_supported_without_temperature; P2_monitored_only; P2R_not_supported_for_unmonitored_spatial_transfer"
+    }
+  ],
+  "unregistered_suffix_rule": "20260820_19_or_later_is_forbidden_without_a_manifest_amendment_written_before_any_TN_access"
+}

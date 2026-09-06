@@ -1,0 +1,10 @@
+status: stage2a3_single_factor_experiment
+log_flow_map_objective: unchanged_core_logQ
+low_flow_objective: no_auxiliary_loss
+flow_contrast_weight: 1.0
+new_linear_flow_loss: 0.0
+new_annual_volume_loss: 0.0
+new_auxiliary_loss: 0.0
+slow_flow_disconnection_threshold_fraction: 0.25
+production_capacity_mm: 240.0
+slow_flow_disconnection_threshold_storage_mm: 60.0

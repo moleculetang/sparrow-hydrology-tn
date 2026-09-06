@@ -1,0 +1,48 @@
+{
+  "stage": "20260828_17",
+  "title": "Reservoir hard-gate resolution and interior-dam routing",
+  "status": "COMPLETE_HARD_GATES_RESOLVED",
+  "parent_stage": "20260828_16",
+  "immutable_hydrology_parent": "E:\\SPARROW\\5_Test\\20260828_9\\outputs\\canonical_reach_daily_2006_2024.parquet",
+  "objectives": [
+    "lock immutable activation milestones for Longtan, Changzhou and Datengxia",
+    "separate development-fit eligibility from post-development operator eligibility",
+    "support a conserving interior-dam split for Baipenzhu Reach 17",
+    "resolve partial-domain reservoir representation without adding unobserved water",
+    "retain exact disabled-parent degeneracy"
+  ],
+  "allowed_changes": [
+    "field-level verified evidence registry",
+    "reservoir activation dates and capacity-version selection",
+    "local-capture fraction for a registered interior dam",
+    "area-fraction scaling of storage-zone priors for a partial modeled catchment",
+    "network-router semantics and synthetic tests"
+  ],
+  "forbidden_changes": [
+    "rainfall-runoff parent refit",
+    "use of TN observations",
+    "use of 2019-2022 flow outcomes for parameter or structure selection",
+    "addition of unregistered lateral inflow to repair area mismatch",
+    "free monthly reservoir releases",
+    "automatic authorization from nearest-Reach distance alone"
+  ],
+  "time_contract": {
+    "spinup": "2006-2009",
+    "fit": "2010-2015",
+    "development_selection": "2016-2018",
+    "retrospective_evaluation": "2019-2022",
+    "locked_extension": "2023-2024"
+  },
+  "activation_policy": {
+    "storage_operator_start": "first verified impoundment date when available; otherwise first verified operational milestone",
+    "before_activation": "strict identity bypass with empty storage",
+    "post_2018_activation": "operator may run with a locked hierarchical prior but is not eligible for reservoir-specific fitting"
+  },
+  "partial_domain_policy": {
+    "rule": "never create missing water",
+    "interior_dam": "capture all upstream routed water plus only the registered fraction of the control Reach local contribution",
+    "partial_catchment": "scale capacity and storage-zone priors by represented_area/official_control_area; retain routed modeled inflow unchanged",
+    "claim_boundary": "outputs represent the modeled fraction of the real reservoir system"
+  },
+  "formal_fit_authorized": false
+}

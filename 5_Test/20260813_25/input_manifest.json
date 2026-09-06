@@ -1,0 +1,42 @@
+{
+  "runtime": {
+    "environment_name": "sparrow",
+    "expected_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "sys_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "sys_executable": "D:\\ProgramData\\anaconda3\\envs\\sparrow\\python.exe",
+    "conda_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "conda_default_env": "sparrow"
+  },
+  "files": [
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260813_25\\inputs\\A1_indata.parquet",
+      "size": 5072883,
+      "sha256": "230a3c750602d8cd74ef2dc28e978b59ddacab99c49138309078fd499336b72f"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260813_25\\inputs\\topology\\topology_edges.csv",
+      "size": 18988,
+      "sha256": "2daa0a1df1e8b4d5cf364492068be88e410c3d6228fe417275fda3bc4afd37f9"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260813_25\\inputs\\reference\\B1_oof.parquet",
+      "size": 3366336,
+      "sha256": "7d4ec5ec2ac46ce4ca103ac963acfc860fb475ce3a0199cc65687c0f92cc4c94"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260813_25\\scripts\\run_fold_pure_hyperparameters.py",
+      "size": 12745,
+      "sha256": "8a55d09062287c62b37c2570e27763835f4050b303dcb43a593e84dd5a58692f"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260813_25\\scripts\\components\\q72_fold_pure_component.py",
+      "size": 88285,
+      "sha256": "5773b03af30b18c19b7c4b275ba50f20cb0e1df7af15a9297ee16606ab6c7dc5"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260813_25\\outputs\\P1\\q72_three_fold_oof_predictions.parquet",
+      "size": 3366366,
+      "sha256": "205b67b9d5d5217ac903a6bcdaccc1bc17f87dd419343ae22272183cebedc9e4"
+    }
+  ]
+}

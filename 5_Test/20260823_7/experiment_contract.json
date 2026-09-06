@@ -1,0 +1,25 @@
+{
+  "stage": "20260823_7",
+  "development_fit": "2006-2018",
+  "retrospective_check": "2019-2022",
+  "retrospective_name": "locked_post_development_retrospective_check",
+  "selected_process_state": "main parameters equal H0; multistore readout features removed",
+  "selected_readout": "P2_CURRENT composite Gaussian-prior MAP",
+  "hysteresis_sigma_final": 0.3,
+  "selection_source": "three of three corrected main folds selected 0.3 before final refit",
+  "network_input_scale": 1.0,
+  "highflow_scale": 1.0,
+  "output_layers": {
+    "gauged_prediction": "station-conditioned, not available for arbitrary ungauged Reach",
+    "all_reach_state": "mass-closed positive-input production states and explicitly named proxies"
+  },
+  "claim_limits": [
+    "S111 is a post-hoc screened operational station domain",
+    "spatial skill is relative to an equal-weight training-station mean benchmark",
+    "complete P-AET-Q-dS balance is not implemented",
+    "fast/delayed response proxies are not observed young/old water or water age",
+    "full Gaussian prior column-space restoration is not proven",
+    "multistore ablation gain is a readout result, not a new process-equation result"
+  ]
+}
+

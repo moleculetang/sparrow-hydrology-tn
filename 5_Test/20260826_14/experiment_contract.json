@@ -1,0 +1,24 @@
+{
+  "stage": "20260826_14",
+  "title": "Differentiable ordered-HBV exact parent reproduction",
+  "candidate_training_performed": false,
+  "TN_read": false,
+  "retrospective_Q_used_for_selection": false,
+  "dtype": "float64",
+  "parent": "20260825_7 GLOBAL_HBV_R0",
+  "required_tests": [
+    "parameter_transform",
+    "spinup_converged",
+    "spinup_state",
+    "state_flux_reproduction",
+    "frozen_bridge_reproduction",
+    "mass_closure",
+    "restart_equivalence",
+    "impulse_order",
+    "gradient_finite_difference",
+    "unsafe_openmp_override_absent",
+    "all_import_orders"
+  ],
+  "status": "PASS_DIFFERENTIABLE_PARENT_REPRODUCTION",
+  "authorized_successor": "20260826_15"
+}

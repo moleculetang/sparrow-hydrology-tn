@@ -1,0 +1,109 @@
+{
+  "stage": "20260824_41",
+  "status": "REGISTERED_BEFORE_L0_V2_RESULTS",
+  "purpose": "Construct the L0-v2 scientific TN parent with zero 1961 incremental anthropogenic N, candidate-specific daily canonical hydrologic transfer, finite mineral carryover, station-position Q consistency, and then test one five-attribute process-embedded contact regionalization.",
+  "authorized_by": "20260824_40 PASS_U1_UNIFIED_ENGINEERING_READY_FOR_L0_V2",
+  "method_name": "constrained_differentiable_state_space_training",
+  "hydrology": {
+    "canonical_2006_2024": "E:/SPARROW/5_Test/20260828_9/outputs/canonical_reach_daily_2006_2024.parquet",
+    "historical_1961_2009": "deterministic daily reconstruction from the frozen 20260828_9 hydrologic model and 20260824_26 forcing",
+    "splice": "1961-2009 reconstructed plus 2010-2024 exact canonical daily hydrology",
+    "tn_refits_hydrology": false,
+    "andreadis_role": "bankfull width/depth only; reference discharge forbidden"
+  },
+  "monthly_n_timing": {
+    "rule": "registered monthly source and crop-demand masses enter at the beginning of each month; the remaining post-crop mineral stock is then propagated through every frozen daily hydraulic state in chronological order",
+    "annual_divided_by_12": false,
+    "daily_source_interpolation": "none"
+  },
+  "l0_v2_states": ["mineral_n", "lower_dissolved_n"],
+  "initial_state_1961": {
+    "mineral_n_kg": 0.0,
+    "lower_dissolved_n_kg": 0.0,
+    "fresh_n_kg": 0.0,
+    "protected_n_kg": 0.0
+  },
+  "daily_upper_order": [
+    "candidate contact with actual daily fast plus percolation water",
+    "fast/percolation partition of the same mobilized N mass",
+    "fixed mineral other-loss on the nonmobilized remainder",
+    "carry remaining mineral N to the next day"
+  ],
+  "mineral_other_loss": {
+    "primary_efold_days": 365.25,
+    "daily_probability": "1-exp(-1/365.25)",
+    "fitted": false,
+    "interpretation": "fixed conservative upper lifetime for short-term mineral carryover; combines denitrification, volatilization, irreversible immobilization not represented in L0-v2, deep loss and unresolved non-river fate",
+    "nonselecting_sensitivity_efold_days": [182.625, 730.5]
+  },
+  "daily_contact": {
+    "upper_available_water_mm": "local_fast_mm + percolation_mm + upper_end_mm",
+    "contact_water_mm": "local_fast_mm + percolation_mm",
+    "probability": "1-exp[-alpha_r*(contact_water/upper_available)^beta]",
+    "zero_water_gate": true,
+    "fast_and_percolation_compete_for_one_mass": true
+  },
+  "daily_lower_release": {
+    "available_water_mm": "lower_start_mm + percolation_mm",
+    "probability": "local_slow_mm/available_water_mm",
+    "same_day_percolated_n_can_release": true,
+    "zero_water_gate": true
+  },
+  "river": {
+    "hydraulic_exposure": "bankfull travel time computed from canonical simulated Q and Andreadis geometry, divided by bankfull depth",
+    "removed_n_sink_complete": true,
+    "station_position_rule": "upstream inlet plus downstream_fraction_on_reach times local contribution",
+    "q_consistency": "the same station-position canonical Q is used in the concentration denominator and C-Q features"
+  },
+  "candidate_R0": {
+    "contact": "one global log_alpha_contact and beta_contact",
+    "free_parameters": ["log_alpha_contact", "beta_contact", "v_f", "delta_path", "beta_low", "beta_high", "log_sigma", "b_station"]
+  },
+  "candidate_R1": {
+    "contact": "log_alpha_r = log_alpha_global + sum(gamma_k*z_k_r)",
+    "five_attributes": ["cropland_fraction_clcd_multiyear", "agricultural_n_intensity_kg_n_km2_year", "soc_0_30cm_depth_weighted", "clay_0_20cm", "dem_slope"],
+    "gamma_bounds": [-0.5, 0.5],
+    "gamma_prior_sd": 0.25,
+    "nested_at_gamma_zero": true,
+    "forbidden": ["station identity", "reach identity", "terminal-tree identity", "sixth attribute", "neural network"]
+  },
+  "single_fit_outputs": ["raw_mass_process", "population_transferable", "gauged_conditional"],
+  "structure_selection_output": "population_transferable",
+  "site_effect": {
+    "location": "observation_head_only",
+    "parameterization": "direct station/tree weighted-centered log intercept",
+    "ridge_precision": 12.0,
+    "unknown_station": "conditional_unavailable"
+  },
+  "objective": "0.5 station-macro Student-t4 + 0.5 terminal-tree-macro Student-t4 + explicit priors once / J_ref=119",
+  "optimizer": {
+    "same_fold_training_only_process_starts": 2,
+    "adamw_steps": 45,
+    "adamw_learning_rate": 0.03,
+    "lbfgs_max_iter": 30,
+    "gradient_clip_norm": 10.0,
+    "weight_decay": 0.0
+  },
+  "temporal_folds": ["2021_to_2022", "2021_2022_to_2023", "2021_2023_to_2024"],
+  "l0_v2_engineering_gates": [
+    "zero_1961_incremental_state_exact",
+    "daily_operator_probability_and_zero_water_semantics",
+    "upper_and_lower_operator_closure_le_1e-10",
+    "land_mass_balance_relative_le_1e-9",
+    "channel_removed_sink_closure_relative_le_1e-9",
+    "station_position_q_denominator_equals_cq_q",
+    "finite_objective_and_gradient",
+    "rss_below_12_GiB"
+  ],
+  "R1_promotion_gate": "population temporal OOF must improve or be noninferior to R0 and maximum absolute fitted reach log-alpha modifier must not exceed 1.0; nested LORO/LOTO and natural expansion remain mandatory in 20260824_43 before any mainline lock",
+  "forbidden": [
+    "periodic anthropogenic N spinup",
+    "free mineral lifetime",
+    "temperature",
+    "SAS or groundwater age",
+    "second groundwater store",
+    "empirical extra TN lag",
+    "post-hoc P2 refit",
+    "hydrology parameter fitting"
+  ]
+}

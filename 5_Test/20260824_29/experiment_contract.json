@@ -1,0 +1,41 @@
+{
+  "stage": "20260824_29",
+  "parent": "20260824_28 PASS_STAGE28_READY_FOR_20260824_29",
+  "question": "Does an explicit decades-scale MAN+BNF agricultural legacy pool improve transferable monthly TN prediction over the conservative L0 core?",
+  "fixed_candidates": {
+    "L0": null,
+    "LEG10": 0.10,
+    "LEG20": 0.05,
+    "LEG50": 0.02
+  },
+  "selection": {
+    "primary_layer": "P1",
+    "ranking_metric": "pooled T1/T2/T3 station-macro log-RMSE",
+    "legacy_support": "selected LEG candidate must have paired station-block CI95 upper < 0 relative to L0 and point improvement in at least 2 of 3 temporal folds",
+    "p2_role": "prediction preservation only; P2 cannot select the legacy structure",
+    "noninferiority_margin": 0.005
+  },
+  "boundary_semantics": {
+    "delivery_or_readout_boundary": "confounding and blocks Stage 29",
+    "v_f_zero": "legal nested no-aquatic-attenuation result; record but do not treat as optimizer failure",
+    "grid_expansion": "forbidden after observing results"
+  },
+  "fairness": [
+    "same audited observations and T1/T2/T3 rows as Stage 28",
+    "same seven-parameter readout and bounds",
+    "same station-macro Student-t objective",
+    "same AdamW plus strong-Wolfe L-BFGS schedule",
+    "candidate-specific pre-1961 state from Stage 27",
+    "same frozen hydrology and registered CENTRAL monthly N calendar"
+  ],
+  "parameter_dependent_spinup_correction": "Mineral and lower dissolved-N initial states are solved at every fitted contact-parameter vector. The fixed candidate-specific legacy-pool equilibrium is retained because it depends only on fixed k_L and source forcing, not on fitted contact parameters.",
+  "forbidden": [
+    "new k_L values or fitted k_L",
+    "free legacy entry fractions",
+    "using P2 to select a candidate",
+    "hydrology refit from TN",
+    "temperature, WWTP, SAS, another legacy pool or empirical TN lag"
+  ],
+  "runtime": {"environment": "sparrow", "threads": 1, "warning_gib": 12, "hard_stop_gib": 16},
+  "authorized_successor": "20260824_30"
+}

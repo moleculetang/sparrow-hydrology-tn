@@ -1,0 +1,19 @@
+{
+  "run_id": "20260729_20",
+  "parent_run_id": "20260729_19",
+  "required_parent_action": "REVISE_Q78_NAT_AET_STRUCTURE_OR_PRIOR",
+  "spinup_period": [2006, 2011],
+  "spinup_cycles": 10,
+  "actual_period": [2006, 2018],
+  "relative_closure_threshold": 1e-8,
+  "aet_thresholds": {
+    "domain_volume_bias_abs_max": 0.20,
+    "reach_bias_abs_median_max": 0.30,
+    "reach_fraction_bias_abs_le_40pct_min": 0.70,
+    "monthly_correlation_median_min": 0.60,
+    "climatology_correlation_median_min": 0.80
+  },
+  "next_action_if_pass": "RUN_FULL_Q78_NAT_WITH_AVAILABLE_WATER_AET",
+  "next_action_if_fail": "TEST_Q78_NAT_AET_EXPONENT_LOWER_BOUND"
+}
+

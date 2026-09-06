@@ -1,0 +1,70 @@
+{
+  "program_id": "20260824_q72_tn_source_zone_legacy",
+  "created_before_new_candidate_tn_results": true,
+  "authoritative_registry": "E:/SPARROW/5_Test/20260824_1/program_manifest.json",
+  "overall_question": "After repairing and unbiasedly re-adjudicating the frozen Q72-driven TN parent, does one global manure-associated effective agricultural-N source-zone retention fraction improve temporal and spatial TN prediction beyond S0, an equal-mass generic slow pool, and the existing all-source S1-12 control?",
+  "completion_is_allowed_to_be": [
+    "positive",
+    "negative",
+    "confounded",
+    "not_identifiable",
+    "source_history_insufficient",
+    "parent_not_lockable",
+    "implementation_blocked"
+  ],
+  "time_boundary": {
+    "development_support_years": [2016, 2017, 2018, 2019, 2020, 2021],
+    "oof_evaluation_years": [2018, 2019, 2020, 2021],
+    "retrospective_locked_year": 2022,
+    "q72_2022_rule": "may be read before final lock only for frozen-input coverage, integrity and engineering QA",
+    "tn_2022_rule": "must not be parsed, summarized or used until the development mechanism and full-development parameter locks are written; do not reread if the retained model is unchanged"
+  },
+  "folder_policy": {
+    "first_folder": "20260824_1",
+    "next_folder_pattern": "20260824_<next unused positive integer>",
+    "precreate_folders": false,
+    "rename_or_reuse_folders": false,
+    "folder_roles_are_preassigned": false,
+    "contract_required_before_candidate_tn_read": true,
+    "same_engineering_blocker_max_repair_reruns": 2,
+    "third_same_blocker_status": "IMPLEMENTATION_BLOCKED"
+  },
+  "frozen_process_boundary": {
+    "water_flux_source": "Q72 structural_canonical main only",
+    "geometry_role": "static reach length and Andreadis width only in formal H1; reference discharge forbidden",
+    "source_timing": "uniform annual/12 retained because 20260820_12 rejected harmonic A0",
+    "legacy_delivery_mu_months": [12, 36, 60, 96, 144, 240],
+    "soil_slow_time_months": 12,
+    "new_free_parameters": ["one global phi_M in the registered grid"],
+    "wwtp_primary_model": "excluded under frozen contradictory decision"
+  },
+  "forbidden_during_program": [
+    "temperature or Q10",
+    "second soil pool",
+    "fitted soil residence time",
+    "new or fitted groundwater mu",
+    "SAS or groundwater-age operator",
+    "dual groundwater store",
+    "source-zone denitrification",
+    "dynamic channel carryover or reservoir module",
+    "reach-specific or spatial-random phi_M",
+    "new source calendar or second harmonic",
+    "WWTP activation",
+    "HydroWASTE mass input",
+    "HTML output"
+  ],
+  "terminal_statuses": [
+    "SOURCE_SELECTIVE_RETENTION_SUPPORTED",
+    "GENERIC_STORAGE_SUPPORTED_MANURE_IDENTITY_NOT_IDENTIFIED",
+    "SOURCE_LOCATION_UNRESOLVED",
+    "TEMPORAL_SUPPORT_SPATIAL_TRANSFER_UNRESOLVED",
+    "SOURCE_SELECTIVE_RETENTION_NOT_SUPPORTED",
+    "READOUT_COMPENSATED_NOT_PROCESS_SUPPORTED",
+    "SOURCE_RETENTION_BOUNDARY_CONFOUNDED",
+    "SOURCE_VS_TRANSPORT_MEMORY_CONFOUNDED",
+    "SOURCE_IDENTITY_NOT_IDENTIFIABLE",
+    "SOURCE_HISTORY_INSUFFICIENT",
+    "PARENT_NOT_LOCKABLE",
+    "IMPLEMENTATION_BLOCKED"
+  ]
+}

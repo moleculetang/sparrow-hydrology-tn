@@ -1,0 +1,29 @@
+{
+  "terminal": "DETERMINISTIC_CATCHMENT_ERROR_REPAIRED_AND_P1_REBUILT",
+  "parent_oof_sha256": "205b67b9d5d5217ac903a6bcdaccc1bc17f87dd419343ae22272183cebedc9e4",
+  "repaired_oof_sha256": "4a6b66c9c182a4bf9aff74554911af012712a0da6dffcfc83a128d9410188c5d",
+  "catchment_semantics": "Whitebox D8 Watershed pixels assigned to frozen Reach IDs 1-230 only; zero-labelled regions are not reassigned by geometric proximity",
+  "reach_count": 230,
+  "d8_supported_area_km2": 410866.13788726745,
+  "unassigned_zero_label_area_km2": 3479.4993263603956,
+  "unassigned_fraction": 0.008397576838890232,
+  "all_reach_lines_raw_d8_coverage_60m": 1.0,
+  "evaluation_station_count": 110,
+  "evaluation_station_gt5km_raw_d8_conflicts": 0,
+  "forcing_rows": 46920,
+  "forcing_reaches": 230,
+  "forcing_months": 204,
+  "oof_rows": 8738,
+  "oof_keys_equal_parent": true,
+  "oof_observed_max_abs_difference": 0.0,
+  "fold_metrics": [
+    {"fold": "2012-2013", "raw_nse": 0.9275330948411395, "log_nse": 0.9378256880390548},
+    {"fold": "2014-2015", "raw_nse": 0.9011322368362843, "log_nse": 0.9395926346294544},
+    {"fold": "2016-2018", "raw_nse": 0.9420209850924556, "log_nse": 0.9301549518366735}
+  ],
+  "pooled_raw_nse": 0.92580566000867,
+  "pooled_log_nse": 0.9351451713645251,
+  "strict_dual_nse_target_met": false,
+  "engineering_repair_retained_regardless_of_performance": true,
+  "next_atom": "MONITORED_STATION_OBSERVATION_LINEAGE"
+}

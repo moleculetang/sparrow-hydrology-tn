@@ -1,0 +1,14 @@
+{
+  "stage": "20260828_28",
+  "title": "ERA5-Land hourly overlap and 2025 PET extension acquisition",
+  "status": "REGISTERED",
+  "parent": "E:/SPARROW/5_Test/20260828_27",
+  "dataset": "reanalysis-era5-land",
+  "period": "2006-01 through 2025-12",
+  "development_overlap": "2006-2018",
+  "validation_overlap": "2019-2024",
+  "extension_year": 2025,
+  "parallel_requests": 4,
+  "credential_policy": "Read only from the user-level .cdsapirc; never serialize the key.",
+  "forbidden": ["total precipitation", "hydrology observations", "TN observations", "model parameter refitting"]
+}

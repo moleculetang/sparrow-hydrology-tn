@@ -1,0 +1,34 @@
+{
+  "stage": "20260824_28",
+  "parent": "20260824_27 PASS_STAGE27_READY_FOR_20260824_28",
+  "question": "Does the new hydrology-coupled conservative L0 core preserve or improve temporal OOF performance relative to the frozen OLD36 mainline benchmark?",
+  "candidates": {
+    "OLD36": "frozen 20260824_21 P1/P2 rolling temporal OOF generated with AdamW plus L-BFGS",
+    "L0": "20260824_27 no-multiyear-legacy conservative mineral plus lower-dissolved N states"
+  },
+  "fairness": [
+    "identical audited observations and T1/T2/T3 rows",
+    "identical station-macro Student-t objective",
+    "identical AdamW plus strong-Wolfe L-BFGS optimizer schedule",
+    "identical v_f, pathway contrast, C-Q hinge, station ridge and numerical tolerances",
+    "seven fitted parameters in both candidates",
+    "P1 determines process evidence; P2 is preservation evidence only"
+  ],
+  "noninferiority": "paired station-block bootstrap CI95 upper of delta station-macro log-RMSE < 0.005",
+  "delivery_bound_alignment": "L0 log_alpha_contact lower bound is -9.21 so its minimum effective contact multiplier is approximately 1e-4, matching the OLD36 sigmoid-delivery lower scale; the original -4.605 preflight bound was rejected as an unfair truncation before scientific interpretation.",
+  "parameter_dependent_spinup_correction": "The original run used Stage 27 alpha=1,beta=1 diagnostic initial states during fitted-alpha evaluation. A pre-final audit found material post-2016 effects. The corrected implementation solves the exact repeated-1961-1970 piecewise-affine mineral and lower-N equilibrium inside every objective evaluation, so each fold and parameter vector has a consistent pre-1961 state.",
+  "boundary_semantics": {
+    "delivery_or_readout_boundary": "Any fitted boundary in log_alpha_contact, beta_contact, delta_path, beta_low, beta_high or log_sigma is confounding and blocks Stage 28.",
+    "v_f_lower_boundary": "v_f=0 is the exact nested no-aquatic-attenuation member. It is reported as aquatic_attenuation_not_supported and does not invalidate the terrestrial L0 comparison.",
+    "no_post_result_expansion": "Neither v_f nor any other parameter bound may be expanded after observing the OOF result."
+  },
+  "forbidden": [
+    "LEG10/20/50 selection",
+    "nested spatial selection",
+    "TN-driven hydrology changes",
+    "temperature, WWTP, SAS or another N pool",
+    "using P2 to select L0"
+  ],
+  "runtime": {"environment": "sparrow", "threads": 1, "warning_gib": 12, "hard_stop_gib": 16},
+  "authorized_successor": "20260824_29"
+}

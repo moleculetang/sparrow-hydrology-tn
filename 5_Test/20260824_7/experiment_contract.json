@@ -1,0 +1,34 @@
+{
+  "experiment_id": "20260824_7",
+  "hypothesis": "Does the passed Gaussian Q72 C-Q hinge transfer to TN-unseen stations and terminal trees?",
+  "registered_before_nested_results": true,
+  "candidate": "GAUSSIAN_CQ_HINGE",
+  "reference": "GAUSSIAN_PROCESS_PARENT",
+  "formal_models": "S0/S1-12 x mu={12,36,60,96,144,240}",
+  "nested_contract": {
+    "LOSO": "remove the held-out station's all training-year TN, refit H1 v_f, eta_quick, eta_gw and beta_low/beta_high, and predict only its temporal-fold evaluation-year TN",
+    "LOTO": "remove every station in the held-out terminal tree from training TN and refit the same parameters",
+    "q_center": "station/reach Q72 training-year all-month median; no TN sampling dependence",
+    "readout": "P1 only; no station effect, held-out random effect or same-year TN filtering"
+  },
+  "absolute_benchmark": "mean of training-station mean log1p(TN), giving every training station equal weight",
+  "relative_gate": {
+    "metric": "station-macro log1p RMSE",
+    "noninferior": "paired block bootstrap CI95 upper < 0.005",
+    "improved": "paired block bootstrap CI95 upper < 0",
+    "ensemble_rule": "at least 10/12 models noninferior in LOSO and at least 10/12 noninferior in LOTO"
+  },
+  "absolute_gate": {
+    "skill": "1 - station-macro candidate MSE / station-macro equal-training-station-mean baseline MSE",
+    "supported": "block-bootstrap CI95 lower > 0",
+    "ensemble_rule": "at least 10/12 models supported in LOSO and at least 10/12 in LOTO"
+  },
+  "confounding": "a model is confounded if more than 5% of candidate nested fits fail or more than 10% hit eta, beta or v_f bounds; at most 2/12 confounded models",
+  "tree_163": "mandatory separate open-lake-center domain diagnostic; excluded from primary-river LOSO/LOTO gates because it is not a river-outlet observation; not a post-hoc model-selection exception",
+  "time_boundary": {
+    "development_support_period": [2016, 2021],
+    "oof_evaluation_years": [2018, 2019, 2020, 2021],
+    "retrospective_locked_year": 2022,
+    "tn_2022_may_be_read": false
+  }
+}

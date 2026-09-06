@@ -1,0 +1,11 @@
+{
+  "program_id": "20260824_monthly_tn_structural_diagnosis_and_upgrade",
+  "parent_manifest": "E:/SPARROW/5_Test/20260824_4/program_manifest.json",
+  "current_folder": "20260824_6",
+  "F1_status": "passed_gaussian_cq_hinge",
+  "F2_status": "NO_REGISTERED_F2_UPGRADE_SUPPORTED",
+  "F3_status": "NO_REGISTERED_F3_UPGRADE_SUPPORTED",
+  "joint_status": "closed_condition_not_met",
+  "TN_2022_values_read": false,
+  "status": "completed"
+}

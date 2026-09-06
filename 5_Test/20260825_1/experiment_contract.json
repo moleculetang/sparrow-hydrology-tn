@@ -1,0 +1,28 @@
+{
+  "stage": "20260825_1",
+  "status": "registered_before_execution",
+  "title": "Forensic audit of 20260823_35-39 and registration of the HBV-MPR program",
+  "purpose": "Preserve the previous no-promotion decision while separating valid empirical failures from parameterization, forcing, routing and evaluation confounding.",
+  "inputs": [
+    "20260823_37/reports/development_parameter_lock.json",
+    "20260823_38/reports/stage38_daily_decision.json",
+    "20260823_38/outputs/terminal_tree_zero_history_daily_predictions.parquet",
+    "20260823_39/outputs/daily_candidate_monthly_tn_bridge_2006_2022.parquet",
+    "20260823_35/outputs/daily_reach_forcing_2006_2022.parquet",
+    "20260823_16/outputs/reach_regionalization_attributes.parquet"
+  ],
+  "registered_conclusions": {
+    "promotion": "NOT_AUTHORIZED",
+    "daily_route_general_claim": "NOT_TESTED_CLEANLY",
+    "five_global_parameter_candidate": "REJECTED",
+    "spatial_fast_slow_ranking": "FAILED",
+    "parameter_boundary_gate": "CONFOUNDED_BY_UNREACHABLE_PRIOR",
+    "old_phase_gate": "RECOMPUTE_WITH_VOLUME_WEIGHTING"
+  },
+  "forbidden": [
+    "modify prior 20260823 files",
+    "fit a new hydrologic parameter",
+    "use TN observations",
+    "reinterpret response components as observed groundwater or water age"
+  ]
+}

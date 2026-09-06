@@ -1,0 +1,10 @@
+{
+  "stage": "20260831_2_initial_state_sensitivity",
+  "status": "REGISTERED_BEFORE_SENSITIVITY_RESULTS",
+  "baseline": "zero reservoir TN stock on 2006-01-01 followed by parameter-dependent 2006-2009 warm-up",
+  "alternative": "10 mg TN/L multiplied by each reservoir's locked 2006-01-01 post-release water storage, followed by the same warm-up",
+  "evaluation": "all Reach outlet concentrations in 2016 using the T3 parent parameter set",
+  "primary_metric": "p99 absolute difference in ln(1+TN)",
+  "pass_threshold_log_unit": 0.001,
+  "role": "engineering initial-condition audit only; not a fitted candidate"
+}

@@ -1,0 +1,66 @@
+{
+  "experiment_id": "20260824_5",
+  "family": "F2_TERRESTRIAL_INTERFACE",
+  "registered_before_observed_candidate_fitting": true,
+  "parent_program": "E:/SPARROW/5_Test/20260824_4/program_manifest.json",
+  "scientific_question": "Can one of three bounded terrestrial-interface formulations improve within-station monthly TN dynamics beyond the pre-F1 Q72-F00-S0/S1-T1-H1 Parent?",
+  "parent": "Q72 -> F00 -> S0/S1-12 -> post-GW T1 -> H1_GLOBAL -> independently trained P1/P2",
+  "formal_models": "S0 and S1-12 crossed with mu={12,36,60,96,144,240} months",
+  "candidates": {
+    "L1_SHARED_CATCHMENT_MEMORY_REPLACES_T1": {
+      "complexity": "no fitted candidate parameter; memory mu is the same fixed formal-member value as Parent",
+      "equation_order": "F00/S0-or-S1 source release -> combine pre-T1 quick and GW inputs -> one shared memory with rho=mu/(1+mu) -> split released N by current quick/GW input share -> frozen quick lag rho_q=0.25; GW allocation has explicit Qgw>0 release gate; no post-GW T1 remains",
+      "spinup": "independent pre-1961 equilibrium for every formal member",
+      "comparison": "equal-complexity non-nested location challenge; a convex Parent-to-L1 bridge is used only for known-truth recovery, never in observed fitting"
+    },
+    "L2_Q72_ANTECEDENT_WETNESS_EFFECTIVE_LOSS": {
+      "lambda_grid": [0.0, 0.1, 0.25, 0.5, 1.0],
+      "state": "lag-1 Q72 gw_response_state_end_mm, standardized by reach and calendar month using hydrology from 1961 through the fold training-end year",
+      "survival": "exp(-lambda*max(H_wet,0)) applied equally to Parent local quick and GW TN before aquatic routing",
+      "parent_endpoint": "lambda=0",
+      "direction_lock": "lambda is nonnegative; if zero is selected, the candidate closes and may not be replaced post hoc by a signed gain"
+    },
+    "L3_PATHWAY_MPR_SLOPE_PERMEABILITY": {
+      "gamma_quick_grid": [-0.5, 0.0, 0.5],
+      "gamma_gw_grid": [-0.5, 0.0, 0.5],
+      "quick_covariate": "length-weighted geometric mean Andreadis slope_used by reach",
+      "gw_covariate": "GLHYMPS log10 permeability by reach",
+      "normalization": "each covariate is standardized over all 230 reaches, so exp(gamma*z) has geometric mean one",
+      "parent_endpoint": "gamma_quick=gamma_gw=0",
+      "forbidden": "station, tree or reach random delivery parameters"
+    }
+  },
+  "frozen": [
+    "Q72 as the only water, quick/GW and hydrologic-state source",
+    "Andreadis geometry only; reference discharge forbidden",
+    "F00 and S0/S1-12 source contracts",
+    "H1_GLOBAL aquatic exposure",
+    "eta_quick/eta_gw bounds, ridge and solvers",
+    "station ridge=12 and log1p(TN)",
+    "development support 2016-2021 and OOF evaluation 2018-2021"
+  ],
+  "candidate_selection": "P1 training data only inside each fold; P2 cannot select a terrestrial structure; ties choose the exact Parent endpoint, then lower complexity/magnitude",
+  "synthetic_gate": {
+    "replicates_per_scenario_per_candidate": 500,
+    "false_upgrade_rate_max": 0.05,
+    "power_min": 0.8,
+    "condition_number_max": 30.0,
+    "maximum_key_parameter_correlation": 0.9,
+    "requirements": ["parent endpoint or registered bridge", "state/mass closure", "optimizer success"]
+  },
+  "formal_gate": {
+    "primary": "P1 station-macro station-demeaned log1p anomaly RMSE",
+    "simultaneous_test": "studentized Westfall-Young/max-T over the three F2 candidates using the same paired station bootstrap replicate indices",
+    "improved": "simultaneous CI95 upper < 0",
+    "noninferior": "simultaneous CI95 upper < 0.005",
+    "required": "at least 10/12 point-improved and simultaneously improved on P1 anomaly; at least 10/12 P1 absolute noninferior; at least 10/12 P2 absolute noninferior; no repeated optimizer, eta, aquatic-vf, candidate-boundary or mass/state confounding"
+  },
+  "time_boundary": {
+    "development_support_period": [2016, 2021],
+    "oof_evaluation_years": [2018, 2019, 2020, 2021],
+    "retrospective_locked_year": 2022,
+    "tn_2022_may_be_read": false
+  },
+  "claim_boundary": "Passing supports an effective terrestrial-interface operator under current annual-source and river-TN information. It does not identify true fertilizer timing, manure fraction, SON inventory, mineralization constant, groundwater age or source identity."
+}
+

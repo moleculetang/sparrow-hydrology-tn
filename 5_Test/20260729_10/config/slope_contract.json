@@ -1,0 +1,19 @@
+{
+  "run_id": "20260729_10",
+  "sample_spacing_m": 1000.0,
+  "min_samples_per_reach": 21,
+  "max_samples_per_reach": 321,
+  "rolling_median_window": 5,
+  "end_window_fraction": 0.1,
+  "min_end_window_points": 3,
+  "slope_floor_m_m": 1e-06,
+  "maximum_admissible_slope_m_m": 0.2,
+  "minimum_valid_dem_sample_fraction": 0.99,
+  "minimum_direct_estimate_fraction": 0.9,
+  "minimum_two_estimator_sign_agreement_fraction": 0.8,
+  "maximum_endpoint_node_distance_m": 0.01,
+  "maximum_connected_endpoint_gap_m": 0.01,
+  "expected_reaches": 230,
+  "geospatial_runtime": "conda PRB_reach",
+  "model_runtime": "conda sparrow"
+}

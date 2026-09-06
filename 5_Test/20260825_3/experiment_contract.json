@@ -1,0 +1,61 @@
+{
+  "stage": "20260825_3",
+  "status": "registered_before_numerical_evaluation",
+  "title": "Raven-equation-conformant rain-only HBV and conserving Reach routing numerical verification",
+  "authorized_by": "20260825_2/reports/stage2_decision.json",
+  "raven_oracle": {
+    "repository": "https://github.com/CSHS-CWRA/RavenHydroFramework.git",
+    "release": "v4.12",
+    "commit": "81011f061e53ef1289ebcab36dc3622cea05c76d",
+    "license": "Artistic License 2.0",
+    "role": "independent equation and ordered-series numerical oracle"
+  },
+  "land_process_order": [
+    "PRECIP_RAVEN",
+    "INF_HBV",
+    "flush SURFACE_WATER to FAST_RESERVOIR",
+    "SOILEVAP_HBV",
+    "PERC_CONSTANT",
+    "BASE_THRESH_STOR from FAST_RESERVOIR as Q0",
+    "BASE_LINEAR from FAST_RESERVOIR as Q1",
+    "BASE_LINEAR from SLOW_RESERVOIR as Q2"
+  ],
+  "rain_only_basis": "20260825_2 cold-mean-temperature precipitation-volume fraction = 0.0018826755 < 0.01",
+  "parameterization": {
+    "parameters": ["FC", "BETA", "LP", "PERC", "UZL", "tau0", "delta_tau10", "delta_tau21"],
+    "recession_conversion": "K_i = 1-exp(-1/tau_i), tau1=tau0+delta_tau10, tau2=tau1+delta_tau21",
+    "raw_mapping": "bounded logistic with exact interior inverse"
+  },
+  "routing": {
+    "R0": "instantaneous topological accumulation control",
+    "R1": "adaptive explicit linear channel storage with registered CFL <= 0.9",
+    "passive_labels": ["Q0", "Q1", "Q2"],
+    "shared_operator": true,
+    "geometry_allowed": ["bankfull_width_m", "bankfull_depth_m", "their p05/p95 bounds", "Reach length"],
+    "geometry_forbidden": ["wqd_reference_discharge_m3_s", "wqd_upstream_area_km2"]
+  },
+  "gates": {
+    "raven_version_and_commit_exact": true,
+    "raven_python_state_flux_max_abs_delta_mm": 0.0005,
+    "python_land_mass_max_abs_error_mm": 1e-10,
+    "raven_mass_max_abs_error_mm": 1e-9,
+    "raw_roundtrip_max_abs_error": 1e-10,
+    "restart_max_abs_delta": 1e-10,
+    "spinup_terminal_max_abs_delta_mm": 1e-8,
+    "spinup_max_cycles": 500,
+    "routing_cfl_max": 0.9,
+    "routing_mass_relative_error": 1e-12,
+    "component_closure_relative_error": 1e-12,
+    "topology_reaches": 230,
+    "topology_terminal_trees": 14
+  },
+  "forbidden": [
+    "parameter fitting or discharge-performance comparison",
+    "reservoir equation",
+    "Gauge/P2 correction",
+    "TN observations",
+    "wqd_reference_discharge_m3_s",
+    "calling Q2 observed groundwater, old water or water age"
+  ],
+  "authorized_successor": "20260825_4"
+}

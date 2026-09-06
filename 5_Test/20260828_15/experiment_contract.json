@@ -1,0 +1,192 @@
+{
+  "stage": "20260828_15",
+  "title": "Literature-constrained hierarchical reservoir experiment",
+  "status": "PREFIT_STRUCTURE_READY_OBSERVATION_LIKELIHOOD_NOT_OPENED",
+  "formal_fit_authorized": false,
+  "immutable_parent": {
+    "model_stage": "20260828_9; 20260828_10 is evaluation and release metadata only",
+    "model_file": "E:\\SPARROW\\5_Test\\20260828_9\\outputs\\parent_preserving_state_consistent_model.pt",
+    "model_sha256": "8e44c9e5d424c42ea8d76586d5a3cd2ddc5f3948d40aaedcdff4c160351e4288",
+    "daily_product": "E:\\SPARROW\\5_Test\\20260828_9\\outputs\\canonical_reach_daily_2006_2024.parquet",
+    "daily_product_sha256": "a8c2b57d35de374a57798ab3e837dbf5c75cbd644275b6e52f888b20e16ca471",
+    "parent_export_code_sha256": "ace5ecbc1653073b4964c0217bfc860c2e483b3e8399ecc44d926e99dbaafdd3",
+    "rainfall_runoff_parameters": "frozen",
+    "fast_slow_partition_parameters": "frozen",
+    "TN_observations": "forbidden"
+  },
+  "model_location": "rebuild routing from local_fast_response_m3_s and local_slow_response_m3_s; insert each reservoir once at its registered control edge after local runoff generation and before downstream routing; existing routed_* fields are parent-comparator outputs and must not be routed again",
+  "comparators": [
+    "R0 no-reservoir canonical parent",
+    "R1 Hanasaki-style generic low-data rules",
+    "R2 literature-constrained hierarchical rules"
+  ],
+  "time_contract": {
+    "state_spinup": "2006-2009 forcing only, matching the canonical is_spinup_period flag; excluded from scored likelihoods",
+    "fit": "2010-2015 only",
+    "development_selection": "2016-2018 only; used to select R0/R1/R2 and lock parameters",
+    "temporal_test": "2019-2022 opened only after model and parameter lock and reported only as a locked retrospective evaluation, not as a never-seen independent external validation",
+    "extension": "2023-2024 generated only after the retrospective decision lock",
+    "random_month_split": "forbidden"
+  },
+  "first_run_boundary_contract": {
+    "reservoir_surface_precipitation": "fixed to zero for R1 and R2",
+    "reservoir_surface_evaporation": "fixed to zero for R1 and R2",
+    "withdrawal": "fixed to zero for R1 and R2",
+    "reason": "the frozen canonical parent already generates runoff over the full Reach area, so adding reservoir-surface P or E would double count water; a nonzero withdrawal is forbidden until source, intake, consumptive fraction, return fraction, return Reach and return lag are all registered",
+    "future_activation": "requires a separately registered experiment that removes reservoir area from the land forcing and/or registers a complete withdrawal-return pathway"
+  },
+  "registered_parameterization": {
+    "free_monthly_release_coefficients": 0,
+    "target_curve": "periodic low-dimensional baseline plus one flood-season drawdown window",
+    "per_reservoir_deviations": [
+      "initial storage fraction with a literature/type prior",
+      "target-storage offset",
+      "flood-season drawdown magnitude",
+      "flood-season phase or width only when supported by evidence",
+      "storage recovery rate",
+      "minimum-release intensity",
+      "inflow-response weight"
+    ],
+    "hierarchy": "operation type plus capacity-to-annual-inflow ratio plus basin and reservoir shrinkage",
+    "prior_sources": "official regulation or design documents first, peer-reviewed reservoir-specific evidence second, GRanD and remote-sensing attributes third, generic model priors last",
+    "literature_ranges": "legal operating ranges are truncation bounds; they are not automatically treated as 95 percent confidence intervals"
+  },
+  "initial_state_contract": {
+    "pre_commissioning": "exact parent bypass with zero reservoir storage",
+    "preferred_initialization": "use a documented storage state at 2005-12-31 or the closest earlier observation that does not reveal a held-out outcome",
+    "active_at_2006_start_fallback": "when no valid pre-2006 state exists, cycle the canonical 2006-2009 spinup forcing block through the reservoir operator until the registered storage-state convergence criterion is met, without scoring those years or using 2019-2022 or post-2022 data",
+    "initial_condition_sensitivity": "repeat with at least low, target-centered and high physically admissible initial storage fractions; if evaluation-period states or decisions do not converge within the registered tolerance, mark initial_condition_confounded",
+    "commissioned_during_simulation": "activate only on the registered impoundment and operation dates; use a documented filling phase when evidence exists, otherwise flag transition_unresolved",
+    "held_out_initialization": "2019-2022 and post-2022 states are forbidden",
+    "required_record": "each reservoir records initialization_method, initialization_source_id, initialization_date, initial_storage_fraction, warmup_forcing_period, warmup_cycle_count and convergence_result"
+  },
+  "routing_execution_contract": {
+    "daily_order": [
+      "generate frozen local fast and slow response for the current Reach-day",
+      "process reservoirs and ordinary Reaches in an audited upstream-to-downstream topological order",
+      "combine current-day upstream releases with current-day local response at each registered reservoir inflow",
+      "apply the reservoir water-balance and tracer update once at its unique control edge",
+      "route controlled release and emergency spill to downstream Reaches on the same day"
+    ],
+    "cascade_rule": "an upstream reservoir release reaches a downstream reservoir on the same model day whenever the registered directed topology connects them without an explicit travel-time operator",
+    "shared_storage_rule": "one physical reservoir may register multiple true inflow control Reaches only when every control edge has routing fraction 1 and points to the same unique outflow Reach; enabled routing combines all fast, slow, direct and age-moment inputs, calls the storage operator once and releases once",
+    "disabled_shared_storage_rule": "when disabled, each real control edge remains an identity in the original topological addition order so bitwise parent reproduction is preserved",
+    "graph_validation": "the real 230-Reach downstream map and reservoir control-edge registry must be acyclic, directionally consistent and free of duplicate control edges before fitting"
+  },
+  "spill_claim_boundary": {
+    "first_run_mode": "unlimited emergency capacity-overflow spill sufficient to enforce storage <= registered capacity",
+    "allowed_claim": "a conservative numerical overflow safeguard",
+    "forbidden_claims": [
+      "physical spillway capacity simulation",
+      "gate-opening reconstruction",
+      "subdaily flood-routing reproduction",
+      "observed flood-operation identification"
+    ],
+    "upgrade_requirement": "any finite spillway capacity, gated spill or event-operation claim requires a separately registered structure and evidence source"
+  },
+  "disabled_parent_reproduction_gate": {
+    "scope": "all 230 Reaches and every modeled day in the canonical product",
+    "setup": "disable every reservoir, reservoir-surface flux and withdrawal-return pathway, then rebuild routing from frozen local_fast_response_m3_s and local_slow_response_m3_s",
+    "requirement": "after sorting by Reach and date, the rebuilt routed fast, routed slow and routed total discharge must reproduce the canonical parent row by row with zero absolute difference; row keys, row count, null pattern and units must also be identical",
+    "failure_status": "BLOCKED_PARENT_REPRODUCTION_MISMATCH"
+  },
+  "completed_preflight_results": {
+    "disabled_parent_reproduction": "PASS",
+    "report": "E:\\SPARROW\\5_Test\\20260828_15\\reports\\disabled_reservoir_parent_reproduction.json",
+    "rows": 1596200,
+    "dates": 6940,
+    "reaches": 230,
+    "max_absolute_fast_slow_total_difference_m3_s": 0.0,
+    "registered_disabled_reservoirs": 13,
+    "interpretation": "The reservoir-aware routing framework can exactly recover the frozen parent when every registered priority reservoir is disabled; this does not authorize parameter fitting."
+  },
+  "hard_constraints": [
+    "one entity and one release location per reservoir",
+    "commissioning-aware activation",
+    "nonnegative storage and fluxes",
+    "post-spill storage at or below registered capacity",
+    "daily water balance and fast-slow-direct tracer closure",
+    "no double routing through multi-Reach reservoir polygons",
+    "multi-arm shared reservoirs use one combined physical storage state and one release insertion",
+    "no post-processing of already accumulated routed_* flow; network routing is rebuilt from local fast and slow fluxes",
+    "withdrawal separate from controlled release and spill",
+    "water level not linearly converted to storage without an elevation-storage curve",
+    "R1 and R2 first-run reservoir-surface precipitation, evaporation and withdrawal fixed to zero",
+    "same-day upstream-to-downstream execution on the audited real topology",
+    "disabled-reservoir routing exactly reproduces the canonical parent across all 230 Reaches"
+  ],
+  "likelihoods_allowed": [
+    "2010-2015 downstream streamflow",
+    "2010-2015 directly attributable dam-release observations"
+  ],
+  "prior_evidence_allowed": [
+    "pre-2019 water-level rank and seasonal phase when no storage curve exists; prior-shape information only and never a likelihood",
+    "static design facts published later only when their effective date predates the held-out period and the source reveals no 2019-2022 operational outcome"
+  ],
+  "diagnostics_only": [
+    "all remotely sensed storage, storage-change, water-area and water-level series; forbidden from likelihoods, parameter fitting, prior-width tuning and candidate selection",
+    "2016-2018 storage diagnostics may be reported only after candidate definitions are registered and cannot select a remote-sensing algorithm"
+  ],
+  "likelihoods_forbidden": [
+    "2019-2022 streamflow, release, water-level or storage outcomes during fitting",
+    "channels or diversions mislabeled as total reservoir release",
+    "downstream total water-supply demand assigned to individual upstream reservoirs without source evidence",
+    "the existing hswud_total_* product, which double counts derived urban-industrial withdrawal",
+    "post-2018 event reports used to tune flood-season rules"
+  ],
+  "literature_leakage_contract": {
+    "required_fields": [
+      "publication_date",
+      "effective_date",
+      "data_period_start",
+      "data_period_end",
+      "leakage_status"
+    ],
+    "operation_prior_cutoff": "data_period_end <= 2018-12-31",
+    "later_static_fact_exception": "allowed only for immutable pre-existing design facts with field-level provenance",
+    "held_out_operation_outcomes": "2019-2022 storage, release, inflow, drought and flood event outcomes are forbidden during prior design"
+  },
+  "authorization_checklist": [
+    "all modeled entities have unique routing control definitions",
+    "commissioning and impoundment dates are registered",
+    "Dongjiang and other multi-reservoir systems have an audited cascade/parallel graph",
+    "observation stations are classified as total release, component release, diversion, or downstream gauge",
+    "every numerical prior has a source, evidence grade and leakage status",
+    "2019-2022 files are hashed and access-locked for model selection",
+    "every reservoir has registered impoundment and operation dates or an explicit unresolved status",
+    "every active-at-start reservoir has an initialization source or a reproducible warmup and initial-condition sensitivity result",
+    "the real 230-Reach graph passes direction, acyclicity, cascade and control-edge validation",
+    "the all-reservoirs-disabled run passes exact row-by-row canonical parent reproduction"
+  ],
+  "noninferiority_contract": {
+    "evaluation_unit": "locked 2019-2022 retrospective evaluation using the same station and aggregation definitions as the canonical parent report",
+    "references": [
+      "R0 for R1",
+      "R0 and R1 for R2"
+    ],
+    "log_RMSE": "candidate minus reference <= 0.01",
+    "pooled_NSE": "candidate minus reference >= -0.02",
+    "station_median_NSE": "candidate minus reference >= -0.03",
+    "station_median_absolute_PBIAS_percentage_points": "candidate minus reference <= 2.0",
+    "rule": "all four limits must pass together; passing these limits establishes total-flow noninferiority only and cannot replace reservoir-specific release/storage or structural evidence"
+  },
+  "reservoir_specific_release_gate": {
+    "selection_period": "2016-2018 only",
+    "eligible_observation": "a station independently classified as total reservoir release or immediate downstream total flow; component outlets, channels, diversions and ambiguous station labels are excluded",
+    "aggregation": "monthly mean discharge computed from matched daily model values; months with less than 80 percent observation coverage are missing",
+    "minimum_evidence": "at least 3 distinct operator-ready reservoirs with at least 24 valid selection months each; otherwise status RELEASE_EVIDENCE_INSUFFICIENT and no empirical operation-rule claim is allowed",
+    "primary_metric": "per-reservoir RMSE of ln(1+Q_m3_s)",
+    "secondary_metrics": [
+      "per-reservoir absolute PBIAS",
+      "monthly seasonal-cycle correlation",
+      "high-flow and low-flow log-RMSE"
+    ],
+    "comparison": "R2 must be compared separately with R0 and R1 on identical reservoir-month rows",
+    "pass_rule": "for each reference the median per-reservoir primary-metric difference must be below 0, at least two thirds of eligible reservoirs must improve, and no eligible reservoir may worsen by more than 0.05 log-RMSE",
+    "small_sample_uncertainty": "use all paired reservoir-level sign flips when 3-12 reservoirs are eligible; bootstrap counts are descriptive and cannot manufacture spatial replication",
+    "boundary_confounded": "true if the same learned nonphysical deviation parameter reaches its registered truncation bound in at least ceil(N_reservoir/2) eligible reservoirs or if a system-level deviation reaches a bound in every development refit",
+    "storage_evidence_role": "remote water level, area and storage-change products remain post-selection diagnostics only until a separate observation-method contract is authorized; they cannot currently select R1 or R2"
+  },
+  "upgrade_rule": "R2 may replace R0 only if all structural gates pass, all four explicit total-flow noninferiority limits pass against R0 and R1, the machine-executable reservoir-specific release gate passes against both references, and priors are not boundary-confounded. Remote storage products remain diagnostics and are not an upgrade gate in this experiment.",
+  "not_authorized_reason": "All 13 priority artificial reservoirs now pass topology and activation pre-authorization; 12 are development-fit eligible and Datengxia is extension-only. Formal observation likelihood and parameter fitting remain closed until the synchronized pre-fit lock and observation-role audit are written. The 21 supplementary GRAnD dam points remain non-authoritative candidates."
+}

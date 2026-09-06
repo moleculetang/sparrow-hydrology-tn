@@ -1,0 +1,54 @@
+{
+  "B0": {
+    "n": 8738,
+    "raw_nse": 0.9253536264420666,
+    "log_nse": 0.9350801752854052,
+    "pbias_pct": 4.672942999358161,
+    "rmse_cfs": 12291.04949230177,
+    "mae_cfs": 3301.1129038126205,
+    "log_rmse": 0.4846657599536056
+  },
+  "B1": {
+    "n": 8738,
+    "raw_nse": 0.9255139055025435,
+    "log_nse": 0.9351722071824814,
+    "pbias_pct": 4.663393559318737,
+    "rmse_cfs": 12277.846865088526,
+    "mae_cfs": 3296.515138793832,
+    "log_rmse": 0.48432210122591046
+  },
+  "delta_B1_minus_B0": {
+    "raw_nse": 0.00016027906047688667,
+    "log_nse": 9.203189707618353e-05,
+    "pbias_pct": -0.009549440039423374,
+    "rmse_cfs": -13.202627213244341,
+    "log_rmse": -0.0003436587276951508
+  },
+  "highflow_logrmse_change_pct": -0.04114696588194411,
+  "large_station_logrmse_change_pct": -0.2058857941522163,
+  "path_mean_downstream_mae_change_pct": -0.18379642137340557,
+  "abs_pbias_change_points": -0.009549440039423374,
+  "fold_log_nse_delta": {
+    "fit_2006_2011_eval_2012_2013": 0.0002288564451845554,
+    "fit_2006_2013_eval_2014_2015": 0.00012287171767000338,
+    "fit_2006_2015_eval_2016_2018": -1.9582881284563314e-05
+  },
+  "legacy_registry_members": 28,
+  "legacy_evaluable_targets": 27,
+  "legacy_unmatched_labels": [
+    "天河站"
+  ],
+  "checks": {
+    "pooled_raw_nse_decline_le_0_001": true,
+    "pooled_log_nse_decline_le_0_001": true,
+    "every_fold_log_nse_decline_le_0_003": true,
+    "highflow_logrmse_worsen_le_1pct": true,
+    "large_station_logrmse_worsen_le_1pct": true,
+    "path_mean_downstream_mae_worsen_le_1pct": true,
+    "abs_pbias_worsen_le_1point": true,
+    "oof_identity": true,
+    "all_feature_accounting_gates": true
+  },
+  "all_promotion_gates_pass": true,
+  "terminal": "Q72_DETERMINISTIC_ENGINEERING_REPAIR_COMPLETE_AND_PROTECTED"
+}

@@ -1,0 +1,34 @@
+{
+  "stage": "20260824_30",
+  "parent": "20260824_29 PASS_STAGE29_READY_FOR_20260824_30; production_candidate=L0",
+  "question": "Does the temporally supported L0 structure retain skill when TN from a Reach, terminal tree, or the naturally added 2021 stations is excluded from fitting?",
+  "folds": {
+    "LORO": "for every T1/T2/T3 evaluation Reach, remove that Reach from fold training TN and refit all seven global parameters",
+    "LOTO": "for every T1/T2/T3 evaluation terminal tree, remove that tree from fold training TN and refit all seven global parameters",
+    "NATURAL_EXPANSION_2021": "fit 2016-2020 established stations and evaluate stations first observed in 2021"
+  },
+  "optimizer": {
+    "temporal_parent": "reuse the locked Stage 28 fold solution only as a numerical start",
+    "LORO_LOTO": "one warm start followed by 35-step strong-Wolfe L-BFGS, matching the frozen parent spatial protocol",
+    "natural_expansion": "two registered starts, 120 AdamW plus 60 strong-Wolfe L-BFGS"
+  },
+  "benchmarks": {
+    "model_reference": "frozen OLD36 nested predictions from 20260824_21",
+    "station_blind_constant": "within each fold, mean of training-station mean log1p(TN); every training station has equal weight",
+    "noninferiority": "paired block bootstrap CI95 upper of delta log-RMSE < 0.005",
+    "positive_skill": "paired block bootstrap CI95 lower of 1-SSE_L0/SSE_station_blind > 0"
+  },
+  "scientific_gate": "LORO and LOTO must both be noninferior to OLD36 and have positive station-blind skill; natural expansion is a required reported stress test but does not alone define 230-Reach support",
+  "p2_contract": "P2 may use only a test station's training-period history. Consequently P2 must equal P1 for every fully held-out Reach/tree and every first-observed-2021 station.",
+  "tree_163": "mandatory separate open-lake-center domain boundary audit; excluded from formal river LORO/LOTO and model selection",
+  "boundary_contract": "v_f=0 is a legal nested result. Other parameter boundaries in at most 5 percent of folds are reported as localized; more than 5 percent is spatial_fit_boundary_confounded.",
+  "forbidden": [
+    "station, Reach or tree identity in P1",
+    "using held-out TN to fit parameters or choose a starting value",
+    "P2 correction for a station absent from training",
+    "new data, new k_L values, temperature, WWTP, SAS or hydrology refit"
+  ],
+  "runtime": {"environment": "sparrow", "threads": 1, "warning_gib": 12, "hard_stop_gib": 16, "checkpointed": true},
+  "authorized_successor": "20260824_31"
+}
+

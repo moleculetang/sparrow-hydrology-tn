@@ -1,0 +1,10 @@
+{
+  "model_time_step": "month",
+  "soil_legacy_tau_month": [12, 36, 60, 96, 144, 240, 480],
+  "soil_rho_formula": "tau_month/(1+tau_month)",
+  "quick_n_rho_fixed_from_q72": 0.25,
+  "base_n_rho_fixed_from_q72": 0.85,
+  "station_log_bias_ridge_lambda": 12.0,
+  "water_gate_threshold_mm": 1e-12,
+  "forbidden": ["SON_mobile_partition", "effective_tn_delivery_mu_month", "river_loss", "river_tau"]
+}

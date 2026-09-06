@@ -1,0 +1,28 @@
+{
+  "scenario_id": "20260815_1",
+  "stage": "n_coupling_contract_and_external_hydrology_diagnostics",
+  "parents": {
+    "operational_flow_model": "E:\\SPARROW\\5_Test\\20260813_54",
+    "structural_water_interface": "E:\\SPARROW\\5_Test\\20260814_6\\outputs\\structural_canonical_main_interface_2006_2022.parquet"
+  },
+  "forbidden_parent": "E:\\SPARROW\\5_Test\\20260814_9",
+  "hydrology_policy": {
+    "q72_is_only_water_model": true,
+    "recalibrate_q72": false,
+    "watergap_as_forcing": false,
+    "groundwater_or_watergap_in_n_loss": false,
+    "climatology_years": [2006, 2015]
+  },
+  "annual_to_monthly": "uniform_N_y_divided_by_12",
+  "target": "TN_concentration",
+  "load_name": "model_based_load_proxy",
+  "development_folds": [
+    {"fold_id": "F1", "train_years": [2016, 2017], "eval_year": 2018},
+    {"fold_id": "F2", "train_years": [2016, 2018], "eval_year": 2019},
+    {"fold_id": "F3", "train_years": [2016, 2019], "eval_year": 2020},
+    {"fold_id": "F4", "train_years": [2016, 2020], "eval_year": 2021}
+  ],
+  "locked_year": 2022,
+  "bootstrap": {"replicates": 10000, "seed": 20260815, "ci": "percentile_95"},
+  "external_evidence_role": "diagnostic_only_not_a_gate_or_parameter_selector"
+}

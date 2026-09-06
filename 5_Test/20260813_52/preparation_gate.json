@@ -1,0 +1,15 @@
+{
+  "terminal": "EIGHT_SCENARIO_WORKSPACES_PREPARED",
+  "scenario_count": 8,
+  "scenario_ids": [
+    "S000",
+    "S100",
+    "S010",
+    "S001",
+    "S110",
+    "S101",
+    "S011",
+    "S111"
+  ],
+  "source_sha256": "7eecf39cb6a22ea31faf0de5461ea61e33258d61be395221a269ac7d4fa831ad"
+}

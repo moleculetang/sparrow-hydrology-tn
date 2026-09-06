@@ -1,0 +1,123 @@
+{
+  "experiment_id": "20260820_18",
+  "registered_before_candidate_TN_fit": true,
+  "scientific_question": "Does a Parent-nested, Q72-driven aquatic hydraulic-exposure operator improve monthly TN prediction while retaining the frozen eta_quick/eta_gw readout, and only then does an aquatic-temperature proxy add further information?",
+  "parent": {
+    "mechanism": "UNIFORM_PARENT",
+    "source": "E:/SPARROW/5_Test/20260820_12/final_lock.json",
+    "hydrology": "Q72_structural_canonical_main_only",
+    "legacy_ensemble": "S0/S1-12 x mu_T={12,36,60,96,144,240} months",
+    "readout_retained": [
+      "eta_quick",
+      "eta_gw",
+      "station_ridge_12_P2"
+    ]
+  },
+  "time_boundary": {
+    "development_support": [2016, 2021],
+    "oof_evaluation_years": [2018, 2019, 2020, 2021],
+    "retrospective_locked_year": 2022,
+    "stage0_reads_2022_TN": false
+  },
+  "hydraulic_contract": {
+    "water_source": "Q72 simulated monthly local/upstream discharge",
+    "geometry_source": "Andreadis width/depth only",
+    "manning_n": 0.035,
+    "geometry_scenario": "central",
+    "wqd_reference_discharge_m3_s": "FORBIDDEN",
+    "full_exposure_equation": "H_full=sum_i((segment_length_i/velocity_i)/86400/depth_i) [day m-1]",
+    "local_exposure_equation": "H_mid=sum_i((midpoint_to_outlet_segment_length_i/velocity_i)/86400/depth_i) [day m-1]",
+    "local_entry_semantics": "actual geometric midpoint-to-outlet integration"
+  },
+  "aquatic_operator": {
+    "upstream_term": "L_upstream_in * exp(-v_f(T)*H_full)",
+    "local_term": "L_local * exp(-v_f(T)*H_mid)",
+    "route_equation": "L_out=upstream_term+local_term for quick and GW N separately",
+    "concentration_equation": "C_mg_L=1000*(eta_quick*L_quick_out+eta_gw*L_gw_out)/routed_water_volume_m3",
+    "null_contract": "v_f=0 exact Parent",
+    "hydraulic_only_stage": "Q10=1",
+    "temperature_stage": "conditional only after hydraulic-only gate passes",
+    "temperature_equation": "v_f(T)=v_f_20*Q10_aquatic^((T-20)/10)"
+  },
+  "stage0": {
+    "allowed": [
+      "input_hash_and_coverage_audit",
+      "Q72_Andreadis_uptake_exposure_construction",
+      "v_f_zero_exact_parent_test",
+      "development_OOF_residual_plausibility_diagnostic"
+    ],
+    "forbidden": [
+      "v_f_fitting",
+      "Q10_fitting",
+      "eta_refitting",
+      "candidate_selection",
+      "gate_redefinition_from_results",
+      "TN_2022"
+    ],
+    "expected_missing_reaction_fingerprint": "within-station log residual obs-minus-pred tends to decrease as hydraulic or thermal exposure increases",
+    "plausibility_role": "non-blocking and not a model-selection gate"
+  },
+  "temperature_contract": {
+    "aquatic_product": "ERA5-Land lmlt 2006-2022 monthly by reach",
+    "aquatic_role": "modelled lake mixed-layer temperature proxy; not observed stream temperature",
+    "groundwater_product": "Benz et al. 2024 static 2020 state and 2000-2020 change",
+    "groundwater_role": "provenance audit only; forbidden in aquatic operator",
+    "air_temperature": "not used"
+  },
+  "difference_from_20260820_3": {
+    "20260820_3": "replaced eta_quick/eta_gw with groundwater and aquatic survival parameters",
+    "20260820_18": "retains and independently refits the same eta_quick/eta_gw readout for each candidate fold; adds one Parent-nested aquatic term",
+    "old_negative_result_not_reinterpreted": true
+  },
+  "conditional_fit_boundary": {
+    "hydraulic_only_parameter": "one basin-wide nonnegative v_f_20_m_per_day",
+    "temperature_parameters_if_authorized": [
+      "frozen hydraulic architecture",
+      "one pre-registered Q10_aquatic candidate rule"
+    ],
+    "forbidden": [
+      "groundwater reaction",
+      "reservoir residence time",
+      "reach-specific v_f",
+      "regional v_f",
+      "Q72 refit",
+      "Legacy refit",
+      "new mu_T",
+      "temperature rescue when hydraulic-only fails"
+    ]
+  },
+  "stage1_hydraulic_temporal_screen": {
+    "authorized_by": "reports/stage0_decision.json engineering PASS and hydraulic_only_fit_authorized=true",
+    "temperature": "Q10 fixed exactly 1; no temperature column enters routing",
+    "v_f_bounds_m_per_day": [0.0, 0.5],
+    "v_f_registered_grid_m_per_day": [0.0, 0.001, 0.002, 0.005, 0.01, 0.02, 0.05, 0.1, 0.2, 0.5],
+    "optimizer": "registered grid followed by bounded scalar refinement around the best interior grid point; ties within 1e-8 select the smaller v_f",
+    "independent_readout": "each model x fold x layer independently fits v_f, eta_quick, eta_gw and the frozen-form P2 station effect where applicable",
+    "parent_comparator": "matched UNIFORM_PARENT model x fold x layer",
+    "screen_gates": {
+      "P1_station_noninferior_models_min": 10,
+      "P1_tree_noninferior_models_min": 10,
+      "P2_station_noninferior_models_min": 10,
+      "P2_tree_noninferior_models_min": 10,
+      "P1_station_point_improved_models_min": 8,
+      "P1_tree_point_improved_models_min": 8,
+      "positive_v_f_in_at_least_3_of_4_folds_models_min": 8,
+      "upper_boundary_models_max": 2,
+      "eta_boundary_models_max": 2,
+      "noninferiority_margin_log_rmse": 0.005,
+      "paired_bootstrap_replicates": 10000
+    },
+    "pass_role": "authorizes nested spatial hydraulic evaluation; does not yet authorize temperature",
+    "fail_role": "hydraulic operator not supported; temperature cannot rescue it"
+  },
+  "claim_boundary": {
+    "hydraulic_only_success": "TN OOF supports an effective Q72-driven aquatic hydraulic-exposure term",
+    "temperature_success": "TN OOF supports modulation by the registered LMLT temperature proxy",
+    "forbidden_claims": [
+      "directly measured river denitrification rate",
+      "observed stream temperature response",
+      "reservoir retention",
+      "causal identification of a specific TN transformation pathway"
+    ]
+  }
+}

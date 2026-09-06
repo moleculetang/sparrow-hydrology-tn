@@ -1,0 +1,16 @@
+{
+  "stage": "20260823_6",
+  "new_structure_selection": false,
+  "gauged_station_candidate": "20260823_3/main + 20260823_4/P2_OBS_ONLY",
+  "spatial_model": "P1_GLOBAL_NESTED",
+  "spatial_role": "diagnostic_only",
+  "nested_loso": "for each temporal fold remove held-out station from training, refit standardization and global MAP, predict only held-out station evaluation rows",
+  "nested_loto": "for each temporal fold remove all stations in held-out terminal tree, refit and predict held-out tree evaluation rows",
+  "station_blind_benchmark": "equal-weight mean of training-station mean logQ",
+  "skill_definition": "1-SSE_model/SSE_benchmark",
+  "spatial_support": "bootstrap CI95 lower skill > 0 for both LOSO and LOTO",
+  "temporal_mainline_policy": "spatial failure narrows claim but is not an upgrade veto",
+  "water_accounting": ["positive-input process closure", "AET>PPT omitted withdrawal", "AET/PET semantic mismatch", "within-month release timing", "fixed monthly retention across month lengths", "absent river travel-time routing"],
+  "forbidden": ["new candidate", "station deletion", "retrospective use", "calling process fast/slow proxies observed water age"]
+}
+

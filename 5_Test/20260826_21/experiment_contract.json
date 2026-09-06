@@ -1,0 +1,19 @@
+{
+  "stage": "20260826_21",
+  "status": "registered_before_final_synthesis",
+  "purpose": "Close the program after candidate-gate failure, retain the frozen parent, and state the exact TN hydrology interface boundary.",
+  "model_training_or_refit": false,
+  "raw_2019_2022_discharge_read": false,
+  "retrospective_evidence": "reuse only the already locked 20260825_7 summary",
+  "TN_read": false,
+  "candidate_promotion_possible": false,
+  "authoritative_parent": "20260825_7 GLOBAL_HBV_R0",
+  "hard_boundary": "Only routed total discharge is formally authorized for TN; response components remain internal diagnostics.",
+  "forbidden": [
+    "refitting after Stage 16 failure",
+    "using Stage 17 spatial results to cancel the Stage 16 temporal high-flow failure",
+    "claiming H2 or H3 without the registered independent evidence",
+    "authorizing fast/intermediate/slow components as observed water sources",
+    "creating 20260826_23 or later folders"
+  ]
+}

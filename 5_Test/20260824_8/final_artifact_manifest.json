@@ -1,0 +1,44 @@
+{
+  "status": "COMPLETE",
+  "program_terminal_state": "MONITORED_STATION_PREDICTION_UPGRADE_ONLY",
+  "development_support_period": [
+    2016,
+    2021
+  ],
+  "OOF_evaluation_years": [
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "retrospective_locked_year": 2022,
+  "TN_2022_source_file_read_count": 1,
+  "files": {
+    "E:\\SPARROW\\5_Test\\20260824_8\\experiment_contract.json": "999e70e0ce2c6ec405313182317ca3b009ff01ddb9a7a0a0c03a591a99e54679",
+    "E:\\SPARROW\\5_Test\\20260824_8\\locks\\development_mechanism_lock.json": "980bcf74148ceca913678cd1ea01d962941404b3e2f5f94df011126089711084",
+    "E:\\SPARROW\\5_Test\\20260824_8\\locks\\full_development_parameter_lock.json": "0b171cca1dedf6d0c2db03fdf0a6bc23d637bfc9d26e5c9cdfa28560f912fc6b",
+    "E:\\SPARROW\\5_Test\\20260824_8\\locks\\TN_2022_source_read_receipt.json": "53ccbf44d74beab1a4e7b3188b91db21110174ba0f2cfe1bcd895ec8d1ec72b0",
+    "E:\\SPARROW\\5_Test\\20260824_8\\outputs\\full_development_H1_parameters.parquet": "d42722494fa79664a0913b3e42f8f733815b63f8a2ba0a5aa9bd8171b370fcd9",
+    "E:\\SPARROW\\5_Test\\20260824_8\\outputs\\full_development_parameters.parquet": "1c63e5d24cec4885bcfb57d4d0b3ed3ac7f753a9fcb43b8e33ed6048883798bd",
+    "E:\\SPARROW\\5_Test\\20260824_8\\outputs\\full_development_station_effects.parquet": "569d96738200df65d8f857fa88fdfc07903c0ed110510bd862ce4af190ae570c",
+    "E:\\SPARROW\\5_Test\\20260824_8\\outputs\\full_development_training_predictions.parquet": "768cc69fa797de73ef644ffd62c9bf400fdd7b49c3be5b839adb13afcd16f5e8",
+    "E:\\SPARROW\\5_Test\\20260824_8\\outputs\\locked_2022_month_flow_residuals.parquet": "a1b072324850d8c54e4926b1494574ac3db55923a7f6f9351a8167f2fd635ac8",
+    "E:\\SPARROW\\5_Test\\20260824_8\\outputs\\locked_2022_observations_snapshot.parquet": "0cc0ea9195c24c232de679da09b16aa02b57f5189a3852f2a2168fcddabe23bd",
+    "E:\\SPARROW\\5_Test\\20260824_8\\outputs\\locked_2022_retrospective_gates.parquet": "097f4f6a67bc1e328f20e6cf255f2d7eab4ac166049a0daac25c380864eef506",
+    "E:\\SPARROW\\5_Test\\20260824_8\\outputs\\locked_2022_retrospective_metrics.parquet": "be6dfe95d926ea4ff5886ec70e34e94e44d9552d62517950887eac201e38b656",
+    "E:\\SPARROW\\5_Test\\20260824_8\\outputs\\locked_2022_retrospective_predictions.parquet": "04ff01b13bfe75335bf162f1d3d3ddf98c1e40fb5eca65853db4fb03c0583211",
+    "E:\\SPARROW\\5_Test\\20260824_8\\outputs\\reach_month_H1_exposure_2022.parquet": "e0bc0827aa8b7e67fbad03a31d60cb0728b14804ad58661ae0338f9b1a27eb58",
+    "E:\\SPARROW\\5_Test\\20260824_8\\outputs\\tree_163_locked_retrospective_diagnostic.parquet": "861696228a08ae30b3d3bea410d2d8abc1085a558d7f74707d5bec716c928e9f",
+    "E:\\SPARROW\\5_Test\\20260824_8\\README.md": "aa20010f12ab3e9291960039f7adf9356fe78bff6ff94e31145d0ffd065f63e2",
+    "E:\\SPARROW\\5_Test\\20260824_8\\reports\\development_mechanism_lock.json": "980bcf74148ceca913678cd1ea01d962941404b3e2f5f94df011126089711084",
+    "E:\\SPARROW\\5_Test\\20260824_8\\reports\\final_program_decision.json": "2e4743136a314b88830bfa28aaa50c0a21ba87168b0714a92e879533bc395585",
+    "E:\\SPARROW\\5_Test\\20260824_8\\reports\\full_development_parameter_lock.json": "0b171cca1dedf6d0c2db03fdf0a6bc23d637bfc9d26e5c9cdfa28560f912fc6b",
+    "E:\\SPARROW\\5_Test\\20260824_8\\reports\\independent_verification.json": "3741704a15ee668aa6cc18e526cdfbc2f16e5e07d84d4c69437e738197c8c3a0",
+    "E:\\SPARROW\\5_Test\\20260824_8\\reports\\locked_2022_retrospective_audit.json": "2e4743136a314b88830bfa28aaa50c0a21ba87168b0714a92e879533bc395585",
+    "E:\\SPARROW\\5_Test\\20260824_8\\reports\\technical_report.md": "644a19777df374d65cad95f04990502426db17efafdc830ebc7c5f2650706aa0",
+    "E:\\SPARROW\\5_Test\\20260824_8\\scripts\\run_stage0_mechanism_lock.py": "3434fc2bbd40c5d1d2ad93bdbb1bc58c7770359ea0b43b5b20ef6112acc2361a",
+    "E:\\SPARROW\\5_Test\\20260824_8\\scripts\\run_stage1_full_development.py": "67ad73378adfda0f22fc21d72c368eaed9fd3f0eae7132980791a19f1b9f58e3",
+    "E:\\SPARROW\\5_Test\\20260824_8\\scripts\\run_stage2_locked_2022_retrospective.py": "374fd35fd97da5516fb99546b3ad9a769f93ad7c0a0664bf3911326847e69c66",
+    "E:\\SPARROW\\5_Test\\20260824_8\\scripts\\verify_and_finalize.py": "f1add6fc91bc1f41e944dfafc66bf6dbe65ff0cd6caab63a71bd0376a8062988"
+  }
+}

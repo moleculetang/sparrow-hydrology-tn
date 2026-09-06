@@ -1,0 +1,47 @@
+{
+  "stage": "20260904_4",
+  "status": "REGISTERED_BEFORE_TEMPORAL_RESULTS",
+  "hypothesis": "A mandatory transferable Reach head can be jointly fitted with the MINERAL_LIFETIME process and strongly-shrunk site residual without relying on held-out-year TN.",
+  "hydrology": "20260828_35 formal 1961-2024 product",
+  "folds": {
+    "T1": {"train": [2021], "evaluation": 2022},
+    "T2": {"train": [2021, 2022], "evaluation": 2023},
+    "T3": {"train": [2021, 2022, 2023], "evaluation": 2024}
+  },
+  "capacities": ["H7", "H14", "H22"],
+  "fit_contract": {
+    "single_joint_objective": true,
+    "student_t_df": 4,
+    "population_conditional_weights": [0.9, 0.1],
+    "station_tree_weights": [0.9, 0.1],
+    "station_ridge": 12.0,
+    "gamma_prior_sd": 0.25,
+    "deterministic_starts": 5,
+    "projected_kkt_tolerance": 1e-5,
+    "feature_preprocessing": "fold-local p01/p99 winsorization, centering and scaling learned only from training reaches"
+  },
+  "resource_revision": {
+    "workers": 1,
+    "threads_per_worker": 4,
+    "measured_worker_peak_rss_gib": 14.01,
+    "combined_rss_limit_gib": 28.0,
+    "reason": "live three-worker test reached approximately 42 GiB and was stopped before checkpoints; all official fits run serially"
+  },
+  "optimizer_engineering_amendment": {
+    "registered_before_any_final_temporal_prediction": true,
+    "change": "increase block-coordinate refinement ceiling from 8 to 10 cycles, permit deterministic component-wise physical-gradient secant proposals after two accepted block iterates, and use acceptance-gated bounded Gauss-Seidel physical-coordinate repair when full KKT is at most 5e-3",
+    "reason": "H7 T1 KKT decreased monotonically with an approximately 0.4 contraction per cycle, implying both that eight cycles could stop immediately above the unchanged 1e-5 gate and that gradient-root extrapolation can avoid repeated 30-forward-evaluation line searches",
+    "acceptance": "an accelerated proposal is accepted only after refitting the full gamma/site head and only when the unchanged objective does not increase and the independently recomputed full projected KKT strictly decreases",
+    "interrupted_fit_recovery": "the unfinished H7 T1 run wrote no formal checkpoint; its completed per-cycle physical coordinates and physical gradients are recoverable from the append-only stdout log and may seed the same acceptance-gated acceleration",
+    "discarded_engineering_probe": "a coordinate-only Aitken proposal was tested before any final prediction, increased KKT from 1.91e-4 to 6.38e-4, wrote no formal checkpoint and was discarded",
+    "coordinate_repair_precedent": "same unchanged-objective bounded physical-coordinate rescue previously passed the 20260902_5 nested-fold numerical audit; each proposal here must additionally reduce the independently recomputed full KKT after gamma/site refitting",
+    "serialization_fix": "after H7 T1 achieved KKT 2.36e-6 but before any formal output was written, audit_json exposed NumPy int64 training-Reach identifiers; FoldDesign now converts them to native int without changing values, preprocessing or predictions",
+    "coordinate_control_flow_fix": "before H7 T2 wrote any final checkpoint, four accepted coordinate repairs reduced KKT to 3.45e-4 but a rejected repeat of beta_low incorrectly forced an immediate full-block fallback; rejected coordinates are now skipped within the sweep so other residual coordinates are tested, and only an exhausted sweep may fall back",
+    "near_optimum_block_cap": "after acceptance-gated coordinate sweeps, any remaining full physical fallback uses at most 8 strong-Wolfe iterations per cycle instead of 24; the unchanged full KKT gate, not iteration count, determines completion",
+    "temporal_failed_checkpoint_repair": "If a saved final temporal solution is finite and mass-closed but misses the unchanged 1e-5 projected-KKT gate, resume from that saved solution rather than repeating the five starts. Alternate the exact cached gamma/site head with bounded physical-scale L-BFGS-B on the six non-profiled interior process coordinates. Each proposal is accepted only when the unchanged full objective does not increase and independently recomputed full projected KKT strictly decreases; a 24-iteration physical Torch L-BFGS fallback is allowed under the same acceptance gate. Held-out predictions are regenerated only after the numerical gate passes.",
+    "unchanged": ["objective", "equations", "bounds", "starts", "v_f profile", "projected KKT tolerance", "selection rules"]
+  },
+  "prediction_layers": ["raw_mass_process", "population_transferable", "gauged_conditional"],
+  "selection_policy": "Only population-transferable temporal and later nested spatial evidence may select H7/H14/H22; no-head is diagnostic-only.",
+  "forbidden": ["2022-2024 held-out TN in fitting", "temperature", "new TN lag", "WQD reference discharge", "station-only promotion"]
+}

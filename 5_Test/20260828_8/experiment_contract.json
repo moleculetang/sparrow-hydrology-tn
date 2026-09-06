@@ -1,0 +1,19 @@
+{
+  "stage": "20260828_8",
+  "required_predecessor": "20260828_7 STATE_CONSISTENT_230_REACH_PRODUCT_LOCKED",
+  "purpose": "Post-lock total-flow evaluation of the immutable state-consistent TN hydrology interface.",
+  "time_test": {
+    "period": "2019-2022",
+    "main_cohort": "all available members of the registered 91 stations",
+    "strict_comparison_cohort": "same 65 stations used by 20260827_6"
+  },
+  "space_test": ["珠坑", "昭平", "瓦村（二）", "盘江桥（三）"],
+  "noninferiority_vs_20260827_6": {
+    "pooled_log_RMSE_increase_max": 0.01,
+    "pooled_NSE_drop_max": 0.02,
+    "station_median_NSE_drop_max": 0.03,
+    "station_median_absolute_PBIAS_worsening_max_pct_point": 2.0
+  },
+  "claim_boundary": "Fast/slow components are state-consistent model states and fluxes, not independently tracer-validated true water ages or groundwater fractions.",
+  "model_mutation_after_observation_read": "forbidden"
+}

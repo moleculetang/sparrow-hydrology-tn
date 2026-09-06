@@ -1,0 +1,19 @@
+{
+  "stage": "20260828_9",
+  "required_predecessor": "20260828_8 FORMAL_TOTAL_FLOW_NONINFERIORITY_FAILED",
+  "purpose": "Remove the unnecessary Stage-7 gate refit and embed only the already locked state-consistent operator into the accepted 20260827_6 total-flow parent.",
+  "immutable_parent": {
+    "model": "20260827_5 full_development_model_lock.pt",
+    "accepted_evidence": "20260827_6 time and space total-flow evaluation",
+    "parameter_updates": "none"
+  },
+  "single_structural_change": {
+    "regionalized_score": "frozen 20260828_2 91-station score",
+    "lambda_S": 0.1805437376850875,
+    "location": "upper fast-versus-percolation partition before lower storage",
+    "output_reallocation": "forbidden"
+  },
+  "prediction": "2006-2024, 230 Reach",
+  "test_informed_tuning": "forbidden; lambda, score, physical parameters and gate are all fixed before this rerun",
+  "success": "exact state/flux closure and unchanged parent parameter hashes; performance is reported retrospectively in 20260828_10"
+}

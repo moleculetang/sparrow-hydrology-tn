@@ -1,0 +1,62 @@
+{
+  "runtime": {
+    "environment_name": "sparrow",
+    "expected_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "sys_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "sys_executable": "D:\\ProgramData\\anaconda3\\envs\\sparrow\\python.exe",
+    "conda_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "conda_default_env": "sparrow"
+  },
+  "baseline_oof_sha256": "e899ffc0f09a28f3bc7bd51d066a62d7593c56e35d8900b02a562eae8f1c28c7",
+  "baseline_reproduction": {
+    "prediction_max_abs_difference_cfs": 0.0,
+    "observed_max_abs_difference_cfs": 0.0,
+    "passed": true
+  },
+  "engineering_valid": true,
+  "dem_corrected_et0_completed": false,
+  "dem_elevation_note": "UNRESOLVED_IN_FROZEN_SPARROW_ENV_NO_APPROVED_RASTER_READER",
+  "pooled_metrics": {
+    "R3_00": {
+      "NSE_raw": 0.8468184047959191,
+      "NSE_log": 0.9284017011819026,
+      "KGE": 0.879516454771904,
+      "PBIAS_pct": -4.834077813414873,
+      "RMSE_cfs": 17607.10298529307,
+      "log_RMSE": 0.5089850447031077
+    },
+    "R3_10": {
+      "NSE_raw": 0.8523519630731969,
+      "NSE_log": 0.9296449683895316,
+      "KGE": 0.8737552302943106,
+      "PBIAS_pct": -5.388266392973812,
+      "RMSE_cfs": 17286.156839359763,
+      "log_RMSE": 0.5045465620963613
+    },
+    "R3_01": {
+      "NSE_raw": 0.8765645375052178,
+      "NSE_log": 0.9291804905736735,
+      "KGE": 0.9079027148071038,
+      "PBIAS_pct": -3.135012999731301,
+      "RMSE_cfs": 15805.367008867272,
+      "log_RMSE": 0.5062093086023131
+    },
+    "R3_11": {
+      "NSE_raw": 0.8814288743861263,
+      "NSE_log": 0.930569373457068,
+      "KGE": 0.9020899552029198,
+      "PBIAS_pct": -3.760436284992335,
+      "RMSE_cfs": 15490.808383322652,
+      "log_RMSE": 0.5012209464396116
+    }
+  },
+  "combined_pooled_log_nse_gain": 0.0021676722751654554,
+  "legacy_target_count_in_registry": 28,
+  "legacy_target_count_evaluable": 27,
+  "combined_station_median_log_nse_change": -0.0025915172586491453,
+  "combined_station_median_raw_nse_change": 0.030452413767057096,
+  "combined_legacy_lowflow_abs_bias_improved_stations": 17,
+  "combined_legacy_lowflow_median_delta_abs_log_bias": -0.004502291186230245,
+  "combined_legacy_lowflow_median_delta_log_rmse": -0.004338290584529614,
+  "terminal": "R3_ENGINEERING_VALID_WITH_OOF_IMPROVEMENT"
+}

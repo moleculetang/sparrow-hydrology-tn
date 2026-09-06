@@ -1,0 +1,31 @@
+{
+  "stage": "20260828_36",
+  "title": "Post-lock discharge availability audit and registered modern diagnostics",
+  "status": "REGISTERED_BLOCKED_ON_20260828_35_LOCK",
+  "parent": "E:/SPARROW/5_Test/20260828_35/locks/tn_hydrology_interface_lock.json",
+  "purpose": "Audit whether pre-2006 observations exist, and after the hydrology product is immutable recompute the registered modern and four-station diagnostics. This stage cannot select or alter the model.",
+  "observation_policy": {
+    "first_access": "Only after the Stage 35 product and hash lock exist",
+    "period": "Audit 1961-2005 availability; the current authoritative archive contains 0 pre-2006 records and therefore cannot provide historical performance metrics",
+    "station_exclusion": "No performance-based exclusions; only pre-existing documented identity/QC exclusions are allowed and must be reported",
+    "refitting": false
+  },
+  "reporting_strata": [
+    "2010-2018 previously calibrated station locations, reported as in-sample diagnostic only",
+    "2019-2022 temporal evaluation using locked observations",
+    "Completely held-out spatial stations 珠坑, 昭平, 瓦村（二）, 盘江桥（三） using their locked retrospective observations",
+    "1961-2005 observation availability and evidence-gap statement"
+  ],
+  "metrics": [
+    "pooled NSE",
+    "station mean and median NSE",
+    "pooled and station log-RMSE",
+    "PBIAS",
+    "KGE and its correlation/variability/bias components",
+    "monthly signed bias and flow-regime diagnostics",
+    "fast/slow fractions as modeled diagnostics only"
+  ],
+  "decision_role": "diagnostic_only",
+  "failure_behavior": "Report degradation or nonstationarity transparently; do not reopen parameter fitting in this program",
+  "pass_status": "COMPLETE_POST_LOCK_DIAGNOSTIC_WITH_PRE2006_EVIDENCE_GAP"
+}

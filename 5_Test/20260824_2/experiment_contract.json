@@ -1,0 +1,87 @@
+{
+  "experiment_id": "20260824_2",
+  "hypothesis_id": "SOURCE_HISTORY_AND_IDENTIFIABILITY_PREFLIGHT",
+  "registered_before_new_candidate_tn_results": true,
+  "parent_lock": "E:/SPARROW/5_Test/20260824_1/locks/parent_lock_registry.json",
+  "question": "Do the available 1961-2021 agricultural source histories support a mass-conserving and numerically identifiable test of manure-associated source-zone SON retention, distinct from generic equal-mass storage and all-source SON12?",
+  "allowed_work": [
+    "audit the frozen reach-year and reach-month agricultural N ledgers",
+    "audit current code and data provenance for Q72-only water information",
+    "recheck municipal WWTP non-overlap without activating WWTP mass",
+    "search and synthesize peer-reviewed nitrogen-Legacy literature",
+    "run source-and-hydrology-only synthetic identifiability tests",
+    "use station/reach/time identifiers without reading TN values"
+  ],
+  "forbidden_work": [
+    "fit or score any new candidate against observed TN",
+    "read or summarize 2022 TN",
+    "change Q72, H1, source timing, mu, T1, R0 or readout",
+    "add temperature, SAS, groundwater age, second soil pool, reservoir process or WWTP",
+    "estimate a real manure mineralization rate from the synthetic test",
+    "claim field-scale validation from model-internal states"
+  ],
+  "time_boundary": {
+    "source_history_audit": [1961, 2021],
+    "development_support": [2016, 2021],
+    "oof_years_reserved_for_later_formal_experiment": [2018, 2019, 2020, 2021],
+    "TN_2022_read": false
+  },
+  "registered_structures": {
+    "AGG_MOBILE_PARENT": "all positive net diffuse surplus enters the existing aggregate mobile source-zone pool; no SON12 allocation",
+    "ALL_SOURCE_SON12": "all positive net diffuse surplus enters the fixed 12-month SON pool",
+    "GENERIC_MATCHED_SON12": "phi_M times an equal-mass basin-year generic allocation enters SON12; its basin-year slow mass exactly matches MANURE_ASSOC_SON12",
+    "MANURE_ASSOC_SON12": "phi_M times the proportional manure-associated share of positive net diffuse surplus enters SON12"
+  },
+  "source_partition": {
+    "gross_input": "G = fertilizer + manure + cropland_BNF + atmospheric_deposition",
+    "net_surplus": "S = G - crop_removal",
+    "positive_surplus": "S_plus = max(S, 0)",
+    "manure_associated_potential": "M_star = S_plus * manure / G when G > 0, else 0",
+    "post_bypass_manure_potential": "M_remaining_star_r_y_m = (M_star_r_y / 12) * (1 - fresh_quick_bypass_r_y_m)",
+    "post_bypass_remaining_surplus": "S_remaining_r_y_m = (S_plus_r_y / 12) * (1 - fresh_quick_bypass_r_y_m)",
+    "generic_matched_potential": "G_star_r_y_m = S_remaining_r_y_m * sum_r(M_remaining_star_r_y_m) / sum_r(S_remaining_r_y_m)",
+    "mass_match": "sum_r(G_star_r_y_m) = sum_r(M_remaining_star_r_y_m) for every month with positive remaining basin surplus",
+    "slow_input": "phi_M * potential",
+    "mobile_input": "S_plus - slow_input"
+  },
+  "parameters": {
+    "phi_M_grid": [0.0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1.0],
+    "soil_slow_time_months": 12,
+    "frozen_mu_months": [12, 36, 60, 96, 144, 240],
+    "new_free_parameter_count": 1
+  },
+  "synthetic_preflight": {
+    "uses_observed_TN_values": false,
+    "scales": ["all_230_reaches", "locked_monitoring_support"],
+    "required_checks": [
+      "source ledger completeness and annual-to-month closure",
+      "manure-associated and generic-matched basin-year equality",
+      "operator mass balance and exact phi_M=0 nesting",
+      "pairwise process-signal correlations and normalized distances",
+      "profile recovery of generating structure and phi_M under registered synthetic noise",
+      "confounding with the six frozen transport-memory mu members"
+    ],
+    "synthetic_generation": {
+      "generating_structure": "MANURE_ASSOC_SON12",
+      "generating_phi_M": [0.25, 0.5, 0.75, 1.0],
+      "generating_mu_months": [12, 36, 60, 96, 144, 240],
+      "replicates_per_combination": 20,
+      "noise": "independent Normal(0, 0.20) perturbation on log1p concentration",
+      "random_seed": 2026082402,
+      "nuisance_readout": "bounded 0-1 eta_quick and eta_gw refitted for every candidate using station-equal weights",
+      "selection_score": "station-equal weighted RMSE on log1p synthetic concentration",
+      "tie_tolerance_log_rmse": 1e-6,
+      "conservative_tie_order": ["AGG_MOBILE_PARENT", "ALL_SOURCE_SON12", "GENERIC_MATCHED_SON12", "MANURE_ASSOC_SON12"]
+    },
+    "identifiability_gate": "MANURE_ASSOC must be distinguishable from GENERIC_MATCHED at monitoring support in at least 80% of registered synthetic replicates for phi_M >= 0.25, with median absolute phi_M error <= 0.10; otherwise formal source-identity fitting is not authorized",
+    "mass_balance_relative_tolerance": 1e-10,
+    "exact_nesting_absolute_tolerance": 1e-12
+  },
+  "preflight_terminal_statuses": [
+    "FORMAL_SOURCE_SELECTIVE_RETENTION_EXPERIMENT_AUTHORIZED",
+    "SOURCE_HISTORY_INSUFFICIENT",
+    "SOURCE_IDENTITY_NOT_IDENTIFIABLE",
+    "SOURCE_VS_TRANSPORT_MEMORY_CONFOUNDED",
+    "IMPLEMENTATION_BLOCKED"
+  ]
+}

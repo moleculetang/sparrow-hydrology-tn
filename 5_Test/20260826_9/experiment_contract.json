@@ -1,0 +1,10 @@
+{
+  "stage": "20260826_9",
+  "status": "registered_before_execution",
+  "purpose": "Lock the primary total-flow product and the allowed role of the structural response ensemble",
+  "decision_evidence": ["20260826_5 development comparison", "20260826_8 complete-tree zero-history evaluation", "20260826_7 ML total-flow ceiling"],
+  "primary_promotion_requires": "development viability plus nested spatial noninferiority",
+  "retrospective_discharge_used": false,
+  "authorized_successor": "20260826_10"
+}
+

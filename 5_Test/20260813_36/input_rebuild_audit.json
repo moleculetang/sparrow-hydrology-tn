@@ -1,0 +1,21 @@
+{
+  "parent_sha256": "3678cd8a950290a1962f27c9e702ae84087f594e5e3bdc05332644dc200ec26f",
+  "output_sha256": "7eecf39cb6a22ea31faf0de5461ea61e33258d61be395221a269ac7d4fa831ad",
+  "rows": 46920,
+  "reach193_rows": 204,
+  "old_observed_months": 36,
+  "new_observed_months": 204,
+  "old_station_labels": [
+    "发蒙（二）站"
+  ],
+  "new_station_labels": [
+    "江边街（二）站"
+  ],
+  "non_target_rows_identical": true,
+  "expected_outer_oof_rows": 8822,
+  "source_months": 204,
+  "source_groups": [
+    "authority_resolved_2006_2009",
+    "complete_2010_2022"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "stage": "20260824_31",
+  "parent": "20260824_30 PASS_STAGE30_READY_FOR_20260824_31",
+  "question": "Are the L0 temporal conclusions robust to the registered monthly source-calendar uncertainty, and how large is the already registered fixed-Legacy timescale uncertainty?",
+  "calendar_scenarios": ["EARLY", "CENTRAL", "LATE"],
+  "calendar_contract": [
+    "all scenarios retain identical Reach-year source and crop mass",
+    "each scenario receives an independent pre-1961 equilibrium under its own 1961-1970 calendar",
+    "EARLY and LATE independently refit the same seven global parameters in every T1/T2/T3 fold",
+    "CENTRAL remains the production forcing regardless of sensitivity outcome"
+  ],
+  "robustness_gate": "EARLY and LATE must each be P1-noninferior to CENTRAL with paired station-block CI95 upper < 0.005 and no delivery/readout boundary",
+  "fixed_timescale_contract": "Reuse locked Stage 29 L0/LEG10/LEG20/LEG50 results; no refit, interpolation, k expansion or structure reselection is allowed.",
+  "interpretation": "Calendar scenarios represent uncertainty in effective monthly N availability, not observed fertilizer dates. Fixed Legacy candidates are structural sensitivity, not identified residence-time distributions.",
+  "forbidden": [
+    "new data or new calendar scenarios",
+    "annual divided by 12 forcing",
+    "changing annual N mass",
+    "new k_L values or selecting Legacy from P2",
+    "temperature, WWTP, SAS, hydrology refit or another N state"
+  ],
+  "runtime": {"environment": "sparrow", "threads": 1, "warning_gib": 12, "hard_stop_gib": 16},
+  "authorized_successor": "20260824_32"
+}
+

@@ -1,0 +1,56 @@
+{
+  "stage": "20260824_44",
+  "status": "REGISTERED_BEFORE_RESULTS",
+  "purpose": "Repair the unified one-fit objective on the frozen old-L0 forward without changing any N or water process equation.",
+  "reference": {
+    "u1": "E:/SPARROW/5_Test/20260824_40/outputs/u1_unified_temporal_oof_predictions.parquet",
+    "stage32_equivalent_oof": "E:/SPARROW/5_Test/20260824_28/outputs/l0_old36_temporal_oof_predictions.parquet",
+    "candidate_filter": "candidate=L0"
+  },
+  "candidate": "U2_PC50",
+  "single_fit_outputs": ["raw_mass_process", "population_transferable", "gauged_conditional"],
+  "objective": {
+    "equation": "0.5*L_population + 0.5*L_conditional + explicit_global_and_site_priors/J_ref",
+    "each_layer_loss": "0.5*station_macro_StudentT4 + 0.5*terminal_tree_macro_StudentT4",
+    "site_ridge_precision": 12.0,
+    "site_effect_location": "observation_head_only",
+    "site_effect_centering": "0.5 station-equal plus 0.5 tree-and-station-equal",
+    "unknown_station": "conditional_unavailable",
+    "structure_selection_layer": "population_transferable"
+  },
+  "optimizer": {
+    "deterministic_multistarts": 5,
+    "adamw_steps": 160,
+    "adamw_learning_rate": 0.03,
+    "weight_decay": 0.0,
+    "lbfgs_max_iter": 200,
+    "projected_gradient_tolerance": 1e-5,
+    "gradient_clip_norm": 10.0
+  },
+  "temporal_folds": ["T1", "T2", "T3"],
+  "parity_gate": {
+    "noninferiority_margin_log_rmse": 0.005,
+    "bootstrap_replicates": 10000,
+    "population_vs_old_P1_station_and_tree": "CI95 upper < 0.005",
+    "conditional_vs_old_P2_station_and_tree": "CI95 upper < 0.005"
+  },
+  "engineering_gates": [
+    "old forward equations and inputs unchanged",
+    "site head cannot alter raw or population predictions",
+    "all five starts finite",
+    "projected-gradient or valid boundary KKT <= 1e-5",
+    "site effects centered <= 1e-10",
+    "prediction keys unique and identical to reference",
+    "peak RSS < 12 GiB",
+    "all writes atomic and no .part remains"
+  ],
+  "successor": "20260824_45 if parity and engineering gates pass; otherwise stop with method mainline retained and production parity not reached",
+  "forbidden": [
+    "change process equation",
+    "change hydrology",
+    "add regionalization",
+    "add temperature",
+    "add source coefficient",
+    "post-hoc P2 fit"
+  ]
+}

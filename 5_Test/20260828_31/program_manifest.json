@@ -1,0 +1,90 @@
+{
+  "program": "20260828_long_hydrology_1961_2025",
+  "manifest_version": "3.0",
+  "status": "COMPLETE_DUAL_PRODUCT_1961_2024_FORMAL_AND_1961_2025_SENSITIVITY",
+  "updated_at": "2026-09-03T23:30:00+08:00",
+  "objective": "Extend the accepted state-consistent fast/slow Reach and reservoir hydrology interface to 1961-2025 without refitting, then export a conservative TN-ready hydrology product.",
+  "frozen_parent": {
+    "hydrology": "DYN2P/Q72 state-consistent fast/slow model",
+    "checkpoint": "E:/SPARROW/5_Test/20260828_9/outputs/parent_preserving_state_consistent_model.pt",
+    "reservoir_operator": "R2_tau180_a0.25_d0.00",
+    "existing_interface": "E:/SPARROW/5_Test/20260828_24",
+    "completion_lock": "E:/SPARROW/5_Test/20260828_26/locks/program_completion_lock.json"
+  },
+  "current_data_snapshot": {
+    "chm_pre_v2_1961_2025": "65/65 annual files present; official 2005 replacement deep-audited, promoted and used",
+    "cmfd_v2_0": "4608/4608 source files present; four corrupt payloads (temp 1961-01, temp 1993-08, pres 1993-10, pres 1999-01) replaced and deep-read",
+    "cmfd_reach_forcing_build": "PASS; 1961-2024 complete for 230 Reach with 5,376,480 rows",
+    "era5_land_formal": "60/60 monthly files present and deep-readable; the corrupt 2023-08 payload was exactly reacquired and replaced",
+    "era5_land_background": "2006-2020 optional archive currently contains 44/180 monthly files (2006-2008 complete and 2009-01 through 2009-08); non-blocking and forbidden from changing the formal bridge"
+  },
+  "formal_forcing": {
+    "precipitation_1961_2025": "CHM_PRE V2 daily",
+    "pet_1961_2024": "CMFD V2.0 six-variable FAO-56",
+    "pet_2025": "ERA5-Land hourly FAO-56 with Reach-by-calendar-month multiplicative bridge",
+    "pet_bridge_fit": "2021-2023",
+    "pet_bridge_validation": "2024",
+    "pet_bridge_claim_boundary": "Low-dimensional source harmonization for 2025 only; not a long-period ERA5 replacement validation"
+  },
+  "formal_branching": {
+    "if_2025_pet_bridge_passes": "1961-2025 is the formal product",
+    "if_2025_pet_bridge_fails": "1961-2024 remains formal and 2025 is exported only as PET_EXTENSION_CONFOUNDED sensitivity",
+    "observed_decision": "Bridge correlation was 0.916165 below the preregistered 0.98 threshold; the failed-bridge branch was executed",
+    "background_era5_2006_2020": "May support a later robustness audit only after final lock; cannot revise this program"
+  },
+  "stages": [
+    {"stage": "20260828_27", "role": "CMFD acquisition registry", "status": "COMPLETE_WITH_DEEP_READ_AMENDMENT"},
+    {"stage": "20260828_28", "role": "ERA5-Land formal 2021-2025 acquisition plus optional 2006-2020 background", "status": "FORMAL_SCOPE_COMPLETE_BACKGROUND_PARTIAL_44_OF_180"},
+    {"stage": "20260828_29", "role": "CHM_PRE plus CMFD Reach forcing 1961-2024", "status": "COMPLETE_PASS"},
+    {"stage": "20260828_30", "role": "ERA5-to-CMFD PET bridge and conditional 2025 extension", "status": "PET_EXTENSION_CONFOUNDED_SENSITIVITY_AVAILABLE"},
+    {"stage": "20260828_31", "role": "forcing integrity amendment and authoritative lock", "status": "PASS_FORCING_LOCK_1961_2024_WITH_2025_SENSITIVITY"},
+    {"stage": "20260828_32", "role": "historical activation registry for 13 reservoirs", "status": "COMPLETE_PASS"},
+    {"stage": "20260828_33", "role": "environment audit, frozen-parent reproduction and actual-date spin-up", "status": "COMPLETE_PASS"},
+    {"stage": "20260828_34", "role": "locked long-period state-consistent simulation", "status": "COMPLETE_PASS"},
+    {"stage": "20260828_35", "role": "hydraulic exposure and TN hydrology interface", "status": "COMPLETE_PASS"},
+    {"stage": "20260828_36", "role": "post-lock historical discharge diagnostic", "status": "COMPLETE_WITH_PRE2006_EVIDENCE_GAP"},
+    {"stage": "20260828_37", "role": "independent read-only QA, synthesis and final lock", "status": "COMPLETE_VERIFIED_READY_FOR_TN_1961_2024_WITH_2025_SENSITIVITY"},
+    {"stage": "20260828_38", "role": "separately labelled forced 1961-2025 sensitivity simulation and TN interface", "status": "PASS_NUMERICALLY_1961_2025_SENSITIVITY_ONLY"}
+  ],
+  "authoritative_products": {
+    "formal_1961_2024": {
+      "classification": "TN-ready formal product",
+      "reach_daily": "E:/SPARROW/5_Test/20260828_35/outputs/tn_hydrology_reach_daily.parquet",
+      "reach_monthly": "E:/SPARROW/5_Test/20260828_35/outputs/tn_hydrology_reach_monthly.parquet",
+      "reservoir_daily": "E:/SPARROW/5_Test/20260828_35/outputs/tn_hydrology_reservoir_daily.parquet",
+      "reservoir_monthly": "E:/SPARROW/5_Test/20260828_35/outputs/tn_hydrology_reservoir_monthly.parquet",
+      "completion_lock": "E:/SPARROW/5_Test/20260828_37/locks/program_completion_lock.json"
+    },
+    "sensitivity_1961_2025": {
+      "classification": "exploratory sensitivity only; PET_EXTENSION_CONFOUNDED",
+      "reach_daily": "E:/SPARROW/5_Test/20260828_38/outputs/tn_hydrology_reach_daily.parquet",
+      "reach_monthly": "E:/SPARROW/5_Test/20260828_38/outputs/tn_hydrology_reach_monthly.parquet",
+      "reservoir_daily": "E:/SPARROW/5_Test/20260828_38/outputs/tn_hydrology_reservoir_daily.parquet",
+      "reservoir_monthly": "E:/SPARROW/5_Test/20260828_38/outputs/tn_hydrology_reservoir_monthly.parquet",
+      "sensitivity_lock": "E:/SPARROW/5_Test/20260828_38/locks/forced_2025_sensitivity_product_lock.json",
+      "dual_product_crosscheck_lock": "E:/SPARROW/5_Test/20260828_38/locks/dual_product_crosscheck_lock.json"
+    }
+  },
+  "expected_grain_if_1961_2025_formal": {
+    "reach_daily_rows": 5460430,
+    "reach_monthly_rows": 179400,
+    "reservoir_daily_rows": 308633,
+    "reservoir_monthly_rows": 10140
+  },
+  "expected_grain_if_1961_2024_formal": {
+    "reach_daily_rows": 5376480,
+    "reach_monthly_rows": 176640,
+    "reservoir_daily_rows": 303888,
+    "reservoir_monthly_rows": 9984
+  },
+  "nonnegotiable_invariants": [
+    "routed_total = routed_fast + routed_slow + routed_direct",
+    "positive-flow component fractions sum to one",
+    "reservoir water, source-tracer and age-moment balances close",
+    "flows and storages are nonnegative within registered numerical tolerance",
+    "no Gauge output-only correction or post-hoc fast/slow reallocation",
+    "no hydrology, reservoir or TN parameter refitting"
+  ],
+  "background_extension_policy": "The accepted 1961-2024 product is the formal TN interface. The separately generated 1961-2025 product is sensitivity-only because its PET bridge failed the registered correlation gate; it cannot mutate or replace the formal product.",
+  "claim_boundary": "Fast/slow flows, stocks, source fractions and water-age fields are conservative modeled states, not tracer-validated endmembers. Bankfull hydraulic exposure is a geometry-and-flow proxy, not a tracer residence-time observation."
+}

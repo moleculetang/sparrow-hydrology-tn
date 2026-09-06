@@ -1,0 +1,94 @@
+{
+  "stage": "20260831_4_optimizer_refinement",
+  "status": "REGISTERED_BEFORE_REFINED_RESULTS",
+  "trigger": "initial T3 screen had median gradient_max_abs 0.112 and all 110 folds exceeded 0.01",
+  "scientific_gate_unchanged": true,
+  "allowed_change": "initialize retained-station raw effects from same-fold training residual means, then rerun the identical joint objective",
+  "forbidden": ["use held-out TN", "change process equations", "change noninferiority margin", "change bootstrap", "increase model parameters"],
+  "probe_fold": "T3_LORO_R002",
+  "probe_decision": "if 1 Adam + 2 LBFGS remains above gradient 0.01, use the Stage3 3 Adam + 6 LBFGS schedule for every refined fold",
+  "probe_result": {
+    "fold_id": "T3_LORO_R002",
+    "gradient_max_abs": 0.053226831864841506,
+    "decision": "USE_FULL_3_ADAM_6_LBFGS_SCHEDULE"
+  },
+  "registered_refinement_schedule": {
+    "site_initialization": "same-fold training residual mean by retained station",
+    "anchor_v_f_fit": "3 Adam at lr 0.02 plus 6 LBFGS",
+    "v_f_profile": "locked anchor plus/minus 0.05 profile clipped to [0,0.5]",
+    "changed_v_f_refit": "3 Adam at lr 0.02 plus 6 LBFGS",
+    "adaptive_scientific_gate_change": false
+  },
+  "refined_fold_gate": "every fold gradient_max_abs <= 0.005; otherwise the refined screen is optimizer_confounded and cannot make a scientific promotion decision"
+  ,
+  "round1_early_stop": {
+    "completed_folds": 4,
+    "gradient_range": [0.018192, 0.035556],
+    "reason": "all completed folds exceeded 0.005, so the registered round could no longer yield an optimizer-valid screen"
+  },
+  "reference_equivalent_round_registered_before_results": {
+    "motivation": "the locked MINERAL_LIFETIME nested reference used temporal-fold process/site warm starts and 35 LBFGS iterations; candidate comparisons must receive the same numerical treatment",
+    "process_start": "same temporal fold O0_LOG_T4 parameters from 20260831_3",
+    "site_start": "same temporal fold O0_LOG_T4 station effects from 20260831_3, restricted to retained training stations",
+    "optimizer": "LBFGS max_iter 35, tolerance_grad 1e-9, tolerance_change 1e-11, strong_wolfe",
+    "scientific_equations_changed": false,
+    "scientific_gates_changed": false,
+    "probe_fold": "T3_LORO_R002",
+    "probe_gate": "gradient_max_abs <= 0.005"
+  },
+  "reference_equivalent_probe_result": {
+    "gradient_max_abs": 9.046562761734284e-07,
+    "runtime_seconds": 1338.137721899955,
+    "passed": true
+  },
+  "efficiency_probe_registered_before_results": {
+    "fold_id": "T3_LORO_R002",
+    "optimizer": "same warm starts and objective, LBFGS max_iter 12",
+    "decision": "use 12 iterations for all folds only if gradient_max_abs <= 0.005; otherwise retain 35",
+    "scientific_gates_changed": false
+  },
+  "efficiency_probe_12_result": {
+    "gradient_max_abs": 0.0014582759579584116,
+    "runtime_seconds": 584.3520836999523,
+    "passed": true
+  },
+  "final_efficiency_probe_registered_before_results": {
+    "fold_id": "T3_LORO_R002",
+    "optimizer": "same warm starts and objective, LBFGS max_iter 8",
+    "decision": "use 8 iterations for all folds only if gradient_max_abs <= 0.005; otherwise use the already validated 12 iterations",
+    "no_further_iteration_budget_search": true
+  },
+  "efficiency_probe_8_result": {
+    "gradient_max_abs": 0.0019089957394078886,
+    "runtime_seconds": 431.6294522000244,
+    "passed": true
+  },
+  "final_bulk_schedule_lock": {
+    "phase_name": "reference_screen",
+    "process_start": "matching temporal-fold O0_LOG_T4 parameters",
+    "site_start": "matching temporal-fold O0_LOG_T4 raw site effects for retained stations",
+    "optimizer": "LBFGS max_iter 8, tolerance_grad 1e-8, tolerance_change 1e-10, strong_wolfe",
+    "v_f_profile": "temporal selected v_f plus/minus 0.05 clipped to [0,0.5]",
+    "changed_v_f_refit": "same 8-LBFGS schedule",
+    "per_fold_gradient_gate": 0.005,
+    "locked_before_bulk_results": true
+  },
+  "adaptive_convergence_topup_registered_after_four_fold_numerical_audit": {
+    "trigger_evidence": "one of four folds had gradient 0.005402 after 8 iterations; no prediction metric was used",
+    "rule": "at the final selected v_f, add LBFGS in blocks of 4 only while gradient_max_abs > 0.005",
+    "maximum_final_v_f_iterations": 20,
+    "failure_status": "optimizer_confounded if still above 0.005 after 20 final-v_f iterations",
+    "invalid_partial_folds": "recomputed; completed folds meeting the gradient target remain checkpointed",
+    "scientific_equations_changed": false,
+    "scientific_gates_changed": false
+  },
+  "reference_rescue_registered_before_spatial_metrics": {
+    "trigger": "after all 110 folds, only T3_LORO_R213 remained above 0.005 at 0.00601928",
+    "folds": ["T3_LORO_R213"],
+    "optimizer": "original reference-equivalent 35 LBFGS schedule already validated on the preregistered R002 probe",
+    "replacement_policy": "save separately and replace only the same fold during final combination; preserve the 20-step evidence",
+    "performance_metrics_inspected": false,
+    "scientific_equations_changed": false,
+    "scientific_gates_changed": false
+  }
+}

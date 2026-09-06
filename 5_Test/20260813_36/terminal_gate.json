@@ -1,0 +1,12 @@
+{
+  "terminal": "MONITORED_SAME_REACH_FUTURE_LEAKAGE_REPAIR_COMPLETE",
+  "parent_rows": 8738,
+  "repaired_rows": 8822,
+  "common_reach_month_fold_rows": 8738,
+  "added_evaluation_rows": 84,
+  "new_station": "江边街（二）站",
+  "new_station_oof_rows": 84,
+  "parent_oof_sha256": "4a6b66c9c182a4bf9aff74554911af012712a0da6dffcfc83a128d9410188c5d",
+  "repaired_oof_sha256": "6f30d3fdca1106e55e723b8dd524c0892e872549a845c1062182c64d5e028649",
+  "strict_dual_nse_target_met": false
+}

@@ -1,0 +1,27 @@
+{
+  "stage": "20260823_17",
+  "status": "registered_before_fitting",
+  "parent_contract": "E:\\SPARROW\\5_Test\\20260823_16\\experiment_contract.json",
+  "hypothesis": "The five gauged-station MAP effects can be generated for every Reach by a joint Gaussian-prior regional parameter model without a station-identity term.",
+  "candidates": {
+    "R0_GLOBAL_ZERO": "global response only; all five Reach effects are zero",
+    "R1_HB5_ATTRIBUTES": "joint MAP5 from static hydroclimatic Reach attributes",
+    "R2_HB5_ATTRIBUTES_EUCLIDEAN": "R1 plus fixed Euclidean radial basis",
+    "R3_HB5_ATTRIBUTES_RIVER_NETWORK": "R1 plus terminal-tree and graph-Laplacian basis",
+    "P2_LOCAL_MAP_UPPER_BOUND": "diagnostic only; never eligible for 230-Reach promotion"
+  },
+  "regional_model": "log1p(Q)=X_global beta + sum_k z_k A_reach gamma_k",
+  "regional_effects": ["intercept", "log_q72_total", "q72_quick_fraction", "month_sin", "month_cos"],
+  "regional_prior_precision_grid": [0.1, 1.0, 10.0, 100.0],
+  "global_prior_sigma": 0.25,
+  "candidate_selection": "ten deterministic station groups using only 2006-2018",
+  "forbidden": [
+    "station identity coefficient",
+    "target-station history in its spatial fold",
+    "2019-2022 outcomes for candidate or prior selection",
+    "four external station outcomes before the model lock",
+    "reservoir equation changes",
+    "Q72 process parameter changes"
+  ],
+  "authorized_successor": "20260823_18"
+}

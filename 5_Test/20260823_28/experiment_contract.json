@@ -1,0 +1,29 @@
+{
+  "stage": "20260823_28",
+  "status": "registered_before_execution",
+  "hypothesis": "Authoritative daily discharge contains independent rapid/delayed hydrograph signatures that can constrain, but not directly observe, the Q72 fast/delayed partition.",
+  "parent": "20260823_27",
+  "development_proxy_years": [2010, 2018],
+  "frozen_proxy_check_years": [2019, 2022],
+  "methods": {
+    "Lyne_Hollick": {"alpha": [0.9, 0.925, 0.95], "passes": "forward-backward-forward"},
+    "Eckhardt": {"recession_a": [0.95, 0.98, 0.995], "BFImax": [0.5, 0.65, 0.8]},
+    "UKIH": {"block_days": 5, "turning_point_factor": 0.9}
+  },
+  "monthly_minimum_daily_coverage": 0.9,
+  "proxy_role": "soft constraint with method envelope; never an observed-groundwater label",
+  "gauge_support": "complete routed upstream contribution plus downstream_fraction_on_reach times local Reach contribution",
+  "forbidden": [
+    "parameter fitting",
+    "using 2019-2022 proxy values in training",
+    "calling filtered flow observed groundwater",
+    "screening stations by Q72 agreement",
+    "changing the authoritative station or topology locks"
+  ],
+  "hard_gates": {
+    "minimum_valid_proxy_station_count": 80,
+    "fraction_min": 0.0,
+    "fraction_max": 1.0,
+    "support_closure_max_abs_m3_s": 1e-08
+  }
+}

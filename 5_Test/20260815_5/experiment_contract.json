@@ -1,0 +1,17 @@
+{
+  "scenario_id": "20260815_5",
+  "parent": "E:\\SPARROW\\5_Test\\20260815_4",
+  "question": "is_independent_effective_TN_delivery_memory_required_after_source_memory",
+  "source_model": "read_from_20260815_4_source_structure_decision_and_frozen",
+  "candidates": {"T0_mu_month": 0, "T1_mu_month": [12, 36, 60, 96, 144, 240]},
+  "rho_formula": "mu_month/(1+mu_month)",
+  "registry_unit": "month_only",
+  "cascade": "source_gw_N_input_to_effective_TN_transit_pool_to_fixed_Q72_base_response_to_stream",
+  "water_gate": "transit_and_base_delivery_require_positive_Q72_gw_discharge",
+  "cohort_resolution": "input_month",
+  "locked_year": 2022,
+  "bootstrap": {"replicates": 10000, "seed": 20260815, "margin_log_rmse": 0.01, "ci": "percentile_95"},
+  "cross_fold_support": "candidate_within_fold_best_count_at_least_2",
+  "upper_boundary_rule": "mu_240m_requires_predictive_superiority_and_at_least_3_fold_supports",
+  "floating_point_mass_gate": {"max_abs_error_kg_n": 1e-6, "max_relative_error": 1e-14, "both_required": true}
+}

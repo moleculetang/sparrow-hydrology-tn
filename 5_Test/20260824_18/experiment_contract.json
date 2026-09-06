@@ -1,0 +1,48 @@
+{
+  "stage": "20260824_18",
+  "hypothesis": "The apparent TN collapse must first be separated into observation-domain, data-lineage, initialization, source-mass and engineering effects before any new fitted structure is authorized.",
+  "primary_domain": "river_channel",
+  "diagnostic_domains": [
+    "dam_or_reservoir_outlet",
+    "open_lake_or_reservoir_water",
+    "uncertain_domain"
+  ],
+  "development_period": [2021, 2024],
+  "historical_period": [2016, 2020],
+  "future_closed_period": [2025, 2026],
+  "allowed_actions": [
+    "read-only source profiling",
+    "record-level lineage reconstruction from prepared authoritative station CSVs",
+    "observation-domain correction",
+    "metric recomputation",
+    "source-mass and initialization audits",
+    "memory-log audit"
+  ],
+  "forbidden_actions": [
+    "TN parameter fitting",
+    "candidate selection",
+    "temperature",
+    "reservoir operator",
+    "WWTP",
+    "groundwater age or SAS",
+    "new source calendar"
+  ],
+  "hydrology": {
+    "daily": "E:/SPARROW/5_Test/20260828_9/outputs/canonical_reach_daily_2006_2024.parquet",
+    "monthly": "E:/SPARROW/5_Test/20260828_9/outputs/canonical_reach_monthly_2006_2024.parquet",
+    "frozen": true
+  },
+  "successor": "20260824_19",
+  "runtime": "conda sparrow",
+  "outputs": [
+    "outputs/tn_observations_audited.parquet",
+    "outputs/tn_coverage_profile.parquet",
+    "outputs/domain_performance_audit.parquet",
+    "outputs/same_reach_station_audit.parquet",
+    "reports/stage18_data_quality_audit.json",
+    "reports/stage18_memory_audit.json",
+    "reports/program_manifest.json",
+    "reports/technical_report.md"
+  ]
+}
+

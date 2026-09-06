@@ -1,0 +1,29 @@
+{
+  "stage": "20260823_33",
+  "status": "registered_conditional",
+  "title": "Diagnostic-only conserving known-gauge state analysis",
+  "trigger": "accepted open-loop parent has a material known-gauge history gap",
+  "accepted_open_loop_parent": "20260823_27 locked H0 physical process; 20260823_31 attribute candidate was not promoted",
+  "material_gap_definition": "2019-2022 Gauge-observation RMSE_log is at least 0.10 below latent-support RMSE_log",
+  "analysis_period": "2006-2018 only",
+  "frozen_check": "2019-2022 with zero observation updates",
+  "analysis_method": "monthly constrained network least squares on local release corrections; retained water returns to explicit fast/delayed stores and additional release is withdrawn from explicit stores",
+  "network_ridge_precision": 1.0,
+  "observation_gain": 1.0,
+  "constraints": [
+    "adjusted local fast and delayed releases nonnegative",
+    "adjusted fast and delayed end stores nonnegative",
+    "every release correction has an equal and opposite explicit store correction",
+    "routing is recomputed from adjusted local releases",
+    "no update after 2018-12"
+  ],
+  "forbidden": [
+    "promotion to TN primary hydrology",
+    "hidden water creation",
+    "terminal flow multiplier",
+    "2019-2022 update",
+    "parameter refit",
+    "TN-based selection"
+  ],
+  "interpretation_boundary": "This is an at-gauge state-analysis upper-bound diagnostic. It is not an ungauged prediction product and does not validate fast/delayed partition."
+}

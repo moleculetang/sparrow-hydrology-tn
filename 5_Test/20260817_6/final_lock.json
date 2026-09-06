@@ -1,0 +1,40 @@
+{
+  "scenario_id": "20260817_6",
+  "status": "frozen_complete",
+  "canonical_output_sha256": {
+    "E:\\SPARROW\\5_Test\\20260817_1\\reports\\structural_reconciliation_decision.json": "ae51c7546e8deaa36c4e207640ea9c9274bffabb9cccfe687a1640a3deeb7391",
+    "E:\\SPARROW\\5_Test\\20260817_2\\outputs\\source_to_stream_tail_metrics.parquet": "4bf23a31c534aaa0405a6f8c1342fd9df8759b7aac7a564213e9de8e1b411ff5",
+    "E:\\SPARROW\\5_Test\\20260817_3\\outputs\\historical_routed_n_age_1961_2022.parquet": "8aec08359f50f7e8bcf83521a5ffb5f6cf2ee09400b6724c0355b8f46130f7e9",
+    "E:\\SPARROW\\5_Test\\20260817_4\\outputs\\tn_performance_metrics_16models.parquet": "11ee4187e9c848c1d283493f128b6b8719e3dd6912d561e91dbdd9ee2ee59fa1",
+    "E:\\SPARROW\\5_Test\\20260817_5\\reports\\integrated_scientific_decision.json": "b1db2fb4e8a9217ac1bc373ea1567300aeb95388691eee6084268b05d82b8947",
+    "E:\\SPARROW\\5_Test\\20260817_6\\reports\\final_completion_manifest.json": "dc45ad1e8e6ccdc4d80ec452845e8226cd5797743f6f0c95151b346c6c37ad02"
+  },
+  "upstream_manifest_audits": [
+    {
+      "stage": 1,
+      "pass": true,
+      "files": 9
+    },
+    {
+      "stage": 2,
+      "pass": true,
+      "files": 4
+    },
+    {
+      "stage": 3,
+      "pass": true,
+      "files": 5
+    },
+    {
+      "stage": 4,
+      "pass": true,
+      "files": 6
+    },
+    {
+      "stage": 5,
+      "pass": true,
+      "files": 8
+    }
+  ],
+  "scientific_claim_boundary": "broad structural ensemble, no uniquely identified long-tail time constant, no hydrologic water-age claim"
+}

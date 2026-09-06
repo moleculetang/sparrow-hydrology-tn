@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "stage": "20260824_48",
+  "status": "REGISTERED_AFTER_STAGE47_LOCK_BEFORE_STAGE48_AUDIT",
+  "authorized_by": "E:/SPARROW/5_Test/20260824_47/locks/stage47_lock.json",
+  "purpose": "Apply the preregistered REG3+DYN joint-candidate opening rule and audit temperature-forcing fitness without fitting TN.",
+  "joint_candidate_rule": "REG3_OBSERVATION and DYN_HYDRO_DELIVERY must both be spatially eligible in Stage47",
+  "temperature_rule": "No all-reach aquatic Q10 unless a river-water temperature forcing covers the formal model period and scope",
+  "successor": "20260824_49",
+  "forbidden": [
+    "fit a joint candidate when either component is spatially ineligible",
+    "use ERA5-Land lake mixed-layer temperature as all-reach river-water temperature",
+    "fit temperature coefficients",
+    "refit hydrology",
+    "create 20260824_50 or higher"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "scenario_id": "20260815_3",
+  "parent": "E:\\SPARROW\\5_Test\\20260815_2",
+  "question": "implement_mass_conserving_M0_no_source_legacy_baseline",
+  "source_structure": "M0_current_month_mobile_no_carryover",
+  "dynamic_diffuse_input": "legacy_eligible_n_surplus_kg_n_month",
+  "positive_input_rule": "positive_part_only; negative_part_reported_as_unresolved_deficit_in_M0",
+  "quick_bypass": "clip(quick_generated_mm/positive_input_mm,0,1)",
+  "historical_soil_flush_water": "soil_overflow_to_quick_mm+gw_recharge_mm",
+  "quick_generated_flushes_historical_soil_n": false,
+  "fixed_hydrologic_n_routing": {"quick_rho": 0.25, "base_rho": 0.85},
+  "soil_memory": false,
+  "independent_tn_delivery_memory": false,
+  "river_routing": false,
+  "point_source_tn": "missing_not_fabricated",
+  "mass_balance_tolerance_kg_n": 1e-8
+}

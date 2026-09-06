@@ -1,0 +1,22 @@
+{
+  "stage": "20260828_7",
+  "required_predecessor": "20260828_6 PASS_COMPONENT_SUPERVISED_DEVELOPMENT",
+  "purpose": "Freeze a full-development state-consistent fast/slow hydrology product for TN through 2024 before formal test observations are opened.",
+  "fit": {
+    "stations": 91,
+    "period": "2010-2018",
+    "initialization": "locked 20260828_6 trust-projected candidate",
+    "fixed": ["physical HBV parameters", "regionalized slow score", "lambda_S", "three-reservoir equations"],
+    "updated": "dynamic gate only, 20 epochs, learning_rate=0.002, proximal MAP penalty=0.01",
+    "effective_component_weight": "0.1 * projection_alpha = 0.03"
+  },
+  "prediction": {
+    "period": "2006-2024",
+    "reach_count": 230,
+    "spinup": "periodic 2006-2009",
+    "forcing": "CHM_PRE V2 precipitation plus CMFD V2 FAO-56 PET"
+  },
+  "canonical_rule": "No output-only fast/slow reallocation. Every slow flux must be released from lower_slow_storage and every adjusted percolation must enter that storage.",
+  "lock_before_test_read": true,
+  "forbidden": ["2019-2022 observations", "four spatial station observations", "TN", "temperature", "SAS age", "new reservoir", "post-hoc component scaling"]
+}

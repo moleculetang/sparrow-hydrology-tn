@@ -1,0 +1,27 @@
+{
+  "program": "20260823_all_reach_zero_history_hydrology",
+  "authoritative_population": "S000_unscreened",
+  "single_product_rule": "exactly one zero-target-history 230-Reach product may be locked",
+  "stages": [
+    {"stage": "20260823_8", "role": "evidence_and_contract", "status": "complete", "legal_successor": "20260823_9"},
+    {"stage": "20260823_9", "role": "candidate_implementation", "status": "complete", "legal_successor": "20260823_10"},
+    {"stage": "20260823_10", "role": "nested_spatial_evaluation", "status": "complete", "legal_successor": "20260823_11"},
+    {"stage": "20260823_11", "role": "single_product_lock", "status": "complete", "legal_successor": null}
+  ],
+  "candidate_roles": {
+    "P0_Q72_PROCESS": "eligible_parent",
+    "P1_GLOBAL": "spatial_benchmark_only",
+    "P2_ZERO_HISTORY_COLDSTART": "diagnostic_only",
+    "REGIONALIZED_ROUTED_CORRECTION": "eligible_challenger",
+    "36_month_gauged_site_adaptation_diagnostic": "diagnostic_only"
+  },
+  "forbidden": [
+    "target-station discharge history in an eligible candidate",
+    "post-hoc station deletion",
+    "reservoir-equation modification or selection",
+    "TN or water-quality input",
+    "LSTM or a new process family",
+    "automatic creation of 20260823_12_or_later",
+    "modification of any 20260824_* directory"
+  ]
+}

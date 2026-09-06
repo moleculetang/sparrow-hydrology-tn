@@ -1,0 +1,53 @@
+{
+  "stage": "20260825_6",
+  "status": "registered_before_execution",
+  "title": "Response-path identifiability and conditional hydraulic-exposure audit",
+  "selected_total_flow_parent": "20260825_5 FOLD_GLOBAL_HBV",
+  "development_period": "2010-2018",
+  "locked_discharge_forbidden": "2019-2022 discharge must not be opened",
+  "primary_path_gate": {
+    "metric": "complete-terminal-tree OOF station Spearman between model Q2 volume fraction and three-method Q-derived BFI median",
+    "minimum_point_spearman": 0.30,
+    "paired_terminal_tree_bootstrap_CI95_lower_gt": 0.0
+  },
+  "three_evidence_families": [
+    "three-method hydrograph-separation BFI",
+    "recession time scale",
+    "normalized low-flow Q05/Q50"
+  ],
+  "minimum_directionally_supported_evidence_families": 2,
+  "additional_failure_triggers": {
+    "MPR_slope_same_sign_minimum_folds": "7 of 8 for a stable edge",
+    "MPR_boundary_confounded_folds_maximum": 1,
+    "sensitivity_slow_fraction_MAD_maximum": 0.10,
+    "fold_ensemble_90pct_width_gt_0p20_maximum_reach_month_fraction": 0.25,
+    "MAP_curvature_or_fold_spread_shrinkage_minimum": 0.25
+  },
+  "sensitivity_set": [
+    "registered physical prior",
+    "fitted global parent",
+    "PET multiplied by 0.9 without refit",
+    "PET multiplied by 1.1 without refit",
+    "R1 hydraulic routing without land refit"
+  ],
+  "hydraulic_exposure": {
+    "equation": "tau = reach_length * Andreadis bankfull_width * bankfull_depth / candidate-own routed discharge",
+    "role": "diagnostic only because R1 failed Stage 4 and every Stage 5 nested route decision",
+    "geometry_uncertainty": "use width/depth p05 and p95 bounds",
+    "forbidden_geometry_fields": [
+      "wqd_reference_discharge_m3_s",
+      "wqd_upstream_area_km2"
+    ]
+  },
+  "decision_states": {
+    "pass": "TOTAL_FLOW_AND_FAST_SLOW_RESPONSE_IDENTIFIED",
+    "fail": "TOTAL_FLOW_SUPPORTED_FAST_SLOW_NOT_IDENTIFIED"
+  },
+  "forbidden": [
+    "TN observations",
+    "2019-2022 discharge",
+    "station-specific calibration",
+    "reservoir equation",
+    "claim observed groundwater, new water, old water, or water age"
+  ]
+}

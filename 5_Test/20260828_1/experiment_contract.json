@@ -1,0 +1,29 @@
+{
+  "stage": "20260828_1",
+  "status": "AUTHORIZED_FIREWALL_REPRODUCTION",
+  "purpose": "Correct the observation-file firewall defect found during completion audit without changing the registered SIG2P-S/P equations, station cohort, candidates, seeds, losses, periods, or gates.",
+  "supersedes_claim_only": "20260827_8-9 claimed that 2019-2022 monthly observations were not read, although the scripts loaded a 2006-2022 parquet before filtering rows.",
+  "scientific_effect": "The old calculations filtered before any loss or metric and therefore had no numerical look-ahead, but the implementation did not satisfy the stronger inaccessible-file contract.",
+  "station_population": "the locked 91 unique station/reach registry from 20260827_8",
+  "physical_isolation": {
+    "candidate_daily": "2010-2016 observations only",
+    "candidate_monthly": "2010-2016 observations only",
+    "development_daily": "2017-2018 observations only",
+    "development_monthly": "2017-2018 observations only",
+    "candidate_forcing": "2006-2016 forcing only",
+    "development_forcing": "2006-2018 forcing only",
+    "formal_2019_2022_observation_values": "not exposed to candidate or development model processes",
+    "four_formal_spatial_stations": ["珠坑", "昭平", "瓦村（二）", "盘江桥（三）"]
+  },
+  "frozen": {
+    "operator": "20260827_7 state_consistent_sig2p.py",
+    "lambda_candidates": [0.0, 0.25, 0.5, 0.75, 1.0],
+    "seeds": [260826, 260827, 260828],
+    "workers": 5,
+    "training": "2010-2015",
+    "stopping": "2016",
+    "development": "2017-2018",
+    "gates": "20260827_9 experiment_contract.json"
+  },
+  "authorized_successor": "20260828_2"
+}

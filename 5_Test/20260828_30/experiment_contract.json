@@ -1,0 +1,26 @@
+{
+  "stage": "20260828_30",
+  "title": "ERA5-Land to CMFD PET harmonization and 2025 forcing extension",
+  "status": "RUNNING_BLOCKED_ON_ERA5_2023_08_DEEP_READ",
+  "parents": ["E:/SPARROW/5_Test/20260828_28", "E:/SPARROW/5_Test/20260828_29"],
+  "formula": "same FAO-56 implementation as accepted CMFD PET",
+  "correction": "multiplicative Reach by calendar-month PET factor",
+  "spatial_coverage_gate": "ERA5-Land coastal-mask values are renormalized only when valid frozen Reach weight is >=0.99; minimum coverage is saved for every month and variable",
+  "factor_fit_period": "2021-2023",
+  "validation_period": "2024 only",
+  "formal_extension_year": 2025,
+  "current_data_state": {
+    "era5_registered_months": 60,
+    "reach_month_caches_complete": 59,
+    "only_failed_month": "2023-08",
+    "failure": "HDF5 compressed-chunk deep read failure in the ERA5-Land source payload",
+    "repair_policy": "Reacquire and deep-read only 2023-08, archive the rejected payload, preserve all 59 successful caches, then resume."
+  },
+  "gates": {
+    "monthly_pet_correlation_min": 0.98,
+    "pooled_annual_bias_abs_max": 0.05,
+    "median_abs_reach_year_bias_max": 0.05,
+    "corrected_daily_rmse_must_improve": true
+  },
+  "failure_behavior": "Export 2025 as PET_EXTENSION_CONFOUNDED sensitivity only; do not silently merge into the formal forcing."
+}

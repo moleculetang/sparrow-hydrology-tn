@@ -1,0 +1,33 @@
+{
+  "scenario_id": "20260820_19",
+  "status": "frozen_complete_pass",
+  "decision": "river_hydraulic_exposure_supported_without_temperature",
+  "selected_process_structure": "H1_GLOBAL",
+  "monitored_station_prediction_layer": "P2",
+  "unmonitored_spatial_prediction_layer": "P1",
+  "P2R_status": "not_supported_absolute_spatial_skill",
+  "tree_163_role": "diagnostic_only_open_lake_center",
+  "temperature_used": false,
+  "retrospective_2022_TN_read_after_locks": true,
+  "program_folder_date": "20260820",
+  "authoritative_outputs": {
+    "E:\\SPARROW\\5_Test\\20260820_11\\program_manifest.json": "acb5be1beeb0a54814ff3d07b6c9a7fc98a1095cdcdec6bc90bac310f660ff7e",
+    "E:\\SPARROW\\5_Test\\20260820_19\\experiment_contract.json": "ea7b3f3059da8535f267b1c14bd403fa2fb43cdab7ca5b0a0f3aaae61d218db8",
+    "E:\\SPARROW\\5_Test\\20260820_19\\reports\\stage0_preflight.json": "ad2ce83314728d99433fe7f4e2cebd90ecc02357ed44a1e1617e885f8279e6ab",
+    "E:\\SPARROW\\5_Test\\20260820_19\\reports\\stage1_structure_decision.json": "07b40f67ba49abefb3940aad2af19c0c3c27799fa599c7ec6ede5ac9ebe0d54d",
+    "E:\\SPARROW\\5_Test\\20260820_19\\reports\\stage2_nested_audit.json": "60292dda88ad0b042bee1331d688999e1ef8a687795881596ea334d5ec976b41",
+    "E:\\SPARROW\\5_Test\\20260820_19\\reports\\spatial_hydraulic_decision.json": "af2326272e34d7bca79d8e358d67ef463403df52245462330a3b62dc0160b0c4",
+    "E:\\SPARROW\\5_Test\\20260820_19\\reports\\development_mechanism_lock.json": "3e77260ed6a5f2f7330a4b8b3646d773f97ffad805dc97d5b8416c0f709ef2ae",
+    "E:\\SPARROW\\5_Test\\20260820_19\\reports\\full_development_parameter_lock.json": "5be64a3c01f44cd95bee719bbfeb041a3c28187f18310af79187714c2d7868e0",
+    "E:\\SPARROW\\5_Test\\20260820_19\\reports\\posterior_sampling_audit.json": "9ec56b1ccf99927d651d1bb2b61c8f0791fc706ebd0d701b13b0606332cd6ec1",
+    "E:\\SPARROW\\5_Test\\20260820_19\\reports\\locked_2022_retrospective_audit.json": "d4ea16545403e2612e99da85a1ec381379f9226e56e335696de0243935b5b905",
+    "E:\\SPARROW\\5_Test\\20260820_19\\reports\\technical_report.md": "87e0a384ecf628ff69e55d7075b9b9790dc3ade55a05d37504080af1f9c32969",
+    "E:\\SPARROW\\5_Test\\20260820_19\\reports\\completion_audit.json": "c4195307d63166dee659865905c69fb5527335af03a60cb75a22a067c2e40cbd",
+    "E:\\SPARROW\\5_Test\\20260820_19\\outputs\\temporal_gate_matrix.parquet": "34d03e237ad871cc1001db9bfe398c9159139de4971e8f1f0251ad62ac916f69",
+    "E:\\SPARROW\\5_Test\\20260820_19\\outputs\\nested_spatial_metrics.parquet": "333a7fc4c9043ad10ab4b97a62b3195e3df6dd6f555b3da2c484e69be61bbecb",
+    "E:\\SPARROW\\5_Test\\20260820_19\\outputs\\full_development_parameters.parquet": "a8d738716a0cd580ef8585c9510c4c9fe3504b6e80bd18bba9568518a3b68c4f",
+    "E:\\SPARROW\\5_Test\\20260820_19\\outputs\\posterior_diagnostics.parquet": "55da6bad7790d6ae0d551879f74024039c6730c01cec52ef6e1583b7b5aea37c",
+    "E:\\SPARROW\\5_Test\\20260820_19\\outputs\\locked_2022_retrospective_predictions.parquet": "e7f8a5121b91419f3953249bc796275d3cb62ac137080e9a9394331b71f15bb6",
+    "E:\\SPARROW\\5_Test\\20260820_19\\outputs\\tree_163_locked_retrospective_diagnostic.parquet": "95354e94b3b4bb7c0a4c740ba9b577ae41e0eb4bc81211812dba2eada3c05180"
+  }
+}

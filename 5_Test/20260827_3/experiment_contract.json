@@ -1,0 +1,39 @@
+{
+  "stage": "20260827_3",
+  "hypothesis": "The clean alpha=0.5 DYN2P components behave as distinct operational fast and slow hydrologic responses on development data, and any bankfull-geometry channel storage effect can be quantified without formal test observations.",
+  "predecessor": "20260827_2 PASS_DEVELOPMENT_ALGORITHM_INTEGRITY",
+  "development_period": "2010-2018",
+  "formal_test_observations_forbidden": {
+    "time": "all observed discharge from 2019-2022",
+    "space": ["珠坑", "昭平", "瓦村（二）", "盘江桥（三）"]
+  },
+  "fixed_model": {
+    "model": "DYN2P_ALPHA05",
+    "selected_seed": 260827,
+    "no_parameter_refit": true,
+    "station_history_correction": false
+  },
+  "registered_component_checks": {
+    "slow_fraction_vs_three_filter_median_BFI_spearman_min": 0.4,
+    "slow_fraction_vs_three_filter_median_BFI_RMSE_max": 0.15,
+    "station_fraction_high_flow_fast_greater_than_low_flow_min": 0.8,
+    "station_fraction_high_precip_fast_greater_than_dry_min": 0.8,
+    "station_fraction_slow_acf30_greater_than_fast_acf30_min": 0.8,
+    "median_monthly_fast_fraction_seed_sd_max": 0.03,
+    "nondegenerate_station_month_fraction_min": 0.9,
+    "all_terminal_tree_directions_required": true
+  },
+  "BFI_role": "soft observational proxy, not groundwater truth",
+  "component_claim_if_passed": "validated operational fast/slow response components; no groundwater, surface-water, new-water, old-water or water-age claim",
+  "routing_diagnostic": {
+    "geometry": "Andreadis bankfull width and depth only",
+    "model_flow": "clean DYN2P routed flow; Andreadis WQD reference discharge forbidden",
+    "candidate": "conservative reach storage diagnostic only",
+    "not_authorized_as_reservoir_equation": true
+  },
+  "successor": {
+    "all_component_checks_pass": "20260827_5",
+    "component_check_fails": "20260827_4",
+    "routing_material_and_development_beneficial": "20260827_4"
+  }
+}

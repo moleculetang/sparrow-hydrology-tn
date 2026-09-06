@@ -1,0 +1,21 @@
+{
+  "stage": "20260827_2",
+  "registered_before_current_temporal_results": true,
+  "structure": "fixed conserving DYN2P",
+  "alpha": 0.5,
+  "alpha_role": "fixed inside the trainable parameterization: physical offsets and maximum dynamic-gate strength are both multiplied by 0.5; no post-fit interpolation and no search",
+  "stations": "topology-unique gauges complete in training, stopping and evaluation periods",
+  "spinup_forcing": "2006-2009",
+  "training": "2010-2015 discharge plus training-period PML AET and GRACE state guardrails",
+  "early_stopping": "2016 discharge only",
+  "evaluation": "2017-2018 development-only integrity check; inaccessible to fitting, stopping, normalization, alpha and seed selection; not the formal time-extrapolation result",
+  "seed_selection": "lowest 2016 stopping objective among fixed seeds 260826, 260827, 260828",
+  "event_window": "strict trailing 7-day window; all seven days must be finite and inside the same train/stop partition",
+  "event_shape": "the current and preceding day must both be finite and inside the same partition",
+  "candidate_initialization": "zero-state 2006-2009 burn-in during optimization; candidate-specific DYN2P periodic spin-up for final evaluation; the registered post-2010 washout sensitivity must pass",
+  "parent": "refit from the fixed physical prior in this stage; old parent caches are forbidden",
+  "2019_2022_read": false,
+  "formal_time_extrapolation": "2019-2022 observations, unlocked only after final 230-Reach prediction hash",
+  "formal_space_extrapolation": "珠坑、昭平、瓦村（二）、盘江桥（三）, unlocked only after final 230-Reach prediction hash",
+  "TN_read": false
+}

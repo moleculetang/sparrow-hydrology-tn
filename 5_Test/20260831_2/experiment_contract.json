@@ -1,0 +1,39 @@
+{
+  "stage": "20260831_2",
+  "status": "REGISTERED_BEFORE_RESULTS",
+  "parent_contract": "E:/SPARROW/5_Test/20260831_1/experiment_contract.json",
+  "hypothesis": "The R2 reservoir water operator can be transferred to TN as an exactly conservative, perfectly mixed daily mass carrier without changing the registered land-N equations.",
+  "daily_mass_allocation": {
+    "fast_N": "distributed within each month in proportion to local_fast_response_m3_s",
+    "slow_N": "distributed within each month in proportion to local_slow_response_m3_s",
+    "zero_path_flow": "monthly path N must also be numerically zero; otherwise fail"
+  },
+  "channel_operator": {
+    "exposure": "length_m * bankfull_width_m / (R2 routed_total_m3_s * 86400)",
+    "geometry_source": "Andreadis width and registered Reach length",
+    "reference_discharge_used": false,
+    "local_mass_position": "half-Reach",
+    "upstream_or_reservoir_release_position": "Reach inlet"
+  },
+  "reservoir_operator": {
+    "capture_and_bypass": "locked R2 control edge and local_capture_fraction",
+    "mixing": "complete mixing of prior TN stock and current captured TN",
+    "release_fraction": "total_release_m3 / (post_release_storage_m3 + total_release_m3)",
+    "reaction": "none in Stage 2",
+    "initial_TN_stock": "zero on 2006-01-01 with parameter-dependent 2006-2009 TN warm-up; sensitivity audited in 2016"
+  },
+  "hard_checks": [
+    "disabled reservoir mode reproduces the old monthly channel router",
+    "enabled carrier closes total TN input = channel removal + terminal export + final reservoir stock",
+    "all reservoir stocks and releases are finite and nonnegative",
+    "no-reservoir and enabled paths share the same local TN mass",
+    "2016 predictions are insensitive to registered alternative 2006 initial TN stocks"
+  ],
+  "forbidden": [
+    "reservoir TN reaction",
+    "temperature",
+    "per-reservoir fitted parameters",
+    "monthly instantaneous reservoir split"
+  ],
+  "authorized_successor": "20260831_3"
+}

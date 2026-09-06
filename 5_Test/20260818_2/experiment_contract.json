@@ -1,0 +1,15 @@
+{
+  "scenario_id": "20260818_2",
+  "purpose": "four_zero_parameter_source_water_operator_adjudication",
+  "operators": ["F00", "F10", "F01", "F11"],
+  "formal_model_count": 12,
+  "independent_spinup_required": true,
+  "spinup_max_cycles": 5000,
+  "spinup_tolerance_kg_n": 1e-9,
+  "P2_role": "predictive_preservation",
+  "P1_role": "globally_scaled_process_and_spatial_evidence",
+  "noninferiority_margin_log_rmse": 0.005,
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260818,
+  "locked_2022_used": false
+}

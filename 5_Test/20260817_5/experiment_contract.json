@@ -1,0 +1,14 @@
+{
+  "scenario_id": "20260817_5",
+  "purpose": "integrated_legacy_N_tail_attribution",
+  "evidence_layers": [
+    "intrinsic_delivery_tail",
+    "source_to_stream_pulse_tail",
+    "historical_output_cohort_age",
+    "river_TN_performance"
+  ],
+  "point_identification_claim_allowed": false,
+  "locked_2022_selection_role": "none",
+  "N_vs_Q_spatial_weight_rule": "identical weights within every comparison",
+  "eta_boundary_confounding_role": "diagnostic_only_not_hard_gate"
+}

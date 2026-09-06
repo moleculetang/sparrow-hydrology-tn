@@ -1,0 +1,7 @@
+{
+  "gate": "GATE_0",
+  "passed": true,
+  "decision": "GATE_0_PASS_READY_FOR_FORCING_SEMANTIC_AUDIT",
+  "next_gate": "GATE_S_1_FORCING_SEMANTIC_AUDIT",
+  "nonblocking_warning": "The baseline CSV is internally inconsistent and noncanonical; root cause is not established. Fold sources reconstruct the canonical parquet exactly, and the CSV is forbidden."
+}

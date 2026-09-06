@@ -1,0 +1,11 @@
+{
+  "model_time_step": "month",
+  "soil_legacy_tau_month": [12, 36, 60, 96, 144, 240, 480],
+  "effective_tn_delivery_mu_month": [12, 36, 60, 96, 144, 240],
+  "quick_n_rho": 0.25,
+  "t0_groundwater_n_rho": 0.85,
+  "water_gate_threshold_mm": 1e-12,
+  "source_flush": "1-exp(-(soil_overflow_to_quick_mm+gw_recharge_mm)/source_water_capacity_mm)",
+  "report_only_year_conversion": "months_divided_by_12",
+  "forbidden_parameter_names": ["hydrologic_travel_time", "true_groundwater_age", "nitrate_TTD"]
+}

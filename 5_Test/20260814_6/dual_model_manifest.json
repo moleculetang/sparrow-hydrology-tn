@@ -1,0 +1,20 @@
+{
+  "scenario_id": "20260814_6",
+  "evidence_label": "retrospective_secondary_structural_noninferiority_adjudication",
+  "operational_flow_model_id": "H0_hybrid",
+  "operational_model_status": "retained_best_predictive_model",
+  "structural_interface_branch_id": "main",
+  "interface_status": "structural_canonical",
+  "interface_evidence": "retrospective_development_noninferiority",
+  "groundwater_status": "non_identifying",
+  "groundwater_role": "unresolved_auxiliary_validation",
+  "development_selection_only": true,
+  "locked_2019_2022_used_for_selection": false,
+  "canonical_interface": {
+    "path": "E:\\SPARROW\\5_Test\\20260814_6\\outputs\\structural_canonical_main_interface_2006_2022.parquet",
+    "rows": 46920,
+    "reaches": 230,
+    "months": 204,
+    "sha256": "a0b47562bae42129a6b55571e28cc5fdfc1001ee740f9c9287e6f2f70db065c2"
+  }
+}

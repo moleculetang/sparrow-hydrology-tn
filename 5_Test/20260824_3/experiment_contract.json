@@ -1,0 +1,75 @@
+{
+  "experiment_id": "20260824_3",
+  "hypothesis_id": "GENERIC_CROPLAND_SON12_FRACTION",
+  "registered_before_development_TN_read": true,
+  "question": "Does routing a single global fraction of post-F00-bypass positive agricultural net surplus through the existing 12-month source-zone SON mineralization pool improve TN prediction relative to no SON pool and to training-selected S0/S1 endpoints?",
+  "scientific_scope": "generic effective cropland source-zone slow release; no manure, fertilizer, crop or source-identity attribution",
+  "parent": {
+    "hydrology": "Q72 structural_canonical main",
+    "source_water_operator": "F00",
+    "groundwater_delivery": "T1 with mu fixed within each matched model",
+    "aquatic_operator": "H1_GLOBAL areal/benthic hydraulic exposure",
+    "readout": "P1 globally scaled eta_quick/eta_gw and P2 station-conditioned ridge=12",
+    "parent_lock": "E:/SPARROW/5_Test/20260824_1/locks/parent_lock_registry.json"
+  },
+  "operator": {
+    "fresh_quick_bypass": "unchanged F00 direct term",
+    "post_bypass_positive_input": "N_pool = N_positive * (1 - fresh_quick_bypass_fraction)",
+    "son_input": "phi_A * N_pool",
+    "mobile_input": "(1 - phi_A) * N_pool",
+    "son_release": "(1-rho_S) * (SON_previous + SON_input), rho_S=12/13",
+    "negative_surplus_order": "withdraw mobile first, then SON, before current-month positive input",
+    "monthly_order": "negative withdrawal -> current positive allocation -> SON mineralization -> F00 water flushing -> quick/GW routing -> T1 release",
+    "phi_A_grid": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+    "tau_SON_month": 12,
+    "endpoint_nesting": {
+      "phi_A_0": "exact S0",
+      "phi_A_1": "exact S1_tau_012m"
+    }
+  },
+  "formal_mu_month": [12, 36, 60, 96, 144, 240],
+  "selection": {
+    "layer": "P1 training objective only",
+    "candidate": "select phi_A independently inside every model x temporal fold; conservative ties choose smaller phi_A",
+    "endpoint_control": "independently select phi_A in {0,1} using the same training objective",
+    "readout_refit": "every phi_A x model x fold independently refits H1 v_f and eta_quick/eta_gw; P2 then independently refits its full frozen readout after phi_A and v_f are locked",
+    "forbidden": "evaluation-year TN may not affect phi_A, v_f, eta or endpoint selection"
+  },
+  "time_boundary": {
+    "development": [2016, 2021],
+    "OOF_evaluation_years": [2018, 2019, 2020, 2021],
+    "retrospective_locked_year": 2022,
+    "TN_2022_may_be_read": false
+  },
+  "stage_1_temporal_gate": {
+    "noninferiority_margin_log_rmse": 0.005,
+    "paired_bootstrap_replicates": 10000,
+    "models": 6,
+    "models_required_noninferior": 5,
+    "models_required_predictively_improved": 4,
+    "mechanistic_support": "P1 station and tree comparisons against phi_A=0 must satisfy both count gates",
+    "fractional_extension_support": "P1 station and tree comparisons against the training-selected {0,1} endpoint must satisfy both count gates",
+    "predictive_preservation": "P2 station and tree comparisons against phi_A=0 must be noninferior in at least 5/6 models",
+    "phi_stability": "at least 5/6 mu models select phi_A>0 in at least 3/4 folds",
+    "eta_or_vf_boundary": "existing boundary rules remain diagnostic/confounding flags; they cannot be hidden by ensemble averaging"
+  },
+  "decision_states": {
+    "PARTIAL_CROPLAND_SLOW_RELEASE_TEMPORALLY_SUPPORTED_PENDING_SPATIAL": "all temporal module and fractional-extension gates pass",
+    "SLOW_RELEASE_SUPPORTED_EXISTING_ENDPOINT_SUFFICIENT": "candidate improves over phi_A=0 but does not improve over the training-selected S0/S1 endpoint",
+    "STATION_READOUT_COMPENSATED_NOT_PROCESS_SUPPORTED": "P2 passes but P1 mechanistic gate fails",
+    "CROPLAND_SLOW_RELEASE_NOT_SUPPORTED": "P1 module gate fails",
+    "NUMERICALLY_CONFOUNDED": "mass balance, endpoint nesting, optimizer or ensemble boundary contracts fail"
+  },
+  "conditional_successor": "Nested LOSO/LOTO is authorized only for PARTIAL_CROPLAND_SLOW_RELEASE_TEMPORALLY_SUPPORTED_PENDING_SPATIAL; otherwise close 20260824_3 without reading 2022 TN.",
+  "forbidden_changes": [
+    "manure-specific or fertilizer-specific fraction",
+    "second SON pool",
+    "free tau_SON",
+    "new groundwater mu",
+    "temperature",
+    "new hydraulic structure",
+    "WWTP activation",
+    "reach-specific or regional phi_A",
+    "2022 TN"
+  ]
+}

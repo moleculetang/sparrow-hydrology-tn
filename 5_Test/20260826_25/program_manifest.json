@@ -1,0 +1,21 @@
+{
+  "program": "20260826 dynamic conserving three-path hydrology for TN",
+  "registered_at": "2026-08-26T22:03:06.932043+08:00",
+  "authorization_basis": "Explicit user instruction after closure of 20260826_13-to-21; this is a new program, not an automatic successor.",
+  "predecessor": "20260826_21 PROGRAM_COMPLETE_PARENT_RETAINED_STATIC_DPL_REJECTED_H1",
+  "hypothesis": "A low-capacity state-dependent conserving flux gate plus calibrated component-preserving channel routing can improve total-flow prediction while producing stable operational fast/intermediate/slow response components for TN.",
+  "stage_status": {
+    "20260826_23": "PASS_PROGRAM_REGISTRATION",
+    "20260826_24": "PASS_DYN3P_CORE_PREFLIGHT",
+    "20260826_25": "PASS_TEMPORAL_CANDIDATE_SELECTED",
+    "20260826_26": "CONDITIONAL_ZERO_TARGET_HISTORY_SPATIAL_EVALUATION",
+    "20260826_27": "CONDITIONAL_THREE_VS_TWO_PATH_IDENTIFIABILITY",
+    "20260826_28": "CONDITIONAL_FULL_DEVELOPMENT_REFIT",
+    "20260826_29": "CONDITIONAL_LOCKED_2019_2022_RETROSPECTIVE",
+    "20260826_30": "REGISTERED_FINAL_TN_INTERFACE_AND_CLOSE",
+    "20260826_31": "RESERVED_INTEGRITY_REPAIR_ONLY",
+    "20260826_32": "RESERVED_INTEGRITY_REPAIR_ONLY"
+  },
+  "hard_stop": "No automatic creation of 20260826_33 or later folders",
+  "authorized_successor": "20260826_26"
+}

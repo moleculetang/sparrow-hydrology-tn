@@ -1,0 +1,55 @@
+{
+  "experiment_id": "20260824_10",
+  "registered_on": "2026-08-27",
+  "purpose": "audit the accepted 20260827_5/_6 hydrology, build a complete DYN2P+SIG2P to TN process bridge through 2024, and lock the actually consumed TN data lineage before TN performance fitting",
+  "parent_hydrology": {
+    "model_lock": "E:/SPARROW/5_Test/20260827_5/outputs/full_development_model_lock.pt",
+    "formal_monthly_product": "E:/SPARROW/5_Test/20260827_6/extension_2023_2024/outputs/locked_reach_monthly_2006_2024.parquet",
+    "status": "BASELINE_ACCEPTED_TIME_AND_SPACE_TOTAL_FLOW",
+    "formal_water_source": "DYN2P+SIG2P only"
+  },
+  "interface_semantics": {
+    "fast": "signature-constrained operational fast hydrologic response",
+    "slow": "signature-constrained operational slow hydrologic response",
+    "forbidden_aliases": ["observed groundwater", "water age", "new water", "old water"],
+    "source_contact": "DYN2P precipitation, rainfall excess, percolation and soil capacity instrumented from the locked model",
+    "soil_overflow": "exactly zero because DYN2P has no second overflow flux distinct from rainfall excess",
+    "effective_tn_lag": "solute/source-zone delivery memory not already represented by hydrologic slow response"
+  },
+  "fixed_tn_architecture": [
+    "monthly SPARROW directed-network mass routing",
+    "F00 source-water contact",
+    "S0/S1-12 x mu={12,36,60,96,144,240}",
+    "fixed effective TN delivery lag",
+    "H1_GLOBAL hydraulic exposure recomputed from DYN2P+SIG2P flow and geometry-only Andreadis attributes",
+    "Gaussian C-Q hinge",
+    "P1 global fast/slow pathway MAP scaling",
+    "optional P2 monitored-station ridge intercept"
+  ],
+  "forbidden_changes": [
+    "temperature",
+    "reservoir operator",
+    "additional mu",
+    "second harmonic source calendar",
+    "Reach-specific source phase",
+    "Andreadis reference discharge",
+    "station-conditioned discharge inserted into the 230-Reach water field"
+  ],
+  "data_boundary": {
+    "hydrology": "2006-2024 locked output; 1961-2005 repeats the 2006-2015 month climatology only for TN spin-up/history",
+    "TN_observations": "strict matched primary-river observations only",
+    "diffuse_source": "fertilizer + cropland manure + cropland BNF + atmospheric deposition - crop removal",
+    "municipal_WWTP": "not consumed by this locked mainline",
+    "unused_datasets": "excluded from processing and download decisions"
+  },
+  "hard_gates_before_tn_fit": {
+    "locked_daily_and_monthly_flow_reproduction_max_abs": 1e-10,
+    "daily_land_mass_balance_max_abs_mm": 1e-8,
+    "fast_plus_slow_closure_max_abs": 1e-10,
+    "source_flux_nonoverlap": true,
+    "2006_2024_reach_month_coverage": 52440,
+    "1961_2024_reach_month_coverage": 176640,
+    "source_ledger_identity_max_abs_kg_n": 1e-8
+  },
+  "successor": "20260824_11 only after every pre-TN-fit hard gate passes"
+}

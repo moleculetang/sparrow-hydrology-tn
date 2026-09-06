@@ -1,0 +1,19 @@
+{
+  "stage": "20260824_19",
+  "parent": "20260824_18",
+  "hypothesis": "Correcting the observation domain and TN carrier initialization changes the numerical baseline but does not by itself authorize new TN physics.",
+  "primary_domain": "river_channel",
+  "hydrology": "20260828_9/10 frozen canonical hydrology",
+  "model": "M3_DYNAMIC_DELIVERY",
+  "allowed_parameters": ["alpha_D", "beta_D", "v_f_m_per_day"],
+  "forbidden_parameters": ["station effect", "fast/slow eta", "C-Q hinge", "generic T1", "temperature", "reservoir", "WWTP", "Legacy"],
+  "carrier_start": "2006-02",
+  "evaluation_start": "2016-01",
+  "development": [2021, 2024],
+  "temporal_folds": [[2021, 2021, 2022], [2021, 2022, 2023], [2021, 2023, 2024]],
+  "spatial_folds": ["nested LORO", "nested LOTO", "natural expansion 2021"],
+  "memory": {"warning_gib": 12, "hard_stop_gib": 16, "threads": 1, "atomic_writes": true},
+  "determinism": {"prediction_atol": 1e-12, "parameter_atol": 1e-10, "metric_atol": 1e-12},
+  "authorized_successor": "20260824_20"
+}
+

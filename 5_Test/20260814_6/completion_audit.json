@@ -1,0 +1,570 @@
+{
+  "audit_id": "20260814_6_completion_audit",
+  "requirements_checked": 11,
+  "checks": {
+    "R1_scope_and_semantics": {
+      "pass": true,
+      "evidence": {
+        "evidence_label": "retrospective_secondary_structural_noninferiority_adjudication",
+        "conditional_candidates": 0,
+        "operational": "H0_hybrid",
+        "groundwater": "non_identifying"
+      }
+    },
+    "R2_all_five_candidates_and_oof_keys": {
+      "pass": true,
+      "evidence": {
+        "H0_hybrid": {
+          "rows": 7755,
+          "unique": 7755
+        },
+        "main": {
+          "rows": 7755,
+          "unique": 7755,
+          "matches_h0": true
+        },
+        "flash": {
+          "rows": 7755,
+          "unique": 7755,
+          "matches_h0": true
+        },
+        "slow": {
+          "rows": 7755,
+          "unique": 7755,
+          "matches_h0": true
+        },
+        "buffer": {
+          "rows": 7755,
+          "unique": 7755,
+          "matches_h0": true
+        },
+        "wet": {
+          "rows": 7755,
+          "unique": 7755,
+          "matches_h0": true
+        }
+      }
+    },
+    "R3_station_bootstrap_reproduction": {
+      "pass": true,
+      "evidence": [
+        {
+          "model_id": "main",
+          "metric": "lowflow_log_rmse",
+          "station_max_delta_current": 6.049848122469115e-17,
+          "station_max_delta_stage2": 6.049848122469115e-17,
+          "tree_max_delta_current": 8.933825901280557e-17,
+          "tree_clusters": 8
+        },
+        {
+          "model_id": "main",
+          "metric": "tail_log_rmse",
+          "station_max_delta_current": 9.90960785651751e-17,
+          "station_max_delta_stage2": 9.90960785651751e-17,
+          "tree_max_delta_current": 8.380882793312949e-17,
+          "tree_clusters": 8
+        },
+        {
+          "model_id": "flash",
+          "metric": "lowflow_log_rmse",
+          "station_max_delta_current": 8.825405684032006e-17,
+          "station_max_delta_stage2": 8.825405684032006e-17,
+          "tree_max_delta_current": 6.158268339717665e-17,
+          "tree_clusters": 8
+        },
+        {
+          "model_id": "flash",
+          "metric": "tail_log_rmse",
+          "station_max_delta_current": 7.090682208055199e-17,
+          "station_max_delta_stage2": 7.090682208055199e-17,
+          "tree_max_delta_current": 9.75781955236954e-17,
+          "tree_clusters": 8
+        },
+        {
+          "model_id": "slow",
+          "metric": "lowflow_log_rmse",
+          "station_max_delta_current": 9.280770596475918e-17,
+          "station_max_delta_stage2": 9.280770596475918e-17,
+          "tree_max_delta_current": 6.245004513516506e-17,
+          "tree_clusters": 8
+        },
+        {
+          "model_id": "slow",
+          "metric": "tail_log_rmse",
+          "station_max_delta_current": 8.500145032286355e-17,
+          "station_max_delta_stage2": 8.500145032286355e-17,
+          "tree_max_delta_current": 9.8879238130678e-17,
+          "tree_clusters": 8
+        },
+        {
+          "model_id": "buffer",
+          "metric": "lowflow_log_rmse",
+          "station_max_delta_current": 2.5153490401663703e-17,
+          "station_max_delta_stage2": 2.5153490401663703e-17,
+          "tree_max_delta_current": 7.45931094670027e-17,
+          "tree_clusters": 8
+        },
+        {
+          "model_id": "buffer",
+          "metric": "tail_log_rmse",
+          "station_max_delta_current": 9.611452259083997e-17,
+          "station_max_delta_stage2": 9.611452259083997e-17,
+          "tree_max_delta_current": 7.979727989493313e-17,
+          "tree_clusters": 8
+        },
+        {
+          "model_id": "wet",
+          "metric": "lowflow_log_rmse",
+          "station_max_delta_current": 5.0523821237824507e-17,
+          "station_max_delta_stage2": 5.0523821237824507e-17,
+          "tree_max_delta_current": 8.933825901280557e-17,
+          "tree_clusters": 8
+        },
+        {
+          "model_id": "wet",
+          "metric": "tail_log_rmse",
+          "station_max_delta_current": 8.586881206085195e-17,
+          "station_max_delta_stage2": 8.586881206085195e-17,
+          "tree_max_delta_current": 7.37257477290143e-17,
+          "tree_clusters": 8
+        }
+      ]
+    },
+    "R4_terminal_tree_complete_block_reproduction": {
+      "pass": true,
+      "evidence": {
+        "participating_tree_ids": [
+          1,
+          20,
+          22,
+          26,
+          56,
+          166,
+          212,
+          217
+        ],
+        "comparisons": [
+          {
+            "model_id": "main",
+            "metric": "lowflow_log_rmse",
+            "station_max_delta_current": 6.049848122469115e-17,
+            "station_max_delta_stage2": 6.049848122469115e-17,
+            "tree_max_delta_current": 8.933825901280557e-17,
+            "tree_clusters": 8
+          },
+          {
+            "model_id": "main",
+            "metric": "tail_log_rmse",
+            "station_max_delta_current": 9.90960785651751e-17,
+            "station_max_delta_stage2": 9.90960785651751e-17,
+            "tree_max_delta_current": 8.380882793312949e-17,
+            "tree_clusters": 8
+          },
+          {
+            "model_id": "flash",
+            "metric": "lowflow_log_rmse",
+            "station_max_delta_current": 8.825405684032006e-17,
+            "station_max_delta_stage2": 8.825405684032006e-17,
+            "tree_max_delta_current": 6.158268339717665e-17,
+            "tree_clusters": 8
+          },
+          {
+            "model_id": "flash",
+            "metric": "tail_log_rmse",
+            "station_max_delta_current": 7.090682208055199e-17,
+            "station_max_delta_stage2": 7.090682208055199e-17,
+            "tree_max_delta_current": 9.75781955236954e-17,
+            "tree_clusters": 8
+          },
+          {
+            "model_id": "slow",
+            "metric": "lowflow_log_rmse",
+            "station_max_delta_current": 9.280770596475918e-17,
+            "station_max_delta_stage2": 9.280770596475918e-17,
+            "tree_max_delta_current": 6.245004513516506e-17,
+            "tree_clusters": 8
+          },
+          {
+            "model_id": "slow",
+            "metric": "tail_log_rmse",
+            "station_max_delta_current": 8.500145032286355e-17,
+            "station_max_delta_stage2": 8.500145032286355e-17,
+            "tree_max_delta_current": 9.8879238130678e-17,
+            "tree_clusters": 8
+          },
+          {
+            "model_id": "buffer",
+            "metric": "lowflow_log_rmse",
+            "station_max_delta_current": 2.5153490401663703e-17,
+            "station_max_delta_stage2": 2.5153490401663703e-17,
+            "tree_max_delta_current": 7.45931094670027e-17,
+            "tree_clusters": 8
+          },
+          {
+            "model_id": "buffer",
+            "metric": "tail_log_rmse",
+            "station_max_delta_current": 9.611452259083997e-17,
+            "station_max_delta_stage2": 9.611452259083997e-17,
+            "tree_max_delta_current": 7.979727989493313e-17,
+            "tree_clusters": 8
+          },
+          {
+            "model_id": "wet",
+            "metric": "lowflow_log_rmse",
+            "station_max_delta_current": 5.0523821237824507e-17,
+            "station_max_delta_stage2": 5.0523821237824507e-17,
+            "tree_max_delta_current": 8.933825901280557e-17,
+            "tree_clusters": 8
+          },
+          {
+            "model_id": "wet",
+            "metric": "tail_log_rmse",
+            "station_max_delta_current": 8.586881206085195e-17,
+            "station_max_delta_stage2": 8.586881206085195e-17,
+            "tree_max_delta_current": 7.37257477290143e-17,
+            "tree_clusters": 8
+          }
+        ]
+      }
+    },
+    "R5_independent_NSE_PBIAS_shape_volume": {
+      "pass": true,
+      "evidence": {
+        "main": {
+          "values": {
+            "delta_raw_nse": -0.001829241884436228,
+            "delta_log_nse": 0.00027290887105946293,
+            "delta_abs_pbias_pp": -0.04913220336550861,
+            "tail_shape_delta": -0.0005420846257383483,
+            "event_volume_delta": -0.0015156176757442907
+          },
+          "core_gates": {
+            "raw_nse": true,
+            "log_nse": true,
+            "pbias": true,
+            "tail_shape": true,
+            "event_volume": true
+          },
+          "max_report_difference": 9.063930161978817e-17
+        },
+        "flash": {
+          "values": {
+            "delta_raw_nse": -0.0018011796446651962,
+            "delta_log_nse": -3.91840312903291e-05,
+            "delta_abs_pbias_pp": -0.811561610313901,
+            "tail_shape_delta": -0.003503253055514244,
+            "event_volume_delta": 0.00020943934760939142
+          },
+          "core_gates": {
+            "raw_nse": true,
+            "log_nse": true,
+            "pbias": true,
+            "tail_shape": true,
+            "event_volume": false
+          },
+          "max_report_difference": 9.627715291671279e-17
+        },
+        "slow": {
+          "values": {
+            "delta_raw_nse": -0.004229871017206177,
+            "delta_log_nse": -0.0006996135399807146,
+            "delta_abs_pbias_pp": -0.11574470102937706,
+            "tail_shape_delta": 0.013689177796076868,
+            "event_volume_delta": 0.003318327598778259
+          },
+          "core_gates": {
+            "raw_nse": true,
+            "log_nse": true,
+            "pbias": true,
+            "tail_shape": false,
+            "event_volume": false
+          },
+          "max_report_difference": 7.719519468096792e-17
+        },
+        "buffer": {
+          "values": {
+            "delta_raw_nse": -8.210927581142613e-05,
+            "delta_log_nse": 0.00010260198792122477,
+            "delta_abs_pbias_pp": -0.5411452696804266,
+            "tail_shape_delta": 0.006738205067340131,
+            "event_volume_delta": -0.0001007719101091542
+          },
+          "core_gates": {
+            "raw_nse": true,
+            "log_nse": true,
+            "pbias": true,
+            "tail_shape": false,
+            "event_volume": true
+          },
+          "max_report_difference": 5.421010862427522e-17
+        },
+        "wet": {
+          "values": {
+            "delta_raw_nse": -0.006417102271919384,
+            "delta_log_nse": -0.0002842807064604713,
+            "delta_abs_pbias_pp": 0.4193099746429674,
+            "tail_shape_delta": 0.006429905557025661,
+            "event_volume_delta": 0.0013419773506066768
+          },
+          "core_gates": {
+            "raw_nse": false,
+            "log_nse": true,
+            "pbias": true,
+            "tail_shape": false,
+            "event_volume": false
+          },
+          "max_report_difference": 8.413408858487514e-17
+        }
+      }
+    },
+    "R6_engineering_conservation_and_unique_chains": {
+      "pass": true,
+      "evidence": {
+        "main": {
+          "rows": 46920,
+          "reaches": 230,
+          "months": 204,
+          "minimum_physical": 0.0,
+          "errors": {
+            "mass": 2.0605739337042905e-13,
+            "q_local": 5.3290705182007514e-14,
+            "pre_recharge": 5.684341886080802e-14,
+            "recharge": 0.0,
+            "source_end": 1.4210854715202004e-14,
+            "quick_input": 5.684341886080802e-14
+          },
+          "pass": true
+        },
+        "flash": {
+          "rows": 46920,
+          "reaches": 230,
+          "months": 204,
+          "minimum_physical": 0.0,
+          "errors": {
+            "mass": 3.4727776210274897e-13,
+            "q_local": 5.5067062021407764e-14,
+            "pre_recharge": 5.684341886080802e-14,
+            "recharge": 0.0,
+            "source_end": 7.105427357601002e-15,
+            "quick_input": 5.684341886080802e-14
+          },
+          "pass": true
+        },
+        "slow": {
+          "rows": 46920,
+          "reaches": 230,
+          "months": 204,
+          "minimum_physical": 0.0,
+          "errors": {
+            "mass": 3.339550858072471e-13,
+            "q_local": 2.842170943040401e-14,
+            "pre_recharge": 5.684341886080802e-14,
+            "recharge": 0.0,
+            "source_end": 2.842170943040401e-14,
+            "quick_input": 1.1368683772161603e-13
+          },
+          "pass": true
+        },
+        "buffer": {
+          "rows": 46920,
+          "reaches": 230,
+          "months": 204,
+          "minimum_physical": 0.0,
+          "errors": {
+            "mass": 4.547473508864641e-13,
+            "q_local": 2.842170943040401e-14,
+            "pre_recharge": 5.684341886080802e-14,
+            "recharge": 0.0,
+            "source_end": 2.842170943040401e-14,
+            "quick_input": 5.684341886080802e-14
+          },
+          "pass": true
+        },
+        "wet": {
+          "rows": 46920,
+          "reaches": 230,
+          "months": 204,
+          "minimum_physical": 0.0,
+          "errors": {
+            "mass": 3.446132268436486e-13,
+            "q_local": 5.684341886080802e-14,
+            "pre_recharge": 5.684341886080802e-14,
+            "recharge": 0.0,
+            "source_end": 2.842170943040401e-14,
+            "quick_input": 5.684341886080802e-14
+          },
+          "pass": true
+        }
+      }
+    },
+    "R7_decision_rule_and_expected_result": {
+      "pass": true,
+      "evidence": {
+        "passing": [
+          "main"
+        ],
+        "selected": "main",
+        "interface_status": "structural_canonical"
+      }
+    },
+    "R8_canonical_interface_exactness": {
+      "pass": true,
+      "evidence": {
+        "rows": 46920,
+        "reaches": 230,
+        "months": 204,
+        "shared_columns_exact": true,
+        "q_local_identity_error_mm": 5.3290705182007514e-14
+      }
+    },
+    "R9_upstream_immutability_and_structural_lock": {
+      "pass": true,
+      "evidence": {
+        "upstream_mismatches": [],
+        "structural_artifact_mismatches": [],
+        "protected_upstream_count": 32
+      }
+    },
+    "R10_complete_bootstrap_distributions": {
+      "pass": true,
+      "evidence": {
+        "rows": 200000,
+        "groups": [
+          {
+            "model_id": "buffer",
+            "metric": "lowflow_log_rmse",
+            "cluster_type": "station",
+            "replicates": 10000
+          },
+          {
+            "model_id": "buffer",
+            "metric": "lowflow_log_rmse",
+            "cluster_type": "terminal_tree",
+            "replicates": 10000
+          },
+          {
+            "model_id": "buffer",
+            "metric": "tail_log_rmse",
+            "cluster_type": "station",
+            "replicates": 10000
+          },
+          {
+            "model_id": "buffer",
+            "metric": "tail_log_rmse",
+            "cluster_type": "terminal_tree",
+            "replicates": 10000
+          },
+          {
+            "model_id": "flash",
+            "metric": "lowflow_log_rmse",
+            "cluster_type": "station",
+            "replicates": 10000
+          },
+          {
+            "model_id": "flash",
+            "metric": "lowflow_log_rmse",
+            "cluster_type": "terminal_tree",
+            "replicates": 10000
+          },
+          {
+            "model_id": "flash",
+            "metric": "tail_log_rmse",
+            "cluster_type": "station",
+            "replicates": 10000
+          },
+          {
+            "model_id": "flash",
+            "metric": "tail_log_rmse",
+            "cluster_type": "terminal_tree",
+            "replicates": 10000
+          },
+          {
+            "model_id": "main",
+            "metric": "lowflow_log_rmse",
+            "cluster_type": "station",
+            "replicates": 10000
+          },
+          {
+            "model_id": "main",
+            "metric": "lowflow_log_rmse",
+            "cluster_type": "terminal_tree",
+            "replicates": 10000
+          },
+          {
+            "model_id": "main",
+            "metric": "tail_log_rmse",
+            "cluster_type": "station",
+            "replicates": 10000
+          },
+          {
+            "model_id": "main",
+            "metric": "tail_log_rmse",
+            "cluster_type": "terminal_tree",
+            "replicates": 10000
+          },
+          {
+            "model_id": "slow",
+            "metric": "lowflow_log_rmse",
+            "cluster_type": "station",
+            "replicates": 10000
+          },
+          {
+            "model_id": "slow",
+            "metric": "lowflow_log_rmse",
+            "cluster_type": "terminal_tree",
+            "replicates": 10000
+          },
+          {
+            "model_id": "slow",
+            "metric": "tail_log_rmse",
+            "cluster_type": "station",
+            "replicates": 10000
+          },
+          {
+            "model_id": "slow",
+            "metric": "tail_log_rmse",
+            "cluster_type": "terminal_tree",
+            "replicates": 10000
+          },
+          {
+            "model_id": "wet",
+            "metric": "lowflow_log_rmse",
+            "cluster_type": "station",
+            "replicates": 10000
+          },
+          {
+            "model_id": "wet",
+            "metric": "lowflow_log_rmse",
+            "cluster_type": "terminal_tree",
+            "replicates": 10000
+          },
+          {
+            "model_id": "wet",
+            "metric": "tail_log_rmse",
+            "cluster_type": "station",
+            "replicates": 10000
+          },
+          {
+            "model_id": "wet",
+            "metric": "tail_log_rmse",
+            "cluster_type": "terminal_tree",
+            "replicates": 10000
+          }
+        ]
+      }
+    },
+    "R11_documented_interpretation_boundaries": {
+      "pass": true,
+      "evidence": {
+        "required_phrases_present": true
+      }
+    }
+  },
+  "final_state": {
+    "operational_flow_model_id": "H0_hybrid",
+    "structural_interface_branch_id": "main",
+    "interface_status": "structural_canonical",
+    "groundwater_status": "non_identifying"
+  },
+  "all_pass": true
+}

@@ -1,0 +1,30 @@
+{
+  "stage": "20260828_24",
+  "title": "Final locked R2 hydrology interface export through 2024",
+  "status": "REGISTERED_AUTHORIZED_EXPORT",
+  "parent_stage": "20260828_23",
+  "prerequisite": "R2_RETROSPECTIVE_NONINFERIOR_TN_INTERFACE_AUTHORIZED",
+  "period": "2006-01-01 through 2024-12-31",
+  "model": "R2_tau180_a0.25_d0.00",
+  "purpose": "Provide state-consistent total, fast-origin, slow-origin and direct-origin Reach flow plus explicit reservoir storage, release and water-age diagnostics for subsequent TN transport modelling.",
+  "parameter_refit": false,
+  "observation_use": "None. This stage is deterministic export from the locked hydrologic structure and frozen forcing.",
+  "required_products": [
+    "daily 230-Reach hydrology interface",
+    "monthly 230-Reach hydrology interface",
+    "daily reservoir state/release interface",
+    "monthly reservoir state/release interface",
+    "static reservoir metadata",
+    "mass, source-tracer and age-moment QA",
+    "code/input/model hash lock"
+  ],
+  "forbidden": [
+    "parameter refitting",
+    "station-specific correction",
+    "observed release assimilation",
+    "TN observations",
+    "redefinition of fast and slow origin after routing"
+  ],
+  "claim_boundary": "Fast/slow labels identify parent DYN2P source origin after conservative reservoir mixing. They are not independently observed reservoir release components. Individual reservoir operations remain prior-constrained rather than release-observation-identified.",
+  "runtime_environment": "D:/ProgramData/anaconda3/envs/sparrow/python.exe"
+}

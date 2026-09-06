@@ -1,0 +1,36 @@
+{
+  "stage": "20260823_27",
+  "status": "registered_before_execution",
+  "hypothesis": "The final 20260823_26 Q72 process can be instrumented into one complete, mass-accounted fast/delayed-flow interface for TN without changing its Reach flows.",
+  "parent": "20260823_26",
+  "authoritative_physical_parameter_lock": "20260823_15/final_reports/four_group_training_lock.json",
+  "allowed_changes": [
+    "instrument the locked Q72 state recurrence",
+    "add state, flux, SI-volume, routing and audit fields",
+    "quantify mismatch against the superseded TN hydrology interface"
+  ],
+  "forbidden_changes": [
+    "parameter fitting",
+    "Gauge conditioning",
+    "streamflow assimilation",
+    "reservoir equation",
+    "temperature effects",
+    "TN parameter fitting",
+    "changes to 20260823_26"
+  ],
+  "calendar": "2006-2022 complete 230-Reach monthly panel",
+  "spinup": {
+    "forcing_years": "2006-2011, exactly as locked parent",
+    "tolerance": 1e-06,
+    "max_cycles": 1000
+  },
+  "hard_gates": {
+    "reach_count": 230,
+    "row_count": 46920,
+    "parent_flow_max_abs_cfs": 1e-06,
+    "local_mass_balance_max_abs_mm": 1e-08,
+    "routing_relative_error": 1e-10,
+    "minimum_state_or_flux_mm": -1e-10
+  },
+  "successor": "20260823_28 only after all hard gates pass"
+}

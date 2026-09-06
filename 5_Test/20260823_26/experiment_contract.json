@@ -1,0 +1,29 @@
+{
+  "stage": "20260823_26",
+  "status": "locked_before_external_read",
+  "development_lock": "20260823_25/reports/stage25_decision.json",
+  "locked_unknown_spatial_weight": 0.0,
+  "retrospective_targets_re_read_after_current_program_lock": [
+    {"station": "珠坑", "reach_id": 44},
+    {"station": "昭平", "reach_id": 84},
+    {"station": "瓦村（二）", "reach_id": 134},
+    {"station": "盘江桥（三）", "reach_id": 206}
+  ],
+  "historical_exposure": "These stations were previously present in the eight-station 20260823_15 diagnostic; this is not independent external validation.",
+  "current_program_boundary": "No target outcome was read in 20260823_16-25; Q72 prediction and weight zero were locked before this retrospective re-read.",
+  "external_prediction": "Q72 conserving Reach flow only; no parameter or decision may change after retrospective re-reading target outcomes",
+  "final_products": {
+    "230_reach_TN_water_interface": "Q72 local/routed quick, slow and total flow",
+    "known_gauge_prediction": "20260823_23 unified historically conditioned Gauge observation operator",
+    "unknown_gauge_prediction": "Q72 fallback",
+    "recursive_assimilation": "diagnostic only, not final",
+    "network_native_MAP5_flow": "research candidate, not promoted"
+  },
+  "claims": {
+    "known_gauge_temporal_prediction_supported": true,
+    "unknown_gauge_spatial_MAP5_supported": false,
+    "river_network_conservation": true,
+    "full_precipitation_ET_storage_closure": false,
+    "TN_interface_uses_station_observation_operator": false
+  }
+}
