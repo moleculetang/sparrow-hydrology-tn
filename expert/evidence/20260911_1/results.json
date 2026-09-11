@@ -1,0 +1,869 @@
+{
+  "conclusion": "未获得两折一致的共享闭合预测收益",
+  "starts": [
+    {
+      "tag": "F23_M0_0",
+      "MAP": 1.9926542937829508,
+      "data": 1.613959930434626,
+      "prior": 0.3786943633483249,
+      "projected_gradient": 5.540158237671289e-06,
+      "numerical_sufficient": true,
+      "calls": 1295,
+      "hours": 0.6669152465131548,
+      "reason": "ORIGINAL_COORDINATE_SUFFICIENT",
+      "repair_used": false
+    },
+    {
+      "tag": "F23_M0_1",
+      "MAP": 1.9926542937930003,
+      "data": 1.6139596371817235,
+      "prior": 0.37869465661127677,
+      "projected_gradient": 5.830593629616021e-06,
+      "numerical_sufficient": true,
+      "calls": 1171,
+      "hours": 0.5779847280184428,
+      "reason": "ORIGINAL_COORDINATE_SUFFICIENT",
+      "repair_used": false
+    },
+    {
+      "tag": "F23_SC_0",
+      "MAP": 1.9900877467519513,
+      "data": 1.6120861567026954,
+      "prior": 0.378001590049256,
+      "projected_gradient": 8.500766017438544e-06,
+      "numerical_sufficient": true,
+      "calls": 1052,
+      "hours": 0.9011261342631446,
+      "reason": "ORIGINAL_COORDINATE_SUFFICIENT",
+      "repair_used": false
+    },
+    {
+      "tag": "F23_SC_1",
+      "MAP": 1.9900877467560376,
+      "data": 1.6120861646031124,
+      "prior": 0.37800158215292523,
+      "projected_gradient": 3.6890081076407233e-06,
+      "numerical_sufficient": true,
+      "calls": 1550,
+      "hours": 1.4242184255520502,
+      "reason": "ORIGINAL_COORDINATE_SUFFICIENT",
+      "repair_used": false
+    },
+    {
+      "tag": "F24_M0_0",
+      "MAP": 1.8927782197482583,
+      "data": 1.5354283733672247,
+      "prior": 0.3573498463810335,
+      "projected_gradient": 5.090517229924818e-06,
+      "numerical_sufficient": true,
+      "calls": 1302,
+      "hours": 0.8643203208843867,
+      "reason": "ORIGINAL_COORDINATE_SUFFICIENT",
+      "repair_used": false
+    },
+    {
+      "tag": "F24_M0_1",
+      "MAP": 1.892778219710215,
+      "data": 1.5354273435956014,
+      "prior": 0.35735087611461364,
+      "projected_gradient": 7.965002514820352e-06,
+      "numerical_sufficient": true,
+      "calls": 1222,
+      "hours": 0.638314567870564,
+      "reason": "ORIGINAL_COORDINATE_SUFFICIENT",
+      "repair_used": false
+    },
+    {
+      "tag": "F24_SC_0",
+      "MAP": 1.889034993057349,
+      "data": 1.5317079333722754,
+      "prior": 0.35732705968507344,
+      "projected_gradient": 5.357696531441136e-06,
+      "numerical_sufficient": true,
+      "calls": 1055,
+      "hours": 0.3900192654132843,
+      "reason": "ORIGINAL_COORDINATE_SUFFICIENT",
+      "repair_used": false
+    },
+    {
+      "tag": "F24_SC_1",
+      "MAP": 1.8890349930206036,
+      "data": 1.5317096421224883,
+      "prior": 0.35732535089811546,
+      "projected_gradient": 6.478079335625608e-06,
+      "numerical_sufficient": true,
+      "calls": 1505,
+      "hours": 1.3722708472278382,
+      "reason": "ORIGINAL_COORDINATE_SUFFICIENT",
+      "repair_used": false
+    }
+  ],
+  "selected_by_training_MAP": {
+    "F23": {
+      "M0": "F23_M0_0",
+      "SC": "F23_SC_0"
+    },
+    "F24": {
+      "M0": "F24_M0_1",
+      "SC": "F24_SC_1"
+    }
+  },
+  "heldout_metrics": {
+    "F23": {
+      "M0": {
+        "rows": 1090,
+        "stations": 116,
+        "defined_nse": 78,
+        "nse_status": {
+          "defined": 78,
+          "fewer_than_8": 38
+        },
+        "median_nse": -0.9895378283084637,
+        "q25_nse": -2.790650247680726,
+        "fraction_nse_positive": 0.16666666666666666,
+        "median_time_r": 0.09445072978598364,
+        "mean_station_log_rmse": 0.2531391603851165,
+        "mean_station_bias_mg_l": -0.11282005371496663,
+        "negative_r_fraction": 0.3974358974358974,
+        "undefined_r": 0,
+        "dynamic_eligible": 78,
+        "d_sigma": 0.9538461782518943,
+        "d_sigma_infinite": false,
+        "amplitude_stations": 78,
+        "descriptive_pooled_nse": 0.4251655995295668,
+        "mean_station_raw_rmse": 0.8433818765830463,
+        "mean_station_absolute_bias": 0.5688717069053497,
+        "undefined_r_fraction": 0.0,
+        "nse_identity_verified": true
+      },
+      "M0_train": {
+        "rows": 2606,
+        "stations": 116,
+        "defined_nse": 116,
+        "nse_status": {
+          "defined": 116
+        },
+        "median_nse": -0.6781215287333113,
+        "q25_nse": -1.9109660500789318,
+        "fraction_nse_positive": 0.06896551724137931,
+        "median_time_r": 0.09632786106012353,
+        "mean_station_log_rmse": 0.24092540070090102,
+        "mean_station_bias_mg_l": -0.23078182842001022,
+        "negative_r_fraction": 0.3879310344827586,
+        "undefined_r": 0,
+        "dynamic_eligible": 116,
+        "d_sigma": 0.9604035664548749,
+        "d_sigma_infinite": false,
+        "amplitude_stations": 116,
+        "descriptive_pooled_nse": 0.46079957597576937,
+        "mean_station_raw_rmse": 0.7648003283882019,
+        "mean_station_absolute_bias": 0.5084047977757349,
+        "undefined_r_fraction": 0.0,
+        "nse_identity_verified": true
+      },
+      "SC": {
+        "rows": 1090,
+        "stations": 116,
+        "defined_nse": 78,
+        "nse_status": {
+          "defined": 78,
+          "fewer_than_8": 38
+        },
+        "median_nse": -0.9585759370595751,
+        "q25_nse": -2.793547253436782,
+        "fraction_nse_positive": 0.16666666666666666,
+        "median_time_r": 0.10177669376917209,
+        "mean_station_log_rmse": 0.25244764727542546,
+        "mean_station_bias_mg_l": -0.11160452707666062,
+        "negative_r_fraction": 0.38461538461538464,
+        "undefined_r": 0,
+        "dynamic_eligible": 78,
+        "d_sigma": 0.9605472734345715,
+        "d_sigma_infinite": false,
+        "amplitude_stations": 78,
+        "descriptive_pooled_nse": 0.4280499839824322,
+        "mean_station_raw_rmse": 0.84103953061576,
+        "mean_station_absolute_bias": 0.5686849001696205,
+        "undefined_r_fraction": 0.0,
+        "nse_identity_verified": true
+      },
+      "SC_train": {
+        "rows": 2606,
+        "stations": 116,
+        "defined_nse": 116,
+        "nse_status": {
+          "defined": 116
+        },
+        "median_nse": -0.6741781804669419,
+        "q25_nse": -1.901965789412603,
+        "fraction_nse_positive": 0.06896551724137931,
+        "median_time_r": 0.0987935318430876,
+        "mean_station_log_rmse": 0.24061981242877364,
+        "mean_station_bias_mg_l": -0.23066157043484797,
+        "negative_r_fraction": 0.3706896551724138,
+        "undefined_r": 0,
+        "dynamic_eligible": 116,
+        "d_sigma": 0.961637404224491,
+        "d_sigma_infinite": false,
+        "amplitude_stations": 116,
+        "descriptive_pooled_nse": 0.4613522623544287,
+        "mean_station_raw_rmse": 0.7639670468540518,
+        "mean_station_absolute_bias": 0.5082958853145704,
+        "undefined_r_fraction": 0.0,
+        "nse_identity_verified": true
+      }
+    },
+    "F24": {
+      "M0": {
+        "rows": 1138,
+        "stations": 116,
+        "defined_nse": 85,
+        "nse_status": {
+          "defined": 85,
+          "fewer_than_8": 31
+        },
+        "median_nse": -1.5774460754811552,
+        "q25_nse": -3.6384777900667116,
+        "fraction_nse_positive": 0.023529411764705882,
+        "median_time_r": -0.1672933990312289,
+        "mean_station_log_rmse": 0.28307533610158087,
+        "mean_station_bias_mg_l": -0.37196614225264907,
+        "negative_r_fraction": 0.6941176470588235,
+        "undefined_r": 0,
+        "dynamic_eligible": 85,
+        "d_sigma": 0.6367075133455402,
+        "d_sigma_infinite": false,
+        "amplitude_stations": 85,
+        "descriptive_pooled_nse": 0.37834528089626507,
+        "mean_station_raw_rmse": 0.9078204518952083,
+        "mean_station_absolute_bias": 0.6207213659607687,
+        "undefined_r_fraction": 0.0,
+        "nse_identity_verified": true
+      },
+      "M0_train": {
+        "rows": 3696,
+        "stations": 116,
+        "defined_nse": 116,
+        "nse_status": {
+          "defined": 116
+        },
+        "median_nse": -0.6130636273630399,
+        "q25_nse": -1.8901376023618228,
+        "fraction_nse_positive": 0.07758620689655173,
+        "median_time_r": 0.16499427015813833,
+        "mean_station_log_rmse": 0.24907471903430187,
+        "mean_station_bias_mg_l": -0.24025278387191562,
+        "negative_r_fraction": 0.3017241379310345,
+        "undefined_r": 0,
+        "dynamic_eligible": 116,
+        "d_sigma": 0.8033128939145004,
+        "d_sigma_infinite": false,
+        "amplitude_stations": 116,
+        "descriptive_pooled_nse": 0.4632589135149827,
+        "mean_station_raw_rmse": 0.7993214042072923,
+        "mean_station_absolute_bias": 0.5244206435804444,
+        "undefined_r_fraction": 0.0,
+        "nse_identity_verified": true
+      },
+      "SC": {
+        "rows": 1138,
+        "stations": 116,
+        "defined_nse": 85,
+        "nse_status": {
+          "defined": 85,
+          "fewer_than_8": 31
+        },
+        "median_nse": -1.5540373695725784,
+        "q25_nse": -3.5669378159344625,
+        "fraction_nse_positive": 0.023529411764705882,
+        "median_time_r": -0.16835404193303172,
+        "mean_station_log_rmse": 0.28277880220379903,
+        "mean_station_bias_mg_l": -0.3717468057321568,
+        "negative_r_fraction": 0.6823529411764706,
+        "undefined_r": 0,
+        "dynamic_eligible": 85,
+        "d_sigma": 0.6381763911734872,
+        "d_sigma_infinite": false,
+        "amplitude_stations": 85,
+        "descriptive_pooled_nse": 0.37994396006252784,
+        "mean_station_raw_rmse": 0.9066147859785951,
+        "mean_station_absolute_bias": 0.6201279357126964,
+        "undefined_r_fraction": 0.0,
+        "nse_identity_verified": true
+      },
+      "SC_train": {
+        "rows": 3696,
+        "stations": 116,
+        "defined_nse": 116,
+        "nse_status": {
+          "defined": 116
+        },
+        "median_nse": -0.6089861062442059,
+        "q25_nse": -1.8519573604721948,
+        "fraction_nse_positive": 0.07758620689655173,
+        "median_time_r": 0.16580716157446124,
+        "mean_station_log_rmse": 0.24859800754057648,
+        "mean_station_bias_mg_l": -0.23993060791939486,
+        "negative_r_fraction": 0.27586206896551724,
+        "undefined_r": 0,
+        "dynamic_eligible": 116,
+        "d_sigma": 0.7957434075174217,
+        "d_sigma_infinite": false,
+        "amplitude_stations": 116,
+        "descriptive_pooled_nse": 0.46420004961244443,
+        "mean_station_raw_rmse": 0.7979441562062499,
+        "mean_station_absolute_bias": 0.5238762553797579,
+        "undefined_r_fraction": 0.0,
+        "nse_identity_verified": true
+      }
+    }
+  },
+  "gates": {
+    "F23": {
+      "passed": false,
+      "checks": {
+        "median_nse_gain_010": false,
+        "median_r_gain_005": false,
+        "positive_median_r": true,
+        "q25_nse_decrease_at_most_005": true,
+        "negative_r_fraction_not_increased": true,
+        "undefined_r_fraction_not_increased": true,
+        "mean_station_log_rmse_at_most_105_percent": true,
+        "mean_station_raw_rmse_at_most_105_percent": true,
+        "mean_station_absolute_bias_at_most_105_percent": true,
+        "annual_uptake_ratio_drop_at_most_010": true
+      },
+      "uptake_ratio_changes": {
+        "1961": 0.0,
+        "1962": 0.0,
+        "1963": 0.0,
+        "1964": 0.0,
+        "1965": 0.0,
+        "1966": 0.0,
+        "1967": 0.0,
+        "1968": 0.0,
+        "1969": 0.0,
+        "1970": 0.0,
+        "1971": 0.0,
+        "1972": 0.0,
+        "1973": 0.0,
+        "1974": 0.0,
+        "1975": 0.0,
+        "1976": 0.0,
+        "1977": 0.0,
+        "1978": 0.0,
+        "1979": 0.0,
+        "1980": 0.0,
+        "1981": 0.0,
+        "1982": 0.0,
+        "1983": 0.0,
+        "1984": 0.0,
+        "1985": 0.0,
+        "1986": 0.0,
+        "1987": 0.0,
+        "1988": 0.0,
+        "1989": 0.0,
+        "1990": 0.0,
+        "1991": 0.0,
+        "1992": 0.0,
+        "1993": 0.0,
+        "1994": 0.0,
+        "1995": 0.0,
+        "1996": 0.0,
+        "1997": 0.0,
+        "1998": 0.0,
+        "1999": 0.0,
+        "2000": 0.0,
+        "2001": 0.0,
+        "2002": 0.0,
+        "2003": 0.0,
+        "2004": 0.0,
+        "2005": 0.0,
+        "2006": 0.0,
+        "2007": 0.0,
+        "2008": 0.0,
+        "2009": 0.0,
+        "2010": 0.0,
+        "2011": 0.0,
+        "2012": 0.0,
+        "2013": 0.0,
+        "2014": 0.0,
+        "2015": 0.0,
+        "2016": 0.0,
+        "2017": 0.0,
+        "2018": 0.0,
+        "2019": 0.0,
+        "2020": 0.0,
+        "2021": 0.0,
+        "2022": 0.0,
+        "2023": 0.0,
+        "2024": 0.0,
+        "2025": 0.0
+      },
+      "amplitude_reported_not_a_sole_stop": {
+        "baseline": 0.9538461782518943,
+        "candidate": 0.9605472734345715,
+        "baseline_infinite": false,
+        "candidate_infinite": false
+      },
+      "formal_promotion": false,
+      "bootstrap_percentiles": {
+        "median_NSE_gain": {
+          "0.025": -0.007684811052484752,
+          "0.5": 0.023019657173537433,
+          "0.975": 0.06252103655192154
+        },
+        "median_r_gain": {
+          "0.025": -0.003718003741311704,
+          "0.5": 0.00816238128068265,
+          "0.975": 0.03392211330702496
+        },
+        "mean_RMSE_difference": {
+          "0.025": -0.0032536829192977095,
+          "0.5": -0.002345355626471035,
+          "0.975": -0.0013918590561749686
+        },
+        "mean_logRMSE_difference": {
+          "0.025": -0.0008899495176364416,
+          "0.5": -0.00069175390282461,
+          "0.975": -0.0004812057557977041
+        }
+      }
+    },
+    "F24": {
+      "passed": false,
+      "checks": {
+        "median_nse_gain_010": false,
+        "median_r_gain_005": false,
+        "positive_median_r": false,
+        "q25_nse_decrease_at_most_005": true,
+        "negative_r_fraction_not_increased": true,
+        "undefined_r_fraction_not_increased": true,
+        "mean_station_log_rmse_at_most_105_percent": true,
+        "mean_station_raw_rmse_at_most_105_percent": true,
+        "mean_station_absolute_bias_at_most_105_percent": true,
+        "annual_uptake_ratio_drop_at_most_010": true
+      },
+      "uptake_ratio_changes": {
+        "1961": 0.0,
+        "1962": 0.0,
+        "1963": 0.0,
+        "1964": 0.0,
+        "1965": 0.0,
+        "1966": 0.0,
+        "1967": 0.0,
+        "1968": 0.0,
+        "1969": 0.0,
+        "1970": 0.0,
+        "1971": 0.0,
+        "1972": 0.0,
+        "1973": 0.0,
+        "1974": 0.0,
+        "1975": 0.0,
+        "1976": 0.0,
+        "1977": 0.0,
+        "1978": 0.0,
+        "1979": 0.0,
+        "1980": 0.0,
+        "1981": 0.0,
+        "1982": 0.0,
+        "1983": 0.0,
+        "1984": 0.0,
+        "1985": 0.0,
+        "1986": 0.0,
+        "1987": 0.0,
+        "1988": 0.0,
+        "1989": 0.0,
+        "1990": 0.0,
+        "1991": 0.0,
+        "1992": 0.0,
+        "1993": 0.0,
+        "1994": 0.0,
+        "1995": 0.0,
+        "1996": 0.0,
+        "1997": 0.0,
+        "1998": 0.0,
+        "1999": 0.0,
+        "2000": 0.0,
+        "2001": 0.0,
+        "2002": 0.0,
+        "2003": 0.0,
+        "2004": 0.0,
+        "2005": 0.0,
+        "2006": 0.0,
+        "2007": 0.0,
+        "2008": 0.0,
+        "2009": 0.0,
+        "2010": 0.0,
+        "2011": 0.0,
+        "2012": 0.0,
+        "2013": 0.0,
+        "2014": 0.0,
+        "2015": 0.0,
+        "2016": 0.0,
+        "2017": 0.0,
+        "2018": 0.0,
+        "2019": 0.0,
+        "2020": 0.0,
+        "2021": 0.0,
+        "2022": 0.0,
+        "2023": 0.0,
+        "2024": 0.0,
+        "2025": 0.0
+      },
+      "amplitude_reported_not_a_sole_stop": {
+        "baseline": 0.6367075133455402,
+        "candidate": 0.6381763911734872,
+        "baseline_infinite": false,
+        "candidate_infinite": false
+      },
+      "formal_promotion": false,
+      "bootstrap_percentiles": {
+        "median_NSE_gain": {
+          "0.025": -0.043185334377680906,
+          "0.5": 0.0023254496177878003,
+          "0.975": 0.0234087059085768
+        },
+        "median_r_gain": {
+          "0.025": -0.005599667320322216,
+          "0.5": 0.0023753323269512377,
+          "0.975": 0.009686471301211794
+        },
+        "mean_RMSE_difference": {
+          "0.025": -0.0021809918197310597,
+          "0.5": -0.0012053946917473524,
+          "0.975": -0.00028502220349625745
+        },
+        "mean_logRMSE_difference": {
+          "0.025": -0.0005167373423368177,
+          "0.5": -0.0002958509224530448,
+          "0.975": -8.656981695742003e-05
+        }
+      }
+    }
+  },
+  "missing": [],
+  "all_paths_numerically_sufficient": true,
+  "two_fold_gain": false,
+  "automatic_promotion": false,
+  "capacity_results": [
+    {
+      "tag": "CAP_c04_0",
+      "status": "CAPACITY_FINISHED",
+      "native_status": "Solved",
+      "iterations": 31,
+      "native_solve_seconds": 0.2149846,
+      "elapsed_seconds": 0.5907342433929443,
+      "D": 2.93383781808389e-19,
+      "residuals": {
+        "primal_scaled_max": 4.3052273900724274e-11,
+        "primal_max": 4.3052273900724274e-11,
+        "annual_scaled_max": 0.0,
+        "dual_scaled_max": 2.1970058035896853e-15
+      },
+      "dual_checks": {
+        "stationarity_relative": 2.1970058035896853e-15,
+        "complementarity_relative": 2.513188031545036e-14,
+        "invalid_dual_max": 0.0
+      },
+      "physical_pass": true,
+      "physical_checks": {
+        "daily_conservation": true,
+        "river_conservation": true,
+        "availability": true,
+        "supply": true,
+        "nonnegative": true,
+        "zero_water": true,
+        "finite_prediction": true
+      },
+      "rows": 32,
+      "reaches": [
+        24,
+        25,
+        52
+      ],
+      "primal_original_units": 0.0,
+      "dual_stationarity_expression": -2.6973201450175566e-11,
+      "gap_expression": 2.6973201450175566e-11,
+      "gap_conditions_satisfied_numerically": true,
+      "strict_exact_certificate": false,
+      "scope": "same-period finite capacity sensitivity; no permutation p-value; never predictive initialization or formula selection",
+      "output": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\capacity\\CAP_c04_0.pt",
+      "sha256": "7d60b1e32cfa6fffa5a2b264621688eec590a728f248b96679041150e768ee0e",
+      "source": "E:\\SPARROW\\5_Test\\20260910_4\\outputs\\bundles\\AB.pt",
+      "source_sha256": "2ff82c1eb12f51541e731ccba84fc1a20a3616bc21b5d67567adea9f346bfadc",
+      "cold_start": true,
+      "settings": {
+        "max_iter": 300,
+        "time_limit": 300.0,
+        "threads": 1
+      },
+      "observation_weights_unchanged": true
+    },
+    {
+      "tag": "CAP_c04_1",
+      "status": "CAPACITY_FINISHED",
+      "native_status": "Solved",
+      "iterations": 28,
+      "native_solve_seconds": 0.2198527,
+      "elapsed_seconds": 0.8433072566986084,
+      "D": 0.000290771329698784,
+      "residuals": {
+        "primal_scaled_max": 3.4461161030618035e-13,
+        "primal_max": 3.4461161030618035e-13,
+        "annual_scaled_max": 0.0,
+        "dual_scaled_max": 8.881784197001252e-16
+      },
+      "dual_checks": {
+        "stationarity_relative": 8.881784197001252e-16,
+        "complementarity_relative": 8.916954702468812e-15,
+        "invalid_dual_max": 0.0
+      },
+      "physical_pass": true,
+      "physical_checks": {
+        "daily_conservation": true,
+        "river_conservation": true,
+        "availability": true,
+        "supply": true,
+        "nonnegative": true,
+        "zero_water": true,
+        "finite_prediction": true
+      },
+      "rows": 32,
+      "reaches": [
+        24,
+        25,
+        52
+      ],
+      "primal_original_units": 0.0002907713296987635,
+      "dual_stationarity_expression": 0.0002907713257263578,
+      "gap_expression": 3.972405737684426e-12,
+      "gap_conditions_satisfied_numerically": true,
+      "strict_exact_certificate": false,
+      "scope": "same-period finite capacity sensitivity; no permutation p-value; never predictive initialization or formula selection",
+      "output": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\capacity\\CAP_c04_1.pt",
+      "sha256": "d942d3e8d4c3443254bbc81504298af8e0e265052e62c20b5a734311f536db59",
+      "source": "E:\\SPARROW\\5_Test\\20260910_4\\outputs\\bundles\\AB.pt",
+      "source_sha256": "2ff82c1eb12f51541e731ccba84fc1a20a3616bc21b5d67567adea9f346bfadc",
+      "cold_start": true,
+      "settings": {
+        "max_iter": 300,
+        "time_limit": 300.0,
+        "threads": 1
+      },
+      "observation_weights_unchanged": true
+    },
+    {
+      "tag": "CAP_c04_2",
+      "status": "CAPACITY_FINISHED",
+      "native_status": "Solved",
+      "iterations": 28,
+      "native_solve_seconds": 0.2712854,
+      "elapsed_seconds": 0.9062883853912354,
+      "D": 7.411226150998272e-07,
+      "residuals": {
+        "primal_scaled_max": 3.410605131648481e-13,
+        "primal_max": 3.410605131648481e-13,
+        "annual_scaled_max": 0.0,
+        "dual_scaled_max": 1.266565743893012e-15
+      },
+      "dual_checks": {
+        "stationarity_relative": 1.266565743893012e-15,
+        "complementarity_relative": 1.6443863758733158e-14,
+        "invalid_dual_max": 0.0
+      },
+      "physical_pass": true,
+      "physical_checks": {
+        "daily_conservation": true,
+        "river_conservation": true,
+        "availability": true,
+        "supply": true,
+        "nonnegative": true,
+        "zero_water": true,
+        "finite_prediction": true
+      },
+      "rows": 32,
+      "reaches": [
+        24,
+        25,
+        52
+      ],
+      "primal_original_units": 7.411226151110561e-07,
+      "dual_stationarity_expression": 7.411106306975945e-07,
+      "gap_expression": 1.1984413461618715e-11,
+      "gap_conditions_satisfied_numerically": true,
+      "strict_exact_certificate": false,
+      "scope": "same-period finite capacity sensitivity; no permutation p-value; never predictive initialization or formula selection",
+      "output": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\capacity\\CAP_c04_2.pt",
+      "sha256": "53cb9c9718f1e8e1be093e295741519d11cfceec7ce049dfe5837bf5417bf7df",
+      "source": "E:\\SPARROW\\5_Test\\20260910_4\\outputs\\bundles\\AB.pt",
+      "source_sha256": "2ff82c1eb12f51541e731ccba84fc1a20a3616bc21b5d67567adea9f346bfadc",
+      "cold_start": true,
+      "settings": {
+        "max_iter": 300,
+        "time_limit": 300.0,
+        "threads": 1
+      },
+      "observation_weights_unchanged": true
+    },
+    {
+      "tag": "CAP_c05_0",
+      "status": "CAPACITY_FINISHED",
+      "native_status": "AlmostSolved",
+      "iterations": 25,
+      "native_solve_seconds": 0.2054488,
+      "elapsed_seconds": 36.64288353919983,
+      "D": 1.0724320538215839e-05,
+      "residuals": {
+        "primal_scaled_max": 3.410605131648481e-13,
+        "primal_max": 3.410605131648481e-13,
+        "annual_scaled_max": 0.0,
+        "dual_scaled_max": 3.765402501250296e-15
+      },
+      "dual_checks": {
+        "stationarity_relative": 3.765402501250296e-15,
+        "complementarity_relative": 1.142698083807569e-13,
+        "invalid_dual_max": 0.0
+      },
+      "physical_pass": true,
+      "physical_checks": {
+        "daily_conservation": true,
+        "river_conservation": true,
+        "availability": true,
+        "supply": true,
+        "nonnegative": true,
+        "zero_water": true,
+        "finite_prediction": true
+      },
+      "rows": 73,
+      "reaches": [
+        216,
+        217,
+        218
+      ],
+      "primal_original_units": 1.072432053819683e-05,
+      "dual_stationarity_expression": 1.0724204344503274e-05,
+      "gap_expression": 1.1619369355564402e-10,
+      "gap_conditions_satisfied_numerically": true,
+      "strict_exact_certificate": false,
+      "scope": "same-period finite capacity sensitivity; no permutation p-value; never predictive initialization or formula selection",
+      "output": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\capacity\\CAP_c05_0.pt",
+      "sha256": "739af9fe03c562e6d7e5f4313de145ef2f8b30e2974ab5373273d57cef8c5a04",
+      "source": "E:\\SPARROW\\5_Test\\20260910_4\\outputs\\bundles\\AB.pt",
+      "source_sha256": "2ff82c1eb12f51541e731ccba84fc1a20a3616bc21b5d67567adea9f346bfadc",
+      "cold_start": true,
+      "settings": {
+        "max_iter": 300,
+        "time_limit": 300.0,
+        "threads": 1
+      },
+      "observation_weights_unchanged": true
+    },
+    {
+      "tag": "CAP_c05_1",
+      "status": "CAPACITY_FINISHED",
+      "native_status": "AlmostSolved",
+      "iterations": 26,
+      "native_solve_seconds": 0.3366315,
+      "elapsed_seconds": 35.76636052131653,
+      "D": 2.8510733534982498e-05,
+      "residuals": {
+        "primal_scaled_max": 3.410605131648481e-13,
+        "primal_max": 3.836930773104541e-13,
+        "annual_scaled_max": 0.0,
+        "dual_scaled_max": 5.533925644735819e-13
+      },
+      "dual_checks": {
+        "stationarity_relative": 5.533925644735819e-13,
+        "complementarity_relative": 3.101111639849121e-11,
+        "invalid_dual_max": 0.0
+      },
+      "physical_pass": true,
+      "physical_checks": {
+        "daily_conservation": true,
+        "river_conservation": true,
+        "availability": true,
+        "supply": true,
+        "nonnegative": true,
+        "zero_water": true,
+        "finite_prediction": true
+      },
+      "rows": 73,
+      "reaches": [
+        216,
+        217,
+        218
+      ],
+      "primal_original_units": 2.8510733535491717e-05,
+      "dual_stationarity_expression": 2.8470531721308534e-05,
+      "gap_expression": 4.0201814183182805e-08,
+      "gap_conditions_satisfied_numerically": true,
+      "strict_exact_certificate": false,
+      "scope": "same-period finite capacity sensitivity; no permutation p-value; never predictive initialization or formula selection",
+      "output": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\capacity\\CAP_c05_1.pt",
+      "sha256": "09ab95d2c42c47e6d5009a8b8d20d0e232c1b084a6220b09fcecc5ec8a68f517",
+      "source": "E:\\SPARROW\\5_Test\\20260910_4\\outputs\\bundles\\AB.pt",
+      "source_sha256": "2ff82c1eb12f51541e731ccba84fc1a20a3616bc21b5d67567adea9f346bfadc",
+      "cold_start": true,
+      "settings": {
+        "max_iter": 300,
+        "time_limit": 300.0,
+        "threads": 1
+      },
+      "observation_weights_unchanged": true
+    },
+    {
+      "tag": "CAP_c05_2",
+      "status": "CAPACITY_FINISHED",
+      "native_status": "AlmostSolved",
+      "iterations": 28,
+      "native_solve_seconds": 0.195119,
+      "elapsed_seconds": 6.189015865325928,
+      "D": 1.5693501391631647e-17,
+      "residuals": {
+        "primal_scaled_max": 3.410605131648481e-13,
+        "primal_max": 3.410605131648481e-13,
+        "annual_scaled_max": 0.0,
+        "dual_scaled_max": 2.0622904302683376e-14
+      },
+      "dual_checks": {
+        "stationarity_relative": 2.0622904302683376e-14,
+        "complementarity_relative": 1.3277844879142509e-13,
+        "invalid_dual_max": 0.0
+      },
+      "physical_pass": true,
+      "physical_checks": {
+        "daily_conservation": true,
+        "river_conservation": true,
+        "availability": true,
+        "supply": true,
+        "nonnegative": true,
+        "zero_water": true,
+        "finite_prediction": true
+      },
+      "rows": 73,
+      "reaches": [
+        216,
+        217,
+        218
+      ],
+      "primal_original_units": 2.7755575615628914e-17,
+      "dual_stationarity_expression": -3.634212097924916e-10,
+      "gap_expression": 3.634212375480672e-10,
+      "gap_conditions_satisfied_numerically": true,
+      "strict_exact_certificate": false,
+      "scope": "same-period finite capacity sensitivity; no permutation p-value; never predictive initialization or formula selection",
+      "output": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\capacity\\CAP_c05_2.pt",
+      "sha256": "8af7585a38d406f410189a4552ba8b10c505ef090bb5298e21ca2deabbf33e4f",
+      "source": "E:\\SPARROW\\5_Test\\20260910_4\\outputs\\bundles\\AB.pt",
+      "source_sha256": "2ff82c1eb12f51541e731ccba84fc1a20a3616bc21b5d67567adea9f346bfadc",
+      "cold_start": true,
+      "settings": {
+        "max_iter": 300,
+        "time_limit": 300.0,
+        "threads": 1
+      },
+      "observation_weights_unchanged": true
+    }
+  ]
+}

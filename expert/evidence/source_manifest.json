@@ -1,0 +1,146 @@
+[
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260907_3\\final_report.md",
+    "published": "expert/evidence/20260907_3/final_report.md",
+    "sha256": "1071b73f444feb664606a3a9aff3b590f923dd5934385c20990808306401127a",
+    "bytes": 1557
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260907_4\\final_report.md",
+    "published": "expert/evidence/20260907_4/final_report.md",
+    "sha256": "b5a5f30653b686f2ec3261f84b2db0cf54ee7e116fdbae9a2f91e52243135389",
+    "bytes": 1670
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260908_1\\final_report.md",
+    "published": "expert/evidence/20260908_1/final_report.md",
+    "sha256": "c1801dc3a1fd2177db9830a8fb3f8261fcf4d6db23ff513342b2be3f8e61f7f4",
+    "bytes": 6670
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260909_1\\final_report.md",
+    "published": "expert/evidence/20260909_1/final_report.md",
+    "sha256": "5588a9d884ba8dc24b0e0d58943b824e147262e9af342245d3df65d89d5bde16",
+    "bytes": 5060
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260909_2\\final_report.md",
+    "published": "expert/evidence/20260909_2/final_report.md",
+    "sha256": "86e5db4d442602ad17cea1a1c77847c83b96464d38cf7b91d8feac1f8d290f6e",
+    "bytes": 5760
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260910_1\\final_report.md",
+    "published": "expert/evidence/20260910_1/final_report.md",
+    "sha256": "765646ba6c8d8590528f5c27d7dd731f34cc24584013939abedbd8fd38ba0c3b",
+    "bytes": 1686
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260910_2\\reports\\final_report.md",
+    "published": "expert/evidence/20260910_2/final_report.md",
+    "sha256": "eba335a84ad2d36c352c71c80d49f6d3a239f947019855d13b40f0213c9ee113",
+    "bytes": 1430
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260910_3\\reports\\final_report.md",
+    "published": "expert/evidence/20260910_3/final_report.md",
+    "sha256": "21302d0aed2c269642d4fb7312282d39eb4365ac605e70e22b024d4ac61c68cf",
+    "bytes": 1244
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260910_1\\reports\\expert_diagnostic_report.md",
+    "published": "expert/evidence/20260910_1/expert_diagnostic_report.md",
+    "sha256": "d7a0374bf2205348630d77b2b390dbb5551ee57aa34d346f4defcc965b11f2ce",
+    "bytes": 27424
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260910_2\\reports\\expert_diagnostic_report.md",
+    "published": "expert/evidence/20260910_2/expert_diagnostic_report.md",
+    "sha256": "ab7ba3f1d96ed8472cb1c047ba9ce6c773f4aa313c462b1ae469ab726961711e",
+    "bytes": 82104
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260910_3\\reports\\expert_diagnostic_report.md",
+    "published": "expert/evidence/20260910_3/expert_diagnostic_report.md",
+    "sha256": "3230741b92ea77f4f5ac5d6ee4ee04f398a9d680980578ca553b656e5b5a4223",
+    "bytes": 79993
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260910_4\\reports\\exploration_delivery\\final_report.md",
+    "published": "expert/evidence/20260910_4/final_report.md",
+    "sha256": "e2437023b092ffed454c9d5c933becce2cd5ffda76fd35d76e8f97fb50178040",
+    "bytes": 1843
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260910_4\\reports\\exploration_delivery\\expert_diagnostic_report.md",
+    "published": "expert/evidence/20260910_4/expert_diagnostic_report.md",
+    "sha256": "a42ea3b1e97e41fb300eaf3d39de6644b9c1436cbd1b511545c93167ec8219b3",
+    "bytes": 20096
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260910_4\\reports\\exploration_delivery\\actual_methods_and_deviations.md",
+    "published": "expert/evidence/20260910_4/actual_methods_and_deviations.md",
+    "sha256": "a26628cfcbf5a995a4b642efc13c1a20e0692e12036dc2297d55c17248df5cab",
+    "bytes": 22885
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260910_4\\reports\\exploration_delivery\\scope_decision.json",
+    "published": "expert/evidence/20260910_4/scope_decision.json",
+    "sha256": "29f6b62685460766c570c0378590b284d751a7c5d4707d92696a2eeab77f9b7f",
+    "bytes": 1341
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260910_4\\reports\\exploration_delivery\\completion_audit.json",
+    "published": "expert/evidence/20260910_4/completion_audit.json",
+    "sha256": "e6bc1c5169a78c4256980bfa21b46df691b015a381e120ed5d9a4626ca1ca6c6",
+    "bytes": 50348
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\reports\\final_report.md",
+    "published": "expert/evidence/20260911_1/final_report.md",
+    "sha256": "e629dfee2af41710a619525c01832dca57db089c4c1452292b509f49413b4bed",
+    "bytes": 1419
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\reports\\expert_diagnostic_report.md",
+    "published": "expert/evidence/20260911_1/expert_diagnostic_report.md",
+    "sha256": "2c82cc551f9a5830be1521ab56285d9ed59716e076161aed5847bbeb17c8d23f",
+    "bytes": 20433
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\reports\\actual_methods_and_deviations.md",
+    "published": "expert/evidence/20260911_1/actual_methods_and_deviations.md",
+    "sha256": "f32d44e04f86c581a9fcaadcfb9592a76e5d6c1f3f7b6a997c78ce52e10108bc",
+    "bytes": 5955
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\reports\\results.json",
+    "published": "expert/evidence/20260911_1/results.json",
+    "sha256": "24bf3b7aa1692c6256c9605078eb123c0388a573eb745ed08cf0927851947850",
+    "bytes": 28927
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\reports\\completion_audit.json",
+    "published": "expert/evidence/20260911_1/completion_audit.json",
+    "sha256": "53363ffce4fd2db926bdf49d165faa95644b407db840b4e4518f6a8da698ef87",
+    "bytes": 14662
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\reports\\model_validation.json",
+    "published": "expert/evidence/20260911_1/model_validation.json",
+    "sha256": "26cac8b246ab04f015833e4f29b4046076757e243134e090c57cd013bafdb7dc",
+    "bytes": 30812
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\reports\\function_equivalence.json",
+    "published": "expert/evidence/20260911_1/function_equivalence.json",
+    "sha256": "7e673c99c93fbc59ae89380f8b175312bd9ac0218db05c10886f6b0eda60cbb0",
+    "bytes": 959
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\reports\\evidence\\evidence_report.md",
+    "published": "expert/evidence/20260911_1/evidence_report.md",
+    "sha256": "991fe4d399f4a3c5912314acc2fe4c3c4548b41f41e22aee62227c2b75937e03",
+    "bytes": 5401
+  }
+]

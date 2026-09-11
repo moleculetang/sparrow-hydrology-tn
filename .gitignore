@@ -22,6 +22,7 @@ node_modules/
 *.7z
 *.npy
 *.npz
+!expert/tn_challenge/data/*.npz
 *.pt
 *.pkl
 **/outputs/

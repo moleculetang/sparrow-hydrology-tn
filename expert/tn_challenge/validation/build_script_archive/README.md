@@ -1,0 +1,1 @@
+These are the exact workstation-side construction/audit scripts, archived for provenance. They require the original E:/SPARROW inputs and their original publication working-directory layout. Do not run them to fit the portable package; use ../../run.py and ../../verify.py instead. Archived experiments were read-only.

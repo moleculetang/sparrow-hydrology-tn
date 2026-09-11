@@ -47,6 +47,6 @@ The archived source files are preserved byte-for-byte. Several entry points and 
 
 ## Data and publication scope
 
-Raw observations, private credentials, machine environments, downloaded third-party runtime packages, large binary data, fitting checkpoints and prediction histories are excluded. Input schemas and source paths are specified by the included input builders, contracts and frozen-input manifest. Missing datasets must be supplied before full reproduction; the repository is not a data release.
+The original source snapshot excluded datasets. PR #2 now adds an explicitly authorized [real-data expert challenge](expert/tn_challenge/README.md), [quantitative failure analysis](expert/WHY_MANY_ROUNDS_FAILED.md), and archived research reports. The runnable subset has 39 reaches, 17 primary stations, 4 reservoirs and continuous 1961–2024 forcing; full-domain reproduction still requires omitted input archives. Credentials, machine environments and downloaded third-party runtime packages remain excluded.
 
 This is a public source snapshot. No blanket license is added to historical or third-party-derived material; existing source notices and upstream rights remain applicable.

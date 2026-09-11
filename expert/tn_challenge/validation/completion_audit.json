@@ -1,0 +1,25 @@
+{
+  "status": "PASS_EXPERT_SUBSET_DELIVERY",
+  "scope": "Portable subset and copied evidence only, not full-domain experiment reproduction.",
+  "source_equivalence": "PASS: byte-identical SC kernel and parameter-matched full-domain prediction/gradient parity",
+  "implementation_numerics": "PASS: 27-parameter full-history difference test and portable directional check",
+  "physical_consistency": "PASS on tested real-data points; nitrogen balance does not establish mechanism truth",
+  "scientific_gain": "NOT_CLAIMED: published latest full-domain experiment failed both holdout gates",
+  "new_fit_numerical_sufficiency": "NOT_REACHED: execution smoke limited to 12 calls, PG approximately 0.644",
+  "delivery_completeness": "PASS for explicitly scoped 39-reach/17-primary-station package",
+  "data_quality": "LIMITED: month-only aggregation unverified; source row links incomplete; 108 existing position exclusions retained",
+  "data_authorization": "User explicitly requested publishing quantitative reports and representative actual observations/drivers in existing PR #2",
+  "validation_files": [
+    "original_parity.json",
+    "portable_verification.json",
+    "smoke_fit.json",
+    "smoke_evaluate.json"
+  ],
+  "normal_training_automation_added": false,
+  "old_experiments_modified": false,
+  "primary_rows": 1396,
+  "all_rows": 1504,
+  "daily_history_days": 23376,
+  "archive_report_files": 24,
+  "reviewer_note": "Packaging audit is separate from the original scientific completion audit; no independent human review is claimed."
+}

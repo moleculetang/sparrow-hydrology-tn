@@ -1,6 +1,6 @@
 # Latest TN core source for expert review
 
-This incremental source review follows PR #1. It contains the current shared physical model and direct code dependencies. Research reports, observation IDs, data-derived configurations/scales, fitted values, datasets and third-party runtime packages are omitted.
+This incremental review follows PR #1. Following explicit authorization, PR #2 now also includes quantitative reports and a runnable real-data expert challenge. Start with [the challenge](../expert/tn_challenge/README.md) and [why many rounds still failed](../expert/WHY_MANY_ROUNDS_FAILED.md). The challenge contains 39 reaches, 17 primary stations, 4 reservoirs and 1961–2024 frozen forcing; it does not release the complete full-domain input archive. Historical fitted reference values are separated from fresh fitting.
 
 ## Start here
 
@@ -26,6 +26,6 @@ The low-level fitting adapter requires SciPy 1.17.1. NumPy, pandas, PyTorch, Num
 
 ## Review and reproduction boundary
 
-These are unchanged original code files, with their original Windows path and environment assumptions. Full data-derived configurations, cache/lock metadata and inputs must be supplied separately under appropriate authorization. Do not bypass identity or label-isolation checks. This is a core-code review, not a complete runnable experiment release. Orchestration/report/recovery entry points are intentionally outside this core snapshot, and the archived validation scripts may require omitted modules or metadata. The standalone source check above is the supported data-free command.
+The original files under `5_Test` remain unchanged, with original Windows path and environment assumptions. Full-domain reproduction still needs omitted configurations and input archives. Do not bypass identity or label-isolation checks. The separate `expert/tn_challenge` adapter is self-contained and numerically checked against the original model; its small L-BFGS-B starter is explicitly not the registered TRF campaign. The source check above remains the data-free command; `python expert/tn_challenge/verify.py` is the real-data subset check.
 
 Only seven directly imported physical-model modules from the immediate predecessor are newly added; earlier hydrology/source dependencies remain on the PR #1 base branch. No model promotion or accuracy claim is made by this publication. Existing source notices remain applicable.

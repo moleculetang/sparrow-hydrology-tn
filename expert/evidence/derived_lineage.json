@@ -1,0 +1,182 @@
+[
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F23_M0_0_heldout_stations.parquet",
+    "source_sha256": "693636b933215e2ba6ebf8f79cb8ba8de6e747a0209c237c969c04c2fc50f8ea",
+    "published": "expert/evidence/20260911_1/station_metrics/F23_M0_0_heldout_stations.csv",
+    "published_sha256": "ef06038e812286f7d487a0f627e12a83f74e195dff212bf8ccfb3cf84efd2d17",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F23_M0_0_train_stations.parquet",
+    "source_sha256": "a2b716c28b326a871cabe52bb7eea5ff6734166893b95897aa2c38a0950d68c9",
+    "published": "expert/evidence/20260911_1/station_metrics/F23_M0_0_train_stations.csv",
+    "published_sha256": "3fb5e98b50a9d4489117a246116a327f7d885c798264e10377102577624cd605",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F23_M0_1_heldout_stations.parquet",
+    "source_sha256": "c78f9cae1a3431ff1c67d70830f151615df5dbcb6b81ba1c8e32ef8bdf9c4977",
+    "published": "expert/evidence/20260911_1/station_metrics/F23_M0_1_heldout_stations.csv",
+    "published_sha256": "db111231efe35a1d658ef2e9c224c720c4fbabc1c395a6d6e3a0347d8249728b",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F23_M0_1_train_stations.parquet",
+    "source_sha256": "1a3d99d4988f79b4061263d7f89f930b78d9d66f0d52467c031b7fe51cee8bc8",
+    "published": "expert/evidence/20260911_1/station_metrics/F23_M0_1_train_stations.csv",
+    "published_sha256": "7e2defc4d730ea7923bead8957c1f66a42198d915bfe3ec749ab25c7044486ef",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F23_M0_stations.parquet",
+    "source_sha256": "693636b933215e2ba6ebf8f79cb8ba8de6e747a0209c237c969c04c2fc50f8ea",
+    "published": "expert/evidence/20260911_1/station_metrics/F23_M0_stations.csv",
+    "published_sha256": "ef06038e812286f7d487a0f627e12a83f74e195dff212bf8ccfb3cf84efd2d17",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F23_M0_training_stations.parquet",
+    "source_sha256": "a2b716c28b326a871cabe52bb7eea5ff6734166893b95897aa2c38a0950d68c9",
+    "published": "expert/evidence/20260911_1/station_metrics/F23_M0_training_stations.csv",
+    "published_sha256": "3fb5e98b50a9d4489117a246116a327f7d885c798264e10377102577624cd605",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F23_SC_0_heldout_stations.parquet",
+    "source_sha256": "11def1ebcde2e35cd691ffa8bd72cc3b24f2577dab2aeca8a1c2ad4d8c506c6a",
+    "published": "expert/evidence/20260911_1/station_metrics/F23_SC_0_heldout_stations.csv",
+    "published_sha256": "26f8249f7474a4d1a881d847a51a19e8f15571c902459c649760473f4cd6d96c",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F23_SC_0_train_stations.parquet",
+    "source_sha256": "42d305b67eb29a42368de3cda67ddea66b6beee7330da05f945fa3c6aa24319b",
+    "published": "expert/evidence/20260911_1/station_metrics/F23_SC_0_train_stations.csv",
+    "published_sha256": "df3d2e36c9c423b02851a20a24dbca6eecaa473cf76b46164727af9d3e7db402",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F23_SC_1_heldout_stations.parquet",
+    "source_sha256": "942d7d1f4406dcb47288974dc2430beab2442f8618b6b75e83d7fbb41889fac3",
+    "published": "expert/evidence/20260911_1/station_metrics/F23_SC_1_heldout_stations.csv",
+    "published_sha256": "a0f8c21a8539c65ea96a3e0310d7a2d460a7a1f92e3845bfd28a8ef2c7c9d316",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F23_SC_1_train_stations.parquet",
+    "source_sha256": "edecb55ecbc00a93a00c6f2c79d63b42ffbacbbfc9c0b5e0ad0b6b3d81143597",
+    "published": "expert/evidence/20260911_1/station_metrics/F23_SC_1_train_stations.csv",
+    "published_sha256": "7e43e0f1d8bc22990c3235b1ddacf89077b81c5a8f5427a400d69ca79f600d44",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F23_SC_stations.parquet",
+    "source_sha256": "11def1ebcde2e35cd691ffa8bd72cc3b24f2577dab2aeca8a1c2ad4d8c506c6a",
+    "published": "expert/evidence/20260911_1/station_metrics/F23_SC_stations.csv",
+    "published_sha256": "26f8249f7474a4d1a881d847a51a19e8f15571c902459c649760473f4cd6d96c",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F23_SC_training_stations.parquet",
+    "source_sha256": "42d305b67eb29a42368de3cda67ddea66b6beee7330da05f945fa3c6aa24319b",
+    "published": "expert/evidence/20260911_1/station_metrics/F23_SC_training_stations.csv",
+    "published_sha256": "df3d2e36c9c423b02851a20a24dbca6eecaa473cf76b46164727af9d3e7db402",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F24_M0_0_heldout_stations.parquet",
+    "source_sha256": "4eb5f947373bda8997623650366a7d8f3a2bebc501941095b858b7e06f8d3461",
+    "published": "expert/evidence/20260911_1/station_metrics/F24_M0_0_heldout_stations.csv",
+    "published_sha256": "ab0ba97e6bfc04ef93640241db81c155fcdb11ca7eca92314f522478d5606b22",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F24_M0_0_train_stations.parquet",
+    "source_sha256": "0f8a8c0b062aa862640b07e9ab0debc9ccfe9bc663c1fe3dc827296e960b2554",
+    "published": "expert/evidence/20260911_1/station_metrics/F24_M0_0_train_stations.csv",
+    "published_sha256": "50089890ebce2c1bcf63bbb5736cc2441aae1081dee555b26cfc246ac819749e",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F24_M0_1_heldout_stations.parquet",
+    "source_sha256": "c9213519f6d9c83b7483d781339b17f50e54ae8a5d962d02dc22d8892a523930",
+    "published": "expert/evidence/20260911_1/station_metrics/F24_M0_1_heldout_stations.csv",
+    "published_sha256": "eb3c82570082e57b631963564d4d3a95764886a3dd872ba3086bef302760204e",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F24_M0_1_train_stations.parquet",
+    "source_sha256": "b475ff3138238abf8305736adc9691eb8cc87407d6b46af012c8fd9f6ff9c159",
+    "published": "expert/evidence/20260911_1/station_metrics/F24_M0_1_train_stations.csv",
+    "published_sha256": "cac90eac836b93747f92d5f658ed495bbe3d4850ecbcd37b33766f650bdfe2d3",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F24_M0_stations.parquet",
+    "source_sha256": "c9213519f6d9c83b7483d781339b17f50e54ae8a5d962d02dc22d8892a523930",
+    "published": "expert/evidence/20260911_1/station_metrics/F24_M0_stations.csv",
+    "published_sha256": "eb3c82570082e57b631963564d4d3a95764886a3dd872ba3086bef302760204e",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F24_M0_training_stations.parquet",
+    "source_sha256": "b475ff3138238abf8305736adc9691eb8cc87407d6b46af012c8fd9f6ff9c159",
+    "published": "expert/evidence/20260911_1/station_metrics/F24_M0_training_stations.csv",
+    "published_sha256": "cac90eac836b93747f92d5f658ed495bbe3d4850ecbcd37b33766f650bdfe2d3",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F24_SC_0_heldout_stations.parquet",
+    "source_sha256": "549e5fd676b6553d572c01bec487a623610eaad41bc01e6d3f7badcc01164a33",
+    "published": "expert/evidence/20260911_1/station_metrics/F24_SC_0_heldout_stations.csv",
+    "published_sha256": "912ab96b404043c92140b1eb208245e6745814276fff05082bec61ded80db36c",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F24_SC_0_train_stations.parquet",
+    "source_sha256": "bcab66240fef288c9fd26e6c5f89861dea72e87b4ad51e945ac819c24e8ca470",
+    "published": "expert/evidence/20260911_1/station_metrics/F24_SC_0_train_stations.csv",
+    "published_sha256": "d20a6aea46a15b2170217d9b400c6d6bea047ed63e10b86cce97f9bdb11ee2a1",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F24_SC_1_heldout_stations.parquet",
+    "source_sha256": "78a3bc145d1152654b03b9e9d0776e38590e33ff4be3b2e62aab51923a065b49",
+    "published": "expert/evidence/20260911_1/station_metrics/F24_SC_1_heldout_stations.csv",
+    "published_sha256": "932f555eab157128fdd82135eba3885f6f6128e54f88c18eae53f72fabec7884",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F24_SC_1_train_stations.parquet",
+    "source_sha256": "5736403dc200894fb46a69a3b97900f4167a367b100d8b6be9ef3ee510b2691a",
+    "published": "expert/evidence/20260911_1/station_metrics/F24_SC_1_train_stations.csv",
+    "published_sha256": "d26e4d5470d14ef76622f9f97e9b4a699b2b74012ea962cf0dab01ed461cbe7f",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F24_SC_stations.parquet",
+    "source_sha256": "78a3bc145d1152654b03b9e9d0776e38590e33ff4be3b2e62aab51923a065b49",
+    "published": "expert/evidence/20260911_1/station_metrics/F24_SC_stations.csv",
+    "published_sha256": "932f555eab157128fdd82135eba3885f6f6128e54f88c18eae53f72fabec7884",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\metrics\\F24_SC_training_stations.parquet",
+    "source_sha256": "5736403dc200894fb46a69a3b97900f4167a367b100d8b6be9ef3ee510b2691a",
+    "published": "expert/evidence/20260911_1/station_metrics/F24_SC_training_stations.csv",
+    "published_sha256": "d26e4d5470d14ef76622f9f97e9b4a699b2b74012ea962cf0dab01ed461cbe7f",
+    "conversion": "pandas parquet to UTF-8 CSV, no row filtering"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\models\\F23_M0_0.pt",
+    "source_sha256": "f3521bbd733f0fa71faa6af5c286847a76247be972b7fb59cafd9affe9eb5b3a",
+    "published": "expert/tn_challenge/reference_only/F23_M0_0.json",
+    "purpose": "Diagnostic parameters plus subset-remapped full-fold preprocessing; not used by fit."
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260911_1\\outputs\\models\\F23_SC_0.pt",
+    "source_sha256": "fd952025e5c1ff16041604afbb607c3c5d5481832a8e3a9e391f291d6ecb1f6e",
+    "published": "expert/tn_challenge/reference_only/F23_SC_0.json",
+    "purpose": "Diagnostic parameters plus subset-remapped full-fold preprocessing; not used by fit."
+  }
+]
