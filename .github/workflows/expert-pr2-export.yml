@@ -1,0 +1,33 @@
+name: Fixed PR2 challenge export
+on:
+  push:
+    branches: ['expert/pr2-repro-20260912']
+    paths: ['.github/workflows/expert-pr2-export.yml']
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Read fixed public snapshot without credentials
+        shell: bash
+        run: |
+          set -euo pipefail
+          git init snapshot
+          git -C snapshot remote add origin https://github.com/moleculetang/sparrow-hydrology-tn.git
+          git -C snapshot fetch --depth=1 origin 24fcf199b2d5e922de750905f011a774c899e012
+          git -C snapshot checkout --detach FETCH_HEAD
+          test "$(git -C snapshot rev-parse HEAD)" = 24fcf199b2d5e922de750905f011a774c899e012
+          tar -czf tn-challenge-24fcf19.tar.gz -C snapshot expert/tn_challenge expert/WHY_MANY_ROUNDS_FAILED.md publication/LATEST_REVIEW.md
+          sha256sum tn-challenge-24fcf19.tar.gz > tn-challenge-24fcf19.tar.gz.sha256
+      - name: Export existing public challenge as a short-lived artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tn-challenge-24fcf19
+          path: |
+            tn-challenge-24fcf19.tar.gz
+            tn-challenge-24fcf19.tar.gz.sha256
+          retention-days: 1
+          compression-level: 0
+          if-no-files-found: error
