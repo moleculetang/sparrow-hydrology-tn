@@ -1,3 +1,7 @@
+# Latest core-source review
+
+Read [LATEST_REVIEW.md](LATEST_REVIEW.md) for the new source-only check and omitted configuration/data boundaries. The latest numerical model uses one thread per worker; the runtime notes below describe the older publication.
+
 # Reproduction boundaries
 
 ## Full sequence

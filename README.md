@@ -1,3 +1,9 @@
+# SPARROW hydrology and TN source review
+
+[Latest core-model review entry](publication/LATEST_REVIEW.md). This PR publishes source code and a synthetic check only; research reports and data-derived configurations are omitted.
+
+The following is the historical publication description from PR #1.
+
 # SPARROW hydrology and total nitrogen source snapshot
 
 珠江流域水文—总氮（TN）模型代码快照，2026-09-06。

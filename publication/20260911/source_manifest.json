@@ -1,0 +1,216 @@
+{
+  "scope": "Core source files only, exact original bytes; no experiment configurations, reports, fitted values or data",
+  "source_files": [
+    {
+      "path": "5_Test/20260905_1/scripts/audit_inputs.py",
+      "sha256": "092ce2d6dad31dfa083c155744cc0759b12b79eda54831ef89fdd1a0bafe9677",
+      "bytes": 19078,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260905_1/scripts/common.py",
+      "sha256": "9522d108ffda06441b13776e6c09d7da06e75f6bbace3b8361cb6c38a59a4a45",
+      "bytes": 3920,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260907_3/scripts/baseline_objective.py",
+      "sha256": "821e578dc4d5ed48f58f1059d7babdada6c1e39c87fffe4806c148db3863d1dc",
+      "bytes": 5312,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260907_3/scripts/campaign_io.py",
+      "sha256": "233deaf995218d0d4321d0c351e59b42684570802c45c62ae56a318c739f032e",
+      "bytes": 2876,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260907_3/scripts/fit_models.py",
+      "sha256": "67a6b354b9ff494cf7f6a0f9d26bd585ad5d4d03b9d0437182cf904ca7f0f8e7",
+      "bytes": 18184,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260907_3/scripts/independent_process.py",
+      "sha256": "37f8d1f10d2151609ad19b30fd68f2c1753c53c90f9feb10ecc15668369a82ef",
+      "bytes": 4357,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260907_3/scripts/process_info.py",
+      "sha256": "2c4ea861ebab005e6c792858e60491cea6d4e0b33e7c7f584a53714dad86dc14",
+      "bytes": 3031,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260907_3/scripts/tn_autograd.py",
+      "sha256": "0dda81ba1bec64057abd03c628253f93cdb2afbeee08c9e238e40b6c8e0733cc",
+      "bytes": 8759,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260907_3/scripts/tn_reference.py",
+      "sha256": "c637462b0dac7bfc4768b0ac8ec7e1525dd742eca3f69177459925f4b29313ff",
+      "bytes": 14498,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/fc_checkpoint.py",
+      "sha256": "f1fe5560067fd023607e5a71786e91d1797a3c839945bfc885a59f64bcd2403b",
+      "bytes": 2565,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/fc_control.py",
+      "sha256": "55309b0ab5fa2e94359c28a2a01f93bb8b107f73acd574ddaea973426f67450e",
+      "bytes": 1414,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/fc_data.py",
+      "sha256": "065bf480e6641f486d0d2b67ba8c3329b889b1a03576b8b64e6bcfd607863d92",
+      "bytes": 10549,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/fc_empirical.py",
+      "sha256": "23d97b28176e0b3246594f8fd7f0c334457d61c1c67a582694311c9376fd3c72",
+      "bytes": 4433,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/fc_features.py",
+      "sha256": "5c01684ddf730238713387032eee2b081f80e3566bb26382cec8981b3777532e",
+      "bytes": 5844,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/fc_independent.py",
+      "sha256": "968917127f62e11c7bee9b69b94d971125ede0b783f3a4e756ca43e0250477e2",
+      "bytes": 5115,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/fc_io.py",
+      "sha256": "7e00c6567cd87d4a54bad81b9e62a8d18a2c001b347a5089c0a58958c3b75b27",
+      "bytes": 4193,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/fc_legacy.py",
+      "sha256": "5aaf3a9a2b3bd8020e1b5aa2182765c04d16fb21d76867b6fc337b019f5ee5f4",
+      "bytes": 788,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/fc_physical_audit.py",
+      "sha256": "f33258ec15bb482f6277955a37736573a10c5552969d27e48be307291a34675a",
+      "bytes": 11106,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/fc_resources.py",
+      "sha256": "052fa1515676246b4956790a352837461954dfa747b87d3d40c3439a08760b70",
+      "bytes": 2645,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/fc_solvers.py",
+      "sha256": "fbc5311f6b9f1873f0bb0b866840a70aab646fc3abdb6e0f084f31e1b5bacfdb",
+      "bytes": 5157,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/gb_metrics.py",
+      "sha256": "df2db7663f09cfd9bab407015ca90d7390041809ff467b0e89c3742b4e035b52",
+      "bytes": 9475,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/gb_metrics_base.py",
+      "sha256": "5a7af1a9e64bc141ddd831a4402c08fe02d73539d84d7ab1d87b95b371af657c",
+      "bytes": 3856,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/gb_model.py",
+      "sha256": "5610fa4fdc31ba6b866f675225d943463930d99ee39144b42f90854e5d3a3fd8",
+      "bytes": 7679,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/gb_physical.py",
+      "sha256": "9c6a69c15e70ba43af7eb6b01c1c3068040f6551e6dab961b2b1bbe065aa74e3",
+      "bytes": 16924,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/gb_solver.py",
+      "sha256": "aa144c5f4f356d87d84b43245c8dc42c5788624cef2e7dcd6a5b6ae8d09e88cd",
+      "bytes": 4069,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/qx_bundle.py",
+      "sha256": "c32426f66c3b50b4f9ec753c1f4ec277098e2054d128ff723aa63e53afeee35d",
+      "bytes": 3512,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/qx_loss.py",
+      "sha256": "9f97972d6080883c757f4cf79e2fab824d0e421f1ff6c055cabde38ceb8ba5c6",
+      "bytes": 3326,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/sc_kernel.py",
+      "sha256": "9ae72618cb062a47db3573cb5edef3c26605ec54b08b113d15f497209e0aaa49",
+      "bytes": 3278,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/sc_model.py",
+      "sha256": "0ffe041cbb0294157409ea250e50df497f62dc333c3559ce77cbd85b081121ce",
+      "bytes": 3816,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/sc_operational.py",
+      "sha256": "6121cc857bd57a09084e53adb214431070dd414c6d5b42859de6407439a6a19f",
+      "bytes": 5220,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/sc_physical.py",
+      "sha256": "5f427d79ecf8254610220d2e64e255de45410566f0844f860ba11d3c684ae707",
+      "bytes": 17646,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/sc_prepare.py",
+      "sha256": "4d06c0a8953d1b36c56f58adbc5f8f52010752c6c6d6bf4ff7a36390bbaafd13",
+      "bytes": 5072,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/sc_runtime.py",
+      "sha256": "44510081098949705e71a0df7e6c5f8c8034d4692fea0e8f5a22e8adaa358a4d",
+      "bytes": 7528,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/sc_validate.py",
+      "sha256": "39a8b737bb4b1d747c7c11b16f1bf3b100c5908a408fbef62ca7c33632bc6898",
+      "bytes": 6200,
+      "byte_identical_to_completed_local_experiment": true
+    },
+    {
+      "path": "5_Test/20260911_1/scripts/sc_worker.py",
+      "sha256": "2ca26c876aa418fc19c557cb4b169afd7668e63786b076553ef9575dea72d240",
+      "bytes": 17445,
+      "byte_identical_to_completed_local_experiment": true
+    }
+  ],
+  "derived_aggregate_tables": []
+}
