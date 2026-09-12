@@ -1,5 +1,7 @@
 # Latest TN core source for expert review
 
+**For environments unable to download ZIP/NPZ, use the [uncompressed CSV-only challenge](../expert/tn_challenge_plain/README.md). It contains all 25 arrays as ordinary text files and a CSV-native loader, with bitwise numeric equivalence to the original 24fcf199 data.**
+
 This incremental review follows PR #1. Following explicit authorization, PR #2 now also includes quantitative reports and a runnable real-data expert challenge. Start with [the challenge](../expert/tn_challenge/README.md) and [why many rounds still failed](../expert/WHY_MANY_ROUNDS_FAILED.md). The challenge contains 39 reaches, 17 primary stations, 4 reservoirs and 1961–2024 frozen forcing; it does not release the complete full-domain input archive. Historical fitted reference values are separated from fresh fitting.
 
 ## Start here

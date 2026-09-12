@@ -1,5 +1,7 @@
 # TN专家拟合包：完整ZIP下载
 
+**无法下载压缩包的环境，请使用[不压缩的CSV纯文本版本](../tn_challenge_plain/README.md)。它直接读取普通CSV，不需要此ZIP或任何NPZ。**
+
 [直接下载 tn_challenge_24fcf199.zip](https://github.com/moleculetang/sparrow-hydrology-tn/raw/refs/heads/codex/review-shared-closure-20260911/expert/downloads/tn_challenge_24fcf199.zip)
 
 此ZIP完整封装PR #2中 **`24fcf199b2d5e922de750905f011a774c899e012`** 的 `expert/tn_challenge`，包括25个实际NPZ、CSV、模型代码、拟合/评价入口和参照验证，共91文件；没有Git LFS指针，也不需要逐个下载NPZ。文件大小 **74,894,313 bytes（74.89 MB）**。

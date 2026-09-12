@@ -1,0 +1,218 @@
+{
+  "status": "PASS_BITWISE_CSV_CONVERSION",
+  "source_commit": "24fcf199b2d5e922de750905f011a774c899e012",
+  "array_count": 25,
+  "array_checks": {
+    "area_ha": {
+      "shape": [
+        39
+      ],
+      "dtype": "<f8",
+      "numeric_bytes_sha256": "498353ca1060c7e0977cc52280e3fb19f337d8f85c731123f6248e454d95c747"
+    },
+    "contact": {
+      "shape": [
+        23376,
+        39
+      ],
+      "dtype": "<f8",
+      "numeric_bytes_sha256": "08a570384702b9402a01ba3e8e63d6843cea8a64cfc3dcb6eaaf2cea9c037272"
+    },
+    "crop": {
+      "shape": [
+        768,
+        39
+      ],
+      "dtype": "<f8",
+      "numeric_bytes_sha256": "6b8a8ceabeca60bad6f74e882d96e389505b7c83abd757baea8a8106359c628c"
+    },
+    "dates": {
+      "shape": [
+        23376
+      ],
+      "dtype": "<i8",
+      "numeric_bytes_sha256": "1eb11701610f6ad94cd7b1e855ae5c359ba01ff0d3a91cbdd23973b2c0a73239"
+    },
+    "enabled": {
+      "shape": [
+        23376,
+        4
+      ],
+      "dtype": "|b1",
+      "numeric_bytes_sha256": "6e1adcf51b7671600e5fadd04163c4146e850aa1b57e4ad5edadd0d33f1c34f5"
+    },
+    "fast_fraction": {
+      "shape": [
+        23376,
+        39
+      ],
+      "dtype": "<f8",
+      "numeric_bytes_sha256": "f7d2fedff2ab31973f400d44e7a4235bca2d8fa73fc4d0725879ef9baca95dde"
+    },
+    "fast_water": {
+      "shape": [
+        23376,
+        39
+      ],
+      "dtype": "<f8",
+      "numeric_bytes_sha256": "f8475ffac2bb069f464104c5e2675d6602b54fb002863035196137dce2ba1da4"
+    },
+    "h_day": {
+      "shape": [
+        23376,
+        39
+      ],
+      "dtype": "<f8",
+      "numeric_bytes_sha256": "9da9569eb8a1a5b64ec1a738c30332829666419f61cbd86e6960b66fb4cb1a0d"
+    },
+    "h_month": {
+      "shape": [
+        768,
+        39
+      ],
+      "dtype": "<f8",
+      "numeric_bytes_sha256": "0b6a4bc37b8e564583717a95ae9237afc810a8d57b158cc6fc52bf19ba9c380a"
+    },
+    "lower_release": {
+      "shape": [
+        23376,
+        39
+      ],
+      "dtype": "<f8",
+      "numeric_bytes_sha256": "5a9d1647e442ce2ef18a0efd5fa0b4624d1fb1a628d19860315566bab454ae37"
+    },
+    "mid": {
+      "shape": [
+        23376
+      ],
+      "dtype": "<i8",
+      "numeric_bytes_sha256": "c4090d374232172dd575f5a5a932c9ae05444083c7e3966153f4ce06924861fa"
+    },
+    "months": {
+      "shape": [
+        768
+      ],
+      "dtype": "<i8",
+      "numeric_bytes_sha256": "1c49cd4a257770a5ae59e332eaae4f92492f78c1e873b96b4b627b0c993c3715"
+    },
+    "official_water": {
+      "shape": [
+        23376,
+        39
+      ],
+      "dtype": "<f8",
+      "numeric_bytes_sha256": "391e82317d3485b8bb673c5672fd62f47829df49d9b3aceb59d99e074ac0472d"
+    },
+    "percolation": {
+      "shape": [
+        23376,
+        39
+      ],
+      "dtype": "<f8",
+      "numeric_bytes_sha256": "047f14098c447f4361728bc59cb2ad124f54df7029bf8f1a2938193d5142126a"
+    },
+    "release_fraction": {
+      "shape": [
+        23376,
+        4
+      ],
+      "dtype": "<f8",
+      "numeric_bytes_sha256": "14b7e2928c903a5ba42140e6037c0949e13bcd96878753e42adf307d92e56a0d"
+    },
+    "released_water": {
+      "shape": [
+        23376,
+        4
+      ],
+      "dtype": "<f8",
+      "numeric_bytes_sha256": "00a8126369d75c15e5563e03a263ed5df047dc8b1d68bd51cd3837fcddf98af4"
+    },
+    "slow_water": {
+      "shape": [
+        23376,
+        39
+      ],
+      "dtype": "<f8",
+      "numeric_bytes_sha256": "9f467f0a5aaa590be685f9af7e57a2edcb91296fa5f454a6cc10815bddb94985"
+    },
+    "soil_wetness": {
+      "shape": [
+        23376,
+        39
+      ],
+      "dtype": "<f8",
+      "numeric_bytes_sha256": "7049134b067f46196fc6b6d95dfb3206552e45b124c88c7b79f0aeaba4c33fb1"
+    },
+    "source": {
+      "shape": [
+        768,
+        39
+      ],
+      "dtype": "<f8",
+      "numeric_bytes_sha256": "e6e9da37b1438787f47434f048e03322197d99ca943f9fcdf4ac433b1922b0e4"
+    },
+    "source_tags": {
+      "shape": [
+        768,
+        39,
+        4
+      ],
+      "dtype": "<f8",
+      "numeric_bytes_sha256": "f12203f4c6b23d714b7f75a35fa09fd8cf478a0bb03594cc8d64f28b2bd437f5"
+    },
+    "starts": {
+      "shape": [
+        768
+      ],
+      "dtype": "<i8",
+      "numeric_bytes_sha256": "18b0f9d24003e409af5fa14402c64098049e6fdcc6535e3670f8cfa385f9efcf"
+    },
+    "static_raw": {
+      "shape": [
+        39,
+        7
+      ],
+      "dtype": "<f8",
+      "numeric_bytes_sha256": "cfcc1adae124d73e1bde72738585f2b5a46a80d259f3b820c9ad66691c29e404"
+    },
+    "stops": {
+      "shape": [
+        768
+      ],
+      "dtype": "<i8",
+      "numeric_bytes_sha256": "f377a8dbce1bc332ec310fb9898786a3085998984b09f8d0eab21f37b0c16afa"
+    },
+    "temperature": {
+      "shape": [
+        23376,
+        39
+      ],
+      "dtype": "<f8",
+      "numeric_bytes_sha256": "a284396f2369fc7066274d37b198ea37abacf3ca89d73a74d3ba8fa61cd185f8"
+    },
+    "upper_water": {
+      "shape": [
+        23376,
+        39
+      ],
+      "dtype": "<f8",
+      "numeric_bytes_sha256": "372b527ba2ce3d0795b8ecae4c729501f42a328bd71dc96b0093f34fdecf4a01"
+    }
+  },
+  "csv_shards": 623,
+  "largest_csv_bytes": 379820,
+  "changes": [
+    "NPZ to uncompressed CSV",
+    "array loader only",
+    "evaluation ledger also CSV"
+  ],
+  "unchanged": [
+    "all numeric input bits",
+    "all observation CSV bytes",
+    "physical kernels",
+    "shared parameters and priors",
+    "fit objective",
+    "station/year splits"
+  ],
+  "total_bytes": 205524495
+}
