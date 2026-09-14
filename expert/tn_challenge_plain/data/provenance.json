@@ -1,0 +1,38 @@
+{
+  "observation_input": {
+    "path": "E:\\SPARROW\\5_Test\\20260906_1\\outputs\\observations.parquet",
+    "sha256": "2759a217ec87ab63262ad40589e0f88df82b28bd138c2813575ed7fae0eb1faa"
+  },
+  "cache_manifest": {
+    "path": "E:\\SPARROW\\5_Test\\20260908_1\\work\\cache\\sensitivity_data.pt",
+    "sha256": "77c30a7fe7c0506275bafdf32567f385408db2e18593e8139e0113fed124ddc0"
+  },
+  "original_code": [
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260907_3\\scripts\\tn_reference.py",
+      "sha256": "c637462b0dac7bfc4768b0ac8ec7e1525dd742eca3f69177459925f4b29313ff"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260907_3\\scripts\\tn_autograd.py",
+      "sha256": "0dda81ba1bec64057abd03c628253f93cdb2afbeee08c9e238e40b6c8e0733cc"
+    },
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260911_1\\scripts\\sc_kernel.py",
+      "sha256": "9ae72618cb062a47db3573cb5edef3c26605ec54b08b113d15f497209e0aaa49"
+    }
+  ],
+  "export_script_sha256": "fdeea8549607ff4b22086b7df4e43a84873f6fe6a0905b5d5b415e1018cc3ed2",
+  "selection_terminals": [
+    56,
+    22
+  ],
+  "no_fitted_states": true,
+  "source_timing": "S1 monthly source and crop demand pulses on first day, unchanged",
+  "adaptations": [
+    "numeric NPZ instead of private pickle",
+    "local reach/reservoir indices",
+    "routing adjoint dimensions inferred from data",
+    "standalone parameter/objective adapter"
+  ],
+  "data_authorization": "User explicitly authorized representative real data and quantitative reports for PR #2 expert fitting review."
+}

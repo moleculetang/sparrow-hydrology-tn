@@ -1,0 +1,4 @@
+benchmark_group,rows,stations,median_TN,max_TN
+Mianjiang_extreme,377,5,1.15,40.30667
+new_small_basins,342,6,1.53,5.38
+sustained_high_TN,1096,13,4.515,12.6

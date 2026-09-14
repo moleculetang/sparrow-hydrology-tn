@@ -1,0 +1,24 @@
+{
+  "tests": {
+    "M0_full_domain_prediction_parity_max_mg_l": 1.3322676295501878e-15,
+    "SC_full_domain_prediction_parity_max_mg_l": 1.1102230246251565e-15,
+    "all_27_parameter_full_history_gradient_max_relative_error": 1.2645920193493122e-08,
+    "zero_extension_max_mg_l": 0.0,
+    "local_mass_balance_max_kg": 1.0739313438534737e-08,
+    "network_mass_balance_kg": 6.891787052154541e-07,
+    "stock_and_uptake_boundaries": "PASS",
+    "original_sample_RAW_MAP_value_abs_error": 1.4210854715202004e-14,
+    "original_sample_gradient_max_error": 2.469136006766348e-13,
+    "four_split_ID_disjoint": "PASS",
+    "future_driver_past_prediction_invariance": "PASS"
+  },
+  "reference": "Original full-domain F23 saved models; portable subset with identical full-fold preprocessing and parameters.",
+  "status": "PASS",
+  "versions": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.17.1",
+    "numba": "0.65.1",
+    "torch": "2.13.0+cu126"
+  }
+}

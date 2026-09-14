@@ -1,0 +1,80 @@
+{
+  "reaches": 39,
+  "stations_all": 18,
+  "reservoirs": 4,
+  "rows_all": 1504,
+  "rows_primary": 1396,
+  "duplicate_ids": 0,
+  "duplicate_station_months": 0,
+  "missing_TN": 0,
+  "negative_TN": 0,
+  "TN_range": {
+    "min": 0.33,
+    "max": 5.29
+  },
+  "primary_exclusions": {
+    "": 1396,
+    "unresolved_Baipenzhu_station_position": 108
+  },
+  "provenance_tiers": {
+    "prepared_authoritative_station_csv": 1504
+  },
+  "workbook_link_status": {
+    "missing_section_code_and_raw_row_link": 769,
+    "raw_station_csv_not_registered": 735
+  },
+  "sampling_date_status": {
+    "month_only_unverified_aggregation": 1504
+  },
+  "yearly": [
+    {
+      "year": 2016,
+      "rows": 156,
+      "stations": 13
+    },
+    {
+      "year": 2017,
+      "rows": 153,
+      "stations": 13
+    },
+    {
+      "year": 2018,
+      "rows": 144,
+      "stations": 12
+    },
+    {
+      "year": 2019,
+      "rows": 139,
+      "stations": 12
+    },
+    {
+      "year": 2020,
+      "rows": 143,
+      "stations": 12
+    },
+    {
+      "year": 2021,
+      "rows": 216,
+      "stations": 18
+    },
+    {
+      "year": 2022,
+      "rows": 201,
+      "stations": 18
+    },
+    {
+      "year": 2023,
+      "rows": 176,
+      "stations": 18
+    },
+    {
+      "year": 2024,
+      "rows": 176,
+      "stations": 18
+    }
+  ],
+  "selection": "Two complete small terminal components selected for topology, train coverage and reservoir diversity, not heldout gains; not a probability sample.",
+  "topology_closed": true,
+  "all_arrays_finite": true,
+  "no_correction": "No label removed/downweighted/corrected by this export. primary_gate is inherited and retained."
+}

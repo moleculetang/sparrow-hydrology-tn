@@ -1,0 +1,12 @@
+{
+  "total_calls": 12,
+  "total_seconds": 3.64000000001397,
+  "MAP": 2.179113403484874,
+  "data": 1.7985323266638704,
+  "prior": 0.3805810768210038,
+  "projected_gradient": 0.6439777049810564,
+  "numerical_sufficient": false,
+  "stop_reason": "BUDGET_REACHED",
+  "optimizer": "scaled L-BFGS-B expert starter; not registered TRF",
+  "initial_preset": 0
+}

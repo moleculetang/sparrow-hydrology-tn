@@ -1,0 +1,29 @@
+{
+  "status": "PASS_ZIP_DELIVERY_CHECK",
+  "source_commit": "24fcf199b2d5e922de750905f011a774c899e012",
+  "zip": "tn_challenge_24fcf199.zip",
+  "bytes": 74894313,
+  "sha256": "4ab8fd41046cd1983b5a5cc762a32a11073c7594847513ae2bdb1abd8ebedd4a",
+  "files": 91,
+  "npz_files": 25,
+  "all_files_match_source_commit_manifest": true,
+  "extracted_standalone_check": {
+    "status": "PASS",
+    "directional_gradient_relative_error": 1.9029552194480298e-10,
+    "data_hashes": 38,
+    "local_mass_balance_max_kg": 9.313225746154785e-09,
+    "network_balance_kg": 2.9802322387695312e-08,
+    "checks": [
+      "M0 zero extension",
+      "reference predictions",
+      "full-history derivative",
+      "mass balance",
+      "split IDs",
+      "label rejection and objective isolation"
+    ]
+  },
+  "scientific_results_changed": false,
+  "NSE_eligible_2023": 12,
+  "NSE_eligible_2024": 12,
+  "primary_stations": 17
+}

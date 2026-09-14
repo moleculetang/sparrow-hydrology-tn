@@ -1,0 +1,32 @@
+{
+  "status": "PASS_UNCOMPRESSED_TEXT_DELIVERY",
+  "source_commit": "24fcf199b2d5e922de750905f011a774c899e012",
+  "input_format": "uncompressed CSV + JSON; no binary/ZIP/NPZ needed",
+  "portable_runtime": {
+    "status": "PASS",
+    "directional_gradient_relative_error": 1.9029552194480298e-10,
+    "data_hashes": 637,
+    "local_mass_balance_max_kg": 9.313225746154785e-09,
+    "network_balance_kg": 2.9802322387695312e-08,
+    "checks": [
+      "M0 zero extension",
+      "reference predictions",
+      "full-history derivative",
+      "mass balance",
+      "split IDs",
+      "label rejection and objective isolation"
+    ]
+  },
+  "model_AST_identical_except_loader_import": true,
+  "unchanged_core_SHA256": {
+    "sc_kernel.py": "9ae72618cb062a47db3573cb5edef3c26605ec54b08b113d15f497209e0aaa49",
+    "routing.py": "2c87bb0ae30b43046c2b2a1ffc2d20f4fc590db5772d1b5e256c20758d5b0b09"
+  },
+  "all_observation_CSV_bytes_unchanged": true,
+  "output_CSV_roundtrip_including_scalars": "PASS",
+  "NSE_eligible_2023": 12,
+  "NSE_eligible_2024": 12,
+  "primary_stations": 17,
+  "scientific_change": false,
+  "new_training_claimed": false
+}

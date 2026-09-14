@@ -1,0 +1,10 @@
+{
+  "status": "PASS_WORKFLOW_CHECK",
+  "prediction_rows": 12,
+  "score_rows": 12,
+  "tampered_prediction_rejected": true,
+  "notebook_code_cells_executed": true,
+  "parameters": "existing 12-call nonconverged smoke model, execution check only",
+  "new_fitting": false,
+  "scientific_performance_claim": false
+}

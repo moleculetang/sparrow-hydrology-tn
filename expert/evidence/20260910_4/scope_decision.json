@@ -1,0 +1,27 @@
+{
+  "status": "USER_RESCOPED_DIRECTION_EXPLORATION_DELIVERY",
+  "utc": "2026-09-11T06:27:12.480037+00:00",
+  "rationale": "User clarified the purpose is exploration, not production-model training, and asked whether closest and2025 affect direction. They are deferred because they do not change the accepted primary fitting comparison.",
+  "required": [
+    "four_accepted_primary_full_domain_diagnostics",
+    "same_raw_observation_station_statistics",
+    "quantitative_expert_report_with_limits_and_source_gaps",
+    "actual_methods_and_deviations_report",
+    "independent_delivery_audit_and_hash_manifest"
+  ],
+  "deferred": [
+    "remaining_closest_selection",
+    "closest_full_domain_inventory_nonuniqueness",
+    "2025_no_label_continuation_from_closest",
+    "original_full_protocol_terminal_audit"
+  ],
+  "not_claimed": [
+    "unique_causal_main_mechanism",
+    "production_TN_model_training",
+    "out_of_time_prediction_improvement",
+    "original_PLAN_fully_complete"
+  ],
+  "original_registered_plan_complete": false,
+  "new_scientific_fits_authorized_by_this_delivery": false,
+  "previously_started_process_policy": "No new solve/restart/extension; retain already running process and checkpoints. Runtime terminal state not required for this immutable scientific delivery and not asserted by it."
+}

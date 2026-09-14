@@ -1,3 +1,7 @@
+# Latest core-source review
+
+Read [LATEST_REVIEW.md](LATEST_REVIEW.md) for the new source-only check and omitted configuration/data boundaries. The latest numerical model uses one thread per worker; the runtime notes below describe the older publication.
+
 # Reproduction boundaries
 
 ## Full sequence
@@ -23,6 +27,6 @@ The source-only synthetic check is deliberately limited to source integrity, par
 
 ## Numerical runtime
 
-The current coupled TN implementation uses float64, one fitting worker and four numerical threads. It requires NumPy, pandas, SciPy, PyArrow, Numba and PyTorch. GIS preparation and historical experiments may need additional packages indicated by their imports. The environment file is a dependency specification, not a platform-specific binary lock.
+The older coupled implementation used one fitting worker and four numerical threads. The latest shared-closure experiment and the [portable expert subset](../expert/tn_challenge/README.md) use CPU float64 and **one thread per worker**. The subset is runnable without the omitted full-domain archives; follow its own environment and commands. The original full-domain pipeline still needs the artifacts listed above. NumPy, pandas, SciPy, PyArrow, Numba and PyTorch are used by the archived pipeline; GIS preparation may need additional packages. Environment files are dependency specifications, not platform-specific binary locks.
 
 The original Windows environment uses an OpenMP compatibility setting in its experiment runtime bootstrap. Keep such settings process-local. Do not disable TLS certificate checks to obtain packages or clone the repository.

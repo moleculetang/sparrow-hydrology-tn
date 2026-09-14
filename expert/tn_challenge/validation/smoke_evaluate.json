@@ -1,0 +1,8 @@
+{
+  "local_balance_max_kg": 9.66247171163559e-09,
+  "network_balance_kg": -2.7939677238464355e-08,
+  "minimum_M_kg": 872.575861589039,
+  "minimum_L_kg": 0.0,
+  "uptake_excess_kg": 0.0,
+  "purpose": "Execution-only evaluation of 12-call unconverged smoke model; not a scientific result."
+}

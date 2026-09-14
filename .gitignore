@@ -19,9 +19,11 @@ node_modules/
 *.xlsx
 *.pdf
 *.zip
+!expert/downloads/tn_challenge_24fcf199.zip
 *.7z
 *.npy
 *.npz
+!expert/tn_challenge/data/*.npz
 *.pt
 *.pkl
 **/outputs/

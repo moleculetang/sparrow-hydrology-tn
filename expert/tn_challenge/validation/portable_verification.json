@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "directional_gradient_relative_error": 1.9029552194480298e-10,
+  "data_hashes": 38,
+  "local_mass_balance_max_kg": 9.313225746154785e-09,
+  "network_balance_kg": 2.9802322387695312e-08,
+  "checks": [
+    "M0 zero extension",
+    "reference predictions",
+    "full-history derivative",
+    "mass balance",
+    "split IDs",
+    "label rejection and objective isolation"
+  ]
+}

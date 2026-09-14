@@ -1,0 +1,61 @@
+{
+  "source_commit_before_extension": "242ec32b4fb2046b15e6746776fcb6c2e772f4ab",
+  "reaches": 29,
+  "stations": 24,
+  "rows_primary": 1815,
+  "rows_all": 1815,
+  "reservoirs": 0,
+  "old_station_overlap": 0,
+  "old_observation_overlap": 0,
+  "old_reach_overlap": 0,
+  "duplicates": 0,
+  "missing_TN": 0,
+  "negative_TN": 0,
+  "groups": [
+    {
+      "benchmark_group": "Mianjiang_extreme",
+      "rows": 377,
+      "stations": 5,
+      "median_TN": 1.15,
+      "max_TN": 40.30667
+    },
+    {
+      "benchmark_group": "new_small_basins",
+      "rows": 342,
+      "stations": 6,
+      "median_TN": 1.53,
+      "max_TN": 5.38
+    },
+    {
+      "benchmark_group": "sustained_high_TN",
+      "rows": 1096,
+      "stations": 13,
+      "median_TN": 4.515,
+      "max_TN": 12.6
+    }
+  ],
+  "year_2023": {
+    "n": 252,
+    "NSE_eligible": 20
+  },
+  "year_2024": {
+    "n": 256,
+    "NSE_eligible": 20
+  },
+  "selection": "Purposeful additions for geographic transfer and concentration-tail stress; not a random sample, not a blind/prospective test.",
+  "source_observations": {
+    "path": "E:\\SPARROW\\5_Test\\20260906_1\\outputs\\observations.parquet",
+    "sha256": "2759a217ec87ab63262ad40589e0f88df82b28bd138c2813575ed7fae0eb1faa"
+  },
+  "cache_source": {
+    "path": "E:\\SPARROW\\5_Test\\20260908_1\\work\\cache\\sensitivity_data.pt",
+    "sha256": "77c30a7fe7c0506275bafdf32567f385408db2e18593e8139e0113fed124ddc0"
+  },
+  "provenance_counts": {
+    "missing_section_code_and_raw_row_link": 1060,
+    "raw_station_csv_not_registered": 755
+  },
+  "sampling_status": {
+    "month_only_unverified_aggregation": 1815
+  }
+}

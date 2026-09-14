@@ -1,0 +1,943 @@
+{
+  "status": "PASS_MODEL_IMPLEMENTATION",
+  "checks": {
+    "zero_extension_and_original_RAW_MAP": true,
+    "all27_full_history_derivatives": true,
+    "independent_full_history_forward": true,
+    "daily_conservation": true,
+    "full_store_conservation": true,
+    "river_reservoir_conservation": true,
+    "nonnegative_stocks_fluxes": true,
+    "uptake_within_demand": true,
+    "zero_contact_zero_mobilization": true,
+    "modifier_bound": true,
+    "future_drivers_no_past_change_fixed_preprocessing": true,
+    "zero_water_zero_source_empty_inventory": true,
+    "prediction_rejects_TN": true,
+    "heldout_perturbation_identical_predictor_inputs": true,
+    "corrupt_checkpoint_rejected": true,
+    "duplicate_live_process_rejected": true,
+    "training_trend_and_unknown_CPU_rules": true
+  },
+  "details": {
+    "full_history_gradient": [
+      {
+        "parameter": "log_alpha_contact",
+        "analytic": 83.32547960267395,
+        "central": 83.32547960208103,
+        "absolute_error": 5.929194912823732e-10,
+        "tolerance": 0.0025017643880802186,
+        "pass": true
+      },
+      {
+        "parameter": "beta_contact",
+        "analytic": 9.680523546936769,
+        "central": 9.680523545187368,
+        "absolute_error": 1.7494006243623517e-09,
+        "tolerance": 0.00029241570640810304,
+        "pass": true
+      },
+      {
+        "parameter": "v_f",
+        "analytic": -715.7314645756213,
+        "central": -715.7314645951373,
+        "absolute_error": 1.9515937310643494e-08,
+        "tolerance": 0.021473943937854116,
+        "pass": true
+      },
+      {
+        "parameter": "log_tau_mineral_days",
+        "analytic": 62.21793358157817,
+        "central": 62.21793368456858,
+        "absolute_error": 1.0299040553718442e-07,
+        "tolerance": 0.0018685380105370574,
+        "pass": true
+      },
+      {
+        "parameter": "gamma_contact_0",
+        "analytic": 25.67926730891771,
+        "central": 25.679267284646887,
+        "absolute_error": 2.4270821796790187e-08,
+        "tolerance": 0.0007723780192675314,
+        "pass": true
+      },
+      {
+        "parameter": "gamma_contact_1",
+        "analytic": -131.65422519904843,
+        "central": -131.65422520953047,
+        "absolute_error": 1.048204012477072e-08,
+        "tolerance": 0.003951626756285915,
+        "pass": true
+      },
+      {
+        "parameter": "gamma_contact_2",
+        "analytic": 37.045835507386734,
+        "central": 37.045835515581494,
+        "absolute_error": 8.194760425794811e-09,
+        "tolerance": 0.0011133750654674448,
+        "pass": true
+      },
+      {
+        "parameter": "gamma_contact_3",
+        "analytic": -40.902764241156945,
+        "central": -40.9027642802298,
+        "absolute_error": 3.907285872628563e-08,
+        "tolerance": 0.0012290829284068942,
+        "pass": true
+      },
+      {
+        "parameter": "gamma_contact_4",
+        "analytic": 156.9242881869132,
+        "central": 156.92428817294277,
+        "absolute_error": 1.3970435475130216e-08,
+        "tolerance": 0.004709728645607396,
+        "pass": true
+      },
+      {
+        "parameter": "gamma_contact_5",
+        "analytic": -121.45842166588841,
+        "central": -121.45842164662852,
+        "absolute_error": 1.9259886130384984e-08,
+        "tolerance": 0.0036457526499766523,
+        "pass": true
+      },
+      {
+        "parameter": "gamma_contact_6",
+        "analytic": 11.119599152185275,
+        "central": 11.119599116935735,
+        "absolute_error": 3.5249540175641414e-08,
+        "tolerance": 0.00033558797456555823,
+        "pass": true
+      },
+      {
+        "parameter": "gamma_lifetime_0",
+        "analytic": 2.4508155135813903,
+        "central": 2.4508155312789257,
+        "absolute_error": 1.769753543712227e-08,
+        "tolerance": 7.552446593836777e-05,
+        "pass": true
+      },
+      {
+        "parameter": "gamma_lifetime_1",
+        "analytic": -13.421825019053752,
+        "central": -13.421825264381866,
+        "absolute_error": 2.453281133796281e-07,
+        "tolerance": 0.000404654757931456,
+        "pass": true
+      },
+      {
+        "parameter": "gamma_lifetime_2",
+        "analytic": 2.247043243393089,
+        "central": 2.247043415222989,
+        "absolute_error": 1.7182990008635102e-07,
+        "tolerance": 6.941130245668966e-05,
+        "pass": true
+      },
+      {
+        "parameter": "gamma_lifetime_3",
+        "analytic": -5.1386408251611035,
+        "central": -5.138640619378572,
+        "absolute_error": 2.0578253145941972e-07,
+        "tolerance": 0.0001561592247548331,
+        "pass": true
+      },
+      {
+        "parameter": "gamma_lifetime_4",
+        "analytic": 27.86858244989194,
+        "central": 27.868582571852738,
+        "absolute_error": 1.2196079879345234e-07,
+        "tolerance": 0.0008380574771555822,
+        "pass": true
+      },
+      {
+        "parameter": "gamma_lifetime_5",
+        "analytic": -12.794442226320538,
+        "central": -12.794442237915884,
+        "absolute_error": 1.1595346904869075e-08,
+        "tolerance": 0.00038583326713747656,
+        "pass": true
+      },
+      {
+        "parameter": "gamma_lifetime_6",
+        "analytic": 0.22051866168915546,
+        "central": 0.22051857320000137,
+        "absolute_error": 8.848915408754543e-08,
+        "tolerance": 8.615559850674664e-06,
+        "pass": true
+      },
+      {
+        "parameter": "eta_upper",
+        "analytic": -139.36549400921078,
+        "central": -139.36549401212991,
+        "absolute_error": 2.919136932177935e-09,
+        "tolerance": 0.004182964820363897,
+        "pass": true
+      },
+      {
+        "parameter": "eta_percolation",
+        "analytic": -73.25029025465682,
+        "central": -73.2502902565102,
+        "absolute_error": 1.8533796719566453e-09,
+        "tolerance": 0.0021995087076953058,
+        "pass": true
+      },
+      {
+        "parameter": "log_aq",
+        "analytic": -3.306154847774856,
+        "central": -3.3061548480704914,
+        "absolute_error": 2.956355160677049e-10,
+        "tolerance": 0.00010118464544211474,
+        "pass": true
+      },
+      {
+        "parameter": "inventory_wetting_0",
+        "analytic": 78.66598688097719,
+        "central": 78.66598687061956,
+        "absolute_error": 1.0357624091739126e-08,
+        "tolerance": 0.0023619796064293153,
+        "pass": true
+      },
+      {
+        "parameter": "inventory_wetting_1",
+        "analytic": 69.51775101551185,
+        "central": 69.51775101996749,
+        "absolute_error": 4.455642965695006e-09,
+        "tolerance": 0.002087532530599025,
+        "pass": true
+      },
+      {
+        "parameter": "inventory_wetting_2",
+        "analytic": -1.9326151472062352,
+        "central": -1.9326151333586798,
+        "absolute_error": 1.3847555324630889e-08,
+        "tolerance": 5.997845441618706e-05,
+        "pass": true
+      },
+      {
+        "parameter": "inventory_wetting_3",
+        "analytic": -1.781482564814714,
+        "central": -1.7814825461870725,
+        "absolute_error": 1.8627641429347364e-08,
+        "tolerance": 5.544447694444142e-05,
+        "pass": true
+      },
+      {
+        "parameter": "inventory_wetting_4",
+        "analytic": -1.460383181989671,
+        "central": -1.460383178168179,
+        "absolute_error": 3.8214920117241036e-09,
+        "tolerance": 4.5811495459690133e-05,
+        "pass": true
+      },
+      {
+        "parameter": "inventory_wetting_5",
+        "analytic": -1.3776851344921055,
+        "central": -1.3776850767983138,
+        "absolute_error": 5.7693791744029e-08,
+        "tolerance": 4.333055403476317e-05,
+        "pass": true
+      }
+    ],
+    "physical": {
+      "physical_pass": true,
+      "checks": {
+        "daily_conservation": true,
+        "full_store_conservation": true,
+        "river_reservoir_conservation": true,
+        "nonnegative_stocks_fluxes": true,
+        "uptake_within_demand": true,
+        "zero_contact_zero_mobilization": true,
+        "modifier_bound": true
+      },
+      "annual": [
+        {
+          "source": 422958901.44519925,
+          "demand": 155042068.81173122,
+          "uptake": 155042068.81173122,
+          "fast": 65479270.101091,
+          "slow": 62342134.02805688,
+          "loss": 34808450.132197306,
+          "year": 1961,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 483183774.1927625,
+          "demand": 171072760.75824222,
+          "uptake": 171072760.75824222,
+          "fast": 66650563.02490796,
+          "slow": 163224594.39351606,
+          "loss": 48501532.96585232,
+          "year": 1962,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 472247639.00965893,
+          "demand": 174397272.04394257,
+          "uptake": 174397272.04394257,
+          "fast": 37715050.12013146,
+          "slow": 224866503.5155873,
+          "loss": 41666185.76792085,
+          "year": 1963,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 554860659.1712662,
+          "demand": 195427585.05553234,
+          "uptake": 195427585.05553234,
+          "fast": 79387791.40073434,
+          "slow": 200638401.22678882,
+          "loss": 54141670.36047335,
+          "year": 1964,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 649526732.6094805,
+          "demand": 207869739.59135598,
+          "uptake": 207869739.59135598,
+          "fast": 113886300.53198795,
+          "slow": 229673241.8067492,
+          "loss": 70563023.15656552,
+          "year": 1965,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 668010633.5504884,
+          "demand": 225039214.12889433,
+          "uptake": 225039214.12889433,
+          "fast": 93904840.96078832,
+          "slow": 276898652.197442,
+          "loss": 71028194.3295062,
+          "year": 1966,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 619397383.975636,
+          "demand": 226740021.24005505,
+          "uptake": 226740021.24005505,
+          "fast": 86715170.34769356,
+          "slow": 263977787.29137003,
+          "loss": 60312664.794962086,
+          "year": 1967,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 654180909.4966025,
+          "demand": 222905079.98056462,
+          "uptake": 222905079.98056462,
+          "fast": 108174724.49836928,
+          "slow": 235968931.3999239,
+          "loss": 66845022.78403346,
+          "year": 1968,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 712939919.515208,
+          "demand": 218706269.16797134,
+          "uptake": 218706269.16797134,
+          "fast": 101183529.90543276,
+          "slow": 284665339.9316684,
+          "loss": 76792593.58048594,
+          "year": 1969,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 770335821.4396398,
+          "demand": 244823727.488088,
+          "uptake": 244823727.488088,
+          "fast": 135526822.13722977,
+          "slow": 303223747.79100966,
+          "loss": 83267826.84021096,
+          "year": 1970,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 781963697.4035983,
+          "demand": 247353626.99895602,
+          "uptake": 247353626.99895602,
+          "fast": 115479344.85379395,
+          "slow": 319411546.64320934,
+          "loss": 81822814.06997694,
+          "year": 1971,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 820971240.6602252,
+          "demand": 230662280.31194913,
+          "uptake": 230662280.31194913,
+          "fast": 131977345.64828321,
+          "slow": 345628707.4887139,
+          "loss": 92266152.87300923,
+          "year": 1972,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 882071293.747665,
+          "demand": 263009643.51104265,
+          "uptake": 263009643.51104265,
+          "fast": 182989209.03206763,
+          "slow": 314340154.14512163,
+          "loss": 103609594.13198206,
+          "year": 1973,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 836232955.944436,
+          "demand": 261673152.0411095,
+          "uptake": 261673152.0411095,
+          "fast": 135340023.61435896,
+          "slow": 345935295.3627802,
+          "loss": 97826913.63841262,
+          "year": 1974,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 913714656.8082544,
+          "demand": 266860232.29569083,
+          "uptake": 266860232.29569083,
+          "fast": 166552852.2338481,
+          "slow": 352652013.25247777,
+          "loss": 104010796.92050864,
+          "year": 1975,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 938986954.5343283,
+          "demand": 263095726.44397944,
+          "uptake": 263095726.44397944,
+          "fast": 165269998.68759912,
+          "slow": 378923790.38958573,
+          "loss": 110807556.62541245,
+          "year": 1976,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 1070468236.6500571,
+          "demand": 264826917.21010792,
+          "uptake": 264826917.21010792,
+          "fast": 162772138.4919611,
+          "slow": 472436801.4202682,
+          "loss": 121306969.98474702,
+          "year": 1977,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 1203689264.792891,
+          "demand": 285148220.87941194,
+          "uptake": 285148220.87941194,
+          "fast": 239291968.5590515,
+          "slow": 459718480.1422684,
+          "loss": 153909573.0267015,
+          "year": 1978,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 1365488610.5656378,
+          "demand": 297315447.4784741,
+          "uptake": 297315447.4784741,
+          "fast": 257972705.46778315,
+          "slow": 574438962.9384539,
+          "loss": 170232737.96024546,
+          "year": 1979,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 1426891235.5371346,
+          "demand": 298760214.1483851,
+          "uptake": 298760214.1483851,
+          "fast": 242705497.65725973,
+          "slow": 670366610.512214,
+          "loss": 178336996.06573653,
+          "year": 1980,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 1367168577.1455548,
+          "demand": 314592949.1024111,
+          "uptake": 314592949.1024111,
+          "fast": 298262440.07244825,
+          "slow": 606353969.4993718,
+          "loss": 180415048.24036792,
+          "year": 1981,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 1394526767.9815416,
+          "demand": 340478789.5821893,
+          "uptake": 340478789.5821893,
+          "fast": 318722473.3246763,
+          "slow": 538342847.6021807,
+          "loss": 192601802.48136035,
+          "year": 1982,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 1534393640.3662338,
+          "demand": 367676779.148352,
+          "uptake": 367676779.148352,
+          "fast": 364681481.4971264,
+          "slow": 510982035.955224,
+          "loss": 213832768.10386485,
+          "year": 1983,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 1515920018.2388906,
+          "demand": 397412438.4778766,
+          "uptake": 397412438.4778766,
+          "fast": 245781390.28184038,
+          "slow": 693956076.6232069,
+          "loss": 189677695.02847672,
+          "year": 1984,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 1442992341.2583334,
+          "demand": 373437877.3991908,
+          "uptake": 373437877.3991908,
+          "fast": 271368090.7863639,
+          "slow": 641936066.1721166,
+          "loss": 184539653.36959884,
+          "year": 1985,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 1525527039.7903903,
+          "demand": 377301713.3046104,
+          "uptake": 377301713.3046104,
+          "fast": 255010971.9867873,
+          "slow": 667466382.1414113,
+          "loss": 188997950.1578555,
+          "year": 1986,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 1717568727.6834707,
+          "demand": 392830411.3808868,
+          "uptake": 392830411.3808868,
+          "fast": 295406479.31699914,
+          "slow": 731648901.4025433,
+          "loss": 216187502.66105473,
+          "year": 1987,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 1814791998.813951,
+          "demand": 382606037.28509736,
+          "uptake": 382606037.28509736,
+          "fast": 301058523.22939676,
+          "slow": 811882865.8716022,
+          "loss": 242114570.9284489,
+          "year": 1988,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 1775200586.269183,
+          "demand": 381775788.11639476,
+          "uptake": 381775788.11639476,
+          "fast": 302651310.2616596,
+          "slow": 831206018.3663657,
+          "loss": 250655026.22419757,
+          "year": 1989,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 1835639025.6009357,
+          "demand": 421600563.8678436,
+          "uptake": 421600563.8678436,
+          "fast": 348354998.8021287,
+          "slow": 833870886.6862062,
+          "loss": 240504397.7589484,
+          "year": 1990,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 1782471455.4329553,
+          "demand": 415466424.53929836,
+          "uptake": 415466424.53929836,
+          "fast": 247122581.34124342,
+          "slow": 902825785.2178935,
+          "loss": 222510000.89127806,
+          "year": 1991,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 1887876143.0537243,
+          "demand": 415979436.12960076,
+          "uptake": 415979436.12960076,
+          "fast": 359710739.17669797,
+          "slow": 797137987.4044167,
+          "loss": 252158417.87112984,
+          "year": 1992,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 1866646530.0037045,
+          "demand": 437645048.801324,
+          "uptake": 437645048.801324,
+          "fast": 375087669.9338857,
+          "slow": 855570763.7169411,
+          "loss": 247932953.86830813,
+          "year": 1993,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 1998966096.3390489,
+          "demand": 449536859.55095965,
+          "uptake": 449536859.55095965,
+          "fast": 448469037.8735427,
+          "slow": 810978246.1854279,
+          "loss": 270090241.03825295,
+          "year": 1994,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2266078742.083423,
+          "demand": 466659318.4787957,
+          "uptake": 466659318.4787957,
+          "fast": 497324767.77475995,
+          "slow": 808558681.8594913,
+          "loss": 319969485.3406965,
+          "year": 1995,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2336055129.338734,
+          "demand": 492696653.6292746,
+          "uptake": 492696653.6292746,
+          "fast": 473351532.229838,
+          "slow": 977842618.9021947,
+          "loss": 338126093.69341373,
+          "year": 1996,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2149661067.5749664,
+          "demand": 501337940.3367712,
+          "uptake": 501337940.3367712,
+          "fast": 573775553.2811918,
+          "slow": 872212570.3007113,
+          "loss": 324063847.9346354,
+          "year": 1997,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2221492579.2797294,
+          "demand": 522090509.0168736,
+          "uptake": 522090509.0168736,
+          "fast": 457133771.6243093,
+          "slow": 920445311.7430372,
+          "loss": 301815550.0104793,
+          "year": 1998,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2300819315.0292287,
+          "demand": 521942809.23869896,
+          "uptake": 521942809.23869896,
+          "fast": 402616539.84833,
+          "slow": 1055278347.9222534,
+          "loss": 303091012.92177486,
+          "year": 1999,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2245158961.7412763,
+          "demand": 529233345.278937,
+          "uptake": 529233345.278937,
+          "fast": 419529128.3841314,
+          "slow": 1019109007.7862339,
+          "loss": 306973270.0807984,
+          "year": 2000,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2334955833.0536375,
+          "demand": 544842957.2392588,
+          "uptake": 544842957.2392588,
+          "fast": 554199212.9795825,
+          "slow": 905921033.996058,
+          "loss": 325515579.5608082,
+          "year": 2001,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2428711804.96638,
+          "demand": 562718404.2896416,
+          "uptake": 562699837.5767977,
+          "fast": 543815835.7537044,
+          "slow": 995156314.6569581,
+          "loss": 334413196.57682043,
+          "year": 2002,
+          "uptake_demand_ratio": 0.9999670053214852
+        },
+        {
+          "source": 2370982562.1927686,
+          "demand": 543088665.102891,
+          "uptake": 543088665.102891,
+          "fast": 447117563.11586183,
+          "slow": 973569583.1034096,
+          "loss": 338446771.4691277,
+          "year": 2003,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2394928339.657214,
+          "demand": 592328486.9404887,
+          "uptake": 591992389.8989265,
+          "fast": 359509529.8407142,
+          "slow": 1124937488.4559798,
+          "loss": 316149943.7637732,
+          "year": 2004,
+          "uptake_demand_ratio": 0.9994325833570858
+        },
+        {
+          "source": 2398236521.516291,
+          "demand": 594424346.3456697,
+          "uptake": 594424346.3456697,
+          "fast": 374364178.4158497,
+          "slow": 1172070504.175001,
+          "loss": 292379742.1807672,
+          "year": 2005,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2520269839.0261445,
+          "demand": 596325105.8394294,
+          "uptake": 596325105.8394294,
+          "fast": 462071565.7310083,
+          "slow": 1068539722.5092838,
+          "loss": 322045786.4161372,
+          "year": 2006,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2549758408.420508,
+          "demand": 612128325.0688066,
+          "uptake": 612128325.0688066,
+          "fast": 411401968.52181417,
+          "slow": 1121318063.2703917,
+          "loss": 339877326.9517942,
+          "year": 2007,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2702329917.3714256,
+          "demand": 650325563.166314,
+          "uptake": 650325563.166314,
+          "fast": 571990930.1663499,
+          "slow": 1088046808.8745222,
+          "loss": 374019353.9414972,
+          "year": 2008,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2677935911.8078,
+          "demand": 635555657.0074865,
+          "uptake": 635555657.0074865,
+          "fast": 421169887.6856215,
+          "slow": 1229452841.2398481,
+          "loss": 368896287.73192275,
+          "year": 2009,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2680674066.656906,
+          "demand": 645383421.6704028,
+          "uptake": 645383421.6704028,
+          "fast": 498798994.4976595,
+          "slow": 1214280103.6784718,
+          "loss": 358328414.3673476,
+          "year": 2010,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2851014155.2824955,
+          "demand": 671991359.8578929,
+          "uptake": 671991359.8578929,
+          "fast": 366501815.57254964,
+          "slow": 1378696598.068686,
+          "loss": 350776688.6362114,
+          "year": 2011,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2859592279.7863665,
+          "demand": 684749041.0535991,
+          "uptake": 684749041.0535991,
+          "fast": 583919572.9502579,
+          "slow": 1237137698.3905787,
+          "loss": 376740415.7656646,
+          "year": 2012,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2919442378.271173,
+          "demand": 682280088.7812119,
+          "uptake": 682280088.7812119,
+          "fast": 569838389.9195167,
+          "slow": 1239171384.411768,
+          "loss": 379941321.79782546,
+          "year": 2013,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2776096087.6820807,
+          "demand": 684941762.0551512,
+          "uptake": 684941762.0551512,
+          "fast": 591582981.697426,
+          "slow": 1135986548.8160787,
+          "loss": 395068524.4821663,
+          "year": 2014,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2842502901.739622,
+          "demand": 698344587.1607845,
+          "uptake": 698344587.1607845,
+          "fast": 602835660.4968026,
+          "slow": 1210161419.452019,
+          "loss": 364587682.08698606,
+          "year": 2015,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2873927954.82763,
+          "demand": 696906493.3404546,
+          "uptake": 696906493.3404546,
+          "fast": 711051765.9517899,
+          "slow": 957310035.1574335,
+          "loss": 412298056.0446484,
+          "year": 2016,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2910515673.8739896,
+          "demand": 710662289.9330552,
+          "uptake": 710662289.9330552,
+          "fast": 612973957.397205,
+          "slow": 1164084902.0700302,
+          "loss": 396267227.95323586,
+          "year": 2017,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 3027982215.485915,
+          "demand": 723945568.4577162,
+          "uptake": 723945568.4577162,
+          "fast": 567298197.2568119,
+          "slow": 1246389922.3197918,
+          "loss": 408750300.93076557,
+          "year": 2018,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 3030472028.522156,
+          "demand": 750184783.0620654,
+          "uptake": 750184783.0620654,
+          "fast": 632457771.8264066,
+          "slow": 1184285888.7685816,
+          "loss": 419902050.6362496,
+          "year": 2019,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 3014279426.073777,
+          "demand": 742000378.1643405,
+          "uptake": 742000378.1643405,
+          "fast": 532199667.6722402,
+          "slow": 1313469712.3553174,
+          "loss": 405348667.920174,
+          "year": 2020,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2964420604.146758,
+          "demand": 734842188.9653735,
+          "uptake": 734842188.9653735,
+          "fast": 417785297.24265814,
+          "slow": 1431921409.0017023,
+          "loss": 399141987.13274705,
+          "year": 2021,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2945188759.07648,
+          "demand": 748893791.3507382,
+          "uptake": 748893791.3507382,
+          "fast": 561211821.8479009,
+          "slow": 1228852555.4485278,
+          "loss": 403255860.2201617,
+          "year": 2022,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2941206208.317888,
+          "demand": 747944222.7748652,
+          "uptake": 747944222.7748652,
+          "fast": 405197197.0817597,
+          "slow": 1434796458.137652,
+          "loss": 383811691.54888165,
+          "year": 2023,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2941206208.3178873,
+          "demand": 752157357.9822811,
+          "uptake": 752157357.9822811,
+          "fast": 550868325.4636546,
+          "slow": 1257867251.8656878,
+          "loss": 382658649.7392688,
+          "year": 2024,
+          "uptake_demand_ratio": 1.0
+        },
+        {
+          "source": 2941206208.317888,
+          "demand": 752157357.9822811,
+          "uptake": 752157357.9822811,
+          "fast": 453419146.37226397,
+          "slow": 1376010302.3293564,
+          "loss": 382640803.18010104,
+          "year": 2025,
+          "uptake_demand_ratio": 1.0
+        }
+      ],
+      "maximum_relative_daily_balance": 5.928041678705311e-16,
+      "full_balance_kg_n": 3.5762786865234375e-06,
+      "river_balance_kg_n": -6.556510925292969e-07,
+      "minimum_stock_or_flux": 0.0,
+      "maximum_uptake_excess_kg_n": 0.0,
+      "diagnostics": {
+        "contact_mapping_saturation_fraction": 0.0,
+        "lifetime_mapping_saturation_fraction": 0.0,
+        "hazard_cap_fraction": 0.0,
+        "modifier_minimum": 1.0,
+        "modifier_maximum": 1.0,
+        "log_alpha_minimum": -3.999999999999999,
+        "log_alpha_maximum": -3.999999999999999,
+        "lifetime_days_minimum": 699.9999999999998,
+        "lifetime_days_maximum": 699.9999999999998,
+        "mineral_empty_fraction": 2.2342562765203474e-05,
+        "slow_empty_fraction": 1.5932811152235264e-05,
+        "uptake_clears_supply_fraction": 7.325430414820811e-07
+      },
+      "state_definitions": {
+        "mineral_M": "existing mineral nitrogen legacy with lifetime loss",
+        "slow_water_L": "slow-water nitrogen; old replay legacy alias",
+        "new_stores": 0
+      },
+      "simulation_start": "1961-01-01 00:00:00",
+      "simulation_end": "2025-12-31 00:00:00"
+    }
+  },
+  "peak": {
+    "pid": 19648,
+    "process_created": 1789117740.8769417,
+    "alive": true,
+    "cpu_seconds": 59.296875,
+    "rss_gib": 1.5758209228515625,
+    "peak_rss_gib": 3.0157318115234375
+  },
+  "elapsed_seconds": 58.17230176925659,
+  "heldout_scores_computed": false,
+  "remaining_operational_checks": "controller child events and extended budget reviewed before launch"
+}

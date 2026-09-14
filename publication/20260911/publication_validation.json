@@ -1,0 +1,17 @@
+{
+  "status": "PASS_SOURCE_ONLY_REVIEW_CHECK",
+  "source_files": 35,
+  "aggregate_tables": 0,
+  "checks": [
+    "SHA256",
+    "Python syntax",
+    "full synthetic temporal autograd gradcheck",
+    "independent recurrence and zero extension",
+    "nitrogen balance and stock/uptake bounds",
+    "zero carrier and source",
+    "frozen preprocessing causality"
+  ],
+  "original_observations_read": false,
+  "training_started": false,
+  "full_experiment_reproduction_claimed": false
+}

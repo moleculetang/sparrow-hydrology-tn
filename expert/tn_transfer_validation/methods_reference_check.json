@@ -1,0 +1,56 @@
+[
+  {
+    "doi": "10.1080/02626668609491024",
+    "title": "Operational testing of hydrological simulation models",
+    "year": [
+      [
+        1986,
+        3
+      ]
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.1080/02626668609491024",
+    "verification": "Crossref metadata; abstract only where supplied"
+  },
+  {
+    "doi": "10.1016/S0022-1694(01)00421-8",
+    "title": "Equifinality, data assimilation, and uncertainty estimation in mechanistic modelling of complex environmental systems using the GLUE methodology",
+    "year": [
+      [
+        2001,
+        8
+      ]
+    ],
+    "abstract": "",
+    "url": "https://doi.org/10.1016/S0022-1694(01)00421-8",
+    "verification": "Crossref metadata; abstract only where supplied"
+  },
+  {
+    "doi": "10.1111/ecog.02881",
+    "title": "Cross‐validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure",
+    "year": [
+      [
+        2017,
+        3,
+        3
+      ]
+    ],
+    "abstract": "Ecological data often show temporal, spatial, hierarchical (random effects), or phylogenetic structure. Modern statistical approaches are increasingly accounting for such dependencies. However, when performing cross‐validation, these structures are regularly ignored, resulting in serious underestimation of predictive error. One cause for the poor performance of uncorrected (random) cross‐validation, noted often by modellers, are dependence structures in the data that persist as dependence structures in model residuals, violating the assumption of independence. Even more concerning, because often overlooked, is that structured data also provides ample opportunity for overfitting with non‐causal predictors. This problem can persist even if remedies such as autoregressive models, generalized least squares, or mixed models are used. Block cross‐validation, where data are split strategically rather than randomly, can address these issues. However, the blocking strategy must be carefully considered. Blocking in space, time, random effects or phylogenetic distance, while accounting for dependencies in the data, may also unwittingly induce extrapolations by restricting the ranges or combinations of predictor variables available for model training, thus overestimating interpolation errors. On the other hand, deliberate blocking in predictor space may also improve error estimates when extrapolation is the modelling goal. Here, we review the ecological literature on non‐random and blocked cross‐validation approaches. We also provide a series of simulations and case studies, in which we show that, for all instances tested, block cross‐validation is nearly universally more appropriate than random cross‐validation if the goal is predicting to new data or predictor space, or for selecting causal predictors. We recommend that block cross‐validation be used wherever dependence structures exist in a dataset, even if no correlation structure is visible in the fitted model residuals, or if the fitted models account for such correlations.",
+    "url": "https://doi.org/10.1111/ecog.02881",
+    "verification": "Crossref metadata; abstract only where supplied"
+  },
+  {
+    "doi": "10.5194/hess-23-4323-2019",
+    "title": "Technical note: Inherent benchmark or not? Comparing Nash–Sutcliffe and Kling–Gupta efficiency scores",
+    "year": [
+      [
+        2019,
+        10,
+        25
+      ]
+    ],
+    "abstract": "Abstract. A traditional metric used in hydrology to summarize model\nperformance is the Nash–Sutcliffe efficiency (NSE). Increasingly an\nalternative metric, the Kling–Gupta efficiency (KGE), is used instead. When\nNSE is used, NSE = 0 corresponds to using the mean flow as a benchmark\npredictor. The same reasoning is applied in various studies that use KGE as\na metric: negative KGE values are viewed as bad model performance, and only\npositive values are seen as good model performance. Here we show that using\nthe mean flow as a predictor does not result in KGE = 0, but instead KGE =1-√2≈-0.41. Thus, KGE values greater than −0.41\nindicate that a model improves upon the mean flow benchmark – even if the\nmodel's KGE value is negative. NSE and KGE values cannot be directly\ncompared, because their relationship is non-unique and depends in part on\nthe coefficient of variation of the observed time series. Therefore,\nmodellers who use the KGE metric should not let their understanding of NSE\nvalues guide them in interpreting KGE values and instead develop new\nunderstanding based on the constitutive parts of the KGE metric and the\nexplicit use of benchmark values to compare KGE scores against. More\ngenerally, a strong case can be made for moving away from ad hoc use of\naggregated efficiency metrics and towards a framework based on\npurpose-dependent evaluation metrics and benchmarks that allows for more\nrobust model adequacy assessment.",
+    "url": "https://doi.org/10.5194/hess-23-4323-2019",
+    "verification": "Crossref metadata; abstract only where supplied"
+  }
+]
