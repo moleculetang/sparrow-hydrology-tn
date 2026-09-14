@@ -1,0 +1,21 @@
+{
+  "tests": {
+    "M0_full_network_parity_max_mg_l": 2.842170943040401e-14,
+    "M0_mass": {
+      "local_balance_max_kg": 1.2194504961371422e-08,
+      "network_balance_kg": -1.9073486328125e-06
+    },
+    "SC_full_network_parity_max_mg_l": 1.4210854715202004e-14,
+    "SC_mass": {
+      "local_balance_max_kg": 1.2048985809087753e-08,
+      "network_balance_kg": 0.0
+    },
+    "wrong_training_cohort_and_label_input_rejected": "PASS",
+    "new_reference_S_matches_full_domain_rule": "PASS",
+    "old_train_new_label_ID_overlap": 0,
+    "upstream_closed_and_no_reservoir_boundary": "PASS"
+  },
+  "fitting_started": false,
+  "labels_not_used_for_parameters": true,
+  "status": "PASS_TRANSFER_IMPLEMENTATION"
+}

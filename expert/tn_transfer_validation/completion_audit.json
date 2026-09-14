@@ -1,0 +1,28 @@
+{
+  "status": "PASS_VALIDATION_DATA_DELIVERY",
+  "new_reaches": 29,
+  "new_stations": 24,
+  "observations": 1815,
+  "annual_NSE_eligible": {
+    "2023": 20,
+    "2024": 20
+  },
+  "array_count": 22,
+  "csv_shards": 461,
+  "source_data": "frozen sensitivity hydrology + S1 source, full 1961-2024",
+  "no_model_training_started": true,
+  "input_identity": "all exported numeric arrays round-trip bitwise; original obs unchanged except local indices and benchmark tags",
+  "implementation": "PASS_TRANSFER_IMPLEMENTATION",
+  "workflow": "PASS_WORKFLOW_CHECK",
+  "scientific_conclusion": "Potential must be tested; no expert-success claim or mechanism identification claim",
+  "limits": [
+    "purposeful retrospective sample",
+    "new regions have no reservoirs",
+    "monthly observation aggregation unverified",
+    "no independent M/L observations"
+  ],
+  "source_hashes": {
+    "old_training_csv": "88ede5e08a34697dab758ae67a3d4994c5c491071babe4db3330d63ef67917a4",
+    "evaluation_labels": "a107a7380fce687eb9e8bc547e4b59d5e0eacff225718a59d04782c5b88ad444"
+  }
+}
