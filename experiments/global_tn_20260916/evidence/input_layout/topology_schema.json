@@ -1,0 +1,38 @@
+{
+  "product": {
+    "type": "str",
+    "length": null
+  },
+  "forcing": {
+    "type": "str",
+    "length": null
+  },
+  "order": {
+    "type": "list",
+    "length": 230
+  },
+  "downstream": {
+    "type": "dict",
+    "length": 216
+  },
+  "terminal": {
+    "type": "list",
+    "length": 14
+  },
+  "metadata": {
+    "type": "list",
+    "length": 13
+  },
+  "static_fields": {
+    "type": "list",
+    "length": 7
+  },
+  "global_reach_ids": {
+    "type": "list",
+    "length": 230
+  },
+  "global_reservoir_indices": {
+    "type": "list",
+    "length": 13
+  }
+}

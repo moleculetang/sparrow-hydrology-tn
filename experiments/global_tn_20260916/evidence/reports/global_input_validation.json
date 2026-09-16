@@ -1,0 +1,71 @@
+{
+  "status": "PASS_GLOBAL_INPUTS",
+  "full_reaches": 230,
+  "driver_max_errors": {
+    "fast_water": 0.0,
+    "slow_water": 0.0,
+    "official_water": 0.0,
+    "temperature": 0.0,
+    "upper_water": 0.0,
+    "percolation": 0.0,
+    "soil_water_mm": 0.0,
+    "contact": 0.0,
+    "fast_fraction": 0.0,
+    "lower_release": 0.0,
+    "area_ha": 0.0,
+    "h_day": 0.0,
+    "source_tags": 0.0,
+    "source": 0.0,
+    "crop": 0.0
+  },
+  "inputs": {
+    "raw\\5_Test\\20260828_35\\outputs\\tn_hydrology_reach_daily.parquet": "dc54082a7ea9c19883b9023e40a49a0988624b89a1d1ddaf9b760c5261a211bb",
+    "raw\\5_Test\\20260907_3\\outputs\\source_composition_formal.parquet": "0bc14b4d3d19ad6591e40d4e00fce461e18b3e96ccb00ef8e6ac9e291066cf5a"
+  },
+  "graph_independent_closure": true,
+  "counterfactual_folds": {
+    "T24_L": {
+      "counterfactual_rebuild": true,
+      "month_count": 1140,
+      "daily_count": 2752,
+      "cleaning_identical": true
+    },
+    "T24_G": {
+      "counterfactual_rebuild": true,
+      "month_count": 3674,
+      "daily_count": 6194,
+      "cleaning_identical": true
+    },
+    "S56": {
+      "counterfactual_rebuild": true,
+      "month_count": 3285,
+      "daily_count": 5432,
+      "cleaning_identical": true
+    },
+    "S113": {
+      "counterfactual_rebuild": true,
+      "month_count": 3142,
+      "daily_count": 4821,
+      "cleaning_identical": true
+    },
+    "S191": {
+      "counterfactual_rebuild": true,
+      "month_count": 3059,
+      "daily_count": 4503,
+      "cleaning_identical": true
+    },
+    "T25S_L": {
+      "counterfactual_rebuild": true,
+      "month_count": 1501,
+      "daily_count": 4063,
+      "cleaning_identical": true
+    },
+    "T25S_G": {
+      "counterfactual_rebuild": true,
+      "month_count": 4819,
+      "daily_count": 9079,
+      "cleaning_identical": true
+    }
+  },
+  "shared_source_parity": true
+}

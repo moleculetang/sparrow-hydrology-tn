@@ -1,0 +1,15 @@
+config,legal_starts,sufficient_starts,MAP_relative_gap,selected,interpretation
+S113_D,2,2,8.63782346634614e-13,S113_D_s0,small MAP gap; not proof of same optimum
+S113_M,2,2,5.692573760969202e-11,S113_M_s1,small MAP gap; not proof of same optimum
+S191_D,2,2,0.11618452252986425,S191_D_s0,distinct local solutions
+S191_M,2,2,6.852827041540755e-14,S191_M_s1,small MAP gap; not proof of same optimum
+S56_D,2,2,3.932483608091337e-13,S56_D_s0,small MAP gap; not proof of same optimum
+S56_M,2,2,3.198918635332965e-12,S56_M_s0,small MAP gap; not proof of same optimum
+T24_G_D,2,2,2.3203086492667763e-07,T24_G_D_s0,small MAP gap; not proof of same optimum
+T24_G_M,2,2,5.503453816076479e-13,T24_G_M_s1,small MAP gap; not proof of same optimum
+T24_L_D,2,2,1.91161897546795e-12,T24_L_D_s0,small MAP gap; not proof of same optimum
+T24_L_M,2,2,2.7866834822137884e-13,T24_L_M_s0,small MAP gap; not proof of same optimum
+T25S_G_D,2,2,1.231770492296997e-12,T25S_G_D_s1,small MAP gap; not proof of same optimum
+T25S_G_M,2,2,2.6712330935201016e-13,T25S_G_M_s0,small MAP gap; not proof of same optimum
+T25S_L_D,2,2,0.0741702126663896,T25S_L_D_s0,distinct local solutions
+T25S_L_M,2,2,0.07983612258211475,T25S_L_M_s1,distinct local solutions

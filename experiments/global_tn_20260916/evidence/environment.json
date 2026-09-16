@@ -1,0 +1,13 @@
+{
+  "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "win32",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.17.1",
+    "torch": "2.13.0+cu126",
+    "numba": "0.65.1",
+    "pyarrow": "23.0.1",
+    "matplotlib": "3.10.9"
+  }
+}

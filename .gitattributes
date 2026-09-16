@@ -1,0 +1,3 @@
+# Preserve archived source bytes so published SHA-256 identities remain valid.
+experiments/global_tn_20260916/snapshot/** -text
+experiments/global_tn_20260916/evidence/** -text

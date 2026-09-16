@@ -1,0 +1,53 @@
+{
+  "status": "PASS_EXPLICIT_SENSITIVITY_EXTENSION",
+  "prefix_checks": {
+    "contact": "identical formal prefix",
+    "fast_fraction": "identical formal prefix",
+    "lower_release": "identical formal prefix",
+    "fast_water": "identical formal prefix",
+    "slow_water": "identical formal prefix",
+    "official_water": "identical formal prefix",
+    "h_day": "identical formal prefix",
+    "temperature": "identical formal prefix",
+    "upper_water": "identical formal prefix",
+    "percolation": "identical formal prefix",
+    "soil_wetness": "identical formal prefix",
+    "source": "identical formal prefix",
+    "crop": "identical formal prefix",
+    "h_month": "identical formal prefix",
+    "source_tags": "identical formal prefix",
+    "static_raw": "identical formal prefix",
+    "area_ha": "identical formal prefix",
+    "mid": "identical formal prefix",
+    "starts": "identical formal prefix",
+    "stops": "identical formal prefix",
+    "release_fraction": "identical formal prefix",
+    "released_water": "identical formal prefix",
+    "enabled": "identical formal prefix",
+    "dates": "identical formal prefix",
+    "months": "identical formal prefix",
+    "soil_water_mm": "identical formal prefix"
+  },
+  "source_and_demand": "2024 annual amounts with frozen calendar; monthly equality not assumed across leap/non-leap years",
+  "composition": {
+    "source": {
+      "monthly_max_absolute": 25592.26654855418,
+      "annual_max_absolute": 7.450580596923828e-09,
+      "annual_max_relative": 4.51936943071813e-16
+    },
+    "source_tags": {
+      "monthly_max_absolute": 25592.26654855418,
+      "annual_max_absolute": 2.7939677238464355e-09,
+      "annual_max_relative": 4.980880724121225e-16
+    },
+    "crop": {
+      "monthly_max_absolute": 2.3283064365386963e-10,
+      "annual_max_absolute": 9.313225746154785e-10,
+      "annual_max_relative": 3.3822429640488906e-16
+    }
+  },
+  "hydrology_PET": "sensitivity extension, not equal-grade formal evidence",
+  "HF_primary_2025": false,
+  "minimum_daily_station_water_2025": 2623.507800078533,
+  "tested_stations_2025": 116
+}

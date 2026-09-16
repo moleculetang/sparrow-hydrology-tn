@@ -1,0 +1,618 @@
+[
+  {
+    "path": "snapshot/scripts/account_computation.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\account_computation.py",
+    "sha256": "90a50f6bf369540637b91d78425453b73f5f68cae37b31d5460fb50d5c73628c",
+    "bytes": 2626,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/apply_resource_profile.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\apply_resource_profile.py",
+    "sha256": "73689335b772d672a9ed75b7208431003cf5833449afdf1dfec5c11502553d9d",
+    "bytes": 4517,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/audit_job.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\audit_job.py",
+    "sha256": "b3907f158105accdac1da04fb48dcdda8b3c5142f6edd849ce37456107c1944e",
+    "bytes": 6729,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/bootstrap.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\bootstrap.py",
+    "sha256": "e7d74c1a25258ebac1477547ecad82d0ff9080f4cb8c18a770a57acb12ad5790",
+    "bytes": 2745,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/bootstrap_global.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\bootstrap_global.py",
+    "sha256": "ae289b4144c4ac873b6eef2f51b2f1ed6d11d31fb49fca583c07136903c42d7f",
+    "bytes": 4741,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/campaign_controller.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\campaign_controller.py",
+    "sha256": "0001b52f26c95cb13b18e5f9f6bf7b1afbe762a24cbd3273f1b895d8bb5200b5",
+    "bytes": 10883,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/campaign_model.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\campaign_model.py",
+    "sha256": "b8c4a86a7424e53cb486824e1576f71636f08373b0ce7132a4cccc934aaa97d4",
+    "bytes": 12683,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/close_campaign.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\close_campaign.py",
+    "sha256": "8b7b18c3e5058aacbeede455acf55c6747a6646054d8423da935b4bc27cc2c9d",
+    "bytes": 1631,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/diagnose_old_extrapolation.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\diagnose_old_extrapolation.py",
+    "sha256": "c512a91eb7932caf4d8c31b175954326690c951016024d43c0dfeb26c5244c05",
+    "bytes": 2686,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/document_sources.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\document_sources.py",
+    "sha256": "f757478dd7e14c5cee6df1443c2baad238fd3f8fd8a0aaed25806f46f5ec7eeb",
+    "bytes": 1904,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/finalize_global.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\finalize_global.py",
+    "sha256": "d02baf8a56ad2c437833482dbd4ab2c6c0ec6ff19eb6116fbae497cab91cfcc9",
+    "bytes": 20233,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/finalize_hf.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\finalize_hf.py",
+    "sha256": "1004bddea6b71eee207c4a8e59b5f78e5bc9cc452aee0f2e098d644d64d7560f",
+    "bytes": 18203,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/finish_evidence.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\finish_evidence.py",
+    "sha256": "998ef99d7b7ddac4baf18e46261c65cc0d3339d8fa3ab01060d2b3752fd8e5de",
+    "bytes": 5799,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/fit_worker.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\fit_worker.py",
+    "sha256": "9890da85aa8fa543fb845e4d982ce4e16832d846d10a7cac8f17699797542a73",
+    "bytes": 12800,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/hf_metrics.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\hf_metrics.py",
+    "sha256": "a5fd991ec34427fd066b9e3b4d9dd98c2f188d7b1dc786c1f1713df0950f145e",
+    "bytes": 2288,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/hf_model.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\hf_model.py",
+    "sha256": "88a85da13541e61235a391ca8f35621ff05fc3f374e37c9b053c8f7f9d2b8e71",
+    "bytes": 871,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/independent_completion.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\independent_completion.py",
+    "sha256": "8a9ca2b0f00acc62631f9a3838593870c53d88540abdfa93e996ef2850f3b8d7",
+    "bytes": 7315,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/independent_global.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\independent_global.py",
+    "sha256": "0456d613b35e61a561b0eda15e4f5f555b2f2ea2420d3567698a0e89d7472ac9",
+    "bytes": 5081,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/native_runtime.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\native_runtime.py",
+    "sha256": "be469ca09bbbbd88a48e9ec3659917987815de28996dad962b6cddc03a8d469f",
+    "bytes": 7449,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/pause_for_isolation.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\pause_for_isolation.py",
+    "sha256": "3e278b73d69099d5cce8b43aa9fa5e9df64abc0745a2ad779833d44a63cad1b5",
+    "bytes": 1783,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/predict_extra.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\predict_extra.py",
+    "sha256": "33b4d4010371c12099543cafdfdf27e7cf3cdda4cee049cddda6b39a17540264",
+    "bytes": 3764,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/prepare_global.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\prepare_global.py",
+    "sha256": "334219f59377a8d8a7006e17fca5b36b119cba59779fc938babb618be6c3f473",
+    "bytes": 13240,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/prepare_hf.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\prepare_hf.py",
+    "sha256": "02c54ac435a76de3e32a0864fb9cd10d456783a90fb1332c2d167ea9817c9faa",
+    "bytes": 11958,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/prepare_spatial_maps.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\prepare_spatial_maps.py",
+    "sha256": "1dc4ac764a513328bf44e06f8f552290e61ec19c518b0f7ab8c12aa1eccc0431",
+    "bytes": 2332,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/profile_single_audit.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\profile_single_audit.py",
+    "sha256": "67f6c271a2f665e01ed9c46cc5704cb200de021cc6f6b375278c4a1c0ea4f7c0",
+    "bytes": 1223,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/recompute_selected_routing.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\recompute_selected_routing.py",
+    "sha256": "96c177a334c2d3ab08bd449694de1b9bd842f34ce1ae8813994e6aac8531f055",
+    "bytes": 2677,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/recover_checkpoint_io.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\recover_checkpoint_io.py",
+    "sha256": "a234c5688d6eea5ffa783fef803a7c133df3e9a296f184550a0e59a514c0cf77",
+    "bytes": 3850,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/recover_checkpoint_status_io.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\recover_checkpoint_status_io.py",
+    "sha256": "84720fdac56e1ba5f62c1cbf2c0fae16d8154462cb8f39a65c57cc621bbaa28c",
+    "bytes": 3864,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/recover_controller.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\recover_controller.py",
+    "sha256": "c2a0fd252987401af83eb49fd130b84e6caafc859ca033c1130f2d9905d7b0f6",
+    "bytes": 3313,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/recover_t25_checkpoint_io.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\recover_t25_checkpoint_io.py",
+    "sha256": "b0bfae40b6c4402e08fc6ddc5dac0a326942fb1636312de2dabdf10780465763",
+    "bytes": 3818,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/register_evaluation_support.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\register_evaluation_support.py",
+    "sha256": "194754f5010701333de3091e3f401bc608fe841d816d5a579dc0111655d87eb9",
+    "bytes": 2238,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/repair_isolation.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\repair_isolation.py",
+    "sha256": "5865bfb2ba3116d167d54864f8f305cdfe569cb93aebf1feb6d9591f6f8d2247",
+    "bytes": 4633,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/report_global.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\report_global.py",
+    "sha256": "01b4ec2d8e2bf1daab02c37f083768fcf181d1cd23b5dd2f00530a951fc97705",
+    "bytes": 16827,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/review_results.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\review_results.py",
+    "sha256": "a61c4986ada76559d1f3407b292cc45350695472570de99c6b70b44d4adb46d3",
+    "bytes": 2572,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/seal_global.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\seal_global.py",
+    "sha256": "0a1af3ca3c3f1db92d97749f53f206bb5b4ef5d848a60f6c39111c0ac11e97ca",
+    "bytes": 3743,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/seal_hf.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\seal_hf.py",
+    "sha256": "b8f85bec20b032f1acb1775631f16a84788700eb58576dfe42f7c8cf0db563a1",
+    "bytes": 3532,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/serial_solvers.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\serial_solvers.py",
+    "sha256": "fbc5311f6b9f1873f0bb0b866840a70aab646fc3abdb6e0f084f31e1b5bacfdb",
+    "bytes": 5157,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/supplement_global.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\supplement_global.py",
+    "sha256": "fe24db6e0c2b51b4f714b83eb2989f14f56b15a49fe917526435d868d2a439ff",
+    "bytes": 7432,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/supplement_hf.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\supplement_hf.py",
+    "sha256": "fd56feddd49919ac1a7da23672343dc5fed9262948534b6cd7bcad784164cde8",
+    "bytes": 12929,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/synthesize_global.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\synthesize_global.py",
+    "sha256": "b55f3d2a7a3fb629e18ee6adc3d3fd8535efdc61b47e1ae9cf142414ff5f1f1a",
+    "bytes": 8017,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/temporal_model.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\temporal_model.py",
+    "sha256": "1b3217cbec5260f0446999bf6b31ca0ac44d295dd99b7e70dad4b97487627c98",
+    "bytes": 5574,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/test_boundaries.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\test_boundaries.py",
+    "sha256": "13efc716f99b6231e2cfe3b38af8f50b700413795572cf1a269eb1e53447cbb1",
+    "bytes": 3762,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/test_global_reporting.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\test_global_reporting.py",
+    "sha256": "24d9665828cf583a5ee273b8c505920e94b77da5f2c217b3d779372eefa1167e",
+    "bytes": 1353,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/test_reporting.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\test_reporting.py",
+    "sha256": "0d49352a7c52220d20c85ac8f1905294b7165bd1ba1d86852a1b455d7f7d91c0",
+    "bytes": 798,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/test_time_support.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\test_time_support.py",
+    "sha256": "659dc3d02af9cd291d7faf81ae78fa9951bb7138831e356d500fb3921385db98",
+    "bytes": 1604,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/validate_common_domain.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\validate_common_domain.py",
+    "sha256": "de85f0d2da381c944cfb8795b35102f28d757b298909a363513f74c5233ff011",
+    "bytes": 1830,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/validate_common_outputs.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\validate_common_outputs.py",
+    "sha256": "f0ce5b9daab9f3e0d7b7a5eee4da3487db1999dcb3bf7c13d7faaec4528fcc46",
+    "bytes": 1641,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/validate_global.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\validate_global.py",
+    "sha256": "6495fccb373d627430e2c93b8dd70cb3a8fb94c4b239941e35ccb951f33eb77a",
+    "bytes": 8620,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/validate_global_inputs.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\validate_global_inputs.py",
+    "sha256": "4b48918da1b1301a692978425897154fba19ef04484703855f3922426ab26cc4",
+    "bytes": 5952,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/validate_hf.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\validate_hf.py",
+    "sha256": "8268ea0b33b45ca0503d113fb231e4e0e3b70110ea25818e6f3f28a62ce3b90d",
+    "bytes": 8021,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/validate_mix.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\validate_mix.py",
+    "sha256": "445367da6c3aa1c8e2da2b6adcc97562fd7b8ac0d2c7c5555c1041daa495584a",
+    "bytes": 7310,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/validate_small.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\validate_small.py",
+    "sha256": "9ea8e7c403c84d1f2fae4088b81ec10de32602bfef332071bbd765b31278a888",
+    "bytes": 4712,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/verify_extension_contract.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\verify_extension_contract.py",
+    "sha256": "a8a6449add339fdba48b62b5c205bb547b1917a2468fe3a952510a07d67308dd",
+    "bytes": 2438,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/verify_resource_profile.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\verify_resource_profile.py",
+    "sha256": "25ba3279e690cc4103feef6e71aef0b05af992c8a2e454361e43725cbc934dcf",
+    "bytes": 1691,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/wait_event.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\wait_event.py",
+    "sha256": "bf0f32d340016d01ba628a5cbe3b245aaea2c1739446e590772bba3fa88dd242",
+    "bytes": 1111,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/scripts/write_final_interpretation.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\scripts\\write_final_interpretation.py",
+    "sha256": "fee6c7b66eeaca78a6709ad102c6d7caa5fe28765cc9fcb8cf43f44820a26252",
+    "bytes": 9811,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/vendor/expert/tn_challenge/mix_routing.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\vendor\\expert\\tn_challenge\\mix_routing.py",
+    "sha256": "0bdb0dfbd16e4e10f5aa8c40e180bc5d6e5906dd71298ab64f5d490b96c60dcf",
+    "bytes": 6181,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/vendor/expert/tn_challenge/model.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\vendor\\expert\\tn_challenge\\model.py",
+    "sha256": "77fd15c645423a3e8dc3e65fc11e144532d19f751d99d72dc66f41c6425a3b66",
+    "bytes": 10843,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/vendor/expert/tn_challenge/routing.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\vendor\\expert\\tn_challenge\\routing.py",
+    "sha256": "23ad5ca55e24bc3600e5bcde78d52475ba79d022fb61103d285bed01daa2e92e",
+    "bytes": 6891,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/vendor/expert/tn_challenge/run.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\vendor\\expert\\tn_challenge\\run.py",
+    "sha256": "c35f29e66d1f6eec590224414a25bf502ebde6ace32289ca1a17c309c1034983",
+    "bytes": 5779,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/vendor/expert/tn_challenge/sc_kernel.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\vendor\\expert\\tn_challenge\\sc_kernel.py",
+    "sha256": "9ae72618cb062a47db3573cb5edef3c26605ec54b08b113d15f497209e0aaa49",
+    "bytes": 3278,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/vendor/expert/tn_challenge/support_integral.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\vendor\\expert\\tn_challenge\\support_integral.py",
+    "sha256": "6caf2975075bebd8ea4f7a590fe04873e18bcd4324f5e3690b88bb8c6b41720e",
+    "bytes": 2978,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/vendor/expert/tn_challenge/text_arrays.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\vendor\\expert\\tn_challenge\\text_arrays.py",
+    "sha256": "ef7456bf426cccf4de261a976885c8f2f9609b775507d1f4d93f302b424a5e88",
+    "bytes": 2694,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/vendor/research/closures.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\vendor\\research\\closures.py",
+    "sha256": "02433a200de4911f3618aa0f37021821f94828b1c74f43c6597519bf70815aba",
+    "bytes": 14352,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/vendor/research/tagged_transport.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\vendor\\research\\tagged_transport.py",
+    "sha256": "b1a7df8a559e00a41c870a4dea14892ec694b9ce4594ce9ac69071a1a3280410",
+    "bytes": 2699,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "snapshot/vendor/transfer_research/scientific_models.py",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\vendor\\transfer_research\\scientific_models.py",
+    "sha256": "03d2769d8bc4c397de175cce597b04defe11968ae43e601b7aaa74831771eba5",
+    "bytes": 5791,
+    "role": "exact algorithm snapshot; see CODE_MAP.md for active entry points"
+  },
+  {
+    "path": "evidence/configs/campaign.json",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\configs\\campaign.json",
+    "sha256": "3bbc94a4c48fe7c5e4be6a22a32c122ecc9a42afb977541449ecbe22cbacf7ad",
+    "bytes": 1012,
+    "role": "frozen configuration, not an executable fresh-run config"
+  },
+  {
+    "path": "evidence/configs/folds.json",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\configs\\folds.json",
+    "sha256": "de3790c14903b1a8f63b12fbdf1df168a60d5690f30ac9673a3ffda8bc0c31d5",
+    "bytes": 4601,
+    "role": "frozen configuration, not an executable fresh-run config"
+  },
+  {
+    "path": "evidence/configs/jobs.json",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\configs\\jobs.json",
+    "sha256": "b3350e4724c4815190c3e668815b21ab4b6763b2db14d821ac19921f747cd381",
+    "bytes": 8589,
+    "role": "frozen configuration, not an executable fresh-run config"
+  },
+  {
+    "path": "evidence/configs/protocol.json",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\configs\\protocol.json",
+    "sha256": "70a363a84a8ea50eb324c3fc6577893428c7f697f7aa2365bf9c858f35620723",
+    "bytes": 502,
+    "role": "frozen configuration, not an executable fresh-run config"
+  },
+  {
+    "path": "evidence/reports/expert_diagnosis.md",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\reports\\expert_diagnosis.md",
+    "sha256": "bc5c9def520ae881f67cd18708ba61ce14351063c8d178583fbcb506d0985bc7",
+    "bytes": 34854,
+    "role": "archived experiment result; not rerun by public tests"
+  },
+  {
+    "path": "evidence/reports/actual_methods_and_deviations.md",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\reports\\actual_methods_and_deviations.md",
+    "sha256": "7cbcbe6dbae38db95c9d9306f8c4164ffb6d242adc976d1664572910a6882d84",
+    "bytes": 8141,
+    "role": "archived experiment result; not rerun by public tests"
+  },
+  {
+    "path": "evidence/reports/short_conclusion.md",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\reports\\short_conclusion.md",
+    "sha256": "2f96d44f9810f19d8371f793bb25f3fb534ecb15c8ebaac202db329d85db3832",
+    "bytes": 2130,
+    "role": "archived experiment result; not rerun by public tests"
+  },
+  {
+    "path": "evidence/reports/completion_audit.json",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\reports\\completion_audit.json",
+    "sha256": "2c30d39ab4ca09c3b2b840ea7fcfe923cda75ac6c19793ba199a99a9b1230853",
+    "bytes": 43844,
+    "role": "archived experiment result; not rerun by public tests"
+  },
+  {
+    "path": "evidence/reports/key_results.json",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\reports\\key_results.json",
+    "sha256": "f45d5b8cd67cdefeaa7e62f0497317fcf7822da7bedc4645286189e13d4d539c",
+    "bytes": 4829,
+    "role": "archived experiment result; not rerun by public tests"
+  },
+  {
+    "path": "evidence/reports/path_status.csv",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\reports\\path_status.csv",
+    "sha256": "648ab0ac4dfd30fd0b01123f74a36f493b35c940424f8892c93b64acb784ca53",
+    "bytes": 3654,
+    "role": "archived experiment result; not rerun by public tests"
+  },
+  {
+    "path": "evidence/reports/start_stability.csv",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\reports\\start_stability.csv",
+    "sha256": "77c92d5b4a9b8ebcd353b11e16d81b1602e2d9bccc8ab5e3e897d18cc7e0eac5",
+    "bytes": 1236,
+    "role": "archived experiment result; not rerun by public tests"
+  },
+  {
+    "path": "evidence/reports/preparation.json",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\reports\\preparation.json",
+    "sha256": "7729eb7316197d20cb3372cfb5ef006abebf8b7f9b256343e83fbac6c5b5109b",
+    "bytes": 4822,
+    "role": "archived experiment result; not rerun by public tests"
+  },
+  {
+    "path": "evidence/reports/extension_contract.json",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\reports\\extension_contract.json",
+    "sha256": "28f8aede9a2dd291f812756cfb7f514dc0c9bf960a71cd0702057bdaf12bb803",
+    "bytes": 2151,
+    "role": "archived experiment result; not rerun by public tests"
+  },
+  {
+    "path": "evidence/reports/global_validation.json",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\reports\\global_validation.json",
+    "sha256": "05181dd504d96a9edba49e1f696fb078d96fb5531da7d1e2d0a789dc9614f08f",
+    "bytes": 27453,
+    "role": "archived experiment result; not rerun by public tests"
+  },
+  {
+    "path": "evidence/reports/global_input_validation.json",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\reports\\global_input_validation.json",
+    "sha256": "3773ad8c5c783df54fda3dcf9fd62f97af27caee230fd901b727ff4a959465b2",
+    "bytes": 1931,
+    "role": "archived experiment result; not rerun by public tests"
+  },
+  {
+    "path": "evidence/reports/boundary_validation.json",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\reports\\boundary_validation.json",
+    "sha256": "e889239418685e67119251f1ee948c861811a6c081554da605b60d95148fd10f",
+    "bytes": 1296,
+    "role": "archived experiment result; not rerun by public tests"
+  },
+  {
+    "path": "evidence/reports/common_all41_outputs_validation.json",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\reports\\common_all41_outputs_validation.json",
+    "sha256": "37ec1ae947924600f017ac80ab2d68addc15409ab059c3b6004bc7f1e66a56f7",
+    "bytes": 304,
+    "role": "archived experiment result; not rerun by public tests"
+  },
+  {
+    "path": "evidence/reports/computation_accounting.json",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\reports\\computation_accounting.json",
+    "sha256": "d2c6e1fcb96c2ea695f582b0db1ce9ee116b233b7c395995d3caf1b61fc885e6",
+    "bytes": 11767,
+    "role": "archived experiment result; not rerun by public tests"
+  },
+  {
+    "path": "evidence/reports/input_prefix_validation.json",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\reports\\input_prefix_validation.json",
+    "sha256": "a47eaceaa7e32f4cc3094d03b3058fad66c898a5bbc7d9daf240161afa72bae4",
+    "bytes": 212,
+    "role": "archived experiment result; not rerun by public tests"
+  },
+  {
+    "path": "evidence/algorithm_and_input_provenance.json",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\evidence\\algorithm_and_input_provenance.json",
+    "sha256": "9ab5ecce22b1f8b5432740118b7c06c13c8e615c9c04ce84cd0f743e69963e95",
+    "bytes": 10481,
+    "role": "input and inherited algorithm hashes; no input values"
+  },
+  {
+    "path": "evidence/input_layout/FULL24.json",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\data\\domains\\FULL24\\arrays.json",
+    "sha256": "20cdad3d957305a78adecebdb909391a708466a26b60764f55bb413acc55ed1a",
+    "bytes": 5286,
+    "role": "array shapes, dtypes and hashes only; arrays omitted"
+  },
+  {
+    "path": "evidence/input_layout/FULL25.json",
+    "source": "E:\\SPARROW\\5_Test\\20260916_1\\data\\domains\\FULL25\\arrays.json",
+    "sha256": "bc2cff3bf038c48d946b811c1c1a75ce08d22587309340b1177c87cf8c1d4c14",
+    "bytes": 5286,
+    "role": "array shapes, dtypes and hashes only; arrays omitted"
+  }
+]
