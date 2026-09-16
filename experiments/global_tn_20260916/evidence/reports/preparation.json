@@ -1,0 +1,234 @@
+{
+  "status": "PREPARED",
+  "paths": 28,
+  "cohorts": [
+    {
+      "scope": "T24_L",
+      "stations": 34,
+      "hf_stations": 7,
+      "months": 1140,
+      "hf_months": 122,
+      "hf_days": 2752,
+      "floor": 0.10749427717441248,
+      "reference_stations": 34,
+      "spatial_block": null
+    },
+    {
+      "scope": "T24_G",
+      "stations": 116,
+      "hf_stations": 15,
+      "months": 3674,
+      "hf_months": 269,
+      "hf_days": 6194,
+      "floor": 0.10749427717441248,
+      "reference_stations": 34,
+      "spatial_block": null
+    },
+    {
+      "scope": "S56",
+      "stations": 104,
+      "hf_stations": 13,
+      "months": 3285,
+      "hf_months": 235,
+      "hf_days": 5432,
+      "floor": 0.09977330338806037,
+      "reference_stations": 22,
+      "spatial_block": "56"
+    },
+    {
+      "scope": "S113",
+      "stations": 100,
+      "hf_stations": 12,
+      "months": 3142,
+      "hf_months": 212,
+      "hf_days": 4821,
+      "floor": 0.10749427717441248,
+      "reference_stations": 34,
+      "spatial_block": "113"
+    },
+    {
+      "scope": "S191",
+      "stations": 98,
+      "hf_stations": 11,
+      "months": 3059,
+      "hf_months": 194,
+      "hf_days": 4503,
+      "floor": 0.10094398906657998,
+      "reference_stations": 26,
+      "spatial_block": "191"
+    },
+    {
+      "scope": "T25S_L",
+      "stations": 34,
+      "hf_stations": 7,
+      "months": 1501,
+      "hf_months": 191,
+      "hf_days": 4063,
+      "floor": 0.10061123253460429,
+      "reference_stations": 34,
+      "spatial_block": null
+    },
+    {
+      "scope": "T25S_G",
+      "stations": 116,
+      "hf_stations": 15,
+      "months": 4819,
+      "hf_months": 419,
+      "hf_days": 9079,
+      "floor": 0.10061123253460429,
+      "reference_stations": 34,
+      "spatial_block": null
+    }
+  ],
+  "spatial_blocks": {
+    "56": {
+      "outlet": 56,
+      "held_reaches": [
+        43,
+        44,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        67,
+        68,
+        71,
+        72,
+        73,
+        74,
+        75,
+        94,
+        95,
+        96,
+        97
+      ],
+      "buffer_reaches": [],
+      "held_stations": [
+        "\u4e09\u6eaa\u6865",
+        "\u5317\u6c5f\u77f3\u5c3e",
+        "\u5341\u91cc\u4ead",
+        "\u53e4\u5e02",
+        "\u5b98\u6e21",
+        "\u65b0\u576a\u5c71\u6865",
+        "\u6ec3\u6c5f\u5927\u7ad9",
+        "\u77f3\u89d2",
+        "\u8fde\u6c5f\u897f\u725b",
+        "\u957f\u575d",
+        "\u9ad8\u6865",
+        "\u9f99\u5f52"
+      ],
+      "buffer_stations": [],
+      "admitted": true
+    },
+    "113": {
+      "outlet": 113,
+      "held_reaches": [
+        106,
+        107,
+        108,
+        111,
+        112,
+        113,
+        122
+      ],
+      "buffer_reaches": [
+        3,
+        10,
+        18,
+        19,
+        20,
+        30,
+        31,
+        32,
+        33,
+        34,
+        114,
+        115,
+        143,
+        144
+      ],
+      "held_stations": [
+        "\u4e0a\u91d1",
+        "\u516b\u89d2\u7535\u7ad9",
+        "\u5e73\u800c\u5173",
+        "\u68c9\u6c5f",
+        "\u90a3\u5f04"
+      ],
+      "buffer_stations": [
+        "\u4e0a\u4e2d",
+        "\u516d\u666f",
+        "\u5357\u5cb8",
+        "\u53e4\u5c01",
+        "\u5c01\u5f00\u57ce\u4e0a",
+        "\u6b66\u6797\u6e21\u53e3",
+        "\u6e20\u7acb",
+        "\u706b\u7535\u5382",
+        "\u8001\u53e3",
+        "\u90c1\u6c5f\u53e3",
+        "\u90fd\u9a91"
+      ],
+      "admitted": true
+    },
+    "191": {
+      "outlet": 191,
+      "held_reaches": [
+        158,
+        190,
+        191
+      ],
+      "buffer_reaches": [
+        18,
+        19,
+        20,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        146,
+        147,
+        148,
+        149,
+        150,
+        153,
+        165,
+        167,
+        168,
+        192,
+        193,
+        194,
+        197
+      ],
+      "held_stations": [
+        "\u4e5d\u7538\u5927\u6865",
+        "\u5929\u751f\u6865",
+        "\u6c38\u660c\u6865",
+        "\u72d7\u8857",
+        "\u76d8\u6eaa\u5927\u6865",
+        "\u7984\u4e30\u6751"
+      ],
+      "buffer_stations": [
+        "\u53cc\u82cf\u6751",
+        "\u53e4\u5c01",
+        "\u5761\u811a",
+        "\u5792\u4ead",
+        "\u5c01\u5f00\u57ce\u4e0a",
+        "\u6b66\u6797\u6e21\u53e3",
+        "\u6c5f\u8fb9\u6865",
+        "\u8517\u9999\u5357",
+        "\u8f66\u6e21",
+        "\u90fd\u5b89",
+        "\u90fd\u9a91",
+        "\u957f\u8679\u6865"
+      ],
+      "admitted": true
+    }
+  },
+  "hf_2025_primary": false
+}

@@ -1,0 +1,185 @@
+{
+  "all_paths_numerically_sufficient": true,
+  "all_paths_physically_legal": true,
+  "global_daily_improved_stations": 11,
+  "global_daily_total_stations": 15,
+  "global_daily_monthly_gate_groups": 0,
+  "time_support_direction_reversals": 0,
+  "time_support_comparisons": 150,
+  "distinct_start_configs": [
+    "S191_D",
+    "T25S_L_D",
+    "T25S_L_M"
+  ],
+  "selected_mianjiang": [
+    {
+      "tag": "T24_L_M_s0",
+      "n": 225,
+      "NSE": 0.2972125629861794,
+      "r": 0.5883808404207415,
+      "RMSE": 0.36412593574787033,
+      "bias": 0.07804463218289079,
+      "centered_MSE": 0.1264967324716995
+    },
+    {
+      "tag": "T24_L_D_s0",
+      "n": 225,
+      "NSE": 0.35746769393516165,
+      "r": 0.6032051823706599,
+      "RMSE": 0.34816659744906897,
+      "bias": 0.021996719949472287,
+      "centered_MSE": 0.12073612389072653
+    },
+    {
+      "tag": "T24_G_M_s1",
+      "n": 225,
+      "NSE": -0.0036036843545321773,
+      "r": 0.6285084846860783,
+      "RMSE": 0.43513171905362547,
+      "bias": -0.2395769538872876,
+      "centered_MSE": 0.13194249609265174
+    },
+    {
+      "tag": "T24_G_D_s0",
+      "n": 225,
+      "NSE": -0.015703753764159778,
+      "r": 0.6289538389946007,
+      "RMSE": 0.4377469690458186,
+      "bias": -0.2425621957442399,
+      "centered_MSE": 0.1327859901045339
+    },
+    {
+      "tag": "S56_M_s0",
+      "n": 225,
+      "NSE": -0.006958470396477789,
+      "r": 0.6194185566561565,
+      "RMSE": 0.43585837837336844,
+      "bias": -0.24138702785734104,
+      "centered_MSE": 0.13170482878046166
+    },
+    {
+      "tag": "S56_D_s0",
+      "n": 225,
+      "NSE": -0.009376623996570022,
+      "r": 0.6291815328128917,
+      "RMSE": 0.4363814091301528,
+      "bias": -0.24356502065650773,
+      "centered_MSE": 0.13110481494701273
+    },
+    {
+      "tag": "S113_M_s1",
+      "n": 225,
+      "NSE": 0.33467758152247973,
+      "r": 0.642125921163515,
+      "RMSE": 0.3542873922743849,
+      "bias": -0.09095755510861099,
+      "centered_MSE": 0.11724627949324788
+    },
+    {
+      "tag": "S113_D_s0",
+      "n": 225,
+      "NSE": 0.3283318494322104,
+      "r": 0.6506761443722656,
+      "RMSE": 0.35597294912447847,
+      "bias": -0.10062849810347536,
+      "centered_MSE": 0.11659064587781738
+    },
+    {
+      "tag": "S191_M_s1",
+      "n": 225,
+      "NSE": 0.04490108607586252,
+      "r": 0.32886004452774026,
+      "RMSE": 0.4244864136982185,
+      "bias": -0.04117352794964863,
+      "centered_MSE": 0.17849345601055458
+    },
+    {
+      "tag": "S191_D_s0",
+      "n": 225,
+      "NSE": 0.05925443438270628,
+      "r": 0.33668640221324736,
+      "RMSE": 0.42128472131684863,
+      "bias": -0.04578639696393294,
+      "centered_MSE": 0.17538442226807596
+    }
+  ],
+  "within_month": [
+    {
+      "scope": "T24_L",
+      "cohort": "H",
+      "stations": 5,
+      "month_level_ratio": 0.936292833648659,
+      "within_month_ratio": 0.92347745119378
+    },
+    {
+      "scope": "T24_L",
+      "cohort": "N",
+      "stations": 2,
+      "month_level_ratio": 0.9875684268293103,
+      "within_month_ratio": 0.9504933849438856
+    },
+    {
+      "scope": "T24_L",
+      "cohort": "OTHER",
+      "stations": 7,
+      "month_level_ratio": 0.9688950785436943,
+      "within_month_ratio": 0.704522667497804
+    },
+    {
+      "scope": "T24_L",
+      "cohort": "X",
+      "stations": 1,
+      "month_level_ratio": 0.7743621412905688,
+      "within_month_ratio": 0.9536797738761983
+    },
+    {
+      "scope": "T24_G",
+      "cohort": "H",
+      "stations": 5,
+      "month_level_ratio": 0.9955782618935206,
+      "within_month_ratio": 0.9872110395371899
+    },
+    {
+      "scope": "T24_G",
+      "cohort": "N",
+      "stations": 2,
+      "month_level_ratio": 0.9966175525374952,
+      "within_month_ratio": 0.9073423388854345
+    },
+    {
+      "scope": "T24_G",
+      "cohort": "OTHER",
+      "stations": 7,
+      "month_level_ratio": 1.0053370942374333,
+      "within_month_ratio": 0.9930054855820801
+    },
+    {
+      "scope": "T24_G",
+      "cohort": "X",
+      "stations": 1,
+      "month_level_ratio": 1.0154459255650998,
+      "within_month_ratio": 1.0062040528872631
+    },
+    {
+      "scope": "S56",
+      "cohort": "N",
+      "stations": 2,
+      "month_level_ratio": 0.9857466097385444,
+      "within_month_ratio": 0.9792750349749891
+    },
+    {
+      "scope": "S113",
+      "cohort": "X",
+      "stations": 1,
+      "month_level_ratio": 1.0065658827198336,
+      "within_month_ratio": 1.001286297695911
+    },
+    {
+      "scope": "S191",
+      "cohort": "H",
+      "stations": 4,
+      "month_level_ratio": 0.9888203338381164,
+      "within_month_ratio": 0.9994176343289239
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.nbc
+*.nbi
+experiments/global_tn_20260916/snapshot/work/
+experiments/global_tn_20260916/snapshot/data/
+experiments/global_tn_20260916/snapshot/outputs/

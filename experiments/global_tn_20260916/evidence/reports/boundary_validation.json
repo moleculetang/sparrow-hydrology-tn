@@ -1,0 +1,49 @@
+{
+  "status": "PASS_BOUNDARIES",
+  "checks": {
+    "independent_1961_2024_recurrence": {
+      "fast": 2.9103830456733704e-10,
+      "slow": 2.9103830456733704e-10,
+      "available": 3.725290298461914e-08,
+      "M": 3.725290298461914e-08,
+      "L": 2.942979335784912e-07
+    },
+    "zero_source_exhausted": true,
+    "zero_carrier_no_export": {
+      "local_balance_max_kg": 2.0489096641540527e-08,
+      "network_balance_kg": 0.0,
+      "network_scale_kg": 1.0,
+      "minima": {
+        "M": 369.580145145184,
+        "L": 0.0,
+        "available": 370.10849408334917,
+        "uptake": 0.0,
+        "mineral_loss": 0.528348938165142,
+        "fast": 0.0,
+        "slow": 0.0
+      },
+      "uptake_excess": 0.0
+    },
+    "uptake_supply_cap": true,
+    "reservoir_off_on_storage": 0.0,
+    "actual_reservoir_history": {
+      "reservoirs": 13,
+      "enabled_days": 197886,
+      "disabled_days": 106002,
+      "history_years": [
+        1961,
+        2024
+      ]
+    },
+    "future_hydrology_causality": 0.0,
+    "full_domain_graph_from_v3": true
+  },
+  "peak": {
+    "pid": 49480,
+    "created": 134339646009589135,
+    "cpu_seconds": 14.359375,
+    "rss_gib": 3.5123252868652344,
+    "peak_gib": 4.780712127685547,
+    "alive": true
+  }
+}

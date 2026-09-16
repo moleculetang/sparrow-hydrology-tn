@@ -1,0 +1,909 @@
+{
+  "status": "PASS_GLOBAL_CORE",
+  "checks": {
+    "T24_L_monthly_prediction": 1.7763568394002505e-14,
+    "T24_L_eta_decomposition": 2.220446049250313e-14,
+    "T24_L_M_gradient": [
+      {
+        "index": 0,
+        "analytic": 47.07866878463188,
+        "finite_difference": 47.07866878046473,
+        "relative_error": 8.851457595763609e-11
+      },
+      {
+        "index": 1,
+        "analytic": 15.056408685049135,
+        "finite_difference": 15.05640868444402,
+        "relative_error": 4.01898084491907e-11
+      },
+      {
+        "index": 2,
+        "analytic": -575.972942161444,
+        "finite_difference": -575.9729429442473,
+        "relative_error": 1.3590972219681332e-09
+      },
+      {
+        "index": 3,
+        "analytic": 43.61209765247844,
+        "finite_difference": 43.61209763497487,
+        "relative_error": 4.0134658817857747e-10
+      },
+      {
+        "index": 21,
+        "analytic": -29.8165237391269,
+        "finite_difference": -29.81652374103305,
+        "relative_error": 6.39292542881066e-11
+      },
+      {
+        "index": 29,
+        "analytic": 10.789784110246691,
+        "finite_difference": 10.789784111864265,
+        "relative_error": 1.4991714512787365e-10
+      }
+    ],
+    "T24_L_D_gradient": [
+      {
+        "index": 0,
+        "analytic": 47.64614318109404,
+        "finite_difference": 47.64614317736004,
+        "relative_error": 7.836943985602558e-11
+      },
+      {
+        "index": 1,
+        "analytic": 15.115881694669518,
+        "finite_difference": 15.11588169549327,
+        "relative_error": 5.4495778022496384e-11
+      },
+      {
+        "index": 2,
+        "analytic": -581.1211870209206,
+        "finite_difference": -581.1211878068434,
+        "relative_error": 1.3524249502543478e-09
+      },
+      {
+        "index": 3,
+        "analytic": 44.04010759349196,
+        "finite_difference": 44.04010757558175,
+        "relative_error": 4.066795287860596e-10
+      },
+      {
+        "index": 21,
+        "analytic": -30.211795527672503,
+        "finite_difference": -30.211795530732385,
+        "relative_error": 1.0128101238354697e-10
+      },
+      {
+        "index": 29,
+        "analytic": 11.020791353496312,
+        "finite_difference": 11.020791355065283,
+        "relative_error": 1.4236461616640924e-10
+      }
+    ],
+    "T24_L_physics": {
+      "local": 1.234002411365509e-08,
+      "network": 2.8312206268310547e-06,
+      "scale": 73877962492.5358,
+      "source_error": 5.8673322200775146e-08
+    },
+    "T24_L_elapsed": 26.36026906967163,
+    "T24_G_monthly_prediction": 2.1316282072803006e-14,
+    "T24_G_eta_decomposition": 1.5987211554602254e-14,
+    "T24_G_M_gradient": [
+      {
+        "index": 0,
+        "analytic": 72.11657376996305,
+        "finite_difference": 72.11657376551273,
+        "relative_error": 6.171019882651588e-11
+      },
+      {
+        "index": 1,
+        "analytic": 14.028437760296868,
+        "finite_difference": 14.028437762192423,
+        "relative_error": 1.351223667615488e-10
+      },
+      {
+        "index": 2,
+        "analytic": -712.2266176049642,
+        "finite_difference": -712.2266185078273,
+        "relative_error": 1.2676627041074687e-09
+      },
+      {
+        "index": 3,
+        "analytic": 60.75077045039774,
+        "finite_difference": 60.75077042544026,
+        "relative_error": 4.108174999832338e-10
+      },
+      {
+        "index": 21,
+        "analytic": -38.39131009793584,
+        "finite_difference": -38.39131009613084,
+        "relative_error": 4.701600226461524e-11
+      },
+      {
+        "index": 29,
+        "analytic": 12.10983054914968,
+        "finite_difference": 12.109830545625753,
+        "relative_error": 2.9099713869312743e-10
+      }
+    ],
+    "T24_G_D_gradient": [
+      {
+        "index": 0,
+        "analytic": 72.65444357255998,
+        "finite_difference": 72.65444356896467,
+        "relative_error": 4.948517453920121e-11
+      },
+      {
+        "index": 1,
+        "analytic": 14.127742734630354,
+        "finite_difference": 14.127742734615365,
+        "relative_error": 1.060954980027918e-12
+      },
+      {
+        "index": 2,
+        "analytic": -718.8707284316728,
+        "finite_difference": -718.8707293380502,
+        "relative_error": 1.260835045429115e-09
+      },
+      {
+        "index": 3,
+        "analytic": 61.427008545720504,
+        "finite_difference": 61.42700852012996,
+        "relative_error": 4.166008633693e-10
+      },
+      {
+        "index": 4,
+        "analytic": -8.546871266226116,
+        "finite_difference": -8.546871266901235,
+        "relative_error": 7.899014815904116e-11
+      },
+      {
+        "index": 5,
+        "analytic": -164.157508946437,
+        "finite_difference": -164.15750890672598,
+        "relative_error": 2.419079798602683e-10
+      },
+      {
+        "index": 6,
+        "analytic": 89.22610378029559,
+        "finite_difference": 89.22610376771443,
+        "relative_error": 1.4100306259524269e-10
+      },
+      {
+        "index": 7,
+        "analytic": -39.95322929647906,
+        "finite_difference": -39.953229310185634,
+        "relative_error": 3.4306552103189725e-10
+      },
+      {
+        "index": 8,
+        "analytic": 68.72322490493693,
+        "finite_difference": 68.72322489641647,
+        "relative_error": 1.2398223478014395e-10
+      },
+      {
+        "index": 9,
+        "analytic": -59.897431620154016,
+        "finite_difference": -59.89743161052274,
+        "relative_error": 1.6079619150639894e-10
+      },
+      {
+        "index": 10,
+        "analytic": -47.597655339713015,
+        "finite_difference": -47.59765533890458,
+        "relative_error": 1.6984748569983732e-11
+      },
+      {
+        "index": 11,
+        "analytic": -0.8029678394344284,
+        "finite_difference": -0.8029678497223357,
+        "relative_error": 1.0287907303840882e-08
+      },
+      {
+        "index": 12,
+        "analytic": -26.129147000593818,
+        "finite_difference": -26.129147013875805,
+        "relative_error": 5.083207292869231e-10
+      },
+      {
+        "index": 13,
+        "analytic": 12.656859818567064,
+        "finite_difference": 12.65685981337583,
+        "relative_error": 4.1015182151517347e-10
+      },
+      {
+        "index": 14,
+        "analytic": -4.843295188164275,
+        "finite_difference": -4.8432951999188845,
+        "relative_error": 2.426986017745945e-09
+      },
+      {
+        "index": 15,
+        "analytic": 16.327119303710926,
+        "finite_difference": 16.32711929744346,
+        "relative_error": 3.8386848464604617e-10
+      },
+      {
+        "index": 16,
+        "analytic": -9.305680281558725,
+        "finite_difference": -9.305680273996586,
+        "relative_error": 8.12636919639062e-10
+      },
+      {
+        "index": 17,
+        "analytic": -9.032763188077247,
+        "finite_difference": -9.032763205141237,
+        "relative_error": 1.8891217388431884e-09
+      },
+      {
+        "index": 18,
+        "analytic": -128.44761390735997,
+        "finite_difference": -128.44761390624626,
+        "relative_error": 8.670497256832005e-12
+      },
+      {
+        "index": 19,
+        "analytic": -77.70043684626746,
+        "finite_difference": -77.70043684303118,
+        "relative_error": 4.1650738505629917e-11
+      },
+      {
+        "index": 20,
+        "analytic": -5.66076130619507,
+        "finite_difference": -5.660761308945438,
+        "relative_error": 4.858653780465001e-10
+      },
+      {
+        "index": 21,
+        "analytic": -38.7793308333782,
+        "finite_difference": -38.779330829186165,
+        "relative_error": 1.0809963763273186e-10
+      },
+      {
+        "index": 22,
+        "analytic": -31.01774151965553,
+        "finite_difference": -31.01774152156622,
+        "relative_error": 6.15998587447413e-11
+      },
+      {
+        "index": 23,
+        "analytic": -24.21693076238908,
+        "finite_difference": -24.216930762577245,
+        "relative_error": 7.77001549571943e-12
+      },
+      {
+        "index": 24,
+        "analytic": -36.67449664913581,
+        "finite_difference": -36.674496655564326,
+        "relative_error": 1.7528569430411203e-10
+      },
+      {
+        "index": 25,
+        "analytic": -12.393525878951943,
+        "finite_difference": -12.39352587703024,
+        "relative_error": 1.5505691660976837e-10
+      },
+      {
+        "index": 26,
+        "analytic": -13.81497470628772,
+        "finite_difference": -13.81497470731574,
+        "relative_error": 7.441347938050736e-11
+      },
+      {
+        "index": 27,
+        "analytic": -38.652865156074455,
+        "finite_difference": -38.652865156052485,
+        "relative_error": 5.683920532408352e-13
+      },
+      {
+        "index": 28,
+        "analytic": -35.03522379303247,
+        "finite_difference": -35.035223793045134,
+        "relative_error": 3.6140404371438617e-13
+      },
+      {
+        "index": 29,
+        "analytic": 12.4912526414202,
+        "finite_difference": 12.491252640245419,
+        "relative_error": 9.404830684025877e-11
+      }
+    ],
+    "T24_G_physics": {
+      "local": 1.234002411365509e-08,
+      "network": 2.8312206268310547e-06,
+      "scale": 73877962492.5358,
+      "source_error": 5.8673322200775146e-08
+    },
+    "T24_G_elapsed": 75.74278473854065,
+    "S56_monthly_prediction": 2.842170943040401e-14,
+    "S56_eta_decomposition": 1.554312234475219e-14,
+    "S56_M_gradient": [
+      {
+        "index": 0,
+        "analytic": 80.98355195564972,
+        "finite_difference": 80.98355195045315,
+        "relative_error": 6.416819691586368e-11
+      },
+      {
+        "index": 1,
+        "analytic": 15.373496678706818,
+        "finite_difference": 15.373496682968833,
+        "relative_error": 2.772313175734076e-10
+      },
+      {
+        "index": 2,
+        "analytic": -782.7293435072036,
+        "finite_difference": -782.7293445075155,
+        "relative_error": 1.2779793694681728e-09
+      },
+      {
+        "index": 3,
+        "analytic": 66.94245740686654,
+        "finite_difference": 66.9424573796789,
+        "relative_error": 4.0613446025283095e-10
+      },
+      {
+        "index": 21,
+        "analytic": -41.94733548933463,
+        "finite_difference": -41.947335486725024,
+        "relative_error": 6.221141747757186e-11
+      },
+      {
+        "index": 29,
+        "analytic": 13.674157496774741,
+        "finite_difference": 13.674157490584092,
+        "relative_error": 4.527262299010273e-10
+      }
+    ],
+    "S56_D_gradient": [
+      {
+        "index": 0,
+        "analytic": 81.55720564749669,
+        "finite_difference": 81.55720564246849,
+        "relative_error": 6.165241025916426e-11
+      },
+      {
+        "index": 1,
+        "analytic": 15.482220395820917,
+        "finite_difference": 15.48222039673419,
+        "relative_error": 5.898850354584655e-11
+      },
+      {
+        "index": 2,
+        "analytic": -789.9214319537447,
+        "finite_difference": -789.9214329583514,
+        "relative_error": 1.2717805340009407e-09
+      },
+      {
+        "index": 3,
+        "analytic": 67.66789013528154,
+        "finite_difference": 67.6678901077331,
+        "relative_error": 4.0711241538971194e-10
+      },
+      {
+        "index": 21,
+        "analytic": -42.33336960008806,
+        "finite_difference": -42.333369596292414,
+        "relative_error": 8.966090523890127e-11
+      },
+      {
+        "index": 29,
+        "analytic": 14.099888855595852,
+        "finite_difference": 14.099888855412244,
+        "relative_error": 1.3021932124040813e-11
+      }
+    ],
+    "S56_physics": {
+      "local": 1.234002411365509e-08,
+      "network": 2.8312206268310547e-06,
+      "scale": 73877962492.5358,
+      "source_error": 5.8673322200775146e-08
+    },
+    "S56_elapsed": 102.35870742797852,
+    "S113_monthly_prediction": 4.263256414560601e-14,
+    "S113_eta_decomposition": 6.217248937900877e-15,
+    "S113_M_gradient": [
+      {
+        "index": 0,
+        "analytic": 66.43226966467526,
+        "finite_difference": 66.432269660055,
+        "relative_error": 6.954845182976921e-11
+      },
+      {
+        "index": 1,
+        "analytic": 14.636267294803174,
+        "finite_difference": 14.636267296452841,
+        "relative_error": 1.127109143472686e-10
+      },
+      {
+        "index": 2,
+        "analytic": -780.3911531418878,
+        "finite_difference": -780.3911541103047,
+        "relative_error": 1.2409378032552568e-09
+      },
+      {
+        "index": 3,
+        "analytic": 60.40853727867183,
+        "finite_difference": 60.40853725378178,
+        "relative_error": 4.1202866770376005e-10
+      },
+      {
+        "index": 21,
+        "analytic": -38.07581024769395,
+        "finite_difference": -38.07581024375395,
+        "relative_error": 1.0347782691223298e-10
+      },
+      {
+        "index": 29,
+        "analytic": 12.281824096309364,
+        "finite_difference": 12.281824095339287,
+        "relative_error": 7.898479445509873e-11
+      }
+    ],
+    "S113_D_gradient": [
+      {
+        "index": 0,
+        "analytic": 67.0139611208212,
+        "finite_difference": 67.01396111594704,
+        "relative_error": 7.273339100594233e-11
+      },
+      {
+        "index": 1,
+        "analytic": 14.733275667304211,
+        "finite_difference": 14.7332756682772,
+        "relative_error": 6.604022232037859e-11
+      },
+      {
+        "index": 2,
+        "analytic": -787.5422268457287,
+        "finite_difference": -787.5422278203813,
+        "relative_error": 1.2375877420668298e-09
+      },
+      {
+        "index": 3,
+        "analytic": 61.14513772554228,
+        "finite_difference": 61.145137700278,
+        "relative_error": 4.131853933232783e-10
+      },
+      {
+        "index": 21,
+        "analytic": -38.49275993806947,
+        "finite_difference": -38.49275993559331,
+        "relative_error": 6.432784172866574e-11
+      },
+      {
+        "index": 29,
+        "analytic": 12.704246461698226,
+        "finite_difference": 12.704246458383748,
+        "relative_error": 2.6089525193620005e-10
+      }
+    ],
+    "S113_physics": {
+      "local": 1.234002411365509e-08,
+      "network": 2.8312206268310547e-06,
+      "scale": 73877962492.5358,
+      "source_error": 5.8673322200775146e-08
+    },
+    "S113_elapsed": 128.5535101890564,
+    "S191_monthly_prediction": 2.1316282072803006e-14,
+    "S191_eta_decomposition": 5.773159728050814e-14,
+    "S191_M_gradient": [
+      {
+        "index": 0,
+        "analytic": 82.6426006508845,
+        "finite_difference": 82.64260064620998,
+        "relative_error": 5.65630620672937e-11
+      },
+      {
+        "index": 1,
+        "analytic": 17.502719241076974,
+        "finite_difference": 17.50271924407798,
+        "relative_error": 1.7145939578546343e-10
+      },
+      {
+        "index": 2,
+        "analytic": -779.1965490096792,
+        "finite_difference": -779.1965499023944,
+        "relative_error": 1.1456868061826885e-09
+      },
+      {
+        "index": 3,
+        "analytic": 69.45554631973893,
+        "finite_difference": 69.45554629131337,
+        "relative_error": 4.0926264464431144e-10
+      },
+      {
+        "index": 21,
+        "analytic": -44.99350473013094,
+        "finite_difference": -44.99350472855212,
+        "relative_error": 3.5089928266341354e-11
+      },
+      {
+        "index": 29,
+        "analytic": 14.695041906620023,
+        "finite_difference": 14.695041902257342,
+        "relative_error": 2.968811460995775e-10
+      }
+    ],
+    "S191_D_gradient": [
+      {
+        "index": 0,
+        "analytic": 83.12611628075749,
+        "finite_difference": 83.12611627694366,
+        "relative_error": 4.587997243196683e-11
+      },
+      {
+        "index": 1,
+        "analytic": 17.620749731727805,
+        "finite_difference": 17.620749730440366,
+        "relative_error": 7.306383144599847e-11
+      },
+      {
+        "index": 2,
+        "analytic": -785.8843760321478,
+        "finite_difference": -785.884376925594,
+        "relative_error": 1.1368672533076502e-09
+      },
+      {
+        "index": 3,
+        "analytic": 70.16036369369289,
+        "finite_difference": 70.1603636644169,
+        "relative_error": 4.172723630477053e-10
+      },
+      {
+        "index": 21,
+        "analytic": -45.383490373155624,
+        "finite_difference": -45.38349037375155,
+        "relative_error": 1.3130878258744586e-11
+      },
+      {
+        "index": 29,
+        "analytic": 15.083229725505655,
+        "finite_difference": 15.08322972370024,
+        "relative_error": 1.1969681012855053e-10
+      }
+    ],
+    "S191_physics": {
+      "local": 1.234002411365509e-08,
+      "network": 2.8312206268310547e-06,
+      "scale": 73877962492.5358,
+      "source_error": 5.8673322200775146e-08
+    },
+    "S191_elapsed": 154.1551229953766,
+    "T25S_L_monthly_prediction": 2.1316282072803006e-14,
+    "T25S_L_eta_decomposition": 9.769962616701378e-15,
+    "T25S_L_M_gradient": [
+      {
+        "index": 0,
+        "analytic": 42.447252014399375,
+        "finite_difference": 42.44725201054678,
+        "relative_error": 9.076201774195264e-11
+      },
+      {
+        "index": 1,
+        "analytic": 11.771966557556382,
+        "finite_difference": 11.771966558171696,
+        "relative_error": 5.2269433396373543e-11
+      },
+      {
+        "index": 2,
+        "analytic": -498.4740146778915,
+        "finite_difference": -498.474015296324,
+        "relative_error": 1.240651476290163e-09
+      },
+      {
+        "index": 3,
+        "analytic": 38.399076229433355,
+        "finite_difference": 38.399076213870146,
+        "relative_error": 4.0530166129264175e-10
+      },
+      {
+        "index": 21,
+        "analytic": -25.65956606044446,
+        "finite_difference": -25.659566062330438,
+        "relative_error": 7.349991092516368e-11
+      },
+      {
+        "index": 29,
+        "analytic": 7.432830519898041,
+        "finite_difference": 7.432830521025834,
+        "relative_error": 1.5173129091715295e-10
+      }
+    ],
+    "T25S_L_D_gradient": [
+      {
+        "index": 0,
+        "analytic": 43.42826183690455,
+        "finite_difference": 43.42826183272308,
+        "relative_error": 9.628443928865517e-11
+      },
+      {
+        "index": 1,
+        "analytic": 11.832531664982975,
+        "finite_difference": 11.832531664879296,
+        "relative_error": 8.76218599906736e-12
+      },
+      {
+        "index": 2,
+        "analytic": -506.24828351752217,
+        "finite_difference": -506.2482841395876,
+        "relative_error": 1.2287754096188916e-09
+      },
+      {
+        "index": 3,
+        "analytic": 39.03895582417235,
+        "finite_difference": 39.03895580843469,
+        "relative_error": 4.0312693827748504e-10
+      },
+      {
+        "index": 21,
+        "analytic": -26.227082474853436,
+        "finite_difference": -26.22708247770333,
+        "relative_error": 1.0866227858172635e-10
+      },
+      {
+        "index": 29,
+        "analytic": 7.780727620152227,
+        "finite_difference": 7.780727620598781,
+        "relative_error": 5.739230657329771e-11
+      }
+    ],
+    "T25S_L_physics": {
+      "local": 1.234002411365509e-08,
+      "network": -5.662441253662109e-06,
+      "scale": 75708898951.07451,
+      "source_error": 6.426125764846802e-08
+    },
+    "T25S_L_elapsed": 179.9274160861969,
+    "T25S_G_monthly_prediction": 2.842170943040401e-14,
+    "T25S_G_eta_decomposition": 2.220446049250313e-14,
+    "T25S_G_M_gradient": [
+      {
+        "index": 0,
+        "analytic": 66.49906346674194,
+        "finite_difference": 66.49906346289924,
+        "relative_error": 5.778578193121104e-11
+      },
+      {
+        "index": 1,
+        "analytic": 11.084709507019165,
+        "finite_difference": 11.084709508679678,
+        "relative_error": 1.4980216695578426e-10
+      },
+      {
+        "index": 2,
+        "analytic": -619.70453107914,
+        "finite_difference": -619.7045318728556,
+        "relative_error": 1.2807967840595521e-09
+      },
+      {
+        "index": 3,
+        "analytic": 54.911240650597904,
+        "finite_difference": 54.91124062827559,
+        "relative_error": 4.0651624050335937e-10
+      },
+      {
+        "index": 21,
+        "analytic": -34.37294514433501,
+        "finite_difference": -34.37294514299083,
+        "relative_error": 3.910585565433921e-11
+      },
+      {
+        "index": 29,
+        "analytic": 8.468357930944869,
+        "finite_difference": 8.46835792742695,
+        "relative_error": 4.154191910305582e-10
+      }
+    ],
+    "T25S_G_D_gradient": [
+      {
+        "index": 0,
+        "analytic": 67.19456345198456,
+        "finite_difference": 67.19456344761454,
+        "relative_error": 6.503535913524634e-11
+      },
+      {
+        "index": 1,
+        "analytic": 11.1649236982616,
+        "finite_difference": 11.16492369988009,
+        "relative_error": 1.4496205027745002e-10
+      },
+      {
+        "index": 2,
+        "analytic": -626.6776623150477,
+        "finite_difference": -626.6776631179027,
+        "relative_error": 1.2811292487330144e-09
+      },
+      {
+        "index": 3,
+        "analytic": 55.58855036836442,
+        "finite_difference": 55.58855034536703,
+        "relative_error": 4.137073283271385e-10
+      },
+      {
+        "index": 4,
+        "analytic": -19.20081051770579,
+        "finite_difference": -19.20081051878242,
+        "relative_error": 5.607203732494785e-11
+      },
+      {
+        "index": 5,
+        "analytic": -146.79117688228845,
+        "finite_difference": -146.79117685290066,
+        "relative_error": 2.002013498346626e-10
+      },
+      {
+        "index": 6,
+        "analytic": 90.56621190709745,
+        "finite_difference": 90.56621188676671,
+        "relative_error": 2.2448487862453878e-10
+      },
+      {
+        "index": 7,
+        "analytic": -36.74443346918775,
+        "finite_difference": -36.74443348273826,
+        "relative_error": 3.6877726880968496e-10
+      },
+      {
+        "index": 8,
+        "analytic": 53.856353714715326,
+        "finite_difference": 53.85635370629415,
+        "relative_error": 1.563636282016587e-10
+      },
+      {
+        "index": 9,
+        "analytic": -53.52359809643228,
+        "finite_difference": -53.5235980919424,
+        "relative_error": 8.388606483521456e-11
+      },
+      {
+        "index": 10,
+        "analytic": -48.37917394571885,
+        "finite_difference": -48.37917394695523,
+        "relative_error": 2.5556035510547916e-11
+      },
+      {
+        "index": 11,
+        "analytic": -3.496078996430798,
+        "finite_difference": -3.496079006026775,
+        "relative_error": 2.7447826223134325e-09
+      },
+      {
+        "index": 12,
+        "analytic": -22.032721680879618,
+        "finite_difference": -22.032721696518816,
+        "relative_error": 7.098169076060629e-10
+      },
+      {
+        "index": 13,
+        "analytic": 11.180349287372273,
+        "finite_difference": 11.180349282824407,
+        "relative_error": 4.067731666364636e-10
+      },
+      {
+        "index": 14,
+        "analytic": -4.512704818462441,
+        "finite_difference": -4.512704833814496,
+        "relative_error": 3.40196296986574e-09
+      },
+      {
+        "index": 15,
+        "analytic": 13.223615508000883,
+        "finite_difference": 13.223615498247907,
+        "relative_error": 7.375422637133698e-10
+      },
+      {
+        "index": 16,
+        "analytic": -7.06305568679003,
+        "finite_difference": -7.063055676326257,
+        "relative_error": 1.4814796064517867e-09
+      },
+      {
+        "index": 17,
+        "analytic": -9.075161680607634,
+        "finite_difference": -9.075161696614487,
+        "relative_error": 1.7638090942387177e-09
+      },
+      {
+        "index": 18,
+        "analytic": -115.27871173379623,
+        "finite_difference": -115.27871173200309,
+        "relative_error": 1.5554822151028687e-11
+      },
+      {
+        "index": 19,
+        "analytic": -65.33522739039958,
+        "finite_difference": -65.33522739573527,
+        "relative_error": 8.166639941696017e-11
+      },
+      {
+        "index": 20,
+        "analytic": -4.951918867629079,
+        "finite_difference": -4.951918866424876,
+        "relative_error": 2.4317905679804173e-10
+      },
+      {
+        "index": 21,
+        "analytic": -34.8048934148441,
+        "finite_difference": -34.804893414275284,
+        "relative_error": 1.6343043344669253e-11
+      },
+      {
+        "index": 22,
+        "analytic": -28.570881578437543,
+        "finite_difference": -28.57088157526277,
+        "relative_error": 1.1111916292187592e-10
+      },
+      {
+        "index": 23,
+        "analytic": -22.097128395151834,
+        "finite_difference": -22.09712839373878,
+        "relative_error": 6.394734920409205e-11
+      },
+      {
+        "index": 24,
+        "analytic": -30.05185047289271,
+        "finite_difference": -30.051850473000737,
+        "relative_error": 3.5946992658019867e-12
+      },
+      {
+        "index": 25,
+        "analytic": -12.351241422521493,
+        "finite_difference": -12.351241423402824,
+        "relative_error": 7.135562603563996e-11
+      },
+      {
+        "index": 26,
+        "analytic": -13.89556871026759,
+        "finite_difference": -13.895568710609039,
+        "relative_error": 2.4572548445029502e-11
+      },
+      {
+        "index": 27,
+        "analytic": -34.72197209007031,
+        "finite_difference": -34.72197209504202,
+        "relative_error": 1.431862839204194e-10
+      },
+      {
+        "index": 28,
+        "analytic": -30.751864999415226,
+        "finite_difference": -30.751865007516695,
+        "relative_error": 2.634464516322162e-10
+      },
+      {
+        "index": 29,
+        "analytic": 8.774766897884126,
+        "finite_difference": 8.774766894248387,
+        "relative_error": 4.1434021705966015e-10
+      }
+    ],
+    "T25S_G_physics": {
+      "local": 1.234002411365509e-08,
+      "network": -5.662441253662109e-06,
+      "scale": 75708898951.07451,
+      "source_error": 6.426125764846802e-08
+    },
+    "T25S_G_elapsed": 232.5997040271759,
+    "OU_minimum_water": 3704.807630591444,
+    "OU_physics": {
+      "local": 1.257285475730896e-08,
+      "network": 5.960464477539062e-07,
+      "scale": 73791501762.03757,
+      "source_error": 7.450580596923828e-08
+    },
+    "OU_independent_boundary": 4.656612873077393e-10,
+    "OU_FW_regression": 3.552713678800501e-14,
+    "2025_prefix_prediction": 0.0,
+    "runtime_identity_and_counter": true,
+    "daily_monthly_reconstruction": true
+  },
+  "elapsed_seconds": 240.8844027519226,
+  "process": {
+    "pid": 50912,
+    "created": 134339642959314777,
+    "cpu_seconds": 240.40625,
+    "rss_gib": 3.644317626953125,
+    "peak_gib": 6.562587738037109,
+    "alive": true
+  }
+}

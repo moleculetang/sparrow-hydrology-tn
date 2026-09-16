@@ -1,0 +1,16 @@
+{
+  "status": "PASS_ALL41_COMMON_BOUNDARIES",
+  "stations": 41,
+  "years": [
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "includes_X": true,
+  "no_observation_labels": true,
+  "checks": {
+    "prediction_max_error": 0.0,
+    "all_parameter_adjoint_max_error": 4.551914400963142e-15
+  }
+}

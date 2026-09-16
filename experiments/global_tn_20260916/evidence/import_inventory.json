@@ -1,0 +1,579 @@
+{
+  "snapshot/scripts/account_computation.py": [
+    "json",
+    "native_runtime",
+    "pandas",
+    "time"
+  ],
+  "snapshot/scripts/apply_resource_profile.py": [
+    "copy",
+    "ctypes",
+    "json",
+    "native_runtime",
+    "os",
+    "recover_controller",
+    "subprocess",
+    "sys",
+    "time"
+  ],
+  "snapshot/scripts/audit_job.py": [
+    "argparse",
+    "campaign_model",
+    "gc",
+    "native_runtime",
+    "serial_solvers",
+    "temporal_model",
+    "time"
+  ],
+  "snapshot/scripts/bootstrap.py": [
+    "hashlib",
+    "json",
+    "os",
+    "pathlib",
+    "shutil",
+    "sys",
+    "time"
+  ],
+  "snapshot/scripts/bootstrap_global.py": [
+    "hashlib",
+    "json",
+    "numpy",
+    "os",
+    "pandas",
+    "pathlib",
+    "release_loader",
+    "shutil",
+    "sys",
+    "time"
+  ],
+  "snapshot/scripts/campaign_controller.py": [
+    "ctypes",
+    "hashlib",
+    "json",
+    "native_runtime",
+    "os",
+    "pathlib",
+    "recover_controller",
+    "subprocess",
+    "sys",
+    "time",
+    "traceback"
+  ],
+  "snapshot/scripts/campaign_model.py": [
+    "closures",
+    "copy",
+    "hashlib",
+    "hf_model",
+    "json",
+    "math",
+    "mix_routing",
+    "model",
+    "native_runtime",
+    "numpy",
+    "os",
+    "pandas",
+    "pathlib",
+    "routing",
+    "scientific_models",
+    "support_integral",
+    "sys",
+    "tagged_transport",
+    "torch",
+    "types"
+  ],
+  "snapshot/scripts/close_campaign.py": [
+    "json",
+    "native_runtime",
+    "time"
+  ],
+  "snapshot/scripts/diagnose_old_extrapolation.py": [
+    "campaign_model",
+    "gc",
+    "native_runtime"
+  ],
+  "snapshot/scripts/document_sources.py": [
+    "native_runtime"
+  ],
+  "snapshot/scripts/finalize_global.py": [
+    "hf_metrics",
+    "json",
+    "native_runtime",
+    "numpy",
+    "os",
+    "pandas",
+    "pathlib",
+    "subprocess",
+    "sys",
+    "time"
+  ],
+  "snapshot/scripts/finalize_hf.py": [
+    "campaign_model",
+    "gc",
+    "hf_metrics",
+    "native_runtime",
+    "os",
+    "predict_extra",
+    "subprocess",
+    "sys",
+    "time"
+  ],
+  "snapshot/scripts/finish_evidence.py": [
+    "hf_metrics",
+    "json",
+    "math",
+    "numpy",
+    "pandas",
+    "pathlib"
+  ],
+  "snapshot/scripts/fit_worker.py": [
+    "argparse",
+    "campaign_model",
+    "hashlib",
+    "native_runtime",
+    "os",
+    "pickle",
+    "scipy.optimize",
+    "serial_solvers",
+    "time",
+    "traceback"
+  ],
+  "snapshot/scripts/hf_metrics.py": [
+    "numpy",
+    "pandas"
+  ],
+  "snapshot/scripts/hf_model.py": [
+    "temporal_model"
+  ],
+  "snapshot/scripts/independent_completion.py": [
+    "json",
+    "math",
+    "native_runtime",
+    "numpy",
+    "pandas",
+    "time"
+  ],
+  "snapshot/scripts/independent_global.py": [
+    "hf_metrics",
+    "json",
+    "native_runtime",
+    "numpy",
+    "pandas",
+    "time"
+  ],
+  "snapshot/scripts/native_runtime.py": [
+    "contextlib",
+    "ctypes",
+    "hashlib",
+    "json",
+    "msvcrt",
+    "os",
+    "pandas",
+    "pathlib",
+    "pickle",
+    "sys",
+    "time",
+    "uuid"
+  ],
+  "snapshot/scripts/pause_for_isolation.py": [
+    "ctypes",
+    "native_runtime",
+    "os",
+    "time"
+  ],
+  "snapshot/scripts/predict_extra.py": [
+    "campaign_model",
+    "gc",
+    "native_runtime",
+    "validate_hf"
+  ],
+  "snapshot/scripts/prepare_global.py": [
+    "campaign_model",
+    "copy",
+    "json",
+    "native_runtime",
+    "numpy",
+    "pandas",
+    "pathlib",
+    "prepare_hf",
+    "sys",
+    "temporal_model"
+  ],
+  "snapshot/scripts/prepare_hf.py": [
+    "ast",
+    "campaign_model",
+    "copy",
+    "json",
+    "math",
+    "native_runtime",
+    "numpy",
+    "os",
+    "pandas",
+    "pathlib",
+    "sys",
+    "temporal_model"
+  ],
+  "snapshot/scripts/prepare_spatial_maps.py": [
+    "geopandas",
+    "matplotlib",
+    "matplotlib.pyplot",
+    "native_runtime",
+    "numpy",
+    "pandas",
+    "release_loader",
+    "sys"
+  ],
+  "snapshot/scripts/profile_single_audit.py": [
+    "audit_job",
+    "campaign_model",
+    "copy",
+    "gc",
+    "native_runtime",
+    "time"
+  ],
+  "snapshot/scripts/recompute_selected_routing.py": [
+    "campaign_model",
+    "gc",
+    "native_runtime",
+    "routing",
+    "time",
+    "validate_global"
+  ],
+  "snapshot/scripts/recover_checkpoint_io.py": [
+    "ctypes",
+    "json",
+    "native_runtime",
+    "recover_controller",
+    "shutil",
+    "subprocess",
+    "sys",
+    "time"
+  ],
+  "snapshot/scripts/recover_checkpoint_status_io.py": [
+    "ctypes",
+    "json",
+    "native_runtime",
+    "recover_controller",
+    "shutil",
+    "subprocess",
+    "sys",
+    "time"
+  ],
+  "snapshot/scripts/recover_controller.py": [
+    "ctypes",
+    "native_runtime",
+    "os",
+    "pathlib",
+    "sys",
+    "time",
+    "traceback"
+  ],
+  "snapshot/scripts/recover_t25_checkpoint_io.py": [
+    "ctypes",
+    "json",
+    "native_runtime",
+    "recover_controller",
+    "shutil",
+    "subprocess",
+    "sys",
+    "time"
+  ],
+  "snapshot/scripts/register_evaluation_support.py": [
+    "native_runtime",
+    "pandas",
+    "prepare_global",
+    "time"
+  ],
+  "snapshot/scripts/repair_isolation.py": [
+    "campaign_model",
+    "copy",
+    "fit_worker",
+    "gc",
+    "native_runtime",
+    "serial_solvers",
+    "subprocess",
+    "sys",
+    "time"
+  ],
+  "snapshot/scripts/report_global.py": [
+    "hf_metrics",
+    "json",
+    "native_runtime",
+    "numpy",
+    "pandas",
+    "time"
+  ],
+  "snapshot/scripts/review_results.py": [
+    "json",
+    "numpy",
+    "pandas",
+    "pathlib"
+  ],
+  "snapshot/scripts/seal_global.py": [
+    "campaign_model",
+    "gc",
+    "native_runtime",
+    "os",
+    "subprocess",
+    "sys",
+    "time",
+    "validate_mix"
+  ],
+  "snapshot/scripts/seal_hf.py": [
+    "ast",
+    "campaign_model",
+    "native_runtime",
+    "pathlib",
+    "shutil",
+    "sys",
+    "validate_mix"
+  ],
+  "snapshot/scripts/serial_solvers.py": [
+    "copy",
+    "numpy",
+    "scipy",
+    "scipy.optimize",
+    "scipy.optimize._slsqplib"
+  ],
+  "snapshot/scripts/supplement_global.py": [
+    "campaign_model",
+    "gc",
+    "matplotlib",
+    "matplotlib.pyplot",
+    "native_runtime",
+    "numpy",
+    "pandas"
+  ],
+  "snapshot/scripts/supplement_hf.py": [
+    "hf_metrics",
+    "json",
+    "matplotlib",
+    "matplotlib.dates",
+    "matplotlib.pyplot",
+    "native_runtime",
+    "numpy",
+    "os",
+    "pandas"
+  ],
+  "snapshot/scripts/synthesize_global.py": [
+    "hf_metrics",
+    "native_runtime",
+    "numpy",
+    "pandas",
+    "report_global"
+  ],
+  "snapshot/scripts/temporal_model.py": [
+    "campaign_model",
+    "routing"
+  ],
+  "snapshot/scripts/test_boundaries.py": [
+    "campaign_model",
+    "copy",
+    "gc",
+    "native_runtime",
+    "routing",
+    "time",
+    "validate_small"
+  ],
+  "snapshot/scripts/test_global_reporting.py": [
+    "ast",
+    "finalize_global",
+    "native_runtime",
+    "numpy",
+    "pandas"
+  ],
+  "snapshot/scripts/test_reporting.py": [
+    "ast",
+    "hf_metrics",
+    "numpy",
+    "pandas",
+    "pathlib"
+  ],
+  "snapshot/scripts/test_time_support.py": [
+    "native_runtime",
+    "numpy",
+    "pandas",
+    "prepare_hf"
+  ],
+  "snapshot/scripts/validate_common_domain.py": [
+    "campaign_model",
+    "copy",
+    "gc",
+    "native_runtime",
+    "validate_global"
+  ],
+  "snapshot/scripts/validate_common_outputs.py": [
+    "campaign_model",
+    "gc",
+    "native_runtime",
+    "validate_global"
+  ],
+  "snapshot/scripts/validate_global.py": [
+    "campaign_model",
+    "copy",
+    "gc",
+    "mix_routing",
+    "native_runtime",
+    "prepare_hf",
+    "routing",
+    "serial_solvers",
+    "subprocess",
+    "support_integral",
+    "sys",
+    "temporal_model",
+    "time"
+  ],
+  "snapshot/scripts/validate_global_inputs.py": [
+    "copy",
+    "json",
+    "native_runtime",
+    "numpy",
+    "pandas",
+    "prepare_hf",
+    "release_loader",
+    "sys"
+  ],
+  "snapshot/scripts/validate_hf.py": [
+    "campaign_model",
+    "copy",
+    "gc",
+    "mix_routing",
+    "native_runtime",
+    "prepare_hf",
+    "routing",
+    "serial_solvers",
+    "subprocess",
+    "support_integral",
+    "sys",
+    "temporal_model",
+    "time"
+  ],
+  "snapshot/scripts/validate_mix.py": [
+    "argparse",
+    "campaign_model",
+    "copy",
+    "gc",
+    "json",
+    "native_runtime",
+    "os",
+    "support_integral",
+    "sys",
+    "tagged_transport",
+    "time",
+    "validate_small"
+  ],
+  "snapshot/scripts/validate_small.py": [
+    "argparse",
+    "campaign_model",
+    "copy",
+    "gc",
+    "native_runtime",
+    "time"
+  ],
+  "snapshot/scripts/verify_extension_contract.py": [
+    "campaign_model",
+    "native_runtime",
+    "numpy",
+    "pandas"
+  ],
+  "snapshot/scripts/verify_resource_profile.py": [
+    "apply_resource_profile",
+    "json",
+    "native_runtime",
+    "time"
+  ],
+  "snapshot/scripts/wait_event.py": [
+    "ctypes",
+    "hashlib",
+    "native_runtime",
+    "time"
+  ],
+  "snapshot/scripts/write_final_interpretation.py": [
+    "json",
+    "numpy",
+    "pandas",
+    "pathlib",
+    "time"
+  ],
+  "snapshot/vendor/expert/tn_challenge/mix_routing.py": [
+    "numpy",
+    "routing",
+    "support_integral",
+    "torch"
+  ],
+  "snapshot/vendor/expert/tn_challenge/model.py": [
+    "hashlib",
+    "json",
+    "math",
+    "numpy",
+    "os",
+    "pandas",
+    "pathlib",
+    "routing",
+    "sc_kernel",
+    "text_arrays",
+    "torch",
+    "types"
+  ],
+  "snapshot/vendor/expert/tn_challenge/routing.py": [
+    "numba",
+    "numpy",
+    "support_integral",
+    "torch"
+  ],
+  "snapshot/vendor/expert/tn_challenge/run.py": [
+    "argparse",
+    "hashlib",
+    "json",
+    "model",
+    "numpy",
+    "os",
+    "pandas",
+    "pathlib",
+    "scipy.optimize",
+    "text_arrays",
+    "time"
+  ],
+  "snapshot/vendor/expert/tn_challenge/sc_kernel.py": [
+    "numba",
+    "numpy",
+    "torch"
+  ],
+  "snapshot/vendor/expert/tn_challenge/support_integral.py": [
+    "numpy",
+    "torch"
+  ],
+  "snapshot/vendor/expert/tn_challenge/text_arrays.py": [
+    "hashlib",
+    "json",
+    "numpy",
+    "pathlib",
+    "re"
+  ],
+  "snapshot/vendor/research/closures.py": [
+    "math",
+    "model",
+    "numba",
+    "numpy",
+    "pathlib",
+    "routing",
+    "sc_kernel",
+    "sys",
+    "torch"
+  ],
+  "snapshot/vendor/research/tagged_transport.py": [
+    "numba",
+    "numpy",
+    "torch"
+  ],
+  "snapshot/vendor/transfer_research/scientific_models.py": [
+    "closures",
+    "copy",
+    "math",
+    "model",
+    "numpy",
+    "pathlib",
+    "routing",
+    "sys",
+    "torch"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "scope": "Publication package only; original experiment was not rerun",
+  "environment": "Windows, conda sparrow, CPU float64",
+  "command": "python -B experiments/global_tn_20260916/tests/test_public_kernels.py",
+  "synthetic_test_groups": 5,
+  "passed": 5,
+  "exact_copied_files_sha256_verified": 88,
+  "python_snapshot_syntax": "PASS",
+  "raw_observations_included": false,
+  "driver_arrays_included": false,
+  "full_real_data_reproduction_in_this_publication": false,
+  "note": "Archived experiment audits under evidence/reports are separate from these public synthetic tests. No claim of global optimizer uniqueness or full-data reproduction without private archives."
+}

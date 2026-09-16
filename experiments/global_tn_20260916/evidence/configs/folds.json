@@ -1,0 +1,202 @@
+{
+  "T24_L_M": {
+    "domain": "FULL24",
+    "end_year": 2024,
+    "evaluation_year": 2024,
+    "train_years": [
+      2021,
+      2022,
+      2023
+    ],
+    "scope": "T24_L",
+    "mode": "M",
+    "spatial_block": null,
+    "train_sha256": "3e161112269bce8cdef4f27ad56d47d106357a0b838133932af4f9b85ec9a930"
+  },
+  "T24_L_D": {
+    "domain": "FULL24",
+    "end_year": 2024,
+    "evaluation_year": 2024,
+    "train_years": [
+      2021,
+      2022,
+      2023
+    ],
+    "scope": "T24_L",
+    "mode": "D",
+    "spatial_block": null,
+    "train_sha256": "eb6529efdc902d9a6b75e2dbdc1baa0d2cdcb7dc04788b2c9ca5fa47de4a0f8b"
+  },
+  "T24_G_M": {
+    "domain": "FULL24",
+    "end_year": 2024,
+    "evaluation_year": 2024,
+    "train_years": [
+      2021,
+      2022,
+      2023
+    ],
+    "scope": "T24_G",
+    "mode": "M",
+    "spatial_block": null,
+    "train_sha256": "647e3fc831b70c25ae33f2f028c3b9b3c8df5c7bbacf1d9aff6e83ba4e1b44b9"
+  },
+  "T24_G_D": {
+    "domain": "FULL24",
+    "end_year": 2024,
+    "evaluation_year": 2024,
+    "train_years": [
+      2021,
+      2022,
+      2023
+    ],
+    "scope": "T24_G",
+    "mode": "D",
+    "spatial_block": null,
+    "train_sha256": "eace6052b6e02055aa7d34716c16ce10665bd5df2ae982c30e13a94d0395b688"
+  },
+  "S56_M": {
+    "domain": "FULL24",
+    "end_year": 2024,
+    "evaluation_year": 2024,
+    "train_years": [
+      2021,
+      2022,
+      2023
+    ],
+    "scope": "S56",
+    "mode": "M",
+    "spatial_block": "56",
+    "train_sha256": "f5f42edfa192dd902dcf7ac06e1cb567263a163f6ef73d5afb60a3efbdb9b4c2"
+  },
+  "S56_D": {
+    "domain": "FULL24",
+    "end_year": 2024,
+    "evaluation_year": 2024,
+    "train_years": [
+      2021,
+      2022,
+      2023
+    ],
+    "scope": "S56",
+    "mode": "D",
+    "spatial_block": "56",
+    "train_sha256": "fcfee1fb9606aa37d528eda782f131b8e6fb5f4958b6316d5c7d0e4a99d526d8"
+  },
+  "S113_M": {
+    "domain": "FULL24",
+    "end_year": 2024,
+    "evaluation_year": 2024,
+    "train_years": [
+      2021,
+      2022,
+      2023
+    ],
+    "scope": "S113",
+    "mode": "M",
+    "spatial_block": "113",
+    "train_sha256": "1b5746046469df5235e981be21e0b74466d64ec016e226b66971c10bb4426b4b"
+  },
+  "S113_D": {
+    "domain": "FULL24",
+    "end_year": 2024,
+    "evaluation_year": 2024,
+    "train_years": [
+      2021,
+      2022,
+      2023
+    ],
+    "scope": "S113",
+    "mode": "D",
+    "spatial_block": "113",
+    "train_sha256": "e5becb5545c9eecac64523fe4586936f920ebb91a79cf22d900017ba18a7a2b3"
+  },
+  "S191_M": {
+    "domain": "FULL24",
+    "end_year": 2024,
+    "evaluation_year": 2024,
+    "train_years": [
+      2021,
+      2022,
+      2023
+    ],
+    "scope": "S191",
+    "mode": "M",
+    "spatial_block": "191",
+    "train_sha256": "4e583172741e606d4e5275832e6519cb251429ee626cbecbbf6b9e321dc85791"
+  },
+  "S191_D": {
+    "domain": "FULL24",
+    "end_year": 2024,
+    "evaluation_year": 2024,
+    "train_years": [
+      2021,
+      2022,
+      2023
+    ],
+    "scope": "S191",
+    "mode": "D",
+    "spatial_block": "191",
+    "train_sha256": "80ef68ed3d1bb152cef0ab18bc1b55846216d04ada512e9c794ff3ba6c188b7c"
+  },
+  "T25S_L_M": {
+    "domain": "FULL25",
+    "end_year": 2025,
+    "evaluation_year": 2025,
+    "train_years": [
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "scope": "T25S_L",
+    "mode": "M",
+    "spatial_block": null,
+    "train_sha256": "bdb146aa3270dd6cf3c2037a1e933494bcdcbe79d88dcc6fdb77e551a5c986d2"
+  },
+  "T25S_L_D": {
+    "domain": "FULL25",
+    "end_year": 2025,
+    "evaluation_year": 2025,
+    "train_years": [
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "scope": "T25S_L",
+    "mode": "D",
+    "spatial_block": null,
+    "train_sha256": "e74133f421d96dcf964608093e7bc965b70c3ed2896fa9b6515789787ef65c7a"
+  },
+  "T25S_G_M": {
+    "domain": "FULL25",
+    "end_year": 2025,
+    "evaluation_year": 2025,
+    "train_years": [
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "scope": "T25S_G",
+    "mode": "M",
+    "spatial_block": null,
+    "train_sha256": "83dd97a66adc74e97ad4d561ec9d6e98b13a57bafd78c474aa46daaa543285a6"
+  },
+  "T25S_G_D": {
+    "domain": "FULL25",
+    "end_year": 2025,
+    "evaluation_year": 2025,
+    "train_years": [
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "scope": "T25S_G",
+    "mode": "D",
+    "spatial_block": null,
+    "train_sha256": "6581050db2bec5be61700566f1210b638a30ffbdc4eb8b5d6e856b2657f3d21a"
+  }
+}
