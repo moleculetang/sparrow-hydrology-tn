@@ -1,0 +1,58 @@
+{
+  "models": [
+    "D29_BE",
+    "FCT8"
+  ],
+  "paths": 4,
+  "training_years": [
+    2021,
+    2022,
+    2023
+  ],
+  "evaluation_years": [
+    2024
+  ],
+  "prior_normalization_stations": 17,
+  "solver": {
+    "first_lbfgsb_calls": 1500,
+    "cumulative_calls": [
+      4000,
+      6000,
+      8000
+    ],
+    "cumulative_hours": [
+      6,
+      9,
+      12
+    ],
+    "pg_tolerance": 1e-05
+  },
+  "resources": {
+    "threads": 1,
+    "dispatch_cpu": 90,
+    "dispatch_ram": 90,
+    "resume": 85,
+    "peak_factor": 1.2,
+    "fixed_worker_cap": null
+  },
+  "budget": {
+    "campaign_hours": 48,
+    "report_hours": 4
+  },
+  "automations": false,
+  "candidate": {
+    "name": "monthly_observation_statistics",
+    "parameters": 30,
+    "mapping": "beta_endpoints",
+    "prior_normalization": 17,
+    "physical_process_changes": false
+  },
+  "operators": [
+    "OU"
+  ],
+  "temporal_operators": [
+    "M",
+    "D"
+  ],
+  "conditional_gap": null
+}

@@ -1,0 +1,2 @@
+# Preserve every published byte, including generated documentation.
+* -text

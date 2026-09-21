@@ -1,0 +1,349 @@
+{
+ "designs": {
+  "T24_G_D_H1_FCT8": {
+   "dynamic_scales": 2,
+   "high": 7,
+   "low": 7,
+   "mean": 7,
+   "sd": 7
+  },
+  "T24_G_M_H1_FCT8": {
+   "dynamic_scales": 2,
+   "high": 7,
+   "low": 7,
+   "mean": 7,
+   "sd": 7
+  }
+ },
+ "gates": {
+  "T24_G_D_H1_FCT8": {
+   "V1": {
+    "abs_data_gap": 0.0,
+    "abs_prior_gap": 0.0,
+    "base": "T24_G_D_H1",
+    "data_d29": 1.1549795517454142,
+    "data_fct8": 1.1549795517454142,
+    "fold": "T24_G_D_H1_FCT8",
+    "max_abs_latent_gap": 4.440892098500626e-16,
+    "max_abs_prediction_gap": 1.7763568394002505e-15,
+    "max_rel_prediction_gap": 5.916539268525601e-16,
+    "objective_d29": 1.2084290708193024,
+    "objective_fct8": 1.2084290708193024,
+    "pass": true,
+    "prior_d29": 0.05344951907388808,
+    "prior_fct8": 0.05344951907388808,
+    "prior_zero_at_delta0": true,
+    "rel_objective_gap": 0.0
+   },
+   "V2": {
+    "note": "deviation is first order in delta; a quadratic term would make gap/|delta| fall linearly with delta",
+    "pass": true,
+    "relative_drift": 6.556228836359883e-13,
+    "rows": [
+     {
+      "delta": 1.0,
+      "gap_over_delta": 8.754131515778148,
+      "max_abs_latent_gap": 8.754131515778148
+     },
+     {
+      "delta": 0.1,
+      "gap_over_delta": 8.754131515778152,
+      "max_abs_latent_gap": 0.8754131515778153
+     },
+     {
+      "delta": 0.01,
+      "gap_over_delta": 8.754131515778163,
+      "max_abs_latent_gap": 0.08754131515778163
+     },
+     {
+      "delta": 0.001,
+      "gap_over_delta": 8.754131515778084,
+      "max_abs_latent_gap": 0.008754131515778085
+     },
+     {
+      "delta": 0.0001,
+      "gap_over_delta": 8.754131515772423,
+      "max_abs_latent_gap": 0.0008754131515772423
+     }
+    ],
+    "rows_from_0p1": 4
+   },
+   "V3": {
+    "max_rel_gap": 4.586222378829066e-16,
+    "pass": true
+   },
+   "V4V5": {
+    "condition_number": 4034.7482433907066,
+    "condition_number_d29_only": 3993.8543988549995,
+    "corr_fix_note": "max_abs_corr_delta_to_dynamic is a true two-block correlation. It replaces 1.0000000000000004, which was the diagonal of delta's own Gram matrix and carried no information. Cross-check: work/fct8_identifiability.py computes the same quantity independently.",
+    "delta_bound": [
+     -12.0,
+     12.0
+    ],
+    "delta_variable_scale": 0.5,
+    "finite_difference": true,
+    "gap_shrinks_with_step": true,
+    "gradient_step_sweep": {
+     "1e-03": {
+      "max_abs_gap": 1.0321021431050773e-05,
+      "max_rel_gap": 0.0023092270081869915,
+      "step": 0.001
+     },
+     "1e-04": {
+      "max_abs_gap": 1.0355639438762103e-06,
+      "max_rel_gap": 0.00023169731019811264,
+      "step": 0.0001
+     },
+     "1e-05": {
+      "max_abs_gap": 3.183043984325286e-09,
+      "max_rel_gap": 7.121749835771801e-07,
+      "step": 1e-05
+     }
+    },
+    "max_abs_analytic_minus_fd_gradient": 3.183043984325286e-09,
+    "max_abs_corr_beta_b_to_dynamic": 0.634137752775291,
+    "max_abs_corr_delta_to_all_baseline": 0.9372421233700994,
+    "max_abs_corr_delta_to_dynamic": 0.9372421233700994,
+    "max_abs_corr_dynamic_within": 0.9748047423986391,
+    "max_rel_gradient_gap": 7.121749835771801e-07,
+    "max_rel_gradient_gap_at_1e-03": 0.0023092270081869915,
+    "min_singular_value": 0.26230487469227104,
+    "min_singular_value_d29_only": 0.2649611059095577,
+    "n_observations": 9599,
+    "n_parameters": 38,
+    "pass": true,
+    "singular_values": [
+     1058.33413239746,
+     126.34235836673172,
+     63.66245128506262,
+     52.748875079979285,
+     39.063296972041776,
+     23.524758953483143,
+     21.98926926432791,
+     20.534270361075496,
+     18.904911008033324,
+     15.001325585313177,
+     14.09416650643679,
+     8.066484783546324,
+     6.662868657605464,
+     5.5203745537203295,
+     5.223254406472601,
+     4.928602671692706,
+     4.5368674541748355,
+     4.0860486400358615,
+     3.549467522235214,
+     2.7236875347018152,
+     2.514746642238667,
+     2.0612831605481325,
+     1.9060914597336842,
+     1.5003377198212855,
+     1.375139828871452,
+     1.238195288867495,
+     1.170828644378064,
+     1.0828892548772338,
+     0.9874931858863631,
+     0.8818640512086569,
+     0.7508518275389964,
+     0.5654456114527489,
+     0.5410051278886527,
+     0.4655321362677275,
+     0.4440361302963064,
+     0.35937474707158845,
+     0.31020232076085613,
+     0.26230487469227104
+    ],
+    "singular_values_d29_only": [
+     1058.2160783623724,
+     125.67621948515344,
+     62.55903953703195,
+     52.18549486805863,
+     36.93952243285398,
+     22.94778507421814,
+     21.20964862942671,
+     20.08378940098856,
+     18.171654810882508,
+     14.102622236678613,
+     7.599657172703955,
+     5.514284585453688,
+     4.922907662821084,
+     4.385371582673292,
+     4.080016398221245,
+     3.138295790945949,
+     2.5190079379116037,
+     2.2553033240125044,
+     1.9220878561298176,
+     1.4905386100849047,
+     1.3287934344753767,
+     1.243569112035341,
+     1.1729808323461977,
+     1.0700306021097488,
+     0.8833149894544364,
+     0.604109131394931,
+     0.5482795098243488,
+     0.4533610847687902,
+     0.3585549009177969,
+     0.2649611059095577
+    ],
+    "step": 0.0001
+   },
+   "V6": {
+    "abs_network_balance_gap": 0.0,
+    "local_balance_d29": 1.3224780559539795e-07,
+    "local_balance_fct8": 1.3224780559539795e-07,
+    "max_abs_gaps": {
+     "L": 2.7939677238464355e-09,
+     "M": 7.450580596923828e-09,
+     "available": 7.450580596923828e-09,
+     "demand": 0.0,
+     "fast": 1.1641532182693481e-10,
+     "mineral_loss": 1.0913936421275139e-11,
+     "slow": 1.4551915228366852e-11,
+     "uptake": 0.0
+    },
+    "max_rel_gaps": {
+     "L": 3.689894673226582e-16,
+     "M": 1.7923781421403088e-17,
+     "available": 1.7918344847823415e-17,
+     "demand": 0.0,
+     "fast": 4.7156599777342463e-17,
+     "mineral_loss": 9.115463751227393e-17,
+     "slow": 2.4601732783899063e-16,
+     "uptake": 0.0
+    },
+    "network_balance_d29": 8.493661880493164e-06,
+    "network_balance_fct8": 8.493661880493164e-06,
+    "pass": true,
+    "worst_rel_gap": 3.689894673226582e-16
+   },
+   "V8": {
+    "finite_at_delta_gt0": true,
+    "max_abs_gap_when_phi_bar_zeroed_at_delta0": 1.7763568394002505e-15,
+    "max_abs_prediction_change_at_delta_gt0": 12.440722401476757,
+    "pass": true,
+    "phi_bar_all_finite": true,
+    "rel_gap_when_phi_bar_zeroed_at_delta0": 2.021840119459278e-16,
+    "weight_all_finite": true
+   }
+  },
+  "T24_G_M_H1_FCT8": {
+   "V1": {
+    "abs_data_gap": 0.0,
+    "abs_prior_gap": 0.0,
+    "base": "T24_G_M_H1",
+    "data_d29": 1.1344890113941515,
+    "data_fct8": 1.1344890113941515,
+    "fold": "T24_G_M_H1_FCT8",
+    "max_abs_latent_gap": 4.440892098500626e-16,
+    "max_abs_prediction_gap": 8.881784197001252e-16,
+    "max_rel_prediction_gap": 3.644714465877226e-16,
+    "objective_d29": 1.187270258921654,
+    "objective_fct8": 1.187270258921654,
+    "pass": true,
+    "prior_d29": 0.052781247527502406,
+    "prior_fct8": 0.052781247527502406,
+    "prior_zero_at_delta0": true,
+    "rel_objective_gap": 0.0
+   },
+   "V2": {
+    "note": "deviation is first order in delta; a quadratic term would make gap/|delta| fall linearly with delta",
+    "pass": true,
+    "relative_drift": 3.4468478487661536e-13,
+    "rows": [
+     {
+      "delta": 1.0,
+      "gap_over_delta": 8.740453109066012,
+      "max_abs_latent_gap": 8.740453109066012
+     },
+     {
+      "delta": 0.1,
+      "gap_over_delta": 8.740453109066012,
+      "max_abs_latent_gap": 0.8740453109066013
+     },
+     {
+      "delta": 0.01,
+      "gap_over_delta": 8.740453109066,
+      "max_abs_latent_gap": 0.08740453109065999
+     },
+     {
+      "delta": 0.001,
+      "gap_over_delta": 8.74045310906607,
+      "max_abs_latent_gap": 0.008740453109066071
+     },
+     {
+      "delta": 0.0001,
+      "gap_over_delta": 8.740453109069012,
+      "max_abs_latent_gap": 0.0008740453109069013
+     }
+    ],
+    "rows_from_0p1": 4
+   },
+   "V3": {
+    "max_rel_gap": 4.646602440326246e-16,
+    "pass": true
+   },
+   "V6": {
+    "abs_network_balance_gap": 0.0,
+    "local_balance_d29": 1.2578675523400307e-07,
+    "local_balance_fct8": 1.2578675523400307e-07,
+    "max_abs_gaps": {
+     "L": 2.7939677238464355e-09,
+     "M": 1.4901161193847656e-08,
+     "available": 1.4901161193847656e-08,
+     "demand": 0.0,
+     "fast": 1.7462298274040222e-10,
+     "mineral_loss": 2.1827872842550278e-11,
+     "slow": 2.1827872842550278e-11,
+     "uptake": 1.4551915228366852e-11
+    },
+    "max_rel_gaps": {
+     "L": 2.912069706817674e-16,
+     "M": 3.591830113981983e-17,
+     "available": 3.5907370571784497e-17,
+     "demand": 0.0,
+     "fast": 6.965623678652961e-17,
+     "mineral_loss": 1.823990402750111e-16,
+     "slow": 2.918261561770023e-16,
+     "uptake": 3.639954901812168e-18
+    },
+    "network_balance_d29": 3.3974647521972656e-06,
+    "network_balance_fct8": 3.3974647521972656e-06,
+    "pass": true,
+    "worst_rel_gap": 2.918261561770023e-16
+   },
+   "V8": {
+    "finite_at_delta_gt0": true,
+    "max_abs_gap_when_phi_bar_zeroed_at_delta0": 8.881784197001252e-16,
+    "max_abs_prediction_change_at_delta_gt0": 6.968240104154591,
+    "pass": true,
+    "phi_bar_all_finite": true,
+    "rel_gap_when_phi_bar_zeroed_at_delta0": 1.0936792960907815e-16,
+    "weight_all_finite": true
+   }
+  }
+ },
+ "n_gates": 11,
+ "n_pass": 11,
+ "scale": {
+  "T24_G_D_H1_FCT8": {
+   "dynamic_basis_std": 0.34027108525817,
+   "effective_days_per_month_max": 30.996649888697174,
+   "effective_days_per_month_median": 28.10753718031561,
+   "effective_days_per_month_min": 0.0,
+   "n_days_per_month": 31.0,
+   "phi_bar_abs_max": 2.3424449294574448,
+   "phi_bar_std": 0.30663314889457766,
+   "phi_bar_std_over_basis_std": 0.9011437121139146
+  },
+  "T24_G_M_H1_FCT8": {
+   "dynamic_basis_std": 0.34027108525817,
+   "effective_days_per_month_max": 30.997148019082136,
+   "effective_days_per_month_median": 28.1981483298906,
+   "effective_days_per_month_min": 0.0,
+   "n_days_per_month": 31.0,
+   "phi_bar_abs_max": 2.335945072515359,
+   "phi_bar_std": 0.3063439469431592,
+   "phi_bar_std_over_basis_std": 0.9002937957855877
+  }
+ },
+ "status": "PASS_F1"
+}

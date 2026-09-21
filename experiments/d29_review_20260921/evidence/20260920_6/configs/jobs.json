@@ -1,0 +1,120 @@
+[
+  {
+    "tag": "F23_R_s0",
+    "fold": "F23_G_D",
+    "kind": "D29_BE",
+    "start": 0,
+    "dependencies": [],
+    "parent_tags": [],
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH"
+  },
+  {
+    "tag": "F23_R_s1",
+    "fold": "F23_G_D",
+    "kind": "D29_BE",
+    "start": 1,
+    "dependencies": [],
+    "parent_tags": [],
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH"
+  },
+  {
+    "tag": "F23_X_s0",
+    "fold": "F23_G_D",
+    "kind": "STATE_MODULATED",
+    "start": 0,
+    "dependencies": [
+      "F23_R_s0",
+      "F23_R_s1"
+    ],
+    "parent_tags": [],
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "nested_tags": [
+      "F23_R_s0",
+      "F23_R_s1"
+    ]
+  },
+  {
+    "tag": "F23_X_s1",
+    "fold": "F23_G_D",
+    "kind": "STATE_MODULATED",
+    "start": 1,
+    "dependencies": [
+      "F23_R_s0",
+      "F23_R_s1"
+    ],
+    "parent_tags": [],
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "nested_tags": [
+      "F23_R_s0",
+      "F23_R_s1"
+    ]
+  },
+  {
+    "tag": "F24_R_s0",
+    "fold": "T24_G_D_H1",
+    "kind": "D29_BE",
+    "start": 0,
+    "dependencies": [],
+    "parent_tags": [],
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "reuse_from": "E:\\SPARROW\\5_Test\\20260917_5\\outputs\\T24_G_D_H1_s0"
+  },
+  {
+    "tag": "F24_R_s1",
+    "fold": "T24_G_D_H1",
+    "kind": "D29_BE",
+    "start": 1,
+    "dependencies": [],
+    "parent_tags": [],
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "reuse_from": "E:\\SPARROW\\5_Test\\20260917_5\\outputs\\T24_G_D_H1_s1"
+  },
+  {
+    "tag": "F24_X_s0",
+    "fold": "T24_G_D_H1",
+    "kind": "STATE_MODULATED",
+    "start": 0,
+    "dependencies": [
+      "F24_R_s0",
+      "F24_R_s1"
+    ],
+    "parent_tags": [],
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "nested_tags": [
+      "F24_R_s0",
+      "F24_R_s1"
+    ]
+  },
+  {
+    "tag": "F24_X_s1",
+    "fold": "T24_G_D_H1",
+    "kind": "STATE_MODULATED",
+    "start": 1,
+    "dependencies": [
+      "F24_R_s0",
+      "F24_R_s1"
+    ],
+    "parent_tags": [],
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "nested_tags": [
+      "F24_R_s0",
+      "F24_R_s1"
+    ]
+  }
+]

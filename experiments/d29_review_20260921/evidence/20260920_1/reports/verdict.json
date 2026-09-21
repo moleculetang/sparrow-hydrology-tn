@@ -1,0 +1,223 @@
+{
+ "authorises": "the next round single degree of freedom {k_m, k_ex}, and the direction is k_m (section 2.7 row 1). Nothing is implemented, parameterised or switched on in this round.",
+ "citation": "plan section 5 row 6",
+ "conclusion": "the legacy pool may not be equated with mobile N. This is NOT \"the dual-pathway mobile-concentration mechanism failed\": the round cannot see that question until the mobility mapping is separated from it.",
+ "condition_that_fired": "the section 2.6 P1 falsifier fired on EVERY kernel arm",
+ "corrected_ledger_roll_up": {
+  "corrected_here_rather_than_re_run": "the five registered forwards are not respent on a cosmetic report field; this is a zero-forward re-derivation of a roll-up, by design",
+  "corrected_roll_up_over_kernel_arms": true,
+  "ledger_body_ran_per_arm": {
+   "B0": "the frozen ResearchObjective.ledger",
+   "D-const": "ledger_dp",
+   "P-upper": "ledger_dp",
+   "S-soil": "ledger_dp",
+   "S-unsat": "ledger_dp"
+  },
+  "n10_all_arms_hold": true,
+  "n10_all_channels_present": true,
+  "n_kernel_arms": 4,
+  "n_kernel_arms_running_ledger_dp": 4,
+  "no_gate_reads_this": true,
+  "raw_roll_up_in_phase1_arms": false,
+  "raw_roll_up_is_over_strict": true,
+  "reason": "B0 is the FROZEN kernel arm and must NOT rebind ResearchObjective.ledger -- proving the frozen ledger body still runs is what B0 is for. The raw roll-up demands ledger_dp on every arm, which is the opposite of B0 role, so it is False by construction and is not a failed assertion."
+ },
+ "corroboration": {
+  "month_start_over_representation": {
+   "D-const": 5.160575252147523,
+   "P-upper": 5.001824614730297,
+   "S-soil": 1.0424156631947263,
+   "S-unsat": 1.0399998000333737
+  },
+  "note": "corroborating reading only -- no threshold is attached to it here, because the plan registers no number for \"degenerate\"; the condition that carries this verdict is the section 2.6 P1 falsifier, which the plan does register as a boolean"
+ },
+ "fit_worker_calls": 0,
+ "forbidden": "closing the land-phase structure, and jumping to an additional event source",
+ "g5_direction": "RESTORED upstream direction: baseline MINUS candidate, 20260919_2/work/phase1_score.py:178,203; round 4s reversed implementation at phase2_full.py:247 is NOT reproduced here",
+ "gates_per_arm": {
+  "B0": {
+   "G1": false,
+   "G2": false,
+   "G3": false,
+   "G5": true,
+   "G5b": true
+  },
+  "D-const": {
+   "G1": false,
+   "G2": false,
+   "G3": false,
+   "G5": false,
+   "G5b": false
+  },
+  "P-upper": {
+   "G1": false,
+   "G2": false,
+   "G3": false,
+   "G5": false,
+   "G5b": false
+  },
+  "R5-ref": {
+   "G1": false,
+   "G2": false,
+   "G3": false,
+   "G5": false,
+   "G5b": false
+  },
+  "S-soil": {
+   "G1": false,
+   "G2": false,
+   "G3": false,
+   "G5": false,
+   "G5b": false
+  },
+  "S-unsat": {
+   "G1": false,
+   "G2": false,
+   "G3": false,
+   "G5": false,
+   "G5b": false
+  }
+ },
+ "grid": [
+  "DUAL_PATH_CAPABILITY_DEMONSTRATED",
+  "VOLUME_MAPPING_SENSITIVE",
+  "AMPLITUDE_WITHOUT_LEVEL",
+  "LEVEL_WITHOUT_AMPLITUDE",
+  "AMPLITUDE_BUT_VARIANCE_COLLAPSES",
+  "MOBILE_POOL_MAPPING_LIMITED",
+  "NO_AMPLITUDE_MECHANISM",
+  "NO_ADMISSIBLE_ARM",
+  "STATE_GATE_FAILED",
+  "BLOCKED",
+  "UNCLASSIFIED_BY_THE_REGISTERED_GRID"
+ ],
+ "grid_order_is_registered": true,
+ "level_variance_headline": {
+  "D-const": {
+   "enters_no_gate": false,
+   "level_ratio": 7.615085085789727,
+   "nse_residual_after_recentring": -149.3433880801306,
+   "variance_ratio": 201.48536477261823
+  },
+  "P-upper": {
+   "enters_no_gate": false,
+   "level_ratio": 9.143688123572442,
+   "nse_residual_after_recentring": -228.05008625529243,
+   "variance_ratio": 314.148477382949
+  },
+  "R5-ref": {
+   "enters_no_gate": true,
+   "level_ratio": 0.9945297890116693,
+   "nse_residual_after_recentring": -0.18685879740324918,
+   "variance_ratio": 1.4878451166263105
+  },
+  "S-soil": {
+   "enters_no_gate": false,
+   "level_ratio": 4.085796633815022,
+   "nse_residual_after_recentring": -20.730019212334806,
+   "variance_ratio": 28.812173831181497
+  },
+  "S-unsat": {
+   "enters_no_gate": false,
+   "level_ratio": 4.110311235620086,
+   "nse_residual_after_recentring": -20.69934257771103,
+   "variance_ratio": 28.758986722547682
+  }
+ },
+ "n_fits": 0,
+ "n_forwards": 5,
+ "n_primary_gates_passed": 0,
+ "next_round": {
+  "authorisation_scope": "an authorisation to pre-register a NEXT round, not evidence that a mechanism is established (plan section 8 risk 12)",
+  "chosen": "k_m",
+  "deciding_readings": {
+   "R_model_peak_over_obs_peak": 1.3129543464655125,
+   "abs_log_ratio_difference": 0.526816592547054,
+   "event_ratio_ratio": 0.7089594648141899,
+   "level_ratio": 9.143688123572442,
+   "outcome": "MOBILE_POOL_MAPPING_LIMITED",
+   "p1_falsifier_fired": true,
+   "r_model_base_over_obs_base": 2.2235308755022043,
+   "tau_eff_over_tau_hydro": "FIRES: tau_eff_median / tau_hydro_median = 0.9964",
+   "variance_ratio": 314.148477382949
+  },
+  "not_implemented_here": "k_m is NOT implemented, parameterised, or switched on, and no dormant path for it exists in this round code",
+  "registered_choice": "{k_m, k_ex}, one of two, NEVER both",
+  "rule": "plan section 2.7; decided by this round diagnosis and NOT written in advance",
+  "why_this_direction": "the failure is over-mobilisation of the legacy pool: the level runs 9.14x the frozen baseline and the daily variance 314.1x, while the per-event peak/base ratio FALLS to 0.709x of it, and the observed peak is over-predicted by 1.31x against 2.22x at the base. That is a mobility-mapping defect -- what part of legacy N is mobile at all -- not a two-pathway exchange defect. Plan section 2.7 row 2 requires the event amplitude to have been MEASURED with only the post-event recovery phase wrong; here the amplitude gate is the one that fails, so row 2 does not apply."
+ },
+ "outcome": "MOBILE_POOL_MAPPING_LIMITED",
+ "p1_falsifier_per_arm": {
+  "D-const": "FIRES: tau_eff_median / tau_hydro_median = 0.9945",
+  "P-upper": "FIRES: tau_eff_median / tau_hydro_median = 0.9964",
+  "S-soil": "FIRES: tau_eff_median / tau_hydro_median = 0.8552",
+  "S-unsat": "FIRES: tau_eff_median / tau_hydro_median = 0.8528"
+ },
+ "p1_why": "under the linear closure carry = (1-g_u)*s_M with 1-g_u = 1 - Q_u/V_u = S_post/V_u, which IS the retained water fraction. So -ln(carry) = -ln(S_post/V_u) - ln(s_M), and ln(s_M) is negligible against the O(1) water terms. The N memory lifetime is the upper store water residence time BY CONSTRUCTION, not by measurement.",
+ "phase": "verdict_dp",
+ "primary_arm": "P-upper",
+ "primary_gates": {
+  "G1": false,
+  "G2": false,
+  "G3": false,
+  "G5": false,
+  "G5b": false
+ },
+ "primary_role_source": "selected by the pre-registered physical prior order V-upper > V-soil (plan section 2.3 rule 3), because the turnover table is UNDECIDABLE (identity for V-upper; no column for V-soil): it is an identity for V-upper and V-soil has no counterpart column. The selection therefore comes from the producer source lines and the registered prior, NOT from any result.",
+ "reading_rule_conclusion": "NOT A LEVEL EFFECT. Recentring every kernel arm onto the frozen baseline mean moves the monthly NSE by single-digit amounts while the residual against the baseline stays in the tens to hundreds, so the monthly collapse is carried by the SHAPE (the variance), not by the mean offset. The plan forbids this round from claiming otherwise, and the claim is not made.",
+ "reference_arm_has_no_gates": true,
+ "reference_arm_note": "R5-ref is excluded from every pass count; plan sections 0.1 and 5 forbid its readings from entering any gate, and it carries no gate booleans for one to read",
+ "round": "E:\\SPARROW\\5_Test\\20260920_1",
+ "sources": {
+  "arms.json": "73ce11b6edd6b269794d59457889dab3436e5f7b13dd05f362942aec20a1c94c",
+  "level_variance.json": "7c112a0967212a2f1ef0f4684cf37963eb632bd837250dc2d0a44f85dbf67e7f",
+  "phase0_gates.json": "8d21ab69b8a3cd4d082e5e3d65c1b8518a650b78dd2c369d43369305d2e9be27",
+  "phase1_arms.json": "9c47cb2dfd6c672082e43d46ac333e188f14c274da202bf768ace37e1dd81fad"
+ },
+ "thresholds_read_not_set": {
+  "A_L1": 1.1579754800655908,
+  "A_L3": 1.1495455668222099,
+  "mean_concentration": 2.8234476727379607,
+  "median_station_nse": -0.1407034380572627,
+  "nse": 0.7029748157444711,
+  "sd_L3_ddof0_median_e": 0.5559042757541334
+ },
+ "verdicts_per_arm": {
+  "B0": {
+   "G1": false,
+   "G2": false,
+   "G3": false,
+   "G5": true,
+   "G5b": true
+  },
+  "D-const": {
+   "G1": false,
+   "G2": false,
+   "G3": false,
+   "G5": false,
+   "G5b": false
+  },
+  "P-upper": {
+   "G1": false,
+   "G2": false,
+   "G3": false,
+   "G5": false,
+   "G5b": false
+  },
+  "S-soil": {
+   "G1": false,
+   "G2": false,
+   "G3": false,
+   "G5": false,
+   "G5b": false
+  },
+  "S-unsat": {
+   "G1": false,
+   "G2": false,
+   "G3": false,
+   "G5": false,
+   "G5b": false
+  }
+ },
+ "zero_forwards": true
+}

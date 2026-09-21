@@ -1,0 +1,8 @@
+{
+  "audit": "work/audit_fct8.py",
+  "returncode": 0,
+  "artifact": "reports/fct8_arms.json",
+  "status": "PASS_FCT8_AUDIT",
+  "failures": [],
+  "note": "Independent recomputation of the FCT8 contrast, importing no part of scripts/. Recorded, not raised on: a negative result is a finding, not a delivery failure. This replaces independent_global.py, whose 24-deliverable assertion is mainline-only and cannot be met on a 4-path graph."
+}

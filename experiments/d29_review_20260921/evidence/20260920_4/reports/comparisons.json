@@ -1,0 +1,106 @@
+{
+  "HYDRO-SELECT": {
+    "2021-2023": {
+      "n_events": 70,
+      "n_stations": 14,
+      "ratio_error": {
+        "mix": 0.6854377660175324,
+        "candidate": 0.7607502325775221,
+        "change": 0.07531246655998969,
+        "relative_reduction": -0.10987498835607391,
+        "improved_station_fraction": 0.21428571428571427
+      },
+      "peak_error": {
+        "mix": 1.980787088300633,
+        "candidate": 2.7574572452058956,
+        "change": 0.7766701569052625,
+        "relative_reduction": -0.39210178695762166,
+        "improved_station_fraction": 0.35714285714285715
+      },
+      "base_error": {
+        "mix": 6.172813641758164,
+        "candidate": 7.791618474455008,
+        "change": 1.6188048326968447,
+        "relative_reduction": -0.26224748172306245,
+        "improved_station_fraction": 0.0
+      }
+    },
+    "2024": {
+      "n_events": 57,
+      "n_stations": 15,
+      "ratio_error": {
+        "mix": 0.6054224778000151,
+        "candidate": 0.6167499581465107,
+        "change": 0.011327480346495555,
+        "relative_reduction": -0.018710042593161336,
+        "improved_station_fraction": 0.4666666666666667
+      },
+      "peak_error": {
+        "mix": 1.6836557703729913,
+        "candidate": 2.6836026557731736,
+        "change": 0.9999468854001823,
+        "relative_reduction": -0.5939140903954836,
+        "improved_station_fraction": 0.13333333333333333
+      },
+      "base_error": {
+        "mix": 5.6905343007231775,
+        "candidate": 7.551665939818869,
+        "change": 1.8611316390956913,
+        "relative_reduction": -0.3270574502747784,
+        "improved_station_fraction": 0.06666666666666667
+      }
+    }
+  },
+  "FULL-BYPASS": {
+    "2021-2023": {
+      "n_events": 70,
+      "n_stations": 14,
+      "ratio_error": {
+        "mix": 0.6854377660175324,
+        "candidate": 0.8523456074730654,
+        "change": 0.16690784145553306,
+        "relative_reduction": -0.24350546428931935,
+        "improved_station_fraction": 0.0
+      },
+      "peak_error": {
+        "mix": 1.980787088300633,
+        "candidate": 1.956339680862455,
+        "change": -0.024447407438178193,
+        "relative_reduction": 0.012342269183081275,
+        "improved_station_fraction": 0.5714285714285714
+      },
+      "base_error": {
+        "mix": 6.172813641758164,
+        "candidate": 6.858586740819705,
+        "change": 0.6857730990615414,
+        "relative_reduction": -0.11109570754289237,
+        "improved_station_fraction": 0.6428571428571429
+      }
+    },
+    "2024": {
+      "n_events": 57,
+      "n_stations": 15,
+      "ratio_error": {
+        "mix": 0.6054224778000151,
+        "candidate": 0.7144717906112503,
+        "change": 0.1090493128112352,
+        "relative_reduction": -0.18012101765282768,
+        "improved_station_fraction": 0.13333333333333333
+      },
+      "peak_error": {
+        "mix": 1.6836557703729913,
+        "candidate": 2.0845927235953927,
+        "change": 0.4009369532224014,
+        "relative_reduction": -0.23813475431119702,
+        "improved_station_fraction": 0.26666666666666666
+      },
+      "base_error": {
+        "mix": 5.6905343007231775,
+        "candidate": 7.4092328915005465,
+        "change": 1.718698590777369,
+        "relative_reduction": -0.30202763043866543,
+        "improved_station_fraction": 0.4666666666666667
+      }
+    }
+  }
+}

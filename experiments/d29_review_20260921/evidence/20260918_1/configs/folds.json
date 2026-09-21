@@ -1,0 +1,156 @@
+{
+ "T24_G_D": {
+  "domain": "FULL24",
+  "end_year": 2024,
+  "evaluation_year": 2024,
+  "mode": "D",
+  "scope": "T24_G",
+  "spatial_block": null,
+  "train_sha256": "eace6052b6e02055aa7d34716c16ce10665bd5df2ae982c30e13a94d0395b688",
+  "train_years": [
+   2021,
+   2022,
+   2023
+  ]
+ },
+ "T24_G_D_H1": {
+  "arm": "H1",
+  "domain": "FULL24C",
+  "end_year": 2024,
+  "evaluation_year": 2024,
+  "h0_fold": "T24_G_D",
+  "mode": "D",
+  "scope": "T24_G",
+  "spatial_block": null,
+  "train_sha256": "eace6052b6e02055aa7d34716c16ce10665bd5df2ae982c30e13a94d0395b688",
+  "train_years": [
+   2021,
+   2022,
+   2023
+  ]
+ },
+ "T24_G_D_H1_FCT8": {
+  "arm": "H1",
+  "domain": "FULL24C",
+  "end_year": 2024,
+  "evaluation_year": 2024,
+  "fct8_of": "T24_G_D_H1",
+  "h0_fold": "T24_G_D",
+  "mode": "D",
+  "scope": "T24_G",
+  "spatial_block": null,
+  "train_sha256": "eace6052b6e02055aa7d34716c16ce10665bd5df2ae982c30e13a94d0395b688",
+  "train_years": [
+   2021,
+   2022,
+   2023
+  ]
+ },
+ "T24_G_M": {
+  "domain": "FULL24",
+  "end_year": 2024,
+  "evaluation_year": 2024,
+  "mode": "M",
+  "scope": "T24_G",
+  "spatial_block": null,
+  "train_sha256": "647e3fc831b70c25ae33f2f028c3b9b3c8df5c7bbacf1d9aff6e83ba4e1b44b9",
+  "train_years": [
+   2021,
+   2022,
+   2023
+  ]
+ },
+ "T24_G_M_H1": {
+  "arm": "H1",
+  "domain": "FULL24C",
+  "end_year": 2024,
+  "evaluation_year": 2024,
+  "h0_fold": "T24_G_M",
+  "mode": "M",
+  "scope": "T24_G",
+  "spatial_block": null,
+  "train_sha256": "647e3fc831b70c25ae33f2f028c3b9b3c8df5c7bbacf1d9aff6e83ba4e1b44b9",
+  "train_years": [
+   2021,
+   2022,
+   2023
+  ]
+ },
+ "T24_G_M_H1_FCT8": {
+  "arm": "H1",
+  "domain": "FULL24C",
+  "end_year": 2024,
+  "evaluation_year": 2024,
+  "fct8_of": "T24_G_M_H1",
+  "h0_fold": "T24_G_M",
+  "mode": "M",
+  "scope": "T24_G",
+  "spatial_block": null,
+  "train_sha256": "647e3fc831b70c25ae33f2f028c3b9b3c8df5c7bbacf1d9aff6e83ba4e1b44b9",
+  "train_years": [
+   2021,
+   2022,
+   2023
+  ]
+ },
+ "T24_L_D": {
+  "domain": "FULL24",
+  "end_year": 2024,
+  "evaluation_year": 2024,
+  "mode": "D",
+  "scope": "T24_L",
+  "spatial_block": null,
+  "train_sha256": "eb6529efdc902d9a6b75e2dbdc1baa0d2cdcb7dc04788b2c9ca5fa47de4a0f8b",
+  "train_years": [
+   2021,
+   2022,
+   2023
+  ]
+ },
+ "T24_L_D_H1": {
+  "arm": "H1",
+  "domain": "FULL24C",
+  "end_year": 2024,
+  "evaluation_year": 2024,
+  "h0_fold": "T24_L_D",
+  "mode": "D",
+  "scope": "T24_L",
+  "spatial_block": null,
+  "train_sha256": "eb6529efdc902d9a6b75e2dbdc1baa0d2cdcb7dc04788b2c9ca5fa47de4a0f8b",
+  "train_years": [
+   2021,
+   2022,
+   2023
+  ]
+ },
+ "T24_L_M": {
+  "domain": "FULL24",
+  "end_year": 2024,
+  "evaluation_year": 2024,
+  "mode": "M",
+  "scope": "T24_L",
+  "spatial_block": null,
+  "train_sha256": "3e161112269bce8cdef4f27ad56d47d106357a0b838133932af4f9b85ec9a930",
+  "train_years": [
+   2021,
+   2022,
+   2023
+  ]
+ },
+ "T24_L_M_H1": {
+  "arm": "H1",
+  "domain": "FULL24C",
+  "end_year": 2024,
+  "evaluation_year": 2024,
+  "h0_fold": "T24_L_M",
+  "mode": "M",
+  "scope": "T24_L",
+  "spatial_block": null,
+  "train_sha256": "3e161112269bce8cdef4f27ad56d47d106357a0b838133932af4f9b85ec9a930",
+  "train_years": [
+   2021,
+   2022,
+   2023
+  ]
+ }
+}

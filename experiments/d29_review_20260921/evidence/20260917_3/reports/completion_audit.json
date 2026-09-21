@@ -1,0 +1,255 @@
+{
+  "stage": "20260917_3",
+  "deliverables": [
+    {
+      "deliverable": "筛选件（次 A 冻结，本轮只读）",
+      "path": "E:\\SPARROW\\5_Test\\20260917_2\\locks\\station_screen_lock.json",
+      "present": true,
+      "satisfied": true,
+      "check": "组合 R74；保留 74、排除 28；零负门通过",
+      "sha256": "4387814bc6f43f48c4f4e37f800fd59217a52965d94abf0f4f98d7b76352ffc8",
+      "bytes": 3309,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "筛选件与基座哈希预检",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\reports\\b0_preflight.json",
+      "present": true,
+      "satisfied": true,
+      "check": "通过",
+      "sha256": "915ef702eec0840f2d5f81ce4ae8c0519031bb221e90cf49ff5b0155410a1249",
+      "bytes": 5616,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "目标面板的产品构建（步骤 01–06）",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\reports\\b1_run.json",
+      "present": true,
+      "satisfied": true,
+      "check": "产物 22 件；标签订正 1 处（20260917_2/arms/screen → 20260917_3/work/screen）",
+      "sha256": "5cb2558e984407d9841dad3b3fd66e3dc1c596ee91833a260d1371e1486b0152",
+      "bytes": 5898,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "产品复现核对（本轮 vs 被冻结臂）",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\reports\\b2_reproduction.json",
+      "present": true,
+      "satisfied": true,
+      "check": "比对 22 件：逐字节 21、内容相同 1、不一致 0、无读取器 0、单侧 0",
+      "sha256": "947435a7ad4cf0dcc8dc66fcf1f3982ec2931cf6cf7364d545c7f62e8ceb5e6e",
+      "bytes": 12300,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "1961-2025 全河网日产品",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\tn_hydrology_reach_daily.parquet",
+      "present": true,
+      "satisfied": true,
+      "check": "5,460,430 行、230 河段、date 1961-01-01 00:00:00..2025-12-31 00:00:00",
+      "sha256": "87d829d0bc60a5c3ea4eee0666cfa4cdd562d609e5c6466971fe9129b0242f89",
+      "bytes": 1152247958,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "1961-2025 全河网月产品",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\tn_hydrology_reach_monthly.parquet",
+      "present": true,
+      "satisfied": true,
+      "check": "179,400 行、230 河段、month 1961-01-01 00:00:00..2025-12-01 00:00:00",
+      "sha256": "21c21e95892249f99dc97650f811bca0eb09eac75e6ca9996f9ad9342c127a00",
+      "bytes": 32877170,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "水库日产品",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\tn_hydrology_reservoir_daily.parquet",
+      "present": true,
+      "satisfied": true,
+      "check": "308,633 行、13 座水库",
+      "sha256": "e38f3d412f02be20d40a379277c1b731c89a08170603e02d33f0a996814d8dd2",
+      "bytes": 46053564,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "水库月产品",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\tn_hydrology_reservoir_monthly.parquet",
+      "present": true,
+      "satisfied": true,
+      "check": "10,140 行、13 座水库",
+      "sha256": "0338f907dc7996dc399f637667ee1611365a327f0a063ef65124aa2231b8e4e1",
+      "bytes": 1393759,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "水库静态元数据",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\tn_hydrology_reservoir_static_metadata.parquet",
+      "present": true,
+      "satisfied": true,
+      "check": "13 行 = 13 座水库（静态表一行一库）",
+      "sha256": "91333e13b4279e5dd320409bc382361144dfa7368a3f6b96f10fa5e78e99b5f8",
+      "bytes": 24159,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "状态自洽日产品",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\state_consistent_reach_daily.parquet",
+      "present": true,
+      "satisfied": true,
+      "check": "5,460,430 行、230 河段、date 1961-01-01 00:00:00..2025-12-31 00:00:00",
+      "sha256": "545335e6363e20ca18c306808cc4ea4c47c3d491c8ba855762bd42a4f0a3b896",
+      "bytes": 694125169,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "状态自洽月产品",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\state_consistent_reach_monthly.parquet",
+      "present": true,
+      "satisfied": true,
+      "check": "179,400 行、230 河段、month 1961-01-01 00:00:00..2025-12-01 00:00:00",
+      "sha256": "4399f60ceea141527bc6a5b298916b9d9b067712628cb10188fc0770f02417a7",
+      "bytes": 24691995,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "状态自洽水库日产品",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\state_consistent_reservoir_daily.parquet",
+      "present": true,
+      "satisfied": true,
+      "check": "308,633 行、13 座水库",
+      "sha256": "e38f3d412f02be20d40a379277c1b731c89a08170603e02d33f0a996814d8dd2",
+      "bytes": 46053564,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "状态自洽水库月产品",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\state_consistent_reservoir_monthly.parquet",
+      "present": true,
+      "satisfied": true,
+      "check": "10,140 行、13 座水库",
+      "sha256": "0338f907dc7996dc399f637667ee1611365a327f0a063ef65124aa2231b8e4e1",
+      "bytes": 1393759,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "状态自洽水库静态元数据",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\state_consistent_reservoir_static_metadata.parquet",
+      "present": true,
+      "satisfied": true,
+      "check": "13 行 = 13 座水库（静态表一行一库）",
+      "sha256": "91333e13b4279e5dd320409bc382361144dfa7368a3f6b96f10fa5e78e99b5f8",
+      "bytes": 24159,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "规范化导出（日，2006-2024）",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\canonical_reach_daily_2006_2024.parquet",
+      "present": true,
+      "satisfied": true,
+      "check": "1,596,200 行、230 河段、date 2006-01-01 00:00:00..2024-12-31 00:00:00",
+      "sha256": "68cccde09204a602978fa2750ba4f44ecf86c5bcfa45976274f56e1dbea2506a",
+      "bytes": 146679689,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "规范化导出（月，2006-2024）",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\canonical_reach_monthly_2006_2024.parquet",
+      "present": true,
+      "satisfied": true,
+      "check": "52,440 行、230 河段、year 2006..2024",
+      "sha256": "0e4b5bfff36141ba0fb09940b0a21e1b96548ffa91835132cfa2a3c0edc2b249",
+      "bytes": 7328211,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "1961 初始陆面状态",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\historical_initial_land_state_1961.npz",
+      "present": true,
+      "satisfied": true,
+      "check": "与自旋锁件所记 land_initial_state 摘要一致（90690e0c8dd16abe…）",
+      "sha256": "90690e0c8dd16abea0de04835922bdb4ad498dd7ade1855ccbbc5a31b8e1cd56",
+      "bytes": 5547,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "1961 初始水库状态",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\historical_initial_reservoir_states_1961.json",
+      "present": true,
+      "satisfied": true,
+      "check": "与自旋锁件所记 reservoir_initial_state 摘要一致（1967d910c48b81e2…）",
+      "sha256": "1967d910c48b81e27640b63b1252b6c820f7eaa027c9b39ff4c6c8fc28402a4b",
+      "bytes": 222,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "裁决件（Q 与 F 并报）",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\evaluation_reports\\canonical_hydrology_decision.json",
+      "present": true,
+      "satisfied": true,
+      "check": "status=ZERO_NEGATIVE_ON_SCREENED_COHORT_REACHED；自检 12 项，假 0",
+      "sha256": "6f16524d4f0bf761fdb40947d7374acef96cc8edcdf812966be7095fb883e3f8",
+      "bytes": 5681,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "产品锁件",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\locks\\product_lock.json",
+      "present": true,
+      "satisfied": true,
+      "check": "gate 与筛选锁件一致；基座 102 → 保留 74、排除 28；所引筛选件摘要相符",
+      "sha256": "c939d477556c3a86c9e79da86232af581d321425a6f7281de43a27a83906d781",
+      "bytes": 13987,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "链证据（发布后逐件回核哈希）",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\locks\\product_lock.json",
+      "present": true,
+      "satisfied": true,
+      "check": "链证据 13 件：缺失 0、哈希不符 0",
+      "sha256": "c939d477556c3a86c9e79da86232af581d321425a6f7281de43a27a83906d781",
+      "bytes": 13987,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "偏离登记",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\reports\\b6_deviations.json",
+      "present": true,
+      "satisfied": true,
+      "check": "通过",
+      "sha256": "18ad90c30c2a89115a6515d1ca7842b11403fbfcde848152e75af1de5dc76374",
+      "bytes": 9865,
+      "self_produced_by_this_script": false
+    },
+    {
+      "deliverable": "本轮对账",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\reports\\b5_reconciliation.json",
+      "present": true,
+      "satisfied": true,
+      "check": "在盘",
+      "sha256": "9c1da9c57cfd705f3f52439658138991322a131d8021896bde616b72ba619510",
+      "bytes": 3721,
+      "self_produced_by_this_script": true
+    },
+    {
+      "deliverable": "轮次报告",
+      "path": "E:\\SPARROW\\5_Test\\20260917_3\\reports\\round_report_20260917_3.md",
+      "present": true,
+      "satisfied": true,
+      "check": "在盘",
+      "sha256": "9464937e4e3d856abb93d6b100c96d6f9b980317771822998bb0d3a8044c184c",
+      "bytes": 3780,
+      "self_produced_by_this_script": true
+    }
+  ],
+  "delivered": 24,
+  "on_disk": 24,
+  "promised": 24,
+  "missing": [],
+  "unsatisfied": [],
+  "self_produced_now": [
+    "本轮对账",
+    "轮次报告"
+  ],
+  "complete": true
+}

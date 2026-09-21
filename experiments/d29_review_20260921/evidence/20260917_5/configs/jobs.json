@@ -1,0 +1,242 @@
+[
+  {
+    "tag": "T24_L_M_s0",
+    "fold": "T24_L_M",
+    "kind": "D29_BE",
+    "start": 0,
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "objective_id": "M",
+    "dependencies": [],
+    "parent_tags": [],
+    "priority": 0
+  },
+  {
+    "tag": "T24_L_M_s1",
+    "fold": "T24_L_M",
+    "kind": "D29_BE",
+    "start": 1,
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "objective_id": "M",
+    "dependencies": [],
+    "parent_tags": [],
+    "priority": 0
+  },
+  {
+    "tag": "T24_L_D_s0",
+    "fold": "T24_L_D",
+    "kind": "D29_BE",
+    "start": 0,
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "objective_id": "D",
+    "dependencies": [
+      "T24_L_M_s0",
+      "T24_L_M_s1"
+    ],
+    "parent_tags": [
+      "T24_L_M_s0",
+      "T24_L_M_s1"
+    ],
+    "priority": 0
+  },
+  {
+    "tag": "T24_L_D_s1",
+    "fold": "T24_L_D",
+    "kind": "D29_BE",
+    "start": 1,
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "objective_id": "D",
+    "dependencies": [],
+    "parent_tags": [],
+    "priority": 0
+  },
+  {
+    "tag": "T24_G_M_s0",
+    "fold": "T24_G_M",
+    "kind": "D29_BE",
+    "start": 0,
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "objective_id": "M",
+    "dependencies": [],
+    "parent_tags": [],
+    "priority": 0
+  },
+  {
+    "tag": "T24_G_M_s1",
+    "fold": "T24_G_M",
+    "kind": "D29_BE",
+    "start": 1,
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "objective_id": "M",
+    "dependencies": [],
+    "parent_tags": [],
+    "priority": 0
+  },
+  {
+    "tag": "T24_G_D_s0",
+    "fold": "T24_G_D",
+    "kind": "D29_BE",
+    "start": 0,
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "objective_id": "D",
+    "dependencies": [
+      "T24_G_M_s0",
+      "T24_G_M_s1"
+    ],
+    "parent_tags": [
+      "T24_G_M_s0",
+      "T24_G_M_s1"
+    ],
+    "priority": 0
+  },
+  {
+    "tag": "T24_G_D_s1",
+    "fold": "T24_G_D",
+    "kind": "D29_BE",
+    "start": 1,
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "objective_id": "D",
+    "dependencies": [],
+    "parent_tags": [],
+    "priority": 0
+  },
+  {
+    "tag": "T24_G_D_H1_s0",
+    "fold": "T24_G_D_H1",
+    "kind": "D29_BE",
+    "start": 0,
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "objective_id": "D",
+    "dependencies": [
+      "T24_G_M_H1_s0",
+      "T24_G_M_H1_s1"
+    ],
+    "parent_tags": [
+      "T24_G_M_H1_s0",
+      "T24_G_M_H1_s1"
+    ],
+    "priority": 0,
+    "arm": "H1"
+  },
+  {
+    "tag": "T24_G_D_H1_s1",
+    "fold": "T24_G_D_H1",
+    "kind": "D29_BE",
+    "start": 1,
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "objective_id": "D",
+    "dependencies": [],
+    "parent_tags": [],
+    "priority": 0,
+    "arm": "H1"
+  },
+  {
+    "tag": "T24_G_M_H1_s0",
+    "fold": "T24_G_M_H1",
+    "kind": "D29_BE",
+    "start": 0,
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "objective_id": "M",
+    "dependencies": [],
+    "parent_tags": [],
+    "priority": 0,
+    "arm": "H1"
+  },
+  {
+    "tag": "T24_G_M_H1_s1",
+    "fold": "T24_G_M_H1",
+    "kind": "D29_BE",
+    "start": 1,
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "objective_id": "M",
+    "dependencies": [],
+    "parent_tags": [],
+    "priority": 0,
+    "arm": "H1"
+  },
+  {
+    "tag": "T24_L_D_H1_s0",
+    "fold": "T24_L_D_H1",
+    "kind": "D29_BE",
+    "start": 0,
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "objective_id": "D",
+    "dependencies": [
+      "T24_L_M_H1_s0",
+      "T24_L_M_H1_s1"
+    ],
+    "parent_tags": [
+      "T24_L_M_H1_s0",
+      "T24_L_M_H1_s1"
+    ],
+    "priority": 0,
+    "arm": "H1"
+  },
+  {
+    "tag": "T24_L_D_H1_s1",
+    "fold": "T24_L_D_H1",
+    "kind": "D29_BE",
+    "start": 1,
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "objective_id": "D",
+    "dependencies": [],
+    "parent_tags": [],
+    "priority": 0,
+    "arm": "H1"
+  },
+  {
+    "tag": "T24_L_M_H1_s0",
+    "fold": "T24_L_M_H1",
+    "kind": "D29_BE",
+    "start": 0,
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "objective_id": "M",
+    "dependencies": [],
+    "parent_tags": [],
+    "priority": 0,
+    "arm": "H1"
+  },
+  {
+    "tag": "T24_L_M_H1_s1",
+    "fold": "T24_L_M_H1",
+    "kind": "D29_BE",
+    "start": 1,
+    "operator_id": "OU",
+    "mapping_id": "G1",
+    "observation_operator": "MATCH",
+    "objective_id": "M",
+    "dependencies": [],
+    "parent_tags": [],
+    "priority": 0,
+    "arm": "H1"
+  }
+]

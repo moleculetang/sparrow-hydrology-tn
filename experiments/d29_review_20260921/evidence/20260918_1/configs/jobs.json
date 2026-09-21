@@ -1,0 +1,64 @@
+[
+ {
+  "tag": "T24_G_D_H1_FCT8_s0",
+  "fold": "T24_G_D_H1_FCT8",
+  "kind": "FCT8",
+  "start": 0,
+  "operator_id": "OU",
+  "mapping_id": "G1",
+  "observation_operator": "MATCH",
+  "objective_id": "D",
+  "dependencies": [
+   "T24_G_M_H1_FCT8_s0",
+   "T24_G_M_H1_FCT8_s1"
+  ],
+  "parent_tags": [
+   "T24_G_M_H1_FCT8_s0",
+   "T24_G_M_H1_FCT8_s1"
+  ],
+  "priority": 0,
+  "arm": "H1"
+ },
+ {
+  "tag": "T24_G_D_H1_FCT8_s1",
+  "fold": "T24_G_D_H1_FCT8",
+  "kind": "FCT8",
+  "start": 1,
+  "operator_id": "OU",
+  "mapping_id": "G1",
+  "observation_operator": "MATCH",
+  "objective_id": "D",
+  "dependencies": [],
+  "parent_tags": [],
+  "priority": 0,
+  "arm": "H1"
+ },
+ {
+  "tag": "T24_G_M_H1_FCT8_s0",
+  "fold": "T24_G_M_H1_FCT8",
+  "kind": "FCT8",
+  "start": 0,
+  "operator_id": "OU",
+  "mapping_id": "G1",
+  "observation_operator": "MATCH",
+  "objective_id": "M",
+  "dependencies": [],
+  "parent_tags": [],
+  "priority": 0,
+  "arm": "H1"
+ },
+ {
+  "tag": "T24_G_M_H1_FCT8_s1",
+  "fold": "T24_G_M_H1_FCT8",
+  "kind": "FCT8",
+  "start": 1,
+  "operator_id": "OU",
+  "mapping_id": "G1",
+  "observation_operator": "MATCH",
+  "objective_id": "M",
+  "dependencies": [],
+  "parent_tags": [],
+  "priority": 0,
+  "arm": "H1"
+ }
+]

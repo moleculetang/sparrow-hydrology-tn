@@ -1,0 +1,163 @@
+{
+  "status": "PASS",
+  "json_lines": 1055,
+  "event_counts": {
+    "CONTROLLER_START": 2,
+    "DISPATCH": 12,
+    "RESOURCE_SAMPLE": 1018,
+    "CHILD_EXIT": 12,
+    "CONTROLLER_TERMINAL": 2,
+    "REPORT_ENTRYPOINT_REPAIR": 1,
+    "POSTPROCESS_WAIT_RESOURCE": 1,
+    "POSTPROCESS_EXIT": 7
+  },
+  "timestamps_nondecreasing": true,
+  "max_sampled_cpu_percent": 34.653227741780654,
+  "max_sampled_ram_percent": 56.159960758916895,
+  "child_exits": [
+    {
+      "time": 1789922167.8728306,
+      "event": "CHILD_EXIT",
+      "tag": "F23_R_s0",
+      "audit": false,
+      "exit_code": 0
+    },
+    {
+      "time": 1789922193.5373285,
+      "event": "CHILD_EXIT",
+      "tag": "F23_R_s0",
+      "audit": true,
+      "exit_code": 0
+    },
+    {
+      "time": 1789922913.658991,
+      "event": "CHILD_EXIT",
+      "tag": "F23_R_s1",
+      "audit": false,
+      "exit_code": 0
+    },
+    {
+      "time": 1789922934.508622,
+      "event": "CHILD_EXIT",
+      "tag": "F23_R_s1",
+      "audit": true,
+      "exit_code": 0
+    },
+    {
+      "time": 1789922990.6692317,
+      "event": "CHILD_EXIT",
+      "tag": "F24_X_s0",
+      "audit": false,
+      "exit_code": 0
+    },
+    {
+      "time": 1789923018.9320538,
+      "event": "CHILD_EXIT",
+      "tag": "F24_X_s0",
+      "audit": true,
+      "exit_code": 0
+    },
+    {
+      "time": 1789926884.9008765,
+      "event": "CHILD_EXIT",
+      "tag": "F23_X_s0",
+      "audit": false,
+      "exit_code": 0
+    },
+    {
+      "time": 1789926913.5011973,
+      "event": "CHILD_EXIT",
+      "tag": "F23_X_s0",
+      "audit": true,
+      "exit_code": 0
+    },
+    {
+      "time": 1789928007.211728,
+      "event": "CHILD_EXIT",
+      "tag": "F23_X_s1",
+      "audit": false,
+      "exit_code": 0
+    },
+    {
+      "time": 1789928027.6370656,
+      "event": "CHILD_EXIT",
+      "tag": "F23_X_s1",
+      "audit": true,
+      "exit_code": 0
+    },
+    {
+      "time": 1789928955.5587215,
+      "event": "CHILD_EXIT",
+      "tag": "F24_X_s1",
+      "audit": false,
+      "exit_code": 0
+    },
+    {
+      "time": 1789928975.3943286,
+      "event": "CHILD_EXIT",
+      "tag": "F24_X_s1",
+      "audit": true,
+      "exit_code": 0
+    }
+  ],
+  "last_controller_status": "COMPLETE_EXPERIMENTAL",
+  "note": "12 exits cover six new fits and six immediate audits; two reused baselines were independently audited before dispatch. Sampled process peak_gib includes reserved profiling floor, not a separate measured peak. Parsing and timestamp order cannot prove absence of unsampled events.",
+  "final_recorded_processes": {
+    "52000": {
+      "winerror": 87,
+      "status": "PID no longer exists"
+    },
+    "30176": {
+      "winerror": 87,
+      "status": "PID no longer exists"
+    },
+    "31808": {
+      "winerror": 87,
+      "status": "PID no longer exists"
+    },
+    "58884": {
+      "winerror": 87,
+      "status": "PID no longer exists"
+    },
+    "44868": {
+      "winerror": 87,
+      "status": "PID no longer exists"
+    },
+    "46340": {
+      "winerror": 87,
+      "status": "PID no longer exists"
+    },
+    "38216": {
+      "winerror": 87,
+      "status": "PID no longer exists"
+    },
+    "10344": {
+      "winerror": 87,
+      "status": "PID no longer exists"
+    },
+    "62700": {
+      "winerror": 87,
+      "status": "PID no longer exists"
+    },
+    "3340": {
+      "winerror": 87,
+      "status": "PID no longer exists"
+    },
+    "60720": {
+      "winerror": 87,
+      "status": "PID no longer exists"
+    },
+    "64496": {
+      "winerror": 87,
+      "status": "PID no longer exists"
+    },
+    "57428": {
+      "winerror": 87,
+      "status": "PID no longer exists"
+    },
+    "43896": {
+      "winerror": 87,
+      "status": "PID no longer exists"
+    }
+  }
+}

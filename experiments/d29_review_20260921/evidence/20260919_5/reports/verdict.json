@@ -1,0 +1,155 @@
+{
+ "G4_falsifier": {
+  "g4_alpha_window": [
+   -0.0904657,
+   -0.0503435
+  ],
+  "note": "the Xi-only comparison point is the registered anchor alpha_hat_at_plus_half = -0.09534394496011094 (20260919_4, beta=+0.5); delta_alpha is defined only at beta = +0.5, and is null everywhere else",
+  "one_sided_note": "the registered falsifier is written |delta alpha| >= 0.004881, which is not equivalent to \"G4 flips\": the flip needs a move UP to the window edge.  The G4_pass flag is reported beside both readings so the discrepancy is visible instead of resolved silently.",
+  "points_meeting_the_literal_abs_reading": [],
+  "points_meeting_the_signed_reading": [],
+  "points_with_G4_pass": [],
+  "reading": "CLAIM HOLDS -- G4 still fails at beta=+0.5 at every device; |delta alpha| stayed below the flip threshold",
+  "rows": {
+   "N1e|0.5": {
+    "D_alpha_base": 0.020061118499597907,
+    "D_alpha_cand": 0.02308299270443455,
+    "G4_pass_at_plus_half": false,
+    "abs_delta": 0.0018563800342498854,
+    "alpha_hat": -0.09348756492586105,
+    "beta": 0.5,
+    "delta_alpha_vs_Xi_only": 0.0018563800342498854,
+    "device": "N1e",
+    "literal_abs_reading_met": false,
+    "signed_reading_met": false
+   },
+   "N1|0.5": {
+    "D_alpha_base": 0.020061118499597907,
+    "D_alpha_cand": 0.023359654058419985,
+    "G4_pass_at_plus_half": false,
+    "abs_delta": 0.0015797186802644497,
+    "alpha_hat": -0.09376422627984649,
+    "beta": 0.5,
+    "delta_alpha_vs_Xi_only": 0.0015797186802644497,
+    "device": "N1",
+    "literal_abs_reading_met": false,
+    "signed_reading_met": false
+   },
+   "N2|0.5": {
+    "D_alpha_base": 0.020061118499597907,
+    "D_alpha_cand": 0.023082992704434632,
+    "G4_pass_at_plus_half": false,
+    "abs_delta": 0.0018563800342498021,
+    "alpha_hat": -0.09348756492586113,
+    "beta": 0.5,
+    "delta_alpha_vs_Xi_only": 0.0018563800342498021,
+    "device": "N2",
+    "literal_abs_reading_met": false,
+    "signed_reading_met": false
+   },
+   "N3|0.5": {
+    "D_alpha_base": 0.020061118499597907,
+    "D_alpha_cand": 0.023359654058419915,
+    "G4_pass_at_plus_half": false,
+    "abs_delta": 0.0015797186802645191,
+    "alpha_hat": -0.09376422627984642,
+    "beta": 0.5,
+    "delta_alpha_vs_Xi_only": 0.0015797186802645191,
+    "device": "N3",
+    "literal_abs_reading_met": false,
+    "signed_reading_met": false
+   }
+  },
+  "threshold": 0.004881,
+  "threshold_basis": "section 2.6: the G4 alpha window is [alpha_obs - D_alpha_base, alpha_obs + D_alpha_base] = [-0.0904657, -0.0503435]; the Xi-only alpha_hat at beta=+0.5 is -0.09534394496011094, so 0.004881 is the distance from it up to the window LOWER edge"
+ },
+ "G4_role": "prediction and falsifier only; not a veto, and its failure never enters this decision",
+ "action_line": "the device HAS a level lever and HAS an amplitude lever, but no single setting achieves both: G1 passes somewhere and G5b passes somewhere and NO usable verdict-capable point passes both.  Locate with the section 2.7 decomposition + Gamma_r + dCbar_pred vs measured whether the two levers are merely too weak to coincide or whether the target is wrong.  NO mechanism conclusion may be drawn from this outcome, and the action line must NOT be written wider than the narrowest version of round 4 section 0.3 -- this cell does not by itself close the land-phase internal structure axis.",
+ "also_matched": [],
+ "also_matched_under_literal_reading": [
+  "BLOCKED",
+  "LEVEL_AND_AMPLITUDE_DO_NOT_COINCIDE"
+ ],
+ "blocked_reading_note": "two registered sentences disagree on this grid.  Section 3: \"64 次内不收敛 => 该 beta 判 BLOCKED\" (a PER-BETA disposition, same as section 2.4's \"不可采纳\").  Section 7: \"某 beta 出现 NO_POSITIVE_ROOT 或 FIXED_POINT_NOT_CONVERGED => 立即停止\" (a ROUND-level stop).  Read literally section 7 fires by construction here -- 12 of 76 points, all at the extreme tier, all four devices -- and makes the other eight cells of the table, including the one section 7 itself added, unreachable.  Section 11.4 of reports/预注册_判据与门槛.md registers the conflict and takes the per-beta reading, BEFORE any Phase 1 forward; `outcome_under_literal_reading` is that reading's answer and is shipped so nothing is hidden.  No threshold, gate, admissibility bound or point was changed or removed by the resolution: the struck points were already outside `usable()`.",
+ "devices_excluded_from_every_gate": [
+  "N1",
+  "N2"
+ ],
+ "exclusion_note": "N2 is excluded from every gate decision, and N1e only carries a gate when C2 moved the primary device to the evaluation window; both are still reported at every point in phase1_full.json",
+ "fit_worker_calls": 0,
+ "k_blocked_acted": [
+  "N1e|-8",
+  "N1e|4",
+  "N1e|8",
+  "N1|-8",
+  "N1|4",
+  "N1|8",
+  "N2|-8",
+  "N2|4",
+  "N2|8",
+  "N3|-8",
+  "N3|4",
+  "N3|8"
+ ],
+ "k_blocked_fatal": false,
+ "k_blocked_literal": [
+  "N1e|-8",
+  "N1e|4",
+  "N1e|8",
+  "N1|-8",
+  "N1|4",
+  "N1|8",
+  "N2|-8",
+  "N2|4",
+  "N2|8",
+  "N3|-8",
+  "N3|4",
+  "N3|8"
+ ],
+ "matched": {
+  "BLOCKED": false,
+  "DECOUPLING_DEMONSTRATED": false,
+  "INSUFFICIENT": false,
+  "INVARIANT_IS_CONCENTRATION_NOT_MASS": false,
+  "LEVEL_AND_AMPLITUDE_DO_NOT_COINCIDE": true,
+  "LEVEL_NOT_THE_CAUSE": false,
+  "MECHANISM_SURVIVES_LEVEL_REMOVED": false,
+  "NEUTRALISATION_FAILED": false,
+  "PREMISE_FALSIFIED_LEVEL_IS_NOT_THE_CAUSE": false
+ },
+ "n_fits": 0,
+ "n_k_blocked_acted": 12,
+ "n_k_blocked_literal": 12,
+ "n_points_passing_G1_anywhere": 6,
+ "n_points_passing_G5b_anywhere": 2,
+ "n_usable_verdict_capable": 30,
+ "n_verdict_capable_points": 38,
+ "nonconvergence_is_inside_the_registered_budget": "xi_k._fixed_point builds its bracket by sweeping OUTWARD, with no hard-coded lower bound; the budget IS the registered max_iter=64 / n_bisect=48.  So the 12 non-adoptable points are \"no solution inside the registered budget\", not a bracket artefact.  Their rho_lin runs to 43-1221, i.e. the near-linear regime C4 assumes has failed there.",
+ "outcome": "LEVEL_AND_AMPLITUDE_DO_NOT_COINCIDE",
+ "outcome_under_literal_reading": "BLOCKED",
+ "precedence": [
+  "BLOCKED",
+  "PREMISE_FALSIFIED_LEVEL_IS_NOT_THE_CAUSE",
+  "DECOUPLING_DEMONSTRATED",
+  "INVARIANT_IS_CONCENTRATION_NOT_MASS",
+  "MECHANISM_SURVIVES_LEVEL_REMOVED",
+  "LEVEL_AND_AMPLITUDE_DO_NOT_COINCIDE",
+  "LEVEL_NOT_THE_CAUSE",
+  "NEUTRALISATION_FAILED",
+  "INSUFFICIENT"
+ ],
+ "primary_device": "N1e",
+ "reads": [
+  "E:\\SPARROW\\5_Test\\20260919_5\\reports\\phase1_full.json",
+  "E:\\SPARROW\\5_Test\\20260919_5\\reports\\phase_minus1.json",
+  "E:\\SPARROW\\5_Test\\20260919_5\\reports\\round4_G5_correction.json"
+ ],
+ "round": "20260919_5",
+ "selected": null,
+ "selection_rule": "smallest |beta| among usable, admissible, verdict-capable points passing all five; else smallest |beta| passing G1 and G5b; ties on sign go NEGATIVE.  No point is ever chosen after seeing a result.",
+ "solver_limit": "xi_k.solve_k coerces a non-positive or non-finite root to 1.0 WITHOUT a status tag, so the plan BLOCKED condition \"root <= 0\" is not separately readable off the shipped field; phase1_full and phase0_freeze assert (k>0).all() and isfinite(k).all() at every read-back point instead",
+ "verdict_capable_devices": [
+  "N1e",
+  "N3"
+ ]
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "tag": "F23_X_s1",
+  "objective": 1.2229017433689178,
+  "objective_difference": 0.0,
+  "pg": 1.6418609749130342e-06,
+  "numerically_sufficient": true,
+  "physical": true,
+  "terms": {
+    "data": 1.17061532569232,
+    "prior": 0.05228641767659789,
+    "new_prior": 0.00018651606741533895,
+    "original_prior": 0.05209990160918255
+  },
+  "adapter": "one path constant and RUN only; full source functions otherwise unchanged"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "station_scales_checked": 584,
+  "events_checked": 194,
+  "max_metric_error": 1.4210854715202004e-14,
+  "both_NSE_median_definitions": true
+}

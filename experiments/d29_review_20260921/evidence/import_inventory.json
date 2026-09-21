@@ -1,0 +1,5537 @@
+[
+  {
+    "path": "snapshot/20260917_3/scripts/b0_preflight.py",
+    "imports": [
+      "__future__",
+      "hashlib",
+      "json",
+      "pandas",
+      "pathlib",
+      "shutil",
+      "unicodedata"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_3/scripts/b1_run_product.py",
+    "imports": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "importlib.util",
+      "json",
+      "pathlib",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_3/scripts/b2_verify_reproduction.py",
+    "imports": [
+      "__future__",
+      "hashlib",
+      "json",
+      "pathlib",
+      "pyarrow",
+      "pyarrow.compute",
+      "pyarrow.parquet",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_3/scripts/b3_publish.py",
+    "imports": [
+      "__future__",
+      "hashlib",
+      "json",
+      "pathlib",
+      "shutil"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_3/scripts/b4_adjudicate.py",
+    "imports": [
+      "__future__",
+      "hashlib",
+      "importlib.util",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys",
+      "unicodedata"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_3/scripts/b5_finalize.py",
+    "imports": [
+      "__future__",
+      "hashlib",
+      "json",
+      "pathlib",
+      "pyarrow",
+      "pyarrow.compute",
+      "pyarrow.parquet"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_3/scripts/b6_deviations.py",
+    "imports": [
+      "__future__",
+      "hashlib",
+      "json",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_3/scripts/forks/s33_spinup.py",
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "evaluate_component_development",
+      "export_final_tn_hydrology_interface",
+      "frozen_hydrology_core",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "reservoir_development_core",
+      "reservoir_network_router",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_3/scripts/forks/s5_parent_fit.py",
+    "imports": [
+      "__future__",
+      "copy",
+      "dyn2p_hbv",
+      "fold_worker",
+      "hashlib",
+      "hydrology_core",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "run_stage25",
+      "run_stage2_temporal",
+      "run_stage3_diagnostics",
+      "run_stage4",
+      "run_stage4_signature_repair",
+      "scipy.optimize",
+      "sys",
+      "time",
+      "torch",
+      "torch_hbv"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_3/scripts/forks/s8_regionalize.py",
+    "imports": [
+      "__future__",
+      "argparse",
+      "copy",
+      "fold_worker",
+      "hashlib",
+      "hydrology_core",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "run_stage25",
+      "run_stage2_temporal",
+      "run_stage3_diagnostics",
+      "scipy.special",
+      "state_consistent_sig2p",
+      "sys",
+      "time",
+      "torch",
+      "torch.nn.functional",
+      "torch_hbv"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/account_computation.py",
+    "imports": [
+      "json",
+      "native_runtime",
+      "pandas",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/apply_resource_profile.py",
+    "imports": [
+      "copy",
+      "ctypes",
+      "json",
+      "native_runtime",
+      "os",
+      "recover_controller",
+      "subprocess",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/audit_inputs.py",
+    "imports": [
+      "__future__",
+      "importlib.util",
+      "os",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/audit_job.py",
+    "imports": [
+      "argparse",
+      "campaign_model",
+      "gc",
+      "native_runtime",
+      "serial_solvers",
+      "temporal_model",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/bootstrap.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "shutil",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/bootstrap_global.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "release_loader",
+      "shutil",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/build_domain.py",
+    "imports": [
+      "__future__",
+      "argparse",
+      "audit_inputs",
+      "fc_data",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "sys",
+      "time",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/campaign_controller.py",
+    "imports": [
+      "ctypes",
+      "hashlib",
+      "json",
+      "native_runtime",
+      "os",
+      "pathlib",
+      "recover_controller",
+      "subprocess",
+      "sys",
+      "time",
+      "traceback"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/campaign_model.py",
+    "imports": [
+      "closures",
+      "copy",
+      "hashlib",
+      "hf_model",
+      "json",
+      "math",
+      "mix_routing",
+      "model",
+      "native_runtime",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "routing",
+      "scientific_models",
+      "support_integral",
+      "sys",
+      "tagged_transport",
+      "torch",
+      "types"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/close_campaign.py",
+    "imports": [
+      "json",
+      "native_runtime",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/diagnose_old_extrapolation.py",
+    "imports": [
+      "campaign_model",
+      "gc",
+      "native_runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/document_sources.py",
+    "imports": [
+      "native_runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/finalize_global.py",
+    "imports": [
+      "hf_metrics",
+      "json",
+      "native_runtime",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "subprocess",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/finalize_hf.py",
+    "imports": [
+      "campaign_model",
+      "gc",
+      "hf_metrics",
+      "native_runtime",
+      "os",
+      "predict_extra",
+      "subprocess",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/finish_evidence.py",
+    "imports": [
+      "hf_metrics",
+      "json",
+      "math",
+      "numpy",
+      "pandas",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/fit_worker.py",
+    "imports": [
+      "argparse",
+      "campaign_model",
+      "hashlib",
+      "native_runtime",
+      "os",
+      "pickle",
+      "scipy.optimize",
+      "serial_solvers",
+      "time",
+      "traceback"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/gate0_preflight.py",
+    "imports": [
+      "__future__",
+      "gc",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "pyarrow.parquet",
+      "re",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/hf_metrics.py",
+    "imports": [
+      "numpy",
+      "pandas"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/hf_model.py",
+    "imports": [
+      "temporal_model"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/independent_completion.py",
+    "imports": [
+      "json",
+      "math",
+      "native_runtime",
+      "numpy",
+      "pandas",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/independent_global.py",
+    "imports": [
+      "hf_metrics",
+      "json",
+      "native_runtime",
+      "numpy",
+      "pandas",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/native_runtime.py",
+    "imports": [
+      "contextlib",
+      "ctypes",
+      "hashlib",
+      "json",
+      "msvcrt",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "sys",
+      "time",
+      "uuid"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/pause_for_isolation.py",
+    "imports": [
+      "ctypes",
+      "native_runtime",
+      "os",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/predict_extra.py",
+    "imports": [
+      "campaign_model",
+      "gc",
+      "native_runtime",
+      "validate_hf"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/prepare_bridge.py",
+    "imports": [
+      "__future__",
+      "campaign_model",
+      "copy",
+      "json",
+      "native_runtime",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/prepare_global.py",
+    "imports": [
+      "campaign_model",
+      "copy",
+      "json",
+      "native_runtime",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "prepare_hf",
+      "sys",
+      "temporal_model"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/prepare_hf.py",
+    "imports": [
+      "ast",
+      "campaign_model",
+      "copy",
+      "json",
+      "math",
+      "native_runtime",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "sys",
+      "temporal_model"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/prepare_spatial_maps.py",
+    "imports": [
+      "geopandas",
+      "matplotlib",
+      "matplotlib.pyplot",
+      "native_runtime",
+      "numpy",
+      "pandas",
+      "release_loader",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/profile_single_audit.py",
+    "imports": [
+      "audit_job",
+      "campaign_model",
+      "copy",
+      "gc",
+      "native_runtime",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/recompute_selected_routing.py",
+    "imports": [
+      "campaign_model",
+      "gc",
+      "native_runtime",
+      "routing",
+      "time",
+      "validate_global"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/recover_checkpoint_io.py",
+    "imports": [
+      "ctypes",
+      "json",
+      "native_runtime",
+      "recover_controller",
+      "shutil",
+      "subprocess",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/recover_checkpoint_status_io.py",
+    "imports": [
+      "ctypes",
+      "json",
+      "native_runtime",
+      "recover_controller",
+      "shutil",
+      "subprocess",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/recover_controller.py",
+    "imports": [
+      "ctypes",
+      "native_runtime",
+      "os",
+      "pathlib",
+      "sys",
+      "time",
+      "traceback"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/recover_t25_checkpoint_io.py",
+    "imports": [
+      "ctypes",
+      "json",
+      "native_runtime",
+      "recover_controller",
+      "shutil",
+      "subprocess",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/register_evaluation_support.py",
+    "imports": [
+      "native_runtime",
+      "pandas",
+      "prepare_global",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/repair_isolation.py",
+    "imports": [
+      "campaign_model",
+      "copy",
+      "fit_worker",
+      "gc",
+      "native_runtime",
+      "serial_solvers",
+      "subprocess",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/report_global.py",
+    "imports": [
+      "hf_metrics",
+      "json",
+      "native_runtime",
+      "numpy",
+      "pandas",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/review_results.py",
+    "imports": [
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/seal_global.py",
+    "imports": [
+      "campaign_model",
+      "gc",
+      "native_runtime",
+      "os",
+      "subprocess",
+      "sys",
+      "time",
+      "validate_mix"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/seal_hf.py",
+    "imports": [
+      "ast",
+      "campaign_model",
+      "native_runtime",
+      "pathlib",
+      "shutil",
+      "sys",
+      "validate_mix"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/serial_solvers.py",
+    "imports": [
+      "copy",
+      "numpy",
+      "scipy",
+      "scipy.optimize",
+      "scipy.optimize._slsqplib"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/supplement_global.py",
+    "imports": [
+      "campaign_model",
+      "gc",
+      "matplotlib",
+      "matplotlib.pyplot",
+      "native_runtime",
+      "numpy",
+      "pandas"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/supplement_hf.py",
+    "imports": [
+      "hf_metrics",
+      "json",
+      "matplotlib",
+      "matplotlib.dates",
+      "matplotlib.pyplot",
+      "native_runtime",
+      "numpy",
+      "os",
+      "pandas"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/synthesize_global.py",
+    "imports": [
+      "hf_metrics",
+      "native_runtime",
+      "numpy",
+      "pandas",
+      "report_global"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/temporal_model.py",
+    "imports": [
+      "campaign_model",
+      "routing"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/test_boundaries.py",
+    "imports": [
+      "campaign_model",
+      "copy",
+      "gc",
+      "native_runtime",
+      "routing",
+      "time",
+      "validate_small"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/test_global_reporting.py",
+    "imports": [
+      "ast",
+      "finalize_global",
+      "native_runtime",
+      "numpy",
+      "pandas"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/test_reporting.py",
+    "imports": [
+      "ast",
+      "hf_metrics",
+      "numpy",
+      "pandas",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/test_time_support.py",
+    "imports": [
+      "native_runtime",
+      "numpy",
+      "pandas",
+      "prepare_hf"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/validate_bridge.py",
+    "imports": [
+      "__future__",
+      "campaign_model",
+      "gc",
+      "json",
+      "native_runtime",
+      "numpy",
+      "os",
+      "pathlib",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/validate_common_domain.py",
+    "imports": [
+      "campaign_model",
+      "copy",
+      "gc",
+      "native_runtime",
+      "validate_global"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/validate_common_outputs.py",
+    "imports": [
+      "campaign_model",
+      "gc",
+      "native_runtime",
+      "validate_global"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/validate_global.py",
+    "imports": [
+      "campaign_model",
+      "copy",
+      "gc",
+      "mix_routing",
+      "native_runtime",
+      "prepare_hf",
+      "routing",
+      "serial_solvers",
+      "subprocess",
+      "support_integral",
+      "sys",
+      "temporal_model",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/validate_global_inputs.py",
+    "imports": [
+      "copy",
+      "json",
+      "native_runtime",
+      "numpy",
+      "pandas",
+      "prepare_hf",
+      "release_loader",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/validate_hf.py",
+    "imports": [
+      "campaign_model",
+      "copy",
+      "gc",
+      "mix_routing",
+      "native_runtime",
+      "prepare_hf",
+      "routing",
+      "serial_solvers",
+      "subprocess",
+      "support_integral",
+      "sys",
+      "temporal_model",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/validate_mix.py",
+    "imports": [
+      "argparse",
+      "campaign_model",
+      "copy",
+      "gc",
+      "json",
+      "native_runtime",
+      "os",
+      "support_integral",
+      "sys",
+      "tagged_transport",
+      "time",
+      "validate_small"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/validate_small.py",
+    "imports": [
+      "argparse",
+      "campaign_model",
+      "copy",
+      "gc",
+      "native_runtime",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/verify_extension_contract.py",
+    "imports": [
+      "campaign_model",
+      "native_runtime",
+      "numpy",
+      "pandas"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/verify_resource_profile.py",
+    "imports": [
+      "apply_resource_profile",
+      "json",
+      "native_runtime",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/wait_event.py",
+    "imports": [
+      "ctypes",
+      "hashlib",
+      "native_runtime",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/scripts/write_final_interpretation.py",
+    "imports": [
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/vendor/expert/tn_challenge/mix_routing.py",
+    "imports": [
+      "numpy",
+      "routing",
+      "support_integral",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/vendor/expert/tn_challenge/model.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "routing",
+      "sc_kernel",
+      "text_arrays",
+      "torch",
+      "types"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/vendor/expert/tn_challenge/routing.py",
+    "imports": [
+      "numba",
+      "numpy",
+      "support_integral",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/vendor/expert/tn_challenge/run.py",
+    "imports": [
+      "argparse",
+      "hashlib",
+      "json",
+      "model",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "scipy.optimize",
+      "text_arrays",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/vendor/expert/tn_challenge/sc_kernel.py",
+    "imports": [
+      "numba",
+      "numpy",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/vendor/expert/tn_challenge/support_integral.py",
+    "imports": [
+      "numpy",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/vendor/expert/tn_challenge/text_arrays.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "numpy",
+      "pathlib",
+      "re"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/vendor/research/closures.py",
+    "imports": [
+      "math",
+      "model",
+      "numba",
+      "numpy",
+      "pathlib",
+      "routing",
+      "sc_kernel",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/vendor/research/tagged_transport.py",
+    "imports": [
+      "numba",
+      "numpy",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/vendor/transfer_research/scientific_models.py",
+    "imports": [
+      "closures",
+      "copy",
+      "math",
+      "model",
+      "numpy",
+      "pathlib",
+      "routing",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/work/audit_arms.py",
+    "imports": [
+      "__future__",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260917_5/work/replay_arm.py",
+    "imports": [
+      "__future__",
+      "argparse",
+      "campaign_model",
+      "gc",
+      "json",
+      "native_runtime",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "subprocess",
+      "sys",
+      "temporal_model",
+      "time",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/account_computation.py",
+    "imports": [
+      "json",
+      "native_runtime",
+      "pandas",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/apply_resource_profile.py",
+    "imports": [
+      "copy",
+      "ctypes",
+      "json",
+      "native_runtime",
+      "os",
+      "recover_controller",
+      "subprocess",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/audit_inputs.py",
+    "imports": [
+      "__future__",
+      "importlib.util",
+      "os",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/audit_job.py",
+    "imports": [
+      "argparse",
+      "campaign_model",
+      "gc",
+      "native_runtime",
+      "serial_solvers",
+      "temporal_model",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/bootstrap.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "shutil",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/bootstrap_fct8.py",
+    "imports": [
+      "__future__",
+      "json",
+      "native_runtime",
+      "pathlib",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/bootstrap_global.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "release_loader",
+      "shutil",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/build_domain.py",
+    "imports": [
+      "__future__",
+      "argparse",
+      "audit_inputs",
+      "fc_data",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "sys",
+      "time",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/campaign_controller.py",
+    "imports": [
+      "ctypes",
+      "hashlib",
+      "json",
+      "native_runtime",
+      "os",
+      "pathlib",
+      "recover_controller",
+      "subprocess",
+      "sys",
+      "time",
+      "traceback"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/campaign_model.py",
+    "imports": [
+      "closures",
+      "copy",
+      "fct8_model",
+      "hashlib",
+      "hf_model",
+      "json",
+      "math",
+      "mix_routing",
+      "model",
+      "native_runtime",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "routing",
+      "scientific_models",
+      "support_integral",
+      "sys",
+      "tagged_transport",
+      "torch",
+      "types"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/close_campaign.py",
+    "imports": [
+      "json",
+      "native_runtime",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/diagnose_old_extrapolation.py",
+    "imports": [
+      "campaign_model",
+      "gc",
+      "native_runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/document_sources.py",
+    "imports": [
+      "native_runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/fct8_model.py",
+    "imports": [
+      "campaign_model",
+      "hf_model",
+      "math",
+      "numpy",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/finalize_global.py",
+    "imports": [
+      "hf_metrics",
+      "json",
+      "native_runtime",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "subprocess",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/finalize_hf.py",
+    "imports": [
+      "campaign_model",
+      "gc",
+      "hf_metrics",
+      "native_runtime",
+      "os",
+      "predict_extra",
+      "subprocess",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/finish_evidence.py",
+    "imports": [
+      "hf_metrics",
+      "json",
+      "math",
+      "numpy",
+      "pandas",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/fit_worker.py",
+    "imports": [
+      "argparse",
+      "campaign_model",
+      "hashlib",
+      "native_runtime",
+      "os",
+      "pickle",
+      "scipy.optimize",
+      "serial_solvers",
+      "time",
+      "traceback"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/gate0_preflight.py",
+    "imports": [
+      "__future__",
+      "hashlib",
+      "json",
+      "pathlib",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/hf_metrics.py",
+    "imports": [
+      "numpy",
+      "pandas"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/hf_model.py",
+    "imports": [
+      "temporal_model"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/independent_completion.py",
+    "imports": [
+      "json",
+      "math",
+      "native_runtime",
+      "numpy",
+      "pandas",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/independent_global.py",
+    "imports": [
+      "hf_metrics",
+      "json",
+      "native_runtime",
+      "numpy",
+      "pandas",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/native_runtime.py",
+    "imports": [
+      "contextlib",
+      "ctypes",
+      "hashlib",
+      "json",
+      "msvcrt",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "sys",
+      "time",
+      "uuid"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/pause_for_isolation.py",
+    "imports": [
+      "ctypes",
+      "native_runtime",
+      "os",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/predict_extra.py",
+    "imports": [
+      "campaign_model",
+      "gc",
+      "native_runtime",
+      "validate_hf"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/prepare_bridge.py",
+    "imports": [
+      "__future__",
+      "campaign_model",
+      "copy",
+      "json",
+      "native_runtime",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/prepare_fct8.py",
+    "imports": [
+      "campaign_model",
+      "fct8_model",
+      "json",
+      "math",
+      "numpy",
+      "pathlib",
+      "shutil",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/prepare_global.py",
+    "imports": [
+      "campaign_model",
+      "copy",
+      "json",
+      "native_runtime",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "prepare_hf",
+      "sys",
+      "temporal_model"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/prepare_hf.py",
+    "imports": [
+      "ast",
+      "campaign_model",
+      "copy",
+      "json",
+      "math",
+      "native_runtime",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "sys",
+      "temporal_model"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/prepare_spatial_maps.py",
+    "imports": [
+      "geopandas",
+      "matplotlib",
+      "matplotlib.pyplot",
+      "native_runtime",
+      "numpy",
+      "pandas",
+      "release_loader",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/profile_single_audit.py",
+    "imports": [
+      "audit_job",
+      "campaign_model",
+      "copy",
+      "gc",
+      "native_runtime",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/recompute_selected_routing.py",
+    "imports": [
+      "campaign_model",
+      "gc",
+      "native_runtime",
+      "routing",
+      "time",
+      "validate_global"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/recover_checkpoint_io.py",
+    "imports": [
+      "ctypes",
+      "json",
+      "native_runtime",
+      "recover_controller",
+      "shutil",
+      "subprocess",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/recover_checkpoint_status_io.py",
+    "imports": [
+      "ctypes",
+      "json",
+      "native_runtime",
+      "recover_controller",
+      "shutil",
+      "subprocess",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/recover_controller.py",
+    "imports": [
+      "ctypes",
+      "native_runtime",
+      "os",
+      "pathlib",
+      "sys",
+      "time",
+      "traceback"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/recover_t25_checkpoint_io.py",
+    "imports": [
+      "ctypes",
+      "json",
+      "native_runtime",
+      "recover_controller",
+      "shutil",
+      "subprocess",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/register_evaluation_support.py",
+    "imports": [
+      "native_runtime",
+      "pandas",
+      "prepare_global",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/repair_isolation.py",
+    "imports": [
+      "campaign_model",
+      "copy",
+      "fit_worker",
+      "gc",
+      "native_runtime",
+      "serial_solvers",
+      "subprocess",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/report_global.py",
+    "imports": [
+      "hf_metrics",
+      "json",
+      "native_runtime",
+      "numpy",
+      "pandas",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/review_results.py",
+    "imports": [
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/seal_global.py",
+    "imports": [
+      "campaign_model",
+      "gc",
+      "native_runtime",
+      "os",
+      "subprocess",
+      "sys",
+      "time",
+      "validate_mix"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/seal_hf.py",
+    "imports": [
+      "ast",
+      "campaign_model",
+      "native_runtime",
+      "pathlib",
+      "shutil",
+      "sys",
+      "validate_mix"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/serial_solvers.py",
+    "imports": [
+      "copy",
+      "numpy",
+      "scipy",
+      "scipy.optimize",
+      "scipy.optimize._slsqplib"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/supplement_global.py",
+    "imports": [
+      "campaign_model",
+      "gc",
+      "matplotlib",
+      "matplotlib.pyplot",
+      "native_runtime",
+      "numpy",
+      "pandas"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/supplement_hf.py",
+    "imports": [
+      "hf_metrics",
+      "json",
+      "matplotlib",
+      "matplotlib.dates",
+      "matplotlib.pyplot",
+      "native_runtime",
+      "numpy",
+      "os",
+      "pandas"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/synthesize_global.py",
+    "imports": [
+      "hf_metrics",
+      "native_runtime",
+      "numpy",
+      "pandas",
+      "report_global"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/temporal_model.py",
+    "imports": [
+      "campaign_model",
+      "routing"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/test_boundaries.py",
+    "imports": [
+      "campaign_model",
+      "copy",
+      "gc",
+      "native_runtime",
+      "routing",
+      "time",
+      "validate_small"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/test_global_reporting.py",
+    "imports": [
+      "ast",
+      "finalize_global",
+      "native_runtime",
+      "numpy",
+      "pandas"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/test_reporting.py",
+    "imports": [
+      "ast",
+      "hf_metrics",
+      "numpy",
+      "pandas",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/test_time_support.py",
+    "imports": [
+      "native_runtime",
+      "numpy",
+      "pandas",
+      "prepare_hf"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/validate_bridge.py",
+    "imports": [
+      "__future__",
+      "campaign_model",
+      "gc",
+      "json",
+      "native_runtime",
+      "numpy",
+      "os",
+      "pathlib",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/validate_common_domain.py",
+    "imports": [
+      "campaign_model",
+      "copy",
+      "gc",
+      "native_runtime",
+      "validate_global"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/validate_common_outputs.py",
+    "imports": [
+      "campaign_model",
+      "gc",
+      "native_runtime",
+      "validate_global"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/validate_fct8.py",
+    "imports": [
+      "__future__",
+      "argparse",
+      "campaign_model",
+      "fct8_model",
+      "json",
+      "math",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/validate_global.py",
+    "imports": [
+      "campaign_model",
+      "copy",
+      "gc",
+      "mix_routing",
+      "native_runtime",
+      "prepare_hf",
+      "routing",
+      "serial_solvers",
+      "subprocess",
+      "support_integral",
+      "sys",
+      "temporal_model",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/validate_global_inputs.py",
+    "imports": [
+      "copy",
+      "json",
+      "native_runtime",
+      "numpy",
+      "pandas",
+      "prepare_hf",
+      "release_loader",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/validate_hf.py",
+    "imports": [
+      "campaign_model",
+      "copy",
+      "gc",
+      "mix_routing",
+      "native_runtime",
+      "prepare_hf",
+      "routing",
+      "serial_solvers",
+      "subprocess",
+      "support_integral",
+      "sys",
+      "temporal_model",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/validate_mix.py",
+    "imports": [
+      "argparse",
+      "campaign_model",
+      "copy",
+      "gc",
+      "json",
+      "native_runtime",
+      "os",
+      "support_integral",
+      "sys",
+      "tagged_transport",
+      "time",
+      "validate_small"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/validate_small.py",
+    "imports": [
+      "argparse",
+      "campaign_model",
+      "copy",
+      "gc",
+      "native_runtime",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/verify_extension_contract.py",
+    "imports": [
+      "campaign_model",
+      "native_runtime",
+      "numpy",
+      "pandas"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/verify_resource_profile.py",
+    "imports": [
+      "apply_resource_profile",
+      "json",
+      "native_runtime",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/wait_event.py",
+    "imports": [
+      "ctypes",
+      "hashlib",
+      "native_runtime",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/scripts/write_final_interpretation.py",
+    "imports": [
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/vendor/expert/tn_challenge/mix_routing.py",
+    "imports": [
+      "numpy",
+      "routing",
+      "support_integral",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/vendor/expert/tn_challenge/model.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "routing",
+      "sc_kernel",
+      "text_arrays",
+      "torch",
+      "types"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/vendor/expert/tn_challenge/routing.py",
+    "imports": [
+      "numba",
+      "numpy",
+      "support_integral",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/vendor/expert/tn_challenge/run.py",
+    "imports": [
+      "argparse",
+      "hashlib",
+      "json",
+      "model",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "scipy.optimize",
+      "text_arrays",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/vendor/expert/tn_challenge/sc_kernel.py",
+    "imports": [
+      "numba",
+      "numpy",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/vendor/expert/tn_challenge/support_integral.py",
+    "imports": [
+      "numpy",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/vendor/expert/tn_challenge/text_arrays.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "numpy",
+      "pathlib",
+      "re"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/vendor/research/closures.py",
+    "imports": [
+      "math",
+      "model",
+      "numba",
+      "numpy",
+      "pathlib",
+      "routing",
+      "sc_kernel",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/vendor/research/tagged_transport.py",
+    "imports": [
+      "numba",
+      "numpy",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/vendor/transfer_research/scientific_models.py",
+    "imports": [
+      "closures",
+      "copy",
+      "math",
+      "model",
+      "numpy",
+      "pathlib",
+      "routing",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/work/audit_arms.py",
+    "imports": [
+      "__future__",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/work/audit_fct8.py",
+    "imports": [
+      "__future__",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/work/f0_phenotype.py",
+    "imports": [
+      "__future__",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/work/f0_phenotype_hf.py",
+    "imports": [
+      "__future__",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/work/f0_saturation.py",
+    "imports": [
+      "__future__",
+      "campaign_model",
+      "json",
+      "math",
+      "numpy",
+      "pathlib",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/work/f4_gradient_decoupling.py",
+    "imports": [
+      "__future__",
+      "campaign_model",
+      "json",
+      "numpy",
+      "pathlib",
+      "sys",
+      "time",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/work/fct8_identifiability.py",
+    "imports": [
+      "__future__",
+      "campaign_model",
+      "json",
+      "numpy",
+      "pathlib",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/work/probe_fct8.py",
+    "imports": [
+      "campaign_model",
+      "json",
+      "math",
+      "numpy",
+      "pathlib",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/work/probe_freeze_fix.py",
+    "imports": [
+      "native_runtime",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/work/replay_arm.py",
+    "imports": [
+      "__future__",
+      "argparse",
+      "campaign_model",
+      "gc",
+      "json",
+      "native_runtime",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "subprocess",
+      "sys",
+      "temporal_model",
+      "time",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/work/replay_fct8_gate.py",
+    "imports": [
+      "__future__",
+      "argparse",
+      "gc",
+      "native_runtime",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "replay_arm",
+      "subprocess",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/work/spatial_blocks.py",
+    "imports": [
+      "__future__",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260918_1/work/verify_fct8_weight.py",
+    "imports": [
+      "__future__",
+      "campaign_model",
+      "json",
+      "numpy",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_4/work/_refresh_ledger.py",
+    "imports": [
+      "pathlib"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_4/work/audit_beta.py",
+    "imports": [
+      "campaign_model",
+      "closures",
+      "eventlib",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "structure_model",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_4/work/censuses22.py",
+    "imports": [
+      "common22",
+      "eventlib",
+      "numpy",
+      "pandas",
+      "xi"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_4/work/check_delivery.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "re",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_4/work/closures_mc.py",
+    "imports": [
+      "numba",
+      "numpy",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_4/work/common22.py",
+    "imports": [
+      "campaign_model",
+      "closures",
+      "closures_mc",
+      "eventlib",
+      "hashlib",
+      "hf_model",
+      "json",
+      "model",
+      "native_runtime",
+      "numba.core.config",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "scientific_models",
+      "structure_model",
+      "sys",
+      "tagged_transport",
+      "temporal_model",
+      "torch",
+      "xi"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_4/work/hazard_g.py",
+    "imports": [
+      "campaign_model",
+      "model",
+      "numpy",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_4/work/layers22.py",
+    "imports": [
+      "common22",
+      "eventlib",
+      "numpy",
+      "pandas",
+      "structure_model",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_4/work/phase0_freeze.py",
+    "imports": [
+      "censuses22",
+      "closures_mc",
+      "common22",
+      "eventlib",
+      "layers22",
+      "numpy",
+      "pandas",
+      "torch",
+      "xi"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_4/work/phase1_l1.py",
+    "imports": [
+      "censuses22",
+      "common22",
+      "eventlib",
+      "layers22",
+      "numpy",
+      "pandas",
+      "sys",
+      "torch",
+      "xi"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_4/work/phase2_full.py",
+    "imports": [
+      "common22",
+      "eventlib",
+      "layers22",
+      "numpy",
+      "pandas",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_4/work/phase2_gamma_backfill.py",
+    "imports": [
+      "common22",
+      "eventlib",
+      "hazard_g",
+      "layers22",
+      "numpy",
+      "pandas"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_4/work/verdict_beta.py",
+    "imports": [
+      "common22",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_4/work/xi.py",
+    "imports": [
+      "numpy"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_5/work/_probe_commit.py",
+    "imports": [
+      "common23",
+      "ctypes",
+      "ctypes.wintypes",
+      "hashlib",
+      "json",
+      "numpy",
+      "subprocess",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_5/work/_probe_mono.py",
+    "imports": [
+      "audit_beta",
+      "closures",
+      "json",
+      "numpy",
+      "pathlib",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_5/work/_probe_route.py",
+    "imports": [
+      "_probe_mono",
+      "audit_beta",
+      "json",
+      "numpy",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_5/work/_refresh_ledger.py",
+    "imports": [
+      "hashlib",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_5/work/audit_beta.py",
+    "imports": [
+      "campaign_model",
+      "closures",
+      "hashlib",
+      "json",
+      "numpy",
+      "pathlib",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_5/work/check_delivery.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "math",
+      "pathlib",
+      "re",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_5/work/closures_mc.py",
+    "imports": [
+      "numba",
+      "numpy",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_5/work/common23.py",
+    "imports": [
+      "campaign_model",
+      "closures",
+      "closures_mc",
+      "eventlib",
+      "hashlib",
+      "json",
+      "model",
+      "numba.core.config",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "routing",
+      "sys",
+      "tagged_transport",
+      "torch",
+      "xi_k"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_5/work/layers23.py",
+    "imports": [
+      "common23",
+      "eventlib",
+      "numpy",
+      "pandas",
+      "structure_model",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_5/work/level_variance.py",
+    "imports": [
+      "closures",
+      "common23",
+      "numpy",
+      "pandas",
+      "xi_k"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_5/work/phase0_freeze.py",
+    "imports": [
+      "campaign_model",
+      "closures",
+      "closures_mc",
+      "common23",
+      "eventlib",
+      "hashlib",
+      "numpy",
+      "phase_minus1",
+      "tagged_transport",
+      "torch",
+      "xi_k"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_5/work/phase1_full.py",
+    "imports": [
+      "common23",
+      "eventlib",
+      "hashlib",
+      "layers23",
+      "numpy",
+      "pandas",
+      "xi_k"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_5/work/phase_minus1.py",
+    "imports": [
+      "common23",
+      "eventlib",
+      "hashlib",
+      "json",
+      "layers23",
+      "numpy",
+      "pandas",
+      "sys",
+      "time",
+      "xi_k"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_5/work/round4_g5_correction.py",
+    "imports": [
+      "common23",
+      "json"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_5/work/verdict_beta.py",
+    "imports": [
+      "common23",
+      "numpy"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_5/work/xi_base.py",
+    "imports": [
+      "numpy"
+    ]
+  },
+  {
+    "path": "snapshot/20260919_5/work/xi_k.py",
+    "imports": [
+      "hashlib",
+      "numpy",
+      "xi_base"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/_refresh_ledger.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "re",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/_verify_ledger_history.py",
+    "imports": [
+      "collections",
+      "io",
+      "json",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/_verify_prereg_freeze.py",
+    "imports": [
+      "common24",
+      "datetime",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/audit_dp.py",
+    "imports": [
+      "ast",
+      "campaign_model",
+      "closures",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/check_delivery.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "math",
+      "pathlib",
+      "re",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/closures_dp.py",
+    "imports": [
+      "numba",
+      "numpy",
+      "routing",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/common24.py",
+    "imports": [
+      "campaign_model",
+      "closures",
+      "closures_dp",
+      "dp_kernel",
+      "eventlib",
+      "hashlib",
+      "json",
+      "model",
+      "numba.core.config",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "routing",
+      "sys",
+      "tagged_transport",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/dp_kernel.py",
+    "imports": [
+      "__future__",
+      "numpy"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/layers24.py",
+    "imports": [
+      "common24",
+      "eventlib",
+      "numpy",
+      "pandas",
+      "structure_model",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/level_variance.py",
+    "imports": [
+      "common24",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/phase0_gates.py",
+    "imports": [
+      "__future__",
+      "closures_dp",
+      "common24",
+      "dp_kernel",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/phase0_n1.py",
+    "imports": [
+      "__future__",
+      "ast",
+      "closures_dp",
+      "common24",
+      "json",
+      "numpy",
+      "pathlib",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/phase1_arms.py",
+    "imports": [
+      "common24",
+      "dp_kernel",
+      "hashlib",
+      "layers24",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys",
+      "time",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/probe_arm_hashes.py",
+    "imports": [
+      "common24",
+      "dp_kernel",
+      "json",
+      "numpy",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/probe_label_floor.py",
+    "imports": [
+      "common24",
+      "json",
+      "numpy",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/probe_lpre.py",
+    "imports": [
+      "common24",
+      "json",
+      "numpy",
+      "pathlib",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/probe_prevolume.py",
+    "imports": [
+      "__future__",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/probe_saturation.py",
+    "imports": [
+      "__future__",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/probe_sources.py",
+    "imports": [
+      "__future__",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/probe_timing.py",
+    "imports": [
+      "__future__",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/smoke24.py",
+    "imports": [
+      "common24",
+      "json",
+      "numpy",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/smoke_layers24.py",
+    "imports": [
+      "common24",
+      "hashlib",
+      "json",
+      "layers24",
+      "numpy",
+      "pathlib",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/verdict_dp.py",
+    "imports": [
+      "common24",
+      "json",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_1/work/verify_neighbours.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/_freeze_prereg.py",
+    "imports": [
+      "__future__",
+      "datetime",
+      "hashlib",
+      "json",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/_probe_label_scale.py",
+    "imports": [
+      "__future__",
+      "common25",
+      "layers25",
+      "numpy",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/_probe_ledger_dp2.py",
+    "imports": [
+      "__future__",
+      "closures_dp2",
+      "common25",
+      "numpy",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/_probe_prob.py",
+    "imports": [
+      "common25",
+      "numpy",
+      "pathlib",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/_probe_verdict_inputs.py",
+    "imports": [
+      "json",
+      "os"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/_probe_verdict_inputs2.py",
+    "imports": [
+      "json",
+      "os"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/_probe_verdict_inputs3.py",
+    "imports": [
+      "json",
+      "os"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/_probe_verdict_inputs4.py",
+    "imports": [
+      "json",
+      "os"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/_probe_verdict_keys.py",
+    "imports": [
+      "json",
+      "os"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/_probe_verdict_keys2.py",
+    "imports": [
+      "json",
+      "os"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/_refresh_ledger.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/_verify_ledger_history.py",
+    "imports": [
+      "collections",
+      "io",
+      "json",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/_verify_prereg_freeze.py",
+    "imports": [
+      "common25",
+      "datetime",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/audit_dp.py",
+    "imports": [
+      "ast",
+      "campaign_model",
+      "closures",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/audit_dp2.py",
+    "imports": [
+      "campaign_model",
+      "eventlib",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/check_delivery.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "math",
+      "pathlib",
+      "re",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/closures_dp.py",
+    "imports": [
+      "numba",
+      "numpy",
+      "routing",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/closures_dp2.py",
+    "imports": [
+      "numba",
+      "numpy",
+      "routing",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/common24.py",
+    "imports": [
+      "campaign_model",
+      "closures",
+      "closures_dp",
+      "dp_kernel",
+      "eventlib",
+      "hashlib",
+      "json",
+      "model",
+      "numba.core.config",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "routing",
+      "sys",
+      "tagged_transport",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/common25.py",
+    "imports": [
+      "campaign_model",
+      "closures",
+      "closures_dp",
+      "closures_dp2",
+      "dp_kernel",
+      "eventlib",
+      "hashlib",
+      "json",
+      "model",
+      "numba.core.config",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "routing",
+      "sys",
+      "tagged_transport",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/dp_kernel.py",
+    "imports": [
+      "__future__",
+      "numpy"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/layers24.py",
+    "imports": [
+      "common24",
+      "eventlib",
+      "numpy",
+      "pandas",
+      "structure_model",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/layers25.py",
+    "imports": [
+      "common25",
+      "eventlib",
+      "numpy",
+      "pandas",
+      "structure_model",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/level_matched.py",
+    "imports": [
+      "common25",
+      "hashlib",
+      "layers25",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/level_variance.py",
+    "imports": [
+      "common25",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/phase0_gates.py",
+    "imports": [
+      "__future__",
+      "common25",
+      "dp_kernel",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/phase0_n1.py",
+    "imports": [
+      "__future__",
+      "ast",
+      "closures_dp",
+      "closures_dp2",
+      "common25",
+      "json",
+      "numpy",
+      "pathlib",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/phase1_arms.py",
+    "imports": [
+      "common25",
+      "dp_kernel",
+      "hashlib",
+      "layers25",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys",
+      "time",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/probe_arm_hashes.py",
+    "imports": [
+      "common24",
+      "dp_kernel",
+      "json",
+      "numpy",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/probe_label_floor.py",
+    "imports": [
+      "common24",
+      "json",
+      "numpy",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/probe_lpre.py",
+    "imports": [
+      "common24",
+      "json",
+      "numpy",
+      "pathlib",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/probe_prevolume.py",
+    "imports": [
+      "__future__",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/probe_saturation.py",
+    "imports": [
+      "__future__",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/probe_sources.py",
+    "imports": [
+      "__future__",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/probe_timing.py",
+    "imports": [
+      "__future__",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/shape_diag.py",
+    "imports": [
+      "common25",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/smoke24.py",
+    "imports": [
+      "common24",
+      "json",
+      "numpy",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/smoke25.py",
+    "imports": [
+      "common25",
+      "json",
+      "numpy",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/smoke_layers24.py",
+    "imports": [
+      "common24",
+      "hashlib",
+      "json",
+      "layers24",
+      "numpy",
+      "pathlib",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/smoke_layers25.py",
+    "imports": [
+      "common25",
+      "hashlib",
+      "json",
+      "layers25",
+      "numpy",
+      "pathlib",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/verdict_dp.py",
+    "imports": [
+      "common24",
+      "json",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/verdict_dp2.py",
+    "imports": [
+      "common25",
+      "os",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_2/work/verify_neighbours.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_3/scripts/additional_checks.py",
+    "imports": [
+      "events",
+      "kernel",
+      "os",
+      "runtime",
+      "types"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_3/scripts/controller.py",
+    "imports": [
+      "runtime",
+      "subprocess"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_3/scripts/evaluate.py",
+    "imports": [
+      "events",
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_3/scripts/events.py",
+    "imports": [
+      "numpy",
+      "os",
+      "pandas",
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_3/scripts/figures.py",
+    "imports": [
+      "matplotlib",
+      "matplotlib.pyplot",
+      "os",
+      "pathlib",
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_3/scripts/finalize.py",
+    "imports": [
+      "datetime",
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_3/scripts/independent_audit.py",
+    "imports": [
+      "closures_dp",
+      "os",
+      "preflight",
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_3/scripts/kernel.py",
+    "imports": [
+      "numba",
+      "numpy"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_3/scripts/preflight.py",
+    "imports": [
+      "closures_dp",
+      "closures_dp2",
+      "kernel",
+      "os",
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_3/scripts/prepare_observations.py",
+    "imports": [
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_3/scripts/runner.py",
+    "imports": [
+      "closures",
+      "kernel",
+      "os",
+      "runtime",
+      "scipy.optimize",
+      "traceback"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_3/scripts/runtime.py",
+    "imports": [
+      "campaign_model",
+      "copy",
+      "ctypes",
+      "dp_kernel",
+      "hashlib",
+      "json",
+      "numba.core.config",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "routing",
+      "sys",
+      "time",
+      "torch",
+      "types"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_3/scripts/setup.py",
+    "imports": [
+      "datetime",
+      "hashlib",
+      "json",
+      "pathlib",
+      "shutil"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_3/scripts/supplement.py",
+    "imports": [
+      "evaluate",
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_3/scripts/verify_sources.py",
+    "imports": [
+      "closures_dp2",
+      "kernel",
+      "os",
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_3/vendor/closures_dp.py",
+    "imports": [
+      "numba",
+      "numpy",
+      "routing",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_3/vendor/closures_dp2.py",
+    "imports": [
+      "numba",
+      "numpy",
+      "routing",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_3/vendor/dp_kernel.py",
+    "imports": [
+      "__future__",
+      "numpy"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_4/scripts/audit_round.py",
+    "imports": [
+      "bypass_kernel",
+      "os",
+      "runtime",
+      "worker"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_4/scripts/bypass_kernel.py",
+    "imports": [
+      "numba",
+      "numpy"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_4/scripts/controller.py",
+    "imports": [
+      "runtime",
+      "subprocess"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_4/scripts/evaluate_round.py",
+    "imports": [
+      "metrics_support",
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_4/scripts/events.py",
+    "imports": [
+      "numpy",
+      "os",
+      "pandas",
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_4/scripts/finish_reports.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_4/scripts/metrics_support.py",
+    "imports": [
+      "events",
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_4/scripts/runtime.py",
+    "imports": [
+      "campaign_model",
+      "copy",
+      "ctypes",
+      "dp_kernel",
+      "hashlib",
+      "json",
+      "numba.core.config",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "routing",
+      "sys",
+      "time",
+      "torch",
+      "types"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_4/scripts/seal_delivery.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_4/scripts/setup.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "shutil",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_4/scripts/startup_checks.py",
+    "imports": [
+      "bypass_kernel",
+      "os",
+      "runtime",
+      "types"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_4/scripts/worker.py",
+    "imports": [
+      "bypass_kernel",
+      "os",
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_4/vendor/dp_kernel.py",
+    "imports": [
+      "__future__",
+      "numpy"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_4/vendor/parent_kernel.py",
+    "imports": [
+      "numba",
+      "numpy"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_5/scripts/admit_water.py",
+    "imports": [
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_5/scripts/algebra_audit.py",
+    "imports": [
+      "family_kernel",
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_5/scripts/audit.py",
+    "imports": [
+      "family_kernel",
+      "os",
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_5/scripts/audit_logging.py",
+    "imports": [
+      "collections",
+      "runtime",
+      "subprocess"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_5/scripts/controller.py",
+    "imports": [
+      "runtime",
+      "subprocess"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_5/scripts/delivery_analysis.py",
+    "imports": [
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_5/scripts/evaluate.py",
+    "imports": [
+      "metrics_support",
+      "runtime",
+      "shutil"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_5/scripts/events.py",
+    "imports": [
+      "numpy",
+      "os",
+      "pandas",
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_5/scripts/extended_checks.py",
+    "imports": [
+      "family_kernel",
+      "os",
+      "runtime",
+      "types"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_5/scripts/family_kernel.py",
+    "imports": [
+      "numba",
+      "numpy"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_5/scripts/metrics_support.py",
+    "imports": [
+      "events",
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_5/scripts/prepare.py",
+    "imports": [
+      "family_kernel",
+      "os",
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_5/scripts/pulse_screen.py",
+    "imports": [
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_5/scripts/runtime.py",
+    "imports": [
+      "campaign_model",
+      "copy",
+      "ctypes",
+      "dp_kernel",
+      "hashlib",
+      "json",
+      "msvcrt",
+      "numba.core.config",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "routing",
+      "sys",
+      "time",
+      "torch",
+      "types"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_5/scripts/seal.py",
+    "imports": [
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_5/scripts/setup.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "shutil",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_5/scripts/worker.py",
+    "imports": [
+      "family_kernel",
+      "os",
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_5/scripts/write_reports.py",
+    "imports": [
+      "runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_5/vendor/dp_kernel.py",
+    "imports": [
+      "__future__",
+      "numpy"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_5/vendor/parent_kernel.py",
+    "imports": [
+      "numba",
+      "numpy"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/audit_evaluation.py",
+    "imports": [
+      "native_runtime",
+      "numpy",
+      "pandas"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/audit_job.py",
+    "imports": [
+      "argparse",
+      "campaign_model",
+      "gc",
+      "native_runtime",
+      "serial_solvers",
+      "temporal_model",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/audit_sampling_products.py",
+    "imports": [
+      "native_runtime",
+      "numpy",
+      "pandas"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/campaign_model.py",
+    "imports": [
+      "closures",
+      "copy",
+      "hashlib",
+      "hf_model",
+      "json",
+      "math",
+      "mix_routing",
+      "model",
+      "native_runtime",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "routing",
+      "scientific_models",
+      "state_modulated",
+      "support_integral",
+      "sys",
+      "tagged_transport",
+      "torch",
+      "types"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/check_label_isolation.py",
+    "imports": [
+      "campaign_model",
+      "native_runtime",
+      "prepare_hf"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/controller.py",
+    "imports": [
+      "ctypes",
+      "hashlib",
+      "json",
+      "native_runtime",
+      "os",
+      "pathlib",
+      "recover_controller",
+      "subprocess",
+      "sys",
+      "time",
+      "traceback"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/direction_diagnostic.py",
+    "imports": [
+      "argparse",
+      "campaign_model",
+      "native_runtime",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/evaluation.py",
+    "imports": [
+      "json",
+      "native_runtime",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/extended_acceptance.py",
+    "imports": [
+      "campaign_model",
+      "closures",
+      "native_runtime"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/finalize.py",
+    "imports": [
+      "evaluation",
+      "native_runtime",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "physical_comparison",
+      "subprocess",
+      "sys",
+      "time",
+      "traceback",
+      "write_reports"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/fit_worker.py",
+    "imports": [
+      "argparse",
+      "campaign_model",
+      "hashlib",
+      "native_runtime",
+      "os",
+      "pickle",
+      "scipy.optimize",
+      "serial_solvers",
+      "time",
+      "traceback"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/hf_model.py",
+    "imports": [
+      "temporal_model"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/independent_audit.py",
+    "imports": [
+      "argparse",
+      "campaign_model",
+      "native_runtime",
+      "serial_solvers",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/infrastructure_checks.py",
+    "imports": [
+      "json",
+      "native_runtime",
+      "os",
+      "pathlib",
+      "subprocess",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/native_runtime.py",
+    "imports": [
+      "contextlib",
+      "ctypes",
+      "hashlib",
+      "json",
+      "msvcrt",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "sys",
+      "time",
+      "uuid"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/physical_comparison.py",
+    "imports": [
+      "native_runtime",
+      "numpy",
+      "pandas"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/preflight.py",
+    "imports": [
+      "argparse",
+      "campaign_model",
+      "gc",
+      "json",
+      "native_runtime",
+      "os",
+      "state_modulated",
+      "subprocess",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/prepare.py",
+    "imports": [
+      "copy",
+      "json",
+      "native_runtime",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "prepare_hf",
+      "shutil",
+      "sys",
+      "temporal_model",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/prepare_hf.py",
+    "imports": [
+      "ast",
+      "campaign_model",
+      "copy",
+      "json",
+      "math",
+      "native_runtime",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "sys",
+      "temporal_model"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/recover_controller.py",
+    "imports": [
+      "ctypes",
+      "native_runtime",
+      "os",
+      "pathlib",
+      "sys",
+      "time",
+      "traceback"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/seal_delivery.py",
+    "imports": [
+      "native_runtime",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/seal_launch.py",
+    "imports": [
+      "native_runtime",
+      "pathlib",
+      "shutil",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/serial_solvers.py",
+    "imports": [
+      "copy",
+      "numpy",
+      "scipy",
+      "scipy.optimize",
+      "scipy.optimize._slsqplib"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/state_modulated.py",
+    "imports": [
+      "hf_model",
+      "math",
+      "numpy",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/temporal_model.py",
+    "imports": [
+      "campaign_model",
+      "routing"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/test_evaluation.py",
+    "imports": [
+      "evaluation",
+      "native_runtime",
+      "numpy",
+      "pandas"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/test_reporting_pipeline.py",
+    "imports": [
+      "audit_evaluation",
+      "evaluation",
+      "native_runtime",
+      "numpy",
+      "pandas"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/test_solver_resume.py",
+    "imports": [
+      "native_runtime",
+      "numpy",
+      "pickle",
+      "serial_solvers"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/scripts/write_reports.py",
+    "imports": [
+      "json",
+      "native_runtime",
+      "numpy",
+      "pandas"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/vendor/expert/tn_challenge/mix_routing.py",
+    "imports": [
+      "numpy",
+      "routing",
+      "support_integral",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/vendor/expert/tn_challenge/model.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "routing",
+      "sc_kernel",
+      "text_arrays",
+      "torch",
+      "types"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/vendor/expert/tn_challenge/routing.py",
+    "imports": [
+      "numba",
+      "numpy",
+      "support_integral",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/vendor/expert/tn_challenge/run.py",
+    "imports": [
+      "argparse",
+      "hashlib",
+      "json",
+      "model",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "scipy.optimize",
+      "text_arrays",
+      "time"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/vendor/expert/tn_challenge/sc_kernel.py",
+    "imports": [
+      "numba",
+      "numpy",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/vendor/expert/tn_challenge/support_integral.py",
+    "imports": [
+      "numpy",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/vendor/expert/tn_challenge/text_arrays.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "numpy",
+      "pathlib",
+      "re"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/vendor/research/closures.py",
+    "imports": [
+      "math",
+      "model",
+      "numba",
+      "numpy",
+      "pathlib",
+      "routing",
+      "sc_kernel",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/vendor/research/tagged_transport.py",
+    "imports": [
+      "numba",
+      "numpy",
+      "torch"
+    ]
+  },
+  {
+    "path": "snapshot/20260920_6/vendor/transfer_research/scientific_models.py",
+    "imports": [
+      "closures",
+      "copy",
+      "math",
+      "model",
+      "numpy",
+      "pathlib",
+      "routing",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_3/work/_refresh_ledger.py",
+    "imports": [
+      "pathlib"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_3/work/phase2_full.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_3/work/phase1_verdict.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_3/work/phase1_l1.py",
+    "imports": [
+      "common21",
+      "eventlib",
+      "layers21",
+      "numpy",
+      "pandas"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_3/work/layers21.py",
+    "imports": [
+      "common21",
+      "eventlib",
+      "numpy",
+      "pandas",
+      "structure_model",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_2/scripts/structure_model.py",
+    "imports": [
+      "hf_model"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_2/scripts/hf_model.py",
+    "imports": [
+      "temporal_model"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_2/scripts/temporal_model.py",
+    "imports": [
+      "campaign_model",
+      "routing"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_2/scripts/campaign_model.py",
+    "imports": [
+      "closures",
+      "copy",
+      "hashlib",
+      "hf_model",
+      "json",
+      "math",
+      "mix_routing",
+      "model",
+      "native_runtime",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "routing",
+      "scientific_models",
+      "structure_model",
+      "support_integral",
+      "sys",
+      "tagged_transport",
+      "torch",
+      "types"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_2/scripts/native_runtime.py",
+    "imports": [
+      "contextlib",
+      "ctypes",
+      "hashlib",
+      "json",
+      "msvcrt",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "sys",
+      "time",
+      "uuid"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_3/work/common21.py",
+    "imports": [
+      "campaign_model",
+      "closures",
+      "eventlib",
+      "hashlib",
+      "hazard_g",
+      "hf_model",
+      "json",
+      "native_runtime",
+      "numba.core.config",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "scientific_models",
+      "structure_model",
+      "sys",
+      "tagged_transport",
+      "temporal_model",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_3/work/hazard_g.py",
+    "imports": [
+      "campaign_model",
+      "model",
+      "numpy",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_3/work/phase0_freeze.py",
+    "imports": [
+      "common21",
+      "eventlib",
+      "hazard_g",
+      "json",
+      "layers21",
+      "numpy",
+      "pandas",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_2/scripts/fit_worker.py",
+    "imports": [
+      "argparse",
+      "campaign_model",
+      "hashlib",
+      "native_runtime",
+      "os",
+      "pickle",
+      "scipy.optimize",
+      "serial_solvers",
+      "time",
+      "traceback"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_2/scripts/serial_solvers.py",
+    "imports": [
+      "copy",
+      "numpy",
+      "scipy",
+      "scipy.optimize",
+      "scipy.optimize._slsqplib"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_3/work/levels_shift.py",
+    "imports": [
+      "json",
+      "numpy",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_3/work/check_delivery.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "re",
+      "sys"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_3/work/audit_gamma.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "numpy",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_1/scripts/validate_global_inputs.py",
+    "imports": [
+      "copy",
+      "json",
+      "native_runtime",
+      "numpy",
+      "pandas",
+      "prepare_hf",
+      "release_loader",
+      "sys"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_1/scripts/native_runtime.py",
+    "imports": [
+      "contextlib",
+      "ctypes",
+      "hashlib",
+      "json",
+      "msvcrt",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "sys",
+      "time",
+      "uuid"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260915_2/scripts/release_loader.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_1/scripts/prepare_hf.py",
+    "imports": [
+      "ast",
+      "campaign_model",
+      "copy",
+      "json",
+      "math",
+      "native_runtime",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "sys",
+      "temporal_model"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_1/scripts/campaign_model.py",
+    "imports": [
+      "closures",
+      "copy",
+      "hashlib",
+      "hf_model",
+      "json",
+      "math",
+      "mix_routing",
+      "model",
+      "native_runtime",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "routing",
+      "scientific_models",
+      "support_integral",
+      "sys",
+      "tagged_transport",
+      "torch",
+      "types"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_1/scripts/hf_model.py",
+    "imports": [
+      "temporal_model"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_1/scripts/temporal_model.py",
+    "imports": [
+      "campaign_model",
+      "routing"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_2/work/round_tools.py",
+    "imports": [
+      "common20",
+      "eventlib",
+      "numpy",
+      "pandas",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_2/work/eventlib.py",
+    "imports": [
+      "numpy",
+      "pandas",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_2/work/common20.py",
+    "imports": [
+      "campaign_model",
+      "closures",
+      "closures_r",
+      "hashlib",
+      "hf_model",
+      "json",
+      "native_runtime",
+      "numba.core.config",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "scientific_models",
+      "structure_model",
+      "sys",
+      "tagged_transport",
+      "temporal_model",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_2/work/closures_r.py",
+    "imports": [
+      "numba",
+      "numpy",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_2/work/phase1_score.py",
+    "imports": [
+      "common20",
+      "eventlib",
+      "gate_noop",
+      "json",
+      "math",
+      "numpy",
+      "pandas"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_2/work/gate_noop.py",
+    "imports": [
+      "closures",
+      "closures_r",
+      "common20",
+      "json",
+      "math",
+      "numpy",
+      "pandas",
+      "tagged_transport",
+      "time",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_2/work/phase1_envelope.py",
+    "imports": [
+      "closures_r",
+      "common20",
+      "eventlib",
+      "json",
+      "numpy",
+      "pandas",
+      "round_tools",
+      "time",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_2/work/phase0_amplitude_budget.py",
+    "imports": [
+      "closures_r",
+      "common20",
+      "eventlib",
+      "json",
+      "math",
+      "numpy",
+      "pandas",
+      "structure_model",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_2/work/freeze_anchors.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_2/work/check_delivery.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "re",
+      "sys"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_2/work/audit_envelope.py",
+    "imports": [
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_1/work/phase1_replay_calendar.py",
+    "imports": [
+      "common19",
+      "json",
+      "numpy",
+      "pandas",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_1/work/common19.py",
+    "imports": [
+      "campaign_model",
+      "hashlib",
+      "json",
+      "native_runtime",
+      "numba.core.config",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_1/work/phase1_fingerprints.py",
+    "imports": [
+      "common19",
+      "json",
+      "numpy",
+      "pandas"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_1/work/phase0_acceptance_fix.py",
+    "imports": [
+      "collections",
+      "common19",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_2/scripts/validate_additive_channel.py",
+    "imports": [
+      "campaign_model",
+      "native_runtime",
+      "validate_structure_edges"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_2/scripts/validate_structure_edges.py",
+    "imports": [
+      "campaign_model",
+      "gc",
+      "native_runtime",
+      "temporal_model",
+      "time"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260919_1/work/audit_phase1.py",
+    "imports": [
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_2/vendor/transfer_research/scientific_models.py",
+    "imports": [
+      "closures",
+      "copy",
+      "math",
+      "model",
+      "numpy",
+      "pathlib",
+      "routing",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_2/vendor/research/tagged_transport.py",
+    "imports": [
+      "numba",
+      "numpy",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_2/vendor/research/closures.py",
+    "imports": [
+      "math",
+      "model",
+      "numba",
+      "numpy",
+      "pathlib",
+      "routing",
+      "sc_kernel",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260911_1/scripts/sc_kernel.py",
+    "imports": [
+      "numba",
+      "numpy",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_2/vendor/expert/tn_challenge/text_arrays.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "numpy",
+      "pathlib",
+      "re"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_2/vendor/expert/tn_challenge/support_integral.py",
+    "imports": [
+      "numpy",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_2/vendor/expert/tn_challenge/sc_kernel.py",
+    "imports": [
+      "numba",
+      "numpy",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_2/vendor/expert/tn_challenge/run.py",
+    "imports": [
+      "argparse",
+      "hashlib",
+      "json",
+      "model",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "scipy.optimize",
+      "text_arrays",
+      "time"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_2/vendor/expert/tn_challenge/model.py",
+    "imports": [
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "routing",
+      "sc_kernel",
+      "text_arrays",
+      "torch",
+      "types"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_2/vendor/expert/tn_challenge/routing.py",
+    "imports": [
+      "numba",
+      "numpy",
+      "support_integral",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260916_2/vendor/expert/tn_challenge/mix_routing.py",
+    "imports": [
+      "numpy",
+      "routing",
+      "support_integral",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260826_15/scripts/run_stage15.py",
+    "imports": [
+      "__future__",
+      "datetime",
+      "hashlib",
+      "hydrology_core",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys",
+      "zoneinfo"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260825_3/scripts/hydrology_core.py",
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "typing"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260902_3/scripts/build_tn_spatial_attributes.py",
+    "imports": [
+      "__future__",
+      "geopandas",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pyogrio",
+      "sys"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260828_33/scripts/frozen_hydrology_core.py",
+    "imports": [
+      "__future__",
+      "hydrology_core",
+      "json",
+      "learnable_state_sig2p",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "run_stage25",
+      "run_stage2_temporal",
+      "run_stage3_diagnostics",
+      "sys",
+      "torch",
+      "torch_hbv",
+      "typing"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260827_3/scripts/run_stage3_diagnostics.py",
+    "imports": [
+      "__future__",
+      "dyn2p_hbv",
+      "hashlib",
+      "hydrology_core",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "run_stage25",
+      "run_stage2_temporal",
+      "scipy.stats",
+      "sys",
+      "torch",
+      "torch_hbv"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260826_27/scripts/dyn2p_hbv.py",
+    "imports": [
+      "__future__",
+      "dyn3p_hbv",
+      "pathlib",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260826_24/scripts/dyn3p_hbv.py",
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260826_25/scripts/run_stage25.py",
+    "imports": [
+      "__future__",
+      "copy",
+      "datetime",
+      "dyn3p_hbv",
+      "fast_route_autograd",
+      "hydrology_core",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "run_stage4",
+      "scipy.optimize",
+      "sys",
+      "time",
+      "torch",
+      "torch.nn.functional",
+      "torch_hbv",
+      "zoneinfo"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260825_4/scripts/run_stage4.py",
+    "imports": [
+      "__future__",
+      "hashlib",
+      "hydrology_core",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "scipy.optimize",
+      "scipy.stats",
+      "sys"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260826_24/scripts/fast_route_autograd.py",
+    "imports": [
+      "__future__",
+      "numba",
+      "numpy",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260826_14/scripts/torch_hbv.py",
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260827_2/scripts/run_stage2_temporal.py",
+    "imports": [
+      "__future__",
+      "copy",
+      "dyn2p_hbv",
+      "fold_worker",
+      "hydrology_core",
+      "json",
+      "math",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "run_stage25",
+      "run_stage4",
+      "scipy.optimize",
+      "sys",
+      "time",
+      "torch",
+      "torch.nn.functional",
+      "torch_hbv"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260826_26/scripts/fold_worker.py",
+    "imports": [
+      "__future__",
+      "argparse",
+      "copy",
+      "dyn3p_hbv",
+      "fast_route_autograd",
+      "hydrology_core",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "run_stage25",
+      "run_stage4",
+      "scipy.optimize",
+      "sys",
+      "time",
+      "torch",
+      "torch_hbv"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260828_5/scripts/learnable_state_sig2p.py",
+    "imports": [
+      "__future__",
+      "dyn2p_hbv",
+      "dyn3p_hbv",
+      "pathlib",
+      "state_consistent_sig2p",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260827_7/scripts/state_consistent_sig2p.py",
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "dyn2p_hbv",
+      "dyn3p_hbv",
+      "pathlib",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260828_35/scripts/export_tn_hydrology_interface.py",
+    "imports": [
+      "__future__",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "pyarrow.parquet"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260828_34/scripts/run_locked_long_simulation.py",
+    "imports": [
+      "__future__",
+      "export_final_tn_hydrology_interface",
+      "frozen_hydrology_core",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "reservoir_development_core",
+      "reservoir_network_router",
+      "reservoir_operator",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260828_20/scripts/reservoir_development_core.py",
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "reservoir_network_router",
+      "reservoir_operator",
+      "sys"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260828_14/scripts/reservoir_operator.py",
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "datetime",
+      "math"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260828_15/scripts/reservoir_network_router.py",
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "datetime",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "reservoir_operator",
+      "sys",
+      "typing"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260828_24/scripts/export_final_tn_hydrology_interface.py",
+    "imports": [
+      "__future__",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "reservoir_development_core",
+      "reservoir_network_router",
+      "sys"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260828_9/scripts/export_parent_preserving_state_product.py",
+    "imports": [
+      "__future__",
+      "evaluate_component_development",
+      "fit_export_state_consistent_product",
+      "hashlib",
+      "hydrology_core",
+      "json",
+      "learnable_state_sig2p",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "run_stage25",
+      "run_stage2_temporal",
+      "run_stage3_diagnostics",
+      "sys",
+      "time",
+      "torch",
+      "torch_hbv"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260828_7/scripts/fit_export_state_consistent_product.py",
+    "imports": [
+      "__future__",
+      "copy",
+      "evaluate_component_development",
+      "hashlib",
+      "hydrology_core",
+      "json",
+      "learnable_state_sig2p",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "run_stage25",
+      "run_stage2_temporal",
+      "run_stage3_diagnostics",
+      "run_stage8_candidates",
+      "sys",
+      "time",
+      "torch",
+      "torch_hbv",
+      "train_component_worker"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260828_5/scripts/evaluate_component_development.py",
+    "imports": [
+      "__future__",
+      "hydrology_core",
+      "json",
+      "learnable_state_sig2p",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "run_stage25",
+      "run_stage2_temporal",
+      "run_stage3_diagnostics",
+      "run_stage8_candidates",
+      "run_stage9_temporal_development",
+      "scipy.stats",
+      "sys",
+      "torch",
+      "torch_hbv"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260827_8/scripts/run_stage8_candidates.py",
+    "imports": [
+      "__future__",
+      "argparse",
+      "copy",
+      "fold_worker",
+      "hashlib",
+      "hydrology_core",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "run_stage25",
+      "run_stage2_temporal",
+      "run_stage3_diagnostics",
+      "scipy.special",
+      "state_consistent_sig2p",
+      "sys",
+      "time",
+      "torch",
+      "torch.nn.functional",
+      "torch_hbv"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260827_9/scripts/run_stage9_temporal_development.py",
+    "imports": [
+      "__future__",
+      "hydrology_core",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "run_stage25",
+      "run_stage2_temporal",
+      "run_stage3_diagnostics",
+      "run_stage8_candidates",
+      "scipy.stats",
+      "state_consistent_sig2p",
+      "sys",
+      "torch",
+      "torch_hbv"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260828_5/scripts/train_component_worker.py",
+    "imports": [
+      "__future__",
+      "argparse",
+      "copy",
+      "hashlib",
+      "hydrology_core",
+      "json",
+      "learnable_state_sig2p",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "run_stage25",
+      "run_stage2_temporal",
+      "run_stage8_candidates",
+      "sys",
+      "time",
+      "torch",
+      "torch_hbv"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260908_1/scripts/fc_legacy.py",
+    "imports": [
+      "audit_inputs",
+      "baseline_objective",
+      "fc_io",
+      "fit_models",
+      "independent_process",
+      "process_info",
+      "sys",
+      "tn_autograd",
+      "tn_reference",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260907_3/scripts/tn_reference.py",
+    "imports": [
+      "__future__",
+      "audit_inputs",
+      "common",
+      "dataclasses",
+      "json",
+      "numba",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260905_1/scripts/common.py",
+    "imports": [
+      "__future__",
+      "ctypes",
+      "datetime",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "runtime_environment",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260905_1/scripts/audit_inputs.py",
+    "imports": [
+      "__future__",
+      "common",
+      "gc",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "pyarrow.parquet"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260904_3/scripts/unified_tn_core.py",
+    "imports": [
+      "__future__",
+      "gc",
+      "l0_v2_core",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "reservoir_tn_core",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260824_41/scripts/l0_v2_core.py",
+    "imports": [
+      "__future__",
+      "build_canonical_daily_to_monthly_tn_interface",
+      "math",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "run_stage28",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260824_39/scripts/build_canonical_daily_to_monthly_tn_interface.py",
+    "imports": [
+      "__future__",
+      "argparse",
+      "ctypes",
+      "dataclasses",
+      "evaluate_component_development",
+      "hashlib",
+      "hydrology_core",
+      "json",
+      "learnable_state_sig2p",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "run_stage25",
+      "run_stage2_temporal",
+      "run_stage3_diagnostics",
+      "sys",
+      "time",
+      "torch",
+      "torch_hbv",
+      "typing",
+      "warnings"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260824_28/scripts/run_stage28.py",
+    "imports": [
+      "__future__",
+      "ctypes",
+      "gc",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "run_stage19",
+      "sys",
+      "time",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260824_19/scripts/run_stage19.py",
+    "imports": [
+      "__future__",
+      "argparse",
+      "ctypes",
+      "geopandas",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "scipy.optimize",
+      "stage13_model",
+      "sys"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260824_13/scripts/stage13_model.py",
+    "imports": [
+      "__future__",
+      "collections",
+      "dataclasses",
+      "numpy",
+      "pandas",
+      "pathlib"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260831_2/scripts/reservoir_tn_core.py",
+    "imports": [
+      "__future__",
+      "l0_v2_core",
+      "math",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "stage46_models",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260824_46/scripts/stage46_models.py",
+    "imports": [
+      "__future__",
+      "l0_v2_core",
+      "math",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260904_4/scripts/unified_fit.py",
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "gc",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "run_objective_calibration",
+      "run_stage41",
+      "sys",
+      "time",
+      "torch",
+      "unified_tn_core"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260824_41/scripts/run_stage41.py",
+    "imports": [
+      "__future__",
+      "gc",
+      "hashlib",
+      "json",
+      "l0_v2_core",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "sys",
+      "time",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260904_4/scripts/block_refine.py",
+    "imports": [
+      "__future__",
+      "json",
+      "numpy",
+      "scipy.optimize",
+      "torch",
+      "unified_fit"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260908_1/scripts/fc_io.py",
+    "imports": [
+      "ctypes",
+      "datetime",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260907_3/scripts/baseline_objective.py",
+    "imports": [
+      "fit_models",
+      "numpy",
+      "pathlib",
+      "sys",
+      "tn_autograd",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260907_3/scripts/fit_models.py",
+    "imports": [
+      "__future__",
+      "argparse",
+      "common",
+      "gc",
+      "json",
+      "math",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "scipy.optimize",
+      "time",
+      "tn_autograd",
+      "tn_reference",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260905_2/scripts/tn_reference.py",
+    "imports": [
+      "__future__",
+      "audit_inputs",
+      "common",
+      "dataclasses",
+      "json",
+      "numba",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260905_2/scripts/tn_autograd.py",
+    "imports": [
+      "__future__",
+      "numba",
+      "numpy",
+      "tn_reference",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260907_3/scripts/tn_autograd.py",
+    "imports": [
+      "__future__",
+      "numba",
+      "numpy",
+      "tn_reference",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260907_3/scripts/independent_process.py",
+    "imports": [
+      "campaign_io",
+      "numpy",
+      "pandas",
+      "scipy.special",
+      "tn_reference"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260907_3/scripts/campaign_io.py",
+    "imports": [
+      "ctypes",
+      "datetime",
+      "hashlib",
+      "json",
+      "numpy",
+      "pathlib",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260907_3/scripts/process_info.py",
+    "imports": [
+      "ctypes",
+      "os",
+      "types"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260908_1/scripts/fc_data.py",
+    "imports": [
+      "dataclasses",
+      "fc_io",
+      "fc_legacy",
+      "numpy",
+      "pandas",
+      "torch"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260917_2/scripts/a2h_refit_arm.py",
+    "imports": [
+      "__future__",
+      "argparse",
+      "importlib",
+      "importlib.util",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "shutil",
+      "sys",
+      "time"
+    ]
+  },
+  {
+    "path": "dependencies/5_Test/20260828_43/scripts/run_hybrid_1961_2025.py",
+    "imports": [
+      "__future__",
+      "hashlib",
+      "importlib.util",
+      "json",
+      "pathlib",
+      "sys"
+    ]
+  }
+]

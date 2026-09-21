@@ -1,0 +1,118 @@
+{
+  "stage": "20260917_3",
+  "purpose": "B4: 对发布产物作裁决 —— Q（保留队列）与 F（基座全队列）并报，字段沿用 _41 的度量名，并与次 A 的 R74 臂结果逐字段对账",
+  "decision_file": {
+    "path": "E:\\SPARROW\\5_Test\\20260917_3\\evaluation_reports\\canonical_hydrology_decision.json",
+    "sha256": "6f16524d4f0bf761fdb40947d7374acef96cc8edcdf812966be7095fb883e3f8"
+  },
+  "status": "ZERO_NEGATIVE_ON_SCREENED_COHORT_REACHED",
+  "cohorts": {
+    "Q": {
+      "stations": 74,
+      "daily_negative": 0,
+      "monthly_negative": 0
+    },
+    "F": {
+      "stations": 102,
+      "daily_negative": 25,
+      "monthly_negative": 27
+    }
+  },
+  "blocks": {
+    "time_74_retained_daily": {
+      "observations": 107707,
+      "pooled_NSE": 0.8362051575240349,
+      "pooled_log_RMSE": NaN,
+      "pooled_PBIAS_pct": 7.897297442188099,
+      "station_median_NSE": 0.6747523497601677,
+      "station_mean_NSE": 0.6239325432284173,
+      "negative_NSE_count": 0,
+      "station_median_absolute_PBIAS_pct": 17.492708460519783,
+      "station_median_log_RMSE": 0.5225420256150528,
+      "stations": 74,
+      "station_P10_NSE": 0.35626100409596173,
+      "station_P25_NSE": 0.5249303093139478,
+      "negative_NSE_fraction": 0.0,
+      "station_median_PBIAS_pct": 8.447147273641043,
+      "station_mean_PBIAS_pct": 9.613331050419506,
+      "station_P95_absolute_PBIAS_pct": 48.50150912637316
+    },
+    "time_74_retained_monthly": {
+      "observations": 3540,
+      "pooled_NSE": 0.8885556574387468,
+      "pooled_log_RMSE": 0.4762249303472617,
+      "pooled_PBIAS_pct": 7.8674342135452795,
+      "station_median_NSE": 0.8211184039336934,
+      "station_mean_NSE": 0.7467252905174167,
+      "negative_NSE_count": 0,
+      "station_median_absolute_PBIAS_pct": 17.498964716639044,
+      "station_median_log_RMSE": 0.40730538142226314,
+      "stations": 74,
+      "station_P10_NSE": 0.40477461715830365,
+      "station_P25_NSE": 0.6284055600557132,
+      "negative_NSE_fraction": 0.0,
+      "station_median_PBIAS_pct": 8.427234937192967,
+      "station_mean_PBIAS_pct": 9.597032970254256,
+      "station_P95_absolute_PBIAS_pct": 48.53501011327613
+    },
+    "time_102_base_daily": {
+      "observations": 148195,
+      "pooled_NSE": 0.8278001018552804,
+      "pooled_log_RMSE": NaN,
+      "pooled_PBIAS_pct": 10.685195244198605,
+      "station_median_NSE": 0.5605553573044304,
+      "station_mean_NSE": 0.052152129784333486,
+      "negative_NSE_count": 25,
+      "station_median_absolute_PBIAS_pct": 22.62253309899994,
+      "station_median_log_RMSE": 0.5715941940728219
+    },
+    "time_102_base_monthly": {
+      "observations": 4872,
+      "pooled_NSE": 0.8822499901373408,
+      "pooled_log_RMSE": 0.5478004630044809,
+      "pooled_PBIAS_pct": 10.66052213002305,
+      "station_median_NSE": 0.6683126770184928,
+      "station_mean_NSE": -0.17202392575502412,
+      "negative_NSE_count": 27,
+      "station_median_absolute_PBIAS_pct": 22.70050698353416,
+      "station_median_log_RMSE": 0.44978583373696246
+    }
+  },
+  "checks": {
+    "lock_hashes_match_before_observation_read": true,
+    "daily_hash_unchanged_after_evaluation": true,
+    "monthly_hash_unchanged_after_evaluation": true,
+    "model_hash_unchanged_after_evaluation": true,
+    "published_copy_equals_chain_output": true,
+    "zero_negative_on_retained_daily": true,
+    "zero_negative_on_retained_monthly": true,
+    "worst_retained_station_positive": true,
+    "agrees_with_round_a_arm_R74": true,
+    "every_excluded_station_was_negative": true,
+    "screen_read_from_the_frozen_deliverable": true,
+    "screen_reproduced_by_round_b": true
+  },
+  "checks_failed": [],
+  "metric_field_names_carried_from_41": [
+    "observations",
+    "pooled_NSE",
+    "pooled_log_RMSE",
+    "pooled_PBIAS_pct",
+    "station_median_NSE",
+    "station_mean_NSE",
+    "negative_NSE_count",
+    "station_median_absolute_PBIAS_pct",
+    "station_median_log_RMSE"
+  ],
+  "metric_field_names_added_for_this_round": [
+    "stations",
+    "station_P10_NSE",
+    "station_P25_NSE",
+    "negative_NSE_fraction",
+    "station_median_PBIAS_pct",
+    "station_mean_PBIAS_pct",
+    "station_P95_absolute_PBIAS_pct"
+  ],
+  "passed": true,
+  "failures": []
+}

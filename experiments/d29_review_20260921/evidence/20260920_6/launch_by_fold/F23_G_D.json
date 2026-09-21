@@ -1,0 +1,31 @@
+{
+  "fold": "F23_G_D",
+  "frozen_hashes": {
+    "scripts\\campaign_model.py": "b60a68e021092cd385a9b1414fc342d2b3ca68917d11077bf2aea24302f6838a",
+    "scripts\\temporal_model.py": "1b3217cbec5260f0446999bf6b31ca0ac44d295dd99b7e70dad4b97487627c98",
+    "scripts\\hf_model.py": "88a85da13541e61235a391ca8f35621ff05fc3f374e37c9b053c8f7f9d2b8e71",
+    "scripts\\state_modulated.py": "6018cf6e1b635344930d3803d7b55ea5042cfca66143626824b8d10ec653469f",
+    "scripts\\fit_worker.py": "2235a03b8fcdf1311081e6c1d96662b36dfcc571270712ba03d962de50b65940",
+    "scripts\\serial_solvers.py": "fbc5311f6b9f1873f0bb0b866840a70aab646fc3abdb6e0f084f31e1b5bacfdb",
+    "scripts\\native_runtime.py": "5611c96c148ad83e6e4395812d8cc62d4c32da0e0e3a4c63dfef26d3865634eb",
+    "vendor\\expert\\tn_challenge\\mix_routing.py": "0bdb0dfbd16e4e10f5aa8c40e180bc5d6e5906dd71298ab64f5d490b96c60dcf",
+    "vendor\\expert\\tn_challenge\\model.py": "77fd15c645423a3e8dc3e65fc11e144532d19f751d99d72dc66f41c6425a3b66",
+    "vendor\\expert\\tn_challenge\\routing.py": "23ad5ca55e24bc3600e5bcde78d52475ba79d022fb61103d285bed01daa2e92e",
+    "vendor\\expert\\tn_challenge\\run.py": "c35f29e66d1f6eec590224414a25bf502ebde6ace32289ca1a17c309c1034983",
+    "vendor\\expert\\tn_challenge\\sc_kernel.py": "9ae72618cb062a47db3573cb5edef3c26605ec54b08b113d15f497209e0aaa49",
+    "vendor\\expert\\tn_challenge\\support_integral.py": "6caf2975075bebd8ea4f7a590fe04873e18bcd4324f5e3690b88bb8c6b41720e",
+    "vendor\\expert\\tn_challenge\\text_arrays.py": "ef7456bf426cccf4de261a976885c8f2f9609b775507d1f4d93f302b424a5e88",
+    "vendor\\research\\closures.py": "02433a200de4911f3618aa0f37021821f94828b1c74f43c6597519bf70815aba",
+    "vendor\\research\\tagged_transport.py": "b1a7df8a559e00a41c870a4dea14892ec694b9ce4594ce9ac69071a1a3280410",
+    "vendor\\transfer_research\\scientific_models.py": "03d2769d8bc4c397de175cce597b04defe11968ae43e601b7aaa74831771eba5",
+    "configs\\campaign.json": "5a0faebc87a98b6165c7a005785e4942d318d56e4c1b4bae07eb70cdf41de9aa",
+    "configs\\jobs.json": "8087a26e5f803095c5f71481cf5929c22c9483aa490cb49f89ef5b736c1bb554",
+    "configs\\folds.json": "d3cc2376329f469592ee9ce553891e232aefaefb0a098b7a15c146e64689f083",
+    "data\\spatial_support.json": "1211052a191dee9f4b06b481365e52466bd3467d9705a118d49bed85262130a1",
+    "data\\domains\\FULL24C\\arrays.json": "b34fdd09342e9056a124c4d5e7821fe68b503bc67301d06bc8bbce3903683377",
+    "data\\domains\\FULL24C\\topology.json": "f378c87051fe1a4094d635d6326e92f2d19d7083b8768d31d5b75dedefeb2f75",
+    "data\\folds\\F23_G_D\\train.parquet": "fe4a3020efa00a5ba5521575269ea4142a6772f48be00c03565ec94e150f66d0",
+    "data\\folds\\F23_G_D\\registry.json": "f1f97d6b89b84e6298fa7a1aa34de4817b35963df3e879f906b4a15de75ad52b",
+    "data\\designs\\F23_G_D.json": "96b4fba2bd9c546e8a656f8a44c55094579b572997be5c1d4f0ad389ae458266"
+  }
+}

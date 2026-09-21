@@ -1,0 +1,14 @@
+{
+  "HYDRO-SELECT": {
+    "physical": true,
+    "joint_three_error_improvement": false,
+    "status": "NO_JOINT_SUPPORT",
+    "not_SAS_identification": true
+  },
+  "FULL-BYPASS": {
+    "physical": true,
+    "joint_three_error_improvement": false,
+    "status": "NO_JOINT_SUPPORT",
+    "not_SAS_identification": true
+  }
+}

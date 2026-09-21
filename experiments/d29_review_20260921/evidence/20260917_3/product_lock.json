@@ -1,0 +1,228 @@
+{
+  "stage": "20260917_3",
+  "purpose": "1961-2025 全河网（230 河段）日/月水文产品，站点面板取 20260917_2 冻结的筛选件；不替换、不冒充正式产品 20260828_35",
+  "screen": {
+    "round": "20260917_2",
+    "combination": "R74",
+    "origin": "post_hoc_route2_extension",
+    "is_post_hoc": true,
+    "how_the_configuration_was_chosen": "a rung of a ladder whose tail was chosen from the measured residuals, after the eight pre-registered combinations had all been measured and none had come out all-positive",
+    "declaration": "S111 式声明：本筛选是事后的，两期都参与分组；不能支持无偏外推，不能替代全队列基线；同群体保护效应与零负目标必须分开报告。",
+    "base": 102,
+    "retained": 74,
+    "excluded": 28,
+    "gate": {
+      "zero_negative_on_retained": true,
+      "retained_negative": 0,
+      "worst_retained_nse": 0.026682463233496656,
+      "excluded_that_were_negative": 28,
+      "excluded_that_were_positive": 0
+    },
+    "screen_parquet": {
+      "path": "E:\\SPARROW\\5_Test\\20260917_2\\outputs\\station_screen.parquet",
+      "sha256": "2ff3c15873b28cc7f490005515bdc500d94feabadc7ca7fff8ea0a876b7ddede"
+    }
+  },
+  "claim": {
+    "zero_negative_applies_to": "the 74 retained stations, over 2019-01-01..2022-12-31",
+    "zero_negative_is_not_a_statement_about": "1961-2005, which has no station observations -- those years are model output and are not validated against any measurement here",
+    "boundary": "本产品的零负声明是**事后**筛选下的结果：掩蔽规则由实测残余负站选出，不支持无偏外推，也不能替代全队列基线报告"
+  },
+  "same_population_protection": {
+    "population": "the stations this screen retains",
+    "population_size": 74,
+    "screen_only": {
+      "product": "20260828_43 (frozen replay, no refit)",
+      "mean_nse_min": 0.6252974188177003,
+      "negative_stations": 1
+    },
+    "screen_and_refit": {
+      "product": "arms/R74 (observations masked, model fully rerun)",
+      "mean_nse_min": 0.6199233575270526,
+      "negative_stations": 0
+    },
+    "delta_mean_nse_min": -0.005374061290647658,
+    "stations_improved": 28,
+    "stations_worsened": 46,
+    "note": "Read both rows on the same stations: excluding the others does not by itself move the retained stations, so any difference between the rows is the refit's effect."
+  },
+  "not_a_replacement_for": "20260828_35",
+  "carried_facts": [
+    "结论期是 2006-2022（观测档案所及）；1961-2005 无实测流量，「无站 NSE 为负」因此是 2019-2022 的陈述。",
+    "2025 的 PET 桥接未过 0.98 门（r = 0.916165），2025 段携带 PET_BRIDGE_UNVALIDATED_2025。",
+    "本产品不替换、不冒充正式产品 20260828_35。"
+  ],
+  "products": {
+    "outputs/tn_hydrology_reach_daily.parquet": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\outputs\\tn_hydrology_reach_daily.parquet",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\tn_hydrology_reach_daily.parquet",
+      "sha256": "87d829d0bc60a5c3ea4eee0666cfa4cdd562d609e5c6466971fe9129b0242f89",
+      "bytes": 1152247958
+    },
+    "outputs/tn_hydrology_reach_monthly.parquet": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\outputs\\tn_hydrology_reach_monthly.parquet",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\tn_hydrology_reach_monthly.parquet",
+      "sha256": "21c21e95892249f99dc97650f811bca0eb09eac75e6ca9996f9ad9342c127a00",
+      "bytes": 32877170
+    },
+    "outputs/tn_hydrology_reservoir_daily.parquet": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\outputs\\tn_hydrology_reservoir_daily.parquet",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\tn_hydrology_reservoir_daily.parquet",
+      "sha256": "e38f3d412f02be20d40a379277c1b731c89a08170603e02d33f0a996814d8dd2",
+      "bytes": 46053564
+    },
+    "outputs/tn_hydrology_reservoir_monthly.parquet": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\outputs\\tn_hydrology_reservoir_monthly.parquet",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\tn_hydrology_reservoir_monthly.parquet",
+      "sha256": "0338f907dc7996dc399f637667ee1611365a327f0a063ef65124aa2231b8e4e1",
+      "bytes": 1393759
+    },
+    "outputs/tn_hydrology_reservoir_static_metadata.parquet": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\outputs\\tn_hydrology_reservoir_static_metadata.parquet",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\tn_hydrology_reservoir_static_metadata.parquet",
+      "sha256": "91333e13b4279e5dd320409bc382361144dfa7368a3f6b96f10fa5e78e99b5f8",
+      "bytes": 24159
+    },
+    "outputs/state_consistent_reach_daily.parquet": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\outputs\\state_consistent_reach_daily.parquet",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\state_consistent_reach_daily.parquet",
+      "sha256": "545335e6363e20ca18c306808cc4ea4c47c3d491c8ba855762bd42a4f0a3b896",
+      "bytes": 694125169
+    },
+    "outputs/state_consistent_reach_monthly.parquet": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\outputs\\state_consistent_reach_monthly.parquet",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\state_consistent_reach_monthly.parquet",
+      "sha256": "4399f60ceea141527bc6a5b298916b9d9b067712628cb10188fc0770f02417a7",
+      "bytes": 24691995
+    },
+    "outputs/state_consistent_reservoir_daily.parquet": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\outputs\\state_consistent_reservoir_daily.parquet",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\state_consistent_reservoir_daily.parquet",
+      "sha256": "e38f3d412f02be20d40a379277c1b731c89a08170603e02d33f0a996814d8dd2",
+      "bytes": 46053564
+    },
+    "outputs/state_consistent_reservoir_monthly.parquet": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\outputs\\state_consistent_reservoir_monthly.parquet",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\state_consistent_reservoir_monthly.parquet",
+      "sha256": "0338f907dc7996dc399f637667ee1611365a327f0a063ef65124aa2231b8e4e1",
+      "bytes": 1393759
+    },
+    "outputs/state_consistent_reservoir_static_metadata.parquet": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\outputs\\state_consistent_reservoir_static_metadata.parquet",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\state_consistent_reservoir_static_metadata.parquet",
+      "sha256": "91333e13b4279e5dd320409bc382361144dfa7368a3f6b96f10fa5e78e99b5f8",
+      "bytes": 24159
+    },
+    "outputs/export/canonical_reach_daily_2006_2024.parquet": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\outputs\\export\\canonical_reach_daily_2006_2024.parquet",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\canonical_reach_daily_2006_2024.parquet",
+      "sha256": "68cccde09204a602978fa2750ba4f44ecf86c5bcfa45976274f56e1dbea2506a",
+      "bytes": 146679689
+    },
+    "outputs/export/canonical_reach_monthly_2006_2024.parquet": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\outputs\\export\\canonical_reach_monthly_2006_2024.parquet",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\canonical_reach_monthly_2006_2024.parquet",
+      "sha256": "0e4b5bfff36141ba0fb09940b0a21e1b96548ffa91835132cfa2a3c0edc2b249",
+      "bytes": 7328211
+    },
+    "stage33/outputs/historical_initial_land_state_1961.npz": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\stage33\\outputs\\historical_initial_land_state_1961.npz",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\historical_initial_land_state_1961.npz",
+      "sha256": "90690e0c8dd16abea0de04835922bdb4ad498dd7ade1855ccbbc5a31b8e1cd56",
+      "bytes": 5547
+    },
+    "stage33/outputs/historical_initial_reservoir_states_1961.json": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\stage33\\outputs\\historical_initial_reservoir_states_1961.json",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\historical_initial_reservoir_states_1961.json",
+      "sha256": "1967d910c48b81e27640b63b1252b6c820f7eaa027c9b39ff4c6c8fc28402a4b",
+      "bytes": 222
+    }
+  },
+  "chain_evidence": {
+    "locks/tn_hydrology_interface_lock.json": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\locks\\tn_hydrology_interface_lock.json",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\locks\\locks\\tn_hydrology_interface_lock.json",
+      "sha256": "3b2ce42203c571216f8bb9ca914472bd2da8fa9b338840948d3b915b49392c1f",
+      "bytes": 772
+    },
+    "locks/long_simulation_lock.json": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\locks\\long_simulation_lock.json",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\locks\\locks\\long_simulation_lock.json",
+      "sha256": "82f2a42b803a40677277db8afa4370b57f154e6fb215c104b6d5bdf761d88ede",
+      "bytes": 861
+    },
+    "reports/export/parent_preserving_product_lock.json": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\reports\\export\\parent_preserving_product_lock.json",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\locks\\reports\\export\\parent_preserving_product_lock.json",
+      "sha256": "f51693bae73e699675ea6db27d1524a4bdfa458176256f9501c384413467640e",
+      "bytes": 880
+    },
+    "stage33/locks/frozen_reproduction_spinup_lock.json": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\stage33\\locks\\frozen_reproduction_spinup_lock.json",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\locks\\stage33\\locks\\frozen_reproduction_spinup_lock.json",
+      "sha256": "baec7f4e99b23bf0dd7ce604e180948c77b4b1ab02a97b8b95a8da6f7ec9804c",
+      "bytes": 982
+    },
+    "work/locks/forcing_integrity_lock.json": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\work\\locks\\forcing_integrity_lock.json",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\locks\\work\\locks\\forcing_integrity_lock.json",
+      "sha256": "2b3088bedb8a3393265c44c296fdeb1ea2d3d069e140e7790802f908a908aa4f",
+      "bytes": 536
+    },
+    "reports/tn_hydrology_interface_qa.json": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\reports\\tn_hydrology_interface_qa.json",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\reports\\chain\\reports\\tn_hydrology_interface_qa.json",
+      "sha256": "d2c1e611d8a6eb6399e9f3671af682de5ff571cfe708a544fc9f5c96c08d5cf8",
+      "bytes": 1092
+    },
+    "reports/long_simulation_qa.json": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\reports\\long_simulation_qa.json",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\reports\\chain\\reports\\long_simulation_qa.json",
+      "sha256": "a72ac7f942860782496c7dd8fc2078832bf9dc8009bad4e13b0fae78adeda1df",
+      "bytes": 1419
+    },
+    "reports/export/validation.json": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\reports\\export\\validation.json",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\reports\\chain\\reports\\export\\validation.json",
+      "sha256": "86bf5645914f04013c65adebbd882dde9244f877aa01bba287050466765c2735",
+      "bytes": 818
+    },
+    "reports/stage5/validation.json": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\reports\\stage5\\validation.json",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\reports\\chain\\reports\\stage5\\validation.json",
+      "sha256": "26d98bfb3f95f8e1fc45379d437c7070f511b192f98b18240e50a61aca38051c",
+      "bytes": 695
+    },
+    "reports/stage5/blind_prediction_lock.json": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\reports\\stage5\\blind_prediction_lock.json",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\reports\\chain\\reports\\stage5\\blind_prediction_lock.json",
+      "sha256": "ed01825210593fc3bc64f93fbd99f1335ea92d6240ece338ea56d51e9046bba2",
+      "bytes": 1114
+    },
+    "reports/stage5/input_code_hash_registry.json": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\reports\\stage5\\input_code_hash_registry.json",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\reports\\chain\\reports\\stage5\\input_code_hash_registry.json",
+      "sha256": "b757f874100c8476abf74e4c67f8d1a86e378a2b0f3c7edd732492e1efcd1f34",
+      "bytes": 4054
+    },
+    "reports/stage8/stage8_preparation_lock.json": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\reports\\stage8\\stage8_preparation_lock.json",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\reports\\chain\\reports\\stage8\\stage8_preparation_lock.json",
+      "sha256": "15c7bad87443195ad21dadb6704012e9cdf8ac3446fa180d029f04a341bcff5e",
+      "bytes": 454
+    },
+    "stage33/reports/frozen_reproduction_spinup_qa.json": {
+      "source": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\stage33\\reports\\frozen_reproduction_spinup_qa.json",
+      "published": "E:\\SPARROW\\5_Test\\20260917_3\\reports\\chain\\stage33\\reports\\frozen_reproduction_spinup_qa.json",
+      "sha256": "4abc89a8db67c1a251128d0c80057a574309e734c37e7293e9a0311231b8da88",
+      "bytes": 2607
+    }
+  },
+  "provenance": {
+    "round_a_lock": "E:\\SPARROW\\5_Test\\20260917_2\\locks\\station_screen_lock.json",
+    "round_a_lock_sha256": "4387814bc6f43f48c4f4e37f800fd59217a52965d94abf0f4f98d7b76352ffc8",
+    "b0_preflight": "E:\\SPARROW\\5_Test\\20260917_3\\reports\\b0_preflight.json",
+    "b1_run": "E:\\SPARROW\\5_Test\\20260917_3\\reports\\b1_run.json",
+    "b2_reproduction": "E:\\SPARROW\\5_Test\\20260917_3\\reports\\b2_reproduction.json"
+  }
+}

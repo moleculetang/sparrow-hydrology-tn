@@ -1,0 +1,9 @@
+config,legal_starts,sufficient_starts,MAP_relative_gap,selected,interpretation
+T24_G_D,2,2,2.3203086492667763e-07,T24_G_D_s0,small MAP gap; not proof of same optimum
+T24_G_D_H1,2,2,7.423358354735118e-12,T24_G_D_H1_s0,small MAP gap; not proof of same optimum
+T24_G_M,2,2,5.503453816076479e-13,T24_G_M_s1,small MAP gap; not proof of same optimum
+T24_G_M_H1,2,2,1.083226284884685e-12,T24_G_M_H1_s0,small MAP gap; not proof of same optimum
+T24_L_D,2,2,1.91161897546795e-12,T24_L_D_s0,small MAP gap; not proof of same optimum
+T24_L_D_H1,2,2,0.07963572399023641,T24_L_D_H1_s0,distinct local solutions
+T24_L_M,2,2,2.7866834822137884e-13,T24_L_M_s0,small MAP gap; not proof of same optimum
+T24_L_M_H1,2,2,6.350834822415711e-13,T24_L_M_H1_s0,small MAP gap; not proof of same optimum

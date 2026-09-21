@@ -1,0 +1,31 @@
+{
+  "id": "GLOBAL_MIXED_TN_V1",
+  "paths": 28,
+  "eta": [
+    0,
+    1
+  ],
+  "local_stations": 34,
+  "spatial_outlets": [
+    56,
+    113,
+    191
+  ],
+  "time_folds": [
+    "T24",
+    "T25S"
+  ],
+  "prior_normalization": 17,
+  "reference_reaches": 26,
+  "minimum_day_readings": 4,
+  "minimum_span_hours": 12,
+  "minimum_month_days": 10,
+  "seed": 1729,
+  "bootstrap": 1000,
+  "calendar_windows": {
+    "BJT": 0,
+    "CHM": -4,
+    "CMFD": 8
+  },
+  "automations": false
+}

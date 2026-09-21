@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE_NO_JOINT_SUPPORT",
+  "scientific_configs": 3,
+  "fits": 0,
+  "roots": 0,
+  "physical_pass": true,
+  "independent_score_pass": true,
+  "monthly_raw_labels_exact": true,
+  "elapsed_hours": 0.2909900309642156,
+  "budget_hours": 6,
+  "external_expert_review": false,
+  "source_scope": [
+    158,
+    225
+  ],
+  "limitations": [
+    "retrospective_seen_labels",
+    "timing_and_longterm_mass_not_identified_separately",
+    "no_SAS_or_young_water_identification",
+    "source_labels_only_inherited_pilot_reaches",
+    "routing_replay_not_internal_checkpoint"
+  ]
+}

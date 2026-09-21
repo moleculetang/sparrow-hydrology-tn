@@ -1,0 +1,762 @@
+{
+ "N16": {
+  "n_arms_in_the_table": 10,
+  "n_parameters_of_every_arm": 30,
+  "primary_arm_is_the_literal": "P-1e2",
+  "primary_is_marked_by": "the top-level literal `primary_arm` and a unique `role == \"PRIMARY\"`; the table carries NO per-row `is_primary` boolean to resolve",
+  "tstar_arm_key": "TSTAR",
+  "tstar_carries_no_gate": true,
+  "tstar_is_not_in_the_arm_table": true,
+  "tstar_is_not_the_primary": true
+ },
+ "N17": {
+  "enters_no_gate": true,
+  "every_layer2_output_carries_enters_no_gate": true,
+  "full_capability_issuer": "layer 1 only, and only the literal 'P-1e2'",
+  "layer1_outcome": "NO_AMPLITUDE_MECHANISM",
+  "layer2_changed_the_layer1_outcome": false,
+  "layer2_outcome": "KM_MAPPING_NO_SHAPE_CAPABILITY",
+  "shape_layer_does_not_change_any_gate_passed_field": true,
+  "shape_layer_does_not_enter_main_verdict_gates": true,
+  "shape_layer_does_not_resign_layer_1": true
+ },
+ "fit_worker_calls": 0,
+ "layer1": {
+  "A_L1": 0.8328411654810111,
+  "A_L3": 0.8422771602949068,
+  "amplitude_plateau": {
+   "A_L1_over_the_candidate_grid": {
+    "K-1e3": 0.8334611007763244,
+    "K-30": 0.8196184997235119,
+    "K-365": 0.8340612498511533,
+    "K-3p6e3": 0.8338001807974333,
+    "K-90": 0.8283682394174161,
+    "P-1e2": 0.8328411654810111
+   },
+   "G1_threshold": 1.1579754800655908,
+   "are_any_of_them_candidates": false,
+   "arms_with_a_failed_ledger_channel": [
+    "K-slowend"
+   ],
+   "every_candidate_below_the_frozen_baseline": true,
+   "frozen_baseline": 1.0400772083480145,
+   "max": 0.8340612498511533,
+   "max_excluding_arms_with_a_failed_ledger_channel": 0.8340612498511533,
+   "min": 0.8196184997235119,
+   "min_excluding_arms_with_a_failed_ledger_channel": 0.8196184997235119,
+   "span": 0.014442750127641402,
+   "the_claim_does_not_rest_on_the_failing_arm": true
+  },
+  "authorised_by_this_layer": false,
+  "decided_by": "the PRIMARY arm, the literal 'P-1e2', by its own gate readings",
+  "elimination_chain_note": "Section 2.5 requires that when this row fires the report states what has been eliminated in order. The chain below is carried verbatim from the registered table; this round supplies its last link, and the fact that the other two rows of the table did NOT fire is what makes the link a finding rather than an assumption.",
+  "elimination_chain_the_report_must_write_out": [
+   "hydrology",
+   "hazard",
+   "calendar",
+   "the NH4 pool",
+   "a static direct source",
+   "the event store",
+   "post-hoc pathway allocation",
+   "pre-mobilisation pathway-specific concentration",
+   "conservative dual-water-pathway concentration (zero parameters)",
+   "legacy/mobile accessibility mapping (one parameter, zero fits)"
+  ],
+  "frozen_baseline_A_L1": 1.0400772083480145,
+  "frozen_baseline_A_L3": 1.023217381861253,
+  "frozen_baseline_mean_concentration": 2.8234476727379607,
+  "gamma_conditions_firing_on_the_primary": [],
+  "gamma_form": {
+   "conditions": {
+    "month_start_pulse": {
+     "NMpre_over_representation_factor": 0.9407698899364527,
+     "condition_verbatim": "the output degenerates to a month-start pulse",
+     "frac_of_Ff_mass_on_month_start_days": 0.030378152818037733,
+     "frac_of_NMpre_on_month_start_days": 0.03090825100407237,
+     "frac_of_days_that_are_month_starts": 0.03285420944558522,
+     "holds": false,
+     "over_representation_factor": 0.9246350263990235,
+     "reading": "the month-start mass fraction is 0.9246350263990235 times the calendar fraction -- BELOW one, i.e. month starts are now UNDER-represented, against 5.00x on round 1's parent control. The pulse form is gone, not merely reduced.",
+     "round_1_P_upper_over_representation": 5.001824614730297,
+     "round_1_P_upper_reference": 0.16433099350243277
+    },
+    "stock_emptied_by_the_water": {
+     "arms_at_or_below": [],
+     "arms_with_a_defined_tau_m": [
+      "K-1e3",
+      "K-30",
+      "K-365",
+      "K-3p6e3",
+      "K-7",
+      "K-90",
+      "K-slowend",
+      "P-1e2"
+     ],
+     "condition_verbatim": "every physical arm shows the stock emptied directly by the water turnover rate",
+     "holds": false,
+     "holds_on_every_arm": false,
+     "holds_on_the_primary": false,
+     "legacy_share_of_the_land_state_over_the_whole_record_on_the_primary": 0.9802002679151975,
+     "n_arms": 9,
+     "n_arms_with_tau_m_at_or_below_the_water_turnover_time": 0,
+     "per_arm": {
+      "K-1e3": {
+       "frac_of_Ff_mass_on_month_start_days": 0.03170760765149554,
+       "legacy_share_at_the_final_day": 0.9932274745682239,
+       "legacy_share_of_the_land_state_over_the_whole_record": 0.9959894290844938,
+       "tau_m_days": 1000.0,
+       "tau_m_over_tau_water_median": 184.78183069365753
+      },
+      "K-30": {
+       "frac_of_Ff_mass_on_month_start_days": 0.024278981840416887,
+       "legacy_share_at_the_final_day": 0.7743449074131505,
+       "legacy_share_of_the_land_state_over_the_whole_record": 0.8850565749691497,
+       "tau_m_days": 30.0,
+       "tau_m_over_tau_water_median": 5.543454920809726
+      },
+      "K-365": {
+       "frac_of_Ff_mass_on_month_start_days": 0.031106758403589004,
+       "legacy_share_at_the_final_day": 0.9816726987748869,
+       "legacy_share_of_the_land_state_over_the_whole_record": 0.9890550291372701,
+       "tau_m_days": 365.0,
+       "tau_m_over_tau_water_median": 67.445368203185
+      },
+      "K-3p6e3": {
+       "frac_of_Ff_mass_on_month_start_days": 0.03196363494507476,
+       "legacy_share_at_the_final_day": 0.998095089014371,
+       "legacy_share_of_the_land_state_over_the_whole_record": 0.9988877240822356,
+       "tau_m_days": 3600.0,
+       "tau_m_over_tau_water_median": 665.2145904971671
+      },
+      "K-7": {
+       "frac_of_Ff_mass_on_month_start_days": 0.025959678624171156,
+       "legacy_share_at_the_final_day": 0.17708885470357402,
+       "legacy_share_of_the_land_state_over_the_whole_record": 0.6337708134148078,
+       "tau_m_days": 7.0,
+       "tau_m_over_tau_water_median": 1.2934728148556027
+      },
+      "K-90": {
+       "frac_of_Ff_mass_on_month_start_days": 0.028629961078421477,
+       "legacy_share_at_the_final_day": 0.9262753097103504,
+       "legacy_share_of_the_land_state_over_the_whole_record": 0.9573543925877578,
+       "tau_m_days": 90.0,
+       "tau_m_over_tau_water_median": 16.630364762429178
+      },
+      "K-slowend": {
+       "frac_of_Ff_mass_on_month_start_days": 0.032022733919886526,
+       "legacy_share_at_the_final_day": 0.9993113449444982,
+       "legacy_share_of_the_land_state_over_the_whole_record": 0.9996003355830586,
+       "tau_m_days": 10000.0,
+       "tau_m_over_tau_water_median": 1847.8183069365753
+      },
+      "P-1e2": {
+       "frac_of_Ff_mass_on_month_start_days": 0.030378152818037733,
+       "legacy_share_at_the_final_day": 0.966761667843711,
+       "legacy_share_of_the_land_state_over_the_whole_record": 0.9802002679151975,
+       "tau_m_days": 200.0,
+       "tau_m_over_tau_water_median": 36.956366138731504
+      },
+      "Q0-zero": {
+       "frac_of_Ff_mass_on_month_start_days": null,
+       "legacy_share_at_the_final_day": 1.0,
+       "legacy_share_of_the_land_state_over_the_whole_record": 1.0,
+       "tau_m_days": null,
+       "tau_m_over_tau_water_median": null
+      }
+     },
+     "plain_reading": "equivalent to tau_m not exceeding the water turnover time: if the legacy pool has no independent lifetime, the stock is drained at the water rate",
+     "reading": "the ONE new lifetime is 36.956366138731504 times the water turnover time on the primary, so the stock is held by tau_m and not drained by the water. Q0-zero carries no finite tau_m at all, so it cannot support this condition either.",
+     "tau_m_over_tau_water_median_on_the_primary": 36.956366138731504
+    },
+    "tau_eff_lt_lt_tau_hydro": {
+     "block_invariance_note": "built from the water-side carry (1-g_u)*s_M, neither of which contains q_m, so this pair is ARM-INVARIANT and structurally cannot register a change in the legacy->mobile transfer.",
+     "block_invariance_recomputed_here": {
+      "n_arms": 9,
+      "note": "built from the water-side carry (1-g_u)*s_M, neither of which contains q_m, so this pair is ARM-INVARIANT and structurally cannot register a change in the legacy->mobile transfer.",
+      "tau_eff_median": [
+       5.392064939611057
+      ],
+      "tau_eff_median_takes_one_value": true,
+      "tau_hydro_median": [
+       5.411787491476153
+      ],
+      "tau_hydro_median_takes_one_value": true
+     },
+     "condition_verbatim": "tau_eff << tau_hydro",
+     "holds": false,
+     "holds_as_registered": false,
+     "ratio": 0.996355630760417,
+     "reading": "tau_eff/tau_hydro reads 0.996355630760417 on the primary -- an EQUALITY to within 0.4%, not \"<<\".",
+     "tau_eff_median_d": 5.392064939611057,
+     "tau_hydro_median_d": 5.411787491476153,
+     "the_block_cannot_see_this_round_by_construction": true,
+     "the_break_this_round_had_to_make_is_measured_elsewhere": {
+      "legacy_share_of_the_land_state_on_the_primary": 0.9802002679151975,
+      "reading": "the registered pair is structurally inert to q_m, so it can neither confirm nor deny the break; what the break is measured by is the state split below, where the land N now sits almost entirely behind a gate that the water does not control.",
+      "tau_m_over_tau_water_median_on_the_primary": 36.956366138731504
+     },
+     "why_not": "the measured ratio is 0.996355630760417 -- an EQUALITY to within 0.4%, not \"<<\". This is still the round-1 identity, and it is still exact for the reason round 1 gave: the pair is built from the water-side carry (1-g_u)*s_M."
+    }
+   },
+   "conditions_firing_on_the_primary": [],
+   "every_condition_measured": true,
+   "n_conditions_firing_on_the_primary": 0,
+   "registered_wording": "any ONE of the three conditions below",
+   "source": "20260920_1/reports/预注册_判据与门槛.md:415 and plan section 2.5"
+  },
+  "gamma_note": "Section 2.5 tests MOBILE_POOL_MAPPING_LIMITED BEFORE NO_AMPLITUDE_MECHANISM, and the round-1 wording of that row is \"any one of three\". All three are measured on the primary arm below. On this round they read as NOT firing.",
+  "main_verdict_gates": [
+   "G1",
+   "G2",
+   "G3",
+   "G5",
+   "G5b"
+  ],
+  "main_verdict_gates_are_the_five": true,
+  "mean_concentration": 22.043670057255152,
+  "n_gamma_conditions_firing_on_the_primary": 0,
+  "n_kernel_arms": 9,
+  "n_kernel_arms_passing_all_five": 0,
+  "one_line_label": null,
+  "outcome": "NO_AMPLITUDE_MECHANISM",
+  "per_arm": {
+   "B0": {
+    "A_L1": 1.0400772083480145,
+    "A_L3": 1.023217381861253,
+    "all_main_five_pass": false,
+    "can_sign_a_verdict": false,
+    "gates": {
+     "G1": false,
+     "G2": false,
+     "G3": false,
+     "G4": true,
+     "G5": true,
+     "G5b": true
+    },
+    "man_in_the_loop": false,
+    "mean_concentration": 2.8234476727379607,
+    "n_gates_passed_main_five": 2,
+    "q_m": null,
+    "role": "anchor",
+    "scored_by_a_gate": true,
+    "tau_m": null
+   },
+   "K-1e3": {
+    "A_L1": 0.8334611007763244,
+    "A_L3": 0.8520586625489538,
+    "all_main_five_pass": false,
+    "can_sign_a_verdict": true,
+    "gates": {
+     "G1": false,
+     "G2": false,
+     "G3": false,
+     "G4": false,
+     "G5": false,
+     "G5b": false
+    },
+    "man_in_the_loop": false,
+    "mean_concentration": 17.272049160559956,
+    "n_gates_passed_main_five": 0,
+    "q_m": 0.0009995001666250082,
+    "role": "candidate",
+    "scored_by_a_gate": true,
+    "tau_m": 1000.0
+   },
+   "K-30": {
+    "A_L1": 0.8196184997235119,
+    "A_L3": 0.827955825334509,
+    "all_main_five_pass": false,
+    "can_sign_a_verdict": true,
+    "gates": {
+     "G1": false,
+     "G2": false,
+     "G3": false,
+     "G4": false,
+     "G5": false,
+     "G5b": false
+    },
+    "man_in_the_loop": false,
+    "mean_concentration": 24.933047731746683,
+    "n_gates_passed_main_five": 0,
+    "q_m": 0.0327838995179941,
+    "role": "candidate",
+    "scored_by_a_gate": true,
+    "tau_m": 30.0
+   },
+   "K-365": {
+    "A_L1": 0.8340612498511533,
+    "A_L3": 0.8478083091584971,
+    "all_main_five_pass": false,
+    "can_sign_a_verdict": true,
+    "gates": {
+     "G1": false,
+     "G2": false,
+     "G3": false,
+     "G4": false,
+     "G5": false,
+     "G5b": false
+    },
+    "man_in_the_loop": false,
+    "mean_concentration": 20.743059807071134,
+    "n_gates_passed_main_five": 0,
+    "q_m": 0.002735976403140715,
+    "role": "candidate",
+    "scored_by_a_gate": true,
+    "tau_m": 365.0
+   },
+   "K-3p6e3": {
+    "A_L1": 0.8338001807974333,
+    "A_L3": 0.8543579632495699,
+    "all_main_five_pass": false,
+    "can_sign_a_verdict": true,
+    "gates": {
+     "G1": false,
+     "G2": false,
+     "G3": false,
+     "G4": false,
+     "G5": false,
+     "G5b": false
+    },
+    "man_in_the_loop": false,
+    "mean_concentration": 10.388353086369117,
+    "n_gates_passed_main_five": 0,
+    "q_m": 0.0002777392011028612,
+    "role": "candidate",
+    "scored_by_a_gate": true,
+    "tau_m": 3600.0
+   },
+   "K-7": {
+    "A_L1": 0.7473799396393261,
+    "A_L3": 0.7649140890466717,
+    "all_main_five_pass": false,
+    "can_sign_a_verdict": false,
+    "gates": {
+     "G1": false,
+     "G2": false,
+     "G3": false,
+     "G4": false,
+     "G5": false,
+     "G5b": false
+    },
+    "man_in_the_loop": false,
+    "mean_concentration": 25.76857363070475,
+    "n_gates_passed_main_five": 0,
+    "q_m": 0.13312210024981838,
+    "role": "diagnostic",
+    "scored_by_a_gate": true,
+    "tau_m": 7.0
+   },
+   "K-90": {
+    "A_L1": 0.8283682394174161,
+    "A_L3": 0.8366393199324618,
+    "all_main_five_pass": false,
+    "can_sign_a_verdict": true,
+    "gates": {
+     "G1": false,
+     "G2": false,
+     "G3": false,
+     "G4": false,
+     "G5": false,
+     "G5b": false
+    },
+    "man_in_the_loop": false,
+    "mean_concentration": 23.39429537707368,
+    "n_gates_passed_main_five": 0,
+    "q_m": 0.011049610706077653,
+    "role": "candidate",
+    "scored_by_a_gate": true,
+    "tau_m": 90.0
+   },
+   "K-slowend": {
+    "A_L1": 0.83455664175722,
+    "A_L3": 0.8550506427864129,
+    "all_main_five_pass": false,
+    "can_sign_a_verdict": false,
+    "gates": {
+     "G1": false,
+     "G2": false,
+     "G3": false,
+     "G4": false,
+     "G5": false,
+     "G5b": false
+    },
+    "man_in_the_loop": false,
+    "mean_concentration": 5.247959920865294,
+    "n_gates_passed_main_five": 0,
+    "q_m": 9.99950001666625e-05,
+    "role": "coupling-proof",
+    "scored_by_a_gate": true,
+    "tau_m": 10000.0
+   },
+   "P-1e2": {
+    "A_L1": 0.8328411654810111,
+    "A_L3": 0.8422771602949068,
+    "all_main_five_pass": false,
+    "can_sign_a_verdict": true,
+    "gates": {
+     "G1": false,
+     "G2": false,
+     "G3": false,
+     "G4": false,
+     "G5": false,
+     "G5b": false
+    },
+    "man_in_the_loop": false,
+    "mean_concentration": 22.043670057255152,
+    "n_gates_passed_main_five": 0,
+    "q_m": 0.004987520807317687,
+    "role": "PRIMARY",
+    "scored_by_a_gate": true,
+    "tau_m": 200.0
+   },
+   "Q0-zero": {
+    "A_L1": null,
+    "A_L3": null,
+    "all_main_five_pass": false,
+    "can_sign_a_verdict": false,
+    "gates": {
+     "G1": false,
+     "G2": false,
+     "G3": false,
+     "G4": false,
+     "G5": false,
+     "G5b": false
+    },
+    "man_in_the_loop": false,
+    "mean_concentration": 0.0,
+    "n_gates_passed_main_five": 0,
+    "q_m": 0.0,
+    "role": "boundary",
+    "scored_by_a_gate": true,
+    "tau_m": null
+   },
+   "R5-ref": {
+    "A_L1": 1.244023607865766,
+    "A_L3": 1.1602894255651304,
+    "all_main_five_pass": false,
+    "can_sign_a_verdict": false,
+    "gates": null,
+    "man_in_the_loop": false,
+    "mean_concentration": 2.808002818253573,
+    "n_gates_passed_main_five": null,
+    "q_m": null,
+    "role": "reference",
+    "scored_by_a_gate": false,
+    "tau_m": null,
+    "why_no_gate_row": "a read-only reference arm; plan sections 0.1 and 5 forbid its readings from entering any gate"
+   }
+  },
+  "primary_arm": "P-1e2",
+  "primary_arm_note_verbatim": "the ONLY arm that may sign layer 1; set by the blind rule below",
+  "primary_gates": {
+   "G1": false,
+   "G2": false,
+   "G3": false,
+   "G4": false,
+   "G5": false,
+   "G5b": false
+  },
+  "primary_n_gates_passed_main_five": 0,
+  "primary_q_m": 0.004987520807317687,
+  "primary_tau_m_days": 200.0,
+  "registered_BLOCKED_clause": {
+   "arms_in_ledger_failures": [
+    "K-slowend"
+   ],
+   "clause_verbatim": "BLOCKED | N1p-N16 any failure | stop immediately and register; the mechanism may NOT be read as falsified",
+   "failure_reclassified": false,
+   "literal_status": "FIRED",
+   "needs_the_user": true,
+   "not_used_for_any_outcome_above": true,
+   "per_failing_arm": {
+    "K-slowend": {
+     "can_sign_a_verdict": false,
+     "conj_labels": false,
+     "conj_local": true,
+     "conj_network": true,
+     "local_balance_max_kg": 1.1210795491933823e-07,
+     "network_balance_kg": 4.3213367462158203e-07,
+     "note": "recorded, not concealed; the registered tolerance is unchanged",
+     "q_m": 9.99950001666625e-05,
+     "role": "coupling-proof",
+     "source_label_rel_max": 2.460614459040016e-12,
+     "source_label_sum_errors": {
+      "L": 2.959277480840683e-07,
+      "M": 1.043081283569336e-06,
+      "fast": 1.422813511453569e-08,
+      "mineral_loss": 3.2741809263825417e-10,
+      "slow": 2.0445440895855427e-09,
+      "uptake": 1.6996636986732483e-08
+     },
+     "tolerance": {
+      "label_sum": 1e-06,
+      "local_balance_kg": 1e-06,
+      "network_scale": 1e-10
+     },
+     "which_channel_exceeded": [
+      "M"
+     ]
+    }
+   },
+   "the_two_readings": {
+    "under_the_literal_clause": "BLOCKED -- stop and register; the mechanism may not be read as falsified",
+    "under_the_scoped_clause": "NO_AMPLITUDE_MECHANISM"
+   },
+   "tolerance": {
+    "label_sum": 1e-06,
+    "local_balance_kg": 1e-06,
+    "network_scale": 1e-10
+   },
+   "tolerance_touched": false,
+   "what_fired": "N10.all_arms_hold is False",
+   "why_this_file_does_not_adjudicate": [
+    "Section 12.1 registers ONE pass with NO early stopping, and all ten forwards had already run before any gate was scored; the round has already executed, so \"stop immediately\" has no referent left.",
+    "Every arm named in ledger_failures carries can_sign_a_verdict=False and is excluded from every candidate roll-up; the tolerance was not touched.",
+    "The failing channel is an ABSOLUTE kilogram tolerance on a label identity, and its own relative deviation is reported beside it."
+   ],
+   "written_as": "<="
+  },
+  "zero_fits": {
+   "fit_worker_calls": 0,
+   "n_fits": 0
+  }
+ },
+ "main_verdict_gates": [
+  "G1",
+  "G2",
+  "G3",
+  "G5",
+  "G5b"
+ ],
+ "n_fits": 0,
+ "n_forwards_taken_here": 0,
+ "phase": "verdict",
+ "reads": "arms.json + phase1_arms.json + level_variance.json + shape_diagnostics.json + level_matched_point.json; zero forwards, zero fits, no gate re-derived",
+ "round": "E:\\SPARROW\\5_Test\\20260920_2",
+ "shape_layer": {
+  "F1": {
+   "A_L1_P_upper": 0.7373725809958451,
+   "A_L1_threshold": 1.1579754800655908,
+   "A_L3_P_upper": 0.7442117522548058,
+   "A_L3_threshold": 1.1495455668222099,
+   "F1_fraction": 0.5,
+   "best_A_L1": {
+    "A_L1": 0.8340612498511533,
+    "A_L3": 0.8478083091584971,
+    "F1_ratio_A_L1": 0.22988112794551832,
+    "F1_ratio_A_L3": 0.2555833073395458,
+    "q_m": 0.002735976403140715,
+    "tau_m_days": 365.0
+   },
+   "best_A_L3": {
+    "A_L1": 0.8338001807974333,
+    "A_L3": 0.8543579632495699,
+    "F1_ratio_A_L1": 0.2292604259620148,
+    "F1_ratio_A_L3": 0.27174197423503527,
+    "q_m": 0.0002777392011028612,
+    "tau_m_days": 3600.0
+   },
+   "denominator_A_L1": 0.4206028990697457,
+   "denominator_A_L3": 0.405333814567404,
+   "holds": false,
+   "n_candidates": 6,
+   "per_candidate": {
+    "K-1e3": {
+     "A_L1": 0.8334611007763244,
+     "A_L3": 0.8520586625489538,
+     "F1_ratio_A_L1": 0.22845424982328896,
+     "F1_ratio_A_L3": 0.2660693641097979,
+     "q_m": 0.0009995001666250082,
+     "tau_m_days": 1000.0
+    },
+    "K-30": {
+     "A_L1": 0.8196184997235119,
+     "A_L3": 0.827955825334509,
+     "F1_ratio_A_L1": 0.19554291924656578,
+     "F1_ratio_A_L3": 0.20660519816013792,
+     "q_m": 0.0327838995179941,
+     "tau_m_days": 30.0
+    },
+    "K-365": {
+     "A_L1": 0.8340612498511533,
+     "A_L3": 0.8478083091584971,
+     "F1_ratio_A_L1": 0.22988112794551832,
+     "F1_ratio_A_L3": 0.2555833073395458,
+     "q_m": 0.002735976403140715,
+     "tau_m_days": 365.0
+    },
+    "K-3p6e3": {
+     "A_L1": 0.8338001807974333,
+     "A_L3": 0.8543579632495699,
+     "F1_ratio_A_L1": 0.2292604259620148,
+     "F1_ratio_A_L3": 0.27174197423503527,
+     "q_m": 0.0002777392011028612,
+     "tau_m_days": 3600.0
+    },
+    "K-90": {
+     "A_L1": 0.8283682394174161,
+     "A_L3": 0.8366393199324618,
+     "F1_ratio_A_L1": 0.21634577085138396,
+     "F1_ratio_A_L3": 0.22802826795070139,
+     "q_m": 0.011049610706077653,
+     "tau_m_days": 90.0
+    },
+    "P-1e2": {
+     "A_L1": 0.8328411654810111,
+     "A_L3": 0.8422771602949068,
+     "F1_ratio_A_L1": 0.2269803291806009,
+     "F1_ratio_A_L3": 0.24193739706804906,
+     "q_m": 0.004987520807317687,
+     "tau_m_days": 200.0
+    }
+   },
+   "rule": "at least one CANDIDATE tau_m closes >= F1_fraction of the (P-upper -> registered threshold) gap, on A_L1 or on A_L3",
+   "source_of_every_number": "all four are frozen readings; no arm of this round is consulted to state the rule"
+  },
+  "F2": {
+   "A_L1_at_tau_m_star": 0.8348555927188647,
+   "A_L3_at_tau_m_star": 0.8552682953266111,
+   "F1_ratio_A_L1": 0.23176970947804762,
+   "F1_ratio_A_L3": 0.27398785662708963,
+   "F2_fraction": 0.15,
+   "f2_is_not_consulted_for_this_outcome": "the registered table decides KM_MAPPING_NO_SHAPE_CAPABILITY on F1 alone (\"即使不看水平 ... 无任何点满足 F1\"); F2 is reported beside it, and it does not disagree.",
+   "holds": false,
+   "recomputed_here_and_agrees_with_level_matched_point": {
+    "abs_diff_A_L1": 0.0,
+    "abs_diff_A_L3": 0.0,
+    "tolerance": 1e-12
+   },
+   "rule": "the same ratio at tau_m^*, below F2_fraction on BOTH arms",
+   "tau_m_star_days": 21104.573561789428
+  },
+  "N14_monotonicity": {
+   "grid": [
+    {
+     "A_L1": 0.7473799396393261,
+     "A_L3": 0.7649140890466717,
+     "arm": "K-7",
+     "mean_concentration": 25.76857363070475,
+     "q_m": 0.13312210024981838,
+     "tau_m": 7.0
+    },
+    {
+     "A_L1": 0.8196184997235119,
+     "A_L3": 0.827955825334509,
+     "arm": "K-30",
+     "mean_concentration": 24.933047731746683,
+     "q_m": 0.0327838995179941,
+     "tau_m": 30.0
+    },
+    {
+     "A_L1": 0.8283682394174161,
+     "A_L3": 0.8366393199324618,
+     "arm": "K-90",
+     "mean_concentration": 23.39429537707368,
+     "q_m": 0.011049610706077653,
+     "tau_m": 90.0
+    },
+    {
+     "A_L1": 0.8328411654810111,
+     "A_L3": 0.8422771602949068,
+     "arm": "P-1e2",
+     "mean_concentration": 22.043670057255152,
+     "q_m": 0.004987520807317687,
+     "tau_m": 200.0
+    },
+    {
+     "A_L1": 0.8340612498511533,
+     "A_L3": 0.8478083091584971,
+     "arm": "K-365",
+     "mean_concentration": 20.743059807071134,
+     "q_m": 0.002735976403140715,
+     "tau_m": 365.0
+    },
+    {
+     "A_L1": 0.8334611007763244,
+     "A_L3": 0.8520586625489538,
+     "arm": "K-1e3",
+     "mean_concentration": 17.272049160559956,
+     "q_m": 0.0009995001666250082,
+     "tau_m": 1000.0
+    },
+    {
+     "A_L1": 0.8338001807974333,
+     "A_L3": 0.8543579632495699,
+     "arm": "K-3p6e3",
+     "mean_concentration": 10.388353086369117,
+     "q_m": 0.0002777392011028612,
+     "tau_m": 3600.0
+    },
+    {
+     "A_L1": 0.83455664175722,
+     "A_L3": 0.8550506427864129,
+     "arm": "K-slowend",
+     "mean_concentration": 5.247959920865294,
+     "q_m": 9.99950001666625e-05,
+     "tau_m": 10000.0
+    },
+    {
+     "A_L1": null,
+     "A_L3": null,
+     "arm": "Q0-zero",
+     "mean_concentration": 0.0,
+     "q_m": 0.0,
+     "tau_m": Infinity
+    }
+   ],
+   "monotone_non_increasing": true,
+   "n_grid_points": 9,
+   "n_violations": 0,
+   "root_find_converged": true,
+   "root_find_stop_reason": "ROOT_TOL_REACHED",
+   "statistic": "mean_concentration (the REGISTERED level statistic: the mean of ratios over the eligible station-day grid)"
+  },
+  "_anchor_echo": {
+   "G1_target_50pct": 1.1579754800655908,
+   "G2_target_50pct": 1.1495455668222099,
+   "P_upper_A_L1": 0.7373725809958451,
+   "P_upper_A_L3": 0.7442117522548058
+  },
+  "authority": "NONE. This layer may not pass a gate, change a gate, or sign capability; FULL_CAPABILITY is issued by layer 1 only (N17).",
+  "direction_evidence": {
+   "extra_daily_panel": {
+    "n_cv_daily_moving_toward_obs": 6,
+    "registered_panel": "none -- an EXTRA reading, registered in the deviations ledger"
+   },
+   "panels_disagree": true,
+   "panels_disagree_note": "THE TWO PANELS DO NOT AGREE, and this is reported rather than resolved. On the extra DAILY CV, 6 of 6 candidates read closer to the observation than the frozen baseline (0.832984) does -- the arms roughly halve or double the within-station day-to-day dispersion, and one of those two lands nearer. That is a real signal and it is NOT capability: on the same arms the MONTHLY correlation collapses from the baseline's 0.845765 to 0.35-0.43, the monthly SD ratio rises to 6.0-15.1 and the centered-RMSE to 10.0-26.2, i.e. the monthly panel -- the one this round scores on -- is strictly worse everywhere. The registered caliber makes the monthly reading primary; the daily reading is recorded beside it so the choice is visible.",
+   "registered_panel_monthly": {
+    "n_A_L1_moving_toward_obs": 0,
+    "n_A_L3_moving_toward_obs": 0,
+    "n_candidates": 6,
+    "n_cv_moving_toward_obs": 0,
+    "reading": "A_L1 / A_L3 \"toward the observation\" is read against the FROZEN baseline value (A_L1 = 1.0400772083480145), which is the observation-anchored reference in this round. The G1/G2 THRESHOLDS are a different, stricter comparison and are computed in phase1_arms.py, not here."
+   },
+   "source": "shape_diagnostics.json::direction (enters_no_gate=True)",
+   "used_for_the_outcome_above": "the REGISTERED monthly panel only; the daily reading is reported beside it and is not capability"
+  },
+  "enters_no_gate": true,
+  "level_variance_support": {
+   "g5b_n_kernel_arms": 9,
+   "g5b_n_kernel_arms_passing": 0,
+   "g5b_null_arm": "B0",
+   "g5b_reference_arm_note": "R5-ref is EXCLUDED from the pass counts; plan sections 0.1 and 5 forbid its readings from entering any gate",
+   "g5b_still_a_hard_gate_ruling_verbatim": "user ruling, verbatim: \"G5b 继续是生产/晋级意义上的硬门。这个不能动。\" It was NOT relaxed, NOT downgraded, and NOT replaced by a level-matched surrogate, even though this round's single lever moves the level by construction.",
+   "g5b_threshold": 0.005,
+   "note": "the de-meaned NSE is AUXILIARY only, per the user ruling: an additive shift is not an invariant of the round's peak/base criterion.",
+   "reading_rule_auxiliary_only": "section 2.7: recentring is an ADDITIVE SHIFT and the round's core criterion C_peak/C_base is NOT shift-invariant, so this column is AUXILIARY and may not be the sole matched-level evidence. The primary shape evidence is reports/shape_diagnostics.json.",
+   "reading_rule_conclusion": "NOT A LEVEL EFFECT. Recentring every kernel arm onto the frozen baseline mean moves the monthly NSE by a few units while the residual against the baseline stays in the tens, so the monthly collapse is carried by the SHAPE, not by the mean offset.",
+   "reading_rule_n_kernel_arms_recovered": 0
+  },
+  "one_line_label": null,
+  "outcome": "KM_MAPPING_NO_SHAPE_CAPABILITY",
+  "why_it_exists": "G5b measures E[M_t/Q_t], a mean of ratios, so a level gate cannot by itself answer whether the mechanism has any time-structure capability. F1/F2 use only frozen readings."
+ },
+ "sources": {
+  "arms": "58a96753d80c071ae395ce388e3e52afcea9bbd934db1ea2ea4b1b83d0833cf5",
+  "level_matched_point": "4f5d0d53be521a5e48d37b02578b8bf0bad1302ad99dd1b73a5fcd0028279e54",
+  "level_variance": "28b468b038f964777e3928c498b9b89382fb82a12b8dd2c2f0a551679fee2e0e",
+  "phase1_arms": "22cdbfa1f8ddae7a04ad883e4290abb60b51d2d22f46da19b66c478b5c842324",
+  "shape_diagnostics": "5ceda68bb02765681f55ecd9e340764cf2e2b97e0942bb04876d38739e923a30"
+ }
+}

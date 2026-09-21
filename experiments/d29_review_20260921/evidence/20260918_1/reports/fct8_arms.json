@@ -1,0 +1,2449 @@
+{
+ "stage": "20260918_1/work/audit_fct8",
+ "started_utc": "2026-09-18T04:33:00Z",
+ "bootstrap": 1000,
+ "seed": 1729,
+ "eval_year": 2024,
+ "thresholds": {
+  "paired_dNSE": 0.1,
+  "paired_dr": 0.05,
+  "rmse_ratio": 0.95,
+  "improved_fraction": 0.6,
+  "sd_decline": 0.9,
+  "bias_ratio": 1.05
+ },
+ "spatial_admission": {
+  "component_cluster_bootstrap_admitted": false,
+  "fallback": "leave-one-component-out jackknife + per-block effects",
+  "largest_share": 0.8017241379310345,
+  "n_nonempty_components": 7,
+  "rule": "n_nonempty_components >= 8 AND largest share < 0.40"
+ },
+ "arms": {
+  "T24_G_D_H1": {
+   "objective": "D",
+   "label": "daily-labelled",
+   "base_tag": "T24_G_D_H1_s0",
+   "fct8_tag": "T24_G_D_H1_FCT8_s0",
+   "base_starts": [
+    "T24_G_D_H1_s0",
+    "T24_G_D_H1_s1"
+   ],
+   "fct8_starts": [
+    "T24_G_D_H1_FCT8_s0",
+    "T24_G_D_H1_FCT8_s1"
+   ]
+  },
+  "T24_G_M_H1": {
+   "objective": "M",
+   "label": "monthly-labelled",
+   "base_tag": "T24_G_M_H1_s0",
+   "fct8_tag": "T24_G_M_H1_FCT8_s1",
+   "base_starts": [
+    "T24_G_M_H1_s0",
+    "T24_G_M_H1_s1"
+   ],
+   "fct8_starts": [
+    "T24_G_M_H1_FCT8_s0",
+    "T24_G_M_H1_FCT8_s1"
+   ]
+  }
+ },
+ "spatial_blocks_used": {
+  "level1_blocks": 7,
+  "level2_blocks": 63
+ },
+ "criteria": [
+  {
+   "tag": "T24_G_D_H1_s0",
+   "arm": "D29_BE",
+   "fold": "T24_G_D_H1",
+   "scale": "monthly_PUB",
+   "objective": "D",
+   "label": "daily-labelled",
+   "stations": 116,
+   "eligible": 85,
+   "NSE_median": -0.4681342479425834,
+   "r_median": 0.48274991374836207,
+   "sd_ratio_median": 0.4421214502595947
+  },
+  {
+   "tag": "T24_G_D_H1_s0",
+   "arm": "D29_BE",
+   "fold": "T24_G_D_H1",
+   "scale": "monthly_FW",
+   "objective": "D",
+   "label": "daily-labelled",
+   "stations": 116,
+   "eligible": 85,
+   "NSE_median": -0.5760708322144534,
+   "r_median": 0.3987994807896595,
+   "sd_ratio_median": 0.457870987964379
+  },
+  {
+   "tag": "T24_G_D_H1_s0",
+   "arm": "D29_BE",
+   "fold": "T24_G_D_H1",
+   "scale": "daily",
+   "objective": "D",
+   "label": "daily-labelled",
+   "stations": 15,
+   "eligible": 15,
+   "NSE_median": -0.06717495221447334,
+   "r_median": 0.3552721132834128,
+   "sd_ratio_median": 0.4369891177217483
+  },
+  {
+   "tag": "T24_G_D_H1_FCT8_s0",
+   "arm": "FCT8",
+   "fold": "T24_G_D_H1",
+   "scale": "monthly_PUB",
+   "objective": "D",
+   "label": "daily-labelled",
+   "stations": 116,
+   "eligible": 85,
+   "NSE_median": -0.4973376891046004,
+   "r_median": 0.41157265111208063,
+   "sd_ratio_median": 0.4643471884463126
+  },
+  {
+   "tag": "T24_G_D_H1_FCT8_s0",
+   "arm": "FCT8",
+   "fold": "T24_G_D_H1",
+   "scale": "monthly_FW",
+   "objective": "D",
+   "label": "daily-labelled",
+   "stations": 116,
+   "eligible": 85,
+   "NSE_median": -0.5194278413012601,
+   "r_median": 0.418196822878875,
+   "sd_ratio_median": 0.47699165041292607
+  },
+  {
+   "tag": "T24_G_D_H1_FCT8_s0",
+   "arm": "FCT8",
+   "fold": "T24_G_D_H1",
+   "scale": "daily",
+   "objective": "D",
+   "label": "daily-labelled",
+   "stations": 15,
+   "eligible": 15,
+   "NSE_median": -0.10384065317723468,
+   "r_median": 0.36855867672139786,
+   "sd_ratio_median": 0.4441615079235194
+  },
+  {
+   "tag": "T24_G_M_H1_s0",
+   "arm": "D29_BE",
+   "fold": "T24_G_M_H1",
+   "scale": "monthly_PUB",
+   "objective": "M",
+   "label": "monthly-labelled",
+   "stations": 116,
+   "eligible": 85,
+   "NSE_median": -0.4792502312000986,
+   "r_median": 0.47331166390381557,
+   "sd_ratio_median": 0.442047382897941
+  },
+  {
+   "tag": "T24_G_M_H1_s0",
+   "arm": "D29_BE",
+   "fold": "T24_G_M_H1",
+   "scale": "monthly_FW",
+   "objective": "M",
+   "label": "monthly-labelled",
+   "stations": 116,
+   "eligible": 85,
+   "NSE_median": -0.5753297126850758,
+   "r_median": 0.3828196635335801,
+   "sd_ratio_median": 0.45836241316751586
+  },
+  {
+   "tag": "T24_G_M_H1_s0",
+   "arm": "D29_BE",
+   "fold": "T24_G_M_H1",
+   "scale": "daily",
+   "objective": "M",
+   "label": "monthly-labelled",
+   "stations": 15,
+   "eligible": 15,
+   "NSE_median": -0.08849768709088601,
+   "r_median": 0.33591460219038605,
+   "sd_ratio_median": 0.4350592995172504
+  },
+  {
+   "tag": "T24_G_M_H1_FCT8_s1",
+   "arm": "FCT8",
+   "fold": "T24_G_M_H1",
+   "scale": "monthly_PUB",
+   "objective": "M",
+   "label": "monthly-labelled",
+   "stations": 116,
+   "eligible": 85,
+   "NSE_median": -0.5045875546436971,
+   "r_median": 0.44257665113270117,
+   "sd_ratio_median": 0.4502266059468769
+  },
+  {
+   "tag": "T24_G_M_H1_FCT8_s1",
+   "arm": "FCT8",
+   "fold": "T24_G_M_H1",
+   "scale": "monthly_FW",
+   "objective": "M",
+   "label": "monthly-labelled",
+   "stations": 116,
+   "eligible": 85,
+   "NSE_median": -0.5309547815893936,
+   "r_median": 0.40319156042502324,
+   "sd_ratio_median": 0.4498920142985735
+  },
+  {
+   "tag": "T24_G_M_H1_FCT8_s1",
+   "arm": "FCT8",
+   "fold": "T24_G_M_H1",
+   "scale": "daily",
+   "objective": "M",
+   "label": "monthly-labelled",
+   "stations": 15,
+   "eligible": 15,
+   "NSE_median": -0.15849146878704956,
+   "r_median": 0.34397234432784746,
+   "sd_ratio_median": 0.4345089274656029
+  }
+ ],
+ "contrasts": [
+  {
+   "fold": "T24_G_D_H1",
+   "objective": "D",
+   "label": "daily-labelled",
+   "scale": "monthly_PUB",
+   "stations": 85,
+   "median_delta_NSE_i": -0.01809311962121596,
+   "delta_NSE_median": -0.029203441162017008,
+   "pooled_median_unstable": false,
+   "median_delta_r_i": -0.012436823260484786,
+   "improved_fraction": 0.4,
+   "rmse_ratio_station_mean": 1.0041794529543688,
+   "rmse_ratio_pooled": 1.0014514317681817,
+   "sd_decline_ratio": 0.9688679909920762,
+   "negative_r_fraction_baseline": 0.17647058823529413,
+   "negative_r_fraction_fct8": 0.17647058823529413,
+   "mean_abs_bias_baseline": 0.5251070703227391,
+   "mean_abs_bias_fct8": 0.5261719204686166,
+   "bias_ratio": 1.0020278724208056,
+   "tier": "VERY_SMALL",
+   "station_bootstrap_ci95": [
+    -0.03767356190701676,
+    0.0005406913613683617
+   ],
+   "promotion": {
+    "paired_dNSE_ge": false,
+    "paired_dr_ge": false,
+    "rmse_ratio_le": false,
+    "improved_ge": false,
+    "sd_decline_ge": false,
+    "negative_r_not_worse": true,
+    "bias_ok": true
+   },
+   "promoted": false,
+   "jackknife_level1": {
+    "full_median": -0.01809311962121596,
+    "n_blocks": 6,
+    "blocks": {
+     "TERMINAL_19": {
+      "stations": 69,
+      "n_remaining": 16,
+      "median_without": -0.052060720502758784,
+      "shift": -0.033967600881542825
+     },
+     "TERMINAL_21": {
+      "stations": 4,
+      "n_remaining": 81,
+      "median_without": -0.017341200230899023,
+      "shift": 0.0007519193903169352
+     },
+     "TERMINAL_211": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": -0.01809311962121596,
+      "shift": 0.0
+     },
+     "TERMINAL_216": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.018690818837001855,
+      "shift": -0.0005976992157858962
+     },
+     "TERMINAL_22": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.018690818837001855,
+      "shift": -0.0005976992157858962
+     },
+     "TERMINAL_55": {
+      "stations": 8,
+      "n_remaining": 77,
+      "median_without": -0.016090571591871328,
+      "shift": 0.0020025480293446307
+     }
+    },
+    "worst_shift": -0.033967600881542825,
+    "shift_range": [
+     -0.033967600881542825,
+     0.0020025480293446307
+    ],
+    "note": "jackknife over hydrologic blocks, not stations; a large worst_shift means a single block carries the headline"
+   },
+   "jackknife_level2": {
+    "full_median": -0.01809311962121596,
+    "n_blocks": 44,
+    "blocks": {
+     "ANCHOR_107": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.01771715992605749,
+      "shift": 0.0003759596951584676
+     },
+     "ANCHOR_112": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.01771715992605749,
+      "shift": 0.0003759596951584676
+     },
+     "ANCHOR_116": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.018690818837001855,
+      "shift": -0.0005976992157858962
+     },
+     "ANCHOR_135": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": -0.017341200230899023,
+      "shift": 0.0007519193903169352
+     },
+     "ANCHOR_141": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.01771715992605749,
+      "shift": 0.0003759596951584676
+     },
+     "ANCHOR_142": {
+      "stations": 4,
+      "n_remaining": 81,
+      "median_without": -0.016090571591871328,
+      "shift": 0.0020025480293446307
+     },
+     "ANCHOR_149": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.01771715992605749,
+      "shift": 0.0003759596951584676
+     },
+     "ANCHOR_166": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.01771715992605749,
+      "shift": 0.0003759596951584676
+     },
+     "ANCHOR_17": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": -0.017341200230899023,
+      "shift": 0.0007519193903169352
+     },
+     "ANCHOR_170": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.018690818837001855,
+      "shift": -0.0005976992157858962
+     },
+     "ANCHOR_172": {
+      "stations": 3,
+      "n_remaining": 82,
+      "median_without": -0.02446895676324934,
+      "shift": -0.00637583714203338
+     },
+     "ANCHOR_176": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": -0.017341200230899023,
+      "shift": 0.0007519193903169352
+     },
+     "ANCHOR_177": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.01771715992605749,
+      "shift": 0.0003759596951584676
+     },
+     "ANCHOR_18": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.018690818837001855,
+      "shift": -0.0005976992157858962
+     },
+     "ANCHOR_183": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.018690818837001855,
+      "shift": -0.0005976992157858962
+     },
+     "ANCHOR_19": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.018690818837001855,
+      "shift": -0.0005976992157858962
+     },
+     "ANCHOR_190": {
+      "stations": 6,
+      "n_remaining": 79,
+      "median_without": -0.0299647153082212,
+      "shift": -0.011871595687005243
+     },
+     "ANCHOR_192": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.01771715992605749,
+      "shift": 0.0003759596951584676
+     },
+     "ANCHOR_193": {
+      "stations": 3,
+      "n_remaining": 82,
+      "median_without": -0.018690818837001855,
+      "shift": -0.0005976992157858962
+     },
+     "ANCHOR_195": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.01771715992605749,
+      "shift": 0.0003759596951584676
+     },
+     "ANCHOR_196": {
+      "stations": 5,
+      "n_remaining": 80,
+      "median_without": -0.029807055390966064,
+      "shift": -0.011713935769750106
+     },
+     "ANCHOR_202": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.018690818837001855,
+      "shift": -0.0005976992157858962
+     },
+     "ANCHOR_203": {
+      "stations": 3,
+      "n_remaining": 82,
+      "median_without": -0.02446895676324934,
+      "shift": -0.00637583714203338
+     },
+     "ANCHOR_208": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.01771715992605749,
+      "shift": 0.0003759596951584676
+     },
+     "ANCHOR_212": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.01771715992605749,
+      "shift": 0.0003759596951584676
+     },
+     "ANCHOR_216": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.018690818837001855,
+      "shift": -0.0005976992157858962
+     },
+     "ANCHOR_29": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.018690818837001855,
+      "shift": -0.0005976992157858962
+     },
+     "ANCHOR_31": {
+      "stations": 7,
+      "n_remaining": 78,
+      "median_without": -0.016010587555910005,
+      "shift": 0.002082532065305953
+     },
+     "ANCHOR_34": {
+      "stations": 4,
+      "n_remaining": 81,
+      "median_without": -0.01928851805278775,
+      "shift": -0.0011953984315717925
+     },
+     "ANCHOR_4": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.018690818837001855,
+      "shift": -0.0005976992157858962
+     },
+     "ANCHOR_48": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.018690818837001855,
+      "shift": -0.0005976992157858962
+     },
+     "ANCHOR_51": {
+      "stations": 3,
+      "n_remaining": 82,
+      "median_without": -0.016715885911385175,
+      "shift": 0.001377233709830783
+     },
+     "ANCHOR_57": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.01771715992605749,
+      "shift": 0.0003759596951584676
+     },
+     "ANCHOR_58": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.01771715992605749,
+      "shift": 0.0003759596951584676
+     },
+     "ANCHOR_59": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": -0.01809311962121596,
+      "shift": 0.0
+     },
+     "ANCHOR_6": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": -0.01809311962121596,
+      "shift": 0.0
+     },
+     "ANCHOR_69": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": -0.017341200230899023,
+      "shift": 0.0007519193903169352
+     },
+     "ANCHOR_81": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.01771715992605749,
+      "shift": 0.0003759596951584676
+     },
+     "ANCHOR_93": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.018690818837001855,
+      "shift": -0.0005976992157858962
+     },
+     "TERMINAL_19": {
+      "stations": 5,
+      "n_remaining": 80,
+      "median_without": -0.024626616680504476,
+      "shift": -0.006533497059288518
+     },
+     "TERMINAL_21": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.01771715992605749,
+      "shift": 0.0003759596951584676
+     },
+     "TERMINAL_211": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.018690818837001855,
+      "shift": -0.0005976992157858962
+     },
+     "TERMINAL_22": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.018690818837001855,
+      "shift": -0.0005976992157858962
+     },
+     "TERMINAL_55": {
+      "stations": 3,
+      "n_remaining": 82,
+      "median_without": -0.016715885911385175,
+      "shift": 0.001377233709830783
+     }
+    },
+    "worst_shift": -0.011871595687005243,
+    "shift_range": [
+     -0.011871595687005243,
+     0.002082532065305953
+    ],
+    "note": "jackknife over hydrologic blocks, not stations; a large worst_shift means a single block carries the headline"
+   },
+   "per_block_effect_level1": {
+    "TERMINAL_19": {
+     "stations": 93,
+     "median_delta_NSE_i": -0.016090571591871328
+    },
+    "TERMINAL_21": {
+     "stations": 5,
+     "median_delta_NSE_i": -0.052060720502758784
+    },
+    "TERMINAL_211": {
+     "stations": 2,
+     "median_delta_NSE_i": -0.0237375533091031
+    },
+    "TERMINAL_216": {
+     "stations": 2,
+     "median_delta_NSE_i": 0.0005406913613683617
+    },
+    "TERMINAL_22": {
+     "stations": 1,
+     "median_delta_NSE_i": 0.12737002997029012
+    },
+    "TERMINAL_55": {
+     "stations": 12,
+     "median_delta_NSE_i": -0.1360113718965068
+    }
+   }
+  },
+  {
+   "fold": "T24_G_D_H1",
+   "objective": "D",
+   "label": "daily-labelled",
+   "scale": "monthly_FW",
+   "stations": 85,
+   "median_delta_NSE_i": 0.03894628022033375,
+   "delta_NSE_median": 0.05664299091319336,
+   "pooled_median_unstable": false,
+   "median_delta_r_i": 0.01334966563989759,
+   "improved_fraction": 0.6588235294117647,
+   "rmse_ratio_station_mean": 0.993438659671267,
+   "rmse_ratio_pooled": 0.9936160241768496,
+   "sd_decline_ratio": 0.9574802968996284,
+   "negative_r_fraction_baseline": 0.18823529411764706,
+   "negative_r_fraction_fct8": 0.17647058823529413,
+   "mean_abs_bias_baseline": 0.5274125670354173,
+   "mean_abs_bias_fct8": 0.5233582273304329,
+   "bias_ratio": 0.9923127737972309,
+   "tier": "VERY_SMALL",
+   "station_bootstrap_ci95": [
+    0.016065667379852933,
+    0.06521903703588161
+   ],
+   "promotion": {
+    "paired_dNSE_ge": false,
+    "paired_dr_ge": false,
+    "rmse_ratio_le": false,
+    "improved_ge": true,
+    "sd_decline_ge": false,
+    "negative_r_not_worse": true,
+    "bias_ok": true
+   },
+   "promoted": false,
+   "jackknife_level1": {
+    "full_median": 0.03894628022033375,
+    "n_blocks": 6,
+    "blocks": {
+     "TERMINAL_19": {
+      "stations": 69,
+      "n_remaining": 16,
+      "median_without": 0.04477124701478097,
+      "shift": 0.005824966794447217
+     },
+     "TERMINAL_21": {
+      "stations": 4,
+      "n_remaining": 81,
+      "median_without": 0.038571307884619266,
+      "shift": -0.0003749723357144852
+     },
+     "TERMINAL_211": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": 0.03894628022033375,
+      "shift": 0.0
+     },
+     "TERMINAL_216": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03875879405247651,
+      "shift": -0.0001874861678572426
+     },
+     "TERMINAL_22": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.040363809179309484,
+      "shift": 0.0014175289589757334
+     },
+     "TERMINAL_55": {
+      "stations": 8,
+      "n_remaining": 77,
+      "median_without": 0.04178133813828522,
+      "shift": 0.0028350579179514668
+     }
+    },
+    "worst_shift": 0.005824966794447217,
+    "shift_range": [
+     -0.0003749723357144852,
+     0.005824966794447217
+    ],
+    "note": "jackknife over hydrologic blocks, not stations; a large worst_shift means a single block carries the headline"
+   },
+   "jackknife_level2": {
+    "full_median": 0.03894628022033375,
+    "n_blocks": 44,
+    "blocks": {
+     "ANCHOR_107": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.040363809179309484,
+      "shift": 0.0014175289589757334
+     },
+     "ANCHOR_112": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03875879405247651,
+      "shift": -0.0001874861678572426
+     },
+     "ANCHOR_116": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.040363809179309484,
+      "shift": 0.0014175289589757334
+     },
+     "ANCHOR_135": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": 0.04178133813828522,
+      "shift": 0.0028350579179514668
+     },
+     "ANCHOR_141": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03875879405247651,
+      "shift": -0.0001874861678572426
+     },
+     "ANCHOR_142": {
+      "stations": 4,
+      "n_remaining": 81,
+      "median_without": 0.03453136118816813,
+      "shift": -0.004414919032165621
+     },
+     "ANCHOR_149": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03875879405247651,
+      "shift": -0.0001874861678572426
+     },
+     "ANCHOR_166": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03875879405247651,
+      "shift": -0.0001874861678572426
+     },
+     "ANCHOR_17": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": 0.038571307884619266,
+      "shift": -0.0003749723357144852
+     },
+     "ANCHOR_170": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.040363809179309484,
+      "shift": 0.0014175289589757334
+     },
+     "ANCHOR_172": {
+      "stations": 3,
+      "n_remaining": 82,
+      "median_without": 0.04911511453953499,
+      "shift": 0.010168834319201236
+     },
+     "ANCHOR_176": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": 0.03894628022033375,
+      "shift": 0.0
+     },
+     "ANCHOR_177": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03875879405247651,
+      "shift": -0.0001874861678572426
+     },
+     "ANCHOR_18": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03875879405247651,
+      "shift": -0.0001874861678572426
+     },
+     "ANCHOR_183": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.040363809179309484,
+      "shift": 0.0014175289589757334
+     },
+     "ANCHOR_19": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.040363809179309484,
+      "shift": 0.0014175289589757334
+     },
+     "ANCHOR_190": {
+      "stations": 6,
+      "n_remaining": 79,
+      "median_without": 0.05664299091319336,
+      "shift": 0.017696710692859607
+     },
+     "ANCHOR_192": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.040363809179309484,
+      "shift": 0.0014175289589757334
+     },
+     "ANCHOR_193": {
+      "stations": 3,
+      "n_remaining": 82,
+      "median_without": 0.040363809179309484,
+      "shift": 0.0014175289589757334
+     },
+     "ANCHOR_195": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03875879405247651,
+      "shift": -0.0001874861678572426
+     },
+     "ANCHOR_196": {
+      "stations": 5,
+      "n_remaining": 80,
+      "median_without": 0.040363809179309484,
+      "shift": 0.0014175289589757334
+     },
+     "ANCHOR_202": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.040363809179309484,
+      "shift": 0.0014175289589757334
+     },
+     "ANCHOR_203": {
+      "stations": 3,
+      "n_remaining": 82,
+      "median_without": 0.03875879405247651,
+      "shift": -0.0001874861678572426
+     },
+     "ANCHOR_208": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03875879405247651,
+      "shift": -0.0001874861678572426
+     },
+     "ANCHOR_212": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03875879405247651,
+      "shift": -0.0001874861678572426
+     },
+     "ANCHOR_216": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03875879405247651,
+      "shift": -0.0001874861678572426
+     },
+     "ANCHOR_29": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03875879405247651,
+      "shift": -0.0001874861678572426
+     },
+     "ANCHOR_31": {
+      "stations": 7,
+      "n_remaining": 78,
+      "median_without": 0.03875879405247651,
+      "shift": -0.0001874861678572426
+     },
+     "ANCHOR_34": {
+      "stations": 4,
+      "n_remaining": 81,
+      "median_without": 0.03894628022033375,
+      "shift": 0.0
+     },
+     "ANCHOR_4": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03875879405247651,
+      "shift": -0.0001874861678572426
+     },
+     "ANCHOR_48": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03875879405247651,
+      "shift": -0.0001874861678572426
+     },
+     "ANCHOR_51": {
+      "stations": 3,
+      "n_remaining": 82,
+      "median_without": 0.04911511453953499,
+      "shift": 0.010168834319201236
+     },
+     "ANCHOR_57": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.040363809179309484,
+      "shift": 0.0014175289589757334
+     },
+     "ANCHOR_58": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03875879405247651,
+      "shift": -0.0001874861678572426
+     },
+     "ANCHOR_59": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": 0.04178133813828522,
+      "shift": 0.0028350579179514668
+     },
+     "ANCHOR_6": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": 0.04178133813828522,
+      "shift": 0.0028350579179514668
+     },
+     "ANCHOR_69": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": 0.038571307884619266,
+      "shift": -0.0003749723357144852
+     },
+     "ANCHOR_81": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03875879405247651,
+      "shift": -0.0001874861678572426
+     },
+     "ANCHOR_93": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.040363809179309484,
+      "shift": 0.0014175289589757334
+     },
+     "TERMINAL_19": {
+      "stations": 5,
+      "n_remaining": 80,
+      "median_without": 0.03361620032050161,
+      "shift": -0.005330079899832141
+     },
+     "TERMINAL_21": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.040363809179309484,
+      "shift": 0.0014175289589757334
+     },
+     "TERMINAL_211": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.040363809179309484,
+      "shift": 0.0014175289589757334
+     },
+     "TERMINAL_22": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.040363809179309484,
+      "shift": 0.0014175289589757334
+     },
+     "TERMINAL_55": {
+      "stations": 3,
+      "n_remaining": 82,
+      "median_without": 0.03875879405247651,
+      "shift": -0.0001874861678572426
+     }
+    },
+    "worst_shift": 0.017696710692859607,
+    "shift_range": [
+     -0.005330079899832141,
+     0.017696710692859607
+    ],
+    "note": "jackknife over hydrologic blocks, not stations; a large worst_shift means a single block carries the headline"
+   },
+   "per_block_effect_level1": {
+    "TERMINAL_19": {
+     "stations": 93,
+     "median_delta_NSE_i": 0.03894628022033375
+    },
+    "TERMINAL_21": {
+     "stations": 5,
+     "median_delta_NSE_i": 0.15958446898176448
+    },
+    "TERMINAL_211": {
+     "stations": 2,
+     "median_delta_NSE_i": -0.05696160512812254
+    },
+    "TERMINAL_216": {
+     "stations": 2,
+     "median_delta_NSE_i": 0.06968586024682899
+    },
+    "TERMINAL_22": {
+     "stations": 1,
+     "median_delta_NSE_i": -0.051262305094443406
+    },
+    "TERMINAL_55": {
+     "stations": 12,
+     "median_delta_NSE_i": -0.003134040664152349
+    }
+   }
+  },
+  {
+   "fold": "T24_G_D_H1",
+   "objective": "D",
+   "label": "daily-labelled",
+   "scale": "daily",
+   "stations": 15,
+   "median_delta_NSE_i": 0.008734843545354254,
+   "delta_NSE_median": -0.03666570096276134,
+   "pooled_median_unstable": true,
+   "median_delta_r_i": 0.013286563437985066,
+   "improved_fraction": 0.6,
+   "rmse_ratio_station_mean": 0.9968616306962926,
+   "rmse_ratio_pooled": 0.9988431996480901,
+   "sd_decline_ratio": 0.9803345780160622,
+   "negative_r_fraction_baseline": 0.0,
+   "negative_r_fraction_fct8": 0.0,
+   "mean_abs_bias_baseline": 0.5812504488375516,
+   "mean_abs_bias_fct8": 0.5793482028988322,
+   "bias_ratio": 0.996727321342248,
+   "tier": "VERY_SMALL",
+   "station_bootstrap_ci95": [
+    -0.03511540325187923,
+    0.08029629035466979
+   ],
+   "promotion": {
+    "paired_dNSE_ge": false,
+    "paired_dr_ge": false,
+    "rmse_ratio_le": false,
+    "improved_ge": true,
+    "sd_decline_ge": false,
+    "negative_r_not_worse": true,
+    "bias_ok": true
+   },
+   "promoted": false,
+   "jackknife_level1": {
+    "full_median": 0.008734843545354254,
+    "n_blocks": 3,
+    "blocks": {
+     "TERMINAL_19": {
+      "stations": 12,
+      "n_remaining": 3,
+      "median_without": 0.0355254326597958,
+      "shift": 0.026790589114441543
+     },
+     "TERMINAL_211": {
+      "stations": 1,
+      "n_remaining": 14,
+      "median_without": 0.01027441836416143,
+      "shift": 0.0015395748188071767
+     },
+     "TERMINAL_55": {
+      "stations": 2,
+      "n_remaining": 13,
+      "median_without": 0.005099585324164213,
+      "shift": -0.003635258221190041
+     }
+    },
+    "worst_shift": 0.026790589114441543,
+    "shift_range": [
+     -0.003635258221190041,
+     0.026790589114441543
+    ],
+    "note": "jackknife over hydrologic blocks, not stations; a large worst_shift means a single block carries the headline"
+   },
+   "jackknife_level2": {
+    "full_median": 0.008734843545354254,
+    "n_blocks": 9,
+    "blocks": {
+     "ANCHOR_141": {
+      "stations": 1,
+      "n_remaining": 14,
+      "median_without": 0.01027441836416143,
+      "shift": 0.0015395748188071767
+     },
+     "ANCHOR_172": {
+      "stations": 1,
+      "n_remaining": 14,
+      "median_without": 0.0069172144347592335,
+      "shift": -0.0018176291105950204
+     },
+     "ANCHOR_190": {
+      "stations": 4,
+      "n_remaining": 11,
+      "median_without": 0.0355254326597958,
+      "shift": 0.026790589114441543
+     },
+     "ANCHOR_196": {
+      "stations": 1,
+      "n_remaining": 14,
+      "median_without": 0.0069172144347592335,
+      "shift": -0.0018176291105950204
+     },
+     "ANCHOR_29": {
+      "stations": 1,
+      "n_remaining": 14,
+      "median_without": 0.0069172144347592335,
+      "shift": -0.0018176291105950204
+     },
+     "ANCHOR_31": {
+      "stations": 3,
+      "n_remaining": 12,
+      "median_without": 0.01027441836416143,
+      "shift": 0.0015395748188071767
+     },
+     "ANCHOR_81": {
+      "stations": 1,
+      "n_remaining": 14,
+      "median_without": 0.01027441836416143,
+      "shift": 0.0015395748188071767
+     },
+     "TERMINAL_211": {
+      "stations": 1,
+      "n_remaining": 14,
+      "median_without": 0.01027441836416143,
+      "shift": 0.0015395748188071767
+     },
+     "TERMINAL_55": {
+      "stations": 2,
+      "n_remaining": 13,
+      "median_without": 0.005099585324164213,
+      "shift": -0.003635258221190041
+     }
+    },
+    "worst_shift": 0.026790589114441543,
+    "shift_range": [
+     -0.003635258221190041,
+     0.026790589114441543
+    ],
+    "note": "jackknife over hydrologic blocks, not stations; a large worst_shift means a single block carries the headline"
+   },
+   "per_block_effect_level1": {
+    "TERMINAL_19": {
+     "stations": 93,
+     "median_delta_NSE_i": -0.0006709784704300725
+    },
+    "TERMINAL_211": {
+     "stations": 2,
+     "median_delta_NSE_i": 0.005099585324164213
+    },
+    "TERMINAL_55": {
+     "stations": 12,
+     "median_delta_NSE_i": 0.06369845610023989
+    }
+   }
+  },
+  {
+   "fold": "T24_G_M_H1",
+   "objective": "M",
+   "label": "monthly-labelled",
+   "scale": "monthly_PUB",
+   "stations": 85,
+   "median_delta_NSE_i": -0.008698940677053013,
+   "delta_NSE_median": -0.025337323443598514,
+   "pooled_median_unstable": false,
+   "median_delta_r_i": -0.0030295398367680137,
+   "improved_fraction": 0.4470588235294118,
+   "rmse_ratio_station_mean": 1.0018651407015409,
+   "rmse_ratio_pooled": 1.0003395000293864,
+   "sd_decline_ratio": 0.9538492049774783,
+   "negative_r_fraction_baseline": 0.17647058823529413,
+   "negative_r_fraction_fct8": 0.18823529411764706,
+   "mean_abs_bias_baseline": 0.5233329455874742,
+   "mean_abs_bias_fct8": 0.522998291667439,
+   "bias_ratio": 0.9993605334369701,
+   "tier": "VERY_SMALL",
+   "station_bootstrap_ci95": [
+    -0.0260159445385324,
+    0.0053502576700407145
+   ],
+   "promotion": {
+    "paired_dNSE_ge": false,
+    "paired_dr_ge": false,
+    "rmse_ratio_le": false,
+    "improved_ge": false,
+    "sd_decline_ge": false,
+    "negative_r_not_worse": false,
+    "bias_ok": true
+   },
+   "promoted": false,
+   "jackknife_level1": {
+    "full_median": -0.008698940677053013,
+    "n_blocks": 6,
+    "blocks": {
+     "TERMINAL_19": {
+      "stations": 69,
+      "n_remaining": 16,
+      "median_without": -0.04534121835057392,
+      "shift": -0.03664227767352091
+     },
+     "TERMINAL_21": {
+      "stations": 4,
+      "n_remaining": 81,
+      "median_without": -0.008057324159874923,
+      "shift": 0.0006416165171780897
+     },
+     "TERMINAL_211": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": -0.008698940677053013,
+      "shift": 0.0
+     },
+     "TERMINAL_216": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.009188132511574798,
+      "shift": -0.0004891918345217849
+     },
+     "TERMINAL_22": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.009188132511574798,
+      "shift": -0.0004891918345217849
+     },
+     "TERMINAL_55": {
+      "stations": 8,
+      "n_remaining": 77,
+      "median_without": -0.0031197398825442146,
+      "shift": 0.0055792007945087985
+     }
+    },
+    "worst_shift": -0.03664227767352091,
+    "shift_range": [
+     -0.03664227767352091,
+     0.0055792007945087985
+    ],
+    "note": "jackknife over hydrologic blocks, not stations; a large worst_shift means a single block carries the headline"
+   },
+   "jackknife_level2": {
+    "full_median": -0.008698940677053013,
+    "n_blocks": 44,
+    "blocks": {
+     "ANCHOR_107": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.008378132418463968,
+      "shift": 0.0003208082585890448
+     },
+     "ANCHOR_112": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.008378132418463968,
+      "shift": 0.0003208082585890448
+     },
+     "ANCHOR_116": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.009188132511574798,
+      "shift": -0.0004891918345217849
+     },
+     "ANCHOR_135": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": -0.008057324159874923,
+      "shift": 0.0006416165171780897
+     },
+     "ANCHOR_141": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.009188132511574798,
+      "shift": -0.0004891918345217849
+     },
+     "ANCHOR_142": {
+      "stations": 4,
+      "n_remaining": 81,
+      "median_without": -0.008057324159874923,
+      "shift": 0.0006416165171780897
+     },
+     "ANCHOR_149": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.008378132418463968,
+      "shift": 0.0003208082585890448
+     },
+     "ANCHOR_166": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.008378132418463968,
+      "shift": 0.0003208082585890448
+     },
+     "ANCHOR_17": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": -0.008057324159874923,
+      "shift": 0.0006416165171780897
+     },
+     "ANCHOR_170": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.009188132511574798,
+      "shift": -0.0004891918345217849
+     },
+     "ANCHOR_172": {
+      "stations": 3,
+      "n_remaining": 82,
+      "median_without": -0.010793752472017304,
+      "shift": -0.002094811794964291
+     },
+     "ANCHOR_176": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": -0.008057324159874923,
+      "shift": 0.0006416165171780897
+     },
+     "ANCHOR_177": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.008378132418463968,
+      "shift": 0.0003208082585890448
+     },
+     "ANCHOR_18": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.009188132511574798,
+      "shift": -0.0004891918345217849
+     },
+     "ANCHOR_183": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.009188132511574798,
+      "shift": -0.0004891918345217849
+     },
+     "ANCHOR_19": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.009188132511574798,
+      "shift": -0.0004891918345217849
+     },
+     "ANCHOR_190": {
+      "stations": 6,
+      "n_remaining": 79,
+      "median_without": -0.016813694007812963,
+      "shift": -0.00811475333075995
+     },
+     "ANCHOR_192": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.008378132418463968,
+      "shift": 0.0003208082585890448
+     },
+     "ANCHOR_193": {
+      "stations": 3,
+      "n_remaining": 82,
+      "median_without": -0.010793752472017304,
+      "shift": -0.002094811794964291
+     },
+     "ANCHOR_195": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.008378132418463968,
+      "shift": 0.0003208082585890448
+     },
+     "ANCHOR_196": {
+      "stations": 5,
+      "n_remaining": 80,
+      "median_without": -0.014361937302875494,
+      "shift": -0.005662996625822481
+     },
+     "ANCHOR_202": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.008378132418463968,
+      "shift": 0.0003208082585890448
+     },
+     "ANCHOR_203": {
+      "stations": 3,
+      "n_remaining": 82,
+      "median_without": -0.010793752472017304,
+      "shift": -0.002094811794964291
+     },
+     "ANCHOR_208": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.008378132418463968,
+      "shift": 0.0003208082585890448
+     },
+     "ANCHOR_212": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.008378132418463968,
+      "shift": 0.0003208082585890448
+     },
+     "ANCHOR_216": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.009188132511574798,
+      "shift": -0.0004891918345217849
+     },
+     "ANCHOR_29": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.009188132511574798,
+      "shift": -0.0004891918345217849
+     },
+     "ANCHOR_31": {
+      "stations": 7,
+      "n_remaining": 78,
+      "median_without": -0.0034183597653498765,
+      "shift": 0.005280580911703137
+     },
+     "ANCHOR_34": {
+      "stations": 4,
+      "n_remaining": 81,
+      "median_without": -0.009677324346096583,
+      "shift": -0.0009783836690435699
+     },
+     "ANCHOR_4": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.009188132511574798,
+      "shift": -0.0004891918345217849
+     },
+     "ANCHOR_48": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.009188132511574798,
+      "shift": -0.0004891918345217849
+     },
+     "ANCHOR_51": {
+      "stations": 3,
+      "n_remaining": 82,
+      "median_without": -0.005887151904015231,
+      "shift": 0.002811788773037782
+     },
+     "ANCHOR_57": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.008378132418463968,
+      "shift": 0.0003208082585890448
+     },
+     "ANCHOR_58": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.008378132418463968,
+      "shift": 0.0003208082585890448
+     },
+     "ANCHOR_59": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": -0.008057324159874923,
+      "shift": 0.0006416165171780897
+     },
+     "ANCHOR_6": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": -0.008698940677053013,
+      "shift": 0.0
+     },
+     "ANCHOR_69": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": -0.008057324159874923,
+      "shift": 0.0006416165171780897
+     },
+     "ANCHOR_81": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.008378132418463968,
+      "shift": 0.0003208082585890448
+     },
+     "ANCHOR_93": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.009188132511574798,
+      "shift": -0.0004891918345217849
+     },
+     "TERMINAL_19": {
+      "stations": 5,
+      "n_remaining": 80,
+      "median_without": -0.013245509176954773,
+      "shift": -0.00454656849990176
+     },
+     "TERMINAL_21": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.008378132418463968,
+      "shift": 0.0003208082585890448
+     },
+     "TERMINAL_211": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.009188132511574798,
+      "shift": -0.0004891918345217849
+     },
+     "TERMINAL_22": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": -0.009188132511574798,
+      "shift": -0.0004891918345217849
+     },
+     "TERMINAL_55": {
+      "stations": 3,
+      "n_remaining": 82,
+      "median_without": -0.005887151904015231,
+      "shift": 0.002811788773037782
+     }
+    },
+    "worst_shift": -0.00811475333075995,
+    "shift_range": [
+     -0.00811475333075995,
+     0.005280580911703137
+    ],
+    "note": "jackknife over hydrologic blocks, not stations; a large worst_shift means a single block carries the headline"
+   },
+   "per_block_effect_level1": {
+    "TERMINAL_19": {
+     "stations": 93,
+     "median_delta_NSE_i": -0.0031197398825442146
+    },
+    "TERMINAL_21": {
+     "stations": 5,
+     "median_delta_NSE_i": -0.01933097318861854
+    },
+    "TERMINAL_211": {
+     "stations": 2,
+     "median_delta_NSE_i": -0.016045999626109975
+    },
+    "TERMINAL_216": {
+     "stations": 2,
+     "median_delta_NSE_i": 0.0016312565215376162
+    },
+    "TERMINAL_22": {
+     "stations": 1,
+     "median_delta_NSE_i": 0.09912397366603254
+    },
+    "TERMINAL_55": {
+     "stations": 12,
+     "median_delta_NSE_i": -0.10013028073391977
+    }
+   }
+  },
+  {
+   "fold": "T24_G_M_H1",
+   "objective": "M",
+   "label": "monthly-labelled",
+   "scale": "monthly_FW",
+   "stations": 85,
+   "median_delta_NSE_i": 0.036828907736460526,
+   "delta_NSE_median": 0.044374931095682246,
+   "pooled_median_unstable": false,
+   "median_delta_r_i": 0.015445027934051558,
+   "improved_fraction": 0.6823529411764706,
+   "rmse_ratio_station_mean": 0.9956063242639778,
+   "rmse_ratio_pooled": 0.9969946351866562,
+   "sd_decline_ratio": 0.9972739890361352,
+   "negative_r_fraction_baseline": 0.18823529411764706,
+   "negative_r_fraction_fct8": 0.17647058823529413,
+   "mean_abs_bias_baseline": 0.5257380931408958,
+   "mean_abs_bias_fct8": 0.523944097923729,
+   "bias_ratio": 0.9965876636283876,
+   "tier": "VERY_SMALL",
+   "station_bootstrap_ci95": [
+    0.00900839825480726,
+    0.04855087144128678
+   ],
+   "promotion": {
+    "paired_dNSE_ge": false,
+    "paired_dr_ge": false,
+    "rmse_ratio_le": false,
+    "improved_ge": true,
+    "sd_decline_ge": false,
+    "negative_r_not_worse": true,
+    "bias_ok": true
+   },
+   "promoted": false,
+   "jackknife_level1": {
+    "full_median": 0.036828907736460526,
+    "n_blocks": 6,
+    "blocks": {
+     "TERMINAL_19": {
+      "stations": 69,
+      "n_remaining": 16,
+      "median_without": 0.026266503914575523,
+      "shift": -0.010562403821885002
+     },
+     "TERMINAL_21": {
+      "stations": 4,
+      "n_remaining": 81,
+      "median_without": 0.02998398995297591,
+      "shift": -0.0068449177834846164
+     },
+     "TERMINAL_211": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": 0.036828907736460526,
+      "shift": 0.0
+     },
+     "TERMINAL_216": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.038219931673508456,
+      "shift": 0.0013910239370479305
+     },
+     "TERMINAL_22": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.038219931673508456,
+      "shift": 0.0013910239370479305
+     },
+     "TERMINAL_55": {
+      "stations": 8,
+      "n_remaining": 77,
+      "median_without": 0.039610955610556386,
+      "shift": 0.002782047874095861
+     }
+    },
+    "worst_shift": -0.010562403821885002,
+    "shift_range": [
+     -0.010562403821885002,
+     0.002782047874095861
+    ],
+    "note": "jackknife over hydrologic blocks, not stations; a large worst_shift means a single block carries the headline"
+   },
+   "jackknife_level2": {
+    "full_median": 0.036828907736460526,
+    "n_blocks": 44,
+    "blocks": {
+     "ANCHOR_107": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.038219931673508456,
+      "shift": 0.0013910239370479305
+     },
+     "ANCHOR_112": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03340644884471822,
+      "shift": -0.0034224588917423082
+     },
+     "ANCHOR_116": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.038219931673508456,
+      "shift": 0.0013910239370479305
+     },
+     "ANCHOR_135": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": 0.039610955610556386,
+      "shift": 0.002782047874095861
+     },
+     "ANCHOR_141": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03340644884471822,
+      "shift": -0.0034224588917423082
+     },
+     "ANCHOR_142": {
+      "stations": 4,
+      "n_remaining": 81,
+      "median_without": 0.027182141492126277,
+      "shift": -0.009646766244334248
+     },
+     "ANCHOR_149": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03340644884471822,
+      "shift": -0.0034224588917423082
+     },
+     "ANCHOR_166": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03340644884471822,
+      "shift": -0.0034224588917423082
+     },
+     "ANCHOR_17": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": 0.02998398995297591,
+      "shift": -0.0068449177834846164
+     },
+     "ANCHOR_170": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.038219931673508456,
+      "shift": 0.0013910239370479305
+     },
+     "ANCHOR_172": {
+      "stations": 3,
+      "n_remaining": 82,
+      "median_without": 0.03975748152924752,
+      "shift": 0.0029285737927869926
+     },
+     "ANCHOR_176": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": 0.036828907736460526,
+      "shift": 0.0
+     },
+     "ANCHOR_177": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03340644884471822,
+      "shift": -0.0034224588917423082
+     },
+     "ANCHOR_18": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.038219931673508456,
+      "shift": 0.0013910239370479305
+     },
+     "ANCHOR_183": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.038219931673508456,
+      "shift": 0.0013910239370479305
+     },
+     "ANCHOR_19": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.038219931673508456,
+      "shift": 0.0013910239370479305
+     },
+     "ANCHOR_190": {
+      "stations": 6,
+      "n_remaining": 79,
+      "median_without": 0.04396619102511168,
+      "shift": 0.007137283288651153
+     },
+     "ANCHOR_192": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.038219931673508456,
+      "shift": 0.0013910239370479305
+     },
+     "ANCHOR_193": {
+      "stations": 3,
+      "n_remaining": 82,
+      "median_without": 0.038219931673508456,
+      "shift": 0.0013910239370479305
+     },
+     "ANCHOR_195": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03340644884471822,
+      "shift": -0.0034224588917423082
+     },
+     "ANCHOR_196": {
+      "stations": 5,
+      "n_remaining": 80,
+      "median_without": 0.028583065722551093,
+      "shift": -0.008245842013909432
+     },
+     "ANCHOR_202": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.038219931673508456,
+      "shift": 0.0013910239370479305
+     },
+     "ANCHOR_203": {
+      "stations": 3,
+      "n_remaining": 82,
+      "median_without": 0.03340644884471822,
+      "shift": -0.0034224588917423082
+     },
+     "ANCHOR_208": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.038219931673508456,
+      "shift": 0.0013910239370479305
+     },
+     "ANCHOR_212": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.038219931673508456,
+      "shift": 0.0013910239370479305
+     },
+     "ANCHOR_216": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.038219931673508456,
+      "shift": 0.0013910239370479305
+     },
+     "ANCHOR_29": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03340644884471822,
+      "shift": -0.0034224588917423082
+     },
+     "ANCHOR_31": {
+      "stations": 7,
+      "n_remaining": 78,
+      "median_without": 0.03340644884471822,
+      "shift": -0.0034224588917423082
+     },
+     "ANCHOR_34": {
+      "stations": 4,
+      "n_remaining": 81,
+      "median_without": 0.036828907736460526,
+      "shift": 0.0
+     },
+     "ANCHOR_4": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03340644884471822,
+      "shift": -0.0034224588917423082
+     },
+     "ANCHOR_48": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03340644884471822,
+      "shift": -0.0034224588917423082
+     },
+     "ANCHOR_51": {
+      "stations": 3,
+      "n_remaining": 82,
+      "median_without": 0.038219931673508456,
+      "shift": 0.0013910239370479305
+     },
+     "ANCHOR_57": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.038219931673508456,
+      "shift": 0.0013910239370479305
+     },
+     "ANCHOR_58": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03340644884471822,
+      "shift": -0.0034224588917423082
+     },
+     "ANCHOR_59": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": 0.039610955610556386,
+      "shift": 0.002782047874095861
+     },
+     "ANCHOR_6": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": 0.039610955610556386,
+      "shift": 0.002782047874095861
+     },
+     "ANCHOR_69": {
+      "stations": 2,
+      "n_remaining": 83,
+      "median_without": 0.02998398995297591,
+      "shift": -0.0068449177834846164
+     },
+     "ANCHOR_81": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03340644884471822,
+      "shift": -0.0034224588917423082
+     },
+     "ANCHOR_93": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.038219931673508456,
+      "shift": 0.0013910239370479305
+     },
+     "TERMINAL_19": {
+      "stations": 5,
+      "n_remaining": 80,
+      "median_without": 0.024865579684150707,
+      "shift": -0.011963328052309818
+     },
+     "TERMINAL_21": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.038219931673508456,
+      "shift": 0.0013910239370479305
+     },
+     "TERMINAL_211": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.03340644884471822,
+      "shift": -0.0034224588917423082
+     },
+     "TERMINAL_22": {
+      "stations": 1,
+      "n_remaining": 84,
+      "median_without": 0.038219931673508456,
+      "shift": 0.0013910239370479305
+     },
+     "TERMINAL_55": {
+      "stations": 3,
+      "n_remaining": 82,
+      "median_without": 0.03340644884471822,
+      "shift": -0.0034224588917423082
+     }
+    },
+    "worst_shift": -0.011963328052309818,
+    "shift_range": [
+     -0.011963328052309818,
+     0.007137283288651153
+    ],
+    "note": "jackknife over hydrologic blocks, not stations; a large worst_shift means a single block carries the headline"
+   },
+   "per_block_effect_level1": {
+    "TERMINAL_19": {
+     "stations": 93,
+     "median_delta_NSE_i": 0.039610955610556386
+    },
+    "TERMINAL_21": {
+     "stations": 5,
+     "median_delta_NSE_i": 0.12728633116631527
+    },
+    "TERMINAL_211": {
+     "stations": 2,
+     "median_delta_NSE_i": -0.006016090035386723
+    },
+    "TERMINAL_216": {
+     "stations": 2,
+     "median_delta_NSE_i": 0.02998398995297591
+    },
+    "TERMINAL_22": {
+     "stations": 1,
+     "median_delta_NSE_i": -0.04611970628752715
+    },
+    "TERMINAL_55": {
+     "stations": 12,
+     "median_delta_NSE_i": 0.00759780354280809
+    }
+   }
+  },
+  {
+   "fold": "T24_G_M_H1",
+   "objective": "M",
+   "label": "monthly-labelled",
+   "scale": "daily",
+   "stations": 15,
+   "median_delta_NSE_i": 0.011757885464778184,
+   "delta_NSE_median": -0.06999378169616355,
+   "pooled_median_unstable": true,
+   "median_delta_r_i": -0.0051827007723833085,
+   "improved_fraction": 0.6,
+   "rmse_ratio_station_mean": 1.0014192323613582,
+   "rmse_ratio_pooled": 1.0035788471690772,
+   "sd_decline_ratio": 1.0015209571899126,
+   "negative_r_fraction_baseline": 0.0,
+   "negative_r_fraction_fct8": 0.0,
+   "mean_abs_bias_baseline": 0.5789827489528904,
+   "mean_abs_bias_fct8": 0.5765379041117656,
+   "bias_ratio": 0.9957773442377233,
+   "tier": "VERY_SMALL",
+   "station_bootstrap_ci95": [
+    -0.032463472883754285,
+    0.018971786496957854
+   ],
+   "promotion": {
+    "paired_dNSE_ge": false,
+    "paired_dr_ge": false,
+    "rmse_ratio_le": false,
+    "improved_ge": true,
+    "sd_decline_ge": false,
+    "negative_r_not_worse": true,
+    "bias_ok": true
+   },
+   "promoted": false,
+   "jackknife_level1": {
+    "full_median": 0.011757885464778184,
+    "n_blocks": 3,
+    "blocks": {
+     "TERMINAL_19": {
+      "stations": 12,
+      "n_remaining": 3,
+      "median_without": 0.07518902617436796,
+      "shift": 0.06343114070958977
+     },
+     "TERMINAL_211": {
+      "stations": 1,
+      "n_remaining": 14,
+      "median_without": 0.011976340186243883,
+      "shift": 0.00021845472146569955
+     },
+     "TERMINAL_55": {
+      "stations": 2,
+      "n_remaining": 13,
+      "median_without": 0.00561236120911579,
+      "shift": -0.0061455242556623935
+     }
+    },
+    "worst_shift": 0.06343114070958977,
+    "shift_range": [
+     -0.0061455242556623935,
+     0.06343114070958977
+    ],
+    "note": "jackknife over hydrologic blocks, not stations; a large worst_shift means a single block carries the headline"
+   },
+   "jackknife_level2": {
+    "full_median": 0.011757885464778184,
+    "n_blocks": 9,
+    "blocks": {
+     "ANCHOR_141": {
+      "stations": 1,
+      "n_remaining": 14,
+      "median_without": 0.01504910231407508,
+      "shift": 0.0032912168492968963
+     },
+     "ANCHOR_172": {
+      "stations": 1,
+      "n_remaining": 14,
+      "median_without": 0.008685123336946987,
+      "shift": -0.0030727621278311967
+     },
+     "ANCHOR_190": {
+      "stations": 4,
+      "n_remaining": 11,
+      "median_without": 0.018340319163371976,
+      "shift": 0.006582433698593793
+     },
+     "ANCHOR_196": {
+      "stations": 1,
+      "n_remaining": 14,
+      "median_without": 0.01504910231407508,
+      "shift": 0.0032912168492968963
+     },
+     "ANCHOR_29": {
+      "stations": 1,
+      "n_remaining": 14,
+      "median_without": 0.008685123336946987,
+      "shift": -0.0030727621278311967
+     },
+     "ANCHOR_31": {
+      "stations": 3,
+      "n_remaining": 12,
+      "median_without": 0.01524784379391897,
+      "shift": 0.0034899583291407854
+     },
+     "ANCHOR_81": {
+      "stations": 1,
+      "n_remaining": 14,
+      "median_without": 0.008685123336946987,
+      "shift": -0.0030727621278311967
+     },
+     "TERMINAL_211": {
+      "stations": 1,
+      "n_remaining": 14,
+      "median_without": 0.011976340186243883,
+      "shift": 0.00021845472146569955
+     },
+     "TERMINAL_55": {
+      "stations": 2,
+      "n_remaining": 13,
+      "median_without": 0.00561236120911579,
+      "shift": -0.0061455242556623935
+     }
+    },
+    "worst_shift": 0.006582433698593793,
+    "shift_range": [
+     -0.0061455242556623935,
+     0.006582433698593793
+    ],
+    "note": "jackknife over hydrologic blocks, not stations; a large worst_shift means a single block carries the headline"
+   },
+   "per_block_effect_level1": {
+    "TERMINAL_19": {
+     "stations": 93,
+     "median_delta_NSE_i": -0.010274515745904711
+    },
+    "TERMINAL_211": {
+     "stations": 2,
+     "median_delta_NSE_i": 0.011757885464778184
+    },
+    "TERMINAL_55": {
+     "stations": 12,
+     "median_delta_NSE_i": 0.08535177295236074
+    }
+   }
+  }
+ ],
+ "headline": {
+  "fold": "T24_G_D_H1",
+  "objective": "D",
+  "label": "daily-labelled",
+  "scale": "monthly_PUB",
+  "stations": 85,
+  "median_delta_NSE_i": -0.01809311962121596,
+  "delta_NSE_median": -0.029203441162017008,
+  "pooled_median_unstable": false,
+  "median_delta_r_i": -0.012436823260484786,
+  "improved_fraction": 0.4,
+  "rmse_ratio_station_mean": 1.0041794529543688,
+  "rmse_ratio_pooled": 1.0014514317681817,
+  "sd_decline_ratio": 0.9688679909920762,
+  "negative_r_fraction_baseline": 0.17647058823529413,
+  "negative_r_fraction_fct8": 0.17647058823529413,
+  "mean_abs_bias_baseline": 0.5251070703227391,
+  "mean_abs_bias_fct8": 0.5261719204686166,
+  "bias_ratio": 1.0020278724208056,
+  "tier": "VERY_SMALL",
+  "station_bootstrap_ci95": [
+   -0.03767356190701676,
+   0.0005406913613683617
+  ],
+  "promotion": {
+   "paired_dNSE_ge": false,
+   "paired_dr_ge": false,
+   "rmse_ratio_le": false,
+   "improved_ge": false,
+   "sd_decline_ge": false,
+   "negative_r_not_worse": true,
+   "bias_ok": true
+  },
+  "promoted": false,
+  "jackknife_level1": {
+   "full_median": -0.01809311962121596,
+   "n_blocks": 6,
+   "blocks": {
+    "TERMINAL_19": {
+     "stations": 69,
+     "n_remaining": 16,
+     "median_without": -0.052060720502758784,
+     "shift": -0.033967600881542825
+    },
+    "TERMINAL_21": {
+     "stations": 4,
+     "n_remaining": 81,
+     "median_without": -0.017341200230899023,
+     "shift": 0.0007519193903169352
+    },
+    "TERMINAL_211": {
+     "stations": 2,
+     "n_remaining": 83,
+     "median_without": -0.01809311962121596,
+     "shift": 0.0
+    },
+    "TERMINAL_216": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.018690818837001855,
+     "shift": -0.0005976992157858962
+    },
+    "TERMINAL_22": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.018690818837001855,
+     "shift": -0.0005976992157858962
+    },
+    "TERMINAL_55": {
+     "stations": 8,
+     "n_remaining": 77,
+     "median_without": -0.016090571591871328,
+     "shift": 0.0020025480293446307
+    }
+   },
+   "worst_shift": -0.033967600881542825,
+   "shift_range": [
+    -0.033967600881542825,
+    0.0020025480293446307
+   ],
+   "note": "jackknife over hydrologic blocks, not stations; a large worst_shift means a single block carries the headline"
+  },
+  "jackknife_level2": {
+   "full_median": -0.01809311962121596,
+   "n_blocks": 44,
+   "blocks": {
+    "ANCHOR_107": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.01771715992605749,
+     "shift": 0.0003759596951584676
+    },
+    "ANCHOR_112": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.01771715992605749,
+     "shift": 0.0003759596951584676
+    },
+    "ANCHOR_116": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.018690818837001855,
+     "shift": -0.0005976992157858962
+    },
+    "ANCHOR_135": {
+     "stations": 2,
+     "n_remaining": 83,
+     "median_without": -0.017341200230899023,
+     "shift": 0.0007519193903169352
+    },
+    "ANCHOR_141": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.01771715992605749,
+     "shift": 0.0003759596951584676
+    },
+    "ANCHOR_142": {
+     "stations": 4,
+     "n_remaining": 81,
+     "median_without": -0.016090571591871328,
+     "shift": 0.0020025480293446307
+    },
+    "ANCHOR_149": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.01771715992605749,
+     "shift": 0.0003759596951584676
+    },
+    "ANCHOR_166": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.01771715992605749,
+     "shift": 0.0003759596951584676
+    },
+    "ANCHOR_17": {
+     "stations": 2,
+     "n_remaining": 83,
+     "median_without": -0.017341200230899023,
+     "shift": 0.0007519193903169352
+    },
+    "ANCHOR_170": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.018690818837001855,
+     "shift": -0.0005976992157858962
+    },
+    "ANCHOR_172": {
+     "stations": 3,
+     "n_remaining": 82,
+     "median_without": -0.02446895676324934,
+     "shift": -0.00637583714203338
+    },
+    "ANCHOR_176": {
+     "stations": 2,
+     "n_remaining": 83,
+     "median_without": -0.017341200230899023,
+     "shift": 0.0007519193903169352
+    },
+    "ANCHOR_177": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.01771715992605749,
+     "shift": 0.0003759596951584676
+    },
+    "ANCHOR_18": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.018690818837001855,
+     "shift": -0.0005976992157858962
+    },
+    "ANCHOR_183": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.018690818837001855,
+     "shift": -0.0005976992157858962
+    },
+    "ANCHOR_19": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.018690818837001855,
+     "shift": -0.0005976992157858962
+    },
+    "ANCHOR_190": {
+     "stations": 6,
+     "n_remaining": 79,
+     "median_without": -0.0299647153082212,
+     "shift": -0.011871595687005243
+    },
+    "ANCHOR_192": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.01771715992605749,
+     "shift": 0.0003759596951584676
+    },
+    "ANCHOR_193": {
+     "stations": 3,
+     "n_remaining": 82,
+     "median_without": -0.018690818837001855,
+     "shift": -0.0005976992157858962
+    },
+    "ANCHOR_195": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.01771715992605749,
+     "shift": 0.0003759596951584676
+    },
+    "ANCHOR_196": {
+     "stations": 5,
+     "n_remaining": 80,
+     "median_without": -0.029807055390966064,
+     "shift": -0.011713935769750106
+    },
+    "ANCHOR_202": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.018690818837001855,
+     "shift": -0.0005976992157858962
+    },
+    "ANCHOR_203": {
+     "stations": 3,
+     "n_remaining": 82,
+     "median_without": -0.02446895676324934,
+     "shift": -0.00637583714203338
+    },
+    "ANCHOR_208": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.01771715992605749,
+     "shift": 0.0003759596951584676
+    },
+    "ANCHOR_212": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.01771715992605749,
+     "shift": 0.0003759596951584676
+    },
+    "ANCHOR_216": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.018690818837001855,
+     "shift": -0.0005976992157858962
+    },
+    "ANCHOR_29": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.018690818837001855,
+     "shift": -0.0005976992157858962
+    },
+    "ANCHOR_31": {
+     "stations": 7,
+     "n_remaining": 78,
+     "median_without": -0.016010587555910005,
+     "shift": 0.002082532065305953
+    },
+    "ANCHOR_34": {
+     "stations": 4,
+     "n_remaining": 81,
+     "median_without": -0.01928851805278775,
+     "shift": -0.0011953984315717925
+    },
+    "ANCHOR_4": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.018690818837001855,
+     "shift": -0.0005976992157858962
+    },
+    "ANCHOR_48": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.018690818837001855,
+     "shift": -0.0005976992157858962
+    },
+    "ANCHOR_51": {
+     "stations": 3,
+     "n_remaining": 82,
+     "median_without": -0.016715885911385175,
+     "shift": 0.001377233709830783
+    },
+    "ANCHOR_57": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.01771715992605749,
+     "shift": 0.0003759596951584676
+    },
+    "ANCHOR_58": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.01771715992605749,
+     "shift": 0.0003759596951584676
+    },
+    "ANCHOR_59": {
+     "stations": 2,
+     "n_remaining": 83,
+     "median_without": -0.01809311962121596,
+     "shift": 0.0
+    },
+    "ANCHOR_6": {
+     "stations": 2,
+     "n_remaining": 83,
+     "median_without": -0.01809311962121596,
+     "shift": 0.0
+    },
+    "ANCHOR_69": {
+     "stations": 2,
+     "n_remaining": 83,
+     "median_without": -0.017341200230899023,
+     "shift": 0.0007519193903169352
+    },
+    "ANCHOR_81": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.01771715992605749,
+     "shift": 0.0003759596951584676
+    },
+    "ANCHOR_93": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.018690818837001855,
+     "shift": -0.0005976992157858962
+    },
+    "TERMINAL_19": {
+     "stations": 5,
+     "n_remaining": 80,
+     "median_without": -0.024626616680504476,
+     "shift": -0.006533497059288518
+    },
+    "TERMINAL_21": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.01771715992605749,
+     "shift": 0.0003759596951584676
+    },
+    "TERMINAL_211": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.018690818837001855,
+     "shift": -0.0005976992157858962
+    },
+    "TERMINAL_22": {
+     "stations": 1,
+     "n_remaining": 84,
+     "median_without": -0.018690818837001855,
+     "shift": -0.0005976992157858962
+    },
+    "TERMINAL_55": {
+     "stations": 3,
+     "n_remaining": 82,
+     "median_without": -0.016715885911385175,
+     "shift": 0.001377233709830783
+    }
+   },
+   "worst_shift": -0.011871595687005243,
+   "shift_range": [
+    -0.011871595687005243,
+    0.002082532065305953
+   ],
+   "note": "jackknife over hydrologic blocks, not stations; a large worst_shift means a single block carries the headline"
+  },
+  "per_block_effect_level1": {
+   "TERMINAL_19": {
+    "stations": 93,
+    "median_delta_NSE_i": -0.016090571591871328
+   },
+   "TERMINAL_21": {
+    "stations": 5,
+    "median_delta_NSE_i": -0.052060720502758784
+   },
+   "TERMINAL_211": {
+    "stations": 2,
+    "median_delta_NSE_i": -0.0237375533091031
+   },
+   "TERMINAL_216": {
+    "stations": 2,
+    "median_delta_NSE_i": 0.0005406913613683617
+   },
+   "TERMINAL_22": {
+    "stations": 1,
+    "median_delta_NSE_i": 0.12737002997029012
+   },
+   "TERMINAL_55": {
+    "stations": 12,
+    "median_delta_NSE_i": -0.1360113718965068
+   }
+  }
+ },
+ "headline_choice": {
+  "fold": "T24_G_D_H1",
+  "scale": "monthly_PUB",
+  "reason": "the main experiment named in the plan: the daily-labelled fold, which is the only one whose training signal can see within-month timing at all. The M fold is the negative control and is reported beside it, never merged."
+ },
+ "independent_vs_pipeline": {
+  "compared": 340,
+  "max_abs_delta_NSE": 2.842170943040401e-14
+ },
+ "baseline_reproduction": {
+  "compared": 200,
+  "max_abs_delta_NSE": 2.842170943040401e-14,
+  "tolerance": 1e-09,
+  "note": "re-derived sums differ from the pipeline only in float64 addition order; the registered bound is 1e-9"
+ },
+ "status": "PASS_FCT8_AUDIT",
+ "failures": [],
+ "seconds": 0.913485050201416
+}

@@ -1,0 +1,217 @@
+{
+  "inherited_manifest": "E:\\SPARROW\\5_Test\\20260917_5\\evidence\\observation_hashes.json",
+  "manifest_sha256": "45b64da175239f672ce7e55e59230a2a3396cd4033f1b9fd30c57c05c1718711",
+  "sources": [
+    {
+      "path": "E:\\SPARROW\\5_Test\\20260915_2\\canonical\\tn_model_observations_audited.parquet",
+      "expected": "9685b52cdd074f36ff5313cbb884090bda429beb502d49db512acddfb02226af",
+      "actual": "9685b52cdd074f36ff5313cbb884090bda429beb502d49db512acddfb02226af",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\stations\\observed_spatial_registry.parquet",
+      "expected": "19e36a47fdbb63df64a79dc0859061598ff56df2c47773fe61e30299f9d823e6",
+      "actual": "19e36a47fdbb63df64a79dc0859061598ff56df2c47773fe61e30299f9d823e6",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\stations\\monthly_dynamic_overlap.parquet",
+      "expected": "f0aade747fad3a006af496369f8997cbc8ba95180b0764f1110afe66258795c2",
+      "actual": "f0aade747fad3a006af496369f8997cbc8ba95180b0764f1110afe66258795c2",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_00.parquet",
+      "expected": "8646e65da3e4645c6b212bed65a0f37dd9dcb2f2a21f782d9e3ca96628b9c688",
+      "actual": "8646e65da3e4645c6b212bed65a0f37dd9dcb2f2a21f782d9e3ca96628b9c688",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_01.parquet",
+      "expected": "b4494d62c50c0c9c18fb3b3b2f6f940ed172be6556f15f3ba047341dbfe95f0e",
+      "actual": "b4494d62c50c0c9c18fb3b3b2f6f940ed172be6556f15f3ba047341dbfe95f0e",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_02.parquet",
+      "expected": "7539117f7a9d4852239366f727194b377485a1594f3f2d3ee8e5d65907d0176a",
+      "actual": "7539117f7a9d4852239366f727194b377485a1594f3f2d3ee8e5d65907d0176a",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_03.parquet",
+      "expected": "ecb3d73f15f836ce21ca9db4a406c901ff9ed08a22290aa9790cf2938f8c5933",
+      "actual": "ecb3d73f15f836ce21ca9db4a406c901ff9ed08a22290aa9790cf2938f8c5933",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_04.parquet",
+      "expected": "c4e0e9e47cdfe9eff8cd7198178f73a7ae11076ebd5a0134519dec0234be18c9",
+      "actual": "c4e0e9e47cdfe9eff8cd7198178f73a7ae11076ebd5a0134519dec0234be18c9",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_05.parquet",
+      "expected": "7f15fdd849ceffd1337525a23018e6a59c884e357a2d137c0f3e8f2c82c29fdf",
+      "actual": "7f15fdd849ceffd1337525a23018e6a59c884e357a2d137c0f3e8f2c82c29fdf",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_06.parquet",
+      "expected": "fc711064031a00d9df30539f8cc1566d50840849533b18f6306c191ddb445b3b",
+      "actual": "fc711064031a00d9df30539f8cc1566d50840849533b18f6306c191ddb445b3b",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_07.parquet",
+      "expected": "f93163ab4522b416af90d699b45cd343575077598135a521488483ad0bf3f310",
+      "actual": "f93163ab4522b416af90d699b45cd343575077598135a521488483ad0bf3f310",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_08.parquet",
+      "expected": "47e202313b1cc64fbb7bc4c4ccb2796dbc983fff4ce1cde03759942df59bd592",
+      "actual": "47e202313b1cc64fbb7bc4c4ccb2796dbc983fff4ce1cde03759942df59bd592",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_09.parquet",
+      "expected": "5cf53b4cc0f7c87180dcc86af68d7eae0c928d7f4267b72a3f05c8b5116104cf",
+      "actual": "5cf53b4cc0f7c87180dcc86af68d7eae0c928d7f4267b72a3f05c8b5116104cf",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_10.parquet",
+      "expected": "196af413d3f5d78083395b47984a59be26bb760432b026431f6a6f654439b7e1",
+      "actual": "196af413d3f5d78083395b47984a59be26bb760432b026431f6a6f654439b7e1",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_11.parquet",
+      "expected": "35cdbba3492d5fe2cd0b433640fb79e4304203aca01fc651835fb43f491006b9",
+      "actual": "35cdbba3492d5fe2cd0b433640fb79e4304203aca01fc651835fb43f491006b9",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_12.parquet",
+      "expected": "323d7c659bbb52f8881c4750de907af8e8e25330f0b2218e8a2b9d22171a6111",
+      "actual": "323d7c659bbb52f8881c4750de907af8e8e25330f0b2218e8a2b9d22171a6111",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_13.parquet",
+      "expected": "12eeb2cc2704e674d01f2ef34fb7bff53cfa4171686ce98877e926f75305c8ca",
+      "actual": "12eeb2cc2704e674d01f2ef34fb7bff53cfa4171686ce98877e926f75305c8ca",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_14.parquet",
+      "expected": "db584811baf11a89fd20d734be2dd9bd46ed59509c3e2ab245f2ded8099d7634",
+      "actual": "db584811baf11a89fd20d734be2dd9bd46ed59509c3e2ab245f2ded8099d7634",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_15.parquet",
+      "expected": "1c6c9f7926f72fc0276c0c63f04d2843ac4a162ed4145a49718b7456b1ba798f",
+      "actual": "1c6c9f7926f72fc0276c0c63f04d2843ac4a162ed4145a49718b7456b1ba798f",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_16.parquet",
+      "expected": "d8f1491e9d5764fcd187c1314a16c78eabbcfb9371742557e24a3cd268b890da",
+      "actual": "d8f1491e9d5764fcd187c1314a16c78eabbcfb9371742557e24a3cd268b890da",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_17.parquet",
+      "expected": "6d215d91e4e0e6b8ebdc0bd004284da18dcb8b8f16f8b3ae03d3e27e409a4713",
+      "actual": "6d215d91e4e0e6b8ebdc0bd004284da18dcb8b8f16f8b3ae03d3e27e409a4713",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_18.parquet",
+      "expected": "699f68594c01560762a3530ac65948dbed3cdaaa8ac0aebf7fd8b9cf3b565809",
+      "actual": "699f68594c01560762a3530ac65948dbed3cdaaa8ac0aebf7fd8b9cf3b565809",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_19.parquet",
+      "expected": "ea866602330f810e2ff1cc5ef60e7b925ff42129f0559b35fe84caecd82f48df",
+      "actual": "ea866602330f810e2ff1cc5ef60e7b925ff42129f0559b35fe84caecd82f48df",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_20.parquet",
+      "expected": "0b28d92f5f76437e9f92087cc2dd500015d1476235757026163bec7cf6f0ed37",
+      "actual": "0b28d92f5f76437e9f92087cc2dd500015d1476235757026163bec7cf6f0ed37",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_21.parquet",
+      "expected": "8e871df233e3e99287909e14c42512e4683ab91b54e9a3c2c0fbc81b9f592e2c",
+      "actual": "8e871df233e3e99287909e14c42512e4683ab91b54e9a3c2c0fbc81b9f592e2c",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_22.parquet",
+      "expected": "8d1d2564ba7ed0f22e27e127445408f2f0d4639b80b481ea4a853702acdb33d3",
+      "actual": "8d1d2564ba7ed0f22e27e127445408f2f0d4639b80b481ea4a853702acdb33d3",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_23.parquet",
+      "expected": "e844a1a1d50fc97344efb521ab7ca24fa1b1e55ffcdcc7bfa13daf2b47a58c4e",
+      "actual": "e844a1a1d50fc97344efb521ab7ca24fa1b1e55ffcdcc7bfa13daf2b47a58c4e",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_24.parquet",
+      "expected": "4c6416c4eab6e1e754521cd6c06d4381bc818ae8b3efc76eb03e8f40f04d496f",
+      "actual": "4c6416c4eab6e1e754521cd6c06d4381bc818ae8b3efc76eb03e8f40f04d496f",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_25.parquet",
+      "expected": "ac41a474a2bc136cc8c5bc3092be79726bd27a3322ba8a184b7eefb1de08058c",
+      "actual": "ac41a474a2bc136cc8c5bc3092be79726bd27a3322ba8a184b7eefb1de08058c",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_26.parquet",
+      "expected": "5b7d777ef2fae8c0a02dd68447d835c43d4a034c8d536d10050aa1b385db4f7a",
+      "actual": "5b7d777ef2fae8c0a02dd68447d835c43d4a034c8d536d10050aa1b385db4f7a",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_27.parquet",
+      "expected": "ace4b575ffdc32200dc77d832763cb9d674e33a31766375622a86a20e0fc864e",
+      "actual": "ace4b575ffdc32200dc77d832763cb9d674e33a31766375622a86a20e0fc864e",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_28.parquet",
+      "expected": "dcf33b9ce97c218d139160539e06898859d2e832491dc20f868d62d1d91cdd24",
+      "actual": "dcf33b9ce97c218d139160539e06898859d2e832491dc20f868d62d1d91cdd24",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_29.parquet",
+      "expected": "ed30a87a97dcd5594f5174e54528fa79142d202f2bf44ea7efbcd35645929dc8",
+      "actual": "ed30a87a97dcd5594f5174e54528fa79142d202f2bf44ea7efbcd35645929dc8",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_30.parquet",
+      "expected": "d889959e5fc242a42da16d9fa762659f428054364743481c91e2e2b6ea2bb6eb",
+      "actual": "d889959e5fc242a42da16d9fa762659f428054364743481c91e2e2b6ea2bb6eb",
+      "unchanged": true
+    },
+    {
+      "path": "E:\\SPARROW\\0_water_quality\\data\\auto_4h\\canonical\\observations\\bucket_31.parquet",
+      "expected": "ff0cf50eb8c162fde381c64cb6b2ece8849ed639e4bfbe88869210d8bd22113c",
+      "actual": "ff0cf50eb8c162fde381c64cb6b2ece8849ed639e4bfbe88869210d8bd22113c",
+      "unchanged": true
+    }
+  ],
+  "all_unchanged": true
+}
