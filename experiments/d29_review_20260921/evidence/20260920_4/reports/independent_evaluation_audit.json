@@ -1,0 +1,20 @@
+[
+  {
+    "arm": "MIX",
+    "events": 127,
+    "independent_score_max_difference": 0.0,
+    "adjacent_pairs": 72
+  },
+  {
+    "arm": "HYDRO-SELECT",
+    "events": 127,
+    "independent_score_max_difference": 0.0,
+    "adjacent_pairs": 72
+  },
+  {
+    "arm": "FULL-BYPASS",
+    "events": 127,
+    "independent_score_max_difference": 0.0,
+    "adjacent_pairs": 72
+  }
+]

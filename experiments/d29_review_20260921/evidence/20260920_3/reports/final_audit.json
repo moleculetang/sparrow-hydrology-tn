@@ -1,0 +1,21 @@
+{
+  "status": "FINITE_MATRIX_COMPLETE_WITH_CONDITIONAL_GAPS",
+  "arms": 14,
+  "physical_pass": 12,
+  "blocked": [
+    "H1_LEVEL0",
+    "H1_LEVEL1"
+  ],
+  "root_calls": 222,
+  "root_relative_max": 5.773159728050814e-15,
+  "independent_score": {
+    "H1_G0": 0.633991780527068,
+    "H1_G1": 0.6054224778000152
+  },
+  "independent_relative_reduction": 0.04506257589538731,
+  "registered_shape_support": false,
+  "production_ready": false,
+  "resource_dispatch_conformance": false,
+  "external_expert": false,
+  "elapsed_hours": 0.5193741797222222
+}

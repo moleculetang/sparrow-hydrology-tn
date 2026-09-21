@@ -1,0 +1,9 @@
+{
+  "time": 1789911779.0879076,
+  "arm": "A-FULL",
+  "reason": "subtractive cancellation in identically zero common mobile input accumulated lower stock below -1e-7 kg",
+  "change": "evaluate remaining common mass by positive proportional component instead of residual subtraction; exact same equations",
+  "tolerance_changed": false,
+  "new_science_configuration": false,
+  "original": "E:\\SPARROW\\5_Test\\20260920_5\\outputs_attempts\\A-FULL-v1"
+}

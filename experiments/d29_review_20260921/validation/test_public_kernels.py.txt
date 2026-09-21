@@ -1,0 +1,14 @@
+test_actual_aggregation_gradient_and_eta_identity (__main__.PublicKernels.test_actual_aggregation_gradient_and_eta_identity) ... ok
+test_depletion_zero_paths_and_future_causality (__main__.PublicKernels.test_depletion_zero_paths_and_future_causality) ... ok
+test_land_tags_and_history_adjoint (__main__.PublicKernels.test_land_tags_and_history_adjoint) ... ok
+test_shared_reservoir_once_and_conservation (__main__.PublicKernels.test_shared_reservoir_once_and_conservation) ... ok
+test_snapshot_identity_and_syntax (__main__.PublicKernels.test_snapshot_identity_and_syntax) ... <unknown>:194: DeprecationWarning: invalid escape sequence '\p'
+<unknown>:1: DeprecationWarning: invalid escape sequence '\w'
+<unknown>:1: DeprecationWarning: invalid escape sequence '\w'
+ok
+test_uniform_integral_refinement_and_derivative (__main__.PublicKernels.test_uniform_integral_refinement_and_derivative) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 3.399s
+
+OK

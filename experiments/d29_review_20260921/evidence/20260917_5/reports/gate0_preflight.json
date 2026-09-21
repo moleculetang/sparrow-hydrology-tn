@@ -1,0 +1,251 @@
+{
+  "stage": "20260917_5/gate0",
+  "started_utc": "2026-09-17T16:19:09Z",
+  "corrected_hydrology": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\outputs",
+  "frozen_hydrology": "E:\\SPARROW\\5_Test\\20260828_38\\outputs",
+  "preregistration_sha256": "7cdbc44e8d8cc4630f38917f1ca2af1e7cd926c86c3de10d60254567594474df",
+  "preregistration": "Delta = medNSE(H1) - medNSE(H0), per-station concentration NSE, evaluation year 2024.\nLayer 1 -- worth keeping:      |Delta| < 0.05 end; 0.05 <= Delta < 0.10 downgrade but keep;\n                               Delta >= 0.10 keep and enter Gate 2.\nNegative tier, not folded into 'very small': Delta <= -0.05 is a substantive result and\n                               must be explained; Delta <= -0.10 additionally requires\n                               checking the capacity-scale confound (G0-5) first.\nLayer 2 -- main bottleneck, all four simultaneously and separately from layer 1:\n                               Delta >= 0.3;  Delta r >= 0.05;  RMSE(H1)/RMSE(H0) <= 0.9;\n                               share of stations with Delta_i > 0 >= 60 percent; and the\n                               1000-draw paired bootstrap 95 percent lower bound of Delta > 0\n                               (seed 1729, bootstrap 1000, from configs/protocol.json).\nLayers 1 and 2 are independent and must be reported side by side. A Delta of +0.25 is\n'worth verifying further' AND 'not the main bottleneck' at the same time; writing it as\n'hydrology is irrelevant' is the interpretation error this round guards against.\nLoad is not reported, not computed and not used as evidence anywhere in this round.\n",
+  "G0-1_columns": {
+    "passed": true,
+    "required_daily_fields": 16,
+    "required_fields_absent": [],
+    "failing_files": [],
+    "files": {
+      "tn_hydrology_reach_daily.parquet": {
+        "identical": true,
+        "order_identical": true,
+        "columns": 53,
+        "columns_frozen": 53,
+        "rows": 5460430,
+        "rows_frozen": 5460430,
+        "rows_identical": true,
+        "missing": [],
+        "extra": []
+      },
+      "tn_hydrology_reach_monthly.parquet": {
+        "identical": true,
+        "order_identical": true,
+        "columns": 44,
+        "columns_frozen": 44,
+        "rows": 179400,
+        "rows_frozen": 179400,
+        "rows_identical": true,
+        "missing": [],
+        "extra": []
+      },
+      "tn_hydrology_reservoir_daily.parquet": {
+        "identical": true,
+        "order_identical": true,
+        "columns": 54,
+        "columns_frozen": 54,
+        "rows": 308633,
+        "rows_frozen": 308633,
+        "rows_identical": true,
+        "missing": [],
+        "extra": []
+      },
+      "tn_hydrology_reservoir_static_metadata.parquet": {
+        "identical": true,
+        "order_identical": true,
+        "columns": 32,
+        "columns_frozen": 32,
+        "rows": 13,
+        "rows_frozen": 13,
+        "rows_identical": true,
+        "missing": [],
+        "extra": []
+      }
+    },
+    "lock_agreement": {
+      "tn_hydrology_reach_daily.parquet": {
+        "read_by_this_round": "87d829d0bc60a5c3ea4eee0666cfa4cdd562d609e5c6466971fe9129b0242f89",
+        "locked": "87d829d0bc60a5c3ea4eee0666cfa4cdd562d609e5c6466971fe9129b0242f89",
+        "matches_lock": true,
+        "published_copy_matches_lock": true
+      },
+      "tn_hydrology_reach_monthly.parquet": {
+        "read_by_this_round": "21c21e95892249f99dc97650f811bca0eb09eac75e6ca9996f9ad9342c127a00",
+        "locked": "21c21e95892249f99dc97650f811bca0eb09eac75e6ca9996f9ad9342c127a00",
+        "matches_lock": true,
+        "published_copy_matches_lock": true
+      },
+      "tn_hydrology_reservoir_daily.parquet": {
+        "read_by_this_round": "e38f3d412f02be20d40a379277c1b731c89a08170603e02d33f0a996814d8dd2",
+        "locked": "e38f3d412f02be20d40a379277c1b731c89a08170603e02d33f0a996814d8dd2",
+        "matches_lock": true,
+        "published_copy_matches_lock": true
+      },
+      "tn_hydrology_reservoir_static_metadata.parquet": {
+        "read_by_this_round": "91333e13b4279e5dd320409bc382361144dfa7368a3f6b96f10fa5e78e99b5f8",
+        "locked": "91333e13b4279e5dd320409bc382361144dfa7368a3f6b96f10fa5e78e99b5f8",
+        "matches_lock": true,
+        "published_copy_matches_lock": true
+      }
+    }
+  },
+  "G0-2_consistency": {
+    "passed": true,
+    "failed": [],
+    "arms": {
+      "frozen": {
+        "directory": "E:\\SPARROW\\5_Test\\20260828_38\\outputs",
+        "days": 23741,
+        "reaches": 230,
+        "rows": 5460430,
+        "calendar_exact": true,
+        "reaches_tiled": true,
+        "routed_component_max_error": 0.0,
+        "monthly_component_max_error": 7.275957614183426e-12,
+        "lower_water_continuity_max_abs_mm": 3.3306690738754696e-14,
+        "flow_minimum": 0.0,
+        "finite": true,
+        "nonnegative": true,
+        "reservoir_rows": 308633,
+        "reservoir_entities": 13,
+        "reservoir_mass_balance_max_abs_m3": 0.0,
+        "reservoir_release_fraction_min": 0.0,
+        "reservoir_release_fraction_max": 1.0,
+        "reservoir_duplicate_keys": 0,
+        "reservoir_negative": false
+      },
+      "corrected": {
+        "directory": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\outputs",
+        "days": 23741,
+        "reaches": 230,
+        "rows": 5460430,
+        "calendar_exact": true,
+        "reaches_tiled": true,
+        "routed_component_max_error": 0.0,
+        "monthly_component_max_error": 3.637978807091713e-12,
+        "lower_water_continuity_max_abs_mm": 3.4083846855992306e-14,
+        "flow_minimum": 0.0,
+        "finite": true,
+        "nonnegative": true,
+        "reservoir_rows": 308633,
+        "reservoir_entities": 13,
+        "reservoir_mass_balance_max_abs_m3": 0.0,
+        "reservoir_release_fraction_min": 0.0,
+        "reservoir_release_fraction_max": 1.0,
+        "reservoir_duplicate_keys": 0,
+        "reservoir_negative": false
+      }
+    }
+  },
+  "G0-3_coverage_declaration": {
+    "passed": true,
+    "blocking": false,
+    "conclusion_period": "the 74 retained stations, over 2019-01-01..2022-12-31",
+    "declared_period": "结论期是 2006-2022（观测档案所及）；1961-2005 无实测流量，「无站 NSE 为负」因此是 2019-2022 的陈述。",
+    "pet_bridge_flag": [
+      "2025 的 PET 桥接未过 0.98 门（r = 0.916165），2025 段携带 PET_BRIDGE_UNVALIDATED_2025。"
+    ],
+    "not_a_replacement_for": "20260828_35",
+    "selection": {
+      "combination": "R74",
+      "origin": "post_hoc_route2_extension",
+      "is_post_hoc": true,
+      "base": 102,
+      "retained": 74,
+      "excluded": 28,
+      "worst_retained_nse": 0.026682463233496656,
+      "why": "a rung of a ladder whose tail was chosen from the measured residuals, after the eight pre-registered combinations had all been measured and none had come out all-positive"
+    },
+    "same_population_protection": {
+      "population": "the stations this screen retains",
+      "population_size": 74,
+      "screen_only": {
+        "product": "20260828_43 (frozen replay, no refit)",
+        "mean_nse_min": 0.6252974188177003,
+        "negative_stations": 1
+      },
+      "screen_and_refit": {
+        "product": "arms/R74 (observations masked, model fully rerun)",
+        "mean_nse_min": 0.6199233575270526,
+        "negative_stations": 0
+      },
+      "delta_mean_nse_min": -0.005374061290647658,
+      "stations_improved": 28,
+      "stations_worsened": 46,
+      "note": "Read both rows on the same stations: excluding the others does not by itself move the retained stations, so any difference between the rows is the refit's effect."
+    },
+    "this_round": {
+      "variable": "TN concentration (the producer validated discharge)",
+      "cohort": "T24_G 116 / T24_L 34 TN stations (the producer validated 74 post-hoc-selected discharge stations)",
+      "period": "evaluation year 2024 (the producer concluded 2006-2022, and its zero-negative claim spans 2019-2022)"
+    },
+    "statement": "The corrected hydrology is validated on discharge, on a post-hoc-selected set of 74 stations, over 2019-2022 with a declared conclusion period of 2006-2022. This round uses it to drive TN concentration in 2024 on a different and larger station panel. It therefore leaves the producer's claim on three axes at once, and none of the three is repaired here. This is the round's largest external-validity limitation and must travel with every result. It is also not a fair burden: the product never claimed to support this use, and a weak TN result here is not evidence against a hydrology the producer never validated for TN.",
+    "note": "Recorded, never blocking: a FAIL would not change what is measurable.",
+    "supporting_quote": "结论期是 2006-2022（观测档案所及）；1961-2005 无实测流量，「无站 NSE 为负」因此是 2006-2022 的陈述。"
+  },
+  "G0-4_topology": {
+    "passed": true,
+    "keys": {
+      "product": true,
+      "forcing": true,
+      "order": true,
+      "downstream": true,
+      "terminal": true,
+      "metadata": true,
+      "static_fields": true,
+      "global_reach_ids": true,
+      "global_reservoir_indices": true
+    },
+    "statement": "Topology, including all 13 reservoir entries, is identical between arms, so the hydrology swap is not confounded by a network change."
+  },
+  "G0-5_capacity": {
+    "passed": true,
+    "arms": {
+      "H0": {
+        "capacity": 465.0670551343843,
+        "capacity_file": "E:\\SPARROW\\5_Test\\20260828_9\\outputs\\parent_preserving_state_consistent_model.pt",
+        "numerator_max_mm": 465.0670551343843,
+        "saturation_ratio": 1.0,
+        "wetness_max": 1.0
+      },
+      "H1": {
+        "capacity": 376.8416413827089,
+        "capacity_file": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\outputs\\export\\parent_preserving_state_consistent_model.pt",
+        "numerator_max_mm": 376.8416413827089,
+        "saturation_ratio": 1.0,
+        "wetness_max": 1.0
+      }
+    },
+    "saturation_exact": true,
+    "paired_ratio": 0.8102952837065999,
+    "statement": "soil_storage_mm + actual_aet_mm_day saturates at exactly the capacity of its own line in both arms (ratio 1.0), so each arm is divided by the parameter that produced it. Dividing the corrected storage by the frozen capacity would scale every soil_wetness by 0.8103, and W enters five of the eight dynamic basis columns. The concern is settled by measurement, not by preference, and arm H1c is therefore not required."
+  },
+  "G0-6_cohort": {
+    "passed": true,
+    "blocking": false,
+    "hydrology_excluded_n": 28,
+    "hydrology_retained_n": 74,
+    "tn_registry_n": 116,
+    "exact_overlap": 1,
+    "loose_overlap": 2,
+    "cohorts": {
+      "T24_L": 34,
+      "T24_G": 116
+    },
+    "statement": "The 74-station panel is the discharge/hydrology development panel (102 base minus 28 masked, and post-hoc by its own declaration), not a TN cohort: its names barely intersect the TN registry (1 exact, 2 loose, of 28 excluded). It therefore cannot head this round's report. The headline cohort must be one the round actually registers: T24_G as the full observed panel and T24_L as the local subset. Both arms are evaluated on identical folds, so this changes labelling only, not the comparison; and because the plan's original headline named this panel, the substitution is recorded here at Gate 0 rather than discovered in the results."
+  },
+  "G0-7_daily_stations": {
+    "passed": true,
+    "blocking": false,
+    "T24_G": {
+      "stations": 116,
+      "hf_stations": 15,
+      "hf_months": 269,
+      "hf_days": 6194
+    },
+    "T24_L": {
+      "stations": 34,
+      "hf_stations": 7,
+      "hf_months": 122,
+      "hf_days": 2752
+    },
+    "statement": "The daily criterion is carried by the high-frequency stations already registered inside each fold, not by a separate list. T24_G holds 15 such stations over 6194 station-days, T24_L holds 7. The count is reported before fitting rather than after."
+  },
+  "blocking_failures": [],
+  "status": "PASS",
+  "seconds": 4.0525922775268555
+}

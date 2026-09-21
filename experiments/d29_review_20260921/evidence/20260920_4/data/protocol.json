@@ -1,0 +1,36 @@
+{
+  "version": "FRESH_BYPASS_V1",
+  "created": 1789903428.735851,
+  "hours": 6,
+  "compute_hours": 5,
+  "arms": [
+    "MIX",
+    "HYDRO-SELECT",
+    "FULL-BYPASS"
+  ],
+  "primary": "HYDRO-SELECT",
+  "reference": "MIX",
+  "hydro": "H1",
+  "gamma": 1,
+  "k": 0.0070389132605078565,
+  "history": [
+    1961,
+    2024
+  ],
+  "fits": 0,
+  "roots": 0,
+  "block_days": 366,
+  "seed": 1729,
+  "bootstrap": 1000,
+  "tolerances": {
+    "local": 1e-06,
+    "source": 1e-06,
+    "network": 1e-10,
+    "nonnegative": 1e-07
+  },
+  "score": "station mean of event median absolute log amplitude error; analogous peak/base absolute errors",
+  "decision": "all three errors decrease in 2024 and 2021-2023; no 25-percent gate",
+  "source_scope": "inherited passive tags at pilot reaches only",
+  "contact_guard": "fast_fraction > 0 and fast_water > 0",
+  "counter_policy": "completed physical days and attempted blocks cumulative, checkpoint restart never clears counters"
+}

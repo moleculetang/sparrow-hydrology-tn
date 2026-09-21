@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "folds": [
+    {
+      "fold": "F23",
+      "days": 1967,
+      "months": 91,
+      "readings": 10399,
+      "max_day_error": 1.7763568394002505e-15,
+      "max_month_error": 4.440892098500626e-16
+    },
+    {
+      "fold": "F24",
+      "days": 6194,
+      "months": 269,
+      "readings": 33133,
+      "max_day_error": 1.7763568394002505e-15,
+      "max_month_error": 8.881784197001252e-16
+    }
+  ],
+  "method": "Independent explicit reading-ID lookup, arithmetic sums and counts; no call to preparation products()."
+}

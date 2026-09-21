@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.nbc
+*.nbi
+.pytest_cache/
+.env
+*.npy
+*.npz
+*.parquet
+*.pt
+*.pkl

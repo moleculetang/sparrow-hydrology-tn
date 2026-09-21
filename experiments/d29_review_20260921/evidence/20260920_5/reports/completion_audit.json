@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE_WITH_DISCLOSED_LOG_GAPS",
+  "scientific_configurations": 18,
+  "new_full_forwards": 17,
+  "reused_D29": 1,
+  "physical_pass_count": 18,
+  "full_independent_audits": 17,
+  "independent_event_audits": 18,
+  "reference_max_error_kg": 2.1420419216156006e-07,
+  "local_max_kg": 3.2610842026770115e-08,
+  "elapsed_hours": 0.555700970755683,
+  "budget_hours": 24,
+  "fits": 0,
+  "roots": 0,
+  "supported": [],
+  "external_review": false,
+  "final_network_counter_audit": true,
+  "forward_attempts_including_failed_version": 18,
+  "total_completed_attempt_blocks": 1152,
+  "missing_original_attempt_log_rows": 3,
+  "resource_log_gaps": true
+}

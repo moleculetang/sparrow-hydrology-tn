@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "source_files_verified": 728,
+  "tests": [
+    {
+      "test": "test_public_kernels.py",
+      "exit_code": 0,
+      "private_data_barrier": true
+    },
+    {
+      "test": "test_candidates.py",
+      "exit_code": 0,
+      "private_data_barrier": true
+    },
+    {
+      "test": "test_evaluation_public.py",
+      "exit_code": 0,
+      "private_data_barrier": true
+    },
+    {
+      "test": "private_replay_missing_data",
+      "exit_code": 2,
+      "expected_exit_code": 2
+    }
+  ],
+  "private_data_uploaded": false,
+  "broken_generated_links": [],
+  "credential_pattern_matches": [],
+  "approved_files": 752,
+  "scope": "Synthetic publication tests plus hash/syntax checks; historical full-data audits remain archived evidence, not rerun training"
+}

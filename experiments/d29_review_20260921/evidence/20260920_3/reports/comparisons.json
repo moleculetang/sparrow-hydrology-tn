@@ -1,0 +1,194 @@
+{
+  "H1_G1 minus H1_G0": {
+    "2021-2023": {
+      "n_events": 70,
+      "n_stations": 14,
+      "baseline": 0.7530304898284219,
+      "candidate": 0.6854377660175324,
+      "relative_reduction": 0.08976093893129156,
+      "improved_fraction": 1.0,
+      "centered_mse_baseline": 44.97725933722386,
+      "centered_mse_candidate": 19.414525711412598,
+      "physical_pair_pass": true
+    },
+    "2024": {
+      "n_events": 57,
+      "n_stations": 15,
+      "baseline": 0.6339917805270677,
+      "candidate": 0.6054224778000151,
+      "relative_reduction": 0.04506257589538712,
+      "improved_fraction": 0.6666666666666666,
+      "centered_mse_baseline": 74.8241209007137,
+      "centered_mse_candidate": 38.28415587494139,
+      "physical_pair_pass": true
+    }
+  },
+  "H1_G05 minus H1_G0": {
+    "2021-2023": {
+      "n_events": 70,
+      "n_stations": 14,
+      "baseline": 0.7530304898284219,
+      "candidate": 0.7204809564096688,
+      "relative_reduction": 0.0432247217853948,
+      "improved_fraction": 1.0,
+      "centered_mse_baseline": 44.97725933722386,
+      "centered_mse_candidate": 28.367937200720426,
+      "physical_pair_pass": true
+    },
+    "2024": {
+      "n_events": 57,
+      "n_stations": 15,
+      "baseline": 0.6339917805270677,
+      "candidate": 0.619923047116738,
+      "relative_reduction": 0.022190718937450195,
+      "improved_fraction": 0.6666666666666666,
+      "centered_mse_baseline": 74.8241209007137,
+      "centered_mse_candidate": 53.47857002655204,
+      "physical_pair_pass": true
+    }
+  },
+  "H1_G2 minus H1_G0": {
+    "2021-2023": {
+      "n_events": 70,
+      "n_stations": 14,
+      "baseline": 0.7530304898284219,
+      "candidate": 0.6112149667212389,
+      "relative_reduction": 0.18832640248005858,
+      "improved_fraction": 1.0,
+      "centered_mse_baseline": 44.97725933722386,
+      "centered_mse_candidate": 11.568877989202308,
+      "physical_pair_pass": true
+    },
+    "2024": {
+      "n_events": 57,
+      "n_stations": 15,
+      "baseline": 0.6339917805270677,
+      "candidate": 0.5755660220968742,
+      "relative_reduction": 0.09215538785316957,
+      "improved_fraction": 0.6666666666666666,
+      "centered_mse_baseline": 74.8241209007137,
+      "centered_mse_candidate": 21.20732150633922,
+      "physical_pair_pass": true
+    }
+  },
+  "H1_G4 minus H1_G0": {
+    "2021-2023": {
+      "n_events": 70,
+      "n_stations": 14,
+      "baseline": 0.7530304898284219,
+      "candidate": 0.5754345988099204,
+      "relative_reduction": 0.23584156739651635,
+      "improved_fraction": 1.0,
+      "centered_mse_baseline": 44.97725933722386,
+      "centered_mse_candidate": 6.783678867175894,
+      "physical_pair_pass": true
+    },
+    "2024": {
+      "n_events": 57,
+      "n_stations": 15,
+      "baseline": 0.6339917805270677,
+      "candidate": 0.549736128108054,
+      "relative_reduction": 0.13289707375853993,
+      "improved_fraction": 0.7333333333333333,
+      "centered_mse_baseline": 74.8241209007137,
+      "centered_mse_candidate": 10.087733267741081,
+      "physical_pair_pass": true
+    }
+  },
+  "H1_G1 minus H1_CLIM1": {
+    "2021-2023": {
+      "n_events": 70,
+      "n_stations": 14,
+      "baseline": 0.7190952749602891,
+      "candidate": 0.6854377660175324,
+      "relative_reduction": 0.04680535405355771,
+      "improved_fraction": 0.7857142857142857,
+      "centered_mse_baseline": 29.36849530240142,
+      "centered_mse_candidate": 19.414525711412598,
+      "physical_pair_pass": true
+    },
+    "2024": {
+      "n_events": 57,
+      "n_stations": 15,
+      "baseline": 0.6124157440640202,
+      "candidate": 0.6054224778000151,
+      "relative_reduction": 0.011419148400067972,
+      "improved_fraction": 0.6666666666666666,
+      "centered_mse_baseline": 51.25368349193214,
+      "centered_mse_candidate": 38.28415587494139,
+      "physical_pair_pass": true
+    }
+  },
+  "H1_LEVEL1 minus H1_LEVEL0": {
+    "2021-2023": {
+      "n_events": 70,
+      "n_stations": 14,
+      "baseline": 0.7486026961224924,
+      "candidate": 0.6813026366019692,
+      "relative_reduction": 0.08990090453736627,
+      "improved_fraction": 1.0,
+      "centered_mse_baseline": 1.8628292741645474,
+      "centered_mse_candidate": 0.9090394713720983,
+      "physical_pair_pass": false
+    },
+    "2024": {
+      "n_events": 57,
+      "n_stations": 15,
+      "baseline": 0.6301869361719799,
+      "candidate": 0.5965015735121807,
+      "relative_reduction": 0.053452968835593764,
+      "improved_fraction": 0.8666666666666667,
+      "centered_mse_baseline": 3.0569962452960406,
+      "centered_mse_candidate": 1.4531423597960316,
+      "physical_pair_pass": false
+    }
+  },
+  "H0_G1 minus H0_G0": {
+    "2021-2023": {
+      "n_events": 70,
+      "n_stations": 14,
+      "baseline": 0.8387363489347992,
+      "candidate": 0.7929713803287465,
+      "relative_reduction": 0.054564188930376685,
+      "improved_fraction": 0.9285714285714286,
+      "centered_mse_baseline": 37.712336069528014,
+      "centered_mse_candidate": 21.848308923572812,
+      "physical_pair_pass": true
+    },
+    "2024": {
+      "n_events": 57,
+      "n_stations": 15,
+      "baseline": 0.6849021584841827,
+      "candidate": 0.6566765895275968,
+      "relative_reduction": 0.04121109651494513,
+      "improved_fraction": 0.8666666666666667,
+      "centered_mse_baseline": 98.1850439292356,
+      "centered_mse_candidate": 57.72560255460309,
+      "physical_pair_pass": true
+    }
+  },
+  "H1_G0 minus H0_G0": {
+    "2021-2023": {
+      "n_events": 70,
+      "n_stations": 14,
+      "baseline": 0.8387363489347992,
+      "candidate": 0.7530304898284219,
+      "relative_reduction": 0.10218450555436677,
+      "improved_fraction": 0.9285714285714286,
+      "centered_mse_baseline": 37.712336069528014,
+      "centered_mse_candidate": 44.97725933722386,
+      "physical_pair_pass": true
+    },
+    "2024": {
+      "n_events": 57,
+      "n_stations": 15,
+      "baseline": 0.6849021584841827,
+      "candidate": 0.6339917805270677,
+      "relative_reduction": 0.07433233685493004,
+      "improved_fraction": 0.8666666666666667,
+      "centered_mse_baseline": 98.1850439292356,
+      "centered_mse_candidate": 74.8241209007137,
+      "physical_pair_pass": true
+    }
+  }
+}

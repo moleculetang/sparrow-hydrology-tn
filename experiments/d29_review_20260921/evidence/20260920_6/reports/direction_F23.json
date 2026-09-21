@@ -1,0 +1,216 @@
+{
+  "status": "DIAGNOSTIC_COMPLETE",
+  "baseline": "F23_R_s0",
+  "method": "Complete-history prediction finite differences, validated against analytic objective adjoint; not an analytic output Jacobian.",
+  "rank": 30,
+  "rank_cutoff": 7.948680549667796e-12,
+  "weighted_new_direction_norm": 0.8631227578947359,
+  "step_disagreement": 5.4164442768572e-10,
+  "projection_reliable": true,
+  "explained_fraction": 0.958453906916657,
+  "unexplained_fraction": 0.04154609308334434,
+  "second_order": [
+    {
+      "step": 0.001,
+      "first_weighted_norm": 0.8631229856428552,
+      "second_weighted_norm": 1.6442236171698028,
+      "positive_change_norm": 0.0008637453700212709,
+      "negative_change_norm": 0.0008625009357632849
+    },
+    {
+      "step": 0.0005,
+      "first_weighted_norm": 0.8631228147547999,
+      "second_weighted_norm": 1.6442229650242306,
+      "positive_change_norm": 0.00043171698250084946,
+      "negative_change_norm": 0.0004314058740662867
+    },
+    {
+      "step": 1e-05,
+      "first_weighted_norm": 0.8631227578089102,
+      "second_weighted_norm": 1.6442039251618301,
+      "positive_change_norm": 8.631289798721523e-06,
+      "negative_change_norm": 8.63116535779118e-06
+    }
+  ],
+  "steps": [
+    {
+      "index": 0,
+      "step": 0.0001801304356887054,
+      "scheme": "central"
+    },
+    {
+      "index": 1,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 2,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 3,
+      "step": 0.000160373382052147,
+      "scheme": "central"
+    },
+    {
+      "index": 4,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 5,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 6,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 7,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 8,
+      "step": 2.51978063435081e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 9,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 10,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 11,
+      "step": 2.7983664303083072e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 12,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 13,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 14,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 15,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 16,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 17,
+      "step": 2.922555643277784e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 18,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 19,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 20,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 21,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 22,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 23,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 24,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 25,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 26,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 27,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 28,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 29,
+      "step": 2e-05,
+      "scheme": "central"
+    },
+    {
+      "index": 30,
+      "step": 2e-05,
+      "scheme": "central"
+    }
+  ],
+  "gradient_terms": {
+    "level": 1.1621956301314627,
+    "dynamic": 0.009306015191940051,
+    "prior": 0.054725786339516275
+  },
+  "scaled_gradient_norms": [
+    0.022628340775306004,
+    0.013076275258039428,
+    0.009599867774826451
+  ],
+  "gradient_cosines": {
+    "0_1": -0.6139230800608507,
+    "0_2": -0.36590304415890007,
+    "1_2": -0.10095103934842115
+  },
+  "adjoint_error": 3.8123203462680443e-08,
+  "full_history_calls": 131,
+  "diagnostic_only": true,
+  "gradient_decomposition_error": 3.645087703896266e-15,
+  "matrix_step_error": 1.1016296996021623e-06,
+  "resolved_rank": 30,
+  "resolved_rank_cutoff": 5.508148498010812e-06,
+  "resolved_explained_fraction": 0.958453906916657,
+  "rank_note": "Machine-epsilon rank and an additional 5x step-disagreement rank are both descriptive, never fit admission rules."
+}

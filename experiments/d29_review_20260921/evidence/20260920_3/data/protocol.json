@@ -1,0 +1,138 @@
+{
+  "created_utc": "2026-09-20T09:22:13.602013+00:00",
+  "version": "WET_MOB_V1",
+  "arms": [
+    {
+      "id": "H1_D29",
+      "hydro": "H1",
+      "kind": "D29",
+      "gamma": null
+    },
+    {
+      "id": "H1_Q1",
+      "hydro": "H1",
+      "kind": "Q1",
+      "gamma": null
+    },
+    {
+      "id": "H1_G0",
+      "hydro": "H1",
+      "kind": "main",
+      "gamma": 0
+    },
+    {
+      "id": "H1_G05",
+      "hydro": "H1",
+      "kind": "main",
+      "gamma": 0.5
+    },
+    {
+      "id": "H1_G1",
+      "hydro": "H1",
+      "kind": "main",
+      "gamma": 1
+    },
+    {
+      "id": "H1_G2",
+      "hydro": "H1",
+      "kind": "main",
+      "gamma": 2
+    },
+    {
+      "id": "H1_G4",
+      "hydro": "H1",
+      "kind": "main",
+      "gamma": 4
+    },
+    {
+      "id": "H1_CLIM1",
+      "hydro": "H1",
+      "kind": "clim",
+      "gamma": 1
+    },
+    {
+      "id": "H1_LEVEL0",
+      "hydro": "H1",
+      "kind": "level",
+      "gamma": 0
+    },
+    {
+      "id": "H1_LEVEL1",
+      "hydro": "H1",
+      "kind": "level",
+      "gamma": 1
+    },
+    {
+      "id": "H0_D29",
+      "hydro": "H0",
+      "kind": "D29",
+      "gamma": null
+    },
+    {
+      "id": "H0_Q1",
+      "hydro": "H0",
+      "kind": "Q1",
+      "gamma": null
+    },
+    {
+      "id": "H0_G0",
+      "hydro": "H0",
+      "kind": "main",
+      "gamma": 0
+    },
+    {
+      "id": "H0_G1",
+      "hydro": "H0",
+      "kind": "main",
+      "gamma": 1
+    }
+  ],
+  "history": [
+    1961,
+    2024
+  ],
+  "reference": [
+    1961,
+    2020
+  ],
+  "parameters": "20260916_2/outputs/C0_s1/model.json",
+  "tau": 200.0,
+  "root_bounds": [
+    1e-08,
+    100.0
+  ],
+  "root_grid_points": 21,
+  "root_budget": 512,
+  "root_relative_tolerance": 1e-08,
+  "wall_budget_hours": 12,
+  "report_reserve_hours": 2,
+  "seed": 1729,
+  "bootstrap": 1000,
+  "primary": "H1_G1",
+  "baseline": "H1_G0",
+  "physical_tolerances": {
+    "local_kg": 1e-06,
+    "tag_kg": 1e-06,
+    "network_relative": 1e-10,
+    "negative_kg": 1e-07
+  },
+  "shape": {
+    "relative_error_reduction": 0.25,
+    "improved_station_fraction": 0.6,
+    "min_stations": 5,
+    "min_events": 20
+  },
+  "events": {
+    "water_quantile": 0.9,
+    "background_days": 7,
+    "min_background_observed_days": 4,
+    "min_event_observed_days": 1,
+    "pair_gap_days": 30
+  },
+  "coverage": {
+    "min_readings": 4,
+    "min_span_hours": 12,
+    "min_month_days": 10
+  },
+  "new_fits": 0
+}

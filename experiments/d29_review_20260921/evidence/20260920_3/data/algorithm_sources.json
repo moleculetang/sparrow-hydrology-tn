@@ -1,0 +1,17 @@
+[
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260920_2\\work\\dp_kernel.py",
+    "copy": "E:\\SPARROW\\5_Test\\20260920_3\\vendor\\dp_kernel.py",
+    "sha256": "7ad6043c3a8ddc4daa96e250a6dce7e9dd69a082afd9912023448ecd2c493883"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260920_2\\work\\closures_dp2.py",
+    "copy": "E:\\SPARROW\\5_Test\\20260920_3\\vendor\\closures_dp2.py",
+    "sha256": "9762a21ab52471a61b921a51410f9f4584a6d321cfaf91dadcaa9c375539cdab"
+  },
+  {
+    "source": "E:\\SPARROW\\5_Test\\20260920_2\\work\\closures_dp.py",
+    "copy": "E:\\SPARROW\\5_Test\\20260920_3\\vendor\\closures_dp.py",
+    "sha256": "3c15ec7b9d359ab71690cdce7ce73315b111e84122395a5992216df4ee6aa7bb"
+  }
+]

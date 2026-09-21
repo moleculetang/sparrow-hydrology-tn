@@ -1,0 +1,165 @@
+{
+  "created": 1789910350.662525,
+  "budget_hours": 24,
+  "forward_deadline_hours": 18,
+  "configs": [
+    {
+      "id": "MIX",
+      "family": "MIX",
+      "pi": 0,
+      "rho": 0,
+      "omega": 0.5
+    },
+    {
+      "id": "H1-D29",
+      "family": "REFERENCE",
+      "pi": 0,
+      "rho": 0,
+      "omega": 0.5
+    },
+    {
+      "id": "A-HALF",
+      "family": "A",
+      "pi": 0.5,
+      "rho": 0,
+      "omega": 0.5,
+      "primary": true
+    },
+    {
+      "id": "A-FULL",
+      "family": "A",
+      "pi": 1,
+      "rho": 0,
+      "omega": 0.5,
+      "primary": false
+    },
+    {
+      "id": "B-P0.5-R0.1",
+      "family": "B",
+      "pi": 0.5,
+      "rho": 0.1,
+      "omega": 0.5,
+      "primary": false
+    },
+    {
+      "id": "B-P0.5-R0.5",
+      "family": "B",
+      "pi": 0.5,
+      "rho": 0.5,
+      "omega": 0.5,
+      "primary": true
+    },
+    {
+      "id": "B-P0.5-R1",
+      "family": "B",
+      "pi": 0.5,
+      "rho": 1,
+      "omega": 0.5,
+      "primary": false
+    },
+    {
+      "id": "B-P1-R0.1",
+      "family": "B",
+      "pi": 1,
+      "rho": 0.1,
+      "omega": 0.5,
+      "primary": false
+    },
+    {
+      "id": "B-P1-R0.5",
+      "family": "B",
+      "pi": 1,
+      "rho": 0.5,
+      "omega": 0.5,
+      "primary": false
+    },
+    {
+      "id": "B-P1-R1",
+      "family": "B",
+      "pi": 1,
+      "rho": 1,
+      "omega": 0.5,
+      "primary": false
+    },
+    {
+      "id": "C-W0.2-P0.2",
+      "family": "C",
+      "pi": 0.2,
+      "rho": 0,
+      "omega": 0.2,
+      "primary": false
+    },
+    {
+      "id": "C-W0.2-P0.5",
+      "family": "C",
+      "pi": 0.5,
+      "rho": 0,
+      "omega": 0.2,
+      "primary": false
+    },
+    {
+      "id": "C-W0.2-P1",
+      "family": "C",
+      "pi": 1,
+      "rho": 0,
+      "omega": 0.2,
+      "primary": false
+    },
+    {
+      "id": "C-W0.5-P0.5",
+      "family": "C",
+      "pi": 0.5,
+      "rho": 0,
+      "omega": 0.5,
+      "primary": true
+    },
+    {
+      "id": "C-W0.5-P1",
+      "family": "C",
+      "pi": 1,
+      "rho": 0,
+      "omega": 0.5,
+      "primary": false
+    },
+    {
+      "id": "C-W0.8-P0.5",
+      "family": "C",
+      "pi": 0.5,
+      "rho": 0,
+      "omega": 0.8,
+      "primary": false
+    },
+    {
+      "id": "C-W0.8-P0.8",
+      "family": "C",
+      "pi": 0.8,
+      "rho": 0,
+      "omega": 0.8,
+      "primary": false
+    },
+    {
+      "id": "C-W0.8-P1",
+      "family": "C",
+      "pi": 1,
+      "rho": 0,
+      "omega": 0.8,
+      "primary": false
+    }
+  ],
+  "hydro": "H1",
+  "k": 0.0070389132605078565,
+  "gamma": 1,
+  "fits": 0,
+  "roots": 0,
+  "history": [
+    1961,
+    2024
+  ],
+  "block_days": 366,
+  "source_scope": [
+    158,
+    225
+  ],
+  "seed": 1729,
+  "bootstrap": 1000
+}

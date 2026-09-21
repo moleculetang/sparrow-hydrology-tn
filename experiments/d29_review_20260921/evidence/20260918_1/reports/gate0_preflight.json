@@ -1,0 +1,953 @@
+{
+  "stage": "20260918_1/gate0",
+  "started_utc": "2026-09-18T02:38:46Z",
+  "preregistration": "Main criterion (paired, same station). The first criterion is the median of the\nper-station paired change:\n    median_i [ NSE^FCT8_i - NSE^D29_BE_i ]  over the 116-station T24_G panel.\nThe difference of order statistics, median(NSE_cand) - median(NSE_base), is NOT a\ncriterion. 20260917_5 measured it manufacturing a positive headline while the\ntypical station got worse in 9 of 16 cells. It is reported descriptively only.\n\nMagnitude tiers, kept strictly separate from 'is this the main bottleneck':\n    |dNSE| < 0.05          very small\n    0.05 <= dNSE < 0.10    small\n    dNSE >= 0.10           large enough to be worth verifying further\nThe tier and the bottleneck question are different questions and must never be\ncollapsed into one binary threshold.\n\nFCT8 promotion, all seven simultaneously, on the 116-station panel:\n  1  paired dNSE median                >= +0.10\n  2  paired dr median                  >= +0.05\n  3  station-mean RMSE ratio           <= 0.95\n  4  share of stations improved        >= 60 percent\n  5  |log SD ratio| declines           >= 10 percent versus baseline\n  6  share of negatively correlated stations does not increase\n  7  mean absolute bias                <= 1.05 x baseline\nFailing any one of the seven means FCT8 is not promoted; it does not mean FCT8\nhad no effect. Both readings are reported.\n\nSpatial dependence, decided before results and binding on the report. Stations are\nNOT independent samples. Level 1 blocks are terminal-connected components from\n`topology.json`; Level 2 blocks cut a large component by Strahler order and are\nused only for sensitivity, leave-one-tributary-out and per-block effects, and are\nNOT claimed to be independent.\nStatistical admission: a component-cluster bootstrap may serve as a primary CI\nonly if N_nonempty_component >= 8 AND the largest block's share of stations < 0.4.\nOtherwise the 95 percent CI is itself unstable, and a pretty CI must NOT be\ncomputed in order to keep a 'CI lower bound > 0' promotion threshold alive. The\nreport then carries leave-one-component-out jackknife and per-block effects\ninstead.\nIf the gate is admitted, the CI is a hierarchical paired bootstrap: outer unit the\nhydrologic component or block (keeping within-block station dependence intact),\ninner unit the synchronized month block (sampling the same months for candidate\nand baseline). Candidate-baseline pairing is preserved at every level. 2024 has\nonly 12 months, so this CI is never the sole arbiter: it appears alongside the\npaired station median, the leave-one-network-block-out jackknife, and the\nper-block effect table.\n\nNext quality channel (plan F6), rewritten. F6 originally required choosing\nbetween a direct-source channel and an event N-form channel. `20260917_1` Gate B\nalready tested both and rejected both: the turbidity (particulate N) partial\ncorrelation spans zero in 4 of 4 definitions with point estimates -0.006..+0.026,\nand the NH3_N partial correlation spans zero in 4 of 4 with a consistently\nNEGATIVE sign, the opposite of the direction F6's own reading rule required. The\nonly surviving channel is dissolved organic N via COD_Mn, positive and excluding\nzero in 4 of 4 definitions. That channel is threshold sensitive: its partial\ncorrelation is 0.1928, so at a threshold of 0.20 or above the branch flips to\nNO_NEW_STATE_RETURN_TO_STATION_BOUNDARIES_Q_AND_SOURCE_LEDGER. F6 therefore\nbecomes: pursue dissolved organic N as the single surviving channel, with the\nthreshold band written down before the numbers are seen, because Gate B section 4\nforbids choosing a threshold after seeing them.\n\nLoad is not computed, not reported, and not used as evidence anywhere in this\nround. All criteria fall on concentration. Path selection uses concentration\nmetrics only.\n",
+  "preregistration_sha256": "91de0c9f0bb3098271b87158cac0e827137cb458c992b00ccefdeda64698bdb1",
+  "registered_prediction": "Registered before F2, with zero FCT8 fits performed. Four measured zero-fit facts fix\nwhat FCT8 can and cannot be expected to do, so what follows is a split, not a hope.\n\nM1. The published H1-D29_BE optimum is NOT first-order balanced in the level/timing\n    split. At delta = 0 the scaled residual gradient is max|dJ/ddelta| = 4.469e-03,\n    447x the solver's 1e-5 noise floor, while max|dJ/db| = 9.16e-08 -- b is converged\n    and delta is not. Since dJ/ddelta|0 = L - (1/2) dJ/db|0 and the second term is\n    ~1e-7, that residual gradient IS the month-level gradient L. So the first-order\n    room FCT8 can reach is a MONTH-LEVEL gain, not a within-month one.\nM2. The delta block does not damage conditioning: minimum singular value 0.26231 for\n    38 parameters against 0.26496 for the 30-parameter baseline, a 1.0 percent drop for\n    8 added parameters; rank_deficient false; condition number 4035 against 3994.\nM3. The delta block still adds genuinely new directions: principal angles between the\n    8 delta rows and the 8 dynamic rows span 12.92 to 82.77 degrees, so the subspaces\n    differ even though max|corr(delta_j, b_j)| = 0.9372. The honest statement is that\n    the BLOCK is identified while the individual delta_j cannot be separated from its\n    own b_j -- which is why only block-level claims are made below.\nM4. The error at the 15 high-frequency stations is dominated by the WITHIN-month\n    component, for which FCT8 adds no path. 43.1 percent of observed daily variance is\n    within-month, but the model places only 15.4 percent of its own variance there; the\n    within-month sd ratio is 0.254 against 0.512 between months, and r_within is 0.082\n    against r_between 0.597. The multiplier's own within-month spread is already healthy\n    (sd 0.43213, 0.00 percent railed, 92.37 percent in the tanh linear band), so the\n    within-month movement exists at the hazard and is lost downstream, in the M/L\n    reservoir and the routing operators, which FCT8 leaves byte-identical (V6).\n\nPrediction from M1 to M4:\n  (a) delta WILL be pushed away from zero, and the gain will appear mainly as a\n      month-level improvement -- bias and, through the month mean, NSE and RMSE --\n      because that is where the first-order room is (M1) and the level half carries\n      twice the leverage of the timing half.\n  (b) FCT8 will NOT materially recover the within-month amplitude or shape. It should\n      not drive sd_ratio_within (0.254) toward 1, nor turn r_within (0.082) healthy.\n      M4 says that freedom already exists and is lost downstream, and FCT8 does not\n      touch the downstream chain.\n  (c) The seven promotion thresholds are RMSE- and amplitude-dominated, so FCT8 may\n      satisfy some of them through the month-level channel while the within-month\n      defect it was aimed at is still there. Should that happen both readings are\n      reported together -- mechanism partly confirmed, target defect not fixed -- and\n      'FCT8 improved NSE' may NOT be presented as evidence that the level/timing\n      coupling was the binding constraint.\n\nFalsifier: FCT8 drives sd_ratio_within toward 1 or raises r_within substantially. That\nwould mean the within-month shape was reachable from the hazard after all, and would\ncontradict M4's inference that the loss is downstream.\n",
+  "registered_prediction_sha256": "fcc8aba24b7ec22557c34ad91c9865015c1d84580c0bf5e789cb5bcc8962659a",
+  "plan_cos_baseline": -0.9895,
+  "gap_ceiling": 0.001,
+  "baseline_tags": [
+    "T24_G_D_H1_s0",
+    "T24_G_D_H1_s1",
+    "T24_G_M_H1_s0",
+    "T24_G_M_H1_s1"
+  ],
+  "fct8_tags": [
+    "T24_G_D_H1_FCT8_s0",
+    "T24_G_D_H1_FCT8_s1",
+    "T24_G_M_H1_FCT8_s0",
+    "T24_G_M_H1_FCT8_s1"
+  ],
+  "frozen_before_any_fct8_fit": true,
+  "f6_rewritten": true,
+  "G0-1_f1_gates": {
+    "passed": true,
+    "f1_status": "PASS_F1",
+    "f1_gates": "11/11",
+    "per_fold_structural": [
+      {
+        "fold": "T24_G_D_H1_FCT8",
+        "V1": true,
+        "V2": true,
+        "V3": true,
+        "V6": true,
+        "V8": true
+      },
+      {
+        "fold": "T24_G_M_H1_FCT8",
+        "V1": true,
+        "V2": true,
+        "V3": true,
+        "V6": true,
+        "V8": true
+      }
+    ],
+    "per_fold_gradient_at_fixed_step": {
+      "T24_G_D_H1_FCT8": {
+        "pass": true,
+        "max_rel_gradient_gap": 7.121749835771801e-07,
+        "gap_shrinks_with_step": true
+      }
+    },
+    "structural_gates_passed": true,
+    "replay_gate": {
+      "passed": true,
+      "gate": "F1-7",
+      "claim": "editing campaign_model.py is additive for D29_BE",
+      "parent_round": "20260917_5",
+      "rows": [
+        {
+          "tag": "T24_G_D_H1_s0",
+          "parameters": 30,
+          "monthly_rows": 5568,
+          "daily_rows": 169476,
+          "max_abs_monthly_concentration_gap": 0.0,
+          "max_abs_daily_concentration_gap": 0.0,
+          "bit_identical": true
+        },
+        {
+          "tag": "T24_G_M_H1_s0",
+          "parameters": 30,
+          "monthly_rows": 5568,
+          "daily_rows": 169476,
+          "max_abs_monthly_concentration_gap": 0.0,
+          "max_abs_daily_concentration_gap": 0.0,
+          "bit_identical": true
+        }
+      ],
+      "statement": "Replaying the parent round's published H1 predictions with an unmodified D29_BE path reproduces them bit for bit -- 5568 monthly and 169476 daily rows at gap 0.0e+00 on both folds. This is what licenses reusing the four published baselines at zero new fits; it is proof that editing campaign_model.py was additive, not an assertion that it was."
+    },
+    "gradient_step_convergence": {
+      "passed": true,
+      "d29_gap_shrinks_with_step": true,
+      "fct8_gap_shrinks_with_step": true,
+      "d29_gap_min": 0.011420159891007912,
+      "fct8_gap_min": 7.121749835771801e-07,
+      "same_magnitude_class": false
+    },
+    "statement": "V1 nesting, V2 linear scaling, V3 closed form, V6 M/L and routing invariance and V8 zero-weight fallback all pass on both folds. The V4 gradient check is judged by step convergence against the 30-parameter baseline rather than by a constant the baseline also fails: `value_gradient` is exact float64 autograd and the central difference is the approximation. F1-7 (bit-identical replay of the parent round) is blocking here as hard gate 3.",
+    "note": "blocking on the structural gates, the step-converged gradient and the replay. The single-fixed-step V4 reading is recorded alongside so the two procedures can be compared, not so one can override the other."
+  },
+  "G0-2_baseline_lock": {
+    "passed": true,
+    "files": {
+      "T24_G_D_H1_s0": {
+        "model.json": "ab518f268ec626930b33666cf0ecb95c2002d79362255ee99939a472a665120c",
+        "predictions.parquet": "4ccd156b5dc097b467b7eaf3ace288cf48086c1b951a839e77695ded9a704c08",
+        "daily_station_mass_water.parquet": "89336e86681dfce65fb882b7da6ab6512682eeb1edd43fe88420eb485603504f"
+      },
+      "T24_G_D_H1_s1": {
+        "model.json": "95f7810b9897a72aed670724614f403f6dd6f58661e6db53e3eb47225c03953a",
+        "predictions.parquet": "e12002e8a8be14dc4e9b08aba02fcb922e0885d91624aa012fb780998f1e4376",
+        "daily_station_mass_water.parquet": "26a8b380e02a055b7e03359fa375c3c84a7d7890f91d67cc0acfa5995b7694ad"
+      },
+      "T24_G_M_H1_s0": {
+        "model.json": "940c0205c52c1cb4f3f499e27284a11dbfde0aef63f565246b6a76fb58a3a0d4",
+        "predictions.parquet": "1c5d52a00b4fa8b24fe27f71c768a8e9a76a691a2742d6c94565d5c27a33bd05",
+        "daily_station_mass_water.parquet": "789d59755c8ad0fa4e507d4fba98af955765b462eaf988f2f52aafd9b61a11ea"
+      },
+      "T24_G_M_H1_s1": {
+        "model.json": "0760102ef746ea63dcbeb9fc6172ac31fb6bea71f77051b6aec9cc68def20674",
+        "predictions.parquet": "7ceaa4653308d64f4fca5490dcb591c56bb4484e600d815fdb07c6682306de62",
+        "daily_station_mass_water.parquet": "09faa2fd09d60d6ea6c91c25191f2316cbdfdeb3b96b9442f12d825cd4f51b50"
+      }
+    },
+    "models": {
+      "T24_G_D_H1_s0": {
+        "parameters": 30,
+        "pg": 3.900272409484984e-07,
+        "objective": 1.2084290708193024,
+        "kind": null
+      },
+      "T24_G_D_H1_s1": {
+        "parameters": 30,
+        "pg": 2.322859329931346e-06,
+        "objective": 1.208429070828273,
+        "kind": null
+      },
+      "T24_G_M_H1_s0": {
+        "parameters": 30,
+        "pg": 5.645869524095865e-07,
+        "objective": 1.187270258921654,
+        "kind": null
+      },
+      "T24_G_M_H1_s1": {
+        "parameters": 30,
+        "pg": 1.8259201732262476e-06,
+        "objective": 1.18727025892294,
+        "kind": null
+      }
+    },
+    "tags": [
+      "T24_G_D_H1_s0",
+      "T24_G_D_H1_s1",
+      "T24_G_M_H1_s0",
+      "T24_G_M_H1_s1"
+    ],
+    "model_json_sha256_text": "4e753417bcb69d7b1276b75cd64519f5cff1fb19332a38b9548d88890f5490c4",
+    "statement": "All four published H1 D29_BE paths, 30 parameters each, are registered by sha256. They are reused, never refitted."
+  },
+  "G0-3_fct8_artifacts": {
+    "passed": true,
+    "folds": {
+      "T24_G_D_H1_FCT8": {
+        "phi_bar": {
+          "sha256": "7fe97fde10c2346dbbb08a1817da243124e1d78d9d73fcf8131c448fa1ae6450",
+          "matches_design": true,
+          "bytes": 11305088
+        },
+        "weight": {
+          "sha256": "09d98ec1409cd6b8778ee2544833f20a81671404270d511b959f382362852f5e",
+          "matches_design": true,
+          "bytes": 43011968
+        },
+        "base_fold": "T24_G_D_H1",
+        "weight_fraction_exactly_zero": 0.149607549921138,
+        "cells_with_zero_weight_mass": 58,
+        "orthogonality_residual": 9.997076899785562e-16,
+        "independent_recomputation": {
+          "days": 23376,
+          "months": 768,
+          "reaches": 230,
+          "days_per_month": {
+            "min": 28,
+            "median": 31.0,
+            "max": 31,
+            "n_single_day_months": 0
+          },
+          "grouping": {
+            "mid_non_decreasing_runs": 0,
+            "run_boundaries_equal_starts": true,
+            "run_ids_are_arange": true,
+            "n_run_boundaries": 768,
+            "n_starts": 768,
+            "note": "reduceat(weight, starts) is only correct when each month is one contiguous non-decreasing run starting where `starts` says. This is the precondition it never checks, and phi_bar[mid] would otherwise stay self-consistent and undetectable."
+          },
+          "recomputed_phi_bar": {
+            "max_abs_gap_over_scale": 4.739590718499007e-16,
+            "independent_route": "explicit per-month boolean masks",
+            "cells_with_zero_weight_mass": 58,
+            "fraction_of_cells_zero_mass": 0.0003283514492753623,
+            "defining_property_max_residual_over_phi_scale": 7.426136979891853e-15,
+            "uniform_fallback_max_gap_over_phi_scale": 6.037509739749475e-17
+          },
+          "passes": true
+        },
+        "independent_recomputation_passed": true
+      },
+      "T24_G_M_H1_FCT8": {
+        "phi_bar": {
+          "sha256": "0d0e81bb06f696bb54272692c3b3041dd5c118a3b2dbfa3c417e39aabc7b86a9",
+          "matches_design": true,
+          "bytes": 11305088
+        },
+        "weight": {
+          "sha256": "725ca5f774bb8b25494c1d76d4bc792747978abe3e1c22756a22a583d12eefa7",
+          "matches_design": true,
+          "bytes": 43011968
+        },
+        "base_fold": "T24_G_M_H1",
+        "weight_fraction_exactly_zero": 0.149607549921138,
+        "cells_with_zero_weight_mass": 58,
+        "orthogonality_residual": 9.800067046299198e-16,
+        "independent_recomputation": {
+          "days": 23376,
+          "months": 768,
+          "reaches": 230,
+          "days_per_month": {
+            "min": 28,
+            "median": 31.0,
+            "max": 31,
+            "n_single_day_months": 0
+          },
+          "grouping": {
+            "mid_non_decreasing_runs": 0,
+            "run_boundaries_equal_starts": true,
+            "run_ids_are_arange": true,
+            "n_run_boundaries": 768,
+            "n_starts": 768,
+            "note": "reduceat(weight, starts) is only correct when each month is one contiguous non-decreasing run starting where `starts` says. This is the precondition it never checks, and phi_bar[mid] would otherwise stay self-consistent and undetectable."
+          },
+          "recomputed_phi_bar": {
+            "max_abs_gap_over_scale": 4.752778811830802e-16,
+            "independent_route": "explicit per-month boolean masks",
+            "cells_with_zero_weight_mass": 58,
+            "fraction_of_cells_zero_mass": 0.0003283514492753623,
+            "defining_property_max_residual_over_phi_scale": 1.3524021817038823e-14,
+            "uniform_fallback_max_gap_over_phi_scale": 6.037509739749475e-17
+          },
+          "passes": true
+        },
+        "independent_recomputation_passed": true
+      }
+    },
+    "weight_verification_status": "PASS_WEIGHT_VERIFICATION",
+    "statement": "w = h_preD29 at the published optimum, frozen for the whole round; phi_bar is its w-weighted monthly reduction. Both are hash-pinned in the design and re-verified here. The orthogonality residual (the w-weighted within-month mean of phi_bar - phi) is at machine precision, which is what makes the level and timing halves genuinely orthogonal. phi_bar is additionally recomputed by an independent route in work/verify_fct8_weight.py, which also checks that each month is one contiguous non-decreasing run beginning exactly where `starts` says -- the precondition np.add.reduceat depends on and never verifies, and one no F1 gate can reach because at delta = 0 phi_bar enters no prediction."
+  },
+  "G0-4_degenerate_weight": {
+    "passed": true,
+    "blocking": false,
+    "folds": {
+      "T24_G_D_H1_FCT8": {
+        "cells_with_zero_weight_mass": 58,
+        "reaches_with_a_zero_mass_month": 33,
+        "weight_fraction_exactly_zero": 0.149607549921138,
+        "min_positive_monthly_weight_mass": 3.001251710630605e-05
+      },
+      "T24_G_M_H1_FCT8": {
+        "cells_with_zero_weight_mass": 58,
+        "reaches_with_a_zero_mass_month": 33,
+        "weight_fraction_exactly_zero": 0.149607549921138,
+        "min_positive_monthly_weight_mass": 3.126596853465757e-05
+      }
+    },
+    "nonzero": true,
+    "statement": "`hazard` uses where(contact>0, exp(logh), 0), so reaches with zero contact have w identically zero and their month has sum(w) = 0. The fallback granularity is the cell, not the reach: these (month, reach) cells take the uniform monthly mean of the basis. By the nesting identity u_FCT(delta=0) = mu(b) + u(b) - mu(b) = u(b) for ANY w, the fallback cannot move the delta = 0 predictions, which V8 verifies."
+  },
+  "G0-5_zero_fit_precheck": {
+    "passed": true,
+    "blocking": false,
+    "norm_dJ_ddelta_at_zero": 0.006713710956395511,
+    "max_abs_dJ_ddelta_at_zero": 0.004469468979620806,
+    "norm_dJ_db_at_zero": 1.2834333050575615e-07,
+    "ratio": 52310.55583441014,
+    "solver_noise_floor": 1e-05,
+    "delta_has_first_order_room": true,
+    "precheck_verdict": "OUTSIDE_FLOOR_DELTA_HAS_FIRST_ORDER_ROOM",
+    "months_level_note": "Because dJ/ddelta|0 = L - (1/2) dJ/db|0 and dJ/db|0 is ~1e-7, this residual gradient is the month-LEVEL gradient L. The first-order room measured here is therefore a month-level gain, which is why the registered prediction expects the improvement to appear as a month-level (bias/NSE/RMSE) gain rather than as a recovery of within-month structure.",
+    "min_singular_value_fct8": 0.26230487469227104,
+    "min_singular_value_d29": 0.26496110591025646,
+    "condition_number_fct8": 4034.7482433907066,
+    "condition_number_d29": 3993.8543988444635,
+    "rank_deficient": false,
+    "smallest_principal_angle_deg": 82.76516440880829,
+    "max_abs_pairwise_corr_delta_to_dynamic": 0.9372421233700994,
+    "statement": "Two readings that qualify every F2 result and must travel with it. (a) If the delta gradient at the published optimum lies inside the solver noise floor, the old model is already first-order balanced in the level/timing split and FCT8 can only pay off at second order -- the round is then expected to be near-null and says so in advance. (b) A near-unit pairwise correlation between delta_j and its own dynamic coefficient is expected, not a bug: d u_fct/d b_j = phi_j/sqrt8 and d u_fct/d delta_j = (2 phi_bar_j - phi_j)/(2 sqrt8), which are nearly parallel precisely because the measured phi_bar_std/basis_std is 0.90. Whether the BLOCK lost identifiability is answered by the singular values and the principal angles, not by that correlation. If the correlation is high while the Jacobian stays full rank, the correct statement is that the individual delta_j cannot be separated from its b_j, even though the block is identified; that is written down, not hidden."
+  },
+  "G0-6_next_channel": {
+    "passed": true,
+    "blocking": false,
+    "gate_b_report": "E:\\SPARROW\\5_Test\\20260917_1\\reports\\gate_b_report.md",
+    "gate_b_report_sha256": "7371d4b3681088e1c4537f3d5411b22815be3453e2cd4c64a02c02cf8bc828bf",
+    "adjudicated_channel": "DISSOLVED_ORGANIC_N_PATH",
+    "rejected": [
+      "PARTICULATE_N_EVENT_PATH",
+      "DIRECT_HUMAN_NH4_FAST_SOURCE"
+    ],
+    "threshold_sensitive": true,
+    "flip_threshold": 0.2,
+    "partial_correlation_d1q": 0.1928,
+    "pooled_vs_within_month_sign_flip": {
+      "within_event": 0.198,
+      "pooled": -0.166
+    },
+    "statement": "Plan F6 required choosing between a direct source and an event N form. Gate B tested both and rejected both: turbidity partial correlation spans zero in 4 of 4 definitions (point estimates -0.006..+0.026), and NH3_N spans zero in 4 of 4 with a consistently negative sign -- the opposite of what F6 required. The single surviving channel is dissolved organic N via COD_Mn, positive and excluding zero in 4 of 4. It is threshold sensitive (0.1928 against a flip threshold of 0.20) and its sign reverses between the within-event and the pooled question, so the threshold band must be frozen before the numbers are read. F6 is rewritten accordingly.",
+    "carried_caveat": "Gate D D1: 2024 has NO measured discharge at all, 50.0 percent of the evaluation months unobserved. Gate B tests a concentration residual and therefore stands, but any reading routed through C = N/Q inherits an unconstrained denominator. Reaches 190 and 7 were ruled water-unusable by Gate D while carrying 4 high-frequency stations."
+  },
+  "G0-7_fold_identity": {
+    "passed": true,
+    "folds": {
+      "T24_G_D_H1_FCT8": {
+        "base_fold": "T24_G_D_H1",
+        "train_identical": true,
+        "registry_identical": true,
+        "train_sha256": "eace6052b6e02055aa7d34716c16ce10665bd5df2ae982c30e13a94d0395b688"
+      },
+      "T24_G_M_H1_FCT8": {
+        "base_fold": "T24_G_M_H1",
+        "train_identical": true,
+        "registry_identical": true,
+        "train_sha256": "647e3fc831b70c25ae33f2f028c3b9b3c8df5c7bbacf1d9aff6e83ba4e1b44b9"
+      }
+    },
+    "statement": "Each FCT8 fold trains on a byte-identical copy of its baseline fold, asserted by sha256, so the nesting is a construction property rather than a coincidence to be argued afterwards."
+  },
+  "G0-8_job_graph": {
+    "passed": true,
+    "jobs": {
+      "T24_G_D_H1_FCT8_s0": {
+        "kind": "FCT8",
+        "fold": "T24_G_D_H1_FCT8",
+        "start": 0,
+        "objective_id": "D",
+        "parent_tags": [
+          "T24_G_M_H1_FCT8_s0",
+          "T24_G_M_H1_FCT8_s1"
+        ],
+        "self_parent": false,
+        "mirrors_baseline": true
+      },
+      "T24_G_D_H1_FCT8_s1": {
+        "kind": "FCT8",
+        "fold": "T24_G_D_H1_FCT8",
+        "start": 1,
+        "objective_id": "D",
+        "parent_tags": [],
+        "self_parent": false,
+        "mirrors_baseline": true
+      },
+      "T24_G_M_H1_FCT8_s0": {
+        "kind": "FCT8",
+        "fold": "T24_G_M_H1_FCT8",
+        "start": 0,
+        "objective_id": "M",
+        "parent_tags": [],
+        "self_parent": false,
+        "mirrors_baseline": true
+      },
+      "T24_G_M_H1_FCT8_s1": {
+        "kind": "FCT8",
+        "fold": "T24_G_M_H1_FCT8",
+        "start": 1,
+        "objective_id": "M",
+        "parent_tags": [],
+        "self_parent": false,
+        "mirrors_baseline": true
+      }
+    },
+    "n_jobs": 4,
+    "tags": [
+      "T24_G_D_H1_FCT8_s0",
+      "T24_G_D_H1_FCT8_s1",
+      "T24_G_M_H1_FCT8_s0",
+      "T24_G_M_H1_FCT8_s1"
+    ],
+    "statement": "Four new fits and no more: two folds times two starts, plus the negative control fold. The baseline is reused as published artefacts and is deliberately absent from this job graph, so a re-run cannot silently buy 16 more fits. Start 0 of the D fold warm-starts from both M starts, exactly as the baseline arm does."
+  },
+  "G0-10_f0_zero_fit": {
+    "passed": true,
+    "blocking": true,
+    "missing": [],
+    "sha256": {
+      "f0_phenotype.json": "ce16a4c9813897f045e3746c74d43aaaba7a033a2a1c062969fef8578ab94ec6",
+      "f0_phenotype.parquet": "3a3224eefdaecab763f61f2c619bd11f144bc80b62caf7946f08b56de32d7aea",
+      "f0_phenotype_hf.json": "de0ddd073ebc6134efa4796796aa6e84cf57e23a10f3e5cc95e4b1bf4c3f5604",
+      "f0_phenotype_hf.parquet": "e7a2ee6960a194f4dd205a5471758fa671cc0e286dd456d4875516740018d21c",
+      "f0_saturation.json": "71b919dc4654a02d3359d979e0a7c7958e27e35fd8170099bb8900289d5cc1f2",
+      "spatial_blocks.json": "bb3fdd27623676c026d46116e20ba9e36e4e96686921bc9760dda1c1aee33645"
+    },
+    "registered_prediction": "Registered before F2, with zero FCT8 fits performed. Four measured zero-fit facts fix\nwhat FCT8 can and cannot be expected to do, so what follows is a split, not a hope.\n\nM1. The published H1-D29_BE optimum is NOT first-order balanced in the level/timing\n    split. At delta = 0 the scaled residual gradient is max|dJ/ddelta| = 4.469e-03,\n    447x the solver's 1e-5 noise floor, while max|dJ/db| = 9.16e-08 -- b is converged\n    and delta is not. Since dJ/ddelta|0 = L - (1/2) dJ/db|0 and the second term is\n    ~1e-7, that residual gradient IS the month-level gradient L. So the first-order\n    room FCT8 can reach is a MONTH-LEVEL gain, not a within-month one.\nM2. The delta block does not damage conditioning: minimum singular value 0.26231 for\n    38 parameters against 0.26496 for the 30-parameter baseline, a 1.0 percent drop for\n    8 added parameters; rank_deficient false; condition number 4035 against 3994.\nM3. The delta block still adds genuinely new directions: principal angles between the\n    8 delta rows and the 8 dynamic rows span 12.92 to 82.77 degrees, so the subspaces\n    differ even though max|corr(delta_j, b_j)| = 0.9372. The honest statement is that\n    the BLOCK is identified while the individual delta_j cannot be separated from its\n    own b_j -- which is why only block-level claims are made below.\nM4. The error at the 15 high-frequency stations is dominated by the WITHIN-month\n    component, for which FCT8 adds no path. 43.1 percent of observed daily variance is\n    within-month, but the model places only 15.4 percent of its own variance there; the\n    within-month sd ratio is 0.254 against 0.512 between months, and r_within is 0.082\n    against r_between 0.597. The multiplier's own within-month spread is already healthy\n    (sd 0.43213, 0.00 percent railed, 92.37 percent in the tanh linear band), so the\n    within-month movement exists at the hazard and is lost downstream, in the M/L\n    reservoir and the routing operators, which FCT8 leaves byte-identical (V6).\n\nPrediction from M1 to M4:\n  (a) delta WILL be pushed away from zero, and the gain will appear mainly as a\n      month-level improvement -- bias and, through the month mean, NSE and RMSE --\n      because that is where the first-order room is (M1) and the level half carries\n      twice the leverage of the timing half.\n  (b) FCT8 will NOT materially recover the within-month amplitude or shape. It should\n      not drive sd_ratio_within (0.254) toward 1, nor turn r_within (0.082) healthy.\n      M4 says that freedom already exists and is lost downstream, and FCT8 does not\n      touch the downstream chain.\n  (c) The seven promotion thresholds are RMSE- and amplitude-dominated, so FCT8 may\n      satisfy some of them through the month-level channel while the within-month\n      defect it was aimed at is still there. Should that happen both readings are\n      reported together -- mechanism partly confirmed, target defect not fixed -- and\n      'FCT8 improved NSE' may NOT be presented as evidence that the level/timing\n      coupling was the binding constraint.\n\nFalsifier: FCT8 drives sd_ratio_within toward 1 or raises r_within substantially. That\nwould mean the within-month shape was reachable from the hazard after all, and would\ncontradict M4's inference that the loss is downstream.\n",
+    "registered_prediction_sha256": "fcc8aba24b7ec22557c34ad91c9865015c1d84580c0bf5e789cb5bcc8962659a",
+    "hf_axis_prediction": "Written before F2, from the three numbers above, and hashed by gate0. FCT8 can only reallocate which part of the latent score is month-constant; it cannot add a path for within-month movement to survive the downstream chain. So the falsifiable split: (a) IF the level/timing conflict is the real defect, FCT8 raises r_within and within_share_pred -- an allocation gain; (b) FCT8 should NOT recover sd_ratio_within (0.254), because the multiplier is not amplitude-constrained. Consequence to state in advance: the seven promotion thresholds are dominated by RMSE and amplitude terms, so on this prediction FCT8 can confirm its mechanism and still fail promotion. Should that happen, both readings must be reported together -- mechanism confirmed, promotion not met -- and neither may be dropped. Falsifier: FCT8 drives sd_ratio_within toward 1. That would mean the multiplier's within-month SHAPE, not merely its allocation, was the binding constraint after all, and would contradict the saturation audit.",
+    "phenotype_monthly": {
+      "counts": {
+        "AMPLITUDE": 33,
+        "LEVEL": 27,
+        "SUPPORT": 54,
+        "TIMING": 2
+      },
+      "stations": 116,
+      "deficit_medians": {
+        "NSE": -0.7125706980690705,
+        "level_abs": 0.7492472456768051,
+        "log_sd_ratio_abs": 0.8163859047339621,
+        "n_months": 12.0,
+        "r": 0.42128811619542067
+      },
+      "note": "Only 2 of 116 stations are TIMING-limited at the MONTHLY scale, while AMPLITUDE and LEVEL dominate and 54 are SUPPORT-limited. The monthly panel has one value per (station, month) and therefore cannot see the within-month axis FCT8 acts on, so this table does NOT support the round's premise and is reported as a qualifier rather than as evidence for FCT8."
+    },
+    "phenotype_hf": {
+      "median_within_share_obs": 0.43105964330765345,
+      "median_within_share_pred": 0.15361614319693426,
+      "median_sd_ratio_total": 0.42916427770465004,
+      "median_sd_ratio_between": 0.511791005061214,
+      "median_sd_ratio_within": 0.254370054282618,
+      "median_r_between": 0.597336353006348,
+      "median_r_within": 0.0818770960689556,
+      "stations_within_damped": 14,
+      "note": "At the 15 high-frequency stations the error is located INSIDE the month: 43.1 percent of observed daily variance is within-month but the model puts only 15.4 percent of its own variance there, and the within-month component is far worse than the between-month one (sd ratio 0.254 versus 0.512, r 0.082 versus 0.597). This axis is invisible to the monthly table above."
+    },
+    "saturation_audit": {
+      "tanh_argument_median_abs": 0.03371206039552617,
+      "fraction_railed": 1.5809600333303574e-05,
+      "fraction_linear": 0.9237082626551201,
+      "multiplier_sd": 0.4321347642692811,
+      "fraction_at_a_rail": 0.0,
+      "note": "The soft saturation is NOT the binding constraint: 0.00 percent of (day, reach) cells sit at a rail, 92.37 percent are in the near-linear band, and the multiplier's own within-month daily sd is a healthy 0.43213. The within-month freedom therefore exists at the hazard point FCT8 edits and is lost downstream of it, in the M/L reservoir and routing operators, which FCT8 leaves byte-identical. This is what makes the registered prediction below falsifiable in both directions."
+    },
+    "admission": [
+      {
+        "component_cluster_bootstrap_admitted": false,
+        "fallback": "leave-one-component-out jackknife + per-block effects",
+        "largest_share": 0.8017241379310345,
+        "n_nonempty_components": 7,
+        "rule": "n_nonempty_components >= 8 AND largest share < 0.40"
+      },
+      {
+        "components_without_any_station": [
+          "TERMINAL_0",
+          "TERMINAL_101",
+          "TERMINAL_12",
+          "TERMINAL_15",
+          "TERMINAL_162",
+          "TERMINAL_165",
+          "TERMINAL_27"
+        ],
+        "definition": "terminal-connected component (every reach drains to one terminal)",
+        "largest_share_of_reaches": 0.7434782608695653,
+        "largest_share_of_stations": 0.8017241379310345,
+        "members": {
+          "TERMINAL_19": [
+            "上中",
+            "上洞",
+            "上金",
+            "乌都河",
+            "九甸大桥",
+            "交州",
+            "京南",
+            "从江大桥",
+            "八角电站",
+            "公篓",
+            "六景",
+            "凤山糖厂",
+            "刘三姐故居",
+            "南岸",
+            "南江口",
+            "厂房大桥",
+            "双苏村",
+            "发耳",
+            "古封",
+            "叮当",
+            "坝草",
+            "坡脚",
+            "垒亭",
+            "天生桥",
+            "封开城上",
+            "小云尚大桥",
+            "山脚村",
+            "岔河口",
+            "岜怀",
+            "布龙",
+            "平榔",
+            "平而关",
+            "底先",
+            "弄瓦",
+            "思留口",
+            "扒齿",
+            "打邦",
+            "新华",
+            "新荣甸",
+            "昌林花园",
+            "木洞",
+            "杨民",
+            "松云",
+            "桂花",
+            "棉江",
+            "榕江",
+            "武林渡口",
+            "永昌桥",
+            "江边桥",
+            "清水江小学",
+            "渔村",
+            "渠立",
+            "火电厂",
+            "爽底坪",
+            "狗街",
+            "甲洋",
+            "界牌",
+            "白沙街",
+            "白马",
+            "百雅",
+            "盘溪大桥",
+            "石咀新村",
+            "磨盘山",
+            "禄丰村",
+            "罗村口",
+            "老口",
+            "老鹰坡",
+            "脚板洲",
+            "自良渡口",
+            "荷塘",
+            "蔗香北",
+            "蔗香南",
+            "谷拉河大桥",
+            "贺街",
+            "赵家渡",
+            "车渡",
+            "那弄",
+            "郁江口",
+            "都安",
+            "都骑",
+            "锁龙桥",
+            "长底大桥",
+            "长虹桥",
+            "阳朔",
+            "雁江",
+            "露塘",
+            "马陇",
+            "黄果树",
+            "黄沙湾",
+            "黄泥河",
+            "黄种村",
+            "龙江三江口",
+            "龙眼电站"
+          ],
+          "TERMINAL_21": [
+            "东江江口",
+            "兴宁电站",
+            "庙咀里",
+            "马头福水",
+            "龙川城铁路桥"
+          ],
+          "TERMINAL_211": [
+            "边外河",
+            "青岩"
+          ],
+          "TERMINAL_216": [
+            "甲茶",
+            "顶换村"
+          ],
+          "TERMINAL_22": [
+            "公庄河口(泰美)"
+          ],
+          "TERMINAL_25": [
+            "五马岗"
+          ],
+          "TERMINAL_55": [
+            "三溪桥",
+            "北江石尾",
+            "十里亭",
+            "古市",
+            "官渡",
+            "新坪山桥",
+            "滃江大站",
+            "石角",
+            "连江西牛",
+            "长坝",
+            "高桥",
+            "龙归"
+          ]
+        },
+        "n_components": 7,
+        "n_components_total": 14,
+        "n_nonempty_components": 7,
+        "reaches_per_component": {
+          "TERMINAL_0": 1,
+          "TERMINAL_101": 1,
+          "TERMINAL_12": 1,
+          "TERMINAL_15": 1,
+          "TERMINAL_162": 2,
+          "TERMINAL_165": 1,
+          "TERMINAL_19": 171,
+          "TERMINAL_21": 17,
+          "TERMINAL_211": 5,
+          "TERMINAL_216": 3,
+          "TERMINAL_22": 1,
+          "TERMINAL_25": 3,
+          "TERMINAL_27": 1,
+          "TERMINAL_55": 22
+        },
+        "stations_per_component": {
+          "TERMINAL_19": 93,
+          "TERMINAL_21": 5,
+          "TERMINAL_211": 2,
+          "TERMINAL_216": 2,
+          "TERMINAL_22": 1,
+          "TERMINAL_25": 1,
+          "TERMINAL_55": 12
+        }
+      },
+      {
+        "definition": "first downstream reach of strictly higher Strahler order",
+        "largest_share_of_stations": 0.06896551724137931,
+        "members": {
+          "ANCHOR_102": [
+            "布龙"
+          ],
+          "ANCHOR_107": [
+            "那弄"
+          ],
+          "ANCHOR_111": [
+            "八角电站",
+            "平而关"
+          ],
+          "ANCHOR_112": [
+            "上金"
+          ],
+          "ANCHOR_114": [
+            "上洞"
+          ],
+          "ANCHOR_116": [
+            "百雅"
+          ],
+          "ANCHOR_133": [
+            "底先"
+          ],
+          "ANCHOR_135": [
+            "罗村口",
+            "谷拉河大桥"
+          ],
+          "ANCHOR_141": [
+            "叮当"
+          ],
+          "ANCHOR_142": [
+            "公篓",
+            "弄瓦",
+            "白马",
+            "雁江"
+          ],
+          "ANCHOR_147": [
+            "龙眼电站"
+          ],
+          "ANCHOR_148": [
+            "马陇"
+          ],
+          "ANCHOR_149": [
+            "昌林花园"
+          ],
+          "ANCHOR_164": [
+            "长底大桥"
+          ],
+          "ANCHOR_166": [
+            "赵家渡"
+          ],
+          "ANCHOR_167": [
+            "甲洋"
+          ],
+          "ANCHOR_17": [
+            "京南",
+            "桂花"
+          ],
+          "ANCHOR_170": [
+            "新华"
+          ],
+          "ANCHOR_172": [
+            "交州",
+            "从江大桥",
+            "榕江"
+          ],
+          "ANCHOR_176": [
+            "凤山糖厂",
+            "木洞",
+            "杨民",
+            "龙江三江口"
+          ],
+          "ANCHOR_177": [
+            "渔村"
+          ],
+          "ANCHOR_18": [
+            "南江口"
+          ],
+          "ANCHOR_183": [
+            "界牌"
+          ],
+          "ANCHOR_184": [
+            "黄种村"
+          ],
+          "ANCHOR_185": [
+            "刘三姐故居"
+          ],
+          "ANCHOR_186": [
+            "新荣甸"
+          ],
+          "ANCHOR_19": [
+            "松云"
+          ],
+          "ANCHOR_190": [
+            "九甸大桥",
+            "天生桥",
+            "永昌桥",
+            "狗街",
+            "盘溪大桥",
+            "禄丰村"
+          ],
+          "ANCHOR_192": [
+            "锁龙桥"
+          ],
+          "ANCHOR_193": [
+            "江边桥",
+            "清水江小学",
+            "长虹桥"
+          ],
+          "ANCHOR_195": [
+            "黄泥河"
+          ],
+          "ANCHOR_196": [
+            "厂房大桥",
+            "发耳",
+            "坝草",
+            "岔河口",
+            "蔗香北"
+          ],
+          "ANCHOR_202": [
+            "岜怀"
+          ],
+          "ANCHOR_203": [
+            "打邦",
+            "老鹰坡",
+            "黄果树"
+          ],
+          "ANCHOR_206": [
+            "乌都河"
+          ],
+          "ANCHOR_208": [
+            "小云尚大桥"
+          ],
+          "ANCHOR_212": [
+            "青岩"
+          ],
+          "ANCHOR_216": [
+            "甲茶",
+            "顶换村"
+          ],
+          "ANCHOR_29": [
+            "自良渡口"
+          ],
+          "ANCHOR_31": [
+            "上中",
+            "六景",
+            "南岸",
+            "棉江",
+            "渠立",
+            "火电厂",
+            "老口",
+            "郁江口"
+          ],
+          "ANCHOR_33": [
+            "石咀新村"
+          ],
+          "ANCHOR_34": [
+            "双苏村",
+            "坡脚",
+            "垒亭",
+            "蔗香南",
+            "车渡",
+            "都安"
+          ],
+          "ANCHOR_4": [
+            "平榔"
+          ],
+          "ANCHOR_45": [
+            "马头福水"
+          ],
+          "ANCHOR_48": [
+            "龙川城铁路桥"
+          ],
+          "ANCHOR_5": [
+            "荷塘"
+          ],
+          "ANCHOR_51": [
+            "思留口",
+            "白沙街",
+            "贺街"
+          ],
+          "ANCHOR_57": [
+            "连江西牛"
+          ],
+          "ANCHOR_58": [
+            "官渡",
+            "滃江大站",
+            "龙归"
+          ],
+          "ANCHOR_59": [
+            "十里亭",
+            "长坝"
+          ],
+          "ANCHOR_6": [
+            "山脚村",
+            "爽底坪"
+          ],
+          "ANCHOR_61": [
+            "古市"
+          ],
+          "ANCHOR_69": [
+            "兴宁电站",
+            "庙咀里"
+          ],
+          "ANCHOR_81": [
+            "扒齿",
+            "磨盘山",
+            "阳朔"
+          ],
+          "ANCHOR_82": [
+            "黄沙湾"
+          ],
+          "ANCHOR_89": [
+            "脚板洲"
+          ],
+          "ANCHOR_93": [
+            "三溪桥",
+            "新坪山桥"
+          ],
+          "TERMINAL_19": [
+            "古封",
+            "封开城上",
+            "武林渡口",
+            "都骑",
+            "露塘"
+          ],
+          "TERMINAL_21": [
+            "东江江口"
+          ],
+          "TERMINAL_211": [
+            "边外河"
+          ],
+          "TERMINAL_22": [
+            "公庄河口(泰美)"
+          ],
+          "TERMINAL_25": [
+            "五马岗"
+          ],
+          "TERMINAL_55": [
+            "北江石尾",
+            "石角",
+            "高桥"
+          ]
+        },
+        "n_blocks": 63,
+        "stations_per_block": {
+          "ANCHOR_102": 1,
+          "ANCHOR_107": 1,
+          "ANCHOR_111": 2,
+          "ANCHOR_112": 1,
+          "ANCHOR_114": 1,
+          "ANCHOR_116": 1,
+          "ANCHOR_133": 1,
+          "ANCHOR_135": 2,
+          "ANCHOR_141": 1,
+          "ANCHOR_142": 4,
+          "ANCHOR_147": 1,
+          "ANCHOR_148": 1,
+          "ANCHOR_149": 1,
+          "ANCHOR_164": 1,
+          "ANCHOR_166": 1,
+          "ANCHOR_167": 1,
+          "ANCHOR_17": 2,
+          "ANCHOR_170": 1,
+          "ANCHOR_172": 3,
+          "ANCHOR_176": 4,
+          "ANCHOR_177": 1,
+          "ANCHOR_18": 1,
+          "ANCHOR_183": 1,
+          "ANCHOR_184": 1,
+          "ANCHOR_185": 1,
+          "ANCHOR_186": 1,
+          "ANCHOR_19": 1,
+          "ANCHOR_190": 6,
+          "ANCHOR_192": 1,
+          "ANCHOR_193": 3,
+          "ANCHOR_195": 1,
+          "ANCHOR_196": 5,
+          "ANCHOR_202": 1,
+          "ANCHOR_203": 3,
+          "ANCHOR_206": 1,
+          "ANCHOR_208": 1,
+          "ANCHOR_212": 1,
+          "ANCHOR_216": 2,
+          "ANCHOR_29": 1,
+          "ANCHOR_31": 8,
+          "ANCHOR_33": 1,
+          "ANCHOR_34": 6,
+          "ANCHOR_4": 1,
+          "ANCHOR_45": 1,
+          "ANCHOR_48": 1,
+          "ANCHOR_5": 1,
+          "ANCHOR_51": 3,
+          "ANCHOR_57": 1,
+          "ANCHOR_58": 3,
+          "ANCHOR_59": 2,
+          "ANCHOR_6": 2,
+          "ANCHOR_61": 1,
+          "ANCHOR_69": 2,
+          "ANCHOR_81": 3,
+          "ANCHOR_82": 1,
+          "ANCHOR_89": 1,
+          "ANCHOR_93": 2,
+          "TERMINAL_19": 5,
+          "TERMINAL_21": 1,
+          "TERMINAL_211": 1,
+          "TERMINAL_22": 1,
+          "TERMINAL_25": 1,
+          "TERMINAL_55": 3
+        }
+      }
+    ],
+    "statement": "Why this block is blocking: the registered prediction is only a prediction if it is hashed before F2 runs. It states, in advance, that FCT8 can plausibly raise r_within and within_share_pred while NOT recovering sd_ratio_within, and that the seven promotion thresholds are amplitude-dominated so FCT8 may confirm its mechanism and still fail promotion. If that happens both readings must be reported together; neither may be dropped for convenience."
+  },
+  "G0-9_spatial_blocks": {
+    "passed": true,
+    "blocking": false,
+    "admission": {
+      "component_cluster_bootstrap_admitted": false,
+      "fallback": "leave-one-component-out jackknife + per-block effects",
+      "largest_share": 0.8017241379310345,
+      "n_nonempty_components": 7,
+      "rule": "n_nonempty_components >= 8 AND largest share < 0.40"
+    },
+    "level1_stations": {
+      "TERMINAL_19": 93,
+      "TERMINAL_21": 5,
+      "TERMINAL_211": 2,
+      "TERMINAL_216": 2,
+      "TERMINAL_22": 1,
+      "TERMINAL_25": 1,
+      "TERMINAL_55": 12
+    },
+    "level2_n_blocks": 63,
+    "statement": "Frozen before any FCT8 result. If the admission gate is not met, the component-cluster bootstrap is NOT a primary CI and the report carries leave-one-component-out jackknife plus per-block effects instead. No CI is computed merely to keep a promotion threshold alive."
+  },
+  "blocking_failures": [],
+  "status": "PASS",
+  "seconds": 0.12773370742797852
+}

@@ -1,0 +1,20 @@
+{
+  "status": "NO_REGISTERED_SHAPE_SUPPORT",
+  "criteria": {
+    "physical_pair": true,
+    "coverage": true,
+    "reduction_25pct": false,
+    "development_same_direction": true,
+    "station_fraction": true,
+    "centered_no_worse": true,
+    "neighbor_same_direction": true,
+    "level_same_direction": "UNDETERMINED_PHYSICAL_GATE_FAILED",
+    "background_not_sole_driver": true
+  },
+  "tests": {
+    "nonadjacent_rejected": true,
+    "duplicated_sample_median_invariant": true,
+    "leap_day": true
+  },
+  "base_peak_caveat": "Most event ratios improve with peak rising, but absolute peak error increases"
+}

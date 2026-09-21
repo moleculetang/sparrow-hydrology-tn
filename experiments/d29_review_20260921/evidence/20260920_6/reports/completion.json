@@ -1,0 +1,28 @@
+{
+  "status": "COMPLETE",
+  "selected": {
+    "F23_R": "F23_R_s0",
+    "F23_X": "F23_X_s1",
+    "F24_R": "F24_R_s0",
+    "F24_X": "F24_X_s0"
+  },
+  "missing": [],
+  "independent_processes": {
+    "F23_R_s0": true,
+    "F23_X_s1": true,
+    "F24_R_s0": true,
+    "F24_X_s0": true
+  },
+  "independent_evaluation": true,
+  "directions": {
+    "F23": true,
+    "F24": true
+  },
+  "replay_bridge": {
+    "source": "E:\\SPARROW\\5_Test\\20260920_3\\outputs\\H1_D29\\daily_station.parquet",
+    "sha256": "40bd323d0c6389c65f9110a15ae8d9e20b95e10c1a3826b2194b54cde7efa6da",
+    "not_F23_baseline": true
+  },
+  "all_selected_numerically_sufficient": true,
+  "wall_hours": 3.5370531447066202
+}

@@ -1,0 +1,35 @@
+{
+  "initial_path": "E:\\SPARROW\\5_Test\\20260917_3\\outputs\\historical_initial_land_state_1961.npz",
+  "initial_sha256": "90690e0c8dd16abea0de04835922bdb4ad498dd7ade1855ccbbc5a31b8e1cd56",
+  "net_input_min_mm": -5.684341886080802e-14,
+  "negative_cells": 635199,
+  "negative_total_mm": -4.1868846543534517e-10,
+  "status": "PASS_WITH_RECONSTRUCTION_ROUNDOFF",
+  "no_clipping": true,
+  "independent_soil_budget_max_error_mm": 1.4210854715202004e-13,
+  "producer": "E:\\SPARROW\\5_Test\\20260828_5\\scripts\\learnable_state_sig2p.py",
+  "producer_sha256": "35f3707bc73c45bab67e4ebd0e9bf6105ce4a7049714b41f4988b0eda8bbe2ac",
+  "source_lines": "101-123: excess=p-infiltration; upper_available=upper+excess; nonnegative conservative reweight",
+  "inherited_tolerance": "s33_spinup.py allclose atol=rtol=1e-8",
+  "implementation": "Donor prevolumes omega*Vu and (1-omega)*Vu; algebraically identical to carry plus assigned net input, without subtracting nearly equal stores",
+  "domains": {
+    "0.2": {
+      "max_exchange_fraction": 0.9999999999999898,
+      "max_water_balance_mm": 8.526512829121202e-14,
+      "max_xf": 0.9999999565131792,
+      "max_xp": 0.9999999999999987
+    },
+    "0.5": {
+      "max_exchange_fraction": 0.9999999999999942,
+      "max_water_balance_mm": 5.684341886080802e-14,
+      "max_xf": 0.9999998912829551,
+      "max_xp": 0.9999999999999992
+    },
+    "0.8": {
+      "max_exchange_fraction": 0.9999999999999956,
+      "max_water_balance_mm": 1.1368683772161603e-13,
+      "max_xf": 0.9999998260527395,
+      "max_xp": 0.9999999999999997
+    }
+  }
+}

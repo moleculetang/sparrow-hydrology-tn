@@ -1,0 +1,56 @@
+{
+  "MIX": {
+    "status": "READY"
+  },
+  "H1-D29": {
+    "status": "READY"
+  },
+  "A-HALF": {
+    "status": "READY"
+  },
+  "A-FULL": {
+    "status": "READY"
+  },
+  "B-P0.5-R0.1": {
+    "status": "READY"
+  },
+  "B-P0.5-R0.5": {
+    "status": "READY"
+  },
+  "B-P0.5-R1": {
+    "status": "READY"
+  },
+  "B-P1-R0.1": {
+    "status": "READY"
+  },
+  "B-P1-R0.5": {
+    "status": "READY"
+  },
+  "B-P1-R1": {
+    "status": "READY"
+  },
+  "C-W0.2-P0.2": {
+    "status": "READY"
+  },
+  "C-W0.2-P0.5": {
+    "status": "READY"
+  },
+  "C-W0.2-P1": {
+    "status": "READY"
+  },
+  "C-W0.5-P0.5": {
+    "status": "READY"
+  },
+  "C-W0.5-P1": {
+    "status": "READY"
+  },
+  "C-W0.8-P0.5": {
+    "status": "READY"
+  },
+  "C-W0.8-P0.8": {
+    "status": "READY"
+  },
+  "C-W0.8-P1": {
+    "status": "READY"
+  }
+}

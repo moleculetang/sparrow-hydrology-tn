@@ -1,0 +1,344 @@
+[
+  {
+    "source": "5_Test/20260919_3/work/layers21.py",
+    "module": "structure_model",
+    "selected": "5_Test/20260916_2/scripts/structure_model.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260919_3/work/common21.py",
+    "module": "temporal_model",
+    "selected": "5_Test/20260916_2/scripts/temporal_model.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260919_3/work/common21.py",
+    "module": "campaign_model",
+    "selected": "5_Test/20260916_2/scripts/campaign_model.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260919_3/work/common21.py",
+    "module": "structure_model",
+    "selected": "5_Test/20260916_2/scripts/structure_model.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260919_3/work/common21.py",
+    "module": "native_runtime",
+    "selected": "5_Test/20260916_2/scripts/native_runtime.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260919_3/work/common21.py",
+    "module": "hf_model",
+    "selected": "5_Test/20260916_2/scripts/hf_model.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260919_3/work/hazard_g.py",
+    "module": "campaign_model",
+    "selected": "5_Test/20260916_2/scripts/campaign_model.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260919_2/work/common20.py",
+    "module": "temporal_model",
+    "selected": "5_Test/20260916_2/scripts/temporal_model.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260919_2/work/common20.py",
+    "module": "campaign_model",
+    "selected": "5_Test/20260916_2/scripts/campaign_model.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260919_2/work/common20.py",
+    "module": "structure_model",
+    "selected": "5_Test/20260916_2/scripts/structure_model.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260919_2/work/common20.py",
+    "module": "native_runtime",
+    "selected": "5_Test/20260916_2/scripts/native_runtime.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260919_2/work/common20.py",
+    "module": "hf_model",
+    "selected": "5_Test/20260916_2/scripts/hf_model.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260919_2/work/phase0_amplitude_budget.py",
+    "module": "structure_model",
+    "selected": "5_Test/20260916_2/scripts/structure_model.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260919_1/work/common19.py",
+    "module": "campaign_model",
+    "selected": "5_Test/20260916_2/scripts/campaign_model.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260919_1/work/common19.py",
+    "module": "native_runtime",
+    "selected": "5_Test/20260916_2/scripts/native_runtime.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260826_15/scripts/run_stage15.py",
+    "module": "hydrology_core",
+    "selected": "5_Test/20260825_3/scripts/hydrology_core.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260828_33/scripts/frozen_hydrology_core.py",
+    "module": "hydrology_core",
+    "selected": "5_Test/20260825_3/scripts/hydrology_core.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260828_33/scripts/frozen_hydrology_core.py",
+    "module": "run_stage25",
+    "selected": "5_Test/20260826_25/scripts/run_stage25.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260827_3/scripts/run_stage3_diagnostics.py",
+    "module": "hydrology_core",
+    "selected": "5_Test/20260825_3/scripts/hydrology_core.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260827_3/scripts/run_stage3_diagnostics.py",
+    "module": "run_stage25",
+    "selected": "5_Test/20260826_25/scripts/run_stage25.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260826_25/scripts/run_stage25.py",
+    "module": "hydrology_core",
+    "selected": "5_Test/20260825_3/scripts/hydrology_core.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260826_25/scripts/run_stage25.py",
+    "module": "run_stage4",
+    "selected": "5_Test/20260825_4/scripts/run_stage4.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260825_4/scripts/run_stage4.py",
+    "module": "hydrology_core",
+    "selected": "5_Test/20260825_3/scripts/hydrology_core.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260827_2/scripts/run_stage2_temporal.py",
+    "module": "run_stage25",
+    "selected": "5_Test/20260826_25/scripts/run_stage25.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260827_2/scripts/run_stage2_temporal.py",
+    "module": "hydrology_core",
+    "selected": "5_Test/20260825_3/scripts/hydrology_core.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260827_2/scripts/run_stage2_temporal.py",
+    "module": "fold_worker",
+    "selected": "5_Test/20260826_26/scripts/fold_worker.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260827_2/scripts/run_stage2_temporal.py",
+    "module": "run_stage4",
+    "selected": "5_Test/20260825_4/scripts/run_stage4.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260826_26/scripts/fold_worker.py",
+    "module": "run_stage25",
+    "selected": "5_Test/20260826_25/scripts/run_stage25.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260826_26/scripts/fold_worker.py",
+    "module": "hydrology_core",
+    "selected": "5_Test/20260825_3/scripts/hydrology_core.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260826_26/scripts/fold_worker.py",
+    "module": "run_stage4",
+    "selected": "5_Test/20260825_4/scripts/run_stage4.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260828_9/scripts/export_parent_preserving_state_product.py",
+    "module": "hydrology_core",
+    "selected": "5_Test/20260825_3/scripts/hydrology_core.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260828_9/scripts/export_parent_preserving_state_product.py",
+    "module": "run_stage25",
+    "selected": "5_Test/20260826_25/scripts/run_stage25.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260828_7/scripts/fit_export_state_consistent_product.py",
+    "module": "hydrology_core",
+    "selected": "5_Test/20260825_3/scripts/hydrology_core.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260828_7/scripts/fit_export_state_consistent_product.py",
+    "module": "run_stage25",
+    "selected": "5_Test/20260826_25/scripts/run_stage25.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260828_5/scripts/evaluate_component_development.py",
+    "module": "hydrology_core",
+    "selected": "5_Test/20260825_3/scripts/hydrology_core.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260828_5/scripts/evaluate_component_development.py",
+    "module": "run_stage25",
+    "selected": "5_Test/20260826_25/scripts/run_stage25.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260827_8/scripts/run_stage8_candidates.py",
+    "module": "fold_worker",
+    "selected": "5_Test/20260826_26/scripts/fold_worker.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260827_8/scripts/run_stage8_candidates.py",
+    "module": "hydrology_core",
+    "selected": "5_Test/20260825_3/scripts/hydrology_core.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260827_8/scripts/run_stage8_candidates.py",
+    "module": "run_stage25",
+    "selected": "5_Test/20260826_25/scripts/run_stage25.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260827_9/scripts/run_stage9_temporal_development.py",
+    "module": "hydrology_core",
+    "selected": "5_Test/20260825_3/scripts/hydrology_core.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260827_9/scripts/run_stage9_temporal_development.py",
+    "module": "run_stage25",
+    "selected": "5_Test/20260826_25/scripts/run_stage25.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260828_5/scripts/train_component_worker.py",
+    "module": "hydrology_core",
+    "selected": "5_Test/20260825_3/scripts/hydrology_core.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260828_5/scripts/train_component_worker.py",
+    "module": "run_stage25",
+    "selected": "5_Test/20260826_25/scripts/run_stage25.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260908_1/scripts/fc_legacy.py",
+    "module": "tn_autograd",
+    "selected": "5_Test/20260907_3/scripts/tn_autograd.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260908_1/scripts/fc_legacy.py",
+    "module": "process_info",
+    "selected": "5_Test/20260907_3/scripts/process_info.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260908_1/scripts/fc_legacy.py",
+    "module": "audit_inputs",
+    "selected": "5_Test/20260905_1/scripts/audit_inputs.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260908_1/scripts/fc_legacy.py",
+    "module": "fit_models",
+    "selected": "5_Test/20260907_3/scripts/fit_models.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260908_1/scripts/fc_legacy.py",
+    "module": "baseline_objective",
+    "selected": "5_Test/20260907_3/scripts/baseline_objective.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260908_1/scripts/fc_legacy.py",
+    "module": "tn_reference",
+    "selected": "5_Test/20260907_3/scripts/tn_reference.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260907_3/scripts/tn_reference.py",
+    "module": "audit_inputs",
+    "selected": "5_Test/20260905_1/scripts/audit_inputs.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260907_3/scripts/tn_reference.py",
+    "module": "common",
+    "selected": "5_Test/20260905_1/scripts/common.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260824_41/scripts/l0_v2_core.py",
+    "module": "run_stage28",
+    "selected": "5_Test/20260824_28/scripts/run_stage28.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260824_39/scripts/build_canonical_daily_to_monthly_tn_interface.py",
+    "module": "hydrology_core",
+    "selected": "5_Test/20260825_3/scripts/hydrology_core.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260824_39/scripts/build_canonical_daily_to_monthly_tn_interface.py",
+    "module": "run_stage25",
+    "selected": "5_Test/20260826_25/scripts/run_stage25.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260907_3/scripts/fit_models.py",
+    "module": "common",
+    "selected": "5_Test/20260905_1/scripts/common.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260905_2/scripts/tn_reference.py",
+    "module": "audit_inputs",
+    "selected": "5_Test/20260905_1/scripts/audit_inputs.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  },
+  {
+    "source": "5_Test/20260905_2/scripts/tn_reference.py",
+    "module": "common",
+    "selected": "5_Test/20260905_1/scripts/common.py",
+    "basis": "explicit archived sys.path chain reviewed; H1 derivation injects 17_5 audit_inputs before fc_data"
+  }
+]

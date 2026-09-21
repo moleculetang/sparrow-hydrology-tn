@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "objective": 1.2262274316629191,
+  "pg": 7.460911671656502e-07,
+  "numerical_sufficient": true,
+  "physical": true,
+  "state_errors": {
+    "fast": 0.0,
+    "slow": 0.0,
+    "M": 0.0,
+    "L": 0.0,
+    "uptake": 0.0,
+    "mineral_loss": 0.0
+  },
+  "station_errors": {
+    "mass": 0.0,
+    "water": 0.0
+  },
+  "nested_objective": null,
+  "full_history_calls": 3,
+  "elapsed": 5.421190023422241
+}

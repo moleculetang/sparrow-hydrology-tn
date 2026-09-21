@@ -1,0 +1,31 @@
+{
+  "F23_G_D": {
+    "domain": "FULL24C",
+    "end_year": 2023,
+    "evaluation_year": 2023,
+    "train_years": [
+      2021,
+      2022
+    ],
+    "scope": "F23_G",
+    "mode": "D",
+    "spatial_block": null,
+    "train_sha256": "fe4a3020efa00a5ba5521575269ea4142a6772f48be00c03565ec94e150f66d0"
+  },
+  "T24_G_D_H1": {
+    "domain": "FULL24C",
+    "end_year": 2024,
+    "evaluation_year": 2024,
+    "train_years": [
+      2021,
+      2022,
+      2023
+    ],
+    "scope": "T24_G",
+    "mode": "D",
+    "spatial_block": null,
+    "train_sha256": "eace6052b6e02055aa7d34716c16ce10665bd5df2ae982c30e13a94d0395b688",
+    "arm": "H1",
+    "h0_fold": "T24_G_D"
+  }
+}

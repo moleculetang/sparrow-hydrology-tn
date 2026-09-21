@@ -1,0 +1,231 @@
+{
+  "contact": {
+    "file": "contact.npy",
+    "sha256": "7967809b607961e78815097357b0cc53b20fd263740f8c2323a95e896f233a9e",
+    "shape": [
+      23376,
+      230
+    ],
+    "dtype": "<f8"
+  },
+  "fast_fraction": {
+    "file": "fast_fraction.npy",
+    "sha256": "24b7e9f9e98b4f8a32384769c7b60bf2c13027a8707a14f400d79422e5d4779f",
+    "shape": [
+      23376,
+      230
+    ],
+    "dtype": "<f8"
+  },
+  "lower_release": {
+    "file": "lower_release.npy",
+    "sha256": "8c9b826e3796da08193e6b8ce8f11eb2b40187d3191facfc069e5f236320d71d",
+    "shape": [
+      23376,
+      230
+    ],
+    "dtype": "<f8"
+  },
+  "fast_water": {
+    "file": "fast_water.npy",
+    "sha256": "f1cb8bd023f0064310aa194daade6e05b3ab283f837e2651b93efb769c3683e7",
+    "shape": [
+      23376,
+      230
+    ],
+    "dtype": "<f8"
+  },
+  "slow_water": {
+    "file": "slow_water.npy",
+    "sha256": "79790c48dc9df5da67ba652678deecee1144f50e7296fcc43c933172676727ff",
+    "shape": [
+      23376,
+      230
+    ],
+    "dtype": "<f8"
+  },
+  "official_water": {
+    "file": "official_water.npy",
+    "sha256": "c8823dbd52374d172662e409d5c0e94c63f20925548686e7341e22410a7981a4",
+    "shape": [
+      23376,
+      230
+    ],
+    "dtype": "<f8"
+  },
+  "h_day": {
+    "file": "h_day.npy",
+    "sha256": "8884a19216fa39b7b422aa22be36f680d68f322ab4981f546d0e40973f1d4785",
+    "shape": [
+      23376,
+      230
+    ],
+    "dtype": "<f8"
+  },
+  "temperature": {
+    "file": "temperature.npy",
+    "sha256": "3041c00d1b68c0e68c793f2cd5f172cb6e01062208474b579786a9c779ddb647",
+    "shape": [
+      23376,
+      230
+    ],
+    "dtype": "<f8"
+  },
+  "upper_water": {
+    "file": "upper_water.npy",
+    "sha256": "9056c7ba2a5d9ec667e199c9ffc0d7545c0e784b8f1bdf0f19078cf263a5b8ee",
+    "shape": [
+      23376,
+      230
+    ],
+    "dtype": "<f8"
+  },
+  "percolation": {
+    "file": "percolation.npy",
+    "sha256": "233e1b739773faccf84e51cefe084f3a5d00ea7dc28aad0bc536cc24f708fabd",
+    "shape": [
+      23376,
+      230
+    ],
+    "dtype": "<f8"
+  },
+  "soil_wetness": {
+    "file": "soil_wetness.npy",
+    "sha256": "b17ddf70aa6eeb7984d8d9f4e9e4ec494c501476713ea446e3806beb8b064404",
+    "shape": [
+      23376,
+      230
+    ],
+    "dtype": "<f8"
+  },
+  "source": {
+    "file": "source.npy",
+    "sha256": "03a77ed40dac2b771d8911db7d518b3754898d5f9be764e9f345fb8a94ded04b",
+    "shape": [
+      768,
+      230
+    ],
+    "dtype": "<f8"
+  },
+  "crop": {
+    "file": "crop.npy",
+    "sha256": "6a7ed1fc70fd786cf7b27821828150da43cd23612f8d040975fe8135e43a7007",
+    "shape": [
+      768,
+      230
+    ],
+    "dtype": "<f8"
+  },
+  "h_month": {
+    "file": "h_month.npy",
+    "sha256": "f9e84b6bc2ebf8a7f61500e9ee25e4c0e8cf1e5c448277ef7200700074ca2fc7",
+    "shape": [
+      768,
+      230
+    ],
+    "dtype": "<f8"
+  },
+  "source_tags": {
+    "file": "source_tags.npy",
+    "sha256": "29f6f298e047224104f7309506033f4eff2a50e6d2c2c4d300d088635270a2b1",
+    "shape": [
+      768,
+      230,
+      4
+    ],
+    "dtype": "<f8"
+  },
+  "static_raw": {
+    "file": "static_raw.npy",
+    "sha256": "e6e25cecb46ed00db2790a493bfd679b594e9e99a74a0ee9b34f6f16344ca6a5",
+    "shape": [
+      230,
+      7
+    ],
+    "dtype": "<f8"
+  },
+  "area_ha": {
+    "file": "area_ha.npy",
+    "sha256": "95920d24cf6538f588d7b7118d2abda5f3a342b1a1eaa9bde2ac4eee96e220d5",
+    "shape": [
+      230
+    ],
+    "dtype": "<f8"
+  },
+  "mid": {
+    "file": "mid.npy",
+    "sha256": "40d88fb5ea9f6caafacd0d329282f3716e9e8bb418233878e02f9677dd769f4c",
+    "shape": [
+      23376
+    ],
+    "dtype": "<i8"
+  },
+  "starts": {
+    "file": "starts.npy",
+    "sha256": "7e498b5616bdf76122b4c9d0dbf1cdc8c88eeb54baec51127e1987306c5d895a",
+    "shape": [
+      768
+    ],
+    "dtype": "<i8"
+  },
+  "stops": {
+    "file": "stops.npy",
+    "sha256": "8de62bce9158189a200594d0b3fb1fdf068003550259b665a25f46f75411979b",
+    "shape": [
+      768
+    ],
+    "dtype": "<i8"
+  },
+  "release_fraction": {
+    "file": "release_fraction.npy",
+    "sha256": "761a9e466505c483090681591c5567e85d1b5dc2ea0fdf2e306d53eaab09f061",
+    "shape": [
+      23376,
+      13
+    ],
+    "dtype": "<f8"
+  },
+  "released_water": {
+    "file": "released_water.npy",
+    "sha256": "ec3d5cba8f462f7394d0b4dead703667d60d01e941b17f3a42e95697ce3c7622",
+    "shape": [
+      23376,
+      13
+    ],
+    "dtype": "<f8"
+  },
+  "enabled": {
+    "file": "enabled.npy",
+    "sha256": "bb438470b7cc84f722ba85d2333ebbe685d8cc4e184d5b7a70308536d9650de4",
+    "shape": [
+      23376,
+      13
+    ],
+    "dtype": "|b1"
+  },
+  "dates": {
+    "file": "dates.npy",
+    "sha256": "7722f55b8e9f5c416cbc632d591736eb0a43c6a758efbaf6ec15942fc420583b",
+    "shape": [
+      23376
+    ],
+    "dtype": "<M8[D]"
+  },
+  "months": {
+    "file": "months.npy",
+    "sha256": "78bf23ce0fbea219a2df0d5af97418dbe5435d8e3a29cf3b232c0932d2d637cc",
+    "shape": [
+      768
+    ],
+    "dtype": "<M8[D]"
+  },
+  "soil_water_mm": {
+    "file": "soil_water_mm.npy",
+    "sha256": "043dfb4e76e5f12b7d6da60ab5d82d30d8a4be1cef2a0417254b6bfdd76bebdd",
+    "shape": [
+      23376,
+      230
+    ],
+    "dtype": "<f8"
+  }
+}

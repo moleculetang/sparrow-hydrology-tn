@@ -1,0 +1,31 @@
+index,name,value,active_in_new_land_family,active_in_routing,effect
+0,log_alpha_contact,-9.079664259970738,False,False,inactive: replaced mobilization or water split
+1,beta_a,0.4746817912851372,False,False,inactive: replaced mobilization or water split
+2,v_f,0.04781074648329471,False,True,river removal
+3,log_tau_mineral_days,7.990667535544717,True,False,common upper loss
+4,gamma_contact_0,-0.02935859823017183,False,False,inactive: replaced mobilization or water split
+5,gamma_contact_1,0.5179336647512013,False,False,inactive: replaced mobilization or water split
+6,gamma_contact_2,0.3842734852900668,False,False,inactive: replaced mobilization or water split
+7,gamma_contact_3,0.31473089241810376,False,False,inactive: replaced mobilization or water split
+8,gamma_contact_4,-1.479439702029698,False,False,inactive: replaced mobilization or water split
+9,gamma_contact_5,-0.33234235316416527,False,False,inactive: replaced mobilization or water split
+10,gamma_contact_6,0.8430013257595692,False,False,inactive: replaced mobilization or water split
+11,gamma_lifetime_0,1.3843835953206831,True,False,common upper loss
+12,gamma_lifetime_1,-0.2680880845849036,True,False,common upper loss
+13,gamma_lifetime_2,-0.22972974389973946,True,False,common upper loss
+14,gamma_lifetime_3,-0.21050410326133928,True,False,common upper loss
+15,gamma_lifetime_4,0.7728478712251584,True,False,common upper loss
+16,gamma_lifetime_5,0.5110997249137201,True,False,common upper loss
+17,gamma_lifetime_6,1.1534862068619491,True,False,common upper loss
+18,eta_upper,0.48428107950534965,False,False,inactive: replaced mobilization or water split
+19,eta_percolation,0.42947395949305495,False,False,inactive: replaced mobilization or water split
+20,log_aq,0.01541849827082684,False,False,inactive: replaced mobilization or water split
+21,dynamic_0,0.7953181921728515,False,False,inactive: replaced mobilization or water split
+22,dynamic_1,0.15682541137377531,False,False,inactive: replaced mobilization or water split
+23,dynamic_2,0.24051570802326666,False,False,inactive: replaced mobilization or water split
+24,dynamic_3,0.8333968677856007,False,False,inactive: replaced mobilization or water split
+25,dynamic_4,0.589032693429761,False,False,inactive: replaced mobilization or water split
+26,dynamic_5,0.06892251571318107,False,False,inactive: replaced mobilization or water split
+27,dynamic_6,0.3339774302745547,False,False,inactive: replaced mobilization or water split
+28,dynamic_7,-0.15559001272332942,False,False,inactive: replaced mobilization or water split
+29,beta_b,0.48710254191402075,False,False,inactive: replaced mobilization or water split

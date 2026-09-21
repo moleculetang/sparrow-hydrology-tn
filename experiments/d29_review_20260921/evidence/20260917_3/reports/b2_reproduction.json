@@ -1,0 +1,260 @@
+{
+  "stage": "20260917_3",
+  "purpose": "B2: round B's product, held against the arm round A froze the screen on -- byte-identical where the chain is deterministic, and characterised where it is not",
+  "round_b_outputs": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\outputs",
+  "round_a_outputs": "E:\\SPARROW\\5_Test\\20260917_2\\arms\\R74\\outputs",
+  "counts": {
+    "artifacts_compared": 22,
+    "byte_identical": 21,
+    "equal_but_not_byte_identical": 1,
+    "differs": 0,
+    "uncomparable": 0,
+    "present_in_one_tree_only": 0,
+    "path_only_differences": 2
+  },
+  "byte_identical": [
+    "export/canonical_reach_daily_2006_2024.parquet",
+    "export/canonical_reach_monthly_2006_2024.parquet",
+    "frozen_parent_reach_daily.parquet",
+    "stage5/blind_reach_daily_2006_2022.parquet",
+    "stage5/blind_reach_monthly_2006_2022.parquet",
+    "stage5/final_signature_operator_by_reach.parquet",
+    "stage5/full_development_model_lock.pt",
+    "stage5/full_development_training_trace.parquet",
+    "stage8/bfi_regionalization_coefficients.parquet",
+    "stage8/regionalized_slow_score.parquet",
+    "stage8/station_registry_91.parquet",
+    "state_consistent_reach_daily.parquet",
+    "state_consistent_reach_monthly.parquet",
+    "state_consistent_reservoir_daily.parquet",
+    "state_consistent_reservoir_monthly.parquet",
+    "state_consistent_reservoir_static_metadata.parquet",
+    "tn_hydrology_reach_daily.parquet",
+    "tn_hydrology_reach_monthly.parquet",
+    "tn_hydrology_reservoir_daily.parquet",
+    "tn_hydrology_reservoir_monthly.parquet",
+    "tn_hydrology_reservoir_static_metadata.parquet"
+  ],
+  "equal_but_not_byte_identical": [
+    "export/parent_preserving_state_consistent_model.pt"
+  ],
+  "differs": [],
+  "uncomparable": [],
+  "present_in_one_tree_only": [],
+  "path_only_differences": {
+    "export/parent_preserving_state_consistent_model.pt": [
+      {
+        "key": "accepted_parent_model_path",
+        "position_in_tree": "outputs/stage5/full_development_model_lock.pt",
+        "a": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\outputs\\stage5\\full_development_model_lock.pt",
+        "b": "E:\\SPARROW\\5_Test\\20260917_2\\arms\\R74\\outputs\\stage5\\full_development_model_lock.pt"
+      },
+      {
+        "key": "regionalized_score_path",
+        "position_in_tree": "outputs/stage8/regionalized_slow_score.parquet",
+        "a": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\outputs\\stage8\\regionalized_slow_score.parquet",
+        "b": "E:\\SPARROW\\5_Test\\20260917_2\\arms\\R74\\outputs\\stage8\\regionalized_slow_score.parquet"
+      }
+    ]
+  },
+  "caveat": "`.pt` 检查点会记录它自己写在哪棵树下，故两者的字节必然不同；上面按张量键与逐元素相等比较，其中字符串条目只在「各自相对于本树根之后指向同一位置」时才算一致，并单列进 path_only_differences —— 这不是豁免，而是一条更强的核对：它证明两个检查点各指向本树内同一个文件，而不是只证明基名相同。本轮没有把任何未比过的类型算作「一致」：既非 parquet 也非 `.pt` 的文件单列为 uncomparable，并计入未通过。",
+  "entries": [
+    {
+      "artifact": "export/canonical_reach_daily_2006_2024.parquet",
+      "sha256_round_b": "68cccde09204a602978fa2750ba4f44ecf86c5bcfa45976274f56e1dbea2506a",
+      "sha256_round_a": "68cccde09204a602978fa2750ba4f44ecf86c5bcfa45976274f56e1dbea2506a",
+      "bytes_round_b": 146679689,
+      "bytes_round_a": 146679689,
+      "verdict": "byte_identical"
+    },
+    {
+      "artifact": "export/canonical_reach_monthly_2006_2024.parquet",
+      "sha256_round_b": "0e4b5bfff36141ba0fb09940b0a21e1b96548ffa91835132cfa2a3c0edc2b249",
+      "sha256_round_a": "0e4b5bfff36141ba0fb09940b0a21e1b96548ffa91835132cfa2a3c0edc2b249",
+      "bytes_round_b": 7328211,
+      "bytes_round_a": 7328211,
+      "verdict": "byte_identical"
+    },
+    {
+      "artifact": "export/parent_preserving_state_consistent_model.pt",
+      "sha256_round_b": "fab0f9ae7dab5636b352d13a4d47a77a642b148adc25f2cd09e628376c10e426",
+      "sha256_round_a": "bae177b6c018eaf6f9deff782cd3b15b183d150098175c83aadf8706ddf593ca",
+      "bytes_round_b": 6427,
+      "bytes_round_a": 6427,
+      "verdict": "checkpoint_equal",
+      "detail": {
+        "keys_identical": true,
+        "keys_only_in_a": [],
+        "keys_only_in_b": [],
+        "differing_entries": [],
+        "path_only_differences": [
+          {
+            "key": "accepted_parent_model_path",
+            "position_in_tree": "outputs/stage5/full_development_model_lock.pt",
+            "a": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\outputs\\stage5\\full_development_model_lock.pt",
+            "b": "E:\\SPARROW\\5_Test\\20260917_2\\arms\\R74\\outputs\\stage5\\full_development_model_lock.pt"
+          },
+          {
+            "key": "regionalized_score_path",
+            "position_in_tree": "outputs/stage8/regionalized_slow_score.parquet",
+            "a": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen\\outputs\\stage8\\regionalized_slow_score.parquet",
+            "b": "E:\\SPARROW\\5_Test\\20260917_2\\arms\\R74\\outputs\\stage8\\regionalized_slow_score.parquet"
+          }
+        ]
+      }
+    },
+    {
+      "artifact": "frozen_parent_reach_daily.parquet",
+      "sha256_round_b": "5c7be3ae3d2f0de333145c573f8ebea7e1ada2a7c362cb1d98da68dcc6327f58",
+      "sha256_round_a": "5c7be3ae3d2f0de333145c573f8ebea7e1ada2a7c362cb1d98da68dcc6327f58",
+      "bytes_round_b": 471759363,
+      "bytes_round_a": 471759363,
+      "verdict": "byte_identical"
+    },
+    {
+      "artifact": "stage5/blind_reach_daily_2006_2022.parquet",
+      "sha256_round_b": "bd9d1589f2a6fdabac7279cae942deadf20113c9f8e8a984ac7d132d249da288",
+      "sha256_round_a": "bd9d1589f2a6fdabac7279cae942deadf20113c9f8e8a984ac7d132d249da288",
+      "bytes_round_b": 142870250,
+      "bytes_round_a": 142870250,
+      "verdict": "byte_identical"
+    },
+    {
+      "artifact": "stage5/blind_reach_monthly_2006_2022.parquet",
+      "sha256_round_b": "db27042ff09b602d8ba6ade4971575d6501a3649ca9fb0e683e5341a781faf00",
+      "sha256_round_a": "db27042ff09b602d8ba6ade4971575d6501a3649ca9fb0e683e5341a781faf00",
+      "bytes_round_b": 7016999,
+      "bytes_round_a": 7016999,
+      "verdict": "byte_identical"
+    },
+    {
+      "artifact": "stage5/final_signature_operator_by_reach.parquet",
+      "sha256_round_b": "8f3cd275ceb9a3694ae123c21d2eee35bf374b60230076e6e74b185f7112ca04",
+      "sha256_round_a": "8f3cd275ceb9a3694ae123c21d2eee35bf374b60230076e6e74b185f7112ca04",
+      "bytes_round_b": 7758,
+      "bytes_round_a": 7758,
+      "verdict": "byte_identical"
+    },
+    {
+      "artifact": "stage5/full_development_model_lock.pt",
+      "sha256_round_b": "c991236b69662a552cfcee1c08b75adfe1268f79a605dbf19ff7926c12763a45",
+      "sha256_round_a": "c991236b69662a552cfcee1c08b75adfe1268f79a605dbf19ff7926c12763a45",
+      "bytes_round_b": 7669,
+      "bytes_round_a": 7669,
+      "verdict": "byte_identical"
+    },
+    {
+      "artifact": "stage5/full_development_training_trace.parquet",
+      "sha256_round_b": "84ac508282d8548f74136360a13aa35761032b2d279abd05ae2fd47a57450da3",
+      "sha256_round_a": "84ac508282d8548f74136360a13aa35761032b2d279abd05ae2fd47a57450da3",
+      "bytes_round_b": 7117,
+      "bytes_round_a": 7117,
+      "verdict": "byte_identical"
+    },
+    {
+      "artifact": "stage8/bfi_regionalization_coefficients.parquet",
+      "sha256_round_b": "d7bf91503a6580cf89d2374b55e9e7614eaeb49b9a5af1e334cc19610865cc3c",
+      "sha256_round_a": "d7bf91503a6580cf89d2374b55e9e7614eaeb49b9a5af1e334cc19610865cc3c",
+      "bytes_round_b": 2390,
+      "bytes_round_a": 2390,
+      "verdict": "byte_identical"
+    },
+    {
+      "artifact": "stage8/regionalized_slow_score.parquet",
+      "sha256_round_b": "9ecf7408e911c997437ac75cc2cc8ad15a64c9691432868a395cdf709f2dfc40",
+      "sha256_round_a": "9ecf7408e911c997437ac75cc2cc8ad15a64c9691432868a395cdf709f2dfc40",
+      "bytes_round_b": 10550,
+      "bytes_round_a": 10550,
+      "verdict": "byte_identical"
+    },
+    {
+      "artifact": "stage8/station_registry_91.parquet",
+      "sha256_round_b": "1d8f7e2c9cee945a9f93868388f2464426c79f6c9fb05e5d3d5a52e64b9dd885",
+      "sha256_round_a": "1d8f7e2c9cee945a9f93868388f2464426c79f6c9fb05e5d3d5a52e64b9dd885",
+      "bytes_round_b": 6842,
+      "bytes_round_a": 6842,
+      "verdict": "byte_identical"
+    },
+    {
+      "artifact": "state_consistent_reach_daily.parquet",
+      "sha256_round_b": "545335e6363e20ca18c306808cc4ea4c47c3d491c8ba855762bd42a4f0a3b896",
+      "sha256_round_a": "545335e6363e20ca18c306808cc4ea4c47c3d491c8ba855762bd42a4f0a3b896",
+      "bytes_round_b": 694125169,
+      "bytes_round_a": 694125169,
+      "verdict": "byte_identical"
+    },
+    {
+      "artifact": "state_consistent_reach_monthly.parquet",
+      "sha256_round_b": "4399f60ceea141527bc6a5b298916b9d9b067712628cb10188fc0770f02417a7",
+      "sha256_round_a": "4399f60ceea141527bc6a5b298916b9d9b067712628cb10188fc0770f02417a7",
+      "bytes_round_b": 24691995,
+      "bytes_round_a": 24691995,
+      "verdict": "byte_identical"
+    },
+    {
+      "artifact": "state_consistent_reservoir_daily.parquet",
+      "sha256_round_b": "e38f3d412f02be20d40a379277c1b731c89a08170603e02d33f0a996814d8dd2",
+      "sha256_round_a": "e38f3d412f02be20d40a379277c1b731c89a08170603e02d33f0a996814d8dd2",
+      "bytes_round_b": 46053564,
+      "bytes_round_a": 46053564,
+      "verdict": "byte_identical"
+    },
+    {
+      "artifact": "state_consistent_reservoir_monthly.parquet",
+      "sha256_round_b": "0338f907dc7996dc399f637667ee1611365a327f0a063ef65124aa2231b8e4e1",
+      "sha256_round_a": "0338f907dc7996dc399f637667ee1611365a327f0a063ef65124aa2231b8e4e1",
+      "bytes_round_b": 1393759,
+      "bytes_round_a": 1393759,
+      "verdict": "byte_identical"
+    },
+    {
+      "artifact": "state_consistent_reservoir_static_metadata.parquet",
+      "sha256_round_b": "91333e13b4279e5dd320409bc382361144dfa7368a3f6b96f10fa5e78e99b5f8",
+      "sha256_round_a": "91333e13b4279e5dd320409bc382361144dfa7368a3f6b96f10fa5e78e99b5f8",
+      "bytes_round_b": 24159,
+      "bytes_round_a": 24159,
+      "verdict": "byte_identical"
+    },
+    {
+      "artifact": "tn_hydrology_reach_daily.parquet",
+      "sha256_round_b": "87d829d0bc60a5c3ea4eee0666cfa4cdd562d609e5c6466971fe9129b0242f89",
+      "sha256_round_a": "87d829d0bc60a5c3ea4eee0666cfa4cdd562d609e5c6466971fe9129b0242f89",
+      "bytes_round_b": 1152247958,
+      "bytes_round_a": 1152247958,
+      "verdict": "byte_identical"
+    },
+    {
+      "artifact": "tn_hydrology_reach_monthly.parquet",
+      "sha256_round_b": "21c21e95892249f99dc97650f811bca0eb09eac75e6ca9996f9ad9342c127a00",
+      "sha256_round_a": "21c21e95892249f99dc97650f811bca0eb09eac75e6ca9996f9ad9342c127a00",
+      "bytes_round_b": 32877170,
+      "bytes_round_a": 32877170,
+      "verdict": "byte_identical"
+    },
+    {
+      "artifact": "tn_hydrology_reservoir_daily.parquet",
+      "sha256_round_b": "e38f3d412f02be20d40a379277c1b731c89a08170603e02d33f0a996814d8dd2",
+      "sha256_round_a": "e38f3d412f02be20d40a379277c1b731c89a08170603e02d33f0a996814d8dd2",
+      "bytes_round_b": 46053564,
+      "bytes_round_a": 46053564,
+      "verdict": "byte_identical"
+    },
+    {
+      "artifact": "tn_hydrology_reservoir_monthly.parquet",
+      "sha256_round_b": "0338f907dc7996dc399f637667ee1611365a327f0a063ef65124aa2231b8e4e1",
+      "sha256_round_a": "0338f907dc7996dc399f637667ee1611365a327f0a063ef65124aa2231b8e4e1",
+      "bytes_round_b": 1393759,
+      "bytes_round_a": 1393759,
+      "verdict": "byte_identical"
+    },
+    {
+      "artifact": "tn_hydrology_reservoir_static_metadata.parquet",
+      "sha256_round_b": "91333e13b4279e5dd320409bc382361144dfa7368a3f6b96f10fa5e78e99b5f8",
+      "sha256_round_a": "91333e13b4279e5dd320409bc382361144dfa7368a3f6b96f10fa5e78e99b5f8",
+      "bytes_round_b": 24159,
+      "bytes_round_a": 24159,
+      "verdict": "byte_identical"
+    }
+  ],
+  "passed": true
+}

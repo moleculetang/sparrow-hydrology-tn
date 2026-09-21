@@ -1,0 +1,74 @@
+{
+  "status": "COMPLETE_WITH_DISCLOSED_LOG_GAPS",
+  "block_valid_rows": 1149,
+  "checkpoint_completed_blocks": 1152,
+  "missing_block_rows": [
+    {
+      "arm": "A-FULL",
+      "start": 22692,
+      "stop": 23058,
+      "missing_count": 1,
+      "evidence": "completed checkpoint; original attempt timestamp unavailable"
+    },
+    {
+      "arm": "C-W0.2-P0.5",
+      "start": 7686,
+      "stop": 8052,
+      "missing_count": 1,
+      "evidence": "completed checkpoint; original attempt timestamp unavailable"
+    },
+    {
+      "arm": "C-W0.5-P1",
+      "start": 15006,
+      "stop": 15372,
+      "missing_count": 1,
+      "evidence": "completed checkpoint; original attempt timestamp unavailable"
+    }
+  ],
+  "malformed_block_rows": [
+    {
+      "line": 651,
+      "text": ""
+    },
+    {
+      "line": 963,
+      "text": ""
+    }
+  ],
+  "malformed_resource_rows": [
+    {
+      "line": 125,
+      "text": "7619.2}"
+    },
+    {
+      "line": 128,
+      "text": ".4}"
+    },
+    {
+      "line": 223,
+      "text": "}"
+    },
+    {
+      "line": 245,
+      "text": "999997}"
+    },
+    {
+      "line": 532,
+      "text": ""
+    },
+    {
+      "line": 1293,
+      "text": ""
+    }
+  ],
+  "resource_valid_rows": 1529,
+  "original_logs_preserved": true,
+  "missing_resource_timestamps_recoverable": false,
+  "fix": "msvcrt single-byte cross-process lock around append",
+  "fix_concurrency_test": {
+    "processes": 8,
+    "rows": 800,
+    "unique_rows": 800,
+    "pass_test": true
+  }
+}

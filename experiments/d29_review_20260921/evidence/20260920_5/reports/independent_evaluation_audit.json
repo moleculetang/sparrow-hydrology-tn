@@ -1,0 +1,92 @@
+[
+  {
+    "arm": "MIX",
+    "events": 127,
+    "score_max_abs_difference": 0.0
+  },
+  {
+    "arm": "H1-D29",
+    "events": 127,
+    "score_max_abs_difference": 0.0
+  },
+  {
+    "arm": "A-HALF",
+    "events": 127,
+    "score_max_abs_difference": 0.0
+  },
+  {
+    "arm": "A-FULL",
+    "events": 127,
+    "score_max_abs_difference": 0.0
+  },
+  {
+    "arm": "B-P0.5-R0.1",
+    "events": 127,
+    "score_max_abs_difference": 0.0
+  },
+  {
+    "arm": "B-P0.5-R0.5",
+    "events": 127,
+    "score_max_abs_difference": 0.0
+  },
+  {
+    "arm": "B-P0.5-R1",
+    "events": 127,
+    "score_max_abs_difference": 0.0
+  },
+  {
+    "arm": "B-P1-R0.1",
+    "events": 127,
+    "score_max_abs_difference": 0.0
+  },
+  {
+    "arm": "B-P1-R0.5",
+    "events": 127,
+    "score_max_abs_difference": 0.0
+  },
+  {
+    "arm": "B-P1-R1",
+    "events": 127,
+    "score_max_abs_difference": 0.0
+  },
+  {
+    "arm": "C-W0.2-P0.2",
+    "events": 127,
+    "score_max_abs_difference": 0.0
+  },
+  {
+    "arm": "C-W0.2-P0.5",
+    "events": 127,
+    "score_max_abs_difference": 0.0
+  },
+  {
+    "arm": "C-W0.2-P1",
+    "events": 127,
+    "score_max_abs_difference": 0.0
+  },
+  {
+    "arm": "C-W0.5-P0.5",
+    "events": 127,
+    "score_max_abs_difference": 0.0
+  },
+  {
+    "arm": "C-W0.5-P1",
+    "events": 127,
+    "score_max_abs_difference": 0.0
+  },
+  {
+    "arm": "C-W0.8-P0.5",
+    "events": 127,
+    "score_max_abs_difference": 0.0
+  },
+  {
+    "arm": "C-W0.8-P0.8",
+    "events": 127,
+    "score_max_abs_difference": 0.0
+  },
+  {
+    "arm": "C-W0.8-P1",
+    "events": 127,
+    "score_max_abs_difference": 0.0
+  }
+]

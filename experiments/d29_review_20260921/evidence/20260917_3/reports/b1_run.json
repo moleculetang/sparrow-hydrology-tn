@@ -1,0 +1,73 @@
+{
+  "stage": "20260917_3",
+  "purpose": "B1: re-run round A's chain on the frozen screen inside round B's tree",
+  "driver": {
+    "path": "E:\\SPARROW\\5_Test\\20260917_2\\scripts\\a2h_refit_arm.py",
+    "sha256": "648d1fc044566b44dc66282f5f4d2caf2612b0d07a84053255318cc507de8c7a",
+    "why_not_edited": "a2h_refit_arm.py 的 sha256 记在 station_screen_lock.json 的 provenance 里；改它就会让筛选件无法从自己的锁件复现，故本轮只重绑根路径、不改字节"
+  },
+  "roots_rebound": {
+    "RUN": "E:\\SPARROW\\5_Test\\20260917_3",
+    "ARMS": "E:\\SPARROW\\5_Test\\20260917_3\\work",
+    "REPORTS": "E:\\SPARROW\\5_Test\\20260917_3\\reports",
+    "FORKS": "E:\\SPARROW\\5_Test\\20260917_3\\scripts\\forks"
+  },
+  "arm": "E:\\SPARROW\\5_Test\\20260917_3\\work\\screen",
+  "steps": "01_parent_fit,02_regionalization,03_checkpoint,04_spinup,05_long_simulation,06_tn_interface",
+  "seconds": 1.59795800014399,
+  "label_corrections": [
+    {
+      "key": "stage",
+      "inherited": "20260917_2/arms/screen",
+      "corrected": "20260917_3/work/screen"
+    }
+  ],
+  "products": [
+    "work\\screen\\outputs\\export\\canonical_reach_daily_2006_2024.parquet",
+    "work\\screen\\outputs\\export\\canonical_reach_monthly_2006_2024.parquet",
+    "work\\screen\\outputs\\export\\parent_preserving_state_consistent_model.pt",
+    "work\\screen\\outputs\\frozen_parent_reach_daily.parquet",
+    "work\\screen\\outputs\\stage5\\blind_reach_daily_2006_2022.parquet",
+    "work\\screen\\outputs\\stage5\\blind_reach_monthly_2006_2022.parquet",
+    "work\\screen\\outputs\\stage5\\final_signature_operator_by_reach.parquet",
+    "work\\screen\\outputs\\stage5\\full_development_model_lock.pt",
+    "work\\screen\\outputs\\stage5\\full_development_training_trace.parquet",
+    "work\\screen\\outputs\\stage8\\bfi_regionalization_coefficients.parquet",
+    "work\\screen\\outputs\\stage8\\regionalized_slow_score.parquet",
+    "work\\screen\\outputs\\stage8\\station_registry_91.parquet",
+    "work\\screen\\outputs\\state_consistent_reach_daily.parquet",
+    "work\\screen\\outputs\\state_consistent_reach_monthly.parquet",
+    "work\\screen\\outputs\\state_consistent_reservoir_daily.parquet",
+    "work\\screen\\outputs\\state_consistent_reservoir_monthly.parquet",
+    "work\\screen\\outputs\\state_consistent_reservoir_static_metadata.parquet",
+    "work\\screen\\outputs\\tn_hydrology_reach_daily.parquet",
+    "work\\screen\\outputs\\tn_hydrology_reach_monthly.parquet",
+    "work\\screen\\outputs\\tn_hydrology_reservoir_daily.parquet",
+    "work\\screen\\outputs\\tn_hydrology_reservoir_monthly.parquet",
+    "work\\screen\\outputs\\tn_hydrology_reservoir_static_metadata.parquet"
+  ],
+  "product_hashes": {
+    "work\\screen\\outputs\\export\\canonical_reach_daily_2006_2024.parquet": "68cccde09204a602978fa2750ba4f44ecf86c5bcfa45976274f56e1dbea2506a",
+    "work\\screen\\outputs\\export\\canonical_reach_monthly_2006_2024.parquet": "0e4b5bfff36141ba0fb09940b0a21e1b96548ffa91835132cfa2a3c0edc2b249",
+    "work\\screen\\outputs\\export\\parent_preserving_state_consistent_model.pt": "fab0f9ae7dab5636b352d13a4d47a77a642b148adc25f2cd09e628376c10e426",
+    "work\\screen\\outputs\\frozen_parent_reach_daily.parquet": "5c7be3ae3d2f0de333145c573f8ebea7e1ada2a7c362cb1d98da68dcc6327f58",
+    "work\\screen\\outputs\\stage5\\blind_reach_daily_2006_2022.parquet": "bd9d1589f2a6fdabac7279cae942deadf20113c9f8e8a984ac7d132d249da288",
+    "work\\screen\\outputs\\stage5\\blind_reach_monthly_2006_2022.parquet": "db27042ff09b602d8ba6ade4971575d6501a3649ca9fb0e683e5341a781faf00",
+    "work\\screen\\outputs\\stage5\\final_signature_operator_by_reach.parquet": "8f3cd275ceb9a3694ae123c21d2eee35bf374b60230076e6e74b185f7112ca04",
+    "work\\screen\\outputs\\stage5\\full_development_model_lock.pt": "c991236b69662a552cfcee1c08b75adfe1268f79a605dbf19ff7926c12763a45",
+    "work\\screen\\outputs\\stage5\\full_development_training_trace.parquet": "84ac508282d8548f74136360a13aa35761032b2d279abd05ae2fd47a57450da3",
+    "work\\screen\\outputs\\stage8\\bfi_regionalization_coefficients.parquet": "d7bf91503a6580cf89d2374b55e9e7614eaeb49b9a5af1e334cc19610865cc3c",
+    "work\\screen\\outputs\\stage8\\regionalized_slow_score.parquet": "9ecf7408e911c997437ac75cc2cc8ad15a64c9691432868a395cdf709f2dfc40",
+    "work\\screen\\outputs\\stage8\\station_registry_91.parquet": "1d8f7e2c9cee945a9f93868388f2464426c79f6c9fb05e5d3d5a52e64b9dd885",
+    "work\\screen\\outputs\\state_consistent_reach_daily.parquet": "545335e6363e20ca18c306808cc4ea4c47c3d491c8ba855762bd42a4f0a3b896",
+    "work\\screen\\outputs\\state_consistent_reach_monthly.parquet": "4399f60ceea141527bc6a5b298916b9d9b067712628cb10188fc0770f02417a7",
+    "work\\screen\\outputs\\state_consistent_reservoir_daily.parquet": "e38f3d412f02be20d40a379277c1b731c89a08170603e02d33f0a996814d8dd2",
+    "work\\screen\\outputs\\state_consistent_reservoir_monthly.parquet": "0338f907dc7996dc399f637667ee1611365a327f0a063ef65124aa2231b8e4e1",
+    "work\\screen\\outputs\\state_consistent_reservoir_static_metadata.parquet": "91333e13b4279e5dd320409bc382361144dfa7368a3f6b96f10fa5e78e99b5f8",
+    "work\\screen\\outputs\\tn_hydrology_reach_daily.parquet": "87d829d0bc60a5c3ea4eee0666cfa4cdd562d609e5c6466971fe9129b0242f89",
+    "work\\screen\\outputs\\tn_hydrology_reach_monthly.parquet": "21c21e95892249f99dc97650f811bca0eb09eac75e6ca9996f9ad9342c127a00",
+    "work\\screen\\outputs\\tn_hydrology_reservoir_daily.parquet": "e38f3d412f02be20d40a379277c1b731c89a08170603e02d33f0a996814d8dd2",
+    "work\\screen\\outputs\\tn_hydrology_reservoir_monthly.parquet": "0338f907dc7996dc399f637667ee1611365a327f0a063ef65124aa2231b8e4e1",
+    "work\\screen\\outputs\\tn_hydrology_reservoir_static_metadata.parquet": "91333e13b4279e5dd320409bc382361144dfa7368a3f6b96f10fa5e78e99b5f8"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "folds": [
+    {
+      "fold": "F23_G_D",
+      "months": 2592,
+      "counterfactual_identical": true,
+      "actual_preparation_identical": true
+    },
+    {
+      "fold": "T24_G_D_H1",
+      "months": 3674,
+      "counterfactual_identical": true,
+      "actual_preparation_identical": true
+    }
+  ],
+  "scope": "Actual preprocessing identical; deterministic initialization and training consume only these frozen tables, not withheld labels."
+}

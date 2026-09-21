@@ -1,0 +1,9 @@
+test_fct8_nested_predictions_and_gradients (__main__.CandidateTests.test_fct8_nested_predictions_and_gradients) ... ok
+test_reference_support (__main__.CandidateTests.test_reference_support) ... ok
+test_safe_extreme_zero_single_path_and_second_order (__main__.CandidateTests.test_safe_extreme_zero_single_path_and_second_order) ... ok
+test_state_nested_and_new_direction (__main__.CandidateTests.test_state_nested_and_new_direction) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.764s
+
+OK
