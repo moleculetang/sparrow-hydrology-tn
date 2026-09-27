@@ -1,0 +1,119 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "LUH_all230_all64years_12physical_classes",
+      "passed": true
+    },
+    {
+      "name": "deposition_four_components",
+      "error_kg": 0.0,
+      "passed": true
+    },
+    {
+      "name": "known_land_deposition_restores_audited_months",
+      "error_kg": 2.3283064365386963e-10,
+      "passed": true
+    },
+    {
+      "name": "annual_input_hashes_precede_evaluation",
+      "passed": true
+    },
+    {
+      "name": "actual_1961_source_entry_sum",
+      "error_kg": 0.0,
+      "passed": true
+    },
+    {
+      "name": "actual_1961_crop_sources_do_not_enter_noncrop",
+      "error_kg": 0.0,
+      "passed": true
+    },
+    {
+      "name": "actual_1961_sources_reproducible_hash",
+      "passed": true
+    },
+    {
+      "name": "actual_1961_plant_target_reproducible_hash",
+      "passed": true
+    },
+    {
+      "name": "actual_1961_plant_outflows_reproducible_hash",
+      "passed": true
+    },
+    {
+      "name": "actual_2020_source_entry_sum",
+      "error_kg": 0.0,
+      "passed": true
+    },
+    {
+      "name": "actual_2020_crop_sources_do_not_enter_noncrop",
+      "error_kg": 0.0,
+      "passed": true
+    },
+    {
+      "name": "actual_2020_sources_reproducible_hash",
+      "passed": true
+    },
+    {
+      "name": "actual_2020_plant_target_reproducible_hash",
+      "passed": true
+    },
+    {
+      "name": "actual_2020_plant_outflows_reproducible_hash",
+      "passed": true
+    },
+    {
+      "name": "actual_2024_source_entry_sum",
+      "error_kg": 0.0,
+      "passed": true
+    },
+    {
+      "name": "actual_2024_crop_sources_do_not_enter_noncrop",
+      "error_kg": 0.0,
+      "passed": true
+    },
+    {
+      "name": "actual_2024_sources_reproducible_hash",
+      "passed": true
+    },
+    {
+      "name": "actual_2024_plant_target_reproducible_hash",
+      "passed": true
+    },
+    {
+      "name": "actual_2024_plant_outflows_reproducible_hash",
+      "passed": true
+    },
+    {
+      "name": "fast_positive_N_requires_positive_carrier_water",
+      "positive_N_without_carrier": 0,
+      "passed": true
+    },
+    {
+      "name": "slow_positive_N_requires_positive_carrier_water",
+      "positive_N_without_carrier": 0,
+      "passed": true
+    },
+    {
+      "name": "OU_C_equals_1000_same_boundary_M_over_Q",
+      "error_mg_l": 0.0,
+      "passed": true
+    },
+    {
+      "name": "zero_water_concentration_undefined",
+      "passed": true
+    },
+    {
+      "name": "all116_station_boundaries_retained",
+      "passed": true
+    }
+  ],
+  "H1_area_mismatch_count": 9,
+  "measured_same_boundary_Q_certified": false,
+  "source_complete": false,
+  "unknown_surface_policy": "quarantined explicit stored mass, not vegetation or direct river load",
+  "CCD_driver_enabled": false,
+  "CCD_reason": "partial crop classes and cross-province footprint ambiguity retained; not summed into current sources",
+  "NSE": "not applicable; this is an input and transport-unit audit"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "completed_conditional_description",
+  "candidate_sha256": "82c67f8fe0674eebd8abe3576837fcfcddb22a260ab42c6a04acdc931b069510",
+  "prediction_unchanged": true,
+  "label_files": {
+    "E:\\SPARROW\\5_Test\\20260927_1\\vendor\\legacy22\\data\\cohorts\\F23_G\\hf_days.parquet": "f4292cc2559f7f61b3b8f60645d56ba3be8553ae0f49cbccd96e70b5fbedf8e4",
+    "E:\\SPARROW\\5_Test\\20260927_1\\vendor\\legacy22\\data\\heldout_labels\\2023_days.parquet": "f494148582c512c14be229c48af9a8ca35f4c43a9b69fd9e21cf4b067b04083f",
+    "E:\\SPARROW\\5_Test\\20260927_1\\vendor\\legacy22\\data\\heldout_labels\\2024_days.parquet": "7ec50ef92084528cb413be5a8ddfae9dac50ca527b8fed4aa69175f0967084c6"
+  },
+  "baseline": "Frozen F23 U at all dates; 2024 table is NOT F24 refit",
+  "candidate": "uncalibrated S1 LAND1 supply-limited research run",
+  "compared_input_history_and_equations_differ": true,
+  "single_factor_causal_gain_allowed": false,
+  "strict_mass_pass": false,
+  "fits": 0,
+  "bootstrap_interpretation": "frozen-output support stability only; no predictive certification",
+  "daily_weight": "read counts",
+  "centered_weight": "demean by read counts within station-month; equal months",
+  "original_monthly_operator": "frozen model calendar day weighting; actual original sampling time unverified"
+}

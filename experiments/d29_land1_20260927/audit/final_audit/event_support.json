@@ -1,0 +1,20 @@
+[
+  {
+    "year": 2023,
+    "registered": 51,
+    "defined": 34,
+    "insufficient": 17,
+    "peak_date_improved": 4,
+    "peak_date_worse": 1,
+    "peak_date_unchanged": 29
+  },
+  {
+    "year": 2024,
+    "registered": 83,
+    "defined": 57,
+    "insufficient": 26,
+    "peak_date_improved": 5,
+    "peak_date_worse": 5,
+    "peak_date_unchanged": 47
+  }
+]

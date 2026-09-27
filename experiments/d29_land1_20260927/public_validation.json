@@ -1,0 +1,263 @@
+{
+  "tests": 51,
+  "passed": true,
+  "failures": 0,
+  "errors": 0,
+  "source": "published exact kernels and synthetic fixtures",
+  "private_experiment_reads_forbidden": true,
+  "real_TN_run_reproduced": false,
+  "scientific_acceptance": false,
+  "potential_activity_branch": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "initial_independent_gradient",
+        "error": 1.7763568394002505e-15,
+        "passed": true
+      },
+      {
+        "name": "sources_independent_gradient",
+        "error": 1.7763568394002505e-15,
+        "passed": true
+      },
+      {
+        "name": "plant_target_independent_gradient",
+        "error": 0.0,
+        "passed": true
+      },
+      {
+        "name": "plant_outflows_independent_gradient",
+        "error": 1.7763568394002505e-15,
+        "passed": true
+      },
+      {
+        "name": "mineralize_active_independent_gradient",
+        "error": 5.551115123125783e-17,
+        "passed": true
+      },
+      {
+        "name": "mineralize_protected_independent_gradient",
+        "error": 1.1102230246251565e-16,
+        "passed": true
+      },
+      {
+        "name": "mobilize_independent_gradient",
+        "error": 1.3877787807814457e-17,
+        "passed": true
+      },
+      {
+        "name": "available_loss_independent_gradient",
+        "error": 1.3877787807814457e-17,
+        "passed": true
+      },
+      {
+        "name": "fast_fraction_independent_gradient",
+        "error": 3.469446951953614e-18,
+        "passed": true
+      },
+      {
+        "name": "lower_release_independent_gradient",
+        "error": 1.3877787807814457e-17,
+        "passed": true
+      },
+      {
+        "name": "transition_gradient",
+        "error": 1.6653345369377348e-16,
+        "passed": true
+      },
+      {
+        "name": "initial_direction",
+        "step": 0.0001,
+        "error": 8.070211166000263e-13,
+        "passed": true
+      },
+      {
+        "name": "initial_direction",
+        "step": 1e-05,
+        "error": 1.1405432154276696e-11,
+        "passed": true
+      },
+      {
+        "name": "sources_direction",
+        "step": 0.0001,
+        "error": 2.134958876354176e-13,
+        "passed": true
+      },
+      {
+        "name": "sources_direction",
+        "step": 1e-05,
+        "error": 4.227340699713977e-12,
+        "passed": true
+      },
+      {
+        "name": "plant_outflows_direction",
+        "step": 0.0001,
+        "error": 1.1199374760906267e-14,
+        "passed": true
+      },
+      {
+        "name": "plant_outflows_direction",
+        "step": 1e-05,
+        "error": 2.209246674489407e-12,
+        "passed": true
+      },
+      {
+        "name": "forward_independent",
+        "passed": true
+      },
+      {
+        "name": "source_label_closure",
+        "passed": true
+      },
+      {
+        "name": "unmet_positive_without_negative_stock",
+        "passed": true
+      },
+      {
+        "name": "realized_export_below_plan",
+        "passed": true
+      },
+      {
+        "name": "strict_mode_still_rejects",
+        "passed": true
+      },
+      {
+        "name": "initial_23376_day_direction",
+        "step": 0.0001,
+        "error": 1.5585278115745854e-15,
+        "passed": true
+      },
+      {
+        "name": "initial_23376_day_direction",
+        "step": 1e-05,
+        "error": 5.8953366073957215e-15,
+        "passed": true
+      },
+      {
+        "name": "sources_23376_day_direction",
+        "step": 0.0001,
+        "error": 2.6411164921746888e-15,
+        "passed": true
+      },
+      {
+        "name": "sources_23376_day_direction",
+        "step": 1e-05,
+        "error": 1.90429269575354e-14,
+        "passed": true
+      },
+      {
+        "name": "plant_outflows_23376_day_direction",
+        "step": 0.0001,
+        "error": 6.656888936692882e-15,
+        "passed": true
+      },
+      {
+        "name": "plant_outflows_23376_day_direction",
+        "step": 1e-05,
+        "error": 4.97216240325275e-14,
+        "passed": true
+      }
+    ],
+    "full_history_days": 23376,
+    "kernel_sha256": "d410546099be14959c6cbfe7424d007cc368e47812124cd34c872aa186c15d33",
+    "NSE": "not applicable"
+  },
+  "precision_revision": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "zero_target_no_negative_roundoff",
+        "passed": true
+      },
+      {
+        "name": "compensated_checkpoint_bitwise_states",
+        "passed": true
+      },
+      {
+        "name": "compensated_checkpoint_bitwise_fluxes",
+        "passed": true
+      },
+      {
+        "name": "compensated_checkpoint_correction_state",
+        "passed": true
+      },
+      {
+        "name": "sources_direction",
+        "step": 0.001,
+        "analytic": 25.57533487440073,
+        "finite_difference": 25.575334579116316,
+        "passed": true
+      },
+      {
+        "name": "sources_direction",
+        "step": 0.0001,
+        "analytic": 25.57533487440073,
+        "finite_difference": 25.57533731305739,
+        "passed": true
+      },
+      {
+        "name": "sources_direction",
+        "step": 1e-05,
+        "analytic": 25.57533487440073,
+        "finite_difference": 25.57537191023584,
+        "passed": false
+      },
+      {
+        "name": "initial_direction",
+        "step": 0.001,
+        "analytic": 17169.101851233318,
+        "finite_difference": 17169.101851230153,
+        "passed": true
+      },
+      {
+        "name": "initial_direction",
+        "step": 0.0001,
+        "analytic": 17169.101851233318,
+        "finite_difference": 17169.10185130473,
+        "passed": true
+      },
+      {
+        "name": "initial_direction",
+        "step": 1e-05,
+        "analytic": 17169.101851233318,
+        "finite_difference": 17169.10185132292,
+        "passed": true
+      },
+      {
+        "name": "plant_outflows_direction",
+        "step": 0.001,
+        "analytic": 49.95922518311897,
+        "finite_difference": 49.95922511079698,
+        "passed": true
+      },
+      {
+        "name": "plant_outflows_direction",
+        "step": 0.0001,
+        "analytic": 49.95922518311897,
+        "finite_difference": 49.95922379748663,
+        "passed": true
+      },
+      {
+        "name": "plant_outflows_direction",
+        "step": 1e-05,
+        "analytic": 49.95922518311897,
+        "finite_difference": 49.95924045942956,
+        "passed": true
+      },
+      {
+        "name": "real_infeasibility_not_clipped",
+        "passed": true
+      }
+    ],
+    "gradient_rule": "at least two adjacent step lengths pass, retain smaller-step cancellation failures; not minimum-of-last-two",
+    "protected_pool_closed_form_kg": 4662558681.754066,
+    "compensated_protected_kg": 4662558681.753898,
+    "ordinary_protected_kg": 4662558681.753889,
+    "local_mass_max_error_kg": 9.137642109635635e-07,
+    "kernel_hash": "d410546099be14959c6cbfe7424d007cc368e47812124cd34c872aa186c15d33",
+    "NSE": "not applicable"
+  },
+  "python_sources_parse": 146,
+  "exact_source_and_adapted_document_hashes_verified": 182,
+  "local_links_verified": true
+}

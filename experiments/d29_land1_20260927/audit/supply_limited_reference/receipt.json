@@ -1,0 +1,394 @@
+{
+  "status": "completed_conditional_forward",
+  "days": 23376,
+  "reaches": 230,
+  "land_slots": 13,
+  "local_max_balance_kg": 1.1444091796875e-05,
+  "label_max_difference_kg": 5.447864532470703e-05,
+  "network_relative_error": 4.815118905733772e-17,
+  "strict_mass_pass": false,
+  "no_TN_loaded": true,
+  "full_history_continuity": true,
+  "roundoff_diagnostic_continuations": [
+    {
+      "year": 1963,
+      "previous_checkpoint_label_error_kg": 1.1175870895385742e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1965,
+      "previous_checkpoint_label_error_kg": 1.1920928955078125e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1966,
+      "previous_checkpoint_label_error_kg": 1.817941665649414e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1967,
+      "previous_checkpoint_label_error_kg": 2.1830201148986816e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1968,
+      "previous_checkpoint_label_error_kg": 2.384185791015625e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1969,
+      "previous_checkpoint_label_error_kg": 2.9802322387695312e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1970,
+      "previous_checkpoint_label_error_kg": 2.7194619178771973e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1971,
+      "previous_checkpoint_label_error_kg": 2.6971101760864258e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1972,
+      "previous_checkpoint_label_error_kg": 3.7103891372680664e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1973,
+      "previous_checkpoint_label_error_kg": 4.202127456665039e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1974,
+      "previous_checkpoint_label_error_kg": 7.0035457611083984e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1975,
+      "previous_checkpoint_label_error_kg": 7.674098014831543e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1976,
+      "previous_checkpoint_label_error_kg": 8.672475814819336e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1977,
+      "previous_checkpoint_label_error_kg": 6.735324859619141e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1978,
+      "previous_checkpoint_label_error_kg": 6.273388862609863e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1979,
+      "previous_checkpoint_label_error_kg": 4.813075065612793e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1980,
+      "previous_checkpoint_label_error_kg": 4.9620866775512695e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1981,
+      "previous_checkpoint_label_error_kg": 5.8710575103759766e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1982,
+      "previous_checkpoint_label_error_kg": 8.970499038696289e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1983,
+      "previous_checkpoint_label_error_kg": 6.794929504394531e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1984,
+      "previous_checkpoint_label_error_kg": 1.1652708053588867e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1985,
+      "previous_checkpoint_label_error_kg": 1.1682510375976562e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1986,
+      "previous_checkpoint_label_error_kg": 1.2129545211791992e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1987,
+      "previous_checkpoint_label_error_kg": 8.970499038696289e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1988,
+      "previous_checkpoint_label_error_kg": 8.463859558105469e-06,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1989,
+      "previous_checkpoint_label_error_kg": 1.1593103408813477e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1990,
+      "previous_checkpoint_label_error_kg": 1.2934207916259766e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1991,
+      "previous_checkpoint_label_error_kg": 1.576542854309082e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1992,
+      "previous_checkpoint_label_error_kg": 1.6391277313232422e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1993,
+      "previous_checkpoint_label_error_kg": 2.1159648895263672e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1994,
+      "previous_checkpoint_label_error_kg": 2.3484230041503906e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1995,
+      "previous_checkpoint_label_error_kg": 3.331899642944336e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1996,
+      "previous_checkpoint_label_error_kg": 3.343820571899414e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1997,
+      "previous_checkpoint_label_error_kg": 3.4332275390625e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1998,
+      "previous_checkpoint_label_error_kg": 4.392862319946289e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 1999,
+      "previous_checkpoint_label_error_kg": 3.8743019104003906e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2000,
+      "previous_checkpoint_label_error_kg": 3.403425216674805e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2001,
+      "previous_checkpoint_label_error_kg": 3.2067298889160156e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2002,
+      "previous_checkpoint_label_error_kg": 2.5391578674316406e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2003,
+      "previous_checkpoint_label_error_kg": 1.7970800399780273e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2004,
+      "previous_checkpoint_label_error_kg": 3.045797348022461e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2005,
+      "previous_checkpoint_label_error_kg": 3.2842159271240234e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2006,
+      "previous_checkpoint_label_error_kg": 2.6464462280273438e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2007,
+      "previous_checkpoint_label_error_kg": 2.3871660232543945e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2008,
+      "previous_checkpoint_label_error_kg": 2.5987625122070312e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2009,
+      "previous_checkpoint_label_error_kg": 3.725290298461914e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2010,
+      "previous_checkpoint_label_error_kg": 3.7670135498046875e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2011,
+      "previous_checkpoint_label_error_kg": 2.9325485229492188e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2012,
+      "previous_checkpoint_label_error_kg": 3.0159950256347656e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2013,
+      "previous_checkpoint_label_error_kg": 3.540515899658203e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2014,
+      "previous_checkpoint_label_error_kg": 3.612041473388672e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2015,
+      "previous_checkpoint_label_error_kg": 4.106760025024414e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2016,
+      "previous_checkpoint_label_error_kg": 3.927946090698242e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2017,
+      "previous_checkpoint_label_error_kg": 4.83393669128418e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2018,
+      "previous_checkpoint_label_error_kg": 4.172325134277344e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2019,
+      "previous_checkpoint_label_error_kg": 5.447864532470703e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2020,
+      "previous_checkpoint_label_error_kg": 4.8279762268066406e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2021,
+      "previous_checkpoint_label_error_kg": 4.369020462036133e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2022,
+      "previous_checkpoint_label_error_kg": 4.2438507080078125e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2023,
+      "previous_checkpoint_label_error_kg": 3.838539123535156e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    },
+    {
+      "year": 2024,
+      "previous_checkpoint_label_error_kg": 3.3974647521972656e-05,
+      "acceptance_waived": false,
+      "diagnostic_only": true
+    }
+  ],
+  "gradient_claim": "existing full-history kernel validated; annual streaming here is forward only, no truncated-gradient training",
+  "implementation_unchanged": true,
+  "elapsed_seconds": 129.56299999984913,
+  "resources_at_start": {
+    "physical_used_percent": 40.0,
+    "physical_total_bytes": 68490244096,
+    "physical_available_bytes": 40634540032,
+    "commit_used_percent": 68.33809918352047,
+    "commit_available_bytes": 23045181440,
+    "commit_total_bytes": 72785211392,
+    "cpu_used_percent": 0.9966777408637828
+  },
+  "formal_fit": false,
+  "NSE": "computed separately against real observations; physical ledger NSE not applicable"
+}

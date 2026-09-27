@@ -1,0 +1,7 @@
+metric,statistic,lower_95,upper_95,n_defined_replicates,n_requested_replicates,block_months,seed,interpretation
+month_centered_nse,difference_of_medians,-0.7511829881391309,-0.16599280545908948,1000,1000,1,1729,conditional_on_frozen_models_and_observed_calendar
+month_centered_nse,median_paired_difference,-0.7546635967844729,-0.17315322150557616,1000,1000,1,1729,conditional_on_frozen_models_and_observed_calendar
+month_centered_nse,improvement_fraction,0.0,0.3076923076923077,1000,1000,1,1729,conditional_on_frozen_models_and_observed_calendar
+nse,difference_of_medians,-96.8295894446834,-28.759173163284157,1000,1000,1,1729,conditional_on_frozen_models_and_observed_calendar
+nse,median_paired_difference,-95.92560069194457,-28.39440680951751,1000,1000,1,1729,conditional_on_frozen_models_and_observed_calendar
+nse,improvement_fraction,0.0,0.0,1000,1000,1,1729,conditional_on_frozen_models_and_observed_calendar

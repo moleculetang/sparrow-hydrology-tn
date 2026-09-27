@@ -1,0 +1,25 @@
+[
+  {
+    "year": 2023,
+    "stations": 15,
+    "amplitude_exceeds_one": 12,
+    "amplitude_exceeds_correlation": 15,
+    "median_bias_fraction_of_normalized_mse": 0.9511385213932336,
+    "excluded_station_records": []
+  },
+  {
+    "year": 2024,
+    "stations": 14,
+    "amplitude_exceeds_one": 10,
+    "amplitude_exceeds_correlation": 14,
+    "median_bias_fraction_of_normalized_mse": 0.9624613523102701,
+    "excluded_station_records": [
+      {
+        "station_key": "厂房大桥",
+        "n_common_days": 106,
+        "n_common_months": 5,
+        "candidate_nse_status": "insufficient_support"
+      }
+    ]
+  }
+]
