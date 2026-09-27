@@ -1,0 +1,181 @@
+{
+  "passed": true,
+  "blocked_by": [],
+  "gradient_review": [
+    {
+      "coordinate": 0,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    },
+    {
+      "coordinate": 1,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    },
+    {
+      "coordinate": 2,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    },
+    {
+      "coordinate": 3,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    },
+    {
+      "coordinate": 4,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    },
+    {
+      "coordinate": 5,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    },
+    {
+      "coordinate": 6,
+      "original_scan_passed": false,
+      "accepted_refinement": true,
+      "receipt": {
+        "coordinate": 6,
+        "path": "E:\\SPARROW\\5_Test\\20260927_2\\outputs\\land1_coordinate_v6_6_branch_refinement.json",
+        "sha256": "ebfc411d099750e9d4561a256c032bafb012c5328b7c02a4f34eb15dc6ee70ca",
+        "accepted_as_local_smooth_derivative_evidence": true,
+        "interpretation": "Original coarse-grid failure retained; two adjacent finer steps match the analytic gradient without branch changes. This does not establish optimizer convergence."
+      }
+    },
+    {
+      "coordinate": 7,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    },
+    {
+      "coordinate": 8,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    },
+    {
+      "coordinate": 9,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    },
+    {
+      "coordinate": 10,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    },
+    {
+      "coordinate": 11,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    },
+    {
+      "coordinate": 12,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    },
+    {
+      "coordinate": 13,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    },
+    {
+      "coordinate": 14,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    },
+    {
+      "coordinate": 15,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    },
+    {
+      "coordinate": 16,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    },
+    {
+      "coordinate": 17,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    },
+    {
+      "coordinate": 18,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    },
+    {
+      "coordinate": 19,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    },
+    {
+      "coordinate": 20,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    },
+    {
+      "coordinate": 21,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    },
+    {
+      "coordinate": 22,
+      "original_scan_passed": true,
+      "accepted_refinement": false
+    }
+  ],
+  "identities": {
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\precision_candidate.py": "c9692ce7471fc5d87a3f09ace7c5eb3fe18227ee3af4005680290392e0824591",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\precision_transfer.py": "0537b12f4133b6b3f7ce89743ddaffb62c564debdf2263d5f238e20e5bd350f7",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\mixture_tags_candidate.py": "764993fe52651b5522c6657207a4486cd763415b97b10bdc277505e5be13c73f",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\land1.py": "743d1edf65e8781887d61fe22505ec765375d7be4bdfda3e5639d069e76bc3e8",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_training\\land1_adapter.py": "fd3bdda4cbec26cf60c089055748cba85ce5a6aa0d74a2f3a2b2a3a99fbc725a",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_training\\annual_chain.py": "6e4f6eb0e0e61cd8ec4f2066a584b14b8ae87ee3d6f83440ac03d94a89c8fd50",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_training\\u_adapter.py": "f6692f9156af62857bf51e6cc0532dbcca10ea0bdb9efdd10664af96f602b817",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_training\\objective.py": "1b8476db9bb440da94e7e609078f1571159dbc56994a1b2fcf658efc4f336534",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\conditional_inputs.py": "fd0f7159435558fcc3f98790ec6604f5b8be6b695f82e34d3c3ca2b123be4e86",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\coupling.py": "be6708cb884aa07d44d919c7106e776d523038238a1101e7af5ea6e888444b37",
+    "E:\\SPARROW\\5_Test\\20260927_2\\evidence\\runtime_input_identity_numerical_v2.json": "38be690bc7d4894e232a1c38597b62ac843b99681ab9811cf35c77b4eb2eb054",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_training\\derivative_gate.py": "8ad7a2c14f32d5b4b21f87753e47219b2295388c0838a6cfa972d2de06241e0e",
+    "E:\\SPARROW\\5_Test\\20260927_2\\scripts\\build_land1_gate_numerical_v2.py": "1302ce5e65c60fe72c44e0c6cfd58323bc6d18e339d1f11b545f703659f95c74"
+  },
+  "evidence": {
+    "gradient": {
+      "path": "E:\\SPARROW\\5_Test\\20260927_2\\outputs\\land1_full_history_gradient_v6.json",
+      "sha256": "a4f76d37dd4e023ca2ed5b5b7f72eda71579ae66a51db29d89e61c47eabc68f4"
+    },
+    "mass": {
+      "path": "E:\\SPARROW\\5_Test\\20260927_2\\outputs\\authoritative_mixture_candidate\\receipt.json",
+      "sha256": "8753605622553317b0304012547167c30426c15bb8d8a493f4dedde52869cbb1"
+    },
+    "safety": {
+      "path": "E:\\SPARROW\\5_Test\\20260927_2\\outputs\\authoritative_safety_history\\receipt.json",
+      "sha256": "41d1ac097e353769b945ebbc82691fd2c521ce8776bd4d590f326caa0626ce01"
+    },
+    "objective": {
+      "path": "E:\\SPARROW\\5_Test\\20260927_2\\outputs\\land1_independent_objective_numerical_v2.json",
+      "sha256": "2184a41d83bb673ae54681cae1f6edddc001bdd127830e4e09dfdb07abe9961c"
+    },
+    "training_isolation": {
+      "path": "E:\\SPARROW\\5_Test\\20260927_2\\outputs\\label_isolation_real_support.json",
+      "sha256": "2dd6894f5b23cef0f7eec48f3833c4fed3cd2d9e388930b8cb83d409491008db"
+    },
+    "land1_isolation": {
+      "path": "E:\\SPARROW\\5_Test\\20260927_2\\outputs\\land1_label_isolation_numerical_v2.json",
+      "sha256": "dd2a75f9cc4d4703bfc03b37fd375fda6dffad96df358a1d46d99b2c8df107cc"
+    },
+    "inputs": {
+      "path": "E:\\SPARROW\\5_Test\\20260927_2\\evidence\\runtime_input_identity_numerical_v2.json",
+      "sha256": "38be690bc7d4894e232a1c38597b62ac843b99681ab9811cf35c77b4eb2eb054"
+    },
+    "reference_tests": {
+      "path": "E:\\SPARROW\\5_Test\\20260927_2\\outputs\\precision_candidate_test_receipt_numerical_v2.json",
+      "sha256": "ab36a9cabc6509259e98801e3c5b9bfb28e84d34093b2584483d7181a3e920bd"
+    }
+  },
+  "model": "LAND1 23-parameter conditional reference configuration",
+  "does_not_certify_real_source_or_water_accuracy": true,
+  "numerical_stock_representation": "four low parts retained with direct nonnegative transport fallback at near-empty states",
+  "NSE": "not applicable to implementation acceptance"
+}

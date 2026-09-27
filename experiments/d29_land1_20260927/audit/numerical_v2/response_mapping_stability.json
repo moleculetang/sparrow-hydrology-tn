@@ -1,0 +1,72 @@
+{
+  "identity": "frozen F23 H1 response map before/after numerical stabilization",
+  "h1_anchor": {
+    "parameters": [
+      -8.716531797155586,
+      1.2898475288415427,
+      0.04981328997780743,
+      8.068893812701983,
+      -1.0270783208543082,
+      -0.2255610191597798,
+      -0.07072346818228446,
+      -0.033192503386221144,
+      -0.4512824300869157,
+      -0.37787761064567726,
+      0.8768466171000938,
+      3.8207480884918024,
+      1.1194386019536686,
+      0.08258345610365307,
+      0.5225707045017226,
+      1.2285703496111564,
+      2.4696680927418644,
+      -1.3376533319844972,
+      1.0469708607652306,
+      0.31627074884840295,
+      0.06995031694824641,
+      0.6970107802828408,
+      -0.4651612386535627,
+      0.28407966145315167,
+      0.5394633879053733,
+      0.06541548917080904,
+      0.4184522903274817,
+      0.2191550315045319,
+      -0.15076073152623656,
+      0.48206993637735757,
+      0.4383149404741334
+    ],
+    "objective": 1.1163038058765153,
+    "pg": 7.251596307420328e-07,
+    "numerical_sufficient": true,
+    "path": "E:\\SPARROW\\5_Test\\20260922_1\\outputs\\F23_U_P_s1",
+    "sha256": "fc048fdd0ad949021714504431f6587f513800e7dd80a08d1c7decd3c2b426da",
+    "fold": "F23_G_D",
+    "kind": "SOURCE_UNIFIED"
+  },
+  "source_sha256": "be6708cb884aa07d44d919c7106e776d523038238a1101e7af5ea6e888444b37",
+  "probability_max_abs_difference": 5.551115123125783e-16,
+  "fast_fraction_max_abs_difference": 4.440892098500626e-16,
+  "zero_contact_hazard_max": 0.0,
+  "finite_new_hazard": true,
+  "finite_new_fast_fraction": true,
+  "n_days": 23376,
+  "reaches": 230,
+  "extreme_parameter_stress": [
+    {
+      "sign": -1,
+      "hazard_max": 699.9999999999998,
+      "hazard_min": 0.0,
+      "all_values_finite": true,
+      "all_active_gradients_finite": true,
+      "contact_zero_hazard_max": 0.0
+    },
+    {
+      "sign": 1,
+      "hazard_max": 699.9999999999998,
+      "hazard_min": 0.0,
+      "all_values_finite": true,
+      "all_active_gradients_finite": true,
+      "contact_zero_hazard_max": 0.0
+    }
+  ],
+  "NSE": "not applicable to physical mapping regression"
+}

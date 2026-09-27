@@ -1,0 +1,339 @@
+{
+  "reviewed": 37,
+  "all_original_ids_covered": true,
+  "items": [
+    {
+      "id": "land_inventory_filtering",
+      "original_claim": "陆地库存过滤输入尖峰、响应偏慢",
+      "status": "候选已改，科学未关闭",
+      "action": "以Sa/Sp矿化、植物及可用池替代原M；退出旧M寿命；完整历史运行。",
+      "remaining": "活性矿化仍为固定90天半衰期情景；未做同参数单因素归因或证明动态最优。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\d29_platform\\land1.py",
+      "scientific_closed": false
+    },
+    {
+      "id": "observed_amplitude_phase",
+      "original_claim": "真实TN振幅不足、峰日和月内波形对应不充分",
+      "status": "已评价，未解决",
+      "action": "日/月内NSE、幅度、相关、峰日按共同支持重算。",
+      "remaining": "振幅提高到1以上而偏差和多数动态误差扩大；不能把增幅称为修复。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\supply_limited_reference\\evaluation\\2024_daily_summary.csv",
+      "scientific_closed": false
+    },
+    {
+      "id": "monthly_support_45",
+      "original_claim": "45个月站不受旧13区反推源影响",
+      "status": "覆盖接口已扩展",
+      "action": "新独立源覆盖230河段，输出全部116站界，不再限旧13区反推支持。",
+      "remaining": "未删45个月站；新的完整源仍不等于已确认真实负荷，旧反推结论不改写。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\input_contract_audit\\receipt.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "historical_initial_state",
+      "original_claim": "历史来源/需求与2021初态不可识别",
+      "status": "明确情景，未识别",
+      "action": "登记现代SOC/14初态、64年连续源和植物活动、初态来源标签。",
+      "remaining": "2024局地出口约25%仍来自初态标签；1961真实SON及历史植物活动未知。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\supply_limited_reference\\audit\\annual_local_export_source_fractions.csv",
+      "scientific_closed": false
+    },
+    {
+      "id": "network_time",
+      "original_claim": "普通河段同日传递、河库传播相位",
+      "status": "保留诊断，未修改",
+      "action": "沿冻结H1路由和OU逐来源重放，检查网络账本。",
+      "remaining": "普通河段同日传递保留；没有独立旅行时间证据，不能按残差加全网时滞。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\supply_limited_reference\\audit\\independent_result_audit.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "boundary_water",
+      "original_claim": "站界水量Q及质量/水量读出支持",
+      "status": "接口核验，观测证据缺失",
+      "action": "同日同OU质量/水量及C=1000M/Q复算，零水不定义浓度。",
+      "remaining": "9河段H1容量面积与几何差>1%；同站界实测Q未认证。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\input_contract_audit\\receipt.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "optimizer_convergence",
+      "original_claim": "四联合路径未达到数值充分",
+      "status": "旧限制保留，本轮不适用",
+      "action": "本轮为冻结参数前向，拟合调用为0；不把前向完成标成收敛。",
+      "remaining": "旧四联合点未充分状态未改；新28路径未派发。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\supply_limited_reference\\evaluation\\receipt.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "depletion_kinks",
+      "original_claim": "需求耗尽折点及疑似梯度不符",
+      "status": "新增分支已修验",
+      "action": "精确满足植物目标时用代数等价目标分支消除负末位；严格不可行仍报错；供氮受限新分支独立验导。",
+      "remaining": "耗尽边界不声称光滑；计划短缺是情景不相容，不能用浮点修正消除。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\precision_revision\\potential_activity_validation.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "input_bounds",
+      "original_claim": "假输入触边、输入族/范围限制",
+      "status": "本轮不使用旧反推输入族",
+      "action": "不使用W7/D1或TN辅助源；独立资料与研究默认构造kg N/day。",
+      "remaining": "国家趋势、缺率代理和年度均匀日历不是真实管理日期；不宣称准确输入。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\d29_platform\\conditional_inputs.py",
+      "scientific_closed": false
+    },
+    {
+      "id": "source_eta_inactive",
+      "original_claim": "旧联合反推来源倍率仅影响先验",
+      "status": "新运行已避开",
+      "action": "不移植旧theta30及来源先验，不保留只影响先验的校准坐标。",
+      "remaining": "本次未优化；未来引入倍率必须全历史作用外源并重新验导。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\config\\conditional_reference.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "sampling_and_aggregation",
+      "original_claim": "采样日期和月聚合遮蔽波形",
+      "status": "已实施共同支持",
+      "action": "日读数加权、月内等月、HF月与原月报分开；事件支持缺项明列。",
+      "remaining": "原月报实际采样时间仍未认证；日平均无法重建日内尖峰。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\supply_limited_reference\\evaluation\\receipt.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "causal_comparison",
+      "original_claim": "输入/历史/参数变化混为单因素原因",
+      "status": "归因门保留",
+      "action": "明确候选同时改变源、历史、植物活动和方程，仅描述完整配置差异。",
+      "remaining": "不将新旧NSE差解释为某个单独过程的作用。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\supply_limited_reference\\evaluation\\receipt.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "land_units_and_cross_class_uptake",
+      "original_claim": "Old D29 mixes all sources in one M stock, so source tags alone cannot prevent crop demand consuming noncropland nitrogen.",
+      "status": "实现修正并验证",
+      "action": "230河段×12物理类及被动隔离槽；作物源、活动只进入耕地。",
+      "remaining": "LUH/CLCD交叉映射仍是支持适配；转地后的质量搬移不代表化学转换已识别。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\input_contract_audit\\receipt.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "physical_area_vs_multiple_harvests_and_CCD",
+      "original_claim": "Harvested area can count repeated cropping and cannot initialize repeated copies of soil stocks; CCD covers only selected crop classes.",
+      "status": "库存重复问题已防止；CCD未接入",
+      "action": "LUH物理面积建库存；收获面积只估源与活动，复种不复制土壤；CCD退出驱动。",
+      "remaining": "CCD近邻重叠非精确并集，省界去重未完成，不宣称已消除原产品冲突。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\agriculture_reference\\receipt.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "harvest_proxy_vs_total_plant_demand",
+      "original_claim": "Old crop demand is a harvested-product removal proxy, not total plant N uptake or residue production.",
+      "status": "语义拆分并新增可行性分支",
+      "action": "产出N、残体归还、植物目标分别登记；严格运行失败保留，供氮受限另命名。",
+      "remaining": "2024植物归还计划7.40%未实现；不能声称产量/NPP目标已全部达成。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\supply_limited_reference\\audit\\annual_balance_and_activity_deficits.csv",
+      "scientific_closed": false
+    },
+    {
+      "id": "external_inputs_and_internal_transfers",
+      "original_claim": "Treating mineralization or returned residues as new external inputs, or subtracting crop removal from an already net surplus, double counts mass.",
+      "status": "账本路径已修验",
+      "action": "矿化、摄取和归还为内部；四入口外源互斥，MOD17不是外源。",
+      "remaining": "大库存绝对质量门仍未通过，不能由小核通过推定正式账本合格。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\precision_revision\\potential_activity_validation.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "old_effective_M_lifetime_reuse",
+      "original_claim": "Adding explicit SON while reusing the old fitted M lifetime as if physically identified can double-count slow memory or transplant compensation.",
+      "status": "已退出",
+      "action": "LAND1不接收旧M寿命及七项空间寿命映射；动员和快慢/H1保留。",
+      "remaining": "新矿化率为研究改编；旧水文映射迁移未证明已适合新氮库。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\config\\conditional_reference.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "SON_initialization_and_modern_soil_TN",
+      "original_claim": "A modern SoilGrids total-TN map cannot identify 1961 stocks, active/protected fractions and mineralization rates.",
+      "status": "单位已修，初态情景化",
+      "action": "SOC换算、容重、砾石和深度审计；C:N14，活性比例.02显式配置。",
+      "remaining": "SOC/14与独立土壤TN有最大1.457倍比值；不裁剪强行一致；现代不能识别1961。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\soil_reference\\son_soc14_receipt.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "residue_fates_and_animal_recycling",
+      "original_claim": "Residue removal is not the complement of residue return; burning air/ash, grazing and later excretion need mutually exclusive, paired accounting.",
+      "status": "互斥处理，实际去向未知",
+      "action": ".76直接归还，.24登记未解析域外去向；不再重复回加粪肥。",
+      "remaining": "根残体、放牧/焚烧细分和动物再循环缺资料；.76跨历史/区域使用是情景。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\config\\conditional_reference.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "land_use_change_stock_transfer",
+      "original_claim": "Changing land-cover classes must not create or remove soil N; a uniform unexplained land-conversion release factor is not justified.",
+      "status": "守恒接口已实现",
+      "action": "LUH年y算子于y+1元旦搬移全部库存和来源；城市转入质量被动保留。",
+      "remaining": "面积转换不提供收获/燃烧/清理氮去向，城市封存只是边界情景。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\luh3_adapter\\receipt.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "old_source_vintages_and_2024_agriculture",
+      "original_claim": "False source_extension_flag does not prove current-year data; fertilizer/manure/BNF intensities and harvested area use older years.",
+      "status": "年份/代理已逐项登记",
+      "action": "2021—24面积从2020空间型按对应国家趋势调整；2024施肥用全国N比例一次；粪肥独立强度。",
+      "remaining": "未获得2021—24河段实测农业活动；不把false替代标志当新资料。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\agriculture_reference\\annual_crop_source_reference.parquet",
+      "scientific_closed": false
+    },
+    {
+      "id": "annual_national_scaling_and_real_input_calendars",
+      "original_claim": "National growth is not observed basin growth; area and source totals must not be scaled twice; agricultural sources cannot share one unsupported annual ratio.",
+      "status": "重复缩放已防止，日期未知",
+      "action": "固定28商品完整篮子，面积仅分配总量；年度源和活动均匀日分。",
+      "remaining": "全国不是流域实测；均摊不增加施肥/收获事件信息，宽作物组代理仍粗。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\scripts\\prepare_agriculture_reference.py",
+      "scientific_closed": false
+    },
+    {
+      "id": "new_deposition_product_and_units",
+      "original_claim": "Old HaNi deposition held the 2020 field through 2024; mass-per-grid and flux-per-area formulas must not be mixed.",
+      "status": "已接入并独立复核",
+      "action": "新input4MIPs四分量取增量月量；保留ScenarioMIP与土地掩码年份。",
+      "remaining": "2023—24为情景非观测，上游暴露表不作第二份来源。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\input_contract_audit\\receipt.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "deposition_daily_and_surface_eligibility",
+      "original_claim": "A complete monthly land mass is not automatically a complete daily soil input or an input on every land class.",
+      "status": "严格冲突保留，单列研究版本",
+      "action": "统一月内日分为独立情景；非植被/未知表面进入被动隔离，水面排除。",
+      "remaining": "93河段月正湿沉降/零H1雨未物理解决；隔离不是城市冲刷模型。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\deposition_reference\\receipt.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "BNF_seed_manure_forms_and_total_form_double_count",
+      "original_claim": "Manure mineral fraction and plant/soil BNF entries require independent assumptions; total fertilizer N cannot be added again to NH4/NO3 subcomponents.",
+      "status": "入口和总量互斥已实现",
+      "action": "豆科BNF入植物，稻/甘蔗入土；田施粪肥矿质/有机互斥；不叠加总N和形态。",
+      "remaining": "自然BNF、种子、其他豆科及牧场排泄未量化；矿质.5及有机分配是改编情景。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\config\\conditional_reference.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "direct_river_sources_and_full_TN_boundary",
+      "original_claim": "Wastewater, industry, aquaculture and animal direct discharges are not represented by the four terrestrial agricultural/deposition sources.",
+      "status": "缺项显式保留",
+      "action": "直接入河接口不暗加土壤；缺负荷及位置的污水/工业/养殖源不启用。",
+      "remaining": "不能称来源齐全；这也限制TN诊断归因。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\config\\conditional_reference.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "MOD17_noncropland_plant_production",
+      "original_claim": "A complete land budget needs noncropland vegetation uptake/returns; MOD17 is carbon-production information, not external N.",
+      "status": "已接入，默认假设可追溯",
+      "action": "仅非耕地碳→器官N活动；QC百分数保留，数值有效值不误作bitmask。",
+      "remaining": "2024 QC≤50仅34.28%支持；1961—2000均值情景、缺地类借值、年度器官周转皆非观测。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\d29_platform\\conditional_inputs.py",
+      "scientific_closed": false
+    },
+    {
+      "id": "H1_full_chain_and_prediction_claim",
+      "original_claim": "The 24_2 ledger-only audit had not recomputed full H1-D29 predictions and could not establish event gains; same-boundary Q and 2025 support remained unverified.",
+      "status": "完整运行已完成",
+      "action": "1961—2024真实资料/情景组合经陆地—河网—OU到116站；输入生成不读TN。",
+      "remaining": "未经校准，且绝对账本门失败；2024为F23参数回放，不是F24预测或2025预报。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\supply_limited_reference\\receipt.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "ENG_gradient_acceptance",
+      "original_claim": "多步长、边界与折点梯度验收漏洞",
+      "status": "修正保留且复验",
+      "action": "72项继承测试；多步长需两相邻通过，保留更小步长消差失败；新分支对照Torch。",
+      "remaining": "不是逐个穷举所有真实历史坐标，真实运行年块前向不是截断梯度训练。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\precision_revision\\receipt.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "ENG_source_responsibility",
+      "original_claim": "显式日来源倍率作用责任和失活参数登记",
+      "status": "当前参数职责已登记",
+      "action": "外源五类标签和初态责任分离，旧失活来源参数退出。",
+      "remaining": "来源标签为来历不是化学形态。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\supply_limited_reference\\audit\\annual_local_export_source_fractions.csv",
+      "scientific_closed": false
+    },
+    {
+      "id": "ENG_full_land1_accounting",
+      "original_claim": "LAND1新状态、初态、来源与内部转移的前向/伴随及标签路径",
+      "status": "部分通过，严格门失败",
+      "action": "新分支、补偿求和及补偿检查点完成；小核/合成全历史导数通过。",
+      "remaining": "实际大库存局地1.1444e-5kg、标签5.4479e-5kg均超1e-6kg；正式运行仍阻塞。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\supply_limited_reference\\receipt.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "ENG_comparison_identity",
+      "original_claim": "身份比较器阻止历史等混杂因素被解释为单因素收益",
+      "status": "规则通过",
+      "action": "72项测试复验历史身份拒绝门，冻结输入/代码/预测哈希；无单因素增益主张。",
+      "remaining": "描述比较可以做，因果贡献尚不能隔离。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\precision_revision\\inherited_72_tests.log",
+      "scientific_closed": false
+    },
+    {
+      "id": "ENG_evaluation_support",
+      "original_claim": "共同支持NSE、月内异常权重及已知结果评价夹具",
+      "status": "已复算",
+      "action": "逐站NSE/月内NSE、两汇总口径、比例及1000月块/双月块完成。",
+      "remaining": "2024日合格14站，事件有支持不足；不与旧轮不同支持排行榜混合。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\supply_limited_reference\\evaluation\\receipt.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "ENG_missing_data_gate",
+      "original_claim": "未知资料、正湿沉降零雨冲突和28路径干运行阻塞",
+      "status": "严格门保留，条件分支单列",
+      "action": "未知不默认零；条件版本明确排除未知边界、被动隔离和估计值；正式28路径不派发。",
+      "remaining": "授权研究默认不等于所有未知量获独立证实，正式来源完备为false。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\input_contract_audit\\receipt.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "fast_pool_same_platform",
+      "original_claim": "在已登记P/D、H1、旧目标和两折设计中，继续只调快库速度/损失绑定没有已证实收益",
+      "status": "不重复旧局部快库试验",
+      "action": "保留既有阴性范围，新LAND1不再新增第三快速库存。",
+      "remaining": "此次均值/幅度变化不能归因为旧快库获胜或失败。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\config\\conditional_reference.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "carrier_alignment",
+      "original_claim": "氮质量与具体水载体、交换和局地/上游时序可能不匹配，需要联合层级证据",
+      "status": "代码层检查通过，物理层未认证",
+      "action": "正快路N无正快路水为0例，慢路同为0；同OU路由和分母重算。",
+      "remaining": "这只排除零载体等实现错误；不证明供体混合体积、水龄、氮随水日期均真实。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\outputs\\input_contract_audit\\receipt.json",
+      "scientific_closed": false
+    },
+    {
+      "id": "nitrogen_species_observation",
+      "original_claim": "总TN观测与目前有效氮质量之间的形态/颗粒/直接排放对应尚未独立认证",
+      "status": "保留未解决",
+      "action": "不把来历标签冒称NO3/NH4/颗粒N；有效N与实测TN区别列明。",
+      "remaining": "没有形态/悬沙证据前不增加不可识别形态参数。",
+      "evidence": "E:\\SPARROW\\5_Test\\20260927_1\\config\\conditional_reference.json",
+      "scientific_closed": false
+    }
+  ]
+}

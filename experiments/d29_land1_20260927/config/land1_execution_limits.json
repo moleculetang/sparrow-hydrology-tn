@@ -1,0 +1,9 @@
+{
+  "primary_path_active_hours": 6,
+  "supplementary_path_active_hours": 4,
+  "maximum_calls_per_path": 6000,
+  "registered_before_first_land1_fit": true,
+  "reason": "Measured complete history evaluations take roughly one minute and peak commit is 7.86 GB. Reserve six cumulative active hours per primary path; original global and dispatch deadlines remain controlling.",
+  "no_additional_scientific_start": true,
+  "unfinished_paths_at_global_deadline": "retain optimizer and all cumulative calls; report missing numerical adequacy"
+}

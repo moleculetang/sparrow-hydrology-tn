@@ -1,0 +1,542 @@
+{
+  "status": "completed_conditional_forward",
+  "days": 23376,
+  "reaches": 230,
+  "land_slots": 13,
+  "local_max_balance_kg": 1.2147574469041943e-07,
+  "label_max_difference_kg": 9.44273779168725e-08,
+  "network_relative_error": 3.0495753069647014e-17,
+  "strict_mass_pass": true,
+  "no_TN_loaded": true,
+  "full_history_continuity": true,
+  "roundoff_diagnostic_continuations": [],
+  "gradient_claim": "forward/source/nonnegative audit only; full-history derivative acceptance is a separate required gate",
+  "implementation_unchanged": true,
+  "elapsed_seconds": 468.2819999998901,
+  "resources_at_start": {
+    "physical_used_percent": 33.0,
+    "physical_total_bytes": 68490244096,
+    "physical_available_bytes": 45486956544,
+    "commit_used_percent": 45.37574282518339,
+    "commit_available_bytes": 39758381056,
+    "commit_total_bytes": 72785211392,
+    "cpu_used_percent": 1.4577259475218707
+  },
+  "formal_fit": false,
+  "NSE": "computed separately against real observations; physical ledger NSE not applicable",
+  "safety_rows": [
+    {
+      "year": 1961,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 0.0,
+      "passed": true
+    },
+    {
+      "year": 1962,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 0.0,
+      "passed": true
+    },
+    {
+      "year": 1963,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 0.0,
+      "passed": true
+    },
+    {
+      "year": 1964,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 0.0,
+      "passed": true
+    },
+    {
+      "year": 1965,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 0.0,
+      "passed": true
+    },
+    {
+      "year": 1966,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 0.0,
+      "passed": true
+    },
+    {
+      "year": 1967,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 0.0,
+      "passed": true
+    },
+    {
+      "year": 1968,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 4.547473508864641e-13,
+      "passed": true
+    },
+    {
+      "year": 1969,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 4.547473508864641e-13,
+      "passed": true
+    },
+    {
+      "year": 1970,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 3.637978807091713e-12,
+      "passed": true
+    },
+    {
+      "year": 1971,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 3.637978807091713e-12,
+      "passed": true
+    },
+    {
+      "year": 1972,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 7.275957614183426e-12,
+      "passed": true
+    },
+    {
+      "year": 1973,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 7.275957614183426e-12,
+      "passed": true
+    },
+    {
+      "year": 1974,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 7.275957614183426e-12,
+      "passed": true
+    },
+    {
+      "year": 1975,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 7.275957614183426e-12,
+      "passed": true
+    },
+    {
+      "year": 1976,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 1977,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 1978,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 7.275957614183426e-12,
+      "passed": true
+    },
+    {
+      "year": 1979,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 7.275957614183426e-12,
+      "passed": true
+    },
+    {
+      "year": 1980,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 7.275957614183426e-12,
+      "passed": true
+    },
+    {
+      "year": 1981,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 7.275957614183426e-12,
+      "passed": true
+    },
+    {
+      "year": 1982,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 7.275957614183426e-12,
+      "passed": true
+    },
+    {
+      "year": 1983,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 7.275957614183426e-12,
+      "passed": true
+    },
+    {
+      "year": 1984,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 7.275957614183426e-12,
+      "passed": true
+    },
+    {
+      "year": 1985,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 1986,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 1987,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 1988,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 1989,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 1990,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 7.275957614183426e-12,
+      "passed": true
+    },
+    {
+      "year": 1991,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 1992,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 1993,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 1994,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 1995,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 1996,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 1997,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 1998,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 1999,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2000,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2001,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2002,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2003,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2004,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2005,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2006,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2007,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2008,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2009,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2010,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2011,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2012,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2013,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2014,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2015,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2016,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2017,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2018,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2019,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2020,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2021,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2022,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2023,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    },
+    {
+      "year": 2024,
+      "minimum_represented_stock_kg": 0.0,
+      "minimum_flux_kg": 0.0,
+      "minimum_unmet_kg": 0.0,
+      "plant_output_excess_kg": 1.4551915228366852e-11,
+      "passed": true
+    }
+  ],
+  "nonnegative_and_plant_budget_pass": true
+}

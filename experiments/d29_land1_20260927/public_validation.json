@@ -1,0 +1,10 @@
+{
+  "tests": 83,
+  "passed": true,
+  "failures": 0,
+  "errors": 0,
+  "source": "published exact kernels and synthetic fixtures",
+  "private_experiment_reads_forbidden": true,
+  "real_TN_run_reproduced": false,
+  "scientific_acceptance": false
+}

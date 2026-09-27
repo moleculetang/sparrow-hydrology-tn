@@ -1,0 +1,430 @@
+[
+  {
+    "id": "LAND1_F23_T0_s0",
+    "model": "LAND1",
+    "fold": "F23",
+    "strategy": "T0",
+    "entry": 0,
+    "priority": 0,
+    "train_end": 2022,
+    "evaluate": [
+      2023
+    ],
+    "space_block": null
+  },
+  {
+    "id": "LAND1_F23_T2_s0",
+    "model": "LAND1",
+    "fold": "F23",
+    "strategy": "T2",
+    "entry": 0,
+    "priority": 0,
+    "train_end": 2022,
+    "evaluate": [
+      2023
+    ],
+    "space_block": null
+  },
+  {
+    "id": "LAND1_F24_T0_s0",
+    "model": "LAND1",
+    "fold": "F24",
+    "strategy": "T0",
+    "entry": 0,
+    "priority": 0,
+    "train_end": 2023,
+    "evaluate": [
+      2024
+    ],
+    "space_block": null
+  },
+  {
+    "id": "LAND1_F24_T2_s0",
+    "model": "LAND1",
+    "fold": "F24",
+    "strategy": "T2",
+    "entry": 0,
+    "priority": 0,
+    "train_end": 2023,
+    "evaluate": [
+      2024
+    ],
+    "space_block": null
+  },
+  {
+    "id": "U_F23_T0_s0",
+    "model": "U",
+    "fold": "F23",
+    "strategy": "T0",
+    "entry": 0,
+    "priority": 0,
+    "train_end": 2022,
+    "evaluate": [
+      2023
+    ],
+    "space_block": null
+  },
+  {
+    "id": "U_F23_T2_s0",
+    "model": "U",
+    "fold": "F23",
+    "strategy": "T2",
+    "entry": 0,
+    "priority": 0,
+    "train_end": 2022,
+    "evaluate": [
+      2023
+    ],
+    "space_block": null
+  },
+  {
+    "id": "U_F24_T0_s0",
+    "model": "U",
+    "fold": "F24",
+    "strategy": "T0",
+    "entry": 0,
+    "priority": 0,
+    "train_end": 2023,
+    "evaluate": [
+      2024
+    ],
+    "space_block": null
+  },
+  {
+    "id": "U_F24_T2_s0",
+    "model": "U",
+    "fold": "F24",
+    "strategy": "T2",
+    "entry": 0,
+    "priority": 0,
+    "train_end": 2023,
+    "evaluate": [
+      2024
+    ],
+    "space_block": null
+  },
+  {
+    "id": "LAND1_S113_T0_s0",
+    "model": "LAND1",
+    "fold": "F24",
+    "strategy": "T0",
+    "entry": 0,
+    "priority": 1,
+    "train_end": 2023,
+    "evaluate": [
+      2023,
+      2024
+    ],
+    "space_block": 113
+  },
+  {
+    "id": "LAND1_S113_T2_s0",
+    "model": "LAND1",
+    "fold": "F24",
+    "strategy": "T2",
+    "entry": 0,
+    "priority": 1,
+    "train_end": 2023,
+    "evaluate": [
+      2023,
+      2024
+    ],
+    "space_block": 113
+  },
+  {
+    "id": "LAND1_S191_T0_s0",
+    "model": "LAND1",
+    "fold": "F24",
+    "strategy": "T0",
+    "entry": 0,
+    "priority": 1,
+    "train_end": 2023,
+    "evaluate": [
+      2023,
+      2024
+    ],
+    "space_block": 191
+  },
+  {
+    "id": "LAND1_S191_T2_s0",
+    "model": "LAND1",
+    "fold": "F24",
+    "strategy": "T2",
+    "entry": 0,
+    "priority": 1,
+    "train_end": 2023,
+    "evaluate": [
+      2023,
+      2024
+    ],
+    "space_block": 191
+  },
+  {
+    "id": "LAND1_S56_T0_s0",
+    "model": "LAND1",
+    "fold": "F24",
+    "strategy": "T0",
+    "entry": 0,
+    "priority": 1,
+    "train_end": 2023,
+    "evaluate": [
+      2023,
+      2024
+    ],
+    "space_block": 56
+  },
+  {
+    "id": "LAND1_S56_T2_s0",
+    "model": "LAND1",
+    "fold": "F24",
+    "strategy": "T2",
+    "entry": 0,
+    "priority": 1,
+    "train_end": 2023,
+    "evaluate": [
+      2023,
+      2024
+    ],
+    "space_block": 56
+  },
+  {
+    "id": "U_S113_T0_s0",
+    "model": "U",
+    "fold": "F24",
+    "strategy": "T0",
+    "entry": 0,
+    "priority": 1,
+    "train_end": 2023,
+    "evaluate": [
+      2023,
+      2024
+    ],
+    "space_block": 113
+  },
+  {
+    "id": "U_S113_T2_s0",
+    "model": "U",
+    "fold": "F24",
+    "strategy": "T2",
+    "entry": 0,
+    "priority": 1,
+    "train_end": 2023,
+    "evaluate": [
+      2023,
+      2024
+    ],
+    "space_block": 113
+  },
+  {
+    "id": "U_S191_T0_s0",
+    "model": "U",
+    "fold": "F24",
+    "strategy": "T0",
+    "entry": 0,
+    "priority": 1,
+    "train_end": 2023,
+    "evaluate": [
+      2023,
+      2024
+    ],
+    "space_block": 191
+  },
+  {
+    "id": "U_S191_T2_s0",
+    "model": "U",
+    "fold": "F24",
+    "strategy": "T2",
+    "entry": 0,
+    "priority": 1,
+    "train_end": 2023,
+    "evaluate": [
+      2023,
+      2024
+    ],
+    "space_block": 191
+  },
+  {
+    "id": "U_S56_T0_s0",
+    "model": "U",
+    "fold": "F24",
+    "strategy": "T0",
+    "entry": 0,
+    "priority": 1,
+    "train_end": 2023,
+    "evaluate": [
+      2023,
+      2024
+    ],
+    "space_block": 56
+  },
+  {
+    "id": "U_S56_T2_s0",
+    "model": "U",
+    "fold": "F24",
+    "strategy": "T2",
+    "entry": 0,
+    "priority": 1,
+    "train_end": 2023,
+    "evaluate": [
+      2023,
+      2024
+    ],
+    "space_block": 56
+  },
+  {
+    "id": "LAND1_F23_T1_s0",
+    "model": "LAND1",
+    "fold": "F23",
+    "strategy": "T1",
+    "entry": 0,
+    "priority": 2,
+    "train_end": 2022,
+    "evaluate": [
+      2023
+    ],
+    "space_block": null
+  },
+  {
+    "id": "LAND1_F24_T1_s0",
+    "model": "LAND1",
+    "fold": "F24",
+    "strategy": "T1",
+    "entry": 0,
+    "priority": 2,
+    "train_end": 2023,
+    "evaluate": [
+      2024
+    ],
+    "space_block": null
+  },
+  {
+    "id": "U_F23_T1_s0",
+    "model": "U",
+    "fold": "F23",
+    "strategy": "T1",
+    "entry": 0,
+    "priority": 2,
+    "train_end": 2022,
+    "evaluate": [
+      2023
+    ],
+    "space_block": null
+  },
+  {
+    "id": "U_F24_T1_s0",
+    "model": "U",
+    "fold": "F24",
+    "strategy": "T1",
+    "entry": 0,
+    "priority": 2,
+    "train_end": 2023,
+    "evaluate": [
+      2024
+    ],
+    "space_block": null
+  },
+  {
+    "id": "LAND1_F23_T0_s1",
+    "model": "LAND1",
+    "fold": "F23",
+    "strategy": "T0",
+    "entry": 1,
+    "priority": 3,
+    "train_end": 2022,
+    "evaluate": [
+      2023
+    ],
+    "space_block": null
+  },
+  {
+    "id": "LAND1_F23_T2_s1",
+    "model": "LAND1",
+    "fold": "F23",
+    "strategy": "T2",
+    "entry": 1,
+    "priority": 3,
+    "train_end": 2022,
+    "evaluate": [
+      2023
+    ],
+    "space_block": null
+  },
+  {
+    "id": "LAND1_F24_T0_s1",
+    "model": "LAND1",
+    "fold": "F24",
+    "strategy": "T0",
+    "entry": 1,
+    "priority": 3,
+    "train_end": 2023,
+    "evaluate": [
+      2024
+    ],
+    "space_block": null
+  },
+  {
+    "id": "LAND1_F24_T2_s1",
+    "model": "LAND1",
+    "fold": "F24",
+    "strategy": "T2",
+    "entry": 1,
+    "priority": 3,
+    "train_end": 2023,
+    "evaluate": [
+      2024
+    ],
+    "space_block": null
+  },
+  {
+    "id": "U_F23_T0_s1",
+    "model": "U",
+    "fold": "F23",
+    "strategy": "T0",
+    "entry": 1,
+    "priority": 3,
+    "train_end": 2022,
+    "evaluate": [
+      2023
+    ],
+    "space_block": null
+  },
+  {
+    "id": "U_F23_T2_s1",
+    "model": "U",
+    "fold": "F23",
+    "strategy": "T2",
+    "entry": 1,
+    "priority": 3,
+    "train_end": 2022,
+    "evaluate": [
+      2023
+    ],
+    "space_block": null
+  },
+  {
+    "id": "U_F24_T0_s1",
+    "model": "U",
+    "fold": "F24",
+    "strategy": "T0",
+    "entry": 1,
+    "priority": 3,
+    "train_end": 2023,
+    "evaluate": [
+      2024
+    ],
+    "space_block": null
+  },
+  {
+    "id": "U_F24_T2_s1",
+    "model": "U",
+    "fold": "F24",
+    "strategy": "T2",
+    "entry": 1,
+    "priority": 3,
+    "train_end": 2023,
+    "evaluate": [
+      2024
+    ],
+    "space_block": null
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "status": "completed_conditional_forward",
+  "days": 23376,
+  "reaches": 230,
+  "land_slots": 13,
+  "local_max_balance_kg": 1.2147574469041943e-07,
+  "label_max_difference_kg": 9.44273779168725e-08,
+  "network_relative_error": 3.0495753069647014e-17,
+  "strict_mass_pass": true,
+  "no_TN_loaded": true,
+  "full_history_continuity": true,
+  "roundoff_diagnostic_continuations": [],
+  "gradient_claim": "forward/source audit only; candidate full-history derivative acceptance is separate and remains required",
+  "implementation_unchanged": true,
+  "elapsed_seconds": 447.64099999982864,
+  "resources_at_start": {
+    "physical_used_percent": 33.0,
+    "physical_total_bytes": 68490244096,
+    "physical_available_bytes": 45472497664,
+    "commit_used_percent": 45.34827491567588,
+    "commit_available_bytes": 39778373632,
+    "commit_total_bytes": 72785211392,
+    "cpu_used_percent": 1.2618296529968487
+  },
+  "formal_fit": false,
+  "NSE": "computed separately against real observations; physical ledger NSE not applicable"
+}

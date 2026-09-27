@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "model": "LAND1",
+  "path": "LAND1_F23_T2_s0",
+  "mutations": [
+    {
+      "file": "monthly_tn.parquet",
+      "modified_rows": 2228
+    },
+    {
+      "file": "hf_daily.parquet",
+      "modified_rows": 8821
+    }
+  ],
+  "full_history_reaches": 230,
+  "full_history_days": 23376,
+  "evaluation_stations": 116,
+  "evaluation_months": 1392,
+  "local_and_prediction_bitwise_equal": true,
+  "training_rows_scales_groups_initialization_unchanged": true,
+  "no_source_files_modified": true,
+  "auxiliary_files_read": [],
+  "forward_calls": 2,
+  "NSE": "not applicable",
+  "candidate_sha256": "c9692ce7471fc5d87a3f09ace7c5eb3fe18227ee3af4005680290392e0824591",
+  "adapter_sha256": "fd3bdda4cbec26cf60c089055748cba85ce5a6aa0d74a2f3a2b2a3a99fbc725a"
+}

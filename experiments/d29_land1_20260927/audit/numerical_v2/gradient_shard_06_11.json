@@ -1,0 +1,203 @@
+{
+  "status": "requires_branch_review",
+  "identity": {
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\precision_candidate.py": "c9692ce7471fc5d87a3f09ace7c5eb3fe18227ee3af4005680290392e0824591",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\precision_transfer.py": "0537b12f4133b6b3f7ce89743ddaffb62c564debdf2263d5f238e20e5bd350f7",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\land1.py": "743d1edf65e8781887d61fe22505ec765375d7be4bdfda3e5639d069e76bc3e8",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_training\\land1_adapter.py": "fd3bdda4cbec26cf60c089055748cba85ce5a6aa0d74a2f3a2b2a3a99fbc725a",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_training\\annual_chain.py": "6e4f6eb0e0e61cd8ec4f2066a584b14b8ae87ee3d6f83440ac03d94a89c8fd50",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_training\\u_adapter.py": "f6692f9156af62857bf51e6cc0532dbcca10ea0bdb9efdd10664af96f602b817",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_training\\objective.py": "1b8476db9bb440da94e7e609078f1571159dbc56994a1b2fcf658efc4f336534",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\coupling.py": "be6708cb884aa07d44d919c7106e776d523038238a1101e7af5ea6e888444b37",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\conditional_inputs.py": "fd0f7159435558fcc3f98790ec6604f5b8be6b695f82e34d3c3ca2b123be4e86",
+    "E:\\SPARROW\\5_Test\\20260927_2\\config\\conditional_reference.json": "cb009531a8be553abd592e0f80a7f5b6196130e3a2f9cf34605bbe98ee76674a",
+    "E:\\SPARROW\\5_Test\\20260927_2\\config\\mineralization_reference.json": "20b8796623910cc82a4828dd8c5d81040ff9bbb45ad20e2fb312a4e40604a317"
+  },
+  "coordinates": [
+    {
+      "index": 6,
+      "name": "gamma_contact_3",
+      "checks": [
+        {
+          "step": 1e-05,
+          "fd": 4.86857427972609,
+          "analytic": 4.868796580306602,
+          "error": 0.00022230058051153634,
+          "tolerance": 5.868796580306602e-06,
+          "passed": false
+        },
+        {
+          "step": 3e-06,
+          "fd": 4.868633055821192,
+          "analytic": 4.868796580306602,
+          "error": 0.00016352448540946085,
+          "tolerance": 5.868796580306602e-06,
+          "passed": false
+        },
+        {
+          "step": 1e-06,
+          "fd": 4.868794519552466,
+          "analytic": 4.868796580306602,
+          "error": 2.060754135335685e-06,
+          "tolerance": 5.868796580306602e-06,
+          "passed": true
+        }
+      ],
+      "passed": false
+    },
+    {
+      "index": 7,
+      "name": "gamma_contact_4",
+      "checks": [
+        {
+          "step": 1e-05,
+          "fd": -56.918151122431475,
+          "analytic": -56.91817020174165,
+          "error": 1.907931017797182e-05,
+          "tolerance": 5.791817020174165e-05,
+          "passed": true
+        },
+        {
+          "step": 3e-06,
+          "fd": -56.91817023982063,
+          "analytic": -56.91817020174165,
+          "error": 3.807897996921383e-08,
+          "tolerance": 5.791817020174165e-05,
+          "passed": true
+        },
+        {
+          "step": 1e-06,
+          "fd": -56.91817023034673,
+          "analytic": -56.91817020174165,
+          "error": 2.8605079194221616e-08,
+          "tolerance": 5.791817020174165e-05,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "index": 8,
+      "name": "gamma_contact_5",
+      "checks": [
+        {
+          "step": 1e-05,
+          "fd": 28.998279563552384,
+          "analytic": 28.998364936852248,
+          "error": 8.537329986424425e-05,
+          "tolerance": 2.9998364936852245e-05,
+          "passed": false
+        },
+        {
+          "step": 3e-06,
+          "fd": 28.998338213644576,
+          "analytic": 28.998364936852248,
+          "error": 2.6723207671608407e-05,
+          "tolerance": 2.9998364936852245e-05,
+          "passed": true
+        },
+        {
+          "step": 1e-06,
+          "fd": 28.998364967947055,
+          "analytic": 28.998364936852248,
+          "error": 3.109480672947029e-08,
+          "tolerance": 2.9998364936852245e-05,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "index": 9,
+      "name": "gamma_contact_6",
+      "checks": [
+        {
+          "step": 1e-05,
+          "fd": 2.565089795325548,
+          "analytic": 2.5650568734918657,
+          "error": 3.292183368230894e-05,
+          "tolerance": 3.5650568734918654e-06,
+          "passed": false
+        },
+        {
+          "step": 3e-06,
+          "fd": 2.5650568886703695,
+          "analytic": 2.5650568734918657,
+          "error": 1.5178503787183217e-08,
+          "tolerance": 3.5650568734918654e-06,
+          "passed": true
+        },
+        {
+          "step": 1e-06,
+          "fd": 2.5650570307789167,
+          "analytic": 2.5650568734918657,
+          "error": 1.5728705093920325e-07,
+          "tolerance": 3.5650568734918654e-06,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "index": 10,
+      "name": "eta_upper",
+      "checks": [
+        {
+          "step": 1e-05,
+          "fd": -56.31490375037628,
+          "analytic": -56.3149101895565,
+          "error": 6.4391802183649816e-06,
+          "tolerance": 5.73149101895565e-05,
+          "passed": true
+        },
+        {
+          "step": 3e-06,
+          "fd": -56.314910201156934,
+          "analytic": -56.3149101895565,
+          "error": 1.1600434390857117e-08,
+          "tolerance": 5.73149101895565e-05,
+          "passed": true
+        },
+        {
+          "step": 1e-06,
+          "fd": -56.314910125365714,
+          "analytic": -56.3149101895565,
+          "error": 6.419078601993533e-08,
+          "tolerance": 5.73149101895565e-05,
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "pending": {},
+  "analytic_gradient": [
+    -23.87746362592113,
+    31.610844845460328,
+    -1400.352053470264,
+    -28.255082885917986,
+    31.002185900358064,
+    -3.4066457294953176,
+    4.868796580306602,
+    -56.91817020174165,
+    28.998364936852248,
+    2.5650568734918657,
+    -56.3149101895565,
+    -24.661866531352896,
+    -23.292350664922914,
+    -21.224212511639188,
+    -21.111743003682854,
+    -3.6167852218056833,
+    -22.243834638619596,
+    -9.782237205660568,
+    -10.815959379372769,
+    -22.731403109883555,
+    -12.179664380359723,
+    33.17215921455084,
+    806.1604238864107
+  ],
+  "objective": 282.1385700339797,
+  "calls": 31,
+  "formal_gate_passed": false,
+  "role": "derivative diagnostic; absolute mass gate separate"
+}

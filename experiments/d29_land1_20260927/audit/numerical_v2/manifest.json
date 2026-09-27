@@ -1,0 +1,94 @@
+[
+  {
+    "path": "audit/numerical_v2/authoritative_safety_history.json",
+    "sha256": "41d1ac097e353769b945ebbc82691fd2c521ce8776bd4d590f326caa0626ce01"
+  },
+  {
+    "path": "audit/numerical_v2/authoritative_mixture_history.json",
+    "sha256": "8753605622553317b0304012547167c30426c15bb8d8a493f4dedde52869cbb1"
+  },
+  {
+    "path": "audit/numerical_v2/full_history_gradient_v6.json",
+    "sha256": "a4f76d37dd4e023ca2ed5b5b7f72eda71579ae66a51db29d89e61c47eabc68f4"
+  },
+  {
+    "path": "audit/numerical_v2/gradient_primary.json",
+    "sha256": "ab3e7845791f8c542a1598c69af4a8e7059bd001981ae51f5c9db1250996709f"
+  },
+  {
+    "path": "audit/numerical_v2/gradient_shard_06_11.json",
+    "sha256": "44649f20620c1ff0c124527d1da418577b5a48eb32c69ce71b7eb2bfacc42e95"
+  },
+  {
+    "path": "audit/numerical_v2/gradient_shard_11_17.json",
+    "sha256": "459df838771cdfeb52694713528134ad723290b7dc7c205ae5d41738650df2fe"
+  },
+  {
+    "path": "audit/numerical_v2/gradient_shard_14_17.json",
+    "sha256": "d2b445e2c3a294b0b2e070d61a911b0c1b4fde76db287a3355d71fb852e335cd"
+  },
+  {
+    "path": "audit/numerical_v2/gradient_shard_17_23.json",
+    "sha256": "3f3ec969c869a331c156f9209bdcce7270109df0b25d9baa2625ab40d06b0aaf"
+  },
+  {
+    "path": "audit/numerical_v2/gradient_shard_20_23.json",
+    "sha256": "e0bd1f74f51ed1e839561150e1e77667cc20be1a594fe57bf45ff0b7798f134c"
+  },
+  {
+    "path": "audit/numerical_v2/gradient_refinement_6.json",
+    "sha256": "ebfc411d099750e9d4561a256c032bafb012c5328b7c02a4f34eb15dc6ee70ca"
+  },
+  {
+    "path": "audit/numerical_v2/gradient_refinement_review.json",
+    "sha256": "036cb49933149ccca28829579026b26ad848841bfab1a58072850c585d6e4a72"
+  },
+  {
+    "path": "audit/numerical_v2/formal_gate.json",
+    "sha256": "a94a3e64d393059576e9010da7ca0959b13f5512b7211585e29adb3bbcf36708"
+  },
+  {
+    "path": "audit/numerical_v2/independent_objective.json",
+    "sha256": "2184a41d83bb673ae54681cae1f6edddc001bdd127830e4e09dfdb07abe9961c"
+  },
+  {
+    "path": "audit/numerical_v2/label_isolation.json",
+    "sha256": "dd2a75f9cc4d4703bfc03b37fd375fda6dffad96df358a1d46d99b2c8df107cc"
+  },
+  {
+    "path": "audit/numerical_v2/scientific_input_identity.json",
+    "sha256": "ff177e0e52bb650d8e75b7c58df00f59d349ddcc1b5145a03615469212c54f4b"
+  },
+  {
+    "path": "audit/numerical_v2/response_mapping_stability.json",
+    "sha256": "c696f7d6b71fb97b72c0b7fa403eeda175cd35a1ec93c6ec17f21e5357dcd154"
+  },
+  {
+    "path": "audit/numerical_v2/gpu_one_year_pilot.json",
+    "sha256": "72de8834a18d665c4f9d43050da28d38de45fb6f5f62e6e493cf1383eb1ebc2b"
+  },
+  {
+    "path": "audit/numerical_v2/gpu_full_objective_mapping.json",
+    "sha256": "987976b312909df0dc11a9edfcc5883b3332c343c95c6044481d90df3483b64e"
+  },
+  {
+    "path": "audit/numerical_v2/reference_tests.json",
+    "sha256": "ab36a9cabc6509259e98801e3c5b9bfb28e84d34093b2584483d7181a3e920bd"
+  },
+  {
+    "path": "audit/numerical_v2/engineering_tests_numerical_v2.log",
+    "sha256": "bd9398af42a390d50cbe1b47227bbd21772027d6208e94e8aa8f067449bb9906"
+  },
+  {
+    "path": "docs/专家数值与设备审计报告.md",
+    "sha256": "934e84e68b93c3452c1a07921ce1ccab7182ee59df9b3681529540b17859a34e"
+  },
+  {
+    "path": "docs/数值修正与设备实验_实际方法与偏离.md",
+    "sha256": "e71c6b70f2a907e4e15682b6c8c884602e7215ee577a88071b3e9c7a90834fea"
+  },
+  {
+    "path": "docs/GPU可行性复核_20260927.md",
+    "sha256": "01c0f1838d528da8f78177e84bd5a9d130f2fe633cd173d2f5faa5bad0e0d5c0"
+  }
+]

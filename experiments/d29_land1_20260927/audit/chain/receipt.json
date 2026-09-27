@@ -1,0 +1,154 @@
+{
+  "days": 23376,
+  "reaches": 230,
+  "land_classes": 2,
+  "mapping_max_error": 0.0,
+  "sampling_max_error": 0.0,
+  "local_balance_kg": 6.445759481721325e-10,
+  "network_relative_error": 3.0153457448631765e-16,
+  "gradient_directions": [
+    {
+      "direction": "source_scale",
+      "step": 0.0001,
+      "analytic": 3.176964420036687e-05,
+      "finite_difference": 3.1769644199581984e-05,
+      "absolute_error": 7.848878339801468e-16,
+      "passed": true
+    },
+    {
+      "direction": "source_scale",
+      "step": 1e-05,
+      "analytic": 3.176964420036687e-05,
+      "finite_difference": 3.1769644225331786e-05,
+      "absolute_error": 2.4964913762550583e-14,
+      "passed": true
+    },
+    {
+      "direction": "initial_scale",
+      "step": 0.0001,
+      "analytic": 2.8475665314681242e-08,
+      "finite_difference": 2.847566393836612e-08,
+      "absolute_error": 1.3763151229000897e-15,
+      "passed": true
+    },
+    {
+      "direction": "initial_scale",
+      "step": 1e-05,
+      "analytic": 2.8475665314681242e-08,
+      "finite_difference": 2.847566034694642e-08,
+      "absolute_error": 4.9677348225670456e-15,
+      "passed": true
+    },
+    {
+      "direction": "loss_scale",
+      "step": 0.0001,
+      "analytic": -2.433519324796289e-05,
+      "finite_difference": -2.4335193328393824e-05,
+      "absolute_error": 8.04309350783787e-14,
+      "passed": true
+    },
+    {
+      "direction": "loss_scale",
+      "step": 1e-05,
+      "analytic": -2.433519324796289e-05,
+      "finite_difference": -2.433519339036275e-05,
+      "absolute_error": 1.4239986211137153e-13,
+      "passed": true
+    },
+    {
+      "direction": "target_scale",
+      "step": 0.0001,
+      "analytic": 2.9243748587288735e-18,
+      "finite_difference": 3.3881317890172014e-17,
+      "absolute_error": 3.095694303144314e-17,
+      "passed": true
+    },
+    {
+      "direction": "target_scale",
+      "step": 1e-05,
+      "analytic": 2.9243748587288735e-18,
+      "finite_difference": -1.0164395367051604e-15,
+      "absolute_error": 1.0193639115638893e-15,
+      "passed": true
+    },
+    {
+      "direction": "outflow_scale",
+      "step": 0.0001,
+      "analytic": -9.444978529548034e-07,
+      "finite_difference": -9.444978473101533e-07,
+      "absolute_error": 5.644650112754878e-15,
+      "passed": true
+    },
+    {
+      "direction": "outflow_scale",
+      "step": 1e-05,
+      "analytic": -9.444978529548034e-07,
+      "finite_difference": -9.444978026545762e-07,
+      "absolute_error": 5.030022719788071e-14,
+      "passed": true
+    },
+    {
+      "direction": "log_alpha_contact",
+      "step": 0.0001,
+      "analytic": -5.355752111403355e-05,
+      "finite_difference": -5.355750922139972e-05,
+      "absolute_error": 1.1892633830035224e-11,
+      "passed": true
+    },
+    {
+      "direction": "log_alpha_contact",
+      "step": 1e-05,
+      "analytic": -5.355752111403355e-05,
+      "finite_difference": -5.3557520971373e-05,
+      "absolute_error": 1.4266055513561388e-13,
+      "passed": true
+    },
+    {
+      "direction": "v_f",
+      "step": 0.0001,
+      "analytic": 0.0004684213726526095,
+      "finite_difference": 0.000468421407389076,
+      "absolute_error": 3.473646647015813e-11,
+      "passed": true
+    },
+    {
+      "direction": "v_f",
+      "step": 1e-05,
+      "analytic": 0.0004684213726526095,
+      "finite_difference": 0.0004684213729922538,
+      "absolute_error": 3.396442740770389e-13,
+      "passed": true
+    }
+  ],
+  "retired_parameters": [
+    "gamma_lifetime_0",
+    "gamma_lifetime_1",
+    "gamma_lifetime_2",
+    "gamma_lifetime_3",
+    "gamma_lifetime_4",
+    "gamma_lifetime_5",
+    "gamma_lifetime_6",
+    "log_tau_mineral_days"
+  ],
+  "reads_tn": false,
+  "synthetic_only": true,
+  "elapsed_seconds": 77.03100000019185,
+  "resource_start": {
+    "physical_used_percent": 41.0,
+    "physical_total_bytes": 68490244096,
+    "physical_available_bytes": 40102690816,
+    "commit_used_percent": 69.32228434187908,
+    "commit_available_bytes": 22328840192,
+    "commit_total_bytes": 72785211392,
+    "cpu_used_percent": 0.6309148264984188
+  },
+  "implementation_sha256": {
+    "scripts\\validate_chain.py": "8d09cd9b562bb50a2d9b3b93f2a59cf10eff0d3b7f64736c0760f8ba9ddcc69f",
+    "d29_platform\\land1.py": "d410546099be14959c6cbfe7424d007cc368e47812124cd34c872aa186c15d33",
+    "d29_platform\\coupling.py": "91526c0b9a8a534ea1b01931d49dbaefc70034a8f80d3f783a1b807f097daa46",
+    "d29_platform\\legacy.py": "1120f162fdd090e783190422ccfc69531578de3111c325c7261fee386e69ab65",
+    "d29_platform\\runtime.py": "ab84310c701d77fe6500ef34c8a34b99fe655fce6b456cfd94b7971911b3b4fd"
+  },
+  "implementation_unchanged_during_run": true,
+  "passed": true
+}

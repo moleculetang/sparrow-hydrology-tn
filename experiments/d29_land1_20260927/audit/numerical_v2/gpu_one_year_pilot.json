@@ -1,0 +1,33 @@
+{
+  "identity": "simplified one-year LAND1 forward CUDA feasibility only",
+  "seed": 1729,
+  "dtype": "float64",
+  "days": 365,
+  "reaches": 230,
+  "land_slots": 13,
+  "cpu_numba_seconds": [
+    0.4493185000028461,
+    0.4561338999774307,
+    0.4502023998647928
+  ],
+  "gpu_torch_seconds": [
+    0.08673699991777539,
+    0.08716459991410375,
+    0.08643209980800748
+  ],
+  "median_cpu_seconds": 0.4502023998647928,
+  "median_gpu_seconds": 0.08673699991777539,
+  "speedup": 5.1904308460238875,
+  "max_local_mass_difference_kg": 2.886579864025407e-15,
+  "accepted_for_training": false,
+  "missing_for_parity": [
+    "63 land transitions",
+    "plant limitation",
+    "expanded stocks",
+    "all source tags",
+    "full-history adjoint",
+    "gradient audit",
+    "routing and OU",
+    "optimizer recovery"
+  ]
+}

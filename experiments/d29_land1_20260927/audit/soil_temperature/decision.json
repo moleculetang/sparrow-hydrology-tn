@@ -1,0 +1,6371 @@
+{
+  "selected_full_history_equation": "fixed_first_order",
+  "reason": "Local monthly soil T does not cover 1961–2024; no reconstruction or year substitution authorized by this conditional branch.",
+  "requested_months": 768,
+  "available_months": 228,
+  "missing_months": 540,
+  "first_available": "2006-01",
+  "last_available": "2024-12",
+  "spatial_resolution_degrees": 0.1,
+  "temporal_resolution": "monthly mean, not daily soil-temperature dynamics",
+  "ERA5_layers_cm": [
+    [
+      0,
+      7
+    ],
+    [
+      7,
+      28
+    ],
+    [
+      28,
+      100
+    ],
+    [
+      100,
+      289
+    ]
+  ],
+  "possible_0_30cm_mapping": "7/30 stl1 + 21/30 stl2 + 2/30 stl3; effective thickness average, not observed profile",
+  "monthly_to_daily": "not performed; repeating monthly means would be an explicit scenario, not daily observations",
+  "hourly_pet_files_checked": 468,
+  "hourly_pet_files_with_soil_temperature": 0,
+  "source_files": [
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\atmosphere\\meteorology\\era5_land\\data\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2006.nc",
+      "sha256": "a883a214fa56cacf5be04d9fb27dfced4f784b3d986e9b18341202296043da3b",
+      "variables": [
+        "tp",
+        "e",
+        "t2m",
+        "stl1",
+        "stl2",
+        "stl3",
+        "stl4"
+      ]
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\atmosphere\\meteorology\\era5_land\\data\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2007.nc",
+      "sha256": "9df1a5f9072804678c32410e23bd9556cb2b53b5b9cd3d64a6d7ccf45522f00b",
+      "variables": [
+        "tp",
+        "e",
+        "t2m",
+        "stl1",
+        "stl2",
+        "stl3",
+        "stl4"
+      ]
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\atmosphere\\meteorology\\era5_land\\data\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2008.nc",
+      "sha256": "129df8717311669a2d3330fc4e97d664ecc15cd3c490a32c1c8ca2474e7b556c",
+      "variables": [
+        "tp",
+        "e",
+        "t2m",
+        "stl1",
+        "stl2",
+        "stl3",
+        "stl4"
+      ]
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\atmosphere\\meteorology\\era5_land\\data\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2009.nc",
+      "sha256": "6ce22c9acc8c373b30f4b2ba9e47f3df60e8bc2eee35eff4c4534a7e2ebc19f5",
+      "variables": [
+        "tp",
+        "e",
+        "t2m",
+        "stl1",
+        "stl2",
+        "stl3",
+        "stl4"
+      ]
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\atmosphere\\meteorology\\era5_land\\data\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2010.nc",
+      "sha256": "aa5bec4e4d5f64815614eb54f09e9800fc17cf6402318c6d62d5c316a3bf1691",
+      "variables": [
+        "tp",
+        "e",
+        "t2m",
+        "stl1",
+        "stl2",
+        "stl3",
+        "stl4"
+      ]
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\atmosphere\\meteorology\\era5_land\\data\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2011.nc",
+      "sha256": "cd4d11793d2249bfba0c284a5f4fbe08d830f9a796235bda7cf97149789bda08",
+      "variables": [
+        "tp",
+        "e",
+        "t2m",
+        "stl1",
+        "stl2",
+        "stl3",
+        "stl4"
+      ]
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\atmosphere\\meteorology\\era5_land\\data\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2012.nc",
+      "sha256": "57a0b0d297df6346c2887111f4816a165b963b4fb21e2514f359e52c54eed384",
+      "variables": [
+        "tp",
+        "e",
+        "t2m",
+        "stl1",
+        "stl2",
+        "stl3",
+        "stl4"
+      ]
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\atmosphere\\meteorology\\era5_land\\data\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2013.nc",
+      "sha256": "8c33acec793fb355bf899c2c5948b172427619fd7cc1561467f794118b5ba25a",
+      "variables": [
+        "tp",
+        "e",
+        "t2m",
+        "stl1",
+        "stl2",
+        "stl3",
+        "stl4"
+      ]
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\atmosphere\\meteorology\\era5_land\\data\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2014.nc",
+      "sha256": "682243b43a8d123937c0c1d5737fc10365477dbb980bf7bd6962743f5d5c8f03",
+      "variables": [
+        "tp",
+        "e",
+        "t2m",
+        "stl1",
+        "stl2",
+        "stl3",
+        "stl4"
+      ]
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\atmosphere\\meteorology\\era5_land\\data\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2015.nc",
+      "sha256": "e54491f9a87e90680324798a98b693eee8fd42a0b7a6158dbbe7cb6c39ecbf49",
+      "variables": [
+        "tp",
+        "e",
+        "t2m",
+        "stl1",
+        "stl2",
+        "stl3",
+        "stl4"
+      ]
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\atmosphere\\meteorology\\era5_land\\data\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2016.nc",
+      "sha256": "a97673fa5730c295892ea6de78d887a379d5b53d1512bd3d2b883fffe922cbb2",
+      "variables": [
+        "tp",
+        "e",
+        "t2m",
+        "stl1",
+        "stl2",
+        "stl3",
+        "stl4"
+      ]
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\atmosphere\\meteorology\\era5_land\\data\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2017.nc",
+      "sha256": "31c73cbf96c7b8aba39433b02485ebddb1f578689a1974146f3c17137250af6c",
+      "variables": [
+        "tp",
+        "e",
+        "t2m",
+        "stl1",
+        "stl2",
+        "stl3",
+        "stl4"
+      ]
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\atmosphere\\meteorology\\era5_land\\data\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2018.nc",
+      "sha256": "97d090138888bc74d0c57f03860f86124ef276f7869d2e0f713f72a56348b4f6",
+      "variables": [
+        "tp",
+        "e",
+        "t2m",
+        "stl1",
+        "stl2",
+        "stl3",
+        "stl4"
+      ]
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\atmosphere\\meteorology\\era5_land\\data\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2019.nc",
+      "sha256": "7c0ed092c5f5c5a8a12f418ded89de1340cca48473fabfc2244c22555cd51e18",
+      "variables": [
+        "tp",
+        "e",
+        "t2m",
+        "stl1",
+        "stl2",
+        "stl3",
+        "stl4"
+      ]
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\atmosphere\\meteorology\\era5_land\\data\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2020.nc",
+      "sha256": "21230b6e4028c51debac3cc1c6b0c745b633cf3610cc9469b0d3b0fb2651fa8b",
+      "variables": [
+        "tp",
+        "e",
+        "t2m",
+        "stl1",
+        "stl2",
+        "stl3",
+        "stl4"
+      ]
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\atmosphere\\meteorology\\era5_land\\data\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2021.nc",
+      "sha256": "c36b3813ddf6283cb873eaf10053819a06f30eab48d065626bd830ea7a0482bb",
+      "variables": [
+        "tp",
+        "e",
+        "t2m",
+        "stl1",
+        "stl2",
+        "stl3",
+        "stl4"
+      ]
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\atmosphere\\meteorology\\era5_land\\data\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2022.nc",
+      "sha256": "f068684af2be79b31fcdb17007d6a3b8826f2134390de7581c1b021c51d07b05",
+      "variables": [
+        "tp",
+        "e",
+        "t2m",
+        "stl1",
+        "stl2",
+        "stl3",
+        "stl4"
+      ]
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\atmosphere\\meteorology\\era5_land\\data\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2023.nc",
+      "sha256": "c00bac13a6a5ee87709f8d2bc1e5e453804ce4d1c6c939ec2965af2c9d6ad872",
+      "variables": [
+        "tp",
+        "e",
+        "t2m",
+        "stl1",
+        "stl2",
+        "stl3",
+        "stl4"
+      ]
+    },
+    {
+      "path": "E:\\SPARROW\\0_reach_topology\\data\\raw\\atmosphere\\meteorology\\era5_land\\data\\monthly_prb_buffer\\era5_land_monthly_prb_buffer_2024.nc",
+      "sha256": "14b94f6bfce17ea215fb9388502cf521f6041ad3730d458772a37d5f7f3bcd29",
+      "variables": [
+        "tp",
+        "e",
+        "t2m",
+        "stl1",
+        "stl2",
+        "stl3",
+        "stl4"
+      ]
+    }
+  ],
+  "hourly_inventory": [
+    {
+      "filename": "era5_land_hourly_pet_196101.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196102.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196103.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196104.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196105.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196106.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196107.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196108.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196109.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196110.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196111.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196112.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196201.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196202.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196203.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196204.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196205.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196206.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196207.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196208.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196209.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196210.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196211.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196212.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196301.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196302.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196303.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196304.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196305.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196306.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196307.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196308.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196309.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196310.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196311.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196312.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196401.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196402.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196403.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196404.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196405.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196406.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196407.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196408.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196409.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196410.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196411.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196412.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196501.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196502.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196503.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196504.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196505.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196506.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196507.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196508.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196509.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196510.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196511.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196512.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196601.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196602.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196603.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196604.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196605.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196606.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196607.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196608.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196609.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196610.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196611.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196612.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196701.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196702.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196703.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196704.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196705.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196706.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196707.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196708.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196709.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196710.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196711.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196712.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196801.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196802.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196803.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196804.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196805.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196806.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196807.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196808.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196809.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196810.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196811.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196812.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196901.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196902.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196903.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196904.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196905.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196906.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196907.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196908.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196909.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196910.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196911.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_196912.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197001.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197002.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197003.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197004.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197005.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197006.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197007.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197008.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197009.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197010.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197011.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197012.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197101.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197102.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197103.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197104.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197105.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197106.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197107.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197108.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197109.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197110.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197111.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197112.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197201.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197202.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197203.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197204.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197205.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197206.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197207.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197208.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197209.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197210.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197211.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197212.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197301.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197302.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197303.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197304.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197305.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197306.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197307.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197308.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197309.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197310.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197311.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197312.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197401.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197402.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197403.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197404.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197405.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197406.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197407.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197408.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197409.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197410.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197411.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197412.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197501.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197502.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197503.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197504.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197505.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197506.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197507.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197508.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197509.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197510.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197511.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197512.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197601.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197602.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197603.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197604.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197605.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197606.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197607.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197608.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197609.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197610.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197611.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197612.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197701.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197702.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197703.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197704.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197705.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197706.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197707.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197708.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197709.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197710.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197712.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197801.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197802.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197803.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197804.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197805.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197806.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197807.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197808.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197809.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197810.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197811.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197812.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197901.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197902.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197903.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197904.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197905.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197906.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197907.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197908.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197909.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197910.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197911.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_197912.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_198001.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200601.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200602.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200603.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200604.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200605.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200606.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200607.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200608.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200609.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200610.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200611.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200612.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200701.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200702.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200703.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200704.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200705.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200706.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200707.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200708.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200709.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200710.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200711.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200712.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200801.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200802.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200803.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200804.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200805.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200806.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200807.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200808.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200809.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200810.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200811.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200812.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200901.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200902.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200903.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200904.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200905.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200906.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200907.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200908.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200909.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200910.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200911.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_200912.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201001.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201002.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201003.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201004.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201005.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201006.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201007.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201008.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201009.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201010.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201011.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201012.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201101.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201102.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201103.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201104.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201105.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201106.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201107.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201108.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201109.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201110.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201111.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201112.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201201.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201202.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201203.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201204.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201205.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201206.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201207.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201208.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201209.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201210.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201211.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201212.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201301.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201302.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201303.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201304.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201305.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201306.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201307.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201308.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201309.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201310.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201311.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201312.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201401.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201402.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201403.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201404.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201405.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201406.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201407.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201408.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201409.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201410.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201411.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201412.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201501.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201502.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201503.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201504.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201505.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201506.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201507.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201508.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201509.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201510.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201511.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201512.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201601.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201602.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201603.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201604.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201605.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201606.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201607.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201608.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201609.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201610.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201611.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201612.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201701.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201702.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201703.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201704.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201705.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201706.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201707.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201708.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201709.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201710.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201711.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201712.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201801.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201802.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201803.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201804.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201805.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201806.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201807.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201808.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201809.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201810.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201811.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201812.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201901.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201902.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201903.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201904.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201905.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201906.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201907.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201908.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201909.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201910.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201911.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_201912.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202001.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202002.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202003.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202004.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202005.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202006.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202007.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202008.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202009.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202010.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202011.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202012.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202101.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202102.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202103.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202104.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202105.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202106.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202107.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202108.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202109.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202110.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202111.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202112.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202201.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202202.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202203.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202204.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202205.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202206.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202207.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202208.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202209.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202210.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202211.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202212.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202301.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202302.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202303.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202304.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202305.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202306.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202307.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202308.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202309.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202310.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202311.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202312.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202401.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202402.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202403.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202404.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202405.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202406.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202407.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202408.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202409.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202410.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202411.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202412.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202501.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202502.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202503.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202504.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202505.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202506.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202507.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202508.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202509.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202510.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202511.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    },
+    {
+      "filename": "era5_land_hourly_pet_202512.nc",
+      "variables": [
+        "t2m",
+        "d2m",
+        "sp",
+        "u10",
+        "v10",
+        "ssrd",
+        "strd"
+      ],
+      "soil_temperature_variables": []
+    }
+  ],
+  "official_source": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land-monthly-means?tab=overview",
+  "NSE": "not applicable: forcing inventory, not water quality skill",
+  "future_temperature_mode": "implemented but disabled until full intended period, soil depth, spatial support and units pass gate"
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "tests": 9,
+  "failures": 0,
+  "errors": 0,
+  "identities": {
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\precision_candidate.py": "c9692ce7471fc5d87a3f09ace7c5eb3fe18227ee3af4005680290392e0824591",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\precision_transfer.py": "0537b12f4133b6b3f7ce89743ddaffb62c564debdf2263d5f238e20e5bd350f7",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\mixture_tags_candidate.py": "764993fe52651b5522c6657207a4486cd763415b97b10bdc277505e5be13c73f",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_training\\annual_chain.py": "6e4f6eb0e0e61cd8ec4f2066a584b14b8ae87ee3d6f83440ac03d94a89c8fd50"
+  },
+  "scope": "independent small kernel, multistep source/state derivatives, year-boundary initial-state and external-source gradients; full-scale coordinate checks separate"
+}
