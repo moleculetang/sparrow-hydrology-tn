@@ -3,6 +3,7 @@
   "evidence_role": "uncalibrated conditional forward; not verified emissions or a forecast",
   "uses_TN_to_construct_inputs": false,
   "son": {"depth": "0-100cm", "method": "modern_SOC_divided_by_14", "active_fraction": 0.02, "available_initial_kg": 0, "slow_initial_kg": 0, "zero_identity": "explicit spinup initial scenario, not measured absence", "evidence": "SWAT2009 3:1.1.2-4; adapted initialization, modern geography held only as initial density"},
+  "land1_integration": {"active_land_slots": [0,1,2,3,5,6,7,8,9,10,11], "identity": "fixed active support for LAND1: land slot 4 and unresolved slot 12 inactive; scientific support scenario"},
   "mineralization": "mineralization_reference.json",
   "manure": {"mineral_fraction": 0.5, "organic_active_fraction": 0.6, "evidence": "Pinned mHM-Nitrate Selke crops.txt manfIN=0.5 and crop resfast=0.6; applying resfast to manure organic partition is research adaptation, not Chinese manure measurement", "boundary": "HaNi field-applied N only; no second excretion or field-application fraction"},
   "crop_residue": {"returned": 0.76, "exported_unresolved_fates": 0.24, "active_return_fraction": 0.6, "evidence": "Shao2023 South China direct return fraction; applied to historical whole-basin crops as research scenario. Complement includes unresolved removal/burning/grazing destinations, not all harvested feed.", "root_residue": "not quantified by aboveground Dryad residue; excluded unknown, not zero observation"},

@@ -1,0 +1,22 @@
+{
+  "identity": "same_external_S1_inputs_numerical_revision",
+  "years_compared": 64,
+  "changed_year_hash_count": {
+    "sources": 0,
+    "tags": 0,
+    "plant_outflows": 0,
+    "plant_target": 62,
+    "initial": 63
+  },
+  "maximum_annual_end_state_difference_by_stock_kg": [
+    2.1420419216156006e-08,
+    3.725290298461914e-09,
+    2.384185791015625e-07,
+    1.1920928955078125e-07,
+    1.862645149230957e-09
+  ],
+  "maximum_annual_end_state_difference_kg": 2.384185791015625e-07,
+  "maximum_relative_state_difference": 1.9906093498394775e-13,
+  "interpretation": "Endogenous annual plant targets depend on prior simulated plant state and may differ after numerical recurrence changes; external source and planned outflow arrays are bitwise identical.",
+  "NSE": "not applicable to input identity"
+}

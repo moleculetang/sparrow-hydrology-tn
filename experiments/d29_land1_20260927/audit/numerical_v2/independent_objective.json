@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "objective": 282.1385700339797,
+  "independent": 282.1385700339797,
+  "error": 0.0,
+  "data_terms": {
+    "month": 276.02678027961315,
+    "HF_anomaly": 6.111789754366544
+  },
+  "prior": 0.0,
+  "elapsed_seconds": 63.95299999997951,
+  "candidate_sha256": "c9692ce7471fc5d87a3f09ace7c5eb3fe18227ee3af4005680290392e0824591",
+  "adapter_sha256": "fd3bdda4cbec26cf60c089055748cba85ce5a6aa0d74a2f3a2b2a3a99fbc725a",
+  "independent_implementation_sha256": "378782d5c47a2b8d59c420c33e9c25ce6a679f7fb526f25b6ef2cd2b54eb6570",
+  "not_a_fitted_point": true,
+  "NSE": "not applicable"
+}

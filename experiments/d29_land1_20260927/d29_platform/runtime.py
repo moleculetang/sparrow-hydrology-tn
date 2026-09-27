@@ -60,8 +60,11 @@ def cpu_percent(interval=.15):
 
 def dispatch_allowed(paused=False, reserve_bytes=0):
     r=resources();r['cpu_used_percent']=cpu_percent()
-    limit=85. if paused else 90.
-    allow=all(r[k]<limit for k in ('cpu_used_percent','physical_used_percent','commit_used_percent'))
+    # A full CPU is acceptable for bounded single-thread workers; memory has
+    # the 90% stop / below-85% resume hysteresis and the measured peak reserve.
+    memory_limit=85. if paused else 90.
+    allow=(0.<=r['cpu_used_percent']<=100. and
+           all(r[k]<memory_limit for k in ('physical_used_percent','commit_used_percent')))
     allow=allow and min(r['physical_available_bytes'],r['commit_available_bytes'])>=reserve_bytes
     return allow,r
 

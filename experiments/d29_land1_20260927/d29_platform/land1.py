@@ -120,13 +120,32 @@ def prepare_inputs(*, initial, sources, plant_target, plant_outflows,
 
 
 @njit(cache=True)
+def _accurate_sum(values):
+    """Float64 expansion summation; retains cancellation terms, no mass repair."""
+    partials=np.empty(len(values),np.float64);n=0
+    for value in values:
+        x=value;i=0
+        for j in range(n):
+            y=partials[j]
+            if abs(x)<abs(y):x,y=y,x
+            hi=x+y;lo=y-(hi-x)
+            if lo!=0.:partials[i]=lo;i+=1
+            x=hi
+        partials[i]=x;n=i+1
+    total=0.
+    for j in range(n):total+=partials[j]
+    return total
+
+
+@njit(cache=True)
 def _transfer(before, mat, nr, nl):
     after = np.zeros_like(before)
+    terms=np.empty(nl,np.float64)
     for r in range(nr):
-        for old in range(nl):
-            for new in range(nl):
-                for k in range(5):
-                    after[r * nl + new, k] += mat[r, old, new] * before[r * nl + old, k]
+        for new in range(nl):
+            for k in range(before.shape[1]):
+                for old in range(nl):terms[old]=mat[r,old,new]*before[r*nl+old,k]
+                after[r*nl+new,k]=_accurate_sum(terms)
     return after
 
 
@@ -153,7 +172,7 @@ def _forward(initial, source, target, out, probs, event, matrices, nr, nl, keep,
                         moved_correction[r*nl+new] += matrices[event[t],r,old,new]*organic_correction[r*nl+old]
             organic_correction = moved_correction
             for r in range(nr):
-                transfer_error = before[r * nl:(r + 1) * nl].sum() - states[oldi, r * nl:(r + 1) * nl].sum()
+                transfer_error = _accurate_sum(np.concatenate((before[r*nl:(r+1)*nl].ravel(),-states[oldi,r*nl:(r+1)*nl].ravel())))
                 worst = max(worst, abs(transfer_error))
         for u in range(nu):
             P, SA, SP, N, L = before[u]
@@ -255,7 +274,13 @@ def _reverse(states, source, target, out, probs, event, matrices, nr, nl,
             need = max(0.0, raw_need)
             uptake = min(X, need)
             plant_pre=P+source[t,u,0]+uptake
-            if potential_activity and plant_pre<O:
+            # Replay the exact stable forward predicate. At a zero plant target,
+            # sufficient uptake makes plant_after exactly zero, while separately
+            # rounded plant_pre can be one ulp below O. Testing plant_pre<O then
+            # wrongly selects the supply-limited branch and erases transport
+            # derivatives. This is a branch mismatch, not a physical kink.
+            plant_after=target[t,u] if raw_need>0 and X>=need else (P+source[t,u,0]-O)+uptake
+            if potential_activity and plant_after<0:
                 gP,gSA,gSP,gN,gL=adj[u];gf,gs,gloss,ge=gflux[t,u]
                 weights=out[t,u]/O
                 gz=ge*weights[0]+gSA*weights[1]+gSP*weights[2]
@@ -376,16 +401,15 @@ def _tag_forward(initial, source, total_source, target, out, probs, event,
     organic_correction = initial_compensation.copy()
     for t in range(nt):
         if event[t] >= 0:
-            moved = np.zeros_like(current)
+            moved = _transfer(current.reshape(nu,nk*5),matrices[event[t]],nr,nl).reshape(nu,nk,5)
             moved_correction = np.zeros_like(organic_correction)
             mat = matrices[event[t]]
             for r in range(nr):
                 for old in range(nl):
                     for new in range(nl):
-                        moved[r * nl + new] += mat[r, old, new] * current[r * nl + old]
                         moved_correction[r*nl+new] += mat[r,old,new]*organic_correction[r*nl+old]
                 for k in range(nk):
-                    transfer_error = moved[r * nl:(r + 1) * nl, k].sum() - current[r * nl:(r + 1) * nl, k].sum()
+                    transfer_error = _accurate_sum(np.concatenate((moved[r*nl:(r+1)*nl,k].ravel(),-current[r*nl:(r+1)*nl,k].ravel())))
                     worst = max(worst, abs(transfer_error))
             current = moved
             organic_correction = moved_correction
@@ -403,8 +427,10 @@ def _tag_forward(initial, source, total_source, target, out, probs, event,
                 # physical trajectory, not recompute nonlinear uptake branches
                 # from independently rounded sums of tracers.
                 if event[t]>=0:
-                    physical=np.zeros(5,np.float64);r=u//nl;land=u%nl
-                    for old in range(nl):physical+=matrices[event[t],r,old,land]*total_states[t,r*nl+old]
+                    physical=np.zeros(5,np.float64);r=u//nl;land=u%nl;terms=np.empty(nl,np.float64)
+                    for j in range(5):
+                        for old in range(nl):terms[old]=matrices[event[t],r,old,land]*total_states[t,r*nl+old,j]
+                        physical[j]=_accurate_sum(terms)
                     P,SA,SP,N,L=physical
                 else:P,SA,SP,N,L=total_states[t,u]
             X = N + total_source[t, u, 3] + pa[t, u] * SA + pp[t, u] * SP

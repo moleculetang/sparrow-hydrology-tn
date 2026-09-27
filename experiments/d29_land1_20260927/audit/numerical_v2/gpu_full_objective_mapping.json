@@ -1,0 +1,26 @@
+{
+  "identity": "full 1961-2024 objective/gradient; CUDA response map only",
+  "point_sha256": "7811d626877f1a08153d1c3022948ccf341db76a922080be28557e2e6705565f",
+  "numerical_source_sha256": "c9692ce7471fc5d87a3f09ace7c5eb3fe18227ee3af4005680290392e0824591",
+  "mapping_source_sha256": "be6708cb884aa07d44d919c7106e776d523038238a1101e7af5ea6e888444b37",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Ti",
+  "mapping_hazard_max_abs_difference": 4.440892098500626e-16,
+  "mapping_fast_fraction_max_abs_difference": 2.220446049250313e-16,
+  "objective_abs_difference": 0.0,
+  "gradient_max_abs_difference": 1.0824674490095276e-15,
+  "gradient_scaled_max_difference": 8.960041061515892e-16,
+  "cpu_seconds": [
+    129.82741130003706,
+    135.171038699802
+  ],
+  "cuda_mapping_seconds": 140.19714269973338,
+  "local_balance_kg": [
+    5.94845914747566e-08,
+    5.94845914747566e-08,
+    5.94845914747566e-08
+  ],
+  "parity_passed": true,
+  "GPU_land_kernel_accepted": false,
+  "interpretation": "Only the response map is accelerated; all LAND1 stocks, annual fields, routing and OU stay on CPU.",
+  "NSE": "not applicable to speed and gradient identity"
+}

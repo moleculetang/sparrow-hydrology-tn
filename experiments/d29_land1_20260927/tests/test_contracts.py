@@ -221,7 +221,9 @@ class SchedulerTests(unittest.TestCase):
         metrics = dict(cpu_percent=20, physical_percent=20, commit_percent=20,
                        physical_available_bytes=100, commit_available_bytes=100)
         self.assertTrue(resource_gate(metrics)["dispatch_allowed"])
-        for key in ("cpu_percent", "physical_percent", "commit_percent"):
+        self.assertTrue(resource_gate(dict(metrics, cpu_percent=100))["dispatch_allowed"])
+        self.assertTrue(resource_gate(dict(metrics, cpu_percent=100), paused=True)["dispatch_allowed"])
+        for key in ("physical_percent", "commit_percent"):
             self.assertFalse(resource_gate(dict(metrics, **{key: 90}))["dispatch_allowed"])
             self.assertFalse(resource_gate(dict(metrics, **{key: 85}), paused=True)["dispatch_allowed"])
             self.assertTrue(resource_gate(dict(metrics, **{key: 84.9}), paused=True)["dispatch_allowed"])

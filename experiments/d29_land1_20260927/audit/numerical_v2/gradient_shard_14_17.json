@@ -1,0 +1,141 @@
+{
+  "status": "passed",
+  "identity": {
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\precision_candidate.py": "c9692ce7471fc5d87a3f09ace7c5eb3fe18227ee3af4005680290392e0824591",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\precision_transfer.py": "0537b12f4133b6b3f7ce89743ddaffb62c564debdf2263d5f238e20e5bd350f7",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\land1.py": "743d1edf65e8781887d61fe22505ec765375d7be4bdfda3e5639d069e76bc3e8",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_training\\land1_adapter.py": "fd3bdda4cbec26cf60c089055748cba85ce5a6aa0d74a2f3a2b2a3a99fbc725a",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_training\\annual_chain.py": "6e4f6eb0e0e61cd8ec4f2066a584b14b8ae87ee3d6f83440ac03d94a89c8fd50",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_training\\u_adapter.py": "f6692f9156af62857bf51e6cc0532dbcca10ea0bdb9efdd10664af96f602b817",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_training\\objective.py": "1b8476db9bb440da94e7e609078f1571159dbc56994a1b2fcf658efc4f336534",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\coupling.py": "be6708cb884aa07d44d919c7106e776d523038238a1101e7af5ea6e888444b37",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\conditional_inputs.py": "fd0f7159435558fcc3f98790ec6604f5b8be6b695f82e34d3c3ca2b123be4e86",
+    "E:\\SPARROW\\5_Test\\20260927_2\\config\\conditional_reference.json": "cb009531a8be553abd592e0f80a7f5b6196130e3a2f9cf34605bbe98ee76674a",
+    "E:\\SPARROW\\5_Test\\20260927_2\\config\\mineralization_reference.json": "20b8796623910cc82a4828dd8c5d81040ff9bbb45ad20e2fb312a4e40604a317"
+  },
+  "coordinates": [
+    {
+      "index": 14,
+      "name": "dynamic_1",
+      "checks": [
+        {
+          "step": 1e-05,
+          "fd": -21.111743018309426,
+          "analytic": -21.111743003682854,
+          "error": 1.4626571953613166e-08,
+          "tolerance": 2.2111743003682853e-05,
+          "passed": true
+        },
+        {
+          "step": 3e-06,
+          "fd": -21.111742995572058,
+          "analytic": -21.111743003682854,
+          "error": 8.11079559071004e-09,
+          "tolerance": 2.2111743003682853e-05,
+          "passed": true
+        },
+        {
+          "step": 1e-06,
+          "fd": -21.111743109258896,
+          "analytic": -21.111743003682854,
+          "error": 1.0557604213090599e-07,
+          "tolerance": 2.2111743003682853e-05,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "index": 15,
+      "name": "dynamic_2",
+      "checks": [
+        {
+          "step": 1e-05,
+          "fd": -3.6167852243806915,
+          "analytic": -3.6167852218056833,
+          "error": 2.5750082066622326e-09,
+          "tolerance": 4.616785221805683e-06,
+          "passed": true
+        },
+        {
+          "step": 3e-06,
+          "fd": -3.6167852025907146,
+          "analytic": -3.6167852218056833,
+          "error": 1.92149687272547e-08,
+          "tolerance": 4.616785221805683e-06,
+          "passed": true
+        },
+        {
+          "step": 1e-06,
+          "fd": -3.6167851931168116,
+          "analytic": -3.6167852218056833,
+          "error": 2.8688871722692966e-08,
+          "tolerance": 4.616785221805683e-06,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "index": 16,
+      "name": "dynamic_3",
+      "checks": [
+        {
+          "step": 1e-05,
+          "fd": -22.24383463271806,
+          "analytic": -22.243834638619596,
+          "error": 5.90153703683427e-09,
+          "tolerance": 2.3243834638619595e-05,
+          "passed": true
+        },
+        {
+          "step": 3e-06,
+          "fd": -22.24383462134938,
+          "analytic": -22.243834638619596,
+          "error": 1.7270217256282194e-08,
+          "tolerance": 2.3243834638619595e-05,
+          "passed": true
+        },
+        {
+          "step": 1e-06,
+          "fd": -22.243834450819122,
+          "analytic": -22.243834638619596,
+          "error": 1.8780047383870624e-07,
+          "tolerance": 2.3243834638619595e-05,
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "pending": {},
+  "analytic_gradient": [
+    -23.87746362592113,
+    31.610844845460328,
+    -1400.352053470264,
+    -28.255082885917986,
+    31.002185900358064,
+    -3.4066457294953176,
+    4.868796580306602,
+    -56.91817020174165,
+    28.998364936852248,
+    2.5650568734918657,
+    -56.3149101895565,
+    -24.661866531352896,
+    -23.292350664922914,
+    -21.224212511639188,
+    -21.111743003682854,
+    -3.6167852218056833,
+    -22.243834638619596,
+    -9.782237205660568,
+    -10.815959379372769,
+    -22.731403109883555,
+    -12.179664380359723,
+    33.17215921455084,
+    806.1604238864107
+  ],
+  "objective": 282.1385700339797,
+  "calls": 19,
+  "formal_gate_passed": false,
+  "role": "derivative diagnostic; absolute mass gate separate"
+}

@@ -1,0 +1,12 @@
+{
+  "reviews": [
+    {
+      "coordinate": 6,
+      "path": "E:\\SPARROW\\5_Test\\20260927_2\\outputs\\land1_coordinate_v6_6_branch_refinement.json",
+      "sha256": "ebfc411d099750e9d4561a256c032bafb012c5328b7c02a4f34eb15dc6ee70ca",
+      "accepted_as_local_smooth_derivative_evidence": true,
+      "interpretation": "Original coarse-grid failure retained; two adjacent finer steps match the analytic gradient without branch changes. This does not establish optimizer convergence."
+    }
+  ],
+  "original_failed_scan_unchanged": true
+}

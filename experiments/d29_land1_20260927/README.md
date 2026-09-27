@@ -1,72 +1,44 @@
-# D29新陆地模块 LAND1：主线候选代码与专家审阅包
+# D29 / LAND1 共同平台与训练策略审阅包
 
-本包对应2026-09-27实际运行的**共同平台/LAND1主线候选**。它是待审查的研究实现，尚未替换已验证的生产主线。代码、配置和必要旧模型依赖可逐式检查；公开合成测试可以独立运行。
+本目录保存两轮连续工作的实际源码快照。`LAND0`是原统一来源校正 D29 的兼容实现；`LAND1`是植物—土壤—可用氮候选。2026-09-27 的新增工作将 2016—2024 月报、2021 起高频辅助与全域站点训练策略接入共同目标，并修正 LAND1 的数值表示。**正式训练已按用户要求停在检查点；本更新没有新的 2023/2024 TN 预测成绩。**此前条件前向的逐站 NSE 见[原专家报告](docs/专家新模型与全链条审计报告.md)，不能当成这次修正后的成绩。
 
-**目前结论：**1961—2024、230河段条件前向已完成，但新模型未经真实TN联合校准。振幅增大而日NSE和月内NSE总体恶化。实际大库存局地/来源绝对质量误差仍超过既定门槛，因此正式校准保持阻塞。不能从运行完成推断源资料准确、结构有效或具有预测能力。
+## 当前验收状态
 
-## 阅读顺序
+- 1961—2024、23,376 日、230 河段、13 土地槽的修订 LAND1 条件前向通过：局地最大质量误差 `1.215×10⁻⁷ kg`，来源标签差 `9.443×10⁻⁸ kg`，网络相对误差 `3.05×10⁻¹⁷`；库存非负及植物预算通过。门槛仍为局地／来源 `1e−6 kg`，没有放宽。参见[完整安全回执](audit/numerical_v2/authoritative_safety_history.json)。
+- 外部来源、来源标签和计划去向的 64 年输入哈希逐年相同。随模拟库存反馈更新的年度植物目标可有舍入级变化；不能把它称为新的观测输入。见[身份对照](audit/numerical_v2/scientific_input_identity.json)。
+- 独立目标重算一致；私有实验工程测试 104 项通过。公开副本禁读私有实验目录，83 项合成测试通过，见[公开测试回执](public_validation.json)。
+- 完整 23 坐标导数验收及正式门以[数值报告](docs/专家数值与设备审计报告.md)和[正式门回执](audit/numerical_v2/formal_gate.json)为准。**前向验收不等于优化收敛，也不证明真实 TN 动态改善。**
+- RTX 4060 Ti 的简化一年陆地前向试验为 CPU 0.450 秒、GPU 0.0867 秒；它缺土地转换、来源分账和伴随。真实 64 年目标只把响应映射移到 CUDA，CPU 两次 129.83／135.17 秒、CUDA 映射 140.20 秒，目标和梯度等价但无速度收益。当前不启用 GPU 训练后端。
 
-1. [专家新模型与全链条审计报告](docs/专家新模型与全链条审计报告.md)：逐站NSE、月内动态、输入/初态贡献与数值限制。
-2. [实际方法与偏离](docs/实际方法与偏离.md)：文献默认、真实运行方式、供氮受限情景及失败记录。
-3. [37项历史缺口逐项对照](docs/历史37项问题逐项修正对照.md)和[输入矛盾处置](docs/输入矛盾核查与修正进展.md)。
-4. [公开测试](verify_public.py)、[源码哈希](source_manifest.json)、[私有数据/复现边界](PRIVATE_DATA.md)。
+## 阅读与源码入口
 
-## 模型与源码导航
+1. [专家数值与设备审计报告](docs/专家数值与设备审计报告.md)与[实际方法与偏离](docs/数值修正与设备实验_实际方法与偏离.md)给出本次修正、失败尝试、数值验收及设备实验的证据边界。
+2. [原专家全链条报告](docs/专家新模型与全链条审计报告.md)、[原实际方法](docs/实际方法与偏离.md)及[37 项问题对照](docs/历史37项问题逐项修正对照.md)是修订前的条件性研究记录。其旧质量失败数值不是当前候选的状态。
+3. [私有资料边界](PRIVATE_DATA.md)和[训练源码清单](source_manifest_training_v2.json)说明本包的可复现范围与字节身份。
 
-`独立来源/植物活动 → LAND0或LAND1 → 局地快慢N → H1河网/水库 → OU质量和水量 → 同支持浓度/评价`
-
-|文件|职责|
+|路径|职责|
 |---|---|
-|[land1.py](d29_platform/land1.py)|P/Sa/Sp/可用N/L前向、完整历史伴随、被动来源标签、守恒土地转换、补偿求和/检查点|
-|[land1_reference.py](d29_platform/land1_reference.py)|独立PyTorch小核，用于前向与梯度对照|
-|[conditional_inputs.py](d29_platform/conditional_inputs.py)|LUH、农业、沉降、MOD17等到日质量/植物活动的实际条件性适配|
-|[mineralization.py](d29_platform/mineralization.py)、[source_definitions.py](d29_platform/source_definitions.py)|矿化公式/导数和来源定义门|
-|[legacy.py](d29_platform/legacy.py)、[vendor/legacy22](vendor/legacy22)|LAND0兼容与冻结H1/原D29依赖；不是第二套已校准LAND1|
-|[coupling.py](d29_platform/coupling.py)|快慢出口、河网水库、OU同支持质量/水量；拒绝TN字段进入物理采样接口|
-|[objective.py](d29_platform/objective.py)、[metrics.py](d29_platform/metrics.py)|训练折隔离目标；日/月内NSE、月报/事件与同步月块抽样|
-|[numerics.py](d29_platform/numerics.py)、[contracts.py](d29_platform/contracts.py)|多步长/边界/折点验收、输入和身份门|
-|[run_conditional_reference.py](scripts/run_conditional_reference.py)|本次全历史前向入口，默认严格植物计划；显式选择潜在计划情景|
+|`d29_platform/land1.py`|LAND1 原参考核、状态与伴随；保留用于前后对照|
+|`d29_platform/precision_candidate.py`、`precision_transfer.py`、`mixture_tags_candidate.py`|当前待审阅的高位／低位数值核、土地转换与来源标签实现|
+|`d29_platform/coupling.py`|H1 响应映射、河网／水库和 OU 同支持读出|
+|`d29_training/annual_chain.py`、`land1_adapter.py`|完整年度连续递推、梯度和 23 参数接口|
+|`d29_training/observations.py`、`objective.py`、`metrics.py`|月报、HF 异常、三策略目标与 NSE 评价|
+|`scripts/verify_land1_precision_gradient_v6.py`、`verify_authoritative_safety_history.py`|私有完整历史导数／质量验收入口|
+|`scripts/benchmark_full_objective_gpu_mapping.py`|完整目标的 CPU／仅映射 CUDA 对照；不实现 GPU 陆地核|
 
-LAND1先守恒搬移土地库存，然后矿化昨日Sa/Sp；当天新有机输入次日起矿化。外源分矿质、有机和植物入口；植物摄取/归还是内部转移。可用质量A按 `E=p_mob*A` 动员，`F_fast=f*E`、`J=(1-f)*E`，非出口损失为 `p_loss*(A-E)`，剩余可用库存 `(1-p_loss)*(A-E)`；慢池以 `F_slow=ell*(L_old+J)` 释放。慢释放、动员和快慢映射仍继承H1/D29，未自动修复旅行时间或水龄。
+`precision_candidate_pre_authoritative.py`、`mixture_tags_direct_failed.py` 等文件保留失败尝试身份，**不是正式运行入口**。`scripts/run_land1_numerical_v2_queue.py` 是已停止队列的可恢复代码，不代表本 PR 自动启动训练。源、植物活动、H1、河网、OU 及 TN 标签各自有身份；物理模型不读取评价 TN。
 
-旧M寿命及七项寿命空间参数退出LAND1；没有把旧有效寿命解释为新真实生地化参数。来源标签说明质量来历，不等于NO3/NH4/颗粒氮。城市及未解析表面采用被动保留的边界情景，不是城市冲刷模型。
+## 公开可运行检查
 
-## 公开可运行验证
-
-建议Python 3.11及CPU版PyTorch；本次验证环境版本见[requirements.txt](requirements.txt)。在此目录运行：
+Python 3.11 和依赖见[requirements.txt](requirements.txt)。在本目录运行：
 
 ```powershell
 $env:PYTHONDONTWRITEBYTECODE='1'
 $env:OMP_NUM_THREADS='1'
 $env:MKL_NUM_THREADS='1'
 python verify_public.py
-python scripts/validate_potential_activity.py
-python scripts/validate_precision_revision.py
 ```
 
-可在现有`conda sparrow`执行；合成测试不需要TN或H1驱动。`verify_public.py`只选择不依赖私有文件的测试，禁止读原实验目录。后两个脚本是合成分支/精度检查，输出到被忽略的`outputs/`。它们不是私有全历史TN复现。**不要直接以全部测试通过为预期执行整个tests目录**：`test_contracts.py`含明确依赖本地私有日沉降拒绝夹具的集成测试。
+公开检查使用合成夹具并阻止读取原私有实验目录。完整历史与真实 TN 复现需要本地冻结的 H1、230 河段、LUH/CLCD/MOD17/农业/沉降适配、OU、站点资格与观测表；本 PR 不发布监测值、驱动数组、栅格、逐日预测、优化检查点、缓存、密钥或环境文件。缺失资料不得自动置零、复制年份或从 TN 反推。`requirements.txt` 的 CUDA 版 Torch 仅用于可选设备实验；正式候选为 CPU float64。
 
-发布时的新验证结果见[public_validation.json](public_validation.json)。原实验72项测试、28项分支检查、24项输入检查和合成全历史检查的历史回执位于[audit](audit)，与本次公开测试分开。最小差分步长出现消差误差仍保留，判定至少两个相邻步长一致通过，不能取最后两个误差最小值。
-
-## 完整私有运行需要什么
-
-本PR不包含原始监测/驱动数组、格网、完整逐日预测或检查点。实际脚本保留原Windows路径与实验依赖，以保持源码身份；**并非换一台电脑即可运行的完整数据产品**。详见[PRIVATE_DATA.md](PRIVATE_DATA.md)。需要已有相同身份的H1/OU数据、LUH状态/转换、分地类沉降、MOD17、农业活动和SON参考；评价另需合法TN支持。公开锚参数保存在[anchors.json](vendor/legacy22/input_potential_v2/configs/anchors.json)。
-
-冻结目录及资料齐备后的实际运行命令是 `python scripts/run_conditional_reference.py --potential-activity`；缺资料时不填零、不自动借TN。此命令会在当前副本写输出，应另建可写工作目录并保留封存结果。原严格植物计划模式会拒绝本次不相容的计划，不应为了跑完而关闭拒绝门。
-
-## 文献默认与必须保留的限制
-
-- [条件配置](config/conditional_reference.json)逐项记录出处、改编与排除边界。SON来自现代SOC/14，活性比例.02；这不是1961实测。MOD17只约束非耕地碳生产，不是外部氮。
-- [矿化配置](config/mineralization_reference.json)采用固定一阶率：活性半衰期90天、保护参考270年。土温仅2006—2024月尺度，1961—2005缺失，故温度式未启用。文献原库存定义与本模型不同，参数不是可直接移植的物理真值。
-- 严格湿沉降/H1日雨仍有93河段月冲突；本次统一月内均分只是独立研究情景。真实农业事件日期、直接入河来源、自然BNF等仍不齐。
-- 严格植物计划1968年因供氮不足中止；另命名的潜在计划版本按可用植物N实现去向，并记录短缺。2024归还计划仍缺7.40%，不能称NPP/收获全部实现。
-- 实际全历史局地误差最大1.1444e−5kg、来源状态差5.4479e−5kg，均超1e−6kg绝对门。补偿求和和显式诊断继续没有把`strict_mass_pass`改为真；相对误差小不能替代绝对验收。正式28路径未派发。
-- 2023/2024均使用冻结F23 U水文/过程条件。2024不是F24重新拟合或未来预报；新旧多因素改变不作单因素因果解释。
-
-水质效果的权威核心表见[core_nse.csv](audit/final_audit/core_nse.csv)，含日/月内NSE、共同站数、两种配对中位数口径和改善比例。RMSE、偏差、相关、振幅和逐站结果见[audit评价目录](audit/supply_limited_reference/evaluation)。2024厂房大桥只有106日/5个月，资格门下合格14站；零方差/不足覆盖不补epsilon。结果为条件性描述，不是新模型校准失败或成功的定论。
-
-## 快照、许可与发布范围
-
-Python源码及配置按原字节复制，文档仅适配公开链接；`source_manifest.json`同时记录来源及公开哈希。未公开的原始证据明确标记，不能点击缺项链接后误以为完整数据已附上。外部论文/大模型代码未随包重新下载发布；外部参数证据为引用和改编说明，不能推断获得其全部再许可。项目代码的使用权遵循仓库权利人及原文件声明，本包不另加未经授权的许可证。
-
-这份PR供专家审阅，不自动合并、不替换生产主线。
+所有水质效果表按日、月、空间口径分别给出 NSE；零方差或覆盖不足标不可定义。质量、梯度与速度验收的 NSE 不适用。当前修正未重新评价真实留出，因此不宣称振幅、相位或 NSE 已改善，也不认证来源与水文准确。此 PR 供审阅，不自动合并或替换主线。

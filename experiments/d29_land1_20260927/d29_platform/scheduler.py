@@ -23,10 +23,11 @@ def resource_gate(metrics: dict, *, paused: bool = False, reserve_bytes: int = 0
     if reserve_bytes and (metrics.get("physical_available_bytes", -1) < reserve_bytes or
                           metrics.get("commit_available_bytes", -1) < reserve_bytes):
         return {"dispatch_allowed": False, "paused": True, "reason": "peak_memory_reserve"}
-    if max(values) >= 90:
-        return {"dispatch_allowed": False, "paused": True, "reason": "resource_at_or_above_90"}
-    if paused and max(values) >= 85:
-        return {"dispatch_allowed": False, "paused": True, "reason": "waiting_for_all_resources_below_85"}
+    memory = values[1:]
+    if max(memory) >= 90:
+        return {"dispatch_allowed": False, "paused": True, "reason": "memory_at_or_above_90"}
+    if paused and max(memory) >= 85:
+        return {"dispatch_allowed": False, "paused": True, "reason": "waiting_for_memory_below_85"}
     return {"dispatch_allowed": True, "paused": False, "reason": "resource_gate_clear"}
 
 

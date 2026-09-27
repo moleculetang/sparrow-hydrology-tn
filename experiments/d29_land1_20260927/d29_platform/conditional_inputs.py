@@ -67,8 +67,11 @@ class ConditionalInputs:
         s=pd.read_csv(ROOT/'outputs/soil_reference/son_soc14_reference.csv')
         density=s[s.depth==self.config['son']['depth']].set_index('reach_id').reindex(range(1,231)).son_reference_kg_m2.to_numpy()
         if not np.isfinite(density).all():raise ValueError('INITIAL_SON_REFERENCE_MISSING')
-        initial=np.zeros((230,13,5));initial[:,:12,1]=self.area[0]*density[:,None]*.02
-        initial[:,:12,2]=self.area[0]*density[:,None]*.98
+        active_fraction=float(self.config['son']['active_fraction'])
+        if not 0 <= active_fraction <= 1:
+            raise ValueError('INVALID_INITIAL_SON_ACTIVE_FRACTION')
+        initial=np.zeros((230,13,5));initial[:,:12,1]=self.area[0]*density[:,None]*active_fraction
+        initial[:,:12,2]=self.area[0]*density[:,None]*(1-active_fraction)
         # Urban initial soil is an inert stored initial-reference amount, not active soil.
         gross,ret,wood=self.vegetation(1961);initial[:,:,0]=gross-wood
         return initial

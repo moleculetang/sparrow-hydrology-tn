@@ -42,10 +42,17 @@ def response_mapping(model,theta_named,as_numpy=True):
     import math
     p={k:torch.as_tensor(v,dtype=torch.float64) for k,v in theta_named.items()}
     a=model.regional(p['log_alpha_contact'],torch.stack([p[f'gamma_contact_{i}'] for i in range(7)]),ALPHA)
-    logh=a[None,:]+p['beta_a']*model.logcontact+p['eta_upper']*model.dyn[0]+p['eta_percolation']*model.dyn[1]
-    h=torch.where(model.positive,torch.exp(logh),torch.zeros_like(logh))
-    h=h*torch.exp((model.pi*(p['beta_b']-p['beta_a']))[None,:]*model.logcontact)
+    # Form one log hazard before exponentiation. The original three-product
+    # expression could overflow in an intermediate term even when the final
+    # daily probability was subsequently capped at a hazard of 700.
+    contact=torch.where(model.positive,model.logcontact,torch.zeros_like(model.logcontact))
+    logh=a[None,:]+(p['beta_a']+model.pi[None,:]*(p['beta_b']-p['beta_a']))*contact
+    logh=logh+p['eta_upper']*model.dyn[0]+p['eta_percolation']*model.dyn[1]
     u=torch.einsum('trj,j->tr',model.dynamic_basis,torch.stack([p[f'dynamic_{i}'] for i in range(8)]))
-    h=h*torch.exp(math.log(10)*torch.tanh(u/math.log(10)))
-    f=torch.tensor(model.data.fast_fraction);aq=torch.exp(p['log_aq']);f=aq*f/(aq*f+1-f)
+    logh=logh+math.log(10)*torch.tanh(u/math.log(10))
+    h=torch.where(model.positive,torch.exp(torch.clamp(logh,max=math.log(700.0))),torch.zeros_like(logh))
+    base=torch.tensor(model.data.fast_fraction,dtype=torch.float64)
+    if torch.any((base<0)|(base>1)):
+        raise ValueError('FAST_FRACTION_OUTSIDE_UNIT_INTERVAL')
+    f=torch.sigmoid(torch.log(base)-torch.log1p(-base)+p['log_aq'])
     return (h.detach().numpy(),f.detach().numpy()) if as_numpy else (h,f)

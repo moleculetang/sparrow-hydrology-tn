@@ -11,7 +11,7 @@ def isolation(event,args):
         if 'e:/sparrow/5_test/' in p:raise RuntimeError('PUBLIC_TEST_PRIVATE_EXPERIMENT_ACCESS: '+p)
 sys.addaudithook(isolation)
 suite=unittest.TestSuite()
-for name in ('test_land1.py','test_numerics.py','test_objective_metrics.py','test_deposition.py','test_input_boundary.py'):
+for name in sorted(p.name for p in (ROOT/'tests').glob('test_*.py') if p.name!='test_contracts.py'):
     suite.addTests(unittest.defaultTestLoader.discover(str(ROOT/'tests'),pattern=name))
 result=unittest.TextTestRunner(verbosity=2).run(suite)
 receipt=dict(tests=result.testsRun,passed=result.wasSuccessful(),failures=len(result.failures),errors=len(result.errors),

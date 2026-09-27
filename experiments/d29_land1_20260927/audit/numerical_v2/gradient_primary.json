@@ -1,0 +1,235 @@
+{
+  "status": "stopped_at_safe_evaluation_boundary",
+  "identity": {
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\precision_candidate.py": "c9692ce7471fc5d87a3f09ace7c5eb3fe18227ee3af4005680290392e0824591",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\precision_transfer.py": "0537b12f4133b6b3f7ce89743ddaffb62c564debdf2263d5f238e20e5bd350f7",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_platform\\land1.py": "743d1edf65e8781887d61fe22505ec765375d7be4bdfda3e5639d069e76bc3e8",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_training\\land1_adapter.py": "fd3bdda4cbec26cf60c089055748cba85ce5a6aa0d74a2f3a2b2a3a99fbc725a",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_training\\annual_chain.py": "6e4f6eb0e0e61cd8ec4f2066a584b14b8ae87ee3d6f83440ac03d94a89c8fd50",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_training\\u_adapter.py": "f6692f9156af62857bf51e6cc0532dbcca10ea0bdb9efdd10664af96f602b817",
+    "E:\\SPARROW\\5_Test\\20260927_2\\d29_training\\objective.py": "1b8476db9bb440da94e7e609078f1571159dbc56994a1b2fcf658efc4f336534"
+  },
+  "coordinates": [
+    {
+      "index": 0,
+      "name": "log_alpha_contact",
+      "checks": [
+        {
+          "step": 1e-05,
+          "fd": -23.87746898193654,
+          "analytic": -23.87746362592113,
+          "error": 5.356015410740156e-06,
+          "tolerance": 2.4877463625921128e-05,
+          "passed": true
+        },
+        {
+          "step": 3e-06,
+          "fd": -23.877463623496926,
+          "analytic": -23.87746362592113,
+          "error": 2.4242048368705582e-09,
+          "tolerance": 2.4877463625921128e-05,
+          "passed": true
+        },
+        {
+          "step": 1e-06,
+          "fd": -23.87746366139254,
+          "analytic": -23.87746362592113,
+          "error": 3.5471408921239345e-08,
+          "tolerance": 2.4877463625921128e-05,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "index": 1,
+      "name": "beta_a",
+      "checks": [
+        {
+          "step": 1e-05,
+          "fd": 31.610844851570615,
+          "analytic": 31.610844845460328,
+          "error": 6.11028738717323e-09,
+          "tolerance": 3.261084484546033e-05,
+          "passed": true
+        },
+        {
+          "step": 3e-06,
+          "fd": 31.610844824096297,
+          "analytic": 31.610844845460328,
+          "error": 2.1364030544646084e-08,
+          "tolerance": 3.261084484546033e-05,
+          "passed": true
+        },
+        {
+          "step": 1e-06,
+          "fd": 31.610844928309234,
+          "analytic": 31.610844845460328,
+          "error": 8.284890640197773e-08,
+          "tolerance": 3.261084484546033e-05,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "index": 2,
+      "name": "v_f",
+      "checks": [
+        {
+          "step": 1e-05,
+          "fd": -1400.35205548088,
+          "analytic": -1400.352053470264,
+          "error": 2.0106158444832545e-06,
+          "tolerance": 0.001401352053470264,
+          "passed": true
+        },
+        {
+          "step": 3e-06,
+          "fd": -1400.352053659996,
+          "analytic": -1400.352053470264,
+          "error": 1.89731963473605e-07,
+          "tolerance": 0.001401352053470264,
+          "passed": true
+        },
+        {
+          "step": 1e-06,
+          "fd": -1400.3520535368352,
+          "analytic": -1400.352053470264,
+          "error": 6.657114681729581e-08,
+          "tolerance": 0.001401352053470264,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "index": 3,
+      "name": "gamma_contact_0",
+      "checks": [
+        {
+          "step": 1e-05,
+          "fd": -28.25503276255858,
+          "analytic": -28.255082885917986,
+          "error": 5.012335940435264e-05,
+          "tolerance": 2.9255082885917985e-05,
+          "passed": false
+        },
+        {
+          "step": 3e-06,
+          "fd": -28.25508287666404,
+          "analytic": -28.255082885917986,
+          "error": 9.25394516571032e-09,
+          "tolerance": 2.9255082885917985e-05,
+          "passed": true
+        },
+        {
+          "step": 1e-06,
+          "fd": -28.25508289561185,
+          "analytic": -28.255082885917986,
+          "error": 9.69386348970147e-09,
+          "tolerance": 2.9255082885917985e-05,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "index": 4,
+      "name": "gamma_contact_1",
+      "checks": [
+        {
+          "step": 1e-05,
+          "fd": 31.002131655100126,
+          "analytic": 31.002185900358064,
+          "error": 5.424525793884527e-05,
+          "tolerance": 3.2002185900358065e-05,
+          "passed": false
+        },
+        {
+          "step": 3e-06,
+          "fd": 31.00218168583524,
+          "analytic": 31.002185900358064,
+          "error": 4.2145228249523825e-06,
+          "tolerance": 3.2002185900358065e-05,
+          "passed": true
+        },
+        {
+          "step": 1e-06,
+          "fd": 31.002185977513363,
+          "analytic": 31.002185900358064,
+          "error": 7.715529903862262e-08,
+          "tolerance": 3.2002185900358065e-05,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "index": 5,
+      "name": "gamma_contact_2",
+      "checks": [
+        {
+          "step": 1e-05,
+          "fd": -3.4065965678564676,
+          "analytic": -3.4066457294953176,
+          "error": 4.9161638850048206e-05,
+          "tolerance": 4.406645729495317e-06,
+          "passed": false
+        },
+        {
+          "step": 3e-06,
+          "fd": -3.4066457033077313,
+          "analytic": -3.4066457294953176,
+          "error": 2.6187586321668732e-08,
+          "tolerance": 4.406645729495317e-06,
+          "passed": true
+        },
+        {
+          "step": 1e-06,
+          "fd": -3.4066457033077313,
+          "analytic": -3.4066457294953176,
+          "error": 2.6187586321668732e-08,
+          "tolerance": 4.406645729495317e-06,
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "pending": {
+    "coordinate": 6,
+    "checks": [],
+    "plus_step": 1e-05,
+    "plus_value": 282.13861873197635
+  },
+  "analytic_gradient": [
+    -23.87746362592113,
+    31.610844845460328,
+    -1400.352053470264,
+    -28.255082885917986,
+    31.002185900358064,
+    -3.4066457294953176,
+    4.868796580306602,
+    -56.91817020174165,
+    28.998364936852248,
+    2.5650568734918657,
+    -56.3149101895565,
+    -24.661866531352896,
+    -23.292350664922914,
+    -21.224212511639188,
+    -21.111743003682854,
+    -3.6167852218056833,
+    -22.243834638619596,
+    -9.782237205660568,
+    -10.815959379372769,
+    -22.731403109883555,
+    -12.179664380359723,
+    33.17215921455084,
+    806.1604238864107
+  ],
+  "objective": 282.1385700339797,
+  "calls": 38,
+  "formal_gate_passed": false,
+  "role": "derivative diagnostic; absolute mass gate separate"
+}
