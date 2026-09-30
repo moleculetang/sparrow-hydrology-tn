@@ -1,0 +1,97 @@
+{
+  "completed_utc": "2026-09-30T06:52:49.733229+00:00",
+  "passed": true,
+  "scientific_review_complete": true,
+  "full_campaign_reevaluated": true,
+  "selection_unchanged": true,
+  "no_evaluation_based_refitting": true,
+  "archive_sha256": "ccf81383d6adbb561bc4b8a442ae9c73f0bb9dcdfd1db42d31bfa18b50c16da3",
+  "jobs": {
+    "LAND1_F23_T2_s1": {
+      "calls": 335,
+      "objective": 2.423415585672972,
+      "projected_gradient": 1.592085767665452e-06,
+      "numerically_sufficient": true,
+      "checkpoint_sha256": "66021036e7c6cca00732cd6eb07aa38c762e26d428e6f06a6307da87900f5fd8"
+    },
+    "LAND1_F24_T2_s1": {
+      "calls": 334,
+      "objective": 2.0564079822508674,
+      "projected_gradient": 1.2972078133321194e-06,
+      "numerically_sufficient": true,
+      "checkpoint_sha256": "aea517b79c9e46adefb7bcf50faece686aa390758e29b0ca8a9aedc346ca3ffa"
+    },
+    "LAND1_S56_T2_s0": {
+      "calls": 388,
+      "objective": 6.272382085699492,
+      "projected_gradient": 2.0726900134297385e-05,
+      "numerically_sufficient": false,
+      "checkpoint_sha256": "5b6f369bd284025bf2c7b2f0b52114169c999017437a107b7dbc8c02b19dd44d"
+    }
+  },
+  "nse_comparisons": [
+    {
+      "job": "LAND1_F23_T2_s1",
+      "year": 2023,
+      "scope": "daily",
+      "common_stations": 15,
+      "before_candidate_nse_median": -0.8468449319119244,
+      "after_candidate_nse_median": -0.8470142470730726,
+      "before_paired_nse_median": -0.3220408493289799,
+      "after_paired_nse_median": -0.32192795179316525,
+      "after_overall_nse_median_difference": -0.3728327259819564,
+      "after_improved_fraction": 0.13333333333333333,
+      "after_centered_paired_nse_median": -0.577407424080092
+    },
+    {
+      "job": "LAND1_F23_T2_s1",
+      "year": 2023,
+      "scope": "monthly_report",
+      "common_stations": 78,
+      "before_candidate_nse_median": -1.0199602312217002,
+      "after_candidate_nse_median": -1.020218995562809,
+      "before_paired_nse_median": -0.03686261991884826,
+      "after_paired_nse_median": -0.03696112857106165,
+      "after_overall_nse_median_difference": -0.09492999906463373,
+      "after_improved_fraction": 0.44871794871794873,
+      "after_centered_paired_nse_median": null
+    },
+    {
+      "job": "LAND1_F24_T2_s1",
+      "year": 2024,
+      "scope": "daily",
+      "common_stations": 15,
+      "before_candidate_nse_median": -0.6750794648487379,
+      "after_candidate_nse_median": -0.6751505157311188,
+      "before_paired_nse_median": -0.31658116532970326,
+      "after_paired_nse_median": -0.3166594546368233,
+      "after_overall_nse_median_difference": -0.28369563465952785,
+      "after_improved_fraction": 0.2,
+      "after_centered_paired_nse_median": -0.14296111397548428
+    },
+    {
+      "job": "LAND1_F24_T2_s1",
+      "year": 2024,
+      "scope": "monthly_report",
+      "common_stations": 85,
+      "before_candidate_nse_median": -0.7335073357536388,
+      "after_candidate_nse_median": -0.7333026213920515,
+      "before_paired_nse_median": -0.08303507528300325,
+      "after_paired_nse_median": -0.08302621499737417,
+      "after_overall_nse_median_difference": -0.04061347223177281,
+      "after_improved_fraction": 0.43529411764705883,
+      "after_centered_paired_nse_median": null
+    }
+  ],
+  "independent_review_sha256": "d16d78dfc80e6fc10fee47a1af66c0654a20d4bc549c91695095c844c075878c",
+  "current_manifest_sha256": "6f5c3a08ac9a4d90cfaa02ffd618b4ef667b2841512cb51b12b2caf30fd4556a",
+  "current_evaluation_sha256": "060aff92916218cbf080098a1bd1e58b68da375b52ec0b8727e2b4c9755f181a",
+  "training_period_summary_sha256": "d7ef80d3fcf1118de1a624b72d274e713b956567ac30f76f8d96fe373912ae83",
+  "benchmark_sha256": "4417a8e9adbfdd32f8bab7c71162735f2e621e2b1f929d4ba7ba1dfe7b2206c6",
+  "remote_postprocess_sha256": "b8e3f6a7043929dfeea42719d6582a74c4c3c8b21d99d974a1fb80d5f60ca69b",
+  "previous_results": "E:\\SPARROW\\5_Test\\20260928_1\\linux\\continuation_v1\\before_reevaluation",
+  "remaining_numerical_limitation": [
+    "LAND1_S56_T2_s0"
+  ],
+  "NSE_scope": "held-out water-quality effect only; physical and performance quantities not applicable"
+}

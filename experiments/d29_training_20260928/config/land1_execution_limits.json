@@ -1,0 +1,9 @@
+{
+  "primary_path_active_hours": 24,
+  "supplementary_path_active_hours": 16,
+  "maximum_calls_per_path": 20000,
+  "registered_before_first_land1_fit": true,
+  "reason": "New review experiment: generous finite same-path continuation under inherited 2026-10-05 global deadline; do not infer convergence from time or ftol",
+  "no_additional_scientific_start": true,
+  "unfinished_paths_at_global_deadline": "retain optimizer and all cumulative calls; report missing numerical adequacy"
+}

@@ -1,0 +1,50 @@
+{
+  "name": "D29 TN-only observation and execution repair review",
+  "source_monthly_identity": "User-confirmed automatic monitoring; arithmetic mean of valid readings",
+  "formal_years": [
+    2016,
+    2024
+  ],
+  "physics_start": 1961,
+  "prior_strength": "unchanged within each model",
+  "strategies": {
+    "T0": {
+      "start": 2021,
+      "monthly": 0.8,
+      "HF_anomaly": 0.2
+    },
+    "T1": {
+      "start": 2016,
+      "monthly": 0.8,
+      "HF_anomaly": 0.2
+    },
+    "T2": {
+      "start": 2016,
+      "long_monthly": 0.4,
+      "other_monthly": 0.4,
+      "HF_anomaly": 0.2
+    }
+  },
+  "long_group": {
+    "years": [
+      2016,
+      2020
+    ],
+    "minimum_months_each_year": 6
+  },
+  "parameter_counts": {
+    "U": 31,
+    "LAND1": 23
+  },
+  "NH4_DO": "excluded_from_training_predictors_and_routine_diagnostics",
+  "official_monthly_wins": true,
+  "read_count_complete_support_only": true,
+  "source_calibration": "bounded research correction, not identified emissions",
+  "scope": "conditional research calibration; not independent complete-source certification",
+  "publication": false,
+  "schedules": false,
+  "hf_day_policy": "four unique valid times spanning at least 12 Asia/Shanghai hours",
+  "scale_policy": "common 2021-to-fold-training-end station variance for T0/T1/T2",
+  "sparse_year_policy": "station equal; year weight min(qualified_months/6,1), normalized within station",
+  "context_file": "config/experiment_context.json"
+}

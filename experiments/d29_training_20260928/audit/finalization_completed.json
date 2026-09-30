@@ -1,0 +1,9 @@
+{
+  "completed": "2026-09-30T06:52:49.733229+00:00",
+  "computational_pipeline_completed": true,
+  "expert_interpretation_review_pending": false,
+  "no_evaluation_based_refitting": true,
+  "continuation_v1_completed": true,
+  "water_quality_nse_recomputed": true,
+  "scientific_review_receipt_sha256": "6d28a935fdc77beb96b218e7a1a37082d2d42e05e2d6c838937767ba69aec582"
+}
