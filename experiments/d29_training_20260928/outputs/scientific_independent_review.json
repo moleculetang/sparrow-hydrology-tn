@@ -1,0 +1,19 @@
+{
+  "reviewed_utc": "2026-09-30T05:26:45.701108+00:00",
+  "passed": true,
+  "issues": [],
+  "accounted_paths": 32,
+  "selected_jobs": 24,
+  "numerically_insufficient_selected": [
+    "LAND1_S56_T2_s0"
+  ],
+  "training_status_counts": {
+    "solver_stopped_numerically_sufficient": 29,
+    "solver_stopped_not_sufficient": 1,
+    "budget_checkpoint": 2
+  },
+  "heldout_pair_tables_checked": 60,
+  "bootstrap_receipts_checked": 160,
+  "event_support_receipts_checked": 20,
+  "scope": "receipt/hash/summary consistency; does not independently re-run full historical physical model"
+}
