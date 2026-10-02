@@ -1078,5 +1078,17 @@
     "source": "E:\\SPARROW\\5_Test\\20260930_1\\reports\\figures\\time_holdout.png",
     "sha256": "034d11deb5554ab5617733685abca3f68b6d6dcab9f346eec3fb4fe1f11cdc33",
     "exact": true
+  },
+  {
+    "path": "evidence/resource_registry_atomic_retry_candidate.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\resource_registry_atomic_retry_candidate.py",
+    "sha256": "e881669554283940aa7056809521a0076035942802595834e3eda0586265c379",
+    "exact": true
+  },
+  {
+    "path": "evidence/resource_registry_commit_candidate.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\resource_registry_commit_candidate.py",
+    "sha256": "830ad7856df31a5f192a4914c752202f62ec8a2ad16db7341fa3154c0837c394",
+    "exact": true
   }
 ]

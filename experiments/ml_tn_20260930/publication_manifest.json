@@ -1080,6 +1080,18 @@
       "source": "E:\\SPARROW\\5_Test\\20260930_1\\reports\\figures\\time_holdout.png",
       "sha256": "034d11deb5554ab5617733685abca3f68b6d6dcab9f346eec3fb4fe1f11cdc33",
       "exact": true
+    },
+    {
+      "path": "evidence/resource_registry_atomic_retry_candidate.py",
+      "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\resource_registry_atomic_retry_candidate.py",
+      "sha256": "e881669554283940aa7056809521a0076035942802595834e3eda0586265c379",
+      "exact": true
+    },
+    {
+      "path": "evidence/resource_registry_commit_candidate.py",
+      "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\resource_registry_commit_candidate.py",
+      "sha256": "830ad7856df31a5f192a4914c752202f62ec8a2ad16db7341fa3154c0837c394",
+      "exact": true
     }
   ],
   "files": [
@@ -1507,6 +1519,16 @@
       "path": "evidence/report_render_c7_hardcoding_failure.json",
       "bytes": 456,
       "sha256": "0f477fc194f9bc2ad2b0f9784cd09cd01019c07e7fc76b51d58faef57208ad11"
+    },
+    {
+      "path": "evidence/resource_registry_atomic_retry_candidate.py",
+      "bytes": 13175,
+      "sha256": "e881669554283940aa7056809521a0076035942802595834e3eda0586265c379"
+    },
+    {
+      "path": "evidence/resource_registry_commit_candidate.py",
+      "bytes": 15335,
+      "sha256": "830ad7856df31a5f192a4914c752202f62ec8a2ad16db7341fa3154c0837c394"
     },
     {
       "path": "evidence/results_recovery.json",
@@ -2855,8 +2877,8 @@
     },
     {
       "path": "source_manifest.json",
-      "bytes": 42338,
-      "sha256": "ef327c50ef32de6b80fffc8565a7ed20489d7ea67b745e85c13d9d7355ef3a14"
+      "bytes": 43982,
+      "sha256": "82dc34fc393a81efc6f4e7cb510aab2bf37df63ddcc9bf51e90b2181314cef12"
     },
     {
       "path": "start_postprocess.py",
