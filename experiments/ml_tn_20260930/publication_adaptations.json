@@ -1,0 +1,88 @@
+{
+  "adaptations": [
+    {
+      "source": "outputs/amplitude_diagnostic/station_shape_gain_profiles.csv",
+      "published": "outputs/amplitude_diagnostic/station_shape_gain_profiles/INDEX.md",
+      "kind": "complete CSV sharding",
+      "sha256": "5570d6f0af39c09b20f392e72a2230439aa195de8ab87f10de0f997b7efcb666"
+    },
+    {
+      "source": "outputs/evaluation/all_station_metrics.csv",
+      "published": "outputs/evaluation/all_station_metrics/INDEX.md",
+      "kind": "complete CSV sharding",
+      "sha256": "82b9b4e6bce579432b0d4f55aeb94d0f48897525c836af422cd924a64a863563"
+    },
+    {
+      "source": "outputs/evaluation/error_decomposition_station.csv",
+      "published": "outputs/evaluation/error_decomposition_station/INDEX.md",
+      "kind": "complete CSV sharding",
+      "sha256": "d8324b8400322d35ef7360df9d8bcb6c5a945f7c4f43d5885264cb7912ca2934"
+    },
+    {
+      "source": "outputs/evaluation/training_seedmean_station_metrics.csv",
+      "published": "outputs/evaluation/training_seedmean_station_metrics/INDEX.md",
+      "kind": "complete CSV sharding",
+      "sha256": "caedd84a5506b9ae53ab0cd67df2af5f27723cc86f95f605e9763f93ee27ee84"
+    },
+    {
+      "source": "outputs/expert_review/paired_uncertainty_summary.csv",
+      "published": "outputs/expert_review/paired_uncertainty_summary/INDEX.md",
+      "kind": "complete CSV sharding",
+      "sha256": "36a81f1ea35a87ea492bb4658ce2daa8ee9be13faa719bdcfa4d5d69e4035920"
+    },
+    {
+      "source": "outputs/expert_review/training_summary.csv",
+      "published": "outputs/expert_review/training_summary/INDEX.md",
+      "kind": "complete CSV sharding",
+      "sha256": "35759a49d64af6025f6a8511908e2e8d85c007cf17bbd4b70838653b557b5cb8"
+    },
+    {
+      "source": "E:\\SPARROW\\5_Test\\20260930_1\\reports\\专家机器学习与全域验证报告.md",
+      "published": "reports/专家机器学习与全域验证报告.md",
+      "kind": "public links/banner only",
+      "source_sha256": "4079dfa47d9fc8880b129d3f161ded511387094a9d748dbc5cbebd934333bbda",
+      "published_sha256": "21377b5ec074b3f2c0fd42656d770641f2ca4d376c42840f947a80338660aa8f"
+    },
+    {
+      "source": "E:\\SPARROW\\5_Test\\20260930_1\\reports\\实际方法与偏离.md",
+      "published": "reports/实际方法与偏离.md",
+      "kind": "public links/banner only",
+      "source_sha256": "607e2e7b9f59ee7b98c30a0b6d1b0578927d356219f4ac41de322985ede3bf97",
+      "published_sha256": "695d8c7e5788c254cd120fdb26cbaa1cbd6236a2e171f6cc50feb366e15c0ea4"
+    },
+    {
+      "source": "E:\\SPARROW\\5_Test\\20260930_1\\reports\\振幅控制因子数值诊断.md",
+      "published": "reports/振幅控制因子数值诊断.md",
+      "kind": "public links/banner only",
+      "source_sha256": "41cf7ecb99692a253cf2827bb59518b1e559ec77f1641f6ef5237a93fc3569f3",
+      "published_sha256": "d5826111ca525e36246d28bf87a0fed4e5a4277cf78d5cf8f2d022d0a69726c7"
+    },
+    {
+      "source": "E:\\SPARROW\\5_Test\\20260930_1\\reports\\模型路径与观测支持说明.md",
+      "published": "reports/模型路径与观测支持说明.md",
+      "kind": "public links/banner only",
+      "source_sha256": "ec7ee9c086df97bacc22156c3114bb5581223cd0c9ee16061e4cfb6ac3c5e4eb",
+      "published_sha256": "d8ecc0a39f52a40323448b6d19f456b3c8bed08268793652ced9226ee1ea261c"
+    }
+  ],
+  "omitted": [
+    {
+      "path": "outputs/evaluation/unresolved_four_hour_variation.parquet",
+      "reason": "private time-series/readout or non-allowlisted binary"
+    },
+    {
+      "path": "reports/figures/all15_HF_2024.png",
+      "reason": "private time-series/readout or non-allowlisted binary"
+    }
+  ],
+  "excluded": [
+    "data",
+    "jobs",
+    "transfer",
+    "logs",
+    "superseded",
+    "raw literature full text",
+    "private daily plots"
+  ],
+  "source_experiment_read_only": true
+}

@@ -1,0 +1,11 @@
+{
+  "selection": "all 15 certified HF stations; no performance-based site selection",
+  "source_hashes": {
+    "F24_daily_CatBoost_c4_seedmean_daily_frozen.parquet": "0c88697ced87cd6597689c4a1ffe1a4263a833c31f20f6389121a281f834ad01",
+    "joint_F24_GraphTCN_c7_seedmean_daily_frozen.parquet": "5354c23186188285d88d0768fbb2b2cd23e4ac8aa878396a8f71081d5662e6ab"
+  },
+  "figures": [
+    "reports\\figures\\all15_HF_2024.png",
+    "reports\\figures\\time_holdout.png"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "original_path": "outputs/amplitude_diagnostic/station_shape_gain_profiles.csv",
+  "original_sha256": "5570d6f0af39c09b20f392e72a2230439aa195de8ab87f10de0f997b7efcb666",
+  "columns": [
+    "configuration",
+    "task",
+    "station_key",
+    "scope",
+    "NSE",
+    "RMSE",
+    "bias",
+    "amplitude_ratio",
+    "correlation",
+    "bias_penalty",
+    "gain_beta_opt",
+    "positive_shape_amplitude_opt",
+    "fixed_mean_amplitude_ceiling_NSE",
+    "observed_mean_affine_ceiling_NSE",
+    "unit_amplitude_NSE",
+    "amplitude_only_room",
+    "unit_amplitude_change",
+    "remaining_after_affine",
+    "amplitude_gradient_at1_normalized"
+  ],
+  "rows": 3345,
+  "parts": [
+    {
+      "path": "outputs/amplitude_diagnostic/station_shape_gain_profiles/part_000.csv",
+      "rows": 322,
+      "sha256": "585c9adb58ef63960178e8a4b9374ec360c63faf24633b7905aa7992d0e2a555"
+    },
+    {
+      "path": "outputs/amplitude_diagnostic/station_shape_gain_profiles/part_001.csv",
+      "rows": 320,
+      "sha256": "30b580e9d640067557a6fff5a5063c37c0eeeb15adb43f631ab1161d035acdac"
+    },
+    {
+      "path": "outputs/amplitude_diagnostic/station_shape_gain_profiles/part_002.csv",
+      "rows": 323,
+      "sha256": "a869a7a6c1a4cc4cc732c25a441c110764f2cee3b59abc75d012c7cf6d5507bf"
+    },
+    {
+      "path": "outputs/amplitude_diagnostic/station_shape_gain_profiles/part_003.csv",
+      "rows": 317,
+      "sha256": "0a90cf04a7b0d2de23069e7ddbfe5bfa28eb25969bfd6c9bcd11ce0d8623f5a4"
+    },
+    {
+      "path": "outputs/amplitude_diagnostic/station_shape_gain_profiles/part_004.csv",
+      "rows": 318,
+      "sha256": "ae732475b1f1d83a8c1d4db17f9e854b5fae388e61145232fb079e4d68bab144"
+    },
+    {
+      "path": "outputs/amplitude_diagnostic/station_shape_gain_profiles/part_005.csv",
+      "rows": 318,
+      "sha256": "808969e21d1c12acc51ac35a59d72805faeb1480a5ff15e706b795f57e0540c8"
+    },
+    {
+      "path": "outputs/amplitude_diagnostic/station_shape_gain_profiles/part_006.csv",
+      "rows": 317,
+      "sha256": "66653176363d3c6dbe405f8d8e6556ed8c1edb14d357694053e87e2388246a3e"
+    },
+    {
+      "path": "outputs/amplitude_diagnostic/station_shape_gain_profiles/part_007.csv",
+      "rows": 322,
+      "sha256": "0f8f4c19fec5e37304d59962c8313af879c052a129946b705d0bd86a3e56b13d"
+    },
+    {
+      "path": "outputs/amplitude_diagnostic/station_shape_gain_profiles/part_008.csv",
+      "rows": 318,
+      "sha256": "36cc05eb8efe26a21ecef8ded7f4a2c55404c4b320b35185dbdbda9f07351973"
+    },
+    {
+      "path": "outputs/amplitude_diagnostic/station_shape_gain_profiles/part_009.csv",
+      "rows": 314,
+      "sha256": "050009d12d1701b4cd406532bcac1ac83dc11200bd6555e15fa336ee790a65aa"
+    },
+    {
+      "path": "outputs/amplitude_diagnostic/station_shape_gain_profiles/part_010.csv",
+      "rows": 156,
+      "sha256": "11cfbba4b5c2d1a1d6ae8f58312eb261da5e556e936c99f8155efe3abafea76d"
+    }
+  ],
+  "transformation": "CSV rows and columns preserved; repeat header, UTF-8/LF serialization"
+}

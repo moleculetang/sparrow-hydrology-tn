@@ -1,0 +1,10 @@
+{
+  "job": "aggregate_receipt_fixture_110zwbju",
+  "monthly": 0.13888888888888892,
+  "hf_anomaly": 0.003499999999999999,
+  "total": 0.14238888888888893,
+  "absolute_difference": 1.1102230246251565e-16,
+  "tolerance": 1.142388888888889e-08,
+  "passed": true,
+  "method": "scalar residual arithmetic and pandas date-support readout; no sparse objective class"
+}

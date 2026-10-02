@@ -1,0 +1,11 @@
+numpy>=2.0
+pandas>=2.2
+scipy>=1.14
+scikit-learn>=1.6
+torch>=2.6
+xgboost>=3.0
+lightgbm>=4.5
+catboost>=1.2
+pyarrow>=18
+matplotlib>=3.9
+threadpoolctl>=3.5

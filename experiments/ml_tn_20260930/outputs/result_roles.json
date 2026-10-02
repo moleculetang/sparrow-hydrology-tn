@@ -1,0 +1,4741 @@
+{
+  "rule": "training-only frozen configurations; no evaluation-based choice",
+  "include": [
+    "aux_F23_daily_CatBoost_c4_s1729_lead1",
+    "aux_F23_daily_CatBoost_c4_s1729_lead30",
+    "aux_F23_daily_CatBoost_c4_s1729_lead7",
+    "aux_F23_daily_CatBoost_c4_s1730_lead1",
+    "aux_F23_daily_CatBoost_c4_s1730_lead30",
+    "aux_F23_daily_CatBoost_c4_s1730_lead7",
+    "aux_F23_daily_CatBoost_c4_s1731_lead1",
+    "aux_F23_daily_CatBoost_c4_s1731_lead30",
+    "aux_F23_daily_CatBoost_c4_s1731_lead7",
+    "aux_F23_daily_persistence_lead1",
+    "aux_F23_daily_persistence_lead30",
+    "aux_F23_daily_persistence_lead7",
+    "aux_F23_monthly_CatBoost_c2_s1729_lead1",
+    "aux_F23_monthly_CatBoost_c2_s1730_lead1",
+    "aux_F23_monthly_CatBoost_c2_s1731_lead1",
+    "aux_F23_monthly_persistence_lead1",
+    "aux_F24_daily_CatBoost_c4_s1729_lead1",
+    "aux_F24_daily_CatBoost_c4_s1729_lead30",
+    "aux_F24_daily_CatBoost_c4_s1729_lead7",
+    "aux_F24_daily_CatBoost_c4_s1730_lead1",
+    "aux_F24_daily_CatBoost_c4_s1730_lead30",
+    "aux_F24_daily_CatBoost_c4_s1730_lead7",
+    "aux_F24_daily_CatBoost_c4_s1731_lead1",
+    "aux_F24_daily_CatBoost_c4_s1731_lead30",
+    "aux_F24_daily_CatBoost_c4_s1731_lead7",
+    "aux_F24_daily_persistence_lead1",
+    "aux_F24_daily_persistence_lead30",
+    "aux_F24_daily_persistence_lead7",
+    "aux_F24_monthly_CatBoost_c2_s1729_lead1",
+    "aux_F24_monthly_CatBoost_c2_s1730_lead1",
+    "aux_F24_monthly_CatBoost_c2_s1731_lead1",
+    "aux_F24_monthly_persistence_lead1",
+    "F23_daily_CatBoost_c4_s1729",
+    "F23_daily_CatBoost_c4_s1730",
+    "F23_daily_CatBoost_c4_s1731",
+    "F23_daily_convex_ensemble",
+    "F23_daily_ExtraTrees_c5_s1729",
+    "F23_daily_GraphTCN_c3_s1729",
+    "F23_daily_GRU_c2_s1729",
+    "F23_daily_LightGBM_c0_s1729",
+    "F23_daily_LSTM_c3_s1729",
+    "F23_daily_MLP_c5_s1729",
+    "F23_daily_reference_LAND1_T0_frozen",
+    "F23_daily_reference_U_T0_frozen",
+    "F23_daily_RF_c3_s1729",
+    "F23_daily_ridge",
+    "F23_daily_seasonal",
+    "F23_daily_TCN_c1_s1729",
+    "F23_daily_Transformer_c7_s1729",
+    "F23_daily_XGBoost_c6_s1729",
+    "F23_monthly_CatBoost_c2_s1729",
+    "F23_monthly_CatBoost_c2_s1730",
+    "F23_monthly_CatBoost_c2_s1731",
+    "F23_monthly_convex_ensemble",
+    "F23_monthly_ExtraTrees_c6_s1729",
+    "F23_monthly_GraphTCN_c6_s1729",
+    "F23_monthly_GRU_c6_s1729",
+    "F23_monthly_LightGBM_c6_s1729",
+    "F23_monthly_LSTM_c7_s1729",
+    "F23_monthly_MLP_c6_s1729",
+    "F23_monthly_reference_LAND1_T0_frozen",
+    "F23_monthly_reference_U_T0_frozen",
+    "F23_monthly_RF_c3_s1729",
+    "F23_monthly_ridge",
+    "F23_monthly_seasonal",
+    "F23_monthly_TCN_c2_s1729",
+    "F23_monthly_Transformer_c1_s1729",
+    "F23_monthly_XGBoost_c3_s1729",
+    "F24_daily_CatBoost_c4_s1729",
+    "F24_daily_CatBoost_c4_s1730",
+    "F24_daily_CatBoost_c4_s1731",
+    "F24_daily_convex_ensemble",
+    "F24_daily_ExtraTrees_c5_s1729",
+    "F24_daily_GraphTCN_c3_s1729",
+    "F24_daily_GRU_c2_s1729",
+    "F24_daily_LightGBM_c0_s1729",
+    "F24_daily_LSTM_c3_s1729",
+    "F24_daily_MLP_c5_s1729",
+    "F24_daily_reference_LAND1_T0_frozen",
+    "F24_daily_reference_old_tree_A0",
+    "F24_daily_reference_U_T0_frozen",
+    "F24_daily_RF_c3_s1729",
+    "F24_daily_ridge",
+    "F24_daily_seasonal",
+    "F24_daily_TCN_c1_s1729",
+    "F24_daily_Transformer_c7_s1729",
+    "F24_daily_XGBoost_c6_s1729",
+    "F24_monthly_CatBoost_c2_s1729",
+    "F24_monthly_CatBoost_c2_s1730",
+    "F24_monthly_CatBoost_c2_s1731",
+    "F24_monthly_convex_ensemble",
+    "F24_monthly_ExtraTrees_c6_s1729",
+    "F24_monthly_GraphTCN_c6_s1729",
+    "F24_monthly_GRU_c6_s1729",
+    "F24_monthly_LightGBM_c6_s1729",
+    "F24_monthly_LSTM_c7_s1729",
+    "F24_monthly_MLP_c6_s1729",
+    "F24_monthly_reference_LAND1_T0_frozen",
+    "F24_monthly_reference_U_T0_frozen",
+    "F24_monthly_RF_c3_s1729",
+    "F24_monthly_ridge",
+    "F24_monthly_seasonal",
+    "F24_monthly_TCN_c2_s1729",
+    "F24_monthly_Transformer_c1_s1729",
+    "F24_monthly_XGBoost_c3_s1729",
+    "fixed_recipe_F24_daily_CatBoost_c0_s1729",
+    "fixed_recipe_F24_monthly_CatBoost_c0_s1729",
+    "joint_F23_GraphTCN_c7_s1729",
+    "joint_F23_GraphTCN_c7_s1730",
+    "joint_F23_GraphTCN_c7_s1731",
+    "joint_F23_Transformer_c3_s1729",
+    "joint_F23_Transformer_c3_s1730",
+    "joint_F23_Transformer_c3_s1731",
+    "joint_F23_XGBoost_c3_s1729",
+    "joint_F23_XGBoost_c3_s1730",
+    "joint_F23_XGBoost_c3_s1731",
+    "joint_F24_GraphTCN_c7_s1729",
+    "joint_F24_GraphTCN_c7_s1730",
+    "joint_F24_GraphTCN_c7_s1731",
+    "joint_F24_Transformer_c3_s1729",
+    "joint_F24_Transformer_c3_s1730",
+    "joint_F24_Transformer_c3_s1731",
+    "joint_F24_XGBoost_c3_s1729",
+    "joint_F24_XGBoost_c3_s1730",
+    "joint_F24_XGBoost_c3_s1731",
+    "joint_fixed_recipe_F24_GraphTCN_c0_s1729",
+    "joint_fixed_recipe_F24_Transformer_c0_s1729",
+    "joint_fixed_recipe_F24_XGBoost_c0_s1729",
+    "joint_S23_GraphTCN_c0_s1729_B113",
+    "joint_S23_GraphTCN_c0_s1729_B191",
+    "joint_S23_GraphTCN_c0_s1729_B56",
+    "joint_S23_GraphTCN_c0_s1730_B113",
+    "joint_S23_GraphTCN_c0_s1730_B191",
+    "joint_S23_GraphTCN_c0_s1730_B56",
+    "joint_S23_GraphTCN_c0_s1731_B113",
+    "joint_S23_GraphTCN_c0_s1731_B191",
+    "joint_S23_GraphTCN_c0_s1731_B56",
+    "joint_S23_Transformer_c0_s1729_B113",
+    "joint_S23_Transformer_c0_s1729_B191",
+    "joint_S23_Transformer_c0_s1729_B56",
+    "joint_S23_Transformer_c0_s1730_B113",
+    "joint_S23_Transformer_c0_s1730_B191",
+    "joint_S23_Transformer_c0_s1730_B56",
+    "joint_S23_Transformer_c0_s1731_B113",
+    "joint_S23_Transformer_c0_s1731_B191",
+    "joint_S23_Transformer_c0_s1731_B56",
+    "joint_S23_XGBoost_c0_s1729_B113",
+    "joint_S23_XGBoost_c0_s1729_B191",
+    "joint_S23_XGBoost_c0_s1729_B56",
+    "joint_S23_XGBoost_c0_s1730_B113",
+    "joint_S23_XGBoost_c0_s1730_B191",
+    "joint_S23_XGBoost_c0_s1730_B56",
+    "joint_S23_XGBoost_c0_s1731_B113",
+    "joint_S23_XGBoost_c0_s1731_B191",
+    "joint_S23_XGBoost_c0_s1731_B56",
+    "joint_S24_GraphTCN_c0_s1729_B113",
+    "joint_S24_GraphTCN_c0_s1729_B191",
+    "joint_S24_GraphTCN_c0_s1729_B56",
+    "joint_S24_GraphTCN_c0_s1730_B113",
+    "joint_S24_GraphTCN_c0_s1730_B191",
+    "joint_S24_GraphTCN_c0_s1730_B56",
+    "joint_S24_GraphTCN_c0_s1731_B113",
+    "joint_S24_GraphTCN_c0_s1731_B191",
+    "joint_S24_GraphTCN_c0_s1731_B56",
+    "joint_S24_Transformer_c0_s1729_B113",
+    "joint_S24_Transformer_c0_s1729_B191",
+    "joint_S24_Transformer_c0_s1729_B56",
+    "joint_S24_Transformer_c0_s1730_B113",
+    "joint_S24_Transformer_c0_s1730_B191",
+    "joint_S24_Transformer_c0_s1730_B56",
+    "joint_S24_Transformer_c0_s1731_B113",
+    "joint_S24_Transformer_c0_s1731_B191",
+    "joint_S24_Transformer_c0_s1731_B56",
+    "joint_S24_XGBoost_c0_s1729_B113",
+    "joint_S24_XGBoost_c0_s1729_B191",
+    "joint_S24_XGBoost_c0_s1729_B56",
+    "joint_S24_XGBoost_c0_s1730_B113",
+    "joint_S24_XGBoost_c0_s1730_B191",
+    "joint_S24_XGBoost_c0_s1730_B56",
+    "joint_S24_XGBoost_c0_s1731_B113",
+    "joint_S24_XGBoost_c0_s1731_B191",
+    "joint_S24_XGBoost_c0_s1731_B56",
+    "S23_daily_CatBoost_c0_s1729_B113",
+    "S23_daily_CatBoost_c0_s1729_B191",
+    "S23_daily_CatBoost_c0_s1729_B56",
+    "S23_daily_CatBoost_c0_s1730_B113",
+    "S23_daily_CatBoost_c0_s1730_B191",
+    "S23_daily_CatBoost_c0_s1730_B56",
+    "S23_daily_CatBoost_c0_s1731_B113",
+    "S23_daily_CatBoost_c0_s1731_B191",
+    "S23_daily_CatBoost_c0_s1731_B56",
+    "S23_daily_ridge_B113",
+    "S23_daily_ridge_B191",
+    "S23_daily_ridge_B56",
+    "S23_daily_seasonal_B113",
+    "S23_daily_seasonal_B191",
+    "S23_daily_seasonal_B56",
+    "S23_monthly_CatBoost_c0_s1729_B113",
+    "S23_monthly_CatBoost_c0_s1729_B191",
+    "S23_monthly_CatBoost_c0_s1729_B56",
+    "S23_monthly_CatBoost_c0_s1730_B113",
+    "S23_monthly_CatBoost_c0_s1730_B191",
+    "S23_monthly_CatBoost_c0_s1730_B56",
+    "S23_monthly_CatBoost_c0_s1731_B113",
+    "S23_monthly_CatBoost_c0_s1731_B191",
+    "S23_monthly_CatBoost_c0_s1731_B56",
+    "S23_monthly_ridge_B113",
+    "S23_monthly_ridge_B191",
+    "S23_monthly_ridge_B56",
+    "S23_monthly_seasonal_B113",
+    "S23_monthly_seasonal_B191",
+    "S23_monthly_seasonal_B56",
+    "S24_daily_CatBoost_c0_s1729_B113",
+    "S24_daily_CatBoost_c0_s1729_B191",
+    "S24_daily_CatBoost_c0_s1729_B56",
+    "S24_daily_CatBoost_c0_s1730_B113",
+    "S24_daily_CatBoost_c0_s1730_B191",
+    "S24_daily_CatBoost_c0_s1730_B56",
+    "S24_daily_CatBoost_c0_s1731_B113",
+    "S24_daily_CatBoost_c0_s1731_B191",
+    "S24_daily_CatBoost_c0_s1731_B56",
+    "S24_daily_ridge_B113",
+    "S24_daily_ridge_B191",
+    "S24_daily_ridge_B56",
+    "S24_daily_seasonal_B113",
+    "S24_daily_seasonal_B191",
+    "S24_daily_seasonal_B56",
+    "S24_monthly_CatBoost_c0_s1729_B113",
+    "S24_monthly_CatBoost_c0_s1729_B191",
+    "S24_monthly_CatBoost_c0_s1729_B56",
+    "S24_monthly_CatBoost_c0_s1730_B113",
+    "S24_monthly_CatBoost_c0_s1730_B191",
+    "S24_monthly_CatBoost_c0_s1730_B56",
+    "S24_monthly_CatBoost_c0_s1731_B113",
+    "S24_monthly_CatBoost_c0_s1731_B191",
+    "S24_monthly_CatBoost_c0_s1731_B56",
+    "S24_monthly_ridge_B113",
+    "S24_monthly_ridge_B191",
+    "S24_monthly_ridge_B56",
+    "S24_monthly_seasonal_B113",
+    "S24_monthly_seasonal_B191",
+    "S24_monthly_seasonal_B56"
+  ],
+  "expected": [
+    "F23_daily_CatBoost_c4_s1729",
+    "F23_daily_CatBoost_c4_s1730",
+    "F23_daily_CatBoost_c4_s1731",
+    "F23_daily_ExtraTrees_c5_s1729",
+    "F23_daily_GRU_c2_s1729",
+    "F23_daily_GraphTCN_c3_s1729",
+    "F23_daily_LSTM_c3_s1729",
+    "F23_daily_LightGBM_c0_s1729",
+    "F23_daily_MLP_c5_s1729",
+    "F23_daily_RF_c3_s1729",
+    "F23_daily_TCN_c1_s1729",
+    "F23_daily_Transformer_c7_s1729",
+    "F23_daily_XGBoost_c6_s1729",
+    "F23_monthly_CatBoost_c2_s1729",
+    "F23_monthly_CatBoost_c2_s1730",
+    "F23_monthly_CatBoost_c2_s1731",
+    "F23_monthly_ExtraTrees_c6_s1729",
+    "F23_monthly_GRU_c6_s1729",
+    "F23_monthly_GraphTCN_c6_s1729",
+    "F23_monthly_LSTM_c7_s1729",
+    "F23_monthly_LightGBM_c6_s1729",
+    "F23_monthly_MLP_c6_s1729",
+    "F23_monthly_RF_c3_s1729",
+    "F23_monthly_TCN_c2_s1729",
+    "F23_monthly_Transformer_c1_s1729",
+    "F23_monthly_XGBoost_c3_s1729",
+    "F24_daily_CatBoost_c4_s1729",
+    "F24_daily_CatBoost_c4_s1730",
+    "F24_daily_CatBoost_c4_s1731",
+    "F24_daily_ExtraTrees_c5_s1729",
+    "F24_daily_GRU_c2_s1729",
+    "F24_daily_GraphTCN_c3_s1729",
+    "F24_daily_LSTM_c3_s1729",
+    "F24_daily_LightGBM_c0_s1729",
+    "F24_daily_MLP_c5_s1729",
+    "F24_daily_RF_c3_s1729",
+    "F24_daily_TCN_c1_s1729",
+    "F24_daily_Transformer_c7_s1729",
+    "F24_daily_XGBoost_c6_s1729",
+    "F24_monthly_CatBoost_c2_s1729",
+    "F24_monthly_CatBoost_c2_s1730",
+    "F24_monthly_CatBoost_c2_s1731",
+    "F24_monthly_ExtraTrees_c6_s1729",
+    "F24_monthly_GRU_c6_s1729",
+    "F24_monthly_GraphTCN_c6_s1729",
+    "F24_monthly_LSTM_c7_s1729",
+    "F24_monthly_LightGBM_c6_s1729",
+    "F24_monthly_MLP_c6_s1729",
+    "F24_monthly_RF_c3_s1729",
+    "F24_monthly_TCN_c2_s1729",
+    "F24_monthly_Transformer_c1_s1729",
+    "F24_monthly_XGBoost_c3_s1729",
+    "S23_daily_CatBoost_c0_s1729_B113",
+    "S23_daily_CatBoost_c0_s1729_B191",
+    "S23_daily_CatBoost_c0_s1729_B56",
+    "S23_daily_CatBoost_c0_s1730_B113",
+    "S23_daily_CatBoost_c0_s1730_B191",
+    "S23_daily_CatBoost_c0_s1730_B56",
+    "S23_daily_CatBoost_c0_s1731_B113",
+    "S23_daily_CatBoost_c0_s1731_B191",
+    "S23_daily_CatBoost_c0_s1731_B56",
+    "S23_monthly_CatBoost_c0_s1729_B113",
+    "S23_monthly_CatBoost_c0_s1729_B191",
+    "S23_monthly_CatBoost_c0_s1729_B56",
+    "S23_monthly_CatBoost_c0_s1730_B113",
+    "S23_monthly_CatBoost_c0_s1730_B191",
+    "S23_monthly_CatBoost_c0_s1730_B56",
+    "S23_monthly_CatBoost_c0_s1731_B113",
+    "S23_monthly_CatBoost_c0_s1731_B191",
+    "S23_monthly_CatBoost_c0_s1731_B56",
+    "S24_daily_CatBoost_c0_s1729_B113",
+    "S24_daily_CatBoost_c0_s1729_B191",
+    "S24_daily_CatBoost_c0_s1729_B56",
+    "S24_daily_CatBoost_c0_s1730_B113",
+    "S24_daily_CatBoost_c0_s1730_B191",
+    "S24_daily_CatBoost_c0_s1730_B56",
+    "S24_daily_CatBoost_c0_s1731_B113",
+    "S24_daily_CatBoost_c0_s1731_B191",
+    "S24_daily_CatBoost_c0_s1731_B56",
+    "S24_monthly_CatBoost_c0_s1729_B113",
+    "S24_monthly_CatBoost_c0_s1729_B191",
+    "S24_monthly_CatBoost_c0_s1729_B56",
+    "S24_monthly_CatBoost_c0_s1730_B113",
+    "S24_monthly_CatBoost_c0_s1730_B191",
+    "S24_monthly_CatBoost_c0_s1730_B56",
+    "S24_monthly_CatBoost_c0_s1731_B113",
+    "S24_monthly_CatBoost_c0_s1731_B191",
+    "S24_monthly_CatBoost_c0_s1731_B56",
+    "aux_F23_daily_CatBoost_c4_s1729_lead1",
+    "aux_F23_daily_CatBoost_c4_s1729_lead30",
+    "aux_F23_daily_CatBoost_c4_s1729_lead7",
+    "aux_F23_daily_CatBoost_c4_s1730_lead1",
+    "aux_F23_daily_CatBoost_c4_s1730_lead30",
+    "aux_F23_daily_CatBoost_c4_s1730_lead7",
+    "aux_F23_daily_CatBoost_c4_s1731_lead1",
+    "aux_F23_daily_CatBoost_c4_s1731_lead30",
+    "aux_F23_daily_CatBoost_c4_s1731_lead7",
+    "aux_F23_monthly_CatBoost_c2_s1729_lead1",
+    "aux_F23_monthly_CatBoost_c2_s1730_lead1",
+    "aux_F23_monthly_CatBoost_c2_s1731_lead1",
+    "aux_F24_daily_CatBoost_c4_s1729_lead1",
+    "aux_F24_daily_CatBoost_c4_s1729_lead30",
+    "aux_F24_daily_CatBoost_c4_s1729_lead7",
+    "aux_F24_daily_CatBoost_c4_s1730_lead1",
+    "aux_F24_daily_CatBoost_c4_s1730_lead30",
+    "aux_F24_daily_CatBoost_c4_s1730_lead7",
+    "aux_F24_daily_CatBoost_c4_s1731_lead1",
+    "aux_F24_daily_CatBoost_c4_s1731_lead30",
+    "aux_F24_daily_CatBoost_c4_s1731_lead7",
+    "aux_F24_monthly_CatBoost_c2_s1729_lead1",
+    "aux_F24_monthly_CatBoost_c2_s1730_lead1",
+    "aux_F24_monthly_CatBoost_c2_s1731_lead1",
+    "fixed_recipe_F24_daily_CatBoost_c0_s1729",
+    "fixed_recipe_F24_monthly_CatBoost_c0_s1729",
+    "joint_F23_GraphTCN_c7_s1729",
+    "joint_F23_GraphTCN_c7_s1730",
+    "joint_F23_GraphTCN_c7_s1731",
+    "joint_F23_Transformer_c3_s1729",
+    "joint_F23_Transformer_c3_s1730",
+    "joint_F23_Transformer_c3_s1731",
+    "joint_F23_XGBoost_c3_s1729",
+    "joint_F23_XGBoost_c3_s1730",
+    "joint_F23_XGBoost_c3_s1731",
+    "joint_F24_GraphTCN_c7_s1729",
+    "joint_F24_GraphTCN_c7_s1730",
+    "joint_F24_GraphTCN_c7_s1731",
+    "joint_F24_Transformer_c3_s1729",
+    "joint_F24_Transformer_c3_s1730",
+    "joint_F24_Transformer_c3_s1731",
+    "joint_F24_XGBoost_c3_s1729",
+    "joint_F24_XGBoost_c3_s1730",
+    "joint_F24_XGBoost_c3_s1731",
+    "joint_S23_GraphTCN_c0_s1729_B113",
+    "joint_S23_GraphTCN_c0_s1729_B191",
+    "joint_S23_GraphTCN_c0_s1729_B56",
+    "joint_S23_GraphTCN_c0_s1730_B113",
+    "joint_S23_GraphTCN_c0_s1730_B191",
+    "joint_S23_GraphTCN_c0_s1730_B56",
+    "joint_S23_GraphTCN_c0_s1731_B113",
+    "joint_S23_GraphTCN_c0_s1731_B191",
+    "joint_S23_GraphTCN_c0_s1731_B56",
+    "joint_S23_Transformer_c0_s1729_B113",
+    "joint_S23_Transformer_c0_s1729_B191",
+    "joint_S23_Transformer_c0_s1729_B56",
+    "joint_S23_Transformer_c0_s1730_B113",
+    "joint_S23_Transformer_c0_s1730_B191",
+    "joint_S23_Transformer_c0_s1730_B56",
+    "joint_S23_Transformer_c0_s1731_B113",
+    "joint_S23_Transformer_c0_s1731_B191",
+    "joint_S23_Transformer_c0_s1731_B56",
+    "joint_S23_XGBoost_c0_s1729_B113",
+    "joint_S23_XGBoost_c0_s1729_B191",
+    "joint_S23_XGBoost_c0_s1729_B56",
+    "joint_S23_XGBoost_c0_s1730_B113",
+    "joint_S23_XGBoost_c0_s1730_B191",
+    "joint_S23_XGBoost_c0_s1730_B56",
+    "joint_S23_XGBoost_c0_s1731_B113",
+    "joint_S23_XGBoost_c0_s1731_B191",
+    "joint_S23_XGBoost_c0_s1731_B56",
+    "joint_S24_GraphTCN_c0_s1729_B113",
+    "joint_S24_GraphTCN_c0_s1729_B191",
+    "joint_S24_GraphTCN_c0_s1729_B56",
+    "joint_S24_GraphTCN_c0_s1730_B113",
+    "joint_S24_GraphTCN_c0_s1730_B191",
+    "joint_S24_GraphTCN_c0_s1730_B56",
+    "joint_S24_GraphTCN_c0_s1731_B113",
+    "joint_S24_GraphTCN_c0_s1731_B191",
+    "joint_S24_GraphTCN_c0_s1731_B56",
+    "joint_S24_Transformer_c0_s1729_B113",
+    "joint_S24_Transformer_c0_s1729_B191",
+    "joint_S24_Transformer_c0_s1729_B56",
+    "joint_S24_Transformer_c0_s1730_B113",
+    "joint_S24_Transformer_c0_s1730_B191",
+    "joint_S24_Transformer_c0_s1730_B56",
+    "joint_S24_Transformer_c0_s1731_B113",
+    "joint_S24_Transformer_c0_s1731_B191",
+    "joint_S24_Transformer_c0_s1731_B56",
+    "joint_S24_XGBoost_c0_s1729_B113",
+    "joint_S24_XGBoost_c0_s1729_B191",
+    "joint_S24_XGBoost_c0_s1729_B56",
+    "joint_S24_XGBoost_c0_s1730_B113",
+    "joint_S24_XGBoost_c0_s1730_B191",
+    "joint_S24_XGBoost_c0_s1730_B56",
+    "joint_S24_XGBoost_c0_s1731_B113",
+    "joint_S24_XGBoost_c0_s1731_B191",
+    "joint_S24_XGBoost_c0_s1731_B56",
+    "joint_fixed_recipe_F24_GraphTCN_c0_s1729",
+    "joint_fixed_recipe_F24_Transformer_c0_s1729",
+    "joint_fixed_recipe_F24_XGBoost_c0_s1729"
+  ],
+  "missing": [],
+  "attempts": [
+    {
+      "job": "aux_F23_daily_CatBoost_c4_s1729_lead1",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F23_daily_CatBoost_c4_s1729_lead30",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F23_daily_CatBoost_c4_s1729_lead7",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F23_daily_CatBoost_c4_s1730_lead1",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F23_daily_CatBoost_c4_s1730_lead30",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F23_daily_CatBoost_c4_s1730_lead7",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F23_daily_CatBoost_c4_s1731_lead1",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F23_daily_CatBoost_c4_s1731_lead30",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F23_daily_CatBoost_c4_s1731_lead7",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F23_daily_persistence_lead1",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F23_daily_persistence_lead30",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F23_daily_persistence_lead7",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F23_monthly_CatBoost_c2_s1729_lead1",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F23_monthly_CatBoost_c2_s1730_lead1",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F23_monthly_CatBoost_c2_s1731_lead1",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F23_monthly_persistence_lead1",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F24_daily_CatBoost_c4_s1729_lead1",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F24_daily_CatBoost_c4_s1729_lead30",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F24_daily_CatBoost_c4_s1729_lead7",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F24_daily_CatBoost_c4_s1730_lead1",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F24_daily_CatBoost_c4_s1730_lead30",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F24_daily_CatBoost_c4_s1730_lead7",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F24_daily_CatBoost_c4_s1731_lead1",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F24_daily_CatBoost_c4_s1731_lead30",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F24_daily_CatBoost_c4_s1731_lead7",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F24_daily_persistence_lead1",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F24_daily_persistence_lead30",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F24_daily_persistence_lead7",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F24_monthly_CatBoost_c2_s1729_lead1",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F24_monthly_CatBoost_c2_s1730_lead1",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F24_monthly_CatBoost_c2_s1731_lead1",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F24_monthly_persistence_lead1",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_CatBoost_c4_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_CatBoost_c4_s1730",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_CatBoost_c4_s1731",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_convex_ensemble",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_ExtraTrees_c5_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_GraphTCN_c3_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_GRU_c2_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_LightGBM_c0_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_LSTM_c3_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_MLP_c5_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_reference_LAND1_T0_frozen",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_reference_U_T0_frozen",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_RF_c3_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_ridge",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_ridge_B113",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_ridge_B191",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_ridge_B56",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_seasonal",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_seasonal_B113",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_seasonal_B191",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_seasonal_B56",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_TCN_c1_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_Transformer_c7_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_XGBoost_c6_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_CatBoost_c2_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_CatBoost_c2_s1730",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_CatBoost_c2_s1731",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_convex_ensemble",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_ExtraTrees_c6_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_GraphTCN_c6_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_GRU_c6_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_LightGBM_c6_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_LSTM_c7_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_MLP_c6_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_reference_LAND1_T0_frozen",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_reference_U_T0_frozen",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_RF_c3_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_ridge",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_ridge_B113",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_ridge_B191",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_ridge_B56",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_seasonal",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_seasonal_B113",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_seasonal_B191",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_seasonal_B56",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_TCN_c2_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_Transformer_c1_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_XGBoost_c3_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_CatBoost_c4_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_CatBoost_c4_s1730",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_CatBoost_c4_s1731",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_convex_ensemble",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_ExtraTrees_c5_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_GraphTCN_c3_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_GRU_c2_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_LightGBM_c0_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_LSTM_c3_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_MLP_c5_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_reference_LAND1_T0_frozen",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_reference_old_tree_A0",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_reference_U_T0_frozen",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_RF_c3_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_ridge",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_ridge_B113",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_ridge_B191",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_ridge_B56",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_seasonal",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_seasonal_B113",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_seasonal_B191",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_seasonal_B56",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_TCN_c1_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_Transformer_c7_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_XGBoost_c6_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_CatBoost_c2_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_CatBoost_c2_s1730",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_CatBoost_c2_s1731",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_convex_ensemble",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_ExtraTrees_c6_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_GraphTCN_c6_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_GRU_c6_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_LightGBM_c6_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_LSTM_c7_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_MLP_c6_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_reference_LAND1_T0_frozen",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_reference_U_T0_frozen",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_RF_c3_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_ridge",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_ridge_B113",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_ridge_B191",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_ridge_B56",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_seasonal",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_seasonal_B113",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_seasonal_B191",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_seasonal_B56",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_TCN_c2_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_Transformer_c1_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_XGBoost_c3_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "fixed_recipe_F24_daily_CatBoost_c0_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "fixed_recipe_F24_monthly_CatBoost_c0_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F23_GraphTCN_c7_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F23_GraphTCN_c7_s1730",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F23_GraphTCN_c7_s1731",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F23_Transformer_c3_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F23_Transformer_c3_s1730",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F23_Transformer_c3_s1731",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F23_XGBoost_c3_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F23_XGBoost_c3_s1730",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F23_XGBoost_c3_s1731",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F24_GraphTCN_c7_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F24_GraphTCN_c7_s1730",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F24_GraphTCN_c7_s1731",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F24_Transformer_c3_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F24_Transformer_c3_s1730",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F24_Transformer_c3_s1731",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F24_XGBoost_c3_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F24_XGBoost_c3_s1730",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F24_XGBoost_c3_s1731",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_fixed_recipe_F24_GraphTCN_c0_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_fixed_recipe_F24_Transformer_c0_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_fixed_recipe_F24_XGBoost_c0_s1729",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_GraphTCN_c0_s1729_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_GraphTCN_c0_s1729_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_GraphTCN_c0_s1729_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_GraphTCN_c0_s1730_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_GraphTCN_c0_s1730_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_GraphTCN_c0_s1730_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_GraphTCN_c0_s1731_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_GraphTCN_c0_s1731_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_GraphTCN_c0_s1731_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_Transformer_c0_s1729_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_Transformer_c0_s1729_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_Transformer_c0_s1729_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_Transformer_c0_s1730_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_Transformer_c0_s1730_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_Transformer_c0_s1730_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_Transformer_c0_s1731_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_Transformer_c0_s1731_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_Transformer_c0_s1731_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_XGBoost_c0_s1729_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_XGBoost_c0_s1729_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_XGBoost_c0_s1729_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_XGBoost_c0_s1730_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_XGBoost_c0_s1730_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_XGBoost_c0_s1730_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_XGBoost_c0_s1731_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_XGBoost_c0_s1731_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_XGBoost_c0_s1731_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_GraphTCN_c0_s1729_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_GraphTCN_c0_s1729_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_GraphTCN_c0_s1729_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_GraphTCN_c0_s1730_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_GraphTCN_c0_s1730_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_GraphTCN_c0_s1730_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_GraphTCN_c0_s1731_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_GraphTCN_c0_s1731_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_GraphTCN_c0_s1731_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_Transformer_c0_s1729_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_Transformer_c0_s1729_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_Transformer_c0_s1729_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_Transformer_c0_s1730_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_Transformer_c0_s1730_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_Transformer_c0_s1730_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_Transformer_c0_s1731_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_Transformer_c0_s1731_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_Transformer_c0_s1731_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_XGBoost_c0_s1729_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_XGBoost_c0_s1729_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_XGBoost_c0_s1729_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_XGBoost_c0_s1730_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_XGBoost_c0_s1730_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_XGBoost_c0_s1730_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_XGBoost_c0_s1731_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_XGBoost_c0_s1731_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_XGBoost_c0_s1731_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_GraphTCN_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_GraphTCN_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_GraphTCN_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_GraphTCN_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_GraphTCN_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_GraphTCN_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_GraphTCN_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_GraphTCN_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_Transformer_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_Transformer_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_Transformer_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_Transformer_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_Transformer_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_Transformer_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_Transformer_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_Transformer_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_XGBoost_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_XGBoost_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_XGBoost_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_XGBoost_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_XGBoost_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_XGBoost_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_XGBoost_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_XGBoost_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_daily_CatBoost_c0_s1729_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_daily_CatBoost_c0_s1729_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_daily_CatBoost_c0_s1729_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_daily_CatBoost_c0_s1730_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_daily_CatBoost_c0_s1730_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_daily_CatBoost_c0_s1730_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_daily_CatBoost_c0_s1731_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_daily_CatBoost_c0_s1731_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_daily_CatBoost_c0_s1731_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_daily_CatBoost_c4_s1729_B113",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S23_daily_CatBoost_c4_s1729_B191",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S23_daily_CatBoost_c4_s1729_B56",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S23_daily_CatBoost_c4_s1730_B113",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S23_daily_CatBoost_c4_s1730_B191",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S23_daily_CatBoost_c4_s1730_B56",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S23_daily_CatBoost_c4_s1731_B113",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S23_daily_CatBoost_c4_s1731_B191",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S23_daily_CatBoost_c4_s1731_B56",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S23_daily_ridge_B113",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_daily_ridge_B191",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_daily_ridge_B56",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_daily_seasonal_B113",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_daily_seasonal_B191",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_daily_seasonal_B56",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_monthly_CatBoost_c0_s1729_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_monthly_CatBoost_c0_s1729_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_monthly_CatBoost_c0_s1729_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_monthly_CatBoost_c0_s1730_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_monthly_CatBoost_c0_s1730_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_monthly_CatBoost_c0_s1730_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_monthly_CatBoost_c0_s1731_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_monthly_CatBoost_c0_s1731_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_monthly_CatBoost_c0_s1731_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_monthly_CatBoost_c2_s1729_B113",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S23_monthly_CatBoost_c2_s1729_B191",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S23_monthly_CatBoost_c2_s1729_B56",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S23_monthly_CatBoost_c2_s1730_B113",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S23_monthly_CatBoost_c2_s1730_B191",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S23_monthly_CatBoost_c2_s1730_B56",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S23_monthly_CatBoost_c2_s1731_B113",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S23_monthly_CatBoost_c2_s1731_B191",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S23_monthly_CatBoost_c2_s1731_B56",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S23_monthly_ridge_B113",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_monthly_ridge_B191",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_monthly_ridge_B56",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_monthly_seasonal_B113",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_monthly_seasonal_B191",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S23_monthly_seasonal_B56",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_daily_CatBoost_c0_s1729_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_daily_CatBoost_c0_s1729_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_daily_CatBoost_c0_s1729_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_daily_CatBoost_c0_s1730_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_daily_CatBoost_c0_s1730_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_daily_CatBoost_c0_s1730_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_daily_CatBoost_c0_s1731_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_daily_CatBoost_c0_s1731_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_daily_CatBoost_c0_s1731_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_daily_CatBoost_c4_s1729_B113",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S24_daily_CatBoost_c4_s1729_B191",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S24_daily_CatBoost_c4_s1729_B56",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S24_daily_CatBoost_c4_s1730_B113",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S24_daily_CatBoost_c4_s1730_B191",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S24_daily_CatBoost_c4_s1730_B56",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S24_daily_CatBoost_c4_s1731_B113",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S24_daily_CatBoost_c4_s1731_B191",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S24_daily_CatBoost_c4_s1731_B56",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S24_daily_ridge_B113",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_daily_ridge_B191",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_daily_ridge_B56",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_daily_seasonal_B113",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_daily_seasonal_B191",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_daily_seasonal_B56",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_monthly_CatBoost_c0_s1729_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_monthly_CatBoost_c0_s1729_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_monthly_CatBoost_c0_s1729_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_monthly_CatBoost_c0_s1730_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_monthly_CatBoost_c0_s1730_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_monthly_CatBoost_c0_s1730_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_monthly_CatBoost_c0_s1731_B113",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_monthly_CatBoost_c0_s1731_B191",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_monthly_CatBoost_c0_s1731_B56",
+      "role": "registered_final",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_monthly_CatBoost_c2_s1729_B113",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S24_monthly_CatBoost_c2_s1729_B191",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S24_monthly_CatBoost_c2_s1729_B56",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S24_monthly_CatBoost_c2_s1730_B113",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S24_monthly_CatBoost_c2_s1730_B191",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S24_monthly_CatBoost_c2_s1730_B56",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S24_monthly_CatBoost_c2_s1731_B113",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S24_monthly_CatBoost_c2_s1731_B191",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S24_monthly_CatBoost_c2_s1731_B56",
+      "role": "superseded_or_deferred",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_spatial_hyperparameter_isolation",
+        "reason": "space paths use preregistered config0 and fixed120epochs, not globally selected hyperparameters/epochs informed by held stations"
+      }
+    },
+    {
+      "job": "S24_monthly_ridge_B113",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_monthly_ridge_B191",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_monthly_ridge_B56",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_monthly_seasonal_B113",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_monthly_seasonal_B191",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "S24_monthly_seasonal_B56",
+      "role": "reference",
+      "included": true,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_CatBoost_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_CatBoost_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_CatBoost_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_CatBoost_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_CatBoost_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_CatBoost_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_CatBoost_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_CatBoost_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_ExtraTrees_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_ExtraTrees_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_ExtraTrees_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_ExtraTrees_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_ExtraTrees_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_ExtraTrees_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_ExtraTrees_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_ExtraTrees_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_GraphTCN_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_GraphTCN_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_GraphTCN_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_GraphTCN_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_GraphTCN_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_GraphTCN_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_GraphTCN_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_GraphTCN_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_GRU_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_GRU_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_GRU_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_GRU_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_GRU_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_GRU_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_GRU_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_GRU_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_LightGBM_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_LightGBM_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_LightGBM_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_LightGBM_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_LightGBM_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_LightGBM_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_LightGBM_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_LightGBM_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_LSTM_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_LSTM_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_LSTM_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_LSTM_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_LSTM_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_LSTM_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_LSTM_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_LSTM_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_MLP_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_MLP_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_MLP_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_MLP_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_MLP_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_MLP_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_MLP_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_MLP_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_RF_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_RF_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_RF_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_RF_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_RF_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_RF_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_RF_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_RF_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_TCN_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_TCN_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_TCN_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_TCN_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_TCN_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_TCN_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_TCN_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_TCN_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_Transformer_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_Transformer_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_Transformer_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_Transformer_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_Transformer_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_Transformer_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_Transformer_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_Transformer_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_XGBoost_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_XGBoost_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_XGBoost_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_XGBoost_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_XGBoost_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_XGBoost_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_XGBoost_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_daily_XGBoost_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_CatBoost_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_CatBoost_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_CatBoost_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_CatBoost_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_CatBoost_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_CatBoost_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_CatBoost_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_CatBoost_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_ExtraTrees_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_ExtraTrees_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_ExtraTrees_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_ExtraTrees_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_ExtraTrees_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_ExtraTrees_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_ExtraTrees_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_ExtraTrees_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GraphTCN_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GraphTCN_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GraphTCN_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GraphTCN_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GraphTCN_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GraphTCN_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GraphTCN_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GraphTCN_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GRU_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GRU_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GRU_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GRU_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GRU_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GRU_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GRU_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GRU_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LightGBM_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LightGBM_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LightGBM_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LightGBM_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LightGBM_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LightGBM_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LightGBM_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LightGBM_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LSTM_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LSTM_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LSTM_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LSTM_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LSTM_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LSTM_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LSTM_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LSTM_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_MLP_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_MLP_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_MLP_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_MLP_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_MLP_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_MLP_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_MLP_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_MLP_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_RF_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_RF_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_RF_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_RF_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_RF_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_RF_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_RF_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_RF_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_TCN_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_TCN_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_TCN_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_TCN_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_TCN_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_TCN_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_TCN_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_TCN_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_Transformer_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_Transformer_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_Transformer_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_Transformer_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_Transformer_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_Transformer_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_Transformer_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_Transformer_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_XGBoost_c0_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_XGBoost_c1_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_XGBoost_c2_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_XGBoost_c3_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_XGBoost_c4_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_XGBoost_c5_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_XGBoost_c6_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_XGBoost_c7_s1729",
+      "role": "screen",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_XGBoost_c0_s1729",
+      "archive": "superseded/joint_diagonal_pilot/joint_screen_XGBoost_c0_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F23_daily_persistence_lead1",
+      "archive": "superseded/local_preimport/jobs/aux_F23_daily_persistence_lead1",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F23_daily_persistence_lead30",
+      "archive": "superseded/local_preimport/jobs/aux_F23_daily_persistence_lead30",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F23_daily_persistence_lead7",
+      "archive": "superseded/local_preimport/jobs/aux_F23_daily_persistence_lead7",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F23_monthly_persistence_lead1",
+      "archive": "superseded/local_preimport/jobs/aux_F23_monthly_persistence_lead1",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F24_daily_persistence_lead1",
+      "archive": "superseded/local_preimport/jobs/aux_F24_daily_persistence_lead1",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F24_daily_persistence_lead30",
+      "archive": "superseded/local_preimport/jobs/aux_F24_daily_persistence_lead30",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F24_daily_persistence_lead7",
+      "archive": "superseded/local_preimport/jobs/aux_F24_daily_persistence_lead7",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "aux_F24_monthly_persistence_lead1",
+      "archive": "superseded/local_preimport/jobs/aux_F24_monthly_persistence_lead1",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_ridge",
+      "archive": "superseded/local_preimport/jobs/F23_daily_ridge",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_daily_seasonal",
+      "archive": "superseded/local_preimport/jobs/F23_daily_seasonal",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_ridge",
+      "archive": "superseded/local_preimport/jobs/F23_monthly_ridge",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_seasonal",
+      "archive": "superseded/local_preimport/jobs/F23_monthly_seasonal",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_ridge",
+      "archive": "superseded/local_preimport/jobs/F24_daily_ridge",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_daily_seasonal",
+      "archive": "superseded/local_preimport/jobs/F24_daily_seasonal",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_ridge",
+      "archive": "superseded/local_preimport/jobs/F24_monthly_ridge",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_seasonal",
+      "archive": "superseded/local_preimport/jobs/F24_monthly_seasonal",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F23_XGBoost_c7_s1729",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_F23_XGBoost_c7_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F23_XGBoost_c7_s1730",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_F23_XGBoost_c7_s1730",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F23_XGBoost_c7_s1731",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_F23_XGBoost_c7_s1731",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F24_XGBoost_c7_s1729",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_F24_XGBoost_c7_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F24_XGBoost_c7_s1730",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_F24_XGBoost_c7_s1730",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_F24_XGBoost_c7_s1731",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_F24_XGBoost_c7_s1731",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_fixed_recipe_F24_XGBoost_c0_s1729",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_fixed_recipe_F24_XGBoost_c0_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_XGBoost_c0_s1729_B113",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_S23_XGBoost_c0_s1729_B113",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_XGBoost_c0_s1729_B191",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_S23_XGBoost_c0_s1729_B191",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_XGBoost_c0_s1729_B56",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_S23_XGBoost_c0_s1729_B56",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_XGBoost_c0_s1730_B113",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_S23_XGBoost_c0_s1730_B113",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_XGBoost_c0_s1730_B191",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_S23_XGBoost_c0_s1730_B191",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_XGBoost_c0_s1730_B56",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_S23_XGBoost_c0_s1730_B56",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_XGBoost_c0_s1731_B113",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_S23_XGBoost_c0_s1731_B113",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_XGBoost_c0_s1731_B191",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_S23_XGBoost_c0_s1731_B191",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S23_XGBoost_c0_s1731_B56",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_S23_XGBoost_c0_s1731_B56",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_XGBoost_c0_s1729_B113",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_S24_XGBoost_c0_s1729_B113",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_XGBoost_c0_s1729_B191",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_S24_XGBoost_c0_s1729_B191",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_XGBoost_c0_s1729_B56",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_S24_XGBoost_c0_s1729_B56",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_XGBoost_c0_s1730_B113",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_S24_XGBoost_c0_s1730_B113",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_XGBoost_c0_s1730_B191",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_S24_XGBoost_c0_s1730_B191",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_XGBoost_c0_s1730_B56",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_S24_XGBoost_c0_s1730_B56",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_XGBoost_c0_s1731_B113",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_S24_XGBoost_c0_s1731_B113",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_XGBoost_c0_s1731_B191",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_S24_XGBoost_c0_s1731_B191",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_S24_XGBoost_c0_s1731_B56",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_S24_XGBoost_c0_s1731_B56",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_XGBoost_c0_s1729",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_screen_XGBoost_c0_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_XGBoost_c1_s1729",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_screen_XGBoost_c1_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_XGBoost_c2_s1729",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_screen_XGBoost_c2_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_XGBoost_c3_s1729",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_screen_XGBoost_c3_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_XGBoost_c4_s1729",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_screen_XGBoost_c4_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_XGBoost_c5_s1729",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_screen_XGBoost_c5_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_XGBoost_c6_s1729",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_screen_XGBoost_c6_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_XGBoost_c7_s1729",
+      "archive": "superseded/seed_not_forwarded/jobs/joint_screen_XGBoost_c7_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_XGBoost_c0_s1729",
+      "archive": "superseded/seed_repair_remote_wait/jobs/joint_screen_XGBoost_c0_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_XGBoost_c1_s1729",
+      "archive": "superseded/seed_repair_remote_wait/jobs/joint_screen_XGBoost_c1_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "exit_code": -15,
+        "log": "logs/joint_screen_XGBoost_c1_s1729.log",
+        "owner": "pc"
+      }
+    },
+    {
+      "job": "joint_screen_XGBoost_c2_s1729",
+      "archive": "superseded/seed_repair_remote_wait/jobs/joint_screen_XGBoost_c2_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "exit_code": -15,
+        "log": "logs/joint_screen_XGBoost_c2_s1729.log",
+        "owner": "pc"
+      }
+    },
+    {
+      "job": "joint_screen_XGBoost_c3_s1729",
+      "archive": "superseded/seed_repair_remote_wait/jobs/joint_screen_XGBoost_c3_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "exit_code": -15,
+        "log": "logs/joint_screen_XGBoost_c3_s1729.log",
+        "owner": "pc"
+      }
+    },
+    {
+      "job": "joint_screen_XGBoost_c4_s1729",
+      "archive": "superseded/seed_repair_remote_wait/jobs/joint_screen_XGBoost_c4_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "exit_code": -15,
+        "log": "logs/joint_screen_XGBoost_c4_s1729.log",
+        "owner": "pc"
+      }
+    },
+    {
+      "job": "joint_screen_XGBoost_c5_s1729",
+      "archive": "superseded/seed_repair_remote_wait/jobs/joint_screen_XGBoost_c5_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_XGBoost_c6_s1729",
+      "archive": "superseded/seed_repair_remote_wait/jobs/joint_screen_XGBoost_c6_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "joint_screen_XGBoost_c7_s1729",
+      "archive": "superseded/seed_repair_remote_wait/jobs/joint_screen_XGBoost_c7_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_GraphTCN_c6_s1729",
+      "archive": "superseded/warmup_incomplete/F23_monthly_GraphTCN_c6_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_GRU_c6_s1729",
+      "archive": "superseded/warmup_incomplete/F23_monthly_GRU_c6_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_LSTM_c3_s1729",
+      "archive": "superseded/warmup_incomplete/F23_monthly_LSTM_c3_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_pending_input_cohort_reconciliation",
+        "reason": "selected screen used incomplete2015 warmup; do not spend budget fitting its final path before corrected screening"
+      }
+    },
+    {
+      "job": "F23_monthly_TCN_c2_s1729",
+      "archive": "superseded/warmup_incomplete/F23_monthly_TCN_c2_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F23_monthly_Transformer_c1_s1729",
+      "archive": "superseded/warmup_incomplete/F23_monthly_Transformer_c1_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_GraphTCN_c6_s1729",
+      "archive": "superseded/warmup_incomplete/F24_monthly_GraphTCN_c6_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_GRU_c6_s1729",
+      "archive": "superseded/warmup_incomplete/F24_monthly_GRU_c6_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_LSTM_c3_s1729",
+      "archive": "superseded/warmup_incomplete/F24_monthly_LSTM_c3_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": false,
+      "failure": {
+        "status": "deferred_pending_input_cohort_reconciliation",
+        "reason": "selected screen used incomplete2015 warmup; do not spend budget fitting its final path before corrected screening"
+      }
+    },
+    {
+      "job": "F24_monthly_TCN_c2_s1729",
+      "archive": "superseded/warmup_incomplete/F24_monthly_TCN_c2_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "F24_monthly_Transformer_c1_s1729",
+      "archive": "superseded/warmup_incomplete/F24_monthly_Transformer_c1_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GRU_c0_s1729",
+      "archive": "superseded/warmup_incomplete/screen_monthly_GRU_c0_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GRU_c1_s1729",
+      "archive": "superseded/warmup_incomplete/screen_monthly_GRU_c1_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GRU_c2_s1729",
+      "archive": "superseded/warmup_incomplete/screen_monthly_GRU_c2_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GRU_c3_s1729",
+      "archive": "superseded/warmup_incomplete/screen_monthly_GRU_c3_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GRU_c4_s1729",
+      "archive": "superseded/warmup_incomplete/screen_monthly_GRU_c4_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_GRU_c5_s1729",
+      "archive": "superseded/warmup_incomplete/screen_monthly_GRU_c5_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LSTM_c0_s1729",
+      "archive": "superseded/warmup_incomplete/screen_monthly_LSTM_c0_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LSTM_c1_s1729",
+      "archive": "superseded/warmup_incomplete/screen_monthly_LSTM_c1_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LSTM_c2_s1729",
+      "archive": "superseded/warmup_incomplete/screen_monthly_LSTM_c2_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LSTM_c3_s1729",
+      "archive": "superseded/warmup_incomplete/screen_monthly_LSTM_c3_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LSTM_c4_s1729",
+      "archive": "superseded/warmup_incomplete/screen_monthly_LSTM_c4_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LSTM_c5_s1729",
+      "archive": "superseded/warmup_incomplete/screen_monthly_LSTM_c5_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LSTM_c6_s1729",
+      "archive": "superseded/warmup_incomplete/screen_monthly_LSTM_c6_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    },
+    {
+      "job": "screen_monthly_LSTM_c7_s1729",
+      "archive": "superseded/warmup_incomplete/screen_monthly_LSTM_c7_s1729",
+      "role": "superseded_implementation_or_input_cohort",
+      "included": false,
+      "complete": true,
+      "failure": null
+    }
+  ]
+}

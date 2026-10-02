@@ -1,0 +1,675 @@
+[
+  {
+    "role": "joint",
+    "stage": "F23",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 7,
+    "seed": 1729
+  },
+  {
+    "role": "joint",
+    "stage": "F23",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 7,
+    "seed": 1730
+  },
+  {
+    "role": "joint",
+    "stage": "F23",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 7,
+    "seed": 1731
+  },
+  {
+    "role": "joint",
+    "stage": "F24",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 7,
+    "seed": 1729
+  },
+  {
+    "role": "joint",
+    "stage": "F24",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 7,
+    "seed": 1730
+  },
+  {
+    "role": "joint",
+    "stage": "F24",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 7,
+    "seed": 1731
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1729,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1730,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1731,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1729,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1730,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1731,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1729,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1730,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1731,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1729,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1730,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1731,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1729,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1730,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1731,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1729,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1730,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1731,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "F23",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 3,
+    "seed": 1729
+  },
+  {
+    "role": "joint",
+    "stage": "F23",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 3,
+    "seed": 1730
+  },
+  {
+    "role": "joint",
+    "stage": "F23",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 3,
+    "seed": 1731
+  },
+  {
+    "role": "joint",
+    "stage": "F24",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 3,
+    "seed": 1729
+  },
+  {
+    "role": "joint",
+    "stage": "F24",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 3,
+    "seed": 1730
+  },
+  {
+    "role": "joint",
+    "stage": "F24",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 3,
+    "seed": 1731
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 0,
+    "seed": 1729,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 0,
+    "seed": 1730,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 0,
+    "seed": 1731,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 0,
+    "seed": 1729,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 0,
+    "seed": 1730,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 0,
+    "seed": 1731,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 0,
+    "seed": 1729,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 0,
+    "seed": 1730,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 0,
+    "seed": 1731,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 0,
+    "seed": 1729,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 0,
+    "seed": 1730,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 0,
+    "seed": 1731,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 0,
+    "seed": 1729,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 0,
+    "seed": 1730,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 0,
+    "seed": 1731,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 0,
+    "seed": 1729,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 0,
+    "seed": 1730,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 0,
+    "seed": 1731,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "F23",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 7,
+    "seed": 1729
+  },
+  {
+    "role": "joint",
+    "stage": "F23",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 7,
+    "seed": 1730
+  },
+  {
+    "role": "joint",
+    "stage": "F23",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 7,
+    "seed": 1731
+  },
+  {
+    "role": "joint",
+    "stage": "F24",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 7,
+    "seed": 1729
+  },
+  {
+    "role": "joint",
+    "stage": "F24",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 7,
+    "seed": 1730
+  },
+  {
+    "role": "joint",
+    "stage": "F24",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 7,
+    "seed": 1731
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1729,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1730,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1731,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1729,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1730,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1731,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1729,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1730,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1731,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1729,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1730,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1731,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1729,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1730,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1731,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1729,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1730,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1731,
+    "block": 191
+  },
+  {
+    "stage": "F24",
+    "task": "monthly",
+    "family": "CatBoost",
+    "config": 0,
+    "seed": 1729,
+    "fixed_recipe": true
+  },
+  {
+    "stage": "F24",
+    "task": "daily",
+    "family": "CatBoost",
+    "config": 0,
+    "seed": 1729,
+    "fixed_recipe": true
+  },
+  {
+    "role": "joint",
+    "stage": "F24",
+    "task": "joint",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1729,
+    "fixed_recipe": true
+  },
+  {
+    "role": "joint",
+    "stage": "F24",
+    "task": "joint",
+    "family": "Transformer",
+    "config": 0,
+    "seed": 1729,
+    "fixed_recipe": true
+  },
+  {
+    "role": "joint",
+    "stage": "F24",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1729,
+    "fixed_recipe": true
+  }
+]

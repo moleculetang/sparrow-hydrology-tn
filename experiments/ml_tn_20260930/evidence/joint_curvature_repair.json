@@ -1,0 +1,6 @@
+{
+  "reason": "exact Hessian diagonal underestimates shared month leaf curvature by month length; independent counterexample overshoots",
+  "method": "row-L1 diagonal majorizer; exact aggregate gradient unchanged",
+  "pilot_archived": "E:\\SPARROW\\5_Test\\20260930_1\\superseded\\joint_diagonal_pilot\\joint_screen_XGBoost_c0_s1729",
+  "phase": "before formal joint dispatch; no2023/2024 outcome used"
+}

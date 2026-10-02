@@ -1,0 +1,654 @@
+[
+  {
+    "family": "RF",
+    "task": "monthly",
+    "config": 3,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "RF",
+    "task": "monthly",
+    "config": 3,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "RF",
+    "task": "daily",
+    "config": 3,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "RF",
+    "task": "daily",
+    "config": 3,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "ExtraTrees",
+    "task": "monthly",
+    "config": 6,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "ExtraTrees",
+    "task": "monthly",
+    "config": 6,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "ExtraTrees",
+    "task": "daily",
+    "config": 5,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "ExtraTrees",
+    "task": "daily",
+    "config": 5,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "XGBoost",
+    "task": "monthly",
+    "config": 3,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "XGBoost",
+    "task": "monthly",
+    "config": 3,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "XGBoost",
+    "task": "daily",
+    "config": 6,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "XGBoost",
+    "task": "daily",
+    "config": 6,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "LightGBM",
+    "task": "monthly",
+    "config": 6,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "LightGBM",
+    "task": "monthly",
+    "config": 6,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "LightGBM",
+    "task": "daily",
+    "config": 0,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "LightGBM",
+    "task": "daily",
+    "config": 0,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 2,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 2,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 4,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 4,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "MLP",
+    "task": "monthly",
+    "config": 6,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "MLP",
+    "task": "monthly",
+    "config": 6,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "MLP",
+    "task": "daily",
+    "config": 5,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "MLP",
+    "task": "daily",
+    "config": 5,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "LSTM",
+    "task": "monthly",
+    "config": 7,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "LSTM",
+    "task": "monthly",
+    "config": 7,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "LSTM",
+    "task": "daily",
+    "config": 3,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "LSTM",
+    "task": "daily",
+    "config": 3,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "GRU",
+    "task": "monthly",
+    "config": 6,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "GRU",
+    "task": "monthly",
+    "config": 6,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "GRU",
+    "task": "daily",
+    "config": 2,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "GRU",
+    "task": "daily",
+    "config": 2,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "TCN",
+    "task": "monthly",
+    "config": 2,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "TCN",
+    "task": "monthly",
+    "config": 2,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "TCN",
+    "task": "daily",
+    "config": 1,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "TCN",
+    "task": "daily",
+    "config": 1,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "Transformer",
+    "task": "monthly",
+    "config": 1,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "Transformer",
+    "task": "monthly",
+    "config": 1,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "Transformer",
+    "task": "daily",
+    "config": 7,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "Transformer",
+    "task": "daily",
+    "config": 7,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "GraphTCN",
+    "task": "monthly",
+    "config": 6,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "GraphTCN",
+    "task": "monthly",
+    "config": 6,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "GraphTCN",
+    "task": "daily",
+    "config": 3,
+    "seed": 1729,
+    "stage": "F23"
+  },
+  {
+    "family": "GraphTCN",
+    "task": "daily",
+    "config": 3,
+    "seed": 1729,
+    "stage": "F24"
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 2,
+    "seed": 1730,
+    "stage": "F23"
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 2,
+    "seed": 1730,
+    "stage": "F24"
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 2,
+    "seed": 1731,
+    "stage": "F23"
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 2,
+    "seed": 1731,
+    "stage": "F24"
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1729,
+    "stage": "S23",
+    "block": 56
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1730,
+    "stage": "S23",
+    "block": 56
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1731,
+    "stage": "S23",
+    "block": 56
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1729,
+    "stage": "S24",
+    "block": 56
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1730,
+    "stage": "S24",
+    "block": 56
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1731,
+    "stage": "S24",
+    "block": 56
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1729,
+    "stage": "S23",
+    "block": 113
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1730,
+    "stage": "S23",
+    "block": 113
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1731,
+    "stage": "S23",
+    "block": 113
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1729,
+    "stage": "S24",
+    "block": 113
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1730,
+    "stage": "S24",
+    "block": 113
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1731,
+    "stage": "S24",
+    "block": 113
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1729,
+    "stage": "S23",
+    "block": 191
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1730,
+    "stage": "S23",
+    "block": 191
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1731,
+    "stage": "S23",
+    "block": 191
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1729,
+    "stage": "S24",
+    "block": 191
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1730,
+    "stage": "S24",
+    "block": 191
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1731,
+    "stage": "S24",
+    "block": 191
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 4,
+    "seed": 1730,
+    "stage": "F23"
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 4,
+    "seed": 1730,
+    "stage": "F24"
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 4,
+    "seed": 1731,
+    "stage": "F23"
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 4,
+    "seed": 1731,
+    "stage": "F24"
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 0,
+    "seed": 1729,
+    "stage": "S23",
+    "block": 56
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 0,
+    "seed": 1730,
+    "stage": "S23",
+    "block": 56
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 0,
+    "seed": 1731,
+    "stage": "S23",
+    "block": 56
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 0,
+    "seed": 1729,
+    "stage": "S24",
+    "block": 56
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 0,
+    "seed": 1730,
+    "stage": "S24",
+    "block": 56
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 0,
+    "seed": 1731,
+    "stage": "S24",
+    "block": 56
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 0,
+    "seed": 1729,
+    "stage": "S23",
+    "block": 113
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 0,
+    "seed": 1730,
+    "stage": "S23",
+    "block": 113
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 0,
+    "seed": 1731,
+    "stage": "S23",
+    "block": 113
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 0,
+    "seed": 1729,
+    "stage": "S24",
+    "block": 113
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 0,
+    "seed": 1730,
+    "stage": "S24",
+    "block": 113
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 0,
+    "seed": 1731,
+    "stage": "S24",
+    "block": 113
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 0,
+    "seed": 1729,
+    "stage": "S23",
+    "block": 191
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 0,
+    "seed": 1730,
+    "stage": "S23",
+    "block": 191
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 0,
+    "seed": 1731,
+    "stage": "S23",
+    "block": 191
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 0,
+    "seed": 1729,
+    "stage": "S24",
+    "block": 191
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 0,
+    "seed": 1730,
+    "stage": "S24",
+    "block": 191
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 0,
+    "seed": 1731,
+    "stage": "S24",
+    "block": 191
+  }
+]

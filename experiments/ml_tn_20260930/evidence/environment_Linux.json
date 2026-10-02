@@ -1,0 +1,20 @@
+{
+  "host": "pc",
+  "python": "3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]",
+  "executable": "/home/pc/TWY/SPARROW/Test/.runtime/envs/sparrow/bin/python",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "torch": "2.11.0+cu130",
+    "xgboost": "3.1.3",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10"
+  },
+  "cuda": "13.0",
+  "gpu": "NVIDIA GeForce RTX 5090 D, GPU-db9100e8-7a41-ec1e-bb5e-8a021c3a6872, 32607 MiB, 590.48.01",
+  "gpu_available": true,
+  "TF32": false,
+  "amp": false
+}

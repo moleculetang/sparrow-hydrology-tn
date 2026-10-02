@@ -1,0 +1,3758 @@
+{
+  "passed": true,
+  "station_rows": 18559,
+  "scalar_checks": 99048,
+  "maximum_absolute_difference": {
+    "NSE": 5.684341886080802e-14,
+    "RMSE": 1.7763568394002505e-15,
+    "bias": 2.6645352591003757e-15,
+    "correlation": 5.551115123125783e-16,
+    "amplitude_ratio": 1.7763568394002505e-15,
+    "month_centered_NSE": 8.881784197001252e-16,
+    "month_centered_RMSE": 4.440892098500626e-16,
+    "month_centered_bias": 5.935261505364553e-16,
+    "month_centered_correlation": 3.3306690738754696e-16,
+    "month_centered_amplitude_ratio": 8.881784197001252e-16
+  },
+  "files": [
+    {
+      "file": "outputs/evaluation/F23_daily_CatBoost_c4_s1729_daily_frozen.parquet",
+      "sha256": "489a580b5d4cc31be348bbf6b9d6182da8dd3b250860f873621de9e3e3a6dcf6",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F23_daily_CatBoost_c4_s1730_daily_frozen.parquet",
+      "sha256": "0142e4095dbdc1beb0a583d3eca69208eeba5a520c3c4a62977aeb8a112e8f2b",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F23_daily_CatBoost_c4_s1731_daily_frozen.parquet",
+      "sha256": "0e17fb75cf76c9ae1cccb1b2ef5b4f222a35a1dc2975c31f9fa87104aeb88680",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F23_daily_CatBoost_c4_seedmean_daily_frozen.parquet",
+      "sha256": "9b8bb87decc2b9cf9391a93ad1aadd4c59532b41af5eb02c8ab626204c841260",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F23_daily_ExtraTrees_c5_s1729_daily_frozen.parquet",
+      "sha256": "0884add080f41aa91a78ccaeb88706fa93bfe7c8f14cf0abded600d100b8080c",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F23_daily_GRU_c2_s1729_daily_frozen.parquet",
+      "sha256": "07b41ab3748785e638971f6dfd8768b7b7438f8d1c940bd5e7ddd3655af9d7ad",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F23_daily_GraphTCN_c3_s1729_daily_frozen.parquet",
+      "sha256": "17d6b6c6314586b9fe62163d106ffbd2434181c6f2384386f66d88efc8045fed",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F23_daily_LSTM_c3_s1729_daily_frozen.parquet",
+      "sha256": "4b0042ed65598cd3f4638bf3a4dd3c14df6eab2287f2419e3b56e6fc2350f4fc",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F23_daily_LightGBM_c0_s1729_daily_frozen.parquet",
+      "sha256": "e545ddb4db07412b2fb92b8bb9fd795d7831a9004c71c21fc8e301adfac23cdb",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F23_daily_MLP_c5_s1729_daily_frozen.parquet",
+      "sha256": "02dba0ecd9f895fde38ef7dd0bb2ee286b94ed6d651c8d4bce2e0e16a2680d22",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F23_daily_RF_c3_s1729_daily_frozen.parquet",
+      "sha256": "b916c3f77291c0ef3f7a4f445dc0110970bed54d4df3f456386d7fc731a29b94",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F23_daily_TCN_c1_s1729_daily_frozen.parquet",
+      "sha256": "f5f322fabe440d27b8674d7a8490618da6c912620383d9918a87b84ca9b6e042",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F23_daily_Transformer_c7_s1729_daily_frozen.parquet",
+      "sha256": "8be11c766564229cfef6763fb85764d6b3d52b1152bc31f768b9a6f46b2ccf8e",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F23_daily_XGBoost_c6_s1729_daily_frozen.parquet",
+      "sha256": "63d773560c8d8d5336a508f3bee6cd9caa4f2d91a2acdceaa0b450f3d17fbec5",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F23_daily_convex_ensemble_daily_frozen.parquet",
+      "sha256": "1b4a0426407115bcc06839afad7d8f7c1cbf033e951fc5cf2b21174b02cc9079",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F23_daily_reference_LAND1_T0_frozen_daily_frozen.parquet",
+      "sha256": "594a8b7e8dd279bb31d8aab8778a25417a36f91a45ef79b4dd2b87b01ae0db03",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F23_daily_reference_U_T0_frozen_daily_frozen.parquet",
+      "sha256": "b61ad92e824c3ae1719f62e1897e434d89ed70261491f289c6c8275d583a319e",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F23_daily_ridge_daily_frozen.parquet",
+      "sha256": "7b38505a0f19a3d210149528251e3e0789949fd2cef4a0f7ee80c949381702b7",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F23_daily_seasonal_daily_frozen.parquet",
+      "sha256": "707d031e97ef8a5293b307d698c303b05d8608042674413884cac3b2da59156f",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F23_monthly_CatBoost_c2_s1729_monthly_frozen.parquet",
+      "sha256": "b320ce0a570e10db4250d651ff3584880d1e6c749874412e021cdb1807d93aac",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F23_monthly_CatBoost_c2_s1730_monthly_frozen.parquet",
+      "sha256": "7b88a1e906e90303732f3bc6f0d4c74ff302e8d0cadd2b2471c97c6d619c0a1b",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F23_monthly_CatBoost_c2_s1731_monthly_frozen.parquet",
+      "sha256": "02f69d19d45cc375c94b57d465af2596a2e0fe498d791662ff7e292ac42f2643",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F23_monthly_CatBoost_c2_seedmean_monthly_frozen.parquet",
+      "sha256": "9e8d257b0b2edcc68a95f8e8e73a197406eaaafbb78bdd84a3ac56bb6eaef9ba",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F23_monthly_ExtraTrees_c6_s1729_monthly_frozen.parquet",
+      "sha256": "413e12915a2aec3f9b06aa4cccf860d1063f9bc58948a6437da306c366eab9e2",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F23_monthly_GRU_c6_s1729_monthly_frozen.parquet",
+      "sha256": "955af49155431557fde69763d131ee75d118521d6ea7229b2b5d31b79de0e6c0",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F23_monthly_GraphTCN_c6_s1729_monthly_frozen.parquet",
+      "sha256": "d4b185690289d39d379b3d8d2bab9536a9d7ea33a894457e457112e4f221e36e",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F23_monthly_LSTM_c7_s1729_monthly_frozen.parquet",
+      "sha256": "6e5abd4637b56e29f591801046d69ac47ee7543c2fc709f42c340a34f5dacf01",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F23_monthly_LightGBM_c6_s1729_monthly_frozen.parquet",
+      "sha256": "a6991b5995d604c6be05f9de3bb5ec030aad69550fda7f5bbf163426d84223c3",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F23_monthly_MLP_c6_s1729_monthly_frozen.parquet",
+      "sha256": "1d7279c9d77704c4cda98f7826dcd4ef85917535922fbdff081e5a14f08467b4",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F23_monthly_RF_c3_s1729_monthly_frozen.parquet",
+      "sha256": "dbed9a621143206d26bc0b0536ea87fe21c5d4087c9929c5437eacba7e484f82",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F23_monthly_TCN_c2_s1729_monthly_frozen.parquet",
+      "sha256": "f5cfcf2f35ae9a1155dca8e22bea952eaf0380b37cce3a03cd51bb1ec45ca8ef",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F23_monthly_Transformer_c1_s1729_monthly_frozen.parquet",
+      "sha256": "53a2fffeb4ce445ec1fc0d6a700ab4da9af292444b6feea242d3e7db9e427cc1",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F23_monthly_XGBoost_c3_s1729_monthly_frozen.parquet",
+      "sha256": "83a9f62d756ef2a39b608ba7a8b174e90ba1544cd33a9c96e9ee7932d3987bf2",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F23_monthly_convex_ensemble_monthly_frozen.parquet",
+      "sha256": "0cd919ec53f341a6ca938261e2b5337c836ca325897239fae0d73b6c149ed1d9",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F23_monthly_reference_LAND1_T0_frozen_monthly_frozen.parquet",
+      "sha256": "694050e7b5c5c29549cfd7a5b11fc6cbf47399ea56bb061578a0e3b016aa5325",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F23_monthly_reference_U_T0_frozen_monthly_frozen.parquet",
+      "sha256": "6dca2cdff7100bf9c98ae43654b2d77d95b03685a2cd547196d51a3a0e50d4fc",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F23_monthly_ridge_monthly_frozen.parquet",
+      "sha256": "699595563dbc1753408091865f626e631bc6b743dce81525e429a0110680d6fc",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F23_monthly_seasonal_monthly_frozen.parquet",
+      "sha256": "0b50c69eeaa2089703c08dd8ea70b4ba10afab7f123644f36efc58903dae0f0d",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F24_daily_CatBoost_c4_s1729_daily_frozen.parquet",
+      "sha256": "02bb97e2a36683c0b6374796d18ec2303ff291f251fd376278b704b0bb293544",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F24_daily_CatBoost_c4_s1730_daily_frozen.parquet",
+      "sha256": "fe6fc9fb0385fbce8a78242fe8a756ffeeacdb189dff33ed938dd26d9037b5a1",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F24_daily_CatBoost_c4_s1731_daily_frozen.parquet",
+      "sha256": "fadc379c06381560860329ee9a3a28e82029c0e8b2efa7729de7659c31601e27",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F24_daily_CatBoost_c4_seedmean_daily_frozen.parquet",
+      "sha256": "0c88697ced87cd6597689c4a1ffe1a4263a833c31f20f6389121a281f834ad01",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F24_daily_ExtraTrees_c5_s1729_daily_frozen.parquet",
+      "sha256": "a54e58eafcaff835674565f8f2b2864b4acc5d8493058267e17c3e0ad8bd7323",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F24_daily_GRU_c2_s1729_daily_frozen.parquet",
+      "sha256": "ed4698f41d8e79fc1469f5296f2f87005144be97e913c8de17d1ddb2b8558589",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F24_daily_GraphTCN_c3_s1729_daily_frozen.parquet",
+      "sha256": "9fe8ba26f6daa8178cbbc1bdc3a66d75f949bd9c051150c1ec27c8868c691c32",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F24_daily_LSTM_c3_s1729_daily_frozen.parquet",
+      "sha256": "442f116d0f8db674c9f10abf7e2158b62564c1692eba7dbfe0a636ca7671ddab",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F24_daily_LightGBM_c0_s1729_daily_frozen.parquet",
+      "sha256": "c4461af6d2e684fefe5564de52fd7d9330284fd7a791610ac4166f0dc659352f",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F24_daily_MLP_c5_s1729_daily_frozen.parquet",
+      "sha256": "362a75779f6a62e775ae7c289f1402f8deb535cfe0fa202fd4a52e5ae16f344a",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F24_daily_RF_c3_s1729_daily_frozen.parquet",
+      "sha256": "9c6cfbbf82d614ef99b21211f9aace9b10b06526b30d1b7e0a8023c462fa68d2",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F24_daily_TCN_c1_s1729_daily_frozen.parquet",
+      "sha256": "072f0c88a932bf03fb414d50fc22f9c46aa82dbbf048c8faef066f39e1e41e49",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F24_daily_Transformer_c7_s1729_daily_frozen.parquet",
+      "sha256": "0a6451028ac9d43acd14555540149f93c15079df59d272e5f81eca325e362221",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F24_daily_XGBoost_c6_s1729_daily_frozen.parquet",
+      "sha256": "4750d33bc877b2f5d77058048f1bedc6f60f8183d8ed0c50eda882eb4f282a73",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F24_daily_convex_ensemble_daily_frozen.parquet",
+      "sha256": "3d327678bfcc297acd134f7f780c1b329b22a9ffc809dc25859c4c9da2706405",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F24_daily_reference_LAND1_T0_frozen_daily_frozen.parquet",
+      "sha256": "e5bbf49e0a9ff6f80fe6960bec2645dc336c6aa2f24589d3608e9f7781dcedb0",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F24_daily_reference_U_T0_frozen_daily_frozen.parquet",
+      "sha256": "4d7f0da643ef131fa0b120de4ea67c3a6fb581c412b9a72a1cf23f71eed37dd9",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F24_daily_reference_old_tree_A0_daily_frozen.parquet",
+      "sha256": "1e40b0e98f35d23e0e0f13a43a3c7748a6530400f067079c981387030470a4ca",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F24_daily_ridge_daily_frozen.parquet",
+      "sha256": "0edb3aa530709cfce7e6ab22fc44645282125a5abf33b8d4d15bea9ae21521bd",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F24_daily_seasonal_daily_frozen.parquet",
+      "sha256": "eee3601e5e494e972ef24de74abea4146bd9c050acab4d7e775494341986098f",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/F24_monthly_CatBoost_c2_s1729_monthly_frozen.parquet",
+      "sha256": "823d6f3d49a3df9380fde9add1a3d9bf8f405e17ae6901c4c4ffef58cb896310",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F24_monthly_CatBoost_c2_s1730_monthly_frozen.parquet",
+      "sha256": "b9f37105f41125f9a21ee61260d54ee57e70540c8ca1e4d3488d030a5c866d1a",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F24_monthly_CatBoost_c2_s1731_monthly_frozen.parquet",
+      "sha256": "dfe254743c26e2619bd6002f9699a8ce2c6ce07ef3b409a65e23edd27393d6f9",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F24_monthly_CatBoost_c2_seedmean_monthly_frozen.parquet",
+      "sha256": "935515e5ee578d4362223715e3cd33f318efb5a7c153a943b17bfbdc30ced3d9",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F24_monthly_ExtraTrees_c6_s1729_monthly_frozen.parquet",
+      "sha256": "0dbdd2a8d5287aa39d4d409bf7700676a14ca49b3aa7a0b9ff79ee02367c1888",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F24_monthly_GRU_c6_s1729_monthly_frozen.parquet",
+      "sha256": "f5a4fc91d6add122384ffb2bf7eec4d4599bff9e1c07ba2cfdc42a119b993a7a",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F24_monthly_GraphTCN_c6_s1729_monthly_frozen.parquet",
+      "sha256": "64e235563521baf3fc52c5699faec56437c6b8765c8a4c214715179f52530037",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F24_monthly_LSTM_c7_s1729_monthly_frozen.parquet",
+      "sha256": "0656884e625485a1b19913e3d14c3486cb30ffa6f074e20fdbff95809e824d9a",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F24_monthly_LightGBM_c6_s1729_monthly_frozen.parquet",
+      "sha256": "ac084fb346f8cd6cfe3fe7c211807bcdfd11e43ed6d2b2aa174ccf99957a9ec1",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F24_monthly_MLP_c6_s1729_monthly_frozen.parquet",
+      "sha256": "44fe3b1c19b63ce1d64523f0e1e7fffd7a0bbf8e08368543e9b889d0a9845c7b",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F24_monthly_RF_c3_s1729_monthly_frozen.parquet",
+      "sha256": "e6cdd548ee317da041cc87d31c3d8552337f7b4d00877726199676b47abc3758",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F24_monthly_TCN_c2_s1729_monthly_frozen.parquet",
+      "sha256": "8ac19ba3ae4f32400ce4a4ad1870404ad768c8f8c61d057142859fb62f733816",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F24_monthly_Transformer_c1_s1729_monthly_frozen.parquet",
+      "sha256": "f9a218a862e6bcd9e7ff7d16b2389e320b90a0c3fb9404616b9af66e9333dba3",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F24_monthly_XGBoost_c3_s1729_monthly_frozen.parquet",
+      "sha256": "0c94104cdcdf4a052663e60d1d9640eda5477690ad9653b2543842b19a239cce",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F24_monthly_convex_ensemble_monthly_frozen.parquet",
+      "sha256": "04c4ffa9f9fb244383fb4b82f406df03ccd23a2206627de83a1a2e6d272c4be2",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F24_monthly_reference_LAND1_T0_frozen_monthly_frozen.parquet",
+      "sha256": "85bbcfd81aa0fcc41a64456c94a5bbf1f8a1c66a540b4585357be2d6966edc75",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F24_monthly_reference_U_T0_frozen_monthly_frozen.parquet",
+      "sha256": "3c85c295c896c1bf84903ffc15c81823ba100ab000712e4e4bfe0af295ccefe8",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F24_monthly_ridge_monthly_frozen.parquet",
+      "sha256": "5e7f8e8d19468aa3595c22e005b2a2c028609e35480d59f1eaee0a900658f48f",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/F24_monthly_seasonal_monthly_frozen.parquet",
+      "sha256": "5859a5bc89b38db1019df35845e9c0f6d0be4a81e0e69a094af47eb853b4e036",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/S23_daily_CatBoost_c0_s1729_B113_daily_frozen.parquet",
+      "sha256": "ee1204d4059d95fc8c724f77d9e9f47e02bd394b4e7cc9f983bb761d6d9567db",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/S23_daily_CatBoost_c0_s1729_B191_daily_frozen.parquet",
+      "sha256": "0b0eed36c4fc3754f116d799d496456f519320ba7a9a22c53f504fb8f2762d3a",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/S23_daily_CatBoost_c0_s1729_B56_daily_frozen.parquet",
+      "sha256": "8b9a338f607feccf082f8d940b5e0ebc1ea35e9304b83915bbb21a40f74cfb83",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/S23_daily_CatBoost_c0_s1730_B113_daily_frozen.parquet",
+      "sha256": "66a9b5601a96f4ffb97c1e2cef91e2ab6b3f158f17eef2dd1f4346220a0cc8e2",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/S23_daily_CatBoost_c0_s1730_B191_daily_frozen.parquet",
+      "sha256": "ef81a1e44a1a24c136a2a339367d0344602cebe18551de11df530b126c72da54",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/S23_daily_CatBoost_c0_s1730_B56_daily_frozen.parquet",
+      "sha256": "48c6a7a53bb423caa2bd7aef3c9ee4188ebecc4c46d77d1cafd07d281ec5bae3",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/S23_daily_CatBoost_c0_s1731_B113_daily_frozen.parquet",
+      "sha256": "a75a8375db110e791c1fb009773d03007689c0a9e7036de7fc65b855788b19f9",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/S23_daily_CatBoost_c0_s1731_B191_daily_frozen.parquet",
+      "sha256": "9b455092173d825c9e676e341fdc965bea9aafb1184a8fcc40872e7c12c5bf97",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/S23_daily_CatBoost_c0_s1731_B56_daily_frozen.parquet",
+      "sha256": "4a15c22d38ceab4b5d08c99504eed935b2cb73dc8c836fb0e324ef84e7f48ea3",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/S23_daily_CatBoost_c0_seedmean_B113_daily_frozen.parquet",
+      "sha256": "0badfdcdbbd1bcf6aa5129e4427d9f5284aadbd13181b5dbca200939e3a4c5ad",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/S23_daily_CatBoost_c0_seedmean_B191_daily_frozen.parquet",
+      "sha256": "4f3a5e1545fa5eeb0f8c716e6c95002077398275064547d940d025b133e25103",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/S23_daily_CatBoost_c0_seedmean_B56_daily_frozen.parquet",
+      "sha256": "c71a8bc9adcd422d96d7c4f16742e736a0df8d3ab48207366bb1dcd64ae1ad04",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/S23_daily_ridge_B113_daily_frozen.parquet",
+      "sha256": "11c3160666a52cac02429b50fe28efdb152999bc863981a18c35b1daedb21845",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/S23_daily_ridge_B191_daily_frozen.parquet",
+      "sha256": "327d101a99ab7ad3a58e1d614d02894f0ff6db0c591f866380dd7f381d113aa2",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/S23_daily_ridge_B56_daily_frozen.parquet",
+      "sha256": "883a43dddff20614c6f09a5e0a2ab17d2c0cb87adbbd46301d5d5b6e179babb5",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/S23_daily_seasonal_B113_daily_frozen.parquet",
+      "sha256": "3018fcb7079c42f9e6d504ec78151c697fc5bc3741982026f80930c8d259da9b",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/S23_daily_seasonal_B191_daily_frozen.parquet",
+      "sha256": "f3cafbbcd509f93137451fbd616f09379189c5bbbd53a2959edd67947ee626e6",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/S23_daily_seasonal_B56_daily_frozen.parquet",
+      "sha256": "3e7d93cbfbb2a58493420ac5fc3e53effd40d593ff1aa0f137cfcd528d548115",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/S23_monthly_CatBoost_c0_s1729_B113_monthly_frozen.parquet",
+      "sha256": "6dbf446611464a9006147eb2e51377ad90435419ea8afaff0bece6792b7874ea",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/S23_monthly_CatBoost_c0_s1729_B191_monthly_frozen.parquet",
+      "sha256": "e6deec79a025038f423402765e361bc186a6ec91f849e3e2a6db5d7102106867",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/S23_monthly_CatBoost_c0_s1729_B56_monthly_frozen.parquet",
+      "sha256": "27bb341e9758bf6e49d1bf5d750322940797cdc774a655f6c680db6727aae9af",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/S23_monthly_CatBoost_c0_s1730_B113_monthly_frozen.parquet",
+      "sha256": "05a09a8ee3967b07e5530e4f352e57efffa978619c5436508080ff5fd8465111",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/S23_monthly_CatBoost_c0_s1730_B191_monthly_frozen.parquet",
+      "sha256": "f07b9e461489f9fd6d66836b50f31965409d32686a3907612017d071d71d2822",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/S23_monthly_CatBoost_c0_s1730_B56_monthly_frozen.parquet",
+      "sha256": "8b1c1f48f8ca4059b28a5f923310a14a2e285122833a9a6904ca5bfc6df1f1bd",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/S23_monthly_CatBoost_c0_s1731_B113_monthly_frozen.parquet",
+      "sha256": "34b23ef57769083bb1392482933217b911b1dadcd3d3b3c0787005c687a83e35",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/S23_monthly_CatBoost_c0_s1731_B191_monthly_frozen.parquet",
+      "sha256": "8973f2c5bda7a75011db890b56c478de1fda1f7f18f1ae9561b15b294112c2bb",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/S23_monthly_CatBoost_c0_s1731_B56_monthly_frozen.parquet",
+      "sha256": "ba1e45721b7df79add849570832ab29abd543a0e04f6993fad2592a8e885f59b",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/S23_monthly_CatBoost_c0_seedmean_B113_monthly_frozen.parquet",
+      "sha256": "5ce155e77a0e8b239a8e44510cf9e7de77752a70ab03c27e374419f965ab0c9c",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/S23_monthly_CatBoost_c0_seedmean_B191_monthly_frozen.parquet",
+      "sha256": "ee032b802f44ed1cf9de3ff33476345d67e23f783ebfd7e2ca129a90b9921e6c",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/S23_monthly_CatBoost_c0_seedmean_B56_monthly_frozen.parquet",
+      "sha256": "85742d573bd55213d53c30006d645a1f4f6283d7745df6ed44e998ebb886f3c0",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/S23_monthly_ridge_B113_monthly_frozen.parquet",
+      "sha256": "423bbd02204b819b1ad3e8f51d9700a87bcede7aa140f376c589af21a44b32af",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/S23_monthly_ridge_B191_monthly_frozen.parquet",
+      "sha256": "d48465b8b43aa45514693d452b6a3ca9f31c3912fd163d62807122547db62907",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/S23_monthly_ridge_B56_monthly_frozen.parquet",
+      "sha256": "1bead485a1887c3469066c43885c7bddcb1ee9b6f8c45119e22423382308fd8b",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/S23_monthly_seasonal_B113_monthly_frozen.parquet",
+      "sha256": "a2e3d85f662f83d25f63df79c56dcbed57a2584056c571db5c59c3d5f07d3685",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/S23_monthly_seasonal_B191_monthly_frozen.parquet",
+      "sha256": "4a6bd19df4e9a215e52ff2d40368c5b947327d6debe2eae382f2f9adc594d3ba",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/S23_monthly_seasonal_B56_monthly_frozen.parquet",
+      "sha256": "29763cb7817759bad53816ed1339491db29ebf8b0e4dbacedb5d6e0cd2e3ad33",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/S24_daily_CatBoost_c0_s1729_B113_daily_frozen.parquet",
+      "sha256": "dbbe95612180a58442efaa35533851b8a3e40f0df097dc4dde1fb0295e51b8d9",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/S24_daily_CatBoost_c0_s1729_B191_daily_frozen.parquet",
+      "sha256": "dca51a859933d511cee10c0c16e057bd22d1377d7a6a64f4a838dfe159ec811c",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/S24_daily_CatBoost_c0_s1729_B56_daily_frozen.parquet",
+      "sha256": "2308d25ac68a235923ef64b0c43b54e3b9d9bb65a024c15134265055388c6e8a",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/S24_daily_CatBoost_c0_s1730_B113_daily_frozen.parquet",
+      "sha256": "65241eaa66ee4b6eecd431386ff61514e6b4e83d7b39c92a8326a2c75a2c6909",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/S24_daily_CatBoost_c0_s1730_B191_daily_frozen.parquet",
+      "sha256": "3314ea7eae479dda50cc7fdf4d0da6ef6a04a6c09d7db6674264835648566a30",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/S24_daily_CatBoost_c0_s1730_B56_daily_frozen.parquet",
+      "sha256": "1c35d6321428e634eb565b33e7fe31a175420ebcf73ede45d7edc472c1e31917",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/S24_daily_CatBoost_c0_s1731_B113_daily_frozen.parquet",
+      "sha256": "1891230578cea97fba106b39d5f446b8a447899e2462d58e8b52fb8faff6594d",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/S24_daily_CatBoost_c0_s1731_B191_daily_frozen.parquet",
+      "sha256": "1e5cc86a19f5eadb604e477891d29e0f8a01cf934c225c78c871d2e95b9e96c8",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/S24_daily_CatBoost_c0_s1731_B56_daily_frozen.parquet",
+      "sha256": "141a57325f41b13fc132b58ad2234b400a2dac80602047b2c94390ed28a44bcc",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/S24_daily_CatBoost_c0_seedmean_B113_daily_frozen.parquet",
+      "sha256": "c8af5842588de5062bcf81c811bb89837abdcd8435d00a4bce9b990dae2cc12e",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/S24_daily_CatBoost_c0_seedmean_B191_daily_frozen.parquet",
+      "sha256": "95bfd8ee6914ab06742c828cd1524e07f54c51fc91a5dabfbd7a327bdad3fab6",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/S24_daily_CatBoost_c0_seedmean_B56_daily_frozen.parquet",
+      "sha256": "b8f89fb82cb0ac8ce2817092d4e21bd169984cd3057ded8bab02f37472ac1912",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/S24_daily_ridge_B113_daily_frozen.parquet",
+      "sha256": "02bd761f94c7b9932684cdcdc8217658d6ff0fad944ba59c82c61816c3034514",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/S24_daily_ridge_B191_daily_frozen.parquet",
+      "sha256": "71114f21884ce0155d3f42c2a89f190515bcd05a7a3a81d2cf49333c72f0a4a2",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/S24_daily_ridge_B56_daily_frozen.parquet",
+      "sha256": "70c63022c7ed0cf632f7dd1a7b5b79674c33b847d06be5157596e160ce9169da",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/S24_daily_seasonal_B113_daily_frozen.parquet",
+      "sha256": "011631fa2844a3b83c218e0c3f3a0d05ad25f0f86801bac4f283da592e22ee3e",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/S24_daily_seasonal_B191_daily_frozen.parquet",
+      "sha256": "e1d4ed77122dc24d7cfeece0832f2e92884a4a34ed2c1fb3b8baf7bb7d6159a5",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/S24_daily_seasonal_B56_daily_frozen.parquet",
+      "sha256": "92fe40981beab1f5e0705e68e571acd5c493273d13cc0a64b08541bf4087744b",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/S24_monthly_CatBoost_c0_s1729_B113_monthly_frozen.parquet",
+      "sha256": "5dd4f89a74fc448b101eaad45a1afde0be00d2ae13e507cff4da98d9108f45ce",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/S24_monthly_CatBoost_c0_s1729_B191_monthly_frozen.parquet",
+      "sha256": "a1555b8c3d6866cb95321cda81b593ba843c60f937eeded55a62ef79273ca485",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/S24_monthly_CatBoost_c0_s1729_B56_monthly_frozen.parquet",
+      "sha256": "f1bd137f820333eaac1045d7642098138a65f9b359c197e935119cfb08c1b435",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/S24_monthly_CatBoost_c0_s1730_B113_monthly_frozen.parquet",
+      "sha256": "67fce8cb6ad993d8afab463bcee9029a8d80051d231d8776f2a01cf0a3c3259d",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/S24_monthly_CatBoost_c0_s1730_B191_monthly_frozen.parquet",
+      "sha256": "e3ccfc10ceab3d3b0f67335a3d5ead1afa0edcec6ef4bb3446d4f32932ca8689",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/S24_monthly_CatBoost_c0_s1730_B56_monthly_frozen.parquet",
+      "sha256": "a6f714271563d572c922b6d483c9f0b080fbe850fd7016d63843b8dcae742878",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/S24_monthly_CatBoost_c0_s1731_B113_monthly_frozen.parquet",
+      "sha256": "72ae8f3810c3864597e5eeaa337bb08770bfc7af425e5f11918d2a8059fe0518",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/S24_monthly_CatBoost_c0_s1731_B191_monthly_frozen.parquet",
+      "sha256": "59a2c46e6ae1fba0424701beddaa6bfec9eeceb434f0448f48e2576271dd75bd",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/S24_monthly_CatBoost_c0_s1731_B56_monthly_frozen.parquet",
+      "sha256": "5ee3531b32c89b4ee7a203948b32c43bf080ea78a1edadf53fab448e862da558",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/S24_monthly_CatBoost_c0_seedmean_B113_monthly_frozen.parquet",
+      "sha256": "5fd9d36e66d1cf99c6a0f20516673d536d28486dee6010ef55d4d62ec2e5e26d",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/S24_monthly_CatBoost_c0_seedmean_B191_monthly_frozen.parquet",
+      "sha256": "47166e40464af745b490abd2445223046073251dd26cc18ddf791ab3ff560a02",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/S24_monthly_CatBoost_c0_seedmean_B56_monthly_frozen.parquet",
+      "sha256": "3ef2543a53ff6b3aff13dc462822fa84aa332bb598127b1af3347f46a47dad35",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/S24_monthly_ridge_B113_monthly_frozen.parquet",
+      "sha256": "3b29085c54e790f7449f130f4d9fa2097ade8d8db193ee8340a014d178995f7f",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/S24_monthly_ridge_B191_monthly_frozen.parquet",
+      "sha256": "85fe4aa7deb931c96890552bbda13a05b10a3165d641415fa445e6062ae58c3f",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/S24_monthly_ridge_B56_monthly_frozen.parquet",
+      "sha256": "f3884a0b539e03901b7b888bf6902543935a30b75f9d03c3838efece1ef4094f",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/S24_monthly_seasonal_B113_monthly_frozen.parquet",
+      "sha256": "42ce7fbbef89b4131baf2b660161946c38ff3e949866a752b5828b0348eaa5f1",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/S24_monthly_seasonal_B191_monthly_frozen.parquet",
+      "sha256": "49f9eb1520eeff2220754aaaf87653db738ac2096e15aabcf305b310572149c0",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/S24_monthly_seasonal_B56_monthly_frozen.parquet",
+      "sha256": "5b7e50d99c213ebbda205e6974f1ac6d9427738a08f4bb7170d721527746d5fe",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_s1729_lead1_daily_frozen.parquet",
+      "sha256": "9a390ec4364439d4431b918a8465296c26841dd520f5e891a09e35ec2c4168b3",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_s1729_lead1_closed_loop_daily_frozen.parquet",
+      "sha256": "25942595d555d11204a358d3bc9d6a1040a85909ab95f295fde42bffa5532890",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_s1729_lead30_daily_frozen.parquet",
+      "sha256": "1fd67e9eb8d285002b3e6a913c5352db6cf4da4f394998777a41660202df4b63",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_s1729_lead30_closed_loop_daily_frozen.parquet",
+      "sha256": "535fd2daf66a7b8e4e6de6a20d06d89382a115a6bcaff8ff6639f0a938378bfb",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_s1729_lead7_daily_frozen.parquet",
+      "sha256": "bb831fda6ba2be7f14c054237806d6d5f796f88ee3bcd81ebec5c1b81e2caed4",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_s1729_lead7_closed_loop_daily_frozen.parquet",
+      "sha256": "c8ad2aacc6c81210e79b2271ddbf02b51a76d88e85437c55b436907549edb681",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_s1730_lead1_daily_frozen.parquet",
+      "sha256": "9285af58844923bfe5e9e3281bb67c74e4cc1f22315acd8d25c22584241a8c8e",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_s1730_lead1_closed_loop_daily_frozen.parquet",
+      "sha256": "d321f51b4848953c20d052a8c5d11807a03e1ece2bcfd840eb31f8c18a19e14b",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_s1730_lead30_daily_frozen.parquet",
+      "sha256": "dbcc03b11c2f572c2bb2ffa4060ab37c31e6e72cc03635f227f9d1d960c68423",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_s1730_lead30_closed_loop_daily_frozen.parquet",
+      "sha256": "2ca8dce8740f4886df9c98e9e7ed354b9f506c192bc37b1fbda1d947ed105b34",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_s1730_lead7_daily_frozen.parquet",
+      "sha256": "05d1976268bae2e47b6e78a01a44b61a7d564daea2ebb6da71d149cb2546dda7",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_s1730_lead7_closed_loop_daily_frozen.parquet",
+      "sha256": "ef7a51a30133a9200944e5bc777c32e5be5c898fa86ffd6edac7e5afcbfd682c",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_s1731_lead1_daily_frozen.parquet",
+      "sha256": "59fcd1bbe5bd3e89de24f17c4b94444b7e92eef59119e55c5fb08985bab9dc71",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_s1731_lead1_closed_loop_daily_frozen.parquet",
+      "sha256": "020871c198b380c809d6d249a181e2d3b270e92410e5de9a1da39b5d634191fb",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_s1731_lead30_daily_frozen.parquet",
+      "sha256": "64cc525e528caea6fc057b2d6eafa6a8c434ad152d5d18d3a14f90f221ff5ffe",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_s1731_lead30_closed_loop_daily_frozen.parquet",
+      "sha256": "a5fd45f9d88e36b9318c8d4305c77c398baf743ef0915149a7cb4df42fb34325",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_s1731_lead7_daily_frozen.parquet",
+      "sha256": "2d18e77b8ada2b1660c10b673230d0b7f73e74ef1b2e1d6894cdb8354188c2e4",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_s1731_lead7_closed_loop_daily_frozen.parquet",
+      "sha256": "c4164fbd053803f86ad0c347b2c214cd7507960882a49cef26da2512438d13f3",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_seedmean_lead1_daily_frozen.parquet",
+      "sha256": "ca97b191ae79ff6469254f12dd0a0adeb896e5e3bb2d5a7fd801a4053335920f",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_seedmean_lead1_closed_loop_daily_frozen.parquet",
+      "sha256": "27858381e4f8fb295c4a5b360ea1360d054c9a39eb664f994400aeee8316488e",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_seedmean_lead30_daily_frozen.parquet",
+      "sha256": "96be0871b70c2a46b44d20e5b14a3404eec49ccd605ebcfe65d30868d6516f36",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_seedmean_lead30_closed_loop_daily_frozen.parquet",
+      "sha256": "bec2c22bbc5d420043a93bc836914db56205e687749f63c6b150fe4d52f6d855",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_seedmean_lead7_daily_frozen.parquet",
+      "sha256": "cea8b05d373547ebca80b28e14d7c2072a881a537a8626451a55830344c24d37",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_CatBoost_c4_seedmean_lead7_closed_loop_daily_frozen.parquet",
+      "sha256": "da55221c827bb9cb84c2dda738ed1e8ffbc71b76bc6794bd4c61ff1fa51d600f",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_persistence_lead1_daily_frozen.parquet",
+      "sha256": "6711247ee8e7e7c8907aeb21e93053b0901c50044f5107b4926bfaa03815ca0e",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_persistence_lead1_closed_loop_daily_frozen.parquet",
+      "sha256": "00cae99f31cadb0c9dca060653d2dbfd2218b7cc42cf16c03c36184a54f4e4ef",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_persistence_lead30_daily_frozen.parquet",
+      "sha256": "fcfe0a4e5fa6fe5a53b36d0728c15d21831837ae89d0aa7a3637e12d715ddf3c",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_persistence_lead30_closed_loop_daily_frozen.parquet",
+      "sha256": "f50970fcd7f8eaa6c54191530b91c98d899a0a1744a3b29b8ac47fff53c52e0d",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_persistence_lead7_daily_frozen.parquet",
+      "sha256": "b9c87ee2566292fa5eb4b723b73174ed9c510b395e888be817ffd187ed153fb1",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_daily_persistence_lead7_closed_loop_daily_frozen.parquet",
+      "sha256": "f2acf9e703ed25dc97c0dcbc636dae662c72358d6c2ea115aeda936cbadabd04",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_monthly_CatBoost_c2_s1729_lead1_monthly_frozen.parquet",
+      "sha256": "fec80d41b57e7e4fc9c9cb0e1657965824f6f259d2d5cb12f382735c0265497a",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_monthly_CatBoost_c2_s1729_lead1_closed_loop_monthly_frozen.parquet",
+      "sha256": "0ac4eb173c9f261fdbf850ac4655b24769244532df09bb127af3a35ccf278762",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_monthly_CatBoost_c2_s1730_lead1_monthly_frozen.parquet",
+      "sha256": "eb828f225eeac96fe0d7ecb84d3f51e19d911a8cd343d575b9d97ef129721090",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_monthly_CatBoost_c2_s1730_lead1_closed_loop_monthly_frozen.parquet",
+      "sha256": "e27b88ee2a1a78f60d1829d8929d7711f05ac3b9ba5af2a800f6254bfc9b47d4",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_monthly_CatBoost_c2_s1731_lead1_monthly_frozen.parquet",
+      "sha256": "80ad2ee0d187d8cc2ce53277bf469cb24fbf3557758b6ada24f767b80a3f9e9f",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_monthly_CatBoost_c2_s1731_lead1_closed_loop_monthly_frozen.parquet",
+      "sha256": "2b43f22bb22330eb9d676b76475625eefb8835fe8607180dc2884829ac8b3cc8",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_monthly_CatBoost_c2_seedmean_lead1_monthly_frozen.parquet",
+      "sha256": "164fee5243ad16aeccbdcc09fcbdf747bf721e8dceb40972a5d42556ecc02f2c",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_monthly_CatBoost_c2_seedmean_lead1_closed_loop_monthly_frozen.parquet",
+      "sha256": "ddd8c1db0e14f878e6479300f2423f316ccf6b74bae2822743966aacd072c277",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_monthly_persistence_lead1_monthly_frozen.parquet",
+      "sha256": "4f6ee4af2c10f92b683dfc8bce47cd86ee38e3f57037a49e35c79d8613ec5fe2",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/aux_F23_monthly_persistence_lead1_closed_loop_monthly_frozen.parquet",
+      "sha256": "76c13869f8987448caeeefb655ffdc0d3b72859e778e3e78c1283245fe336871",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_s1729_lead1_daily_frozen.parquet",
+      "sha256": "b0820d222bf5ad9be28c6415516be58929cfc49790bb2a3e7a012d8d2bd82b5d",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_s1729_lead1_closed_loop_daily_frozen.parquet",
+      "sha256": "d926da4b603bd60ac4f892dad41c7433b9c1b28053b943526ffc319ef5f96b9a",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_s1729_lead30_daily_frozen.parquet",
+      "sha256": "ae591f5f64f4551a599a5ce31e2694606c1a96f08b1f4001db159778484ad41e",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_s1729_lead30_closed_loop_daily_frozen.parquet",
+      "sha256": "88b031aa489c0da37207bc4b11ca0acf952c73f66e2b6fd52921db97d4951a09",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_s1729_lead7_daily_frozen.parquet",
+      "sha256": "0b5f4c0c37ff4cf0875eca0f8982d7266bb1545502c14e3cf60995ba9712a510",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_s1729_lead7_closed_loop_daily_frozen.parquet",
+      "sha256": "38092ced1ff87bb386fdc6629f0ccf5c7feea8e640f847b5f8f05a3b1dc353b8",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_s1730_lead1_daily_frozen.parquet",
+      "sha256": "eefb64ed0091973299e7d8fc9861f3accf920f75128f86e087ff2fea85161fcd",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_s1730_lead1_closed_loop_daily_frozen.parquet",
+      "sha256": "162ea832a0cbb82a389e058eb3ae38243b596519a884dfc82ce33c8245b7c650",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_s1730_lead30_daily_frozen.parquet",
+      "sha256": "bee6d98fd2a361a482f436c2259d980bb90fd63ea690a871aab2be7d56df71cb",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_s1730_lead30_closed_loop_daily_frozen.parquet",
+      "sha256": "650fd89620c507533cf3158f449513c5ce01a8180b5092ca186942bf773618e6",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_s1730_lead7_daily_frozen.parquet",
+      "sha256": "b0e0fb6600f8b9ff5d794cf41be8b54ffab321da10db268e64c14cc1bde7c79e",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_s1730_lead7_closed_loop_daily_frozen.parquet",
+      "sha256": "8f1d837904413cf38ddfa2a95ecee950fa9cc4086e9d7a13362511287fb635d7",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_s1731_lead1_daily_frozen.parquet",
+      "sha256": "6e59a53f487f6efb28731ff279b8b1a980d64335142c3639e29e161825fb5a59",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_s1731_lead1_closed_loop_daily_frozen.parquet",
+      "sha256": "8f6e41468a39e8cf97cc311ea01b653b77a63b7f34843ede026c6cacd3998d3b",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_s1731_lead30_daily_frozen.parquet",
+      "sha256": "83ef6179d2f00277544a3fd71a34717e76fd61755f184f033cd6afa5b501a379",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_s1731_lead30_closed_loop_daily_frozen.parquet",
+      "sha256": "3234de87bebe515a48e4b06f3ffbd503038cf6828a4687d3c3ee48a782bb9f34",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_s1731_lead7_daily_frozen.parquet",
+      "sha256": "85c5be2ef842ccc3b36b642445b5ad0a9580bb5436a1f8f48287afa14fec6a01",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_s1731_lead7_closed_loop_daily_frozen.parquet",
+      "sha256": "85d87a99705cb03ae69b4f4857d256e8c8d213fc38093bdd32a18313b7bcc52d",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_seedmean_lead1_daily_frozen.parquet",
+      "sha256": "76a6a56b7449706d2702fc0f8362c3b7076d69218c0364c2c3eaa2d05991d0c6",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_seedmean_lead1_closed_loop_daily_frozen.parquet",
+      "sha256": "3b9932c76a037098346b286daece00e1dddcad7702a19e4134a09fded3b60374",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_seedmean_lead30_daily_frozen.parquet",
+      "sha256": "5f820cd9eeb7843228d6ab618f7cb7435876e3dfe2bf83c03a1882bd3f285d55",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_seedmean_lead30_closed_loop_daily_frozen.parquet",
+      "sha256": "f16e263be2782fd3a55a081beed75fd110c1501272b9df7e0e9308729e146b37",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_seedmean_lead7_daily_frozen.parquet",
+      "sha256": "d1d44fb9966c8bc714bda053f5debb2e96d8897c77c92e266053855266d02551",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_CatBoost_c4_seedmean_lead7_closed_loop_daily_frozen.parquet",
+      "sha256": "253163ac79b3b6f529ffb2c271e763d8a0d9cca29cf02f54ea02fb6af19ea17a",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_persistence_lead1_daily_frozen.parquet",
+      "sha256": "23dd30acdb4bcad8d73913178e85cee539c91d3eebe4dc5df87cd27084cc1d63",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_persistence_lead1_closed_loop_daily_frozen.parquet",
+      "sha256": "9526f461c4fbfc16300bb5efeab53ffabdffeb7cc40cd428bec556df5bca967e",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_persistence_lead30_daily_frozen.parquet",
+      "sha256": "f6226b2d10e82b5aee62e2ee83448065154e227f166a9453961ddc4e4300d04c",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_persistence_lead30_closed_loop_daily_frozen.parquet",
+      "sha256": "cd87306784c9628c3498d3785a7fa7c0b82ded49da6d62fbefb361790d43fd0a",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_persistence_lead7_daily_frozen.parquet",
+      "sha256": "5feaa52b5b6af7e54aab0b1ddee14136c15bf76f5393d60279d605b38cf9e621",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_daily_persistence_lead7_closed_loop_daily_frozen.parquet",
+      "sha256": "9526f461c4fbfc16300bb5efeab53ffabdffeb7cc40cd428bec556df5bca967e",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_monthly_CatBoost_c2_s1729_lead1_monthly_frozen.parquet",
+      "sha256": "16e37890d4247e9658536b6fd8b784654a4bbaf0eeaab6dd014f43604823cbcf",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_monthly_CatBoost_c2_s1729_lead1_closed_loop_monthly_frozen.parquet",
+      "sha256": "2d0cc68e015db4a00d98ba409cc8fd517c5c7400451b9c5188d1a8d80664885f",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_monthly_CatBoost_c2_s1730_lead1_monthly_frozen.parquet",
+      "sha256": "f33111f93677025e54ca90114306c42aed2c827c982a07d5cf90077ae5107ad9",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_monthly_CatBoost_c2_s1730_lead1_closed_loop_monthly_frozen.parquet",
+      "sha256": "127f7d3db57e8abaa8579e8ebe68f2130ac8a53c5ee047f5e073b62e20039048",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_monthly_CatBoost_c2_s1731_lead1_monthly_frozen.parquet",
+      "sha256": "e3be876c18dcfd933f0d55aed3e346cf47a3d4404ef717ad596bbaaa197b1cd6",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_monthly_CatBoost_c2_s1731_lead1_closed_loop_monthly_frozen.parquet",
+      "sha256": "d1590ab8f4249649b56baa2ee1b2989e19671515521d0dfcb5b79dfc2ed411ab",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_monthly_CatBoost_c2_seedmean_lead1_monthly_frozen.parquet",
+      "sha256": "5c177c3a3ac49b7dfaf26ffcbdb645eed639a095fdc252a571e2d92a560b5bea",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_monthly_CatBoost_c2_seedmean_lead1_closed_loop_monthly_frozen.parquet",
+      "sha256": "eb0a920c9ff265d67870d3a9429d42cfe9136e9fc0ae7aa1aa335d17f732cf4f",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_monthly_persistence_lead1_monthly_frozen.parquet",
+      "sha256": "3ff9c33e602471224ad1b6473a774b91a6105626bb57c20e9c31434277f57983",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/aux_F24_monthly_persistence_lead1_closed_loop_monthly_frozen.parquet",
+      "sha256": "835ff6c3a9a15785026c482a0f5d1a12c6bfb1ae77157a1a2611562909ddbe1b",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F23_daily_CatBoost_c4_s1729_monthly_frozen.parquet",
+      "sha256": "b7638a008776cc2d135cd989f953d935a0756b6ef060c35cdfddf991fc24d38a",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F23_daily_CatBoost_c4_s1730_monthly_frozen.parquet",
+      "sha256": "b86fa114f40b7ff51962b720675b793195c16fa833267d4a61bb44fdfb1fa58f",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F23_daily_CatBoost_c4_s1731_monthly_frozen.parquet",
+      "sha256": "6a116fdec3e6706208b70b3373abfbf12bfee0df127a3e98f12c3fd12eb304d6",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F23_daily_CatBoost_c4_seedmean_monthly_frozen.parquet",
+      "sha256": "ec4d234c42b9283bf585096940a9af0c06eb604e20f03a3363da38872e2860dc",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F23_daily_ExtraTrees_c5_s1729_monthly_frozen.parquet",
+      "sha256": "5b2a9cbd7033d6f6a57fd5f4618e0531accce9d4e2a12418a5ea7856e183ea10",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F23_daily_GRU_c2_s1729_monthly_frozen.parquet",
+      "sha256": "031835273f1ab137ffcdca01d8cc10d4d7f6b05f6ecd3400a9c976738e38db03",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F23_daily_GraphTCN_c3_s1729_monthly_frozen.parquet",
+      "sha256": "47807d72bf67a6200042bb034975a785b0baa5318f84548c85a8832abddcda59",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F23_daily_LSTM_c3_s1729_monthly_frozen.parquet",
+      "sha256": "a075505049ec1fc2165051bc48f926858269aea543ab0c6b4b0f6b3cbcbe2dae",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F23_daily_LightGBM_c0_s1729_monthly_frozen.parquet",
+      "sha256": "02f940715959c6d3fca0f95777e8b510569c8db0cd511ebe7749adb221e204cf",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F23_daily_MLP_c5_s1729_monthly_frozen.parquet",
+      "sha256": "e5d69afa8ea573905609d68fdf0d54980d0aae069166ddbc327744d43d22e121",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F23_daily_RF_c3_s1729_monthly_frozen.parquet",
+      "sha256": "08b0da5e6c27bac7511a17bc96bc934f51540966d07c077ccc9120e5b27b5911",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F23_daily_TCN_c1_s1729_monthly_frozen.parquet",
+      "sha256": "d1b721923304d30510f3fe04c81512a6eb640ae52f73a442eafce085e56a9a64",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F23_daily_Transformer_c7_s1729_monthly_frozen.parquet",
+      "sha256": "c514819b8d230f5f03732d3e67add31e76e4878b00b0689cdd3729756b96309e",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F23_daily_XGBoost_c6_s1729_monthly_frozen.parquet",
+      "sha256": "ff6f49872bde6d1aca757aa9f7c01c4c3e02c4a1499e07d5dd5863ea5f769b2d",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F24_daily_CatBoost_c4_s1729_monthly_frozen.parquet",
+      "sha256": "bb919f2580fa5b69df19c23a62421b108d88798a39d212ae68021b2770cd6367",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F24_daily_CatBoost_c4_s1730_monthly_frozen.parquet",
+      "sha256": "fcdafb262acc3a42f6ae7e592bb1a776e29c1090003deb423791f7e3821dec92",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F24_daily_CatBoost_c4_s1731_monthly_frozen.parquet",
+      "sha256": "325a8fa247b1240e44a8638ed6ffc089f5c5261e5b724fa9434a79a7c2b29a8a",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F24_daily_CatBoost_c4_seedmean_monthly_frozen.parquet",
+      "sha256": "60a25fb70dd688ad0844bc0171cab59e082aed45ba5e69e87f1d9d9fc9e4fc25",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F24_daily_ExtraTrees_c5_s1729_monthly_frozen.parquet",
+      "sha256": "9b00a54942b52e03d2eb67a4c95fe0615eafc88ca7fd121d9ef0751aa3d81257",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F24_daily_GRU_c2_s1729_monthly_frozen.parquet",
+      "sha256": "d65f23cd6700a0189558f4e6dfa6712944325c8d44da88a5f72c289be8759969",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F24_daily_GraphTCN_c3_s1729_monthly_frozen.parquet",
+      "sha256": "90306db6b1cb78eb37321f9c15d10627ed3c2492f59b7eb9f416497c7cb95efa",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F24_daily_LSTM_c3_s1729_monthly_frozen.parquet",
+      "sha256": "863f123d11de4483973861664c28bba210c39d0acff768736ee5cfc5c861aa51",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F24_daily_LightGBM_c0_s1729_monthly_frozen.parquet",
+      "sha256": "278d1480ed27b1a31247172e73deaac631a57ef8e111870c847f1f321e24f430",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F24_daily_MLP_c5_s1729_monthly_frozen.parquet",
+      "sha256": "92ce404e9b2d36341ca99563e18a488c8fd32c696c570ab7f461c3b6fa7400c2",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F24_daily_RF_c3_s1729_monthly_frozen.parquet",
+      "sha256": "98ad699367e4d6457d21cf8187c8fea20d6a5e9b95b1257643108788403f414f",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F24_daily_TCN_c1_s1729_monthly_frozen.parquet",
+      "sha256": "931b3c6521e59ec676ec2531a5bcb69541a8743122bb1f5770a6304a3b196346",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F24_daily_Transformer_c7_s1729_monthly_frozen.parquet",
+      "sha256": "0cd4be3e299f88c5d752b0ff09a41007a04c7390c0684943af3aaddde51f3dda",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/dailyagg_F24_daily_XGBoost_c6_s1729_monthly_frozen.parquet",
+      "sha256": "adc5121091ced4a6cbf9c45d68130d505273216c59931c3e013c5a1b3c1da209",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/fixed_recipe_F24_daily_CatBoost_c0_s1729_daily_frozen.parquet",
+      "sha256": "538067976081c3d577c8cb39416c53020e44b7351a20653ae31ea46879f9f524",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/fixed_recipe_F24_daily_CatBoost_c0_s1729_same_recipe_global_forecast_B113_daily_frozen.parquet",
+      "sha256": "e7a729b660ccfce8656248756fc489ed875b397cff41be1092e3e6a11306f866",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/fixed_recipe_F24_daily_CatBoost_c0_s1729_same_recipe_global_forecast_B191_daily_frozen.parquet",
+      "sha256": "26a78274b8b66b8d8ad5af5aadededaaee418d71a0a83b79db97a00835002a44",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/fixed_recipe_F24_daily_CatBoost_c0_s1729_same_recipe_global_forecast_B56_daily_frozen.parquet",
+      "sha256": "2d5877a908f131e99efdb31f9962acd430fedaf9ed436130b7508200e19cbdfc",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/fixed_recipe_F24_daily_CatBoost_c0_s1729_same_recipe_global_training_reconstruction_B113_daily_frozen.parquet",
+      "sha256": "53678889a9a0f24f92c4446d0ccea9eab9a270a713e7bb09e2c00773b589f477",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/fixed_recipe_F24_daily_CatBoost_c0_s1729_same_recipe_global_training_reconstruction_B191_daily_frozen.parquet",
+      "sha256": "c68ada1d34c969abee861eba703a0e994dc285a70db93b7c7a22b474dd1bc534",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/fixed_recipe_F24_daily_CatBoost_c0_s1729_same_recipe_global_training_reconstruction_B56_daily_frozen.parquet",
+      "sha256": "51b93998be0bc2c01c0a622cdf4c02ceaf670c557851e981aa979d2f3ee5ec7a",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/fixed_recipe_F24_monthly_CatBoost_c0_s1729_monthly_frozen.parquet",
+      "sha256": "2e7de8fc189f4d75c55c2296a2fe734c78c96e7dac84397650430fdd91c59eb0",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/fixed_recipe_F24_monthly_CatBoost_c0_s1729_same_recipe_global_forecast_B113_monthly_frozen.parquet",
+      "sha256": "1be9844e8625a15007444c748488e204776c1a1820abb920dea1680587b389c3",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/fixed_recipe_F24_monthly_CatBoost_c0_s1729_same_recipe_global_forecast_B191_monthly_frozen.parquet",
+      "sha256": "edcc2efa6ee8a99e84692faeac0a3aa51701eddb9ff3f213589769e7506a056f",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/fixed_recipe_F24_monthly_CatBoost_c0_s1729_same_recipe_global_forecast_B56_monthly_frozen.parquet",
+      "sha256": "4330602985a16c45bd5b09d79b7a66dc22fc113d494f365bda1d43ebf0a7934f",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/fixed_recipe_F24_monthly_CatBoost_c0_s1729_same_recipe_global_training_reconstruction_B113_monthly_frozen.parquet",
+      "sha256": "a2cef848e0574bad7dfd257f7669ebcfea13215d0d8e68bcb120fd120832cf57",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/fixed_recipe_F24_monthly_CatBoost_c0_s1729_same_recipe_global_training_reconstruction_B191_monthly_frozen.parquet",
+      "sha256": "2255361ce4f90867bebaa0600f17f44106ff478b80366c0b88c3078824d1eee5",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/fixed_recipe_F24_monthly_CatBoost_c0_s1729_same_recipe_global_training_reconstruction_B56_monthly_frozen.parquet",
+      "sha256": "bfac396fcb485feea0fdd5a31a8ef0d9d468846c22229576d7cd1a96c17f1114",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F23_daily_CatBoost_c4_s1729_hf_monthly_frozen.parquet",
+      "sha256": "e5d45ca20b3fbd1dafd07eca782c0676c1f229bc76774a3f0dc3ac837192599c",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F23_daily_CatBoost_c4_s1730_hf_monthly_frozen.parquet",
+      "sha256": "458fbab12d09cacd9c1883288458938f6210f8485666646d1c3c3d21c3e0c62e",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F23_daily_CatBoost_c4_s1731_hf_monthly_frozen.parquet",
+      "sha256": "1afbe635c19e5c6038b6563ba3acccf6d70b46e9d479be95a4bc9935d03ecff3",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F23_daily_CatBoost_c4_seedmean_hf_monthly_frozen.parquet",
+      "sha256": "a9d9806692c54ecdd10f3a3270463b6185e524445cf507cbd91500230a15b483",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F23_daily_ExtraTrees_c5_s1729_hf_monthly_frozen.parquet",
+      "sha256": "c12a20f496e502e1f862b9b61f01bcaa0c0d3fa18cd0b940264f54f3c583c705",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F23_daily_GRU_c2_s1729_hf_monthly_frozen.parquet",
+      "sha256": "d8c1997a71d1197dfbe4df5f886bdb43bf0ba107e1cf08ae387ae5ebbe36cfec",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F23_daily_GraphTCN_c3_s1729_hf_monthly_frozen.parquet",
+      "sha256": "1d5afa82d90237b401998c128948ef5326a5b6514af686c0034507f31d077474",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F23_daily_LSTM_c3_s1729_hf_monthly_frozen.parquet",
+      "sha256": "d36bf1771ed851cc7cdc677942b7298c6125fc6034098e718cb8e8ccc245d2bb",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F23_daily_LightGBM_c0_s1729_hf_monthly_frozen.parquet",
+      "sha256": "54fcfb52ba96afe04b094fe0af7caed332dd687098f9ee555dcb24a63731207e",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F23_daily_MLP_c5_s1729_hf_monthly_frozen.parquet",
+      "sha256": "4b28dee99c755132344286fc81069c17c23516fd79893df36a2a18275a1e44f5",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F23_daily_RF_c3_s1729_hf_monthly_frozen.parquet",
+      "sha256": "251c808c36fccde9d90a4acde58ccfc83ae92bcca2da9dcc837fcfbca0bbbe3b",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F23_daily_TCN_c1_s1729_hf_monthly_frozen.parquet",
+      "sha256": "812ba01fcc96df0a2b43383904546975177bd5c6a51ff6d801fd66220d548e44",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F23_daily_Transformer_c7_s1729_hf_monthly_frozen.parquet",
+      "sha256": "6f5c9c617ab622e4d674ba561472efdd639b48cb7f1fa180cb8a29636574c706",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F23_daily_XGBoost_c6_s1729_hf_monthly_frozen.parquet",
+      "sha256": "6d0ae70121af599cc0d3eefaeffcc9c40f53e587ff21bbb9bc801f84c59123e2",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F23_daily_convex_ensemble_hf_monthly_frozen.parquet",
+      "sha256": "df61781b3b8d28d807b20cec48977a636ab67d11b38b9092e657a0e0f11bf9fa",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F23_daily_ridge_hf_monthly_frozen.parquet",
+      "sha256": "884cbe120ee98bc9083af4696fc54954f02d543092f39860183e7ccf6b9dcb69",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F23_daily_seasonal_hf_monthly_frozen.parquet",
+      "sha256": "27ac2f0cdfe86d9d2f3c6daded76873fa5bb3762d9f933444ca5e074ced39e85",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F24_daily_CatBoost_c4_s1729_hf_monthly_frozen.parquet",
+      "sha256": "9470576b223e3bde31343f1cc060c4013100eba9e7f957fc8451346b10be5e50",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F24_daily_CatBoost_c4_s1730_hf_monthly_frozen.parquet",
+      "sha256": "f6c146859566950a4ccd763dfe679277fba909cb779a4cac62640cba59a3d7c3",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F24_daily_CatBoost_c4_s1731_hf_monthly_frozen.parquet",
+      "sha256": "54b0747fb1341d9fd006040e824395508e2bfc32271d8f6c3c6e6d6173cbc9d2",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F24_daily_CatBoost_c4_seedmean_hf_monthly_frozen.parquet",
+      "sha256": "be37a7389086995a56c1f99e9ad0b2da3f34e917aafa37afe45fb0a82d04549b",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F24_daily_ExtraTrees_c5_s1729_hf_monthly_frozen.parquet",
+      "sha256": "557549a1be67377bea1a6d6a7c3f64d8b87bd958142d147eab65f33c040988b8",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F24_daily_GRU_c2_s1729_hf_monthly_frozen.parquet",
+      "sha256": "308d7d44d2fd5bcf3cbb153573c78cdea8f8431913c11151545dd6c5b698f589",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F24_daily_GraphTCN_c3_s1729_hf_monthly_frozen.parquet",
+      "sha256": "25d184b25cefd9e1a0c5238fe7ece3e64ce0210dce4421df74c0542e88cc1eef",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F24_daily_LSTM_c3_s1729_hf_monthly_frozen.parquet",
+      "sha256": "9faef934943bef1a684a91c950a851623b883bd38872be79b5abe8ca00a41cff",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F24_daily_LightGBM_c0_s1729_hf_monthly_frozen.parquet",
+      "sha256": "bd654e1d056608bac2863153a9001067a322d4119552e3f0856ff482ca4babfc",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F24_daily_MLP_c5_s1729_hf_monthly_frozen.parquet",
+      "sha256": "d1a655c1d4c55d3517cb2c8b4f345464bbf2c4c6d5b3399ae7929b0e9e8a8690",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F24_daily_RF_c3_s1729_hf_monthly_frozen.parquet",
+      "sha256": "87406f1c5a7f897e9f421f338637d7b638c99a23f6cfc88802acc97f2dc3c3c7",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F24_daily_TCN_c1_s1729_hf_monthly_frozen.parquet",
+      "sha256": "b42caa3510fa346a340e02bc77c9a7e6333205f64da959844142cd988c9a1c09",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F24_daily_Transformer_c7_s1729_hf_monthly_frozen.parquet",
+      "sha256": "213f2e67059c59931f42a8143a4a185e7d37c50518eef2720af8d201f748f25d",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F24_daily_XGBoost_c6_s1729_hf_monthly_frozen.parquet",
+      "sha256": "aff55173cc750f0383b24a16aa44452fa811b2333769c6ad6fc4b8c0959e5838",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F24_daily_convex_ensemble_hf_monthly_frozen.parquet",
+      "sha256": "0747acc8402c58d79ef90163093a00a9b1b73d7bb584c43dfa3efd53a2c87540",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F24_daily_ridge_hf_monthly_frozen.parquet",
+      "sha256": "381365668d4042845e6f71800ef9cb95c8d0ff9a6bd168ebe98efc0f1e1b2d54",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_F24_daily_seasonal_hf_monthly_frozen.parquet",
+      "sha256": "ccdeb3455dd45e09e46341023cfd158f4e646ef4ec8eb3f225d56db0a91cdc08",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S23_daily_CatBoost_c0_s1729_B113_hf_monthly_frozen.parquet",
+      "sha256": "ec393462f43cc784b0d7a8e7d494fe535b91eb5212ac6ebcf92d25604cd1acbd",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S23_daily_CatBoost_c0_s1729_B191_hf_monthly_frozen.parquet",
+      "sha256": "7b8fbc6fa0da9786a4215fd1eb960ab21946274dde321f65af829bc39102f7b8",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S23_daily_CatBoost_c0_s1729_B56_hf_monthly_frozen.parquet",
+      "sha256": "937a422fe7fbcd79fc74bae5285dd6ff00aed245ebdb5332fd00456c0070ec79",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S23_daily_CatBoost_c0_s1730_B113_hf_monthly_frozen.parquet",
+      "sha256": "48383f70304ecdeb84ad8ca1dde9cccfab46e4b5f074a8abd3f1ed3d35b49c32",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S23_daily_CatBoost_c0_s1730_B191_hf_monthly_frozen.parquet",
+      "sha256": "8ae92733982225c194ced319356d786a7c9578463dd539d45a81004c6964c458",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S23_daily_CatBoost_c0_s1730_B56_hf_monthly_frozen.parquet",
+      "sha256": "121142235b9b9f7c02032457e52d0c8f13e80b394bb047cacdfd821cf43fed44",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S23_daily_CatBoost_c0_s1731_B113_hf_monthly_frozen.parquet",
+      "sha256": "ffb2cca754a4314911b857ad0550ed92f9ced46d6b2fb85c6e87e0c49ba55db4",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S23_daily_CatBoost_c0_s1731_B191_hf_monthly_frozen.parquet",
+      "sha256": "edd5e3064e74c6f6da8249baa155902d1ebb4085aafd09edfcbca5d418460094",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S23_daily_CatBoost_c0_s1731_B56_hf_monthly_frozen.parquet",
+      "sha256": "c627219091403133f98a6b97d5d1cecfa1487b060306a83644af620a091f32a0",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S23_daily_CatBoost_c0_seedmean_B113_hf_monthly_frozen.parquet",
+      "sha256": "50b6d0edfe43ee12b8d356dd2f60fa3fd9eea244ebbf9a23c50b7a3c8a464d52",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S23_daily_CatBoost_c0_seedmean_B191_hf_monthly_frozen.parquet",
+      "sha256": "e08b68a3dacbfcad5041bf943046ed58eafc3bafb25a0df01836553f2b603d3e",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S23_daily_CatBoost_c0_seedmean_B56_hf_monthly_frozen.parquet",
+      "sha256": "23d226384425893d708851e5b1837f364692a495008536eb9fa0f71fe539fb68",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S23_daily_ridge_B113_hf_monthly_frozen.parquet",
+      "sha256": "ebdc327c4b52528a0a8e382e33e72f62c5a10cf9276de68e035cbc6c8d502fe7",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S23_daily_ridge_B191_hf_monthly_frozen.parquet",
+      "sha256": "0fffe417884a6f5a0025fbf8f0052f77152636550b7c1b6284c9c0f5ef626337",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S23_daily_ridge_B56_hf_monthly_frozen.parquet",
+      "sha256": "4a8cd321484a6ad43067ac449f65dce00f97da7c5e0d3613a883d685d80dc70e",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S23_daily_seasonal_B113_hf_monthly_frozen.parquet",
+      "sha256": "6c2dfbfdbcf3bdcee1a3003ec3bb4998085d5d054145e6d7654b16bf5e63b005",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S23_daily_seasonal_B191_hf_monthly_frozen.parquet",
+      "sha256": "b6ff6e5b8486d3a2a524185d231bde951fdbf3801e301b3b04ef2448e324cc43",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S23_daily_seasonal_B56_hf_monthly_frozen.parquet",
+      "sha256": "7cce38d477bb988b9ecd2a0cca8ef6b8b975e66fda9582cdc888ed532341ac59",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S24_daily_CatBoost_c0_s1729_B113_hf_monthly_frozen.parquet",
+      "sha256": "8f9ae5e4dc9f9e26be922289d1e6c3067cf0c68a6f309c721139ee68d200eef7",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S24_daily_CatBoost_c0_s1729_B191_hf_monthly_frozen.parquet",
+      "sha256": "05bb323923aabea0fc10e097aba9db8ac21b862cc4971c94fb0cf887fe3a3aa9",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S24_daily_CatBoost_c0_s1729_B56_hf_monthly_frozen.parquet",
+      "sha256": "f08b536bf6297b0fe5c3a896f633d642a994e06746cd53e12ab3ad8811dad524",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S24_daily_CatBoost_c0_s1730_B113_hf_monthly_frozen.parquet",
+      "sha256": "4b7cd7f7269d5cf1d4192f4e6951f1f5c980a40398041ca7bc0aa8132bcc855b",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S24_daily_CatBoost_c0_s1730_B191_hf_monthly_frozen.parquet",
+      "sha256": "c36ac2ea16be85e2cdb242c12a72d20cde4f23bd6f64dfbc1dd8ef0e59108fce",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S24_daily_CatBoost_c0_s1730_B56_hf_monthly_frozen.parquet",
+      "sha256": "5256a771d1f73bf9120b9b61436580c9e75bcdd2bf538f50f14e36f6b69237a8",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S24_daily_CatBoost_c0_s1731_B113_hf_monthly_frozen.parquet",
+      "sha256": "73670e2f946d0f4e752ddf0ee7fa693763613b927658fe3c0b8b597b37132fe2",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S24_daily_CatBoost_c0_s1731_B191_hf_monthly_frozen.parquet",
+      "sha256": "4b0553fa226d2faa27b9707f2657295da536a46e698fdb5b8a5e77db6ea1a545",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S24_daily_CatBoost_c0_s1731_B56_hf_monthly_frozen.parquet",
+      "sha256": "3e0248c487dd77b9783d0edc42ec0d019512c58cae9658a1160251ea07f3efbe",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S24_daily_CatBoost_c0_seedmean_B113_hf_monthly_frozen.parquet",
+      "sha256": "f6496f5a603b16ce06304f1a07f6b88aa96df4f21f672319f49703b72dc0c93d",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S24_daily_CatBoost_c0_seedmean_B191_hf_monthly_frozen.parquet",
+      "sha256": "2f29fff58ee5192f0fb9d20b70db192ec31e2621429840684a9afcc872439645",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S24_daily_CatBoost_c0_seedmean_B56_hf_monthly_frozen.parquet",
+      "sha256": "f8f4bd5d87361fef0ea7b5686adeb4a855b1f2e78977b6892bbc651097d97142",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S24_daily_ridge_B113_hf_monthly_frozen.parquet",
+      "sha256": "e4fb7e840d425ffbbe5fe534a53d1cdb3439ad8169c55926ceaac5b2fc04949b",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S24_daily_ridge_B191_hf_monthly_frozen.parquet",
+      "sha256": "59eb8da9ae6606403ed49a47701a3793c49649e1b7549c1038f72d0452abd520",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S24_daily_ridge_B56_hf_monthly_frozen.parquet",
+      "sha256": "d301d070568b40fd26c9e79d41c150cacefc1c19bda982b33a38da0dce4108c6",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S24_daily_seasonal_B113_hf_monthly_frozen.parquet",
+      "sha256": "6942aa5766f2f96aa1df028876172ebeb86669811b44a74c9343efa321f540a6",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S24_daily_seasonal_B191_hf_monthly_frozen.parquet",
+      "sha256": "66a43bd24c76b637802475cb18389a783c2f201db12958aaea3302350acdb9c6",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_S24_daily_seasonal_B56_hf_monthly_frozen.parquet",
+      "sha256": "86a33c77ce0b920f8f4215f7ed7983891811719c19b4c2adb08a381865214204",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_s1729_lead1_hf_monthly_frozen.parquet",
+      "sha256": "19edaf704d69e35d969c38f878b8cd2526c9f313a6cf1554869220d22061aae8",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_s1729_lead1_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "7d6371fbfff118b6133148de1ba445fcf43a69445f6e4d5ca2c9480054e871c9",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_s1729_lead30_hf_monthly_frozen.parquet",
+      "sha256": "1aa1b9cb69b6d2764419b9f4f48fa5825c418cce1393f3b3258169519f753623",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_s1729_lead30_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "6d253829cf71eeaa6e66da7c5294e923c16ceaa65fc733ad693cb8ad5a0bb16c",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_s1729_lead7_hf_monthly_frozen.parquet",
+      "sha256": "c11e4b062dfde8134bf2dad52b830b578a0af01942debe711338c23019922218",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_s1729_lead7_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "d4d4a6fa4c1a867f33134695bb7a56d968c4ff0f99bb4a6391c165fa0bf20e2c",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_s1730_lead1_hf_monthly_frozen.parquet",
+      "sha256": "a5e1467da96bcb22e275c7262819dbcdf78a7fa8a04a5fd4f844ef59029476ea",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_s1730_lead1_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "d79c4892f5797fffb46d297a604128bab0c1d80e8ed91d4a34487b1c9ed5b425",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_s1730_lead30_hf_monthly_frozen.parquet",
+      "sha256": "1685c3377189fff8c69a72a38eb0e1d06b4ba2d560f4c6781a106d04e4deccd6",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_s1730_lead30_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "a7fdc2473673fe5ca76e4ad693e00ade1e2a017b69dfd468d30e5d1c843cb6fc",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_s1730_lead7_hf_monthly_frozen.parquet",
+      "sha256": "5378a114c43f936a8cb037b4430dce1115936edf439a80474f6669e5ee8d0aa5",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_s1730_lead7_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "e2eb3b1d514df3d77f22f470a679220cdfe68f50cc9d6df485cac3bc9518d95e",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_s1731_lead1_hf_monthly_frozen.parquet",
+      "sha256": "452177d6bfde5944a096d6f8853494778c24c23da71c2a957415f122a2fd7ef5",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_s1731_lead1_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "b92b1f03202ed32fa36ba077291faea02a31fd1ed12244e5c857982142bc499a",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_s1731_lead30_hf_monthly_frozen.parquet",
+      "sha256": "e6f5570b4199d8cf5296eb2f6bd2ec59f75a446c5eaa9861af140471a857eeb2",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_s1731_lead30_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "ff2acbfa901e3487ab277e2548db899cac69f1811319ab4b2def464ca46cd08c",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_s1731_lead7_hf_monthly_frozen.parquet",
+      "sha256": "cace1157b66bc24e2a8fcab6254d6a7590d9c0182254cd06ffaefaec971fd013",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_s1731_lead7_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "15a7ea9963f718eaf7ad00ea518acd1294ba0f5f0802206e548d9a24580eb197",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_seedmean_lead1_hf_monthly_frozen.parquet",
+      "sha256": "6daa9661334aca6720f850987e8aa3618a401d2330d85acc263e077a006c5b40",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_seedmean_lead1_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "07f8cc4f7a20036c96e2a28eb80e295672cfdc62951331310dbb1832cd7b538c",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_seedmean_lead30_hf_monthly_frozen.parquet",
+      "sha256": "bb95947df42e34bf31353c481af1087006453cda074c5a359f96f062582a2a65",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_seedmean_lead30_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "c7cce3e29b4cbeddd96fb72e44c2515cdf06a086d0bb4f3d3d48b486bd06750c",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_seedmean_lead7_hf_monthly_frozen.parquet",
+      "sha256": "924e548d368e6617fc1a4b13652ff77219e999748aa260c6d3b156dfbe5a5322",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_CatBoost_c4_seedmean_lead7_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "944e2c498ec58f8344fea28830b20906e71858dd7e8e25dc4a0d69ac3ffd5ed8",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_persistence_lead1_hf_monthly_frozen.parquet",
+      "sha256": "eff4d1b20b826ba1efa4f87aac17d19922fb01b851447bb55dcc2de75479b3c7",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_persistence_lead1_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "9bae71f15159ad080c723f4f0293d605bff72068d23d5a7c8cfa7cdc6a32d956",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_persistence_lead30_hf_monthly_frozen.parquet",
+      "sha256": "59c8f490ac18dddc5033fed18b67cb172f11051d83db139da06c02482f1aad16",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_persistence_lead30_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "32e25709b9abdb4b2df2f53742b3ca9290f0fbd12b17520c453efd8c71dc85af",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_persistence_lead7_hf_monthly_frozen.parquet",
+      "sha256": "e19d3c81908d6e17fcea7f8bfd7d3a79c6a51ab68f9a7b76e01df4f1cb27a476",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F23_daily_persistence_lead7_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "b8b722a2e3966c36a88b3b11758e216ab5ea7dd030ca474997b065c558772633",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_s1729_lead1_hf_monthly_frozen.parquet",
+      "sha256": "e7041d63bc2098e8bb23aea65ba2b79591b1cbe4509dd213a544d82ec3606390",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_s1729_lead1_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "1b076628d58f62a3f9c285052a3840acc5cbcf5e986eee55d9c918135684982e",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_s1729_lead30_hf_monthly_frozen.parquet",
+      "sha256": "7f1dd5f1d307c63a9413810d3efc5faebbdc576b7e161115dae3ef06a4474857",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_s1729_lead30_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "cba3553329093378cf184a93b1a664286632468fadcdf9aa8d4b211c90b6a5fe",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_s1729_lead7_hf_monthly_frozen.parquet",
+      "sha256": "001e31afae7b5d8a30a9bb8ac043163ae3fc4d420fc4734d8cd911863fe45b30",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_s1729_lead7_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "1109e3b6ac001ab7b84daf8c0c661d351eea4c3c7dc9921512e3d2cd80b9c163",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_s1730_lead1_hf_monthly_frozen.parquet",
+      "sha256": "b339d7e949166b39c054d6d80df24a47da8aaf280cffb83dd33c1ccaaa6a8b6a",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_s1730_lead1_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "4d2c28e1d01dd2c38b15b8fbf0f4fafe65dcd100f9dc50ef1968008563d0a4ee",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_s1730_lead30_hf_monthly_frozen.parquet",
+      "sha256": "ea44cd3ae9e61f66aa313a953933712ad3e25b40ca742817501dc649dcfc0922",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_s1730_lead30_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "91a25922c5521c3d8e4a626c6ecb202c5c6865353a3b7c0b9791e7181234c2a7",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_s1730_lead7_hf_monthly_frozen.parquet",
+      "sha256": "1a5cd737721b2daba29f22be8a450f84abdc42612d10c75c30328cbf916d3cf4",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_s1730_lead7_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "a6ab68865613668d4d86e10ca8eae1007a62c0915b8baafc5460ee4605850e4b",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_s1731_lead1_hf_monthly_frozen.parquet",
+      "sha256": "a04ce0fecf4ec6e8eaa9aa4ce156b0e7c3a24555be78f2bdea0385f56ff503a3",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_s1731_lead1_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "50c87db35795e04a807f489adaed2d66313cfbe4c60310c115446b3c6fed7f94",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_s1731_lead30_hf_monthly_frozen.parquet",
+      "sha256": "00874c1fda5fb04891af684b4e513dcda1eb70f013cfd8e0e7ad04331b0e72aa",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_s1731_lead30_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "109ad392a076e907f2eb6fc2ded8363afbc06840600d11f0ef12d98ffcd5a81a",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_s1731_lead7_hf_monthly_frozen.parquet",
+      "sha256": "b0f2902c844265729d05070c51537622725a493f459d639914333993ddffc4b7",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_s1731_lead7_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "56e02ff44d6161ab6946801a8c2f81d059054aeae424b5074446c678d59c73b9",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_seedmean_lead1_hf_monthly_frozen.parquet",
+      "sha256": "c214130630a3f3acc9d4e6148ca80f8a56bd4654f3aee359dd5332cd28650db3",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_seedmean_lead1_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "b78083f24afeb921e94f7827c7a60ac9f88f0e2f5f43fa7cefd2dda85a08c1ed",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_seedmean_lead30_hf_monthly_frozen.parquet",
+      "sha256": "5847a02bf9cb71a56888c93eb45498bba5636f7226288367abd481f09369e1c8",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_seedmean_lead30_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "e77862f1a89640ebafd1c9f68c65fbcd2672d93d7dff1b2ea034dd09185ea926",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_seedmean_lead7_hf_monthly_frozen.parquet",
+      "sha256": "1d65790e6573e1e5bd5c16b612e11646e3f6d2ce6a89bb5b224a1b53b87027c5",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_CatBoost_c4_seedmean_lead7_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "2ea2749a2d81ec5941d3f1d59cf75276b78e57045e7d2bd1a7ee3071a2bb9b22",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_persistence_lead1_hf_monthly_frozen.parquet",
+      "sha256": "aaf4358547e067be5691e644d0c34d480ebd2a5b3d2d54b1b752aee91c034101",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_persistence_lead1_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "8a81c538fe5dcdb81e394236bca189efdcf976be93bae370a511b2982132aa6e",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_persistence_lead30_hf_monthly_frozen.parquet",
+      "sha256": "bb1478e7d762f6bb1f61bb8ba79fde98ce4a7de5e26c231ffd22078e76a44928",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_persistence_lead30_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "790019153e8aa2fbd654b7fb0f1568ae6afaa321438964dfc078cab819e395ae",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_persistence_lead7_hf_monthly_frozen.parquet",
+      "sha256": "7a7b5ff14c5177ba33456bbc62336634c4db41f47cf21b95e722bae5102eae56",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_aux_F24_daily_persistence_lead7_closed_loop_hf_monthly_frozen.parquet",
+      "sha256": "8a81c538fe5dcdb81e394236bca189efdcf976be93bae370a511b2982132aa6e",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_fixed_recipe_F24_daily_CatBoost_c0_s1729_hf_monthly_frozen.parquet",
+      "sha256": "05a9cd2c88b2a9c94e33b57e209ae98bbb1b3ce1ad128d9a43783337cd1c00f6",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_fixed_recipe_F24_daily_CatBoost_c0_s1729_same_recipe_global_forecast_B113_hf_monthly_frozen.parquet",
+      "sha256": "050c04cac21cac7e22ad7c773c3cecc9530c5777f96e1956c16091e55ec39172",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_fixed_recipe_F24_daily_CatBoost_c0_s1729_same_recipe_global_forecast_B191_hf_monthly_frozen.parquet",
+      "sha256": "f0f644944b3696ede3efa1263d402e9f8632e45cbd5f3883b0b3c4551c2e7314",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_fixed_recipe_F24_daily_CatBoost_c0_s1729_same_recipe_global_forecast_B56_hf_monthly_frozen.parquet",
+      "sha256": "455326b7daa1c763ceff00cf32c79a363f1c9aa840317009da3dd30f75c11df9",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F23_GraphTCN_c7_s1729_hf_monthly_frozen.parquet",
+      "sha256": "44c52fce9906bc252a4afeb727dc3e8bb1c2b557651d3ce36c87b0f34f34f291",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F23_GraphTCN_c7_s1730_hf_monthly_frozen.parquet",
+      "sha256": "30846486feaf6892b28fe0335b71a70fed3338e7757aa9af3f8793aca43b4bc3",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F23_GraphTCN_c7_s1731_hf_monthly_frozen.parquet",
+      "sha256": "51984d354454cf5a8d916b4db4dd758240ed784f7655449caa78e54e0a6172f2",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F23_GraphTCN_c7_seedmean_hf_monthly_frozen.parquet",
+      "sha256": "b907660720c3a0edeed9d86cc421d3e006d4f0ab7e15d1cdb327fe40b58a41a7",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F23_Transformer_c3_s1729_hf_monthly_frozen.parquet",
+      "sha256": "5414c419ba53528fea66f6d6f5e6f4765f35142f7a53d7399cc4b8f89147dbcf",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F23_Transformer_c3_s1730_hf_monthly_frozen.parquet",
+      "sha256": "0c8b146b6fa4a92664c7a7859b34480c1ca17081501b62b29d0acec90d27d14e",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F23_Transformer_c3_s1731_hf_monthly_frozen.parquet",
+      "sha256": "a3c62d1ae184c17a54cb37c7d7f2a3858a88ebee76c6b669a9d0415f08b381d5",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F23_Transformer_c3_seedmean_hf_monthly_frozen.parquet",
+      "sha256": "776a5591cc8aeb3bec2bab6c297c2e707936c2c752c218dd2e36bc1427eb0912",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F23_XGBoost_c3_s1729_hf_monthly_frozen.parquet",
+      "sha256": "42bb783f23d5b0c23fd7fb8b4dbd431228e513e1556feed80ddabd7d7c596614",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F23_XGBoost_c3_s1730_hf_monthly_frozen.parquet",
+      "sha256": "01fe4505e6de9f6c020eab5ef034d7f06820112a6ed2e26b98c4b6444b851283",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F23_XGBoost_c3_s1731_hf_monthly_frozen.parquet",
+      "sha256": "5d94bb5f1f4659469eac4fe88d149bb584e4144061cfc6d270087d278a8dc4d4",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F23_XGBoost_c3_seedmean_hf_monthly_frozen.parquet",
+      "sha256": "c57c1d65c5771e79c21a271546e54faf05e624bfa3f474b9e1d2c1ab16835605",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F24_GraphTCN_c7_s1729_hf_monthly_frozen.parquet",
+      "sha256": "6e32cdc4618865c9f433327dcc297ca7258d8b33aa57eed549a9b99b0e5b1149",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F24_GraphTCN_c7_s1730_hf_monthly_frozen.parquet",
+      "sha256": "3c70c95d8ebd9ca5a53f53b114545220a24f938f4c656afe0ad8798d9a58e1fd",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F24_GraphTCN_c7_s1731_hf_monthly_frozen.parquet",
+      "sha256": "caab3c83ca0d5571deeddae96b586bd36ca2a40c8a01d3d06e9a4d54da5097b1",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F24_GraphTCN_c7_seedmean_hf_monthly_frozen.parquet",
+      "sha256": "79423de6fdbda7e73c3ec08bb8731292fc0bae8e3f0f613f49c01ddbb774b69c",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F24_Transformer_c3_s1729_hf_monthly_frozen.parquet",
+      "sha256": "70971e0f28ae8ebd4c4f75fbce336fd8ff84c97e1fe52f0a5a344cfd1d075345",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F24_Transformer_c3_s1730_hf_monthly_frozen.parquet",
+      "sha256": "50f97293fb66b2fbd00c9ffcc07965b802ab15c5ab19577850631a7fab2418c0",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F24_Transformer_c3_s1731_hf_monthly_frozen.parquet",
+      "sha256": "5c38d68eaa877b4b3b681d143305b407f5de8f6c8e85dac90e9f1b6b9e813589",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F24_Transformer_c3_seedmean_hf_monthly_frozen.parquet",
+      "sha256": "7d4a3b6d894bdae3c282a493fcf3e5a9b32b6630a8c36225696d4034001aaaf2",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F24_XGBoost_c3_s1729_hf_monthly_frozen.parquet",
+      "sha256": "5f40f425cf6f40a270b075e182e9526eb91b66027bbd062d83a1decc4ea6f7bc",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F24_XGBoost_c3_s1730_hf_monthly_frozen.parquet",
+      "sha256": "b1aea9fd8f930db46c4bd611a3ef363ec159879f1b8b12b020919f953893199b",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F24_XGBoost_c3_s1731_hf_monthly_frozen.parquet",
+      "sha256": "2610e149056ad12addad071a01ad44579c638ef5a8e10fc0b827ec6fb010c330",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_F24_XGBoost_c3_seedmean_hf_monthly_frozen.parquet",
+      "sha256": "0dd77c6041fc9695cffb727088461d4af6021f90702985150f16c0496189f076",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_GraphTCN_c0_s1729_B113_hf_monthly_frozen.parquet",
+      "sha256": "0c0c826b9590a7e3ec60fb82b69b75c6b7d554fe22fb768859c0324e235a8064",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_GraphTCN_c0_s1729_B191_hf_monthly_frozen.parquet",
+      "sha256": "fe848f114f3be8989d150d921d8ff69bfa4035cf0d9562a913cd67233ba68ecf",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_GraphTCN_c0_s1729_B56_hf_monthly_frozen.parquet",
+      "sha256": "ef255f7747380825f291a07ffe8ed62fe756d4857c8b26e0342f45ecddc0b4f7",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_GraphTCN_c0_s1730_B113_hf_monthly_frozen.parquet",
+      "sha256": "2c0b2d6377017172db4ff3a3c9b5a1ab783c11aca27a797aa7f3d23f00014fa3",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_GraphTCN_c0_s1730_B191_hf_monthly_frozen.parquet",
+      "sha256": "0ee5ee39e4f5ac847cfebe874cf91cab4d066cce994aa4b1630addd55b4ad2e2",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_GraphTCN_c0_s1730_B56_hf_monthly_frozen.parquet",
+      "sha256": "4a7e7f33f289d3ce92c1840b22fa12f5d8e8b8e864d32c44011bf4184bf1c379",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_GraphTCN_c0_s1731_B113_hf_monthly_frozen.parquet",
+      "sha256": "3e8b4040351b51709efa30282d353b976172bcabfcae543230f4fa716d43e286",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_GraphTCN_c0_s1731_B191_hf_monthly_frozen.parquet",
+      "sha256": "3d00b66aa696bbb6b60af82654f36f3f855c6a4ceb0e9add82fe709e6115c658",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_GraphTCN_c0_s1731_B56_hf_monthly_frozen.parquet",
+      "sha256": "722c03b2f4ff086dd687934c998ad50f37ff50dc92423b2f67b46fc8908e7d9f",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_GraphTCN_c0_seedmean_B113_hf_monthly_frozen.parquet",
+      "sha256": "7858a43e2f09237da1526127eea1ee7220f658228b47f16130dd65ce11a93fef",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_GraphTCN_c0_seedmean_B191_hf_monthly_frozen.parquet",
+      "sha256": "5fa809f8b42109960168c77058db21ce5d5eb0681d0aaf97a4e633e4b91ee716",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_GraphTCN_c0_seedmean_B56_hf_monthly_frozen.parquet",
+      "sha256": "a2e699b376601efcbbb8efabdbba0b94109ade7da143a0c977ec45b37c6bbf0d",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_Transformer_c0_s1729_B113_hf_monthly_frozen.parquet",
+      "sha256": "8a83e7389fb6d34f19dd84a706b0eb8dde077bef6cf0d25be03f024e42b2e8e7",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_Transformer_c0_s1729_B191_hf_monthly_frozen.parquet",
+      "sha256": "80f61367ba09d40db60e2ecdbb7f402d49d07bf508cd16fdcf6a12f49ff3882f",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_Transformer_c0_s1729_B56_hf_monthly_frozen.parquet",
+      "sha256": "c9d536a21755dd746eadfd7d78fde97c9293557ca62d45e6b1b2e6203b79a430",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_Transformer_c0_s1730_B113_hf_monthly_frozen.parquet",
+      "sha256": "6aae987b45bc626912150bc160641f6c188680796b3010c1d31fe0cab821b039",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_Transformer_c0_s1730_B191_hf_monthly_frozen.parquet",
+      "sha256": "8db0208f71a2a5f58b549712932fa80c1ec83592c96f439b64246252e56c39a3",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_Transformer_c0_s1730_B56_hf_monthly_frozen.parquet",
+      "sha256": "02478b3518be2f253d8769afc798128968d06265951567c3ccd939ffc9e2084a",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_Transformer_c0_s1731_B113_hf_monthly_frozen.parquet",
+      "sha256": "4fa0d72aed4d79da6c71df005c60c19af7c638a00fe396c8345d70546d915ce6",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_Transformer_c0_s1731_B191_hf_monthly_frozen.parquet",
+      "sha256": "370a8a755513b5e33fa52d515eb27cba66d206b53cb6736944c377a1340a1139",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_Transformer_c0_s1731_B56_hf_monthly_frozen.parquet",
+      "sha256": "fc3c2090e8ddcccc06e93f430a1bd5db0d1cdb76d8c5d5e7b5992c67984429be",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_Transformer_c0_seedmean_B113_hf_monthly_frozen.parquet",
+      "sha256": "08046f0dbee37f40a90228a4e42b02fdf1ef6a8233903746d65ec28216985d4e",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_Transformer_c0_seedmean_B191_hf_monthly_frozen.parquet",
+      "sha256": "eee373f7b82e9d82cb2830d3a3feb7b4351d15ea84f89679c8bbbe868ae4ca74",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_Transformer_c0_seedmean_B56_hf_monthly_frozen.parquet",
+      "sha256": "50067b8aa81c4a2a26846a8b8ba807c9075f323f3636358263e9b1505161eac8",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_XGBoost_c0_s1729_B113_hf_monthly_frozen.parquet",
+      "sha256": "a32f5415d4a557a2d7ece1757045d500c755b3677281799479a102985ac719a5",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_XGBoost_c0_s1729_B191_hf_monthly_frozen.parquet",
+      "sha256": "85ad9722eb7ac99fd78756aa85805c9392cc6e952a1f355c5f06b0989952a858",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_XGBoost_c0_s1729_B56_hf_monthly_frozen.parquet",
+      "sha256": "8f1886f57a72cef098906cdac22cfefb51f88a99488ffe81022603da176b619a",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_XGBoost_c0_s1730_B113_hf_monthly_frozen.parquet",
+      "sha256": "5a5cd3c91f612b780645afed236c9203ad0e644d282d62421c90b160481d8e2f",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_XGBoost_c0_s1730_B191_hf_monthly_frozen.parquet",
+      "sha256": "fa58ba7a42415fe9b885290649ca68fd58018102598f164a9d3240f716b54b66",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_XGBoost_c0_s1730_B56_hf_monthly_frozen.parquet",
+      "sha256": "b8f629278ce6c26ad50150dbdd53ea9302fcffcdfd507c5396c9d9ab01ebba66",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_XGBoost_c0_s1731_B113_hf_monthly_frozen.parquet",
+      "sha256": "6de6f71a943198a54333ad649ef7dba625377f5885264098bd2bfeea922154ea",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_XGBoost_c0_s1731_B191_hf_monthly_frozen.parquet",
+      "sha256": "c74392dc6eac22a2722083a707e52002bc2ce7ddf02f8aaee82166c183e39d8c",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_XGBoost_c0_s1731_B56_hf_monthly_frozen.parquet",
+      "sha256": "95c1b3126eae0729c389de72c4c6a9c9def2b7895aae1b2a4cec5154b3861119",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_XGBoost_c0_seedmean_B113_hf_monthly_frozen.parquet",
+      "sha256": "49d0e2a189b2aaef23bc6aad5998ad3262079b2897aac514cf9db51ee22d0e5f",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_XGBoost_c0_seedmean_B191_hf_monthly_frozen.parquet",
+      "sha256": "f29e0daa9eea6723082464ea1c0cbcb00a966e068b206fb241d21d2ed5b49f35",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S23_XGBoost_c0_seedmean_B56_hf_monthly_frozen.parquet",
+      "sha256": "aa46a6956a43499495ec7193c9d74e5d1b9211771ba1113374d2ca26829d256e",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_GraphTCN_c0_s1729_B113_hf_monthly_frozen.parquet",
+      "sha256": "e298b466f1be11e8ac5b833de0a226e6295ca8c887bd9ec93ea9b0ef7f6416c0",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_GraphTCN_c0_s1729_B191_hf_monthly_frozen.parquet",
+      "sha256": "de3dfe66ef299d7ee6368aaf82fb867604c62301e7024524b6fcae615c5fda10",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_GraphTCN_c0_s1729_B56_hf_monthly_frozen.parquet",
+      "sha256": "3f43542cfc42f5ccbd85b72ccc059b5c6534dd8d3dd683907a16fc97cd146c3d",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_GraphTCN_c0_s1730_B113_hf_monthly_frozen.parquet",
+      "sha256": "5a81e9e9cd281edbec91d5ac620980e7e2613c2dfdfadc63516bfde693a8a86e",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_GraphTCN_c0_s1730_B191_hf_monthly_frozen.parquet",
+      "sha256": "65f91dc04a06421c82f1401570ad28cb2c0aaceb6a9eccada0be955afd5d6c70",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_GraphTCN_c0_s1730_B56_hf_monthly_frozen.parquet",
+      "sha256": "990c445fe29844020b94082b5be038032b19a70756acddefa54551a04cc96992",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_GraphTCN_c0_s1731_B113_hf_monthly_frozen.parquet",
+      "sha256": "f104f61af20a7ca48fb18aa48ef011cc8229736d3a6452abc1a1de29363538dc",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_GraphTCN_c0_s1731_B191_hf_monthly_frozen.parquet",
+      "sha256": "1d5046c4b0888e3e5d39a6f012f235f404dabf889fad95ed624e82a3d7cbba90",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_GraphTCN_c0_s1731_B56_hf_monthly_frozen.parquet",
+      "sha256": "d39bbe11d208650a5598314ffd2aac498ee1b1b9ae19389bc5a4335e5f41926c",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_GraphTCN_c0_seedmean_B113_hf_monthly_frozen.parquet",
+      "sha256": "8047a8d88d877d6ed46c8c8229d76fb31feb8696e4a120d9c9ceb477c33385bd",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_GraphTCN_c0_seedmean_B191_hf_monthly_frozen.parquet",
+      "sha256": "386e04ba6a9e81072cdf22a60a94b70da1e36e3a0a0e5da0503c63c6a63aca65",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_GraphTCN_c0_seedmean_B56_hf_monthly_frozen.parquet",
+      "sha256": "7a80d0d57e723fa9df4c724231ec85d92b769de6ff1fb7b6ba544ddabd8aa5de",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_Transformer_c0_s1729_B113_hf_monthly_frozen.parquet",
+      "sha256": "0cc3b0d0e9be984c0b911e0d236b9e1d9319673fa2e8e2d0c2575dfbb94b97be",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_Transformer_c0_s1729_B191_hf_monthly_frozen.parquet",
+      "sha256": "550b6f8e517d812035d96e6d955a486f8df308a016699dd2961fc4d31192d29e",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_Transformer_c0_s1729_B56_hf_monthly_frozen.parquet",
+      "sha256": "1f0e93df5f03756b8a44094b0dfd4740dec3fe127685e040c4c2cbe4d0148b72",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_Transformer_c0_s1730_B113_hf_monthly_frozen.parquet",
+      "sha256": "4d90ebd177ec6af7cd1c001f3397f320f93ae7c1e7ca0779bc0654f018df9dcf",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_Transformer_c0_s1730_B191_hf_monthly_frozen.parquet",
+      "sha256": "c7432008b9a61d8bd74f40041101007d38be2619d77951a4eac70cd385283fe7",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_Transformer_c0_s1730_B56_hf_monthly_frozen.parquet",
+      "sha256": "57036934b0b09b0d3918db2fde8cbd84aafbb7a192dc7e02283f2296a4491918",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_Transformer_c0_s1731_B113_hf_monthly_frozen.parquet",
+      "sha256": "e90a9dd7f5060319f40c7a659e03ef0b319b7b23da8eb3663b68d76de998cc35",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_Transformer_c0_s1731_B191_hf_monthly_frozen.parquet",
+      "sha256": "08d2f4432abdadd3814638d1f4e3d71e7fd4aa5129f904e79a4cb4e6282df1c8",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_Transformer_c0_s1731_B56_hf_monthly_frozen.parquet",
+      "sha256": "c5035d538dd7ffed3064883e556a301e1b92cb038c0f2533a742bf115b516589",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_Transformer_c0_seedmean_B113_hf_monthly_frozen.parquet",
+      "sha256": "c3041c658699e3d58867c9b2098d2e98162d77e021633e139970c37ce97f24fa",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_Transformer_c0_seedmean_B191_hf_monthly_frozen.parquet",
+      "sha256": "c0860aa07dd5873921fb12efd3a7c861df8487edaa6110b7a373c48ca35afd86",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_Transformer_c0_seedmean_B56_hf_monthly_frozen.parquet",
+      "sha256": "abb4d2a296a9b4b6594d42a736efa4401a175fde3917d90b5da8f37cfdd00307",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_XGBoost_c0_s1729_B113_hf_monthly_frozen.parquet",
+      "sha256": "f336435c161100a35c56afb2d7c142bb752b5593350267600f03a47bab2a515c",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_XGBoost_c0_s1729_B191_hf_monthly_frozen.parquet",
+      "sha256": "87766aefaa3b5951efe3cf2f1c6402cf9016aa04999ba70a8169f9a8769b4610",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_XGBoost_c0_s1729_B56_hf_monthly_frozen.parquet",
+      "sha256": "8556dd89148770318be741198c49d3a221d6e02272de0fa0f630f96e1cf1ca03",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_XGBoost_c0_s1730_B113_hf_monthly_frozen.parquet",
+      "sha256": "de0e6a86ec78569a98acb2078844f9074cf2d9bdb817e336dd693d538dfa4e5b",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_XGBoost_c0_s1730_B191_hf_monthly_frozen.parquet",
+      "sha256": "14326e5df12b10273c703f4ee1d6e60eecf54a13b413d4907cb1e4940bd8223e",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_XGBoost_c0_s1730_B56_hf_monthly_frozen.parquet",
+      "sha256": "36f3f8ab0d41b5923b404c1ba0920ddb3586b15a5b863467380472b55729e3c1",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_XGBoost_c0_s1731_B113_hf_monthly_frozen.parquet",
+      "sha256": "96b81b1e3da1592547a311fe745dce7a16f93e5d200cbf4026fede38fc9d5d3b",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_XGBoost_c0_s1731_B191_hf_monthly_frozen.parquet",
+      "sha256": "004754e861cd9b77cf148e693786b712d3b80a543fa7286de89802ce1c2c82d6",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_XGBoost_c0_s1731_B56_hf_monthly_frozen.parquet",
+      "sha256": "3c208db67bf74a6903256e95d0ca21decf46343930c2dc1652128ac9efbf3fd7",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_XGBoost_c0_seedmean_B113_hf_monthly_frozen.parquet",
+      "sha256": "812187c91ced0fb7dea44f269b5978dc8cacff0cc8d1853174fb61ac22ed1d55",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_XGBoost_c0_seedmean_B191_hf_monthly_frozen.parquet",
+      "sha256": "0b18e774d487a10e44d214d9c0e7ab8150e29996a3c693785a63ed9dbb962acf",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_S24_XGBoost_c0_seedmean_B56_hf_monthly_frozen.parquet",
+      "sha256": "023b768ea68769c716733dfc2d11f632d517c388c9eb5c1b61bce0c6b2a27c7c",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_fixed_recipe_F24_GraphTCN_c0_s1729_hf_monthly_frozen.parquet",
+      "sha256": "8dbe0e6ea75bd3e88048dccc00d12526f2c347e983fa790336b6b5e05d57c1ff",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_fixed_recipe_F24_GraphTCN_c0_s1729_same_recipe_global_forecast_B113_hf_monthly_frozen.parquet",
+      "sha256": "de7e37fd5f43f90f0d90a688d93bf3aa3581c667587b7816e5fbadeb1612b3fe",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_fixed_recipe_F24_GraphTCN_c0_s1729_same_recipe_global_forecast_B191_hf_monthly_frozen.parquet",
+      "sha256": "6203cbe2f85d872baa2726a06a55ff006c2147db0ee69e191590d0c6d29cd9f3",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_fixed_recipe_F24_GraphTCN_c0_s1729_same_recipe_global_forecast_B56_hf_monthly_frozen.parquet",
+      "sha256": "eb8822f1fff2e7761bad12824744d9a59bff4e4d210f3b93b07548f0f9a559dc",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_fixed_recipe_F24_Transformer_c0_s1729_hf_monthly_frozen.parquet",
+      "sha256": "fa675e5be5e4115f57bc8bf6f741562eb559411525e7f6b4cfa61ccb06b739fc",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_fixed_recipe_F24_Transformer_c0_s1729_same_recipe_global_forecast_B113_hf_monthly_frozen.parquet",
+      "sha256": "48eb1588cc791c84a315351b207f53a82a7900b0d9d437b6502410e36911bcda",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_fixed_recipe_F24_Transformer_c0_s1729_same_recipe_global_forecast_B191_hf_monthly_frozen.parquet",
+      "sha256": "37420742f110f2dcc08559c0e83df323f140e347c608e5af7912725faae16773",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_fixed_recipe_F24_Transformer_c0_s1729_same_recipe_global_forecast_B56_hf_monthly_frozen.parquet",
+      "sha256": "0ee210e20769757739833a2dc5d3b99cf27e29abebab92be6e137b894a453b39",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_fixed_recipe_F24_XGBoost_c0_s1729_hf_monthly_frozen.parquet",
+      "sha256": "ea4910216026d2e50441087f578e1768d034df6ef36d1a15e6bd642037166b4b",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_fixed_recipe_F24_XGBoost_c0_s1729_same_recipe_global_forecast_B113_hf_monthly_frozen.parquet",
+      "sha256": "b3ce4727560b6eb8e82777f84bcb5fcec295f404ce8142f7d6fb84bed12c9f41",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_fixed_recipe_F24_XGBoost_c0_s1729_same_recipe_global_forecast_B191_hf_monthly_frozen.parquet",
+      "sha256": "6e98997af600458334d2aea863c56e191ebf89d6fb391fd07f5d765980ffff2a",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/hfmean_joint_fixed_recipe_F24_XGBoost_c0_s1729_same_recipe_global_forecast_B56_hf_monthly_frozen.parquet",
+      "sha256": "5e3d24358b0638bb771c699b56c34b05ee04d6af7cfa731c9afcab817b869dc2",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_GraphTCN_c7_s1729_daily_frozen.parquet",
+      "sha256": "e2275d5d44edbeb1ad60ce796061571e507dbb8f64d64c0836776a667c2c0d49",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_GraphTCN_c7_s1729_monthly_frozen.parquet",
+      "sha256": "d8525e666fc0a4037c140f674a59aee64617d6de6ed3b41add7067dcfa434cfe",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_GraphTCN_c7_s1730_daily_frozen.parquet",
+      "sha256": "fb70101e9698538e16faa16ec3d1bbcdc059eafa8289e3d3da0c418094b0d813",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_GraphTCN_c7_s1730_monthly_frozen.parquet",
+      "sha256": "1a4db1ec70ae7c7094bb2f7c56096054b60c2799ff1fd90e6722f0f36f7b684c",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_GraphTCN_c7_s1731_daily_frozen.parquet",
+      "sha256": "7ec2077842c23b609a47a120f4b560e9fe19bbeee912c6cd34f022d7132bfd9d",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_GraphTCN_c7_s1731_monthly_frozen.parquet",
+      "sha256": "f241d63adb760157c9235fc6a8f08b7ace788cea32a8a84ed88e67751b8fcef0",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_GraphTCN_c7_seedmean_daily_frozen.parquet",
+      "sha256": "6694f9f1f5392c22821dd1bfc611151be90b929c0a4b0614e81a99f2d9a469f3",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_GraphTCN_c7_seedmean_monthly_frozen.parquet",
+      "sha256": "fe587395c95e58a3f358796bbf2036a261b53b4cc814e661a16028e2241a2db7",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_Transformer_c3_s1729_daily_frozen.parquet",
+      "sha256": "016008d3c37c82a47c47286980d4d422ffc032a5f1d7d30e1af964ad0c4a4674",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_Transformer_c3_s1729_monthly_frozen.parquet",
+      "sha256": "640ec7e75d7e6929a226c81411e67e03c3319357269f3ddab98d7586b6255d3a",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_Transformer_c3_s1730_daily_frozen.parquet",
+      "sha256": "1fda253e0a427267b82fdba5949ce52d578778d9ba6377071065bb9f848d0546",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_Transformer_c3_s1730_monthly_frozen.parquet",
+      "sha256": "3ebc37dedf095f81ce0d76c33b0cb70f14815e1064061e5d489b3d50ae2aaab9",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_Transformer_c3_s1731_daily_frozen.parquet",
+      "sha256": "8c34b17dfe69ed37aebe9ff6978d2ffbfd30a0070fdcbe5a8e7eaee0ef23cee9",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_Transformer_c3_s1731_monthly_frozen.parquet",
+      "sha256": "b2bda10d560487e36511bd38b3e25d563ca0d88628e42673a94f52eb26b4e561",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_Transformer_c3_seedmean_daily_frozen.parquet",
+      "sha256": "fb62d0c755e8864f0721e80a8ae2faaec25e13d9116c4c754490d8662c83e864",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_Transformer_c3_seedmean_monthly_frozen.parquet",
+      "sha256": "82eae1ac8bba92d6f8a964eed996c19f98105b1a5403e0c06eb36da779f283c7",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_XGBoost_c3_s1729_daily_frozen.parquet",
+      "sha256": "74e42b210e68795a8069ecbc96f9a6410fd6aa512f7addff530589673c65fb5f",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_XGBoost_c3_s1729_monthly_frozen.parquet",
+      "sha256": "65781ae3ad864a3a0fe477e9dcb5ae69ba7f99d46cde31d3c0bdf4c242e4e657",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_XGBoost_c3_s1730_daily_frozen.parquet",
+      "sha256": "1c76e829335f802f85634facce4d68d41acc31f71466566e69727ab788bc02d7",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_XGBoost_c3_s1730_monthly_frozen.parquet",
+      "sha256": "d5e5d58c3f287179eb42f7bfddeeaaf02b21c450e5b1b05dbdac11038bf7250d",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_XGBoost_c3_s1731_daily_frozen.parquet",
+      "sha256": "8a488eef5182d31bc4cecacf3148bb3d242f1abb7154ae64cf1a2ae753c73162",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_XGBoost_c3_s1731_monthly_frozen.parquet",
+      "sha256": "26c2258de05411054596cc97386c5f8bee562ee7d419127cbca41d0fd19c9b86",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_XGBoost_c3_seedmean_daily_frozen.parquet",
+      "sha256": "4fd0310232c57ff96ce2c8a4553bde7430b5fde005ab6e741f3ae06503e0dedf",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F23_XGBoost_c3_seedmean_monthly_frozen.parquet",
+      "sha256": "9eaa16cdf1e4df73ba28725710d20fbb9249c8ca5c3f2a7a80b1486ef52bde9d",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_GraphTCN_c7_s1729_daily_frozen.parquet",
+      "sha256": "2f2757f20500c0e2499ca180fb57c0dbc450ef39c51a7130c9bb4b8c1ab601ec",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_GraphTCN_c7_s1729_monthly_frozen.parquet",
+      "sha256": "39296303c6532d77e86c7549a00e4f09c038ec0f5a247149226191cdd9f2df12",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_GraphTCN_c7_s1730_daily_frozen.parquet",
+      "sha256": "cae50aff6a89316fd629a1546a4e6c511ba6170f5fb6210f2532eb6eeadb42a3",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_GraphTCN_c7_s1730_monthly_frozen.parquet",
+      "sha256": "520dd02f017e4b13b087b8db05dd3cb2694d74c6efd6e5fa7e3c599b97ded9a9",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_GraphTCN_c7_s1731_daily_frozen.parquet",
+      "sha256": "c98a19bf920a7a0ce79bc31f4d22e35f491b098a6b3890340a32b0a203c23730",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_GraphTCN_c7_s1731_monthly_frozen.parquet",
+      "sha256": "4859ba1daa0a5c86d92d40132dd86fb31dd204f99b8c485c777588481af45511",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_GraphTCN_c7_seedmean_daily_frozen.parquet",
+      "sha256": "5354c23186188285d88d0768fbb2b2cd23e4ac8aa878396a8f71081d5662e6ab",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_GraphTCN_c7_seedmean_monthly_frozen.parquet",
+      "sha256": "41cf1342855847089c1ca42e68d0ace66770ab1aa1b1543799440c0887d0ffd6",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_Transformer_c3_s1729_daily_frozen.parquet",
+      "sha256": "8f4ccc4a1d16a249d0f7e40269d30ecbc68c1f9164fdb2751623150da3a935b6",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_Transformer_c3_s1729_monthly_frozen.parquet",
+      "sha256": "084ac7b5bdd3e554ac98a0d8972583ede3fe8b4dd986e28640479c59ad0b7cf8",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_Transformer_c3_s1730_daily_frozen.parquet",
+      "sha256": "d7d92c91df698d803ed37fa7153915d89745852f47bfffe6728591dca684fc2d",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_Transformer_c3_s1730_monthly_frozen.parquet",
+      "sha256": "ff6022d5b726c69b123ea9bd5a3f06416de5f36b2c5d9358a0b3d7131a3a50d5",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_Transformer_c3_s1731_daily_frozen.parquet",
+      "sha256": "86afaba8c3bd26e5359724b0ec2a87f05adc50dd7f36e3dae1eae3c1bedf1fba",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_Transformer_c3_s1731_monthly_frozen.parquet",
+      "sha256": "e005129ca3dd4e40b1ee473c4bd96bdf40cc5b91b41886769fec77eb017ecc4a",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_Transformer_c3_seedmean_daily_frozen.parquet",
+      "sha256": "d2d4e141f01b368237dc909a376586366a508280d68d9fec04144cb5fb38e281",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_Transformer_c3_seedmean_monthly_frozen.parquet",
+      "sha256": "688118e5f3e8f2014f414f5a9a960c47390467bbce71aa4ad39927277c271159",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_XGBoost_c3_s1729_daily_frozen.parquet",
+      "sha256": "15d500c333273705dfaf0e4766ba9100033528c39176109fce6a82d525ba3c65",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_XGBoost_c3_s1729_monthly_frozen.parquet",
+      "sha256": "ee1b59112278eb0cb86eb2a2612e9e41f530fa56892b1f6c44783d08f27b6071",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_XGBoost_c3_s1730_daily_frozen.parquet",
+      "sha256": "dbd9c73d76110d1cea00a96a2b334620743815de37a77b3bda838b216a8777a6",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_XGBoost_c3_s1730_monthly_frozen.parquet",
+      "sha256": "9d375a0aef2943c3e809ce81ec6d83196eb6fc26ea02e511769020ab5f16902a",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_XGBoost_c3_s1731_daily_frozen.parquet",
+      "sha256": "69b59c151ff88d035dacbf1abc1bcc233ecb70b80a13c62b03e1d9fa2945ef85",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_XGBoost_c3_s1731_monthly_frozen.parquet",
+      "sha256": "d8f8ec4c12c504b800a6aa88e744a61e70d0bef0cd59e37f05433efc02f491a1",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_XGBoost_c3_seedmean_daily_frozen.parquet",
+      "sha256": "a5efba27ba42a2f2067be904f505585337386088ffe5bcf5146d95afc911f54f",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_F24_XGBoost_c3_seedmean_monthly_frozen.parquet",
+      "sha256": "6a2e43fdad4ed95b78ece0a21c60765ed3906cd74a3c11077a92c8e5491e106a",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_s1729_B113_daily_frozen.parquet",
+      "sha256": "4c7f5ca6facd9a82c3ad05851cc036a101ba7bb65fa7ef0087db1c973e534965",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_s1729_B113_monthly_frozen.parquet",
+      "sha256": "e0611f9435300b69d361a22af812e9cc58600d26c324ca0e7c7d24cdce0af71a",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_s1729_B191_daily_frozen.parquet",
+      "sha256": "ad6dcaee223d9783787c06315b37fa24697bf4efebde6e7adcd677ae19a9b327",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_s1729_B191_monthly_frozen.parquet",
+      "sha256": "34a3713d78534a5e3fc12468e899b71485a381a3bc4f5593af12990e712ceee5",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_s1729_B56_daily_frozen.parquet",
+      "sha256": "48e95f9aa6f10d13e0f7fa21f3e7cd95229eeace9a9203b92683a26ee2338276",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_s1729_B56_monthly_frozen.parquet",
+      "sha256": "df8f341c90f6dd9160a964f92c0f3d5d5e9aff1e94f87d921b02c6df8ba3b250",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_s1730_B113_daily_frozen.parquet",
+      "sha256": "78da757c5fd8216bf7b1d200c1e045442a19210a6448b93adee3fe9ad7fccf9c",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_s1730_B113_monthly_frozen.parquet",
+      "sha256": "26c56f4aae3976b98be70fa3a69744fe45ef61a6826775fe0845926464de75ec",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_s1730_B191_daily_frozen.parquet",
+      "sha256": "4fdd68fe5aeda219bf5b09de032dd852d8c150a2445bc404b3c05bd58c14a916",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_s1730_B191_monthly_frozen.parquet",
+      "sha256": "f388d4c7c047cdb45296ba474805db0d944191da2fa2f85556bf6c160e85217c",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_s1730_B56_daily_frozen.parquet",
+      "sha256": "06678dac695c7692bb1962071c9bea90683a2d84920df676ca8cf28712d5b340",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_s1730_B56_monthly_frozen.parquet",
+      "sha256": "6ec82d2253eb471d655223a90ec8c6f1d86b1641fd702c374b367eb4ccd4f8f6",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_s1731_B113_daily_frozen.parquet",
+      "sha256": "6e12b05f50b33fb0ecba035a9d90b9c02f9b2f6f692ffb6a4e19ea60701bb016",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_s1731_B113_monthly_frozen.parquet",
+      "sha256": "7b6405cdb8b12abc1eada95f1b9187b90e4ff088d53ea8cba9a4be2ba3193dd9",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_s1731_B191_daily_frozen.parquet",
+      "sha256": "61ce7a6d1435b65be8dec905268b3a033fbdb7b15d3085e584876e9afc40c532",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_s1731_B191_monthly_frozen.parquet",
+      "sha256": "a16eb9f00328664968f878a1427312c2962833e378b5e6d38fb860f9d8bdadbb",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_s1731_B56_daily_frozen.parquet",
+      "sha256": "d8afd5d65d3aee621f86e90f6896ffab1195242097a21106536f198faa8e6de0",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_s1731_B56_monthly_frozen.parquet",
+      "sha256": "c843cd962c562e0621478752d7af3ce2d10db4623e1358bc9e4344b9f4004201",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_seedmean_B113_daily_frozen.parquet",
+      "sha256": "2c6cf52db27c964afb6d70b3a25583d7e464e2854bee1c481aa8e22b2239e246",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_seedmean_B113_monthly_frozen.parquet",
+      "sha256": "c51fc8fdbb84bf2b1171311f7a15ea21d707afaae0880908e3524e64b6aef01e",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_seedmean_B191_daily_frozen.parquet",
+      "sha256": "d356e74600ed6cf91d9113b181c141824b4cd4c6407584ed8476229341f82d01",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_seedmean_B191_monthly_frozen.parquet",
+      "sha256": "e30f0d1e7cd50a5a50aef60069775aaa0c1f990c00cec2fc4eb5f345be0848d9",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_seedmean_B56_daily_frozen.parquet",
+      "sha256": "d819fd698351c02c40a0ae22b57951e834d71c382e8a4bfeb6903ba3ddd62bd8",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_GraphTCN_c0_seedmean_B56_monthly_frozen.parquet",
+      "sha256": "913e541e18e8c5bbfa6f0a589debe60da819ce6707c69fcf27fd924e38cb64bb",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_s1729_B113_daily_frozen.parquet",
+      "sha256": "8ad671667badb20724698810f54f9dc78d6ca7463c8cb698a8f6f19c9d4b2b01",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_s1729_B113_monthly_frozen.parquet",
+      "sha256": "cb44af6435e655bbfac104040f157e3f3f4bbbe6a057cd8a10b75ec2b2c4d83c",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_s1729_B191_daily_frozen.parquet",
+      "sha256": "591df43b7236d80b5ddb9975646be5895a28945c8b58d187bc388eb1f0ff9e6c",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_s1729_B191_monthly_frozen.parquet",
+      "sha256": "6ef321e8b23d88e1e4239949ea393e13114e9a9014629b1b9f78666eae384d17",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_s1729_B56_daily_frozen.parquet",
+      "sha256": "cc5e29bd1a29e9791ec6b63b44153abb8edb6d4ceffd688dc533cd334f03d63a",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_s1729_B56_monthly_frozen.parquet",
+      "sha256": "39f099023454ed77213a51558de6a3d142bff1c09e179185d983b9f1fe3d0f14",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_s1730_B113_daily_frozen.parquet",
+      "sha256": "c2056501f3f94c2a0a9cd6d260a011d26d148ab55d36afe8c712d886ce351931",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_s1730_B113_monthly_frozen.parquet",
+      "sha256": "ccccbe55ece3abda8079559b46038848a20230b2745eea52f27555f1621cc938",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_s1730_B191_daily_frozen.parquet",
+      "sha256": "47088476d0ad037d9ad908ce2c14332744e437e7f29d229b1467675f095387b8",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_s1730_B191_monthly_frozen.parquet",
+      "sha256": "2dcbaed3b56a1a91738d7b6e1607cfc54c7ee1992ab590ef8a70800a53cd17ac",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_s1730_B56_daily_frozen.parquet",
+      "sha256": "125c8e71cbaf8465e69d1ad272edce044cbee0427b4b61c0c5082cbb26d4781c",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_s1730_B56_monthly_frozen.parquet",
+      "sha256": "8520e7054216437e5fa161cc98640115c5b5716144c8a5c0fe1068393ffceaa9",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_s1731_B113_daily_frozen.parquet",
+      "sha256": "9d473693702bebbd919dbaa75ddd53cb1e1690ace58688348749641551f36731",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_s1731_B113_monthly_frozen.parquet",
+      "sha256": "05c5928d37faa93b1d0e00fef4428ac92bf95f2b83254b88a18bc67a463b64bc",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_s1731_B191_daily_frozen.parquet",
+      "sha256": "dec4bb6d0cb277adbc51bc044eac31f60544d14cdeb32cd0e7e6a166b8255318",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_s1731_B191_monthly_frozen.parquet",
+      "sha256": "3ef252881584dc78cfc8314acd3b8ec8664fbf2d5929227896de475f8201a053",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_s1731_B56_daily_frozen.parquet",
+      "sha256": "e1503c883f287266a3dfd2749f0c4bf253e0dad00b854d2a4b9765eb9fc8f719",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_s1731_B56_monthly_frozen.parquet",
+      "sha256": "af093058c3d408597f6e8d1bdda4897f77806a7efa24c8349859494b7247b3ae",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_seedmean_B113_daily_frozen.parquet",
+      "sha256": "ce4ea8b474944c0d37b6b5c774e45fea55ce9dbb75e3168a14913263532a118f",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_seedmean_B113_monthly_frozen.parquet",
+      "sha256": "0c73a6cea2413d6a202e4e9cf7f3c7e741e17d4e3fe8d630fa170a282f915dbd",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_seedmean_B191_daily_frozen.parquet",
+      "sha256": "405e52986859be313420038f369f5ec36d7e076dafa4e02cd05f2274472c3add",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_seedmean_B191_monthly_frozen.parquet",
+      "sha256": "abf16d52bfb0d98d331727c9347240e775abde26cd1e41b1ced11257d241e530",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_seedmean_B56_daily_frozen.parquet",
+      "sha256": "baf072dfefbbf8a2cf3bd7137bf23179ac33b79f2355988245e38ab5defd8c5d",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_Transformer_c0_seedmean_B56_monthly_frozen.parquet",
+      "sha256": "193b94aa4926aa13aa2602eabe63d83a9976f709c1f4a0bcc05bc5d7abad358f",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_s1729_B113_daily_frozen.parquet",
+      "sha256": "b1d419262d187fcddf399c3b9d5788586d6dc2c7ca85555368c6a412a1d4cb0c",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_s1729_B113_monthly_frozen.parquet",
+      "sha256": "b85e9d5d56e7612b9a3ab29a3d1ff4c0bf85978d1e6786a97d695e3689badc42",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_s1729_B191_daily_frozen.parquet",
+      "sha256": "de7483e44c9343e7d90803de187525d0a9c95741bf79357e12f7da0358d8f719",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_s1729_B191_monthly_frozen.parquet",
+      "sha256": "42fbcf1c1786d541fd3f2a395acde590f00ab33e4c7603145d2f70884a5d7305",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_s1729_B56_daily_frozen.parquet",
+      "sha256": "0d536d8bbbf93b9fb6630cf1a414b75aff03a01a2fd90fcef1e12f2fac6db7a5",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_s1729_B56_monthly_frozen.parquet",
+      "sha256": "6e6ed5d2ff43c4a7288faed96596aa38b3f1eaf2ecc21269b9de593264d5aa56",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_s1730_B113_daily_frozen.parquet",
+      "sha256": "6ce4ee1dd7ac6943888288b5e91a0f111ca31df223e175aa8da7c38f9400caa0",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_s1730_B113_monthly_frozen.parquet",
+      "sha256": "52e1d9f05f1dfdb90649ea7c7facc19e7c9d45489dd6ca068900ac6ce4e8ba88",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_s1730_B191_daily_frozen.parquet",
+      "sha256": "1e3fcc6af1c29c3280d7c2c0514d60f9fc3226ede1c4837ec652eb552eb68d36",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_s1730_B191_monthly_frozen.parquet",
+      "sha256": "9ade1d024f1b073b259f742d634260ec9dbae402d8bb871466284d0a8ecb3dea",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_s1730_B56_daily_frozen.parquet",
+      "sha256": "a004a3f4f51bd75f022445015a2776ccc1291682d4420067279d5e73b36ade20",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_s1730_B56_monthly_frozen.parquet",
+      "sha256": "8638b346fcf53b2bb11bcf9ed475800f25bec31328e4c74a7fc0f89a6c6ec89a",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_s1731_B113_daily_frozen.parquet",
+      "sha256": "04dd02905404c3c7f09ae2d375352c0448f86519e8272d9e94666d99631a436e",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_s1731_B113_monthly_frozen.parquet",
+      "sha256": "2e5b53418fed520924a8d01889c8f50b03f202a7f895888079b0ddba3a901ca2",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_s1731_B191_daily_frozen.parquet",
+      "sha256": "b7ea3daa20ca42eb9dacc4acdc9acd00ecc6c7fac27ec90d21692fe7609705d6",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_s1731_B191_monthly_frozen.parquet",
+      "sha256": "c0fe7a687fec27ccf8c15bca73d2c889f833679db4bef2ba065f831f3c714958",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_s1731_B56_daily_frozen.parquet",
+      "sha256": "32b35c37ebc32a175a1e20da79a781f8eed005d175af6ab8959c0346fa70111f",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_s1731_B56_monthly_frozen.parquet",
+      "sha256": "cf25fa851e55eaba1265ba589952d0f8a063b6816a9119682f3d26a6e75c5445",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_seedmean_B113_daily_frozen.parquet",
+      "sha256": "bf1592fb702254728680f35caa2ec0f2ab92b8a2c89730fad0c05721140c38a6",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_seedmean_B113_monthly_frozen.parquet",
+      "sha256": "4e2720b9f523f4eeb97f287a330c4b36539726de06b5b3b56c41fe26403eac50",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_seedmean_B191_daily_frozen.parquet",
+      "sha256": "16c8e62d918486afefd19113bf8795ea7bbe8a2ced9c43ce9c200cff805d87df",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_seedmean_B191_monthly_frozen.parquet",
+      "sha256": "35c4035f434fcf11c07923dc4fd0b355fb22ff9eb17706e29f3caac991b432c8",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_seedmean_B56_daily_frozen.parquet",
+      "sha256": "47dc7a507c3d5b6ce79d8700d83a55cf4166da2f1e74fb597eb279695e6828ae",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S23_XGBoost_c0_seedmean_B56_monthly_frozen.parquet",
+      "sha256": "87ea29d83257ee1576334ddd068dd7580ac4d6ea50066dfbfeb15eecfdaa5bac",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_s1729_B113_daily_frozen.parquet",
+      "sha256": "1daeb9846a10790f2e18fb473abb8d0a413df135d271a3a20215c25afdef5cb9",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_s1729_B113_monthly_frozen.parquet",
+      "sha256": "58bf3e59bafaab91f11061ec2dd848b71edb9d283b67565256ad696de06b101a",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_s1729_B191_daily_frozen.parquet",
+      "sha256": "b3f3b4c3f6421cbebd006dc1d5926bdb4696960791d25db2d028327ea1f4f0a6",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_s1729_B191_monthly_frozen.parquet",
+      "sha256": "27d777363c2ce9c5635ec10fdfbb08050ce920d241c5e1d88145a5e905101f28",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_s1729_B56_daily_frozen.parquet",
+      "sha256": "46e78c9eadcd96f3ab0f7efd8941f700d543b9f0a7bfd9308c47026ee47f02a8",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_s1729_B56_monthly_frozen.parquet",
+      "sha256": "79705705f66a036cced25f3dbaf10b9f0e63253474c2f6ad7ab9a316b7da0b8e",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_s1730_B113_daily_frozen.parquet",
+      "sha256": "cfb67ee7a28ed464e8213093171db8defb2bc0a83873ef3b277ab3c530ed31e2",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_s1730_B113_monthly_frozen.parquet",
+      "sha256": "965fbb4d149454718e4fb0bded4258ff5b175532fc8043832ea3e06764f260dc",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_s1730_B191_daily_frozen.parquet",
+      "sha256": "d3ae228ba56c29e7c3b42d30bb5c7403467f8d5e81cf595792ec52bf955fdad3",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_s1730_B191_monthly_frozen.parquet",
+      "sha256": "5c17d49f6f1725e0af9b9996b2e46cb05db3603c8be95e306c1d53d2106f6387",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_s1730_B56_daily_frozen.parquet",
+      "sha256": "3c80b3c0a06bd6d22420fa6de3c75a88c3d25e60462492503eca3ddcfcab436d",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_s1730_B56_monthly_frozen.parquet",
+      "sha256": "b794a9027c0bafcb42f70157af031c68c30de3554c23e48fb535328fa6018674",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_s1731_B113_daily_frozen.parquet",
+      "sha256": "5b1e706859d609da49a8611404dd3da704a9ae524aaeec7336c96c8516e94b27",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_s1731_B113_monthly_frozen.parquet",
+      "sha256": "80b799b1e891d979723dde685acb9f8b4826794937ff4e60b5cc9cdfcaa67281",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_s1731_B191_daily_frozen.parquet",
+      "sha256": "373b654f360e94b9e5d726141f70e2d845e8fd44f76d843e86fc536191f6ebae",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_s1731_B191_monthly_frozen.parquet",
+      "sha256": "40d2db235972ddae99b26ccf3fff92eca1bedf4b4b450fef031910f979fc98d1",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_s1731_B56_daily_frozen.parquet",
+      "sha256": "ebb94eb8767d9720a60079182364f41928c24dad7547a8377711cc3f12e09918",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_s1731_B56_monthly_frozen.parquet",
+      "sha256": "037a8c009de6cca54553913d7be53687cee78257386be6b87620f32325e81498",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_seedmean_B113_daily_frozen.parquet",
+      "sha256": "c234bd3021d409581858cc823d33395cc1fe1ea6fdf4c0ed1ee5e0fbd356b13c",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_seedmean_B113_monthly_frozen.parquet",
+      "sha256": "946e2416ffb02551d45cfe6686ca932131f191a18f4a207443e96fe5c096b465",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_seedmean_B191_daily_frozen.parquet",
+      "sha256": "c3ad2541bd7ccf1f8a2c52872706354f906509a0693c0a62bd1002e4530889a1",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_seedmean_B191_monthly_frozen.parquet",
+      "sha256": "2a6a398ec2346901568f3648ed194de4a0c6f6007aec53d440f48049c2aadd6e",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_seedmean_B56_daily_frozen.parquet",
+      "sha256": "8610f3f31706c923af62717ea35e68dffa70ea41108c13c3fcaf20706d75ccf4",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_GraphTCN_c0_seedmean_B56_monthly_frozen.parquet",
+      "sha256": "d42f04fad0f24bd0b0d1327a93538f94df6c0ef0320d7ce2250dc2b852ed77ef",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_s1729_B113_daily_frozen.parquet",
+      "sha256": "25a1e2dfb2cbba1f18b531190460a7c60c666c467ba686f342950769012bc2b4",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_s1729_B113_monthly_frozen.parquet",
+      "sha256": "297607105d1142488f39f58f2b66f4aff045d64e5452743d77be86f5b50b5275",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_s1729_B191_daily_frozen.parquet",
+      "sha256": "1cab044102e9d535ee8dc505f39b61ad22f26f82777d9f6de146e7f2f4f16da8",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_s1729_B191_monthly_frozen.parquet",
+      "sha256": "97d652a27580a5a9a63f57b267a7dd23fc962cbce9d783f6c78e2d0b955261e2",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_s1729_B56_daily_frozen.parquet",
+      "sha256": "3abfc24ceda0aea057a43932ad285e94d2da7d9bb5de31e8a790fd3e3fdebb4b",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_s1729_B56_monthly_frozen.parquet",
+      "sha256": "85dfc3d81304a9f8565ed5160618c2c8e6a38e0cb804899dfd88f2829647c071",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_s1730_B113_daily_frozen.parquet",
+      "sha256": "8235b0117035070c0fd13b9b81da4cad164c832a2c376c26ce1dbbcb10534e4e",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_s1730_B113_monthly_frozen.parquet",
+      "sha256": "ba6dfbe67d50f71e655be2acffcea6dfcfde7c7fa75fcd7fd352cc79e518a194",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_s1730_B191_daily_frozen.parquet",
+      "sha256": "a40a78d76f69a7f95766685b341fb0dacbbe8fd3764b7370d20eb529055b3b12",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_s1730_B191_monthly_frozen.parquet",
+      "sha256": "4d2fbeea344d67b452ceb391e530f9bc85ff696a6d74247020146b279866a784",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_s1730_B56_daily_frozen.parquet",
+      "sha256": "1d263e7e7da1ba9a82b4ada4af01f3cf7adc6bf881a89a972e9100e917624fe6",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_s1730_B56_monthly_frozen.parquet",
+      "sha256": "2466202725b882d2e1a2af81fe202df69a0eda65b70328cea70265dc51fc567a",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_s1731_B113_daily_frozen.parquet",
+      "sha256": "c08c48d1f50e3f6bb3c602f2b4918f9ed4171d59a3ed387b9d54cf4b80b8c43b",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_s1731_B113_monthly_frozen.parquet",
+      "sha256": "3064285a4833fb53a944d8124c2e8624d8427a87ff575b1ee07567a21da50db4",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_s1731_B191_daily_frozen.parquet",
+      "sha256": "e44d3c47bcd3fdeb087ea974463a8146bc0b37018caa97f30b1b22de80042798",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_s1731_B191_monthly_frozen.parquet",
+      "sha256": "feac8bf128c0082fb3bf2a6e03dd3519c625cdd2a62c8c56bb08d31d6b463447",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_s1731_B56_daily_frozen.parquet",
+      "sha256": "e8c8b2469a023baf2c075692aac707b620d46209b02c96a39592dafd81f171e5",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_s1731_B56_monthly_frozen.parquet",
+      "sha256": "6c51b5ded022d407509bbc990a0ed197db7a534a60058932c876558c21734eed",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_seedmean_B113_daily_frozen.parquet",
+      "sha256": "3f1e94de131421fe14064171f21c6e38d4cfcd78b327d99a247d803e0d484162",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_seedmean_B113_monthly_frozen.parquet",
+      "sha256": "2626408ad0d35a985744ea19b14d039f5cb652648da1bbb8c95f85cf9ddd7374",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_seedmean_B191_daily_frozen.parquet",
+      "sha256": "94d7f2b1fc86363f4eec8ee8ecd38870c2ca0050ad57bbb39cb2e5b64f241d6d",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_seedmean_B191_monthly_frozen.parquet",
+      "sha256": "db88ace32e0e9674b6948ed5eae0ee3db65141e4b442591f72ad14f6332b1fe6",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_seedmean_B56_daily_frozen.parquet",
+      "sha256": "a067da4af8528c310630e96627a3c1030de49af68d2aa2a1da9cc55779b72304",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_Transformer_c0_seedmean_B56_monthly_frozen.parquet",
+      "sha256": "64ad83d86635fc2a535f16e9654c09df207cfb73ea8aa4e8feb0a7e8679425bb",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_s1729_B113_daily_frozen.parquet",
+      "sha256": "4698af9ef21dd905878feff8f7b85a1b2f2cbef36cb856fca5017e956cc53c26",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_s1729_B113_monthly_frozen.parquet",
+      "sha256": "db11ce905d37d8c3164439d7d8b13dc3a5633fed4c565d8b4368e4b78efea17f",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_s1729_B191_daily_frozen.parquet",
+      "sha256": "10785d6f4279e0457af2f4cf07eca75ba1d7c1a4cf0c968cb4b1b95959838f39",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_s1729_B191_monthly_frozen.parquet",
+      "sha256": "3b735012abea018f80c6ae45baf37568e7e29568c15d6e621bfbb8f4400119a5",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_s1729_B56_daily_frozen.parquet",
+      "sha256": "168048a893b8faefeb817a9fd34eddc74ff17f70c023c33bba61cadd41629442",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_s1729_B56_monthly_frozen.parquet",
+      "sha256": "b9a46d77105b4483b0ccfe8b5f851248a166caaaeb00115c5831b4b8e9b4d6e2",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_s1730_B113_daily_frozen.parquet",
+      "sha256": "b33e767b35a73349e5560d5c5fe19bc7a5cf6d1e95b1dc0af958f84290906f62",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_s1730_B113_monthly_frozen.parquet",
+      "sha256": "9331e972021edd21a90184e174ac7496a215ed885e229fa9d08fa7a69063d52a",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_s1730_B191_daily_frozen.parquet",
+      "sha256": "fe8d2886e165005d54ff3dc4e6a8800d0bc360163ed1e1c402e7316d587fd186",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_s1730_B191_monthly_frozen.parquet",
+      "sha256": "b19dfe48e58cebe18b6d4500655dff34961129025b35bf347dbc930c2a4cb31e",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_s1730_B56_daily_frozen.parquet",
+      "sha256": "e0645978abc0c3df5fc920b6ac5aa0926fd1358f0cd7368a6dcb34c9f2bbd551",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_s1730_B56_monthly_frozen.parquet",
+      "sha256": "16f59f6f0562c385fa9d649d7a56d6e62a7f5413599f41c5ac86f74aa1c9797f",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_s1731_B113_daily_frozen.parquet",
+      "sha256": "294a545773f23ac2bd9c2870568ac515c33797d3bb5554786522aaf2880b500b",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_s1731_B113_monthly_frozen.parquet",
+      "sha256": "db4b55888f4e4cdf40fd9628a032a8cbf7d4ef8cccef10eb4bfff4c1634f7172",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_s1731_B191_daily_frozen.parquet",
+      "sha256": "224d6e7affc35e45f64a5c43b6876ef1dd438007eaba8e729ca7a4a289c949ba",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_s1731_B191_monthly_frozen.parquet",
+      "sha256": "d3b2f27b28949b9eecb9ce79eb4a7afa53b91c87dc223ee5b6df9d86a9c458e0",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_s1731_B56_daily_frozen.parquet",
+      "sha256": "2aba51a2267a4b7cb5cfc53a0eb3b91cd74212010c25b417285322092b77d8ce",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_s1731_B56_monthly_frozen.parquet",
+      "sha256": "6687e00527b1f514bf83d1b600e9a7b1f342cfbfd50e50d04828cdf29c154ecd",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_seedmean_B113_daily_frozen.parquet",
+      "sha256": "e893ab85405b37fc27e4602be512e299ff4f6dcc818a59a71bfbd60672f61aa5",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_seedmean_B113_monthly_frozen.parquet",
+      "sha256": "be325b54fdb053019818245250cb47dbd4917a5b1815b6493935ab9390b49567",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_seedmean_B191_daily_frozen.parquet",
+      "sha256": "ed370c73773e55085d90a097f808717e1c292d831e3c4658421e7d3b1ae3448c",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_seedmean_B191_monthly_frozen.parquet",
+      "sha256": "4b12709d6e6fba04aad9739b32acb76cf19b89d91cab79e4e0a9256b8c0eb2a1",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_seedmean_B56_daily_frozen.parquet",
+      "sha256": "616093cd5cacbfd073cf667c7cda8f6a2a8d5e6d2838379ac2be4075cacbd5a8",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_S24_XGBoost_c0_seedmean_B56_monthly_frozen.parquet",
+      "sha256": "387bfc3a4091d62295a369a689eb0ae523de76d7a4fa8f783b19f8b343543f64",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_GraphTCN_c0_s1729_daily_frozen.parquet",
+      "sha256": "9924173035b09db901cc813c68789547de67d0d4c3825165a61c70f82ba61750",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_GraphTCN_c0_s1729_monthly_frozen.parquet",
+      "sha256": "01ae256e2d438c625703dca56dfeb30999d5f1aefd48221cd8796d2bed1ff8b5",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_GraphTCN_c0_s1729_same_recipe_global_forecast_B113_daily_frozen.parquet",
+      "sha256": "9a5f18875b542ba638cecbad7cf0bbd9361c87bf9df78de8ccd990cbe19b5e1c",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_GraphTCN_c0_s1729_same_recipe_global_forecast_B113_monthly_frozen.parquet",
+      "sha256": "d4ac8c5bc282f530cc00a504f3b8f47338a2e093635f922ee75f4074afa7eb9e",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_GraphTCN_c0_s1729_same_recipe_global_forecast_B191_daily_frozen.parquet",
+      "sha256": "2c46b564c36a2fab64035ffc5b01b7cca4dad3cbf82772faca97522cd6ac3f70",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_GraphTCN_c0_s1729_same_recipe_global_forecast_B191_monthly_frozen.parquet",
+      "sha256": "b553c034130096dd16820a5d346e3cb671f0d5552e613d1f807682e0e3dff572",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_GraphTCN_c0_s1729_same_recipe_global_forecast_B56_daily_frozen.parquet",
+      "sha256": "cd2bb175ba83586a19cd06679913aea0fb47fad3e09c7cf86e2425459c9de17c",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_GraphTCN_c0_s1729_same_recipe_global_forecast_B56_monthly_frozen.parquet",
+      "sha256": "52d526408ee8c6bcdd2b915e0369c87e8d8cde1ffc596b01f50dcfab5d13afd4",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_GraphTCN_c0_s1729_same_recipe_global_training_reconstruction_B113_daily_frozen.parquet",
+      "sha256": "43409d542c11d6cd5c7bcdda86bfa3cb8cb2a104c485f64ee4de7f604a650db2",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_GraphTCN_c0_s1729_same_recipe_global_training_reconstruction_B113_monthly_frozen.parquet",
+      "sha256": "7ccc3fc99c62e6adc13d50c9ac0881d505bfc987c710be958a1af57bddff0eab",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_GraphTCN_c0_s1729_same_recipe_global_training_reconstruction_B191_daily_frozen.parquet",
+      "sha256": "7cf7803a98408d42442b90856454db2b59d77500052229c51b0465cf82b1d1c8",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_GraphTCN_c0_s1729_same_recipe_global_training_reconstruction_B191_monthly_frozen.parquet",
+      "sha256": "e64d17f33abc1a6aacaafd5ead7e1af397926c48b4faefe802d4b06418fe02b4",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_GraphTCN_c0_s1729_same_recipe_global_training_reconstruction_B56_daily_frozen.parquet",
+      "sha256": "20ddb3a87b584e443cb6cd297221eddf03c6dcf4e8608f895bb8fbf8cfae970f",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_GraphTCN_c0_s1729_same_recipe_global_training_reconstruction_B56_monthly_frozen.parquet",
+      "sha256": "987d7835f4415db2419b391dcf8e53c1fb9e612ec38c42c7fd3d0573941b5479",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_Transformer_c0_s1729_daily_frozen.parquet",
+      "sha256": "b2a936fbdbf0c26bd1952877b74ab39e0d0b97b950f95c713f6f7926f7c1b4d2",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_Transformer_c0_s1729_monthly_frozen.parquet",
+      "sha256": "dda8efd8a4a319baf8eca0e0dafaf7e517bd95b7d799e7c61c762182e828322d",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_Transformer_c0_s1729_same_recipe_global_forecast_B113_daily_frozen.parquet",
+      "sha256": "98173a3fc8404108734c152bbecf729b287a377c9ba4f3dbb20c3b31e1c8c79c",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_Transformer_c0_s1729_same_recipe_global_forecast_B113_monthly_frozen.parquet",
+      "sha256": "82ef17452974924945abb02073857d4373b0cd07c87b680235ddf9ff6c803777",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_Transformer_c0_s1729_same_recipe_global_forecast_B191_daily_frozen.parquet",
+      "sha256": "e4cc272664d82733764e23f7937ee21a08f599e7a4f172794336abc20a126cb6",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_Transformer_c0_s1729_same_recipe_global_forecast_B191_monthly_frozen.parquet",
+      "sha256": "04c4bafc3d72806a17b5445174005c3cf3f5c5dc42a97c63d044b18f649da69c",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_Transformer_c0_s1729_same_recipe_global_forecast_B56_daily_frozen.parquet",
+      "sha256": "bcf0a02131d2c76a5331240ae5eb33f22532b82bfb86f4371420a706a2317baf",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_Transformer_c0_s1729_same_recipe_global_forecast_B56_monthly_frozen.parquet",
+      "sha256": "fe0069043be59f626d9a16e082fa4bd080bc41f340dbf959beccbee96be0b976",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_Transformer_c0_s1729_same_recipe_global_training_reconstruction_B113_daily_frozen.parquet",
+      "sha256": "0e39a3caa4a3ff547fba2158654dfa31c8422164f36e9a576370e01a3d0ff6eb",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_Transformer_c0_s1729_same_recipe_global_training_reconstruction_B113_monthly_frozen.parquet",
+      "sha256": "da74915bb1c4ab0e01cd46c2628a0e5a16b20da913a6bf7d0aed423d1c4c56e2",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_Transformer_c0_s1729_same_recipe_global_training_reconstruction_B191_daily_frozen.parquet",
+      "sha256": "fa489295bf02e103b373d49efb8abc6e0727a35b1131104e66f57602d60478a0",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_Transformer_c0_s1729_same_recipe_global_training_reconstruction_B191_monthly_frozen.parquet",
+      "sha256": "348f6064f25779658c0433e31c10613522ef5f00673043237782db5c09870562",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_Transformer_c0_s1729_same_recipe_global_training_reconstruction_B56_daily_frozen.parquet",
+      "sha256": "95700e9080b803fc3544eff68f71053bc7d3e36e7f964646a0d1db7c565ce3f5",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_Transformer_c0_s1729_same_recipe_global_training_reconstruction_B56_monthly_frozen.parquet",
+      "sha256": "7656a70dacbe4f895bf8500b973da76f4a968344fd6fd1e4b344c5202690e80b",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_XGBoost_c0_s1729_daily_frozen.parquet",
+      "sha256": "4c69a8e8d827fcf7b3668de0bf611d2584d19841fc7b787e9fb24c6652ef103f",
+      "station_rows": 15
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_XGBoost_c0_s1729_monthly_frozen.parquet",
+      "sha256": "b77e0c58a99e4a6c3ea5b34e743e452ea27a43a9564a8fc9de4891e82e41d8be",
+      "station_rows": 116
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_XGBoost_c0_s1729_same_recipe_global_forecast_B113_daily_frozen.parquet",
+      "sha256": "253baec926141cbbc3f3238df4662ef589777a79ff20a55d289e89edffa46179",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_XGBoost_c0_s1729_same_recipe_global_forecast_B113_monthly_frozen.parquet",
+      "sha256": "95a44ca1ec8d9b9c056763c71986b660cfbea1874556a55ea53da477c468f7b8",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_XGBoost_c0_s1729_same_recipe_global_forecast_B191_daily_frozen.parquet",
+      "sha256": "f27a7029de36b89e72a0ef4601c8415058ceebbae859506ba32ccfe3709fb3a0",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_XGBoost_c0_s1729_same_recipe_global_forecast_B191_monthly_frozen.parquet",
+      "sha256": "02d8c700cbb022cf99c32449e137b5ecfa7d93725a496ffb9887b0b9f41c97bb",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_XGBoost_c0_s1729_same_recipe_global_forecast_B56_daily_frozen.parquet",
+      "sha256": "b2d8feaf5ffce9a667a51debac611711ec9cb23798783d69a8a9dc33d0ea2a7f",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_XGBoost_c0_s1729_same_recipe_global_forecast_B56_monthly_frozen.parquet",
+      "sha256": "4b2bd497fb3b1db8ba5a7dbf865d91c56f1f5957017e39e0d839a07a808f6fb3",
+      "station_rows": 12
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_XGBoost_c0_s1729_same_recipe_global_training_reconstruction_B113_daily_frozen.parquet",
+      "sha256": "4262d629c2b5c8ba2915d68fbdb9f7e5980b1e1c07a2c46b9b6d4697ace40e0d",
+      "station_rows": 1
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_XGBoost_c0_s1729_same_recipe_global_training_reconstruction_B113_monthly_frozen.parquet",
+      "sha256": "61129f3e176272662305f403cb24ad3d6e81d500a41c2896e43748a701bf222c",
+      "station_rows": 5
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_XGBoost_c0_s1729_same_recipe_global_training_reconstruction_B191_daily_frozen.parquet",
+      "sha256": "73473d466f08f36ad0d30927441d043fe04031aec7187b6cbdce691fb9e83de1",
+      "station_rows": 4
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_XGBoost_c0_s1729_same_recipe_global_training_reconstruction_B191_monthly_frozen.parquet",
+      "sha256": "7abca5dbfa71beaeeb2af194a1010eee8bdbca329a9fbb3da74b9d49913c32f7",
+      "station_rows": 6
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_XGBoost_c0_s1729_same_recipe_global_training_reconstruction_B56_daily_frozen.parquet",
+      "sha256": "fe8dc5c868ef158ee531959807f89062c464e801bbf358f521b3a0244dd810dc",
+      "station_rows": 2
+    },
+    {
+      "file": "outputs/evaluation/joint_fixed_recipe_F24_XGBoost_c0_s1729_same_recipe_global_training_reconstruction_B56_monthly_frozen.parquet",
+      "sha256": "000204eeec8b03a9e0079e5ee79f69752a1715b6f9be7cd04ef10731e4c5bc5f",
+      "station_rows": 12
+    }
+  ],
+  "metrics_sha256": "82b9b4e6bce579432b0d4f55aeb94d0f48897525c836af422cd924a64a863563",
+  "method": "math.fsum scalar means/SSE/variance/covariance; independent monthly read-count centering; no mltn.metrics or bootstrap metric implementation",
+  "coverage": "daily30days/3months; monthly8records; zero observed variance stays undefined",
+  "tolerance": "1e-9*(1+abs(independent metric))"
+}

@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "station_rows": 3345,
+  "registered_readouts": 60,
+  "joint_training_checkpoints": 18,
+  "synthetic_controls": {
+    "aligned_underamplitude": {
+      "NSE": 0.36,
+      "RMSE": 0.5656854249492381,
+      "bias": 1.726198411275073e-17,
+      "amplitude_ratio": 0.2,
+      "correlation": 1.0,
+      "bias_penalty": 5.95952191017717e-34,
+      "gain_beta_opt": 5.0,
+      "positive_shape_amplitude_opt": 1.0,
+      "fixed_mean_amplitude_ceiling_NSE": 1.0,
+      "observed_mean_affine_ceiling_NSE": 1.0,
+      "unit_amplitude_NSE": 1.0,
+      "amplitude_only_room": 0.64,
+      "unit_amplitude_change": 0.64,
+      "remaining_after_affine": 0.0,
+      "amplitude_gradient_at1_normalized": -0.32
+    },
+    "wrong_phase_full_amplitude": {
+      "NSE": -0.9999999999999996,
+      "RMSE": 1.0,
+      "bias": -5.4850596812541196e-18,
+      "amplitude_ratio": 0.9999999999999998,
+      "correlation": -3.7666186783668957e-17,
+      "bias_penalty": 6.017175941383908e-35,
+      "gain_beta_opt": 0,
+      "positive_shape_amplitude_opt": 0,
+      "fixed_mean_amplitude_ceiling_NSE": -6.017175941383908e-35,
+      "observed_mean_affine_ceiling_NSE": 0,
+      "unit_amplitude_NSE": -1.0,
+      "amplitude_only_room": 0.9999999999999996,
+      "unit_amplitude_change": -4.440892098500626e-16,
+      "remaining_after_affine": 1,
+      "amplitude_gradient_at1_normalized": 1.9999999999999991
+    }
+  },
+  "independent_method": "math.fsum station moments; exact analytic gain identities; true aggregate objective with 3-step head finite differences",
+  "train_oracle": "training data only for joint profiles",
+  "evaluation_oracle": "descriptive labels-assisted fixed-waveform bound, never used as forecast, new point or model selection",
+  "fit_calls": 0,
+  "scientific_predictions_changed": false,
+  "parameter_claim": "shared-head direction is feasible; arbitrary per-month output null direction need not be representable by shared parameters",
+  "regularization": "data objective only; no numerical optimality assertion and no automatic weight/loss change",
+  "source_identity": {
+    "mltn\\objectives.py": "08915319d152025c6ca68bbc0c64a5fa6ce6c8141962dd8b9da9034e7cd11297",
+    "mltn\\models.py": "cce568f44c080678022f2220ed99e6a52a6562fff7da0ced01895cf8aa219935",
+    "train.py": "7cde777fd05d76f815546fdbc46b22d0b2abfd3112cc7cce25fb2705e229c4a1",
+    "joint.py": "4695637f98ab443439ffacef0ff209c2aa79e18539e10b52253ba764e67e1015"
+  }
+}

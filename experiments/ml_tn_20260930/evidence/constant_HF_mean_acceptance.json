@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "exact_constant_preserved": true,
+  "correlation_undefined": true,
+  "epsilon_used": false,
+  "scope": "unequal read-count weights across unequal months; synthetic only"
+}

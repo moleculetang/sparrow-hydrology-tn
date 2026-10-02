@@ -1,0 +1,12 @@
+{
+  "tests": 14,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "cuda": true,
+  "torch": "2.13.0+cu126",
+  "host": "WIN-2VR7CA15U2H",
+  "dtype_train": "FP32",
+  "dtype_evaluation": "FP64",
+  "amp": false
+}

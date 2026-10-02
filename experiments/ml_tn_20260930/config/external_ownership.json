@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "principle": "one ID one host; remaining pre-registered paths only",
+  "jobs": {
+    "joint_S23_GraphTCN_c0_s1729_B56": {
+      "host": "WIN-2VR7CA15U2H",
+      "job": {
+        "role": "joint",
+        "stage": "S23",
+        "task": "joint",
+        "family": "GraphTCN",
+        "config": 0,
+        "seed": 1729,
+        "block": 56
+      }
+    },
+    "joint_S23_GraphTCN_c0_s1729_B113": {
+      "host": "WIN-2VR7CA15U2H",
+      "job": {
+        "role": "joint",
+        "stage": "S23",
+        "task": "joint",
+        "family": "GraphTCN",
+        "config": 0,
+        "seed": 1729,
+        "block": 113
+      }
+    },
+    "joint_S23_GraphTCN_c0_s1729_B191": {
+      "host": "WIN-2VR7CA15U2H",
+      "job": {
+        "role": "joint",
+        "stage": "S23",
+        "task": "joint",
+        "family": "GraphTCN",
+        "config": 0,
+        "seed": 1729,
+        "block": 191
+      }
+    },
+    "joint_S23_GraphTCN_c0_s1730_B56": {
+      "host": "WIN-2VR7CA15U2H",
+      "job": {
+        "role": "joint",
+        "stage": "S23",
+        "task": "joint",
+        "family": "GraphTCN",
+        "config": 0,
+        "seed": 1730,
+        "block": 56
+      }
+    },
+    "joint_S23_GraphTCN_c0_s1730_B113": {
+      "host": "WIN-2VR7CA15U2H",
+      "job": {
+        "role": "joint",
+        "stage": "S23",
+        "task": "joint",
+        "family": "GraphTCN",
+        "config": 0,
+        "seed": 1730,
+        "block": 113
+      }
+    },
+    "joint_S23_GraphTCN_c0_s1730_B191": {
+      "host": "WIN-2VR7CA15U2H",
+      "job": {
+        "role": "joint",
+        "stage": "S23",
+        "task": "joint",
+        "family": "GraphTCN",
+        "config": 0,
+        "seed": 1730,
+        "block": 191
+      }
+    },
+    "joint_S23_GraphTCN_c0_s1731_B191": {
+      "host": "WIN-2VR7CA15U2H",
+      "job": {
+        "role": "joint",
+        "stage": "S23",
+        "task": "joint",
+        "family": "GraphTCN",
+        "config": 0,
+        "seed": 1731,
+        "block": 191
+      }
+    },
+    "joint_S23_GraphTCN_c0_s1731_B56": {
+      "host": "WIN-2VR7CA15U2H",
+      "job": {
+        "role": "joint",
+        "stage": "S23",
+        "task": "joint",
+        "family": "GraphTCN",
+        "config": 0,
+        "seed": 1731,
+        "block": 56
+      }
+    },
+    "joint_S23_GraphTCN_c0_s1731_B113": {
+      "host": "WIN-2VR7CA15U2H",
+      "job": {
+        "role": "joint",
+        "stage": "S23",
+        "task": "joint",
+        "family": "GraphTCN",
+        "config": 0,
+        "seed": 1731,
+        "block": 113
+      }
+    }
+  }
+}

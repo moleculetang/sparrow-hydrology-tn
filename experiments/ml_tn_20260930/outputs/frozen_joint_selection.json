@@ -1,0 +1,130 @@
+{
+  "selected": {
+    "XGBoost": 3,
+    "Transformer": 3,
+    "GraphTCN": 7
+  },
+  "scores": [
+    {
+      "family": "XGBoost",
+      "config": 0,
+      "selection_score": 1.066065925319205
+    },
+    {
+      "family": "XGBoost",
+      "config": 1,
+      "selection_score": 1.0137421675931702
+    },
+    {
+      "family": "XGBoost",
+      "config": 2,
+      "selection_score": 1.08897179140522
+    },
+    {
+      "family": "XGBoost",
+      "config": 3,
+      "selection_score": 0.992842656078768
+    },
+    {
+      "family": "XGBoost",
+      "config": 4,
+      "selection_score": 1.0239481081429072
+    },
+    {
+      "family": "XGBoost",
+      "config": 5,
+      "selection_score": 1.0664537441767328
+    },
+    {
+      "family": "XGBoost",
+      "config": 6,
+      "selection_score": 1.0686166901079879
+    },
+    {
+      "family": "XGBoost",
+      "config": 7,
+      "selection_score": 1.0025038309524603
+    },
+    {
+      "family": "Transformer",
+      "config": 0,
+      "selection_score": 0.9639821068609291
+    },
+    {
+      "family": "Transformer",
+      "config": 1,
+      "selection_score": 0.9745272107131966
+    },
+    {
+      "family": "Transformer",
+      "config": 2,
+      "selection_score": 0.9824569064509507
+    },
+    {
+      "family": "Transformer",
+      "config": 3,
+      "selection_score": 0.9240018387540636
+    },
+    {
+      "family": "Transformer",
+      "config": 4,
+      "selection_score": 1.0547071076460413
+    },
+    {
+      "family": "Transformer",
+      "config": 5,
+      "selection_score": 1.0357816716782278
+    },
+    {
+      "family": "Transformer",
+      "config": 6,
+      "selection_score": 1.0806462659618608
+    },
+    {
+      "family": "Transformer",
+      "config": 7,
+      "selection_score": 0.9257845928135962
+    },
+    {
+      "family": "GraphTCN",
+      "config": 0,
+      "selection_score": 1.0019261098680443
+    },
+    {
+      "family": "GraphTCN",
+      "config": 1,
+      "selection_score": 0.9552910186461685
+    },
+    {
+      "family": "GraphTCN",
+      "config": 2,
+      "selection_score": 1.0001223069454628
+    },
+    {
+      "family": "GraphTCN",
+      "config": 3,
+      "selection_score": 0.954219644204312
+    },
+    {
+      "family": "GraphTCN",
+      "config": 4,
+      "selection_score": 0.9828596201583176
+    },
+    {
+      "family": "GraphTCN",
+      "config": 5,
+      "selection_score": 1.0495101763894426
+    },
+    {
+      "family": "GraphTCN",
+      "config": 6,
+      "selection_score": 1.0216351037031446
+    },
+    {
+      "family": "GraphTCN",
+      "config": 7,
+      "selection_score": 0.9518527094163556
+    }
+  ],
+  "selection": "2022Jan-Sep joint loss; no evaluation outcomes"
+}

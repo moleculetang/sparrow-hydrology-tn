@@ -1,0 +1,66 @@
+[
+  {
+    "task": "monthly",
+    "weights": {
+      "RF": 0.022050358735194016,
+      "ExtraTrees": 0.04105719873801864,
+      "XGBoost": 0.08248330710134043,
+      "LightGBM": 0.30879450237122213,
+      "CatBoost": 0.12500631463870648,
+      "MLP": 0.0,
+      "LSTM": 0.0,
+      "GRU": 5.9625825530782404e-18,
+      "TCN": 0.0,
+      "Transformer": 0.40193176652753076,
+      "GraphTCN": 0.018676551887987593
+    },
+    "source": "2022Oct-Dec only",
+    "selection_score": 0.42932003147595715,
+    "stop_reason": "Optimization terminated successfully",
+    "configs": {
+      "RF": 3,
+      "ExtraTrees": 6,
+      "XGBoost": 3,
+      "LightGBM": 6,
+      "CatBoost": 2,
+      "MLP": 6,
+      "LSTM": 7,
+      "GRU": 6,
+      "TCN": 2,
+      "Transformer": 1,
+      "GraphTCN": 6
+    }
+  },
+  {
+    "task": "daily",
+    "weights": {
+      "RF": 9.182617904376129e-17,
+      "ExtraTrees": 0.0,
+      "XGBoost": 7.028820648702919e-17,
+      "LightGBM": 0.0,
+      "CatBoost": 0.0,
+      "MLP": 1.0858172801116305e-19,
+      "LSTM": 0.0,
+      "GRU": 1.297326435080742e-16,
+      "TCN": 1.0,
+      "Transformer": 1.4383567212090419e-18,
+      "GraphTCN": 1.4010678105451424e-16
+    },
+    "source": "2022Oct-Dec only",
+    "selection_score": 1.5495563119652824,
+    "stop_reason": "Optimization terminated successfully",
+    "configs": {
+      "RF": 3,
+      "ExtraTrees": 5,
+      "XGBoost": 6,
+      "LightGBM": 0,
+      "CatBoost": 4,
+      "MLP": 5,
+      "LSTM": 3,
+      "GRU": 2,
+      "TCN": 1,
+      "Transformer": 7,
+      "GraphTCN": 3
+    }
+  }
+]

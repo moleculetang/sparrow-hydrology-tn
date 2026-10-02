@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "case": "preserve_and_append",
+      "passed": true
+    },
+    {
+      "case": "changed_prediction",
+      "passed": true
+    },
+    {
+      "case": "changed_dependency",
+      "passed": true
+    }
+  ],
+  "data": "isolated synthetic fixture; no real TN read or fit; original results untouched"
+}

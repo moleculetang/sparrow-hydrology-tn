@@ -1,0 +1,31 @@
+{
+  "rows": 381408,
+  "maximum_absolute_difference_m3_day": 4.76837158203125e-07,
+  "maximum_relative_difference": 3.863838526169251e-16,
+  "stations_with_difference": [
+    "京南",
+    "六景",
+    "凤山糖厂",
+    "北江石尾",
+    "南岸",
+    "双苏村",
+    "古封",
+    "垒亭",
+    "封开城上",
+    "木洞",
+    "武林渡口",
+    "火电厂",
+    "白马",
+    "石角",
+    "老口",
+    "车渡",
+    "郁江口",
+    "都安",
+    "都骑",
+    "露塘",
+    "高桥"
+  ],
+  "independent_reference": "frozen U_F24_T0_s0 day water readout; no nitrogen quantity used as ML feature",
+  "relative_gate": 1e-10,
+  "passed": true
+}

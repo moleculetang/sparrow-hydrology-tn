@@ -1,0 +1,53 @@
+{
+  "experiment_id": "20260930_1",
+  "start_utc": "2026-09-30T09:27:38Z",
+  "deadline_utc": "2026-10-07T09:27:38Z",
+  "stop_new_dispatch_utc": "2026-10-06T09:27:38Z",
+  "budget_hours": 168,
+  "status": "complete",
+  "local_root": "E:/SPARROW/5_Test/20260930_1",
+  "remote_root": "/home/pc/TWY/SPARROW/Test/20260930_1",
+  "target": "TN",
+  "excluded": [
+    "NH4",
+    "DO",
+    "D29 predictions",
+    "LAND1 inventories",
+    "TN inverted input",
+    "trainable station ID"
+  ],
+  "hydrology": "frozen H1 FULL24C, 1961-2024",
+  "screening_seed": 1729,
+  "ensemble_seeds": [
+    1729,
+    1730,
+    1731
+  ],
+  "configuration_selection": "train through 2021; 2022 January-September selection; October-December ensemble only",
+  "evaluation": {
+    "F23": 2023,
+    "F24": 2024,
+    "spatial": [
+      56,
+      113,
+      191
+    ]
+  },
+  "limits": {
+    "screening_fits": 176,
+    "configs_per_family_task": 8,
+    "joint_configs_per_route": 8,
+    "cpu_physical_cores_remote": 40,
+    "resource_pause_percent": 90,
+    "resource_resume_percent": 85
+  },
+  "monthly_definition": "automatic monitoring arithmetic mean of valid readings; equal-day approximation where counts unavailable",
+  "routine_training_notifications": false,
+  "scheduled_tasks": false,
+  "publication": false,
+  "completed_utc": "2026-10-01T04:17:34.276081+00:00",
+  "elapsed_hours": 18.83229891138889,
+  "completed_scope": "finite registered ML experiment, frozen evaluation, independent recomputation and expert interpretation",
+  "scientific_success": "partial temporal skill; spatial and waveform limitations remain",
+  "new_dispatch": false
+}

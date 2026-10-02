@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "actual_non_delete_sharing_reader_releases_then_atomic_replace",
+      "elapsed_s": 0.7969999997876585,
+      "passed": true
+    },
+    {
+      "check": "unclassified_permission_failure_not_swallowed",
+      "passed": true
+    },
+    {
+      "check": "locked_registry_transaction_preserved",
+      "passed": true
+    }
+  ],
+  "old_sha256": "c941a8e12336b94f2d944445061c1be1fd419418cc4a0b11a0024018a2f9b6dc",
+  "new_sha256": "e881669554283940aa7056809521a0076035942802595834e3eda0586265c379",
+  "live_leases_released": false,
+  "scope": "publication only; 90/85, reservations and CPU/GPU APIs unchanged"
+}

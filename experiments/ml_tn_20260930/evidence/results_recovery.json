@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "files": 9879,
+  "archive_sha256": "4f4232880cfa14167d59bfb9cd680c8630685f7ee4d300a204e29346a8941f36",
+  "source": "authorized workstation same experiment ID",
+  "utc": "2026-10-01T02:37:01.076122+00:00",
+  "byte_verification": "all manifest entries before import; no live training sources overwritten"
+}

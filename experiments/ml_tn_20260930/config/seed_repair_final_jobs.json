@@ -1,0 +1,196 @@
+[
+  {
+    "role": "joint",
+    "stage": "F23",
+    "family": "XGBoost",
+    "config": 3,
+    "seed": 1729
+  },
+  {
+    "role": "joint",
+    "stage": "F23",
+    "family": "XGBoost",
+    "config": 3,
+    "seed": 1730
+  },
+  {
+    "role": "joint",
+    "stage": "F23",
+    "family": "XGBoost",
+    "config": 3,
+    "seed": 1731
+  },
+  {
+    "role": "joint",
+    "stage": "F24",
+    "family": "XGBoost",
+    "config": 3,
+    "seed": 1729
+  },
+  {
+    "role": "joint",
+    "stage": "F24",
+    "family": "XGBoost",
+    "config": 3,
+    "seed": 1730
+  },
+  {
+    "role": "joint",
+    "stage": "F24",
+    "family": "XGBoost",
+    "config": 3,
+    "seed": 1731
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1729,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1730,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1731,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1729,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1730,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1731,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1729,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1730,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1731,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1729,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1730,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1731,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1729,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1730,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1731,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1729,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1730,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "S24",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1731,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "F24",
+    "family": "XGBoost",
+    "config": 0,
+    "seed": 1729,
+    "fixed_recipe": true
+  }
+]

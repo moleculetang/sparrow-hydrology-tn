@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "same_seed_repeat_exact": true,
+  "different_seed_control": true,
+  "actual_paths": [
+    {
+      "fold": "F23",
+      "pair_max_abs_differences": [
+        4.266395464423186,
+        3.6255193028284474,
+        5.017448858611164
+      ]
+    },
+    {
+      "fold": "F24",
+      "pair_max_abs_differences": [
+        2.507393798800896,
+        2.234887351232447,
+        1.9790264653450729
+      ]
+    }
+  ],
+  "source_sha256": "4695637f98ab443439ffacef0ff209c2aa79e18539e10b52253ba764e67e1015"
+}
