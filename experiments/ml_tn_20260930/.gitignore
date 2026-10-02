@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+tests/latest_public_validation.json
+data/
+jobs/
+logs/
+transfer/

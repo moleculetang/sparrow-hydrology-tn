@@ -1,0 +1,61 @@
+# error_decomposition_station.csv
+
+完整汇总表按行分片；没有筛选或删除结果。共20772行。每片重复表头，按文件名排序拼接。
+
+- [part_000.csv](part_000.csv)：427行
+- [part_001.csv](part_001.csv)：449行
+- [part_002.csv](part_002.csv)：353行
+- [part_003.csv](part_003.csv)：352行
+- [part_004.csv](part_004.csv)：374行
+- [part_005.csv](part_005.csv)：407行
+- [part_006.csv](part_006.csv)：426行
+- [part_007.csv](part_007.csv)：399行
+- [part_008.csv](part_008.csv)：348行
+- [part_009.csv](part_009.csv)：350行
+- [part_010.csv](part_010.csv)：385行
+- [part_011.csv](part_011.csv)：362行
+- [part_012.csv](part_012.csv)：365行
+- [part_013.csv](part_013.csv)：369行
+- [part_014.csv](part_014.csv)：365行
+- [part_015.csv](part_015.csv)：362行
+- [part_016.csv](part_016.csv)：361行
+- [part_017.csv](part_017.csv)：367行
+- [part_018.csv](part_018.csv)：368行
+- [part_019.csv](part_019.csv)：410行
+- [part_020.csv](part_020.csv)：438行
+- [part_021.csv](part_021.csv)：369行
+- [part_022.csv](part_022.csv)：370行
+- [part_023.csv](part_023.csv)：374行
+- [part_024.csv](part_024.csv)：368行
+- [part_025.csv](part_025.csv)：382行
+- [part_026.csv](part_026.csv)：398行
+- [part_027.csv](part_027.csv)：456行
+- [part_028.csv](part_028.csv)：369行
+- [part_029.csv](part_029.csv)：368行
+- [part_030.csv](part_030.csv)：372行
+- [part_031.csv](part_031.csv)：369行
+- [part_032.csv](part_032.csv)：381行
+- [part_033.csv](part_033.csv)：375行
+- [part_034.csv](part_034.csv)：343行
+- [part_035.csv](part_035.csv)：351行
+- [part_036.csv](part_036.csv)：347行
+- [part_037.csv](part_037.csv)：364行
+- [part_038.csv](part_038.csv)：360行
+- [part_039.csv](part_039.csv)：354行
+- [part_040.csv](part_040.csv)：377行
+- [part_041.csv](part_041.csv)：383行
+- [part_042.csv](part_042.csv)：384行
+- [part_043.csv](part_043.csv)：386行
+- [part_044.csv](part_044.csv)：383行
+- [part_045.csv](part_045.csv)：388行
+- [part_046.csv](part_046.csv)：385行
+- [part_047.csv](part_047.csv)：378行
+- [part_048.csv](part_048.csv)：389行
+- [part_049.csv](part_049.csv)：375行
+- [part_050.csv](part_050.csv)：356行
+- [part_051.csv](part_051.csv)：374行
+- [part_052.csv](part_052.csv)：395行
+- [part_053.csv](part_053.csv)：401行
+- [part_054.csv](part_054.csv)：311行
+
+[行数及来源哈希](manifest.json)。

@@ -1,0 +1,42 @@
+{
+  "original_path": "outputs/expert_review/training_summary.csv",
+  "original_sha256": "35759a49d64af6025f6a8511908e2e8d85c007cf17bbd4b70838653b557b5cb8",
+  "columns": [
+    "job",
+    "task",
+    "period",
+    "kind",
+    "eligible_stations",
+    "total_station_rows",
+    "NSE_median",
+    "RMSE_median",
+    "bias_median",
+    "correlation_median",
+    "amplitude_ratio_median",
+    "month_centered_NSE_median"
+  ],
+  "rows": 2076,
+  "parts": [
+    {
+      "path": "outputs/expert_review/training_summary/part_000.csv",
+      "rows": 701,
+      "sha256": "8fc02ee20619b4b8a7c9dd22396a076129c90553d63476ccd87b251b4a9f23eb"
+    },
+    {
+      "path": "outputs/expert_review/training_summary/part_001.csv",
+      "rows": 696,
+      "sha256": "d7af3ae330a2b45b1413699c695db500159a0621eb5fd929f11eae2cde4df6c2"
+    },
+    {
+      "path": "outputs/expert_review/training_summary/part_002.csv",
+      "rows": 640,
+      "sha256": "59b287dd747badf353581c8a1e289a151d25025ab2d2b24b658bb60fb2db3d25"
+    },
+    {
+      "path": "outputs/expert_review/training_summary/part_003.csv",
+      "rows": 39,
+      "sha256": "90524e4c7e8812783d90e91dd6707633df166f785daa35dddf8c51cbeb61f612"
+    }
+  ],
+  "transformation": "CSV rows and columns preserved; repeat header, UTF-8/LF serialization"
+}

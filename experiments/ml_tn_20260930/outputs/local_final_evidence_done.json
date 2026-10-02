@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "stages": [
+    {
+      "script": "references.py",
+      "exit_code": 0,
+      "elapsed_s": 1.0,
+      "code_sha256": "f582316e502fb7dc716b333405ed25eedf45ba94c4960cea886a718972087f47"
+    },
+    {
+      "script": "freeze_results.py",
+      "exit_code": 0,
+      "elapsed_s": 0.11000000033527613,
+      "code_sha256": "ea1590e1da913e77a6d1ecf8a7de473a9bf446ce4f542be53e07305930326908"
+    },
+    {
+      "script": "repair_constant_HF_means.py",
+      "exit_code": 0,
+      "elapsed_s": 72.43699999991804,
+      "code_sha256": "5ed3265c3ead55aa79300adc0405e8bb27212b4fa4468359aeef8c42beebfc7c"
+    },
+    {
+      "script": "append_historical_comparators.py",
+      "exit_code": 0,
+      "elapsed_s": 14.375,
+      "code_sha256": "e06c5dcc3d22c46d1942d8b98bd6faa40e07e2be8ef0cc363c0e496f85871ed4"
+    },
+    {
+      "script": "training_metrics.py",
+      "exit_code": 0,
+      "elapsed_s": 54.59400000004098,
+      "code_sha256": "e15b9dcc06621262cf8b6cb7bc98c44daba0ea5dabbf1a8267b9da679c4bcdb2"
+    },
+    {
+      "script": "diagnostics.py",
+      "exit_code": 0,
+      "elapsed_s": 51.01599999982864,
+      "code_sha256": "b4981e8bc2a757e4b20c8d1040c3db0700c5137880dc3fcc5a8a0cc54b7fa4cf"
+    },
+    {
+      "script": "independent_review.py",
+      "exit_code": 0,
+      "elapsed_s": 46.765000000130385,
+      "code_sha256": "615d81eaa9d0fccc34d57d21c845efe1e02480c07d2b40ce6b315b7180f88d80"
+    },
+    {
+      "script": "training_seedmeans.py",
+      "exit_code": 0,
+      "elapsed_s": 17.625,
+      "code_sha256": "6f9c84f843035634c1c25bce3a45b284fa2ad8a360ffabfd7db0c8b47e4d3153"
+    },
+    {
+      "script": "expert_tables.py",
+      "exit_code": 0,
+      "elapsed_s": 13.515999999828637,
+      "code_sha256": "408e9378b446c74ecbf67c4031296fbc2c9db5df1623ee6ea005520fdf1c3f8a"
+    },
+    {
+      "script": "audit_effect_metrics.py",
+      "exit_code": 0,
+      "elapsed_s": 14.844000000040978,
+      "code_sha256": "ce778651cef06569b902a59c34bcba0e77b6fe0985abef2e5387df068f88588c"
+    },
+    {
+      "script": "audit_final_protocol.py",
+      "exit_code": 0,
+      "elapsed_s": 5.186999999918044,
+      "code_sha256": "9575d634d6683dae79364070bdb416ac08452e1bfc6dda7bf37aa46fb3174c54"
+    },
+    {
+      "script": "report_draft.py",
+      "exit_code": 0,
+      "elapsed_s": 0.5320000001229346,
+      "code_sha256": "0ba2e616fcb7f0d1506ecc54164a6052b7d72973a782020fbb59762c733349dd"
+    }
+  ],
+  "missing": [],
+  "import_archive_sha256": "4f4232880cfa14167d59bfb9cd680c8630685f7ee4d300a204e29346a8941f36",
+  "completed_utc": "2026-10-01T02:53:08.081192+00:00",
+  "expert_report_status": "draft only; numerical interpretation and signoff still required"
+}

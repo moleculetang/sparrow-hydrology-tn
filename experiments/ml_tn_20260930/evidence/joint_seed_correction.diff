@@ -1,0 +1,19 @@
+--- before/joint.py
++++ after/joint.py
+@@ -89,14 +89,14 @@
+             import xgboost as xgb
+             mat=xgb.DMatrix(x);mat.set_base_margin(np.full(len(x),base))
+             # Use global base_score too so new prediction matrices have the same intercept.
+-            params=dict(max_depth=cfg['depth'],eta=cfg['tree_lr'],min_child_weight=cfg['min_leaf'],subsample=.8,colsample_bytree=cfg['max_features'],lambda_=1,nthread=args.threads,tree_method='hist',base_score=base,objective='reg:squarederror')
++            params=dict(seed=args.seed,max_depth=cfg['depth'],eta=cfg['tree_lr'],min_child_weight=cfg['min_leaf'],subsample=.8,colsample_bytree=cfg['max_features'],lambda_=1,nthread=args.threads,tree_method='hist',base_score=base,objective='reg:squarederror')
+             params.pop('lambda_');params['lambda']=1
+             model=xgb.train(params,mat,num_boost_round=cfg['trees'],obj=lambda raw,dm:obj(raw));model.save_model(folder/'booster.json')
+         else:
+             import lightgbm as lgb
+             # LGB raw-score starts at zero with custom objectives; base offset is explicit.
+             def lob(raw,ds):return obj(raw+base)
+-            model=lgb.train(dict(objective=lob,verbosity=-1,num_threads=args.threads,max_depth=cfg['depth'],num_leaves=min(2**cfg['depth'],127),min_data_in_leaf=cfg['min_leaf'],learning_rate=cfg['tree_lr'],lambda_l2=1),lgb.Dataset(x,label=np.zeros(len(x))),num_boost_round=cfg['trees']);model.save_model(str(folder/'booster.txt'))
++            model=lgb.train(dict(seed=args.seed,objective=lob,verbosity=-1,num_threads=args.threads,max_depth=cfg['depth'],num_leaves=min(2**cfg['depth'],127),min_data_in_leaf=cfg['min_leaf'],learning_rate=cfg['tree_lr'],lambda_l2=1),lgb.Dataset(x,label=np.zeros(len(x))),num_boost_round=cfg['trees']);model.save_model(str(folder/'booster.txt'))
+         def pred(qp):
+             xt=tr.apply(d.raw_rows(qp))
+             return predict_tree(model,xt,'XGBoost') if args.family=='XGBoost' else np.exp(model.predict(xt,raw_score=True)+base)

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "accepted_days": 9716,
+  "unique_readings": 59013,
+  "max_absolute_difference": 0.0,
+  "read_count_exact": true,
+  "duplicate_replication_invariant": true,
+  "coverage": "accepted day support inherited unchanged; daily mean and counts recomputed from eligible TN reads"
+}

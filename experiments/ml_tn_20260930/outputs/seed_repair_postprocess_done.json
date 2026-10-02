@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "stages": [
+    {
+      "script": "evaluate.py",
+      "exit_code": 0,
+      "elapsed_s": 636.0469999997877,
+      "sha256": "3fa9a71bef035e2bdeff405e96c88382274c283fadc6cbf0ad245d4842609849"
+    },
+    {
+      "script": "training_metrics.py",
+      "exit_code": 0,
+      "elapsed_s": 74.59400000004098,
+      "sha256": "e15b9dcc06621262cf8b6cb7bc98c44daba0ea5dabbf1a8267b9da679c4bcdb2"
+    },
+    {
+      "script": "diagnostics.py",
+      "exit_code": 0,
+      "elapsed_s": 53.842999999877065,
+      "sha256": "b4981e8bc2a757e4b20c8d1040c3db0700c5137880dc3fcc5a8a0cc54b7fa4cf"
+    },
+    {
+      "script": "independent_review.py",
+      "exit_code": 0,
+      "elapsed_s": 46.92200000025332,
+      "sha256": "615d81eaa9d0fccc34d57d21c845efe1e02480c07d2b40ce6b315b7180f88d80"
+    },
+    {
+      "script": "training_seedmeans.py",
+      "exit_code": 0,
+      "elapsed_s": 17.734999999869615,
+      "sha256": "6f9c84f843035634c1c25bce3a45b284fa2ad8a360ffabfd7db0c8b47e4d3153"
+    },
+    {
+      "script": "expert_tables.py",
+      "exit_code": 0,
+      "elapsed_s": 24.921000000089407,
+      "sha256": "408e9378b446c74ecbf67c4031296fbc2c9db5df1623ee6ea005520fdf1c3f8a"
+    },
+    {
+      "script": "audit_effect_metrics.py",
+      "exit_code": 0,
+      "elapsed_s": 14.953999999910593,
+      "sha256": "ce778651cef06569b902a59c34bcba0e77b6fe0985abef2e5387df068f88588c"
+    },
+    {
+      "script": "audit_final_protocol.py",
+      "exit_code": 0,
+      "elapsed_s": 5.0469999997876585,
+      "sha256": "9575d634d6683dae79364070bdb416ac08452e1bfc6dda7bf37aa46fb3174c54"
+    },
+    {
+      "script": "diagnose_amplitude.py",
+      "exit_code": 0,
+      "elapsed_s": 246.875,
+      "sha256": "95e03c1fde8dee770f764e8216bbb3afe79b6566229ad137a647207023757fab"
+    },
+    {
+      "script": "author_final_report.py",
+      "exit_code": 0,
+      "recovered_from": {
+        "script": "author_final_report.py",
+        "exit_code": 1,
+        "elapsed_s": 1.0,
+        "sha256": "0747a2ed780c473e320e110b607f3e4f2e9cd5f85760a79310f45b918aab4df6"
+      },
+      "sha256": "a0ad2063eba60531ab254bece5844aed9cbf4f7a7d11b419e87bc0c23c884bb9",
+      "log": "logs/seed_repair_author_final_report_retry.log"
+    }
+  ],
+  "scientific_changes": "registered joint-tree seed correction only; all formal metrics rebuilt; report-only render failure recovered",
+  "nested_lease_handoff": "evidence/nested_postprocess_lease_handoff.json"
+}

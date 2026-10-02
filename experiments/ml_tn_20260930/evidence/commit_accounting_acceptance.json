@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "native_private_commit_distinguished_from_resident_bytes",
+      "passed": true
+    },
+    {
+      "check": "native_peak_above_reserved_keeps_35_percent_margin",
+      "passed": true
+    },
+    {
+      "check": "unknown_commit_never_subtracted",
+      "passed": true
+    },
+    {
+      "check": "reused_pid_no_commit_credit",
+      "passed": true
+    }
+  ],
+  "measurements": {
+    "before": {
+      "process": {
+        "rss": 21487616,
+        "private_commit": 11567104,
+        "peak_commit": 11567104
+      },
+      "system": {
+        "total": 68490244096,
+        "used": 39046348800,
+        "commit_total": 72785211392,
+        "commit_used": 52744814592
+      }
+    },
+    "reserved": {
+      "process": {
+        "rss": 21491712,
+        "private_commit": 11567104,
+        "peak_commit": 11567104
+      },
+      "system": {
+        "total": 68490244096,
+        "used": 39046676480,
+        "commit_total": 72785211392,
+        "commit_used": 52744814592
+      }
+    },
+    "committed_untouched": {
+      "process": {
+        "rss": 21491712,
+        "private_commit": 78807040,
+        "peak_commit": 78807040
+      },
+      "system": {
+        "total": 68490244096,
+        "used": 39047266304,
+        "commit_total": 72785211392,
+        "commit_used": 52811923456
+      }
+    },
+    "touched": {
+      "process": {
+        "rss": 88604672,
+        "private_commit": 78807040,
+        "peak_commit": 78807040
+      },
+      "system": {
+        "total": 68490244096,
+        "used": 39106338816,
+        "commit_total": 72785211392,
+        "commit_used": 52810354688
+      }
+    },
+    "freed": {
+      "process": {
+        "rss": 21499904,
+        "private_commit": 11567104,
+        "peak_commit": 78807040
+      },
+      "system": {
+        "total": 68490244096,
+        "used": 39049998336,
+        "commit_total": 72785211392,
+        "commit_used": 52743245824
+      }
+    }
+  },
+  "candidate_sha256": "830ad7856df31a5f192a4914c752202f62ec8a2ad16db7341fa3154c0837c394",
+  "linux_commit_rule_changed": false,
+  "live_reservations_changed": false
+}

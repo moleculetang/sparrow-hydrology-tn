@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "status": "complete",
+  "archive": "transfer\\machine_learning_results_final.tar.gz",
+  "bytes": 2065454293,
+  "sha256": "5f2261ce2feb81cb5367f3264663d2ad129b69c0f7999bfbb74ecc3b0a9c56ce",
+  "verified_archive_files": 17296,
+  "all_manifest_entries_read_back": true,
+  "manifest_sha256": "4d5a8e8765d2aa20bb7a67ea7114a91ca2d4caca3fa3fb7f0017f7addf73a42f",
+  "reports": {
+    "reports/专家机器学习与全域验证报告.md": "4079dfa47d9fc8880b129d3f161ded511387094a9d748dbc5cbebd934333bbda",
+    "reports/实际方法与偏离.md": "607e2e7b9f59ee7b98c30a0b6d1b0578927d356219f4ac41de322985ede3bf97",
+    "reports/模型路径与观测支持说明.md": "ec7ee9c086df97bacc22156c3114bb5581223cd0c9ee16061e4cfb6ac3c5e4eb",
+    "reports/振幅控制因子数值诊断.md": "41cf7ecb99692a253cf2827bb59518b1e559ec77f1641f6ef5237a93fc3569f3"
+  },
+  "completed_utc": "2026-10-01T04:19:47.379637+00:00",
+  "limitation": "private experiment; no release, optimality or universal predictive-skill certification"
+}

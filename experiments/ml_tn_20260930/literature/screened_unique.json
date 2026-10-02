@@ -1,0 +1,1324 @@
+[
+  {
+    "doi": "10.21203/rs.3.rs-6858853/v1",
+    "title": "Robust LSTM-Based River Stage Prediction Under Rainfall Data Incompleteness",
+    "abstract": "Abstract \n         Accurate and timely prediction of river stage levels during typhoon events is critical for effective flood risk management and emergency response. This study develops a data-driven forecasting model utilizing a Long Short-Term Memory (LSTM) network to simulate the rainfall-to-water-level relationship at the Lanyang Bridge in Yilan County, Taiwan. The model leverages historical hydrometeorological data acquired from a network of rainfall observation stations and a water-level gauge, encompassing ten major typhoon events recorded between 2014 and 2022. A cross-correlation analysis was conducted to identify optimal temporal lags between rainfall and river stage response, which informed data preprocessing for the LSTM model. Notably, the developed forecasting framework does not require rainfall forecasts, relying instead on recent observed rainfall and current water level, thereby mitigating errors introduced by precipitation prediction. To address situations of missing data frequently encountered during extreme events, a masking technique was incorporated into the model, allowing the model to handle incomplete input sequences robustly. The resulting model demonstrates strong potential for short-term river stage level forecasting in data-constrained and rapidly changing conditions.",
+    "year": 2025,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.21203/rs.3.rs-6858853/v1"
+  },
+  {
+    "doi": "10.2139/ssrn.4863667",
+    "title": "Lstm-Based Deep Learning Method for Daily Streamflow Prediction in Neuse River Basin, Nc, USA",
+    "abstract": "",
+    "year": 2024,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.2139/ssrn.4863667"
+  },
+  {
+    "doi": "10.22541/essoar.175976168.86476281/v1",
+    "title": "Daily Drought Prediction in the Huaihe River Basin Using VMD-informer-LSTM",
+    "abstract": "Accurate drought prediction is a key challenge in water resource\nmanagement and agricultural planning. This study proposes a novel\ndrought prediction framework that integrates Variational Mode\nDecomposition (VMD), Informer, and Long Short-Term Memory (LSTM)\nnetworks to enhance hydrological drought forecasting in the Huaihe River\nBasin, China. The VMD-Informer-LSTM model decomposes complex\nnon-stationary drought sequences into multi-scale components,\neffectively extracting long-term trends and short-term fluctuations.\nResults show that the model outperforms LSTM, Transformer-LSTM, and\nInformer-LSTM, improving R², RMSE, MAE, and MAPE by 28.4%, 46.2%,\n46.5%, and 50.8%, respectively, over the baseline LSTM. When the\nprediction period is 30 days, the VMD-Informer-LSTM achieves the highest\nprediction accuracy. During the 120–180 day prediction period, the\nprediction accuracy of all models declines, with drought intensity\ngenerally underestimated. Misclassifications are mainly concentrated in\nthe transition zones between humid and semi-humid regions, with higher\nerror frequency in semi-humid areas. Prediction accuracy is highest in\nthe upstream and downstream regions, followed by the Yishuisi River\nBasin, while the midstream region performs poorly due to human\ninterference. Shapley Additive Explanations (SHAP) further reveal that\nprecipitation and temperature are the dominant meteorological drivers,\njointly accounting for nearly half of the model’s predictive power.\nThese results confirm that the VMD-Informer-LSTM provides the most\naccurate predictions among the tested models, offering valuable support\nfor drought risk assessment and water resource management in the Huaihe\nRiver Basin and other similar regions.",
+    "year": 2025,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.22541/essoar.175976168.86476281/v1"
+  },
+  {
+    "doi": "10.2139/ssrn.4890368",
+    "title": "Eklt: Kolmogorov-Arnold Attention-Driven Lstm with Transformer Model for River Water Level Prediction",
+    "abstract": "",
+    "year": 2024,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.2139/ssrn.4890368"
+  },
+  {
+    "doi": "10.2139/ssrn.4907251",
+    "title": "Lstm-Based Deep Learning Method for Daily Streamflow Prediction: A Case Study in Neuse River Basin, Nc, USA",
+    "abstract": "",
+    "year": 2024,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.2139/ssrn.4907251"
+  },
+  {
+    "doi": "10.22541/au.177031309.99458065/v1",
+    "title": "The SWOT-Driven LSTM Model for Streamflow Prediction in River-Lake Continuums",
+    "abstract": "Reservoir and lake operations play a crucial role in balancing water\nresources for human use, yet they pose significant challenges for\nhydrological prediction due to their complex and nonlinear impacts on\nstreamflow. The Surface Water and Ocean Topography (SWOT) mission offers\nnew opportunities to improve streamflow estimation. Here, we evaluate a\nSWOT-driven long short-term memory (LSTM) model at three lakes using\nsynthetic SWOT observations and compare its performance with a\nmeteorologically forced model. Results show that the LSTM model robustly\ncaptures inflow and outflow dynamics, achieving median Nash–Sutcliffe\nefficiency (NSE) values between 0.94 and 0.96 across training periods of\n30–100 weeks. The SWOT-driven LSTM consistently outperforms the\nmeteorological baseline, demonstrating strong adaptability under limited\nobservation scenarios. These findings highlight the potential of\nintegrating SWOT observations with deep learning to enhance streamflow\nprediction and improve hydrological understanding of regulated\nriver–lake systems.",
+    "year": 2026,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.22541/au.177031309.99458065/v1"
+  },
+  {
+    "doi": "10.7717/peerj-cs.2048/table-4",
+    "title": "Table 4: Prediction results of LSTM, PSO-LSTM and CAPSO-LSTM.",
+    "abstract": "",
+    "year": null,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.7717/peerj-cs.2048/table-4"
+  },
+  {
+    "doi": "10.2139/ssrn.4103055",
+    "title": "Comparative Analysis of Water Quality Prediction Based on Lstm in Yangtze River Basin and Haihe River Basin, China",
+    "abstract": "",
+    "year": 2022,
+    "journal": "SSRN Electronic Journal",
+    "source": "Crossref",
+    "url": "https://doi.org/10.2139/ssrn.4103055"
+  },
+  {
+    "doi": "10.1109/mpcon66082.2025.11256692",
+    "title": "Stream Flow Prediction Using Ensemble Learning and LSTM Techniques in Local River",
+    "abstract": "",
+    "year": 2025,
+    "journal": "2025 IEEE Madhya Pradesh Section Conference (MPCON)",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1109/mpcon66082.2025.11256692"
+  },
+  {
+    "doi": "10.1109/ccdc.2019.8832885",
+    "title": "River Water Quality Parameters Prediction Method Based on LSTM-RNN Model",
+    "abstract": "",
+    "year": 2019,
+    "journal": "2019 Chinese Control And Decision Conference (CCDC)",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1109/ccdc.2019.8832885"
+  },
+  {
+    "doi": "10.54097/aesk0y28",
+    "title": "Prediction of Runoff in Huayuankou of the Yellow River based on Autoformer-LSTM",
+    "abstract": "To effectively extract information features of runoff time series and improve the accuracy of river runoff prediction methods. we integrated Autoformer with Long Short-Term Memory (LSTM) to develop an Autoformer-LSTM runoff prediction model. We simulated and validated the model using daily runoff, precipitation, and average water level data from January 1, 2002, to December 31, 2022, at Huayuankou Hydrological Station, a key station in the lower Yellow River Basin. And select Autoformer model, Transformer model, and Informer model for comparative prediction experiments. The results show that the Autoformer-LSTM and Autoformer models outperformed the Transformer and Informer models in predictive accuracy. Furthermore, compared to the Autoformer model, the Autoformer-LSTM model reduced Mean Absolute Error (MAE), Mean Squared Error (MSE), and Root Mean Squared Error (RMSE) by 13.1%, 78.7%, and 53.9%. This prediction method can fully explore the inherent laws of hydrological time series data, effectively utilize the temporal nature of hydrological information, and improve prediction accuracy.",
+    "year": 2024,
+    "journal": "Frontiers in Computing and Intelligent Systems",
+    "source": "Crossref",
+    "url": "https://doi.org/10.54097/aesk0y28"
+  },
+  {
+    "doi": "10.7717/peerjcs.2215/fig-8",
+    "title": "Figure 8: Comparison between prediction results of KCS-LSTM and KCS+LSTM.",
+    "abstract": "",
+    "year": null,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.7717/peerjcs.2215/fig-8"
+  },
+  {
+    "doi": "10.7717/peerjcs.1114/fig-15",
+    "title": "Figure 15: Prediction curve of (A) IBCO-LSTM and (B) BCO-LSTM.",
+    "abstract": "",
+    "year": null,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.7717/peerjcs.1114/fig-15"
+  },
+  {
+    "doi": "10.5194/egusphere-2025-5645",
+    "title": "Daily Drought Prediction in the Huaihe River Basin Using VMD-informer-LSTM",
+    "abstract": "Abstract. Accurate drought prediction is a key challenge in water resource management and agricultural planning. This study proposes a novel drought prediction framework that integrates Variational Mode Decomposition (VMD), Informer, and Long Short-Term Memory (LSTM) networks to enhance hydrological drought forecasting in the Huaihe River Basin, China. The VMD-Informer-LSTM model decomposes complex non-stationary drought sequences into multi-scale components, effectively extracting long-term trends and short-term fluctuations. Results show that the model outperforms LSTM, Transformer-LSTM, and Informer-LSTM, improving R², RMSE, MAE, and MAPE by 28.4 %, 46.2 %, 46.5 %, and 50.8 %, respectively, over the baseline LSTM. When the prediction period is 30 days, the VMD-Informer-LSTM achieves the highest prediction accuracy. During the 120–180 day prediction period, the prediction accuracy of all models declines, with drought intensity generally underestimated. Misclassifications are mainly concentrated in the transition zones between humid and semi-humid regions, with higher error frequency in semi-humid areas. Prediction accuracy is highest in the upstream and downstream regions, followed by the Yishuisi River Basin, while the midstream region performs poorly due to human interference. Shapley Additive Explanations (SHAP) further reveal that precipitation and temperature are the dominant meteorological drivers, jointly accounting for nearly half of the model’s predictive power. These results confirm that the VMD-Informer-LSTM provides the most accurate predictions among the tested models, offering valuable support for drought risk assessment and water resource management in the Huaihe River Basin and other similar regions.",
+    "year": 2025,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.5194/egusphere-2025-5645"
+  },
+  {
+    "doi": "10.54097/bzqp1q29",
+    "title": "Water Quality Prediction of Liuxi River based on ICEEMDAN-WOA-LSTM Model",
+    "abstract": "Water quality prediction is a crucial task for ensuring the safety and sustainability of water sources. It supports water resource managers in making informed decisions and taking appropriate actions to prevent water pollution and maintain water quality standards. Considering the non-linearity, latency, and complexity of water quality data, this study proposes a combined model for water quality prediction based on Improved Complete Ensemble Empirical Mode Decomposition with Adaptive Noise (ICEEMDAN) and Long Short-Term Memory (LSTM) networks. The model decomposes and reconstructs variables from time series data to achieve water quality predictions. Comparative experiments with other network models demonstrate superior performance of the proposed model.",
+    "year": 2024,
+    "journal": "Highlights in Science, Engineering and Technology",
+    "source": "Crossref",
+    "url": "https://doi.org/10.54097/bzqp1q29"
+  },
+  {
+    "doi": "10.5220/0012982600004601",
+    "title": "Stock Price Prediction Based on CNN, LSTM and CNN- LSTM Model",
+    "abstract": "",
+    "year": 2024,
+    "journal": "Proceedings of the 1st International Conference on Innovations in Applied Mathematics, Physics and Astronomy",
+    "source": "Crossref",
+    "url": "https://doi.org/10.5220/0012982600004601"
+  },
+  {
+    "doi": "10.58928/ku25.16318",
+    "title": "Machine Learning-Based Prediction of River Water Quality Using LSTM and RF Models with PCA and Stepwise Regression for Dimensionality Reduction: A Case Study of the Maroon River Basin",
+    "abstract": "",
+    "year": 2025,
+    "journal": "Kirkuk University Journal For Agricultural Sciences",
+    "source": "Crossref",
+    "url": "https://doi.org/10.58928/ku25.16318"
+  },
+  {
+    "doi": "10.52783/jisem.v10i44s.8600",
+    "title": "Enhancing River Water Quality Prediction: A Hybrid Approach of Deep Autoregression and Bidirectional LSTM Networks",
+    "abstract": "Time series forecasting models are essential for the prediction of river water quality, which is an important part of maintaining environmental sustainability and protecting public health. However, traditional prediction methods often fail to capture the complex temporal dependencies and non-linear relationships that are inherent to river water quality information. An innovative approach is proposed here, to improve river water quality prediction by combining deep autoregression and bidirectional LSTM networks. The deep autoregression model takes advantage of the inherent temporal correlations that are present in the river water quality data and integrates autoregressive features that encapsulate historical information about the target variable. The BiLSTM architecture lets the model to understand from the historical and future contexts, allowing a holistic view of the temporal dynamics that affect water quality in the river basin. We also introduce feature augmentation technique that improves the proposed model’s ability to capture the complex relationships and patterns in the data. By enriching the model's input features with domain specific information, including meteorological data and hydrological parameters as well as land use characteristics that are relevant to the river basin. By incorporating domain-specific information through feature augmentation, the model is poised to provide more accurate and insightful predictions, thereby aiding in effective water resource management and environmental conservation efforts. The error rate has been approximately reduced by 42.6% by using the DAFA-BiLSTM model, when compared to the conventional LSTM models.",
+    "year": 2025,
+    "journal": "Journal of Information Systems Engineering and Management",
+    "source": "Crossref",
+    "url": "https://doi.org/10.52783/jisem.v10i44s.8600"
+  },
+  {
+    "doi": "10.1109/ies63037.2024.10665796",
+    "title": "A Comparative Study of GRU and LSTM Time-Series Forecasting for Precise River Dam Hydrodynamic Prediction",
+    "abstract": "",
+    "year": 2024,
+    "journal": "2024 International Electronics Symposium (IES)",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1109/ies63037.2024.10665796"
+  },
+  {
+    "doi": "10.7717/peerj-cs.3471/fig-8",
+    "title": "Figure 8: The LSTM prediction capability.",
+    "abstract": "",
+    "year": null,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.7717/peerj-cs.3471/fig-8"
+  },
+  {
+    "doi": "10.1021/acsestwater.5c01391.s001",
+    "title": "Process-Driven Cross-Factor Integration of SWAT and Interpretable Machine Learning for Enhancing Riverine Total Nitrogen Prediction",
+    "abstract": "",
+    "year": null,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1021/acsestwater.5c01391.s001"
+  },
+  {
+    "doi": "10.2139/ssrn.6904527",
+    "title": "Differential Hydrological Responses of Turbidity, Total Phosphorus and Total Nitrogen in a Complex River Confluence Revealed by Remote Sensing and Machine Learning",
+    "abstract": "River confluences are hydrologically dynamic environments where contaminant transport and water quality exhibit pronounced spatial and temporal variability. Taking the Chongqing section of the Jialing River and its confluence with the Yangtze River as the study area, this study integrated Sentinel-2 imagery with in-situ measurements of turbidity (NTU), total phosphorus (TP), and total nitrogen (TN) to construct machine learning-based inversion models for water quality assessment. Five machine learning algorithms, including Random Forest (RF), Extreme Gradient Boosting (XGB), Categorical Boosting (CatBoost), Convolutional Neural Network (CNN), and Multilayer Perceptron (MLP), were evaluated to identify the optimal inversion approach. The results showed that XGB achieved the highest accuracy for NTU and TN inversion (R² = 0.915 and 0.718, respectively), whereas RF performed best for TP (R² = 0.855).Pixel-level inversion from 2021 to May 2025 revealed pronounced spatiotemporal heterogeneity in water quality across the river confluence system. Across hydrological stages from low-flow to high-flow conditions, NTU and TP increased by 938% and 196%, respectively, whereas TN increased by only 9%. These contrasting responses indicate markedly different hydrological sensitivities between particulate-associated constituents (NTU and TP) and dissolved constituents (TN), highlighting the important role of hydrological variability in shaping contaminant dynamics within the confluence zone. By integrating remote sensing observations with machine learning techniques, this study provides a robust framework for large-scale water quality assessment and improves the understanding of hydrologically driven contaminant dynamics in complex river confluence systems.",
+    "year": 2026,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.2139/ssrn.6904527"
+  },
+  {
+    "doi": "10.21203/rs.3.rs-2952425/v1",
+    "title": "Prediction of total soil nitrogen variations using three machine learning approaches and remote sensing data",
+    "abstract": "Abstract \n         The fluctuation of total soil nitrogen (TSN) levels, whether it be an excessive increase or decrease, can result in microbial contamination, decreased vegetation coverage, and reduced agricultural product yield. However, analyzing nitrogen levels in a laboratory setting can be a costly and time-consuming process when done on a large scale. As a solution, remote sensing technology can be utilized to address this issue. In this research, the data capabilities of Landsat-9 and Sentinel-1 satellites and their integration along, with the use of support vector machine (SVM), boosted regression tree (BRT), and random forest (RF) algorithms, were evaluated in the zoning of TSN values in the soil of paddy fields in northern Iran. Several variables were used that had the potential to predict TSN values. TSN estimation accuracy was not achieved with the SVM algorithm. However, the BRT and RF algorithms were able to monitor TSN changes, with the BRT performing better by accurately capturing 58% of changes due to its higher R 2  value (0.58) and lower RMSE (0.25) and MAE (0.19) values. LULC maps and BC-3 band data variables play a key role in producing the TSN map. Hence, utilizing SAR data in conjunction with machine learning algorithms is a viable recommendation for monitoring soil nitrogen levels, particularly in regions with high rainfall where the sky is frequently overcast with clouds and fog. SAR data, with the biggest share (31%), was the most important variable in the BRT algorithm.",
+    "year": 2023,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.21203/rs.3.rs-2952425/v1"
+  },
+  {
+    "doi": "10.3390/w17081131",
+    "title": "High-Precision Prediction of Total Nitrogen Based on Distance Correlation and Machine Learning Models—A Case Study of Dongjiang River, China",
+    "abstract": "Excessive total nitrogen (TN) in water bodies leads to eutrophication, algal blooms, and hypoxia, which pose significant risks to aquatic ecosystems and human health. Accurate real-time TN prediction is crucial for effective water quality management. This study presents an innovative approach that combines the distance correlation coefficient (DCC) for feature selection with a coupled Attention-Convolutional Neural Network-Bidirectional Long Short-Term Memory (At-CBiLSTM) model to predict TN concentrations in the Dongjiang River in China. A dataset of 28,922 time-series data points was collected from seven sampling sites along the Dongjiang River, spanning from November 2020 to February 2023. The DCC method identified conductivity, Permanganate Index (CODMn), and total phosphorus as the most significant predictors for TN levels. The At-CBiLSTM model, optimized with a time step of three, outperformed other models, including standalone Long Short-Term Memory (LSTM), Bi-directional LSTM (Bi-LSTM), Convolutional Neural Network LSTM (CNN-LSTM), and Attention-LSTM variants, achieving excellent performance with the following metrics: mean absolute error (MAE) = 0.032, mean squared error (MSE) = 0.005, mean absolute percentage error (MAPE) = 0.218, and root mean squared error (RMSE) = 0.045. Importantly, increasing the number of input features beyond three variables led to a decline in model accuracy, underscoring the importance of DCC-driven feature selection. The results highlight that combining DCC with deep learning models, particularly At-CBiLSTM, effectively captures nonlinear temporal dependencies and improves prediction accuracy. This approach provides a solid foundation for real-time water quality monitoring and can inform targeted pollution control strategies in river ecosystems.",
+    "year": 2025,
+    "journal": "Water",
+    "source": "Crossref",
+    "url": "https://doi.org/10.3390/w17081131"
+  },
+  {
+    "doi": "10.1201/9781003441175-21",
+    "title": "Holistic Approach for Prediction of Total Nitrogen Based on Machine-Learning Techniques",
+    "abstract": "",
+    "year": 2024,
+    "journal": "Agri-Tech Approaches for Nutrients and Irrigation Water Management",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1201/9781003441175-21"
+  },
+  {
+    "doi": "10.1021/acs.jpclett.5c03557.s002",
+    "title": "Machine Learning Prediction of Two-Dimensional Polymerization of Nitrogen in FeNx",
+    "abstract": "",
+    "year": null,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1021/acs.jpclett.5c03557.s002"
+  },
+  {
+    "doi": "10.1021/acs.jpclett.5c03557.s001",
+    "title": "Machine Learning Prediction of Two-Dimensional Polymerization of Nitrogen in FeNx",
+    "abstract": "",
+    "year": null,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1021/acs.jpclett.5c03557.s001"
+  },
+  {
+    "doi": "10.3390/su141911998",
+    "title": "Spatial Prediction of Total Nitrogen in Soil Surface Layer Based on Machine Learning",
+    "abstract": "In order to satisfy the basic requirements of sustainable agricultural development, it is important to understand the spatial distribution characteristics of soil total nitrogen (TN) content to better guide accurate fertilization to increase grain yield. To this end, this paper constructs three inversion models of partial least squares regression (PLSR), back propagation neural network (BPNN) and support vector machines (SVM) with remote sensing data to predict the TN content in Datong County, Xining City, Qinghai Province, China. The results showed that the average TN content was 1.864 g/kg, and the coefficient of variation (CV) was 30.596%. The prediction accuracy of the SVM model (R2 = 0.676, RMSE = 0.296) among the three inversion models was higher than that of the BPNN model (R2 = 0.560, RMSE = 0.305) and the PLSR model (R2 = 0.374, RMSE = 0.334). The model with the highest accuracy predicted the spatial distribution of TN, and TN content showed a spatial distribution trend which was high in the northwest and low in the southeast, and gradually decreased from north to south. This study provides reference basis and support for soil fertility evaluations and sustainable agricultural development.",
+    "year": 2022,
+    "journal": "Sustainability",
+    "source": "Crossref",
+    "url": "https://doi.org/10.3390/su141911998"
+  },
+  {
+    "doi": "10.1039/d2va00285j",
+    "title": "Prediction of total organic carbon and\n                    <i>E. coli</i>\n                    in rivers within the Milwaukee River basin using machine learning methods",
+    "abstract": "Ensemble-hybrid ML models can explain and predict the variability in water quality parameters and living microorganism behavior in natural streams with satisfactory prediction accuracies based on specific physicochemical parameters.",
+    "year": 2023,
+    "journal": "Environmental Science: Advances",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1039/d2va00285j"
+  },
+  {
+    "doi": "10.1002/cjce.24640/v2/review3",
+    "title": "Review for \"Prediction of Critical Total Drawdown in Sand Production from Gas Wells: Machine Learning Approach\"",
+    "abstract": "",
+    "year": 2022,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1002/cjce.24640/v2/review3"
+  },
+  {
+    "doi": "10.1002/cjce.24640/v1/review4",
+    "title": "Review for \"Prediction of Critical Total Drawdown in Sand Production from Gas Wells: Machine Learning Approach\"",
+    "abstract": "",
+    "year": 2022,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1002/cjce.24640/v1/review4"
+  },
+  {
+    "doi": "10.1002/cjce.24640/v1/review2",
+    "title": "Review for \"Prediction of Critical Total Drawdown in Sand Production from Gas Wells: Machine Learning Approach\"",
+    "abstract": "",
+    "year": 2022,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1002/cjce.24640/v1/review2"
+  },
+  {
+    "doi": "10.1002/cjce.24640/v2/review2",
+    "title": "Review for \"Prediction of Critical Total Drawdown in Sand Production from Gas Wells: Machine Learning Approach\"",
+    "abstract": "",
+    "year": 2022,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1002/cjce.24640/v2/review2"
+  },
+  {
+    "doi": "10.1021/acsestwater.6c00008.s001",
+    "title": "STL-Driven Feature Engineering for Enhanced Machine Learning in River Water Quality Prediction",
+    "abstract": "",
+    "year": null,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1021/acsestwater.6c00008.s001"
+  },
+  {
+    "doi": "10.1038/s41598-024-73761-6",
+    "title": "Prediction of soil organic carbon and total nitrogen affected by mine using Vis–NIR spectroscopy coupled with machine learning algorithms in calcareous soils",
+    "abstract": "",
+    "year": 2024,
+    "journal": "Scientific Reports",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1038/s41598-024-73761-6"
+  },
+  {
+    "doi": "10.5194/egusphere-egu25-5576",
+    "title": "Advancing River Water Level Prediction Using Hybrid and Ensemble Machine Learning Models",
+    "abstract": "Accurately predicting river water levels is essential for effective water resource management and reducing flood risks. Traditional hydrological models often struggle to capture the complex, nonlinear dynamics of river systems. In this study, we explore machine learning techniques to enhance water level predictions. Specifically, we focus on hybrid and ensemble models that combine the strengths of various algorithms to improve both accuracy and reliability. Our approach integrates methods such as Sequential Minimal Optimization for Regression (SMOreg), Rep-Tree, and Decision Table (DT) to predict water levels in the Rhine River. By leveraging hybrid models, we aim to uncover patterns in hydrological data that traditional methods may miss, leading to more precise predictions. The models were trained and validated using 10 years of historical data from the Worms station, incorporating meteorological and hydrological variables as inputs. This study demonstrates that hybrid and ensemble machine learning models offer a robust and reliable solution for predicting river water levels. It underscores the potential of advanced data-driven approaches to support sustainable water resource management and mitigate the impacts of flooding.",
+    "year": 2025,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.5194/egusphere-egu25-5576"
+  },
+  {
+    "doi": "10.5194/egusphere-egu22-8223",
+    "title": "The role of livestock in nitrogen pollution of large river basins: A machine learning-based assessment",
+    "abstract": "&amp;lt;p&amp;gt;Livestock are known to be one of the leading sources of nitrogen and other organic pollutant contents in surface waters. In response to growing demand for animal-source foods, livestock production has shifted into more high-input systems, accompanied by increased fertilizer and animal manure application rates to produce feed, which has resulted in large losses of nitrogen. The effects of nitrogen contamination of water bodies on human and ecosystem health are not limited and localized but have large-scale implications and are rapidly becoming widespread. However, current approaches to estimate the changes in stream water quality often fail to explicitly account for livestock activities across large spatial scales. To overcome this challenge, we adopted a data-driven approach and developed a spatio-temporal water quality model. Our model is based on a popular supervised machine learning technique, known as random forests, that can efficiently handle large, heterogeneous geo-environmental datasets. The model was trained using several site-level measurements and a large set of gridded environmental covariates to predict monthly nitrogen concentrations across the world. We then performed variable importance analysis on the proposed model to identify influential drivers of nitrogen variability at global scale. Our results confirmed the prominent role of livestock population and nitrogen fertilizer use in pollution of the river systems. Finally, we quantified how much livestock has contributed to nitrogen pollution in 115 major river basins of the world. We found that during 1992-2010 the average increase in nitrogen concentrations due to livestock was about 15% globally. Importantly, model results also indicate that at some large basins livestock population is responsible for more than 50% of raise in the levels of nitrogen. These regions point to the global livestock &amp;amp;#8216;&amp;amp;#8216;hot spots&amp;amp;#8217;&amp;amp;#8217; where high nitrogen loading to waterways may be expected. The results and insights gained in this study can have important implications for better management of livestock faming systems and pollution control policies.&amp;lt;/p&amp;gt;",
+    "year": 2022,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.5194/egusphere-egu22-8223"
+  },
+  {
+    "doi": "10.3974/geodp.2025.03.08",
+    "title": "Integrated Remote Sensing and Machine Learning Dataset of Soil Total Nitrogen in Taiyuan City (2020)",
+    "abstract": "",
+    "year": null,
+    "journal": "GCdataPR",
+    "source": "Crossref",
+    "url": "https://doi.org/10.3974/geodp.2025.03.08"
+  },
+  {
+    "doi": "10.5194/egusphere-egu25-9125",
+    "title": "Modelling Total Organic Nitrogen Concentrations in Danish Streams using Machine Learning",
+    "abstract": "Total organic nitrogen (TON) constitutes almost 20% of the total nitrogen (TN) riverine loadings to Danish coastal waters. Thus, knowledge about the TON concentrations in streams and its spatial variation is essential to accurately assess the importance of TON for TN loadings to coastal waters and thereby achieving a more precise basis for calculation of the sources of TON in catchments.We used environmental monitoring data from 390 stream stations across Denmark for the period 2018-2021to calculate indirectly measured annual and seasonal average TON concentrations (~1,500 samples) along with a wide range of predictor variables. TON samples showed a mean annual TON concentration in Danish streams amounting to 0.70 mg L-1 with a standard deviation of 0.31 mg L-1 and revealed a relatively high spatial variability.We trained a machine learning model to learn spatial and temporal patterns in our TON data set for prediction of spatially distributed annual and seasonal average TON concentrations in Danish streams in ungauged basins. Furthermore, we utilized quantile regression to estimate the uncertainty on model predictions, and we utilized quantile regression in combination with the Shapley additive explanations (SHAP) approach to investigate how the importance and influence of predictor variables vary across TON&amp;#8217;s entire distribution.The annual TON concentration is modelled with a root-mean-squared error of 0.20 mg L-1. The new national annual average TON concentration model is largely driven by the mean elevation (negative), the percentage of agricultural land (positive), the percentage of tile drained areas (positive), and the percentage of lakes (positive).The predicted annual average TON concentrations were generally higher than the measured average annual TON concentrations, with an overall mean of 0.84 mg L-1, probably because catchments in the training data generally had higher mean elevations (DEM) than the prediction catchments as many ungauged catchments are located near the coastThe developed model and national TON maps contribute to our understanding of annual TON concentrations in streams supporting national-scale land-use and water management.",
+    "year": 2025,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.5194/egusphere-egu25-9125"
+  },
+  {
+    "doi": "10.5194/egusphere-egu26-14851",
+    "title": "Nationwide Modeling of River Ammonia-Nitrogen Concentrations in Taiwan Using Machine Learning ",
+    "abstract": "Decades of river water quality monitoring in Taiwan have revealed a clear trend of deterioration, with ammonia-nitrogen (NH₃–N) concentrations at several monitoring stations frequently exceeding the regulatory thresholds established by the Ministry of Environment. This degradation arises from the combined influence of natural biogeochemical processes and diverse anthropogenic pressures. Accurately modeling the spatial variability of river water quality is therefore both challenging and essential for protecting riverine ecosystems and public health. In recent years, data-driven machine learning (ML) approaches have demonstrated strong capability in capturing complex, nonlinear relationships in both surface and subsurface water systems. In this study, we develop a predictive model for riverine NH₃–N concentrations using an artificial neural network (ANN) trained on an extensive suite of multivariate datasets compiled across multiple government ministries. Model performance is rigorously evaluated through three-fold cross-validation, confirming that the ANN effectively captures the primary spatiotemporal variability of NH₃–N and provides reliable predictive accuracy. To further interpret the model, SHAP analysis is conducted to identify key predictors. The results show that average precipitation in November, the extent of land undergoing human modification, the density of food-product and animal-feed manufacturing activities, and the forest land-use group are among the most influential drivers of NH₃–N concentrations. Identifying such dominant variables is crucial for guiding evidence-based river water quality management and for formulating targeted pollution mitigation strategies.",
+    "year": 2026,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.5194/egusphere-egu26-14851"
+  },
+  {
+    "doi": "10.3390/w17192872",
+    "title": "Spatial–Temporal Variation and Risk Assessment of Water Quality",
+    "abstract": "Water is a fundamental resource for ecosystem health and sustainable societal development [...]",
+    "year": 2025,
+    "journal": "Water",
+    "source": "Crossref",
+    "url": "https://doi.org/10.3390/w17192872"
+  },
+  {
+    "doi": "10.7717/peerj.19929/supp-7",
+    "title": "Supplemental Information 7: Spatial and temporal water quality parameters in Kenyir reservoir, Terengganu River and Estuary",
+    "abstract": "",
+    "year": null,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.7717/peerj.19929/supp-7"
+  },
+  {
+    "doi": "10.54499/covid/bd/152137/2021",
+    "title": "",
+    "abstract": "",
+    "year": null,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.54499/covid/bd/152137/2021"
+  },
+  {
+    "doi": "10.53846/goediss-7048",
+    "title": "Chemical water quality in Selenge River Basin in Mongolia: spatial-temporal patterns and land use influence",
+    "abstract": "",
+    "year": null,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.53846/goediss-7048"
+  },
+  {
+    "doi": "10.12794/metadc2532",
+    "title": "Spatial and Temporal Influences of Water Quality on Zooplankton in Lake Texoma",
+    "abstract": "Seventy-one aquatic species including the copepodids and nauplii were identified from Lake Texoma from August 1996 to September 1997. Zooplankton community structure, abundance and spatial and temporal distributions were compared among five lake zones delineated a priori based on chloride concentration. The zones, in order of decreasing chloride concentration, are the Red River zone (RRZ), Red river Transition zone (RRTZ), Main Lake zone (MLZ), Washita River Transition zone (WRTZ) and Washita River zone (WRZ). Bray Curtis Similarity Index showed community structure was most similar in the two Red River arm zones, the two Washita River arm zones and the MLZ. Zooplankton abundance was greatest in the Red River arm (312 org/L), intermediate in the Washita River arm (217 org/L) and least in the Main Lake body (103 org/L). A significant increase in the abundance of a deformed rotifer, Keratella cochlearis, was observed mainly in the Red River arm during a second study from March 1999 to June 1999. Seasonal dynamics, rather than spatial dynamics, were more important in structuring the zooplankton community, especially in the two river arms. Spatial variance was solely attributed to station and zone effects independent of time for a few crustacean species and many of the water quality parameters supporting the presence of longitudinal gradients of differing water quality. Three independent models (Red River arm, Washita River arm, Main Lake body) rather than a single model for the entire reservoir, best describe patterns in the zooplankton community and its relationship to seasonal, physical and chemical factors. Statistical power, sample size and taxonomic resolution were examined. When monitoring seasonal and annuals trends in abundance, the greatest statistical power was achieved by analyzing count data at taxonomic levels above genus. Taxonomic sufficiency was assessed to determine if costs could be reduced for zooplankton identifications. For water quality monitoring purposes only, it is recommended that genus identifications are sufficient if supplemented with quarterly species identifications.",
+    "year": null,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.12794/metadc2532"
+  },
+  {
+    "doi": "10.25148/etd.fidc000127",
+    "title": "A Spatial and Temporal Analysis of Land Use and Water Quality in Southern Miami Dade County",
+    "abstract": "",
+    "year": null,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.25148/etd.fidc000127"
+  },
+  {
+    "doi": "10.21203/rs.3.rs-8234836/v1",
+    "title": "Spatial and Temporal Analysis of Drinking Water Quality Using GIS-Based Geostatistical Techniques",
+    "abstract": "Abstract \n                 Regular spatial and temporal assessment of freshwater resources used for drinking water is essential for ensuring water quality and protecting public health. This study evaluated changes in key water quality parameters using a GIS-based Inverse Distance Weighting (IDW) interpolation method. Water samples were collected from four drinking water sources during the wet and dry seasons of 2017 and 2020 and analyzed for ten parameters using the Palin-test method. Spatial distribution maps revealed notable variations in parameter concentrations across the study area for both seasons and years. Overall, the mean concentrations of most parameters increased from 2017 to 2020, except for pH, indicating a general deterioration in water quality. In 2017, all parameters met drinking water standards except pH at half of the sampling locations during the dry season and electrical conductivity (EC) at all locations in both seasons. By 2020, turbidity exceeded allowable limits at most sampling points during both seasons. Additionally, phosphate (PO₄) levels at site S4, and EC and pH at nearly all sites and seasons (except pH at S1 in the wet season), were outside acceptable thresholds. These results demonstrate worsening pollution levels by 2020, likely driven by increasing human activities and natural influences. To safeguard these drinking water sources, it is imperative for stakeholders to establish and enforce regulations that restrict new human activities near water bodies. Furthermore, systematic water quality monitoring, appropriate treatment, and effective protection and management strategies are necessary to ensure sustained access to safe potable water.",
+    "year": 2026,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.21203/rs.3.rs-8234836/v1"
+  },
+  {
+    "doi": "10.21203/rs.3.rs-1277849/v1",
+    "title": "Temporal and Spatial Water Quality Assessment of the Geumho River, Korea, Using Multivariate Statistics and Water Quality Indices",
+    "abstract": "Abstract \n         The Geumho River in South Korea passes through a metropolitan area with a high population density and multiple industrial complexes; therefore, the water quality of this river is of significance for human health and economic activities. This study assesses the water quality of the Geumho River to inform river water quality management and improve pollution control using multivariate statistics and the Korean Water Quality Index (KWQI). Principal component and factor analyses identified factors related to organic pollutants and metabolism (principal factor 1) and phosphorus and fecal coliform content (principal factor 2). Based on the results of cluster analysis, it was classified into four groups in time and three groups in space. Seven temporal variables and six spatial variables were extracted from discriminant analysis results; the most important water quality variables were high during the spring and summer seasons and in the midstream and downstream regions. Temporally, the KWQI was the highest in winter and the lowest in spring; spatially, the KWQI was the highest in the upstream and the lowest in the midstream sections. These results indicate that to improve effectiveness, water management interventions in the Geumho River should focus on the urban midstream section and spring season.",
+    "year": 2022,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.21203/rs.3.rs-1277849/v1"
+  },
+  {
+    "doi": "10.1021/acsestwater.4c00907.s001",
+    "title": "Temporal and Spatial Variation in Hydroxyl Radical Scavenging Capacity in Drinking Water and Correlation to Water Quality Parameters",
+    "abstract": "",
+    "year": null,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1021/acsestwater.4c00907.s001"
+  },
+  {
+    "doi": "10.7717/peerj.19264/fig-7",
+    "title": "Figure 7: Effects of four quality discriminant models, RF, AdaBoost, GBDT and XGBoost, on independent validation set.",
+    "abstract": "",
+    "year": null,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.7717/peerj.19264/fig-7"
+  },
+  {
+    "doi": "10.3390/w12010190",
+    "title": "Spatial and Temporal Variability of Water Quality in the Bystrzyca River Basin, Poland",
+    "abstract": "The aim of the study was to analyze the results of surface water quality tests carried out in the Bystrzyca river basin. The study was conducted over four years in four seasons. The following chemometric techniques were used for the purposes of statistical analyses: the principal component analysis with factor analysis (PCA/FA), the hierarchical cluster analysis (HCA), and the discriminant analysis (DA). The analyses allowed for determining the temporal variability in water quality between the seasons. The best water quality was recorded in summer and the worst in autumn. The analyses did not provide a clear assessment of the spatial variability of water quality in the river basin. Pollution from wastewater treatment plants and soil tillage had a similar effect on water quality. The tested samples were characterized by very high electrolytic conductivity, suspended solids and P-PO4 concentrations and the water quality did not meet the standards of good ecological status.",
+    "year": 2020,
+    "journal": "Water",
+    "source": "Crossref",
+    "url": "https://doi.org/10.3390/w12010190"
+  },
+  {
+    "doi": "10.21275/mr26124142634",
+    "title": "Evaluation of Spatial and Temporal Variations of Water Quality of Urban and Rural Areas of Kishtwar Valley",
+    "abstract": "",
+    "year": 2026,
+    "journal": "International Journal of Science and Research (IJSR)",
+    "source": "Crossref",
+    "url": "https://doi.org/10.21275/mr26124142634"
+  },
+  {
+    "doi": "10.22541/au.176863528.84575212/v1",
+    "title": "Temporal vs. Spatial Heterogeneity in Wetlandscape Water Quality",
+    "abstract": "Quantifying the relative importance of spatial vs. temporal variance\ninforms efficient water quality measurements at all scales. We examined\nwater quality variability across three US coastal plain wetlandscapes to\nunderstand when and where solutes vary in these headwater landscapes.\nThese wetlandscapes (&lt;10 km\n                   2 \n                  ) are minimally\nimpacted forested systems with numerous similarly situated small\ndepressional wetlands, suggesting comparative spatial homogeneity of\nsolute composition, and are hydrologically dynamic, suggesting\nsignificant temporal heterogeneity. We quantified spatial and temporal\nvariance in water quality across 16 wetlands in each wetlandscape using\nrepeated (n=4 to 6) field measurements of &gt;20\nsolutes—including anions, cations, nutrients, organic matter quality\nmetrics, and physio-chemical parameters. We found an even balance\nbetween spatial and temporal variance for ions and organic solutes, but\ndominance of spatial variance for nutrients, implying local source\nheterogeneity is at least as important as hydrological and seasonal\nvariation in controlling landscape solute patterns. Models predicting\ntemporal variation based on wetland hydrologic and seasonal drivers\n(mean R\n                   2 \n                  = 0.61) outperformed models predicting\nspatial variation using landscape/network position and geomorphic\nattributes (mean R\n                   2 \n                  = 0.22). This implies\nconsistently and markedly larger unexplained variance in space than in\ntime, suggesting that increasing sampling locations (spatial density) is\nmore consequential for capturing environmental variation than increasing\nsampling frequency (temporal density). We compared wetlandscape-scale\nvariance patterns with water quality observations synthesized at larger\nscales and observed increasing spatial variation with larger extent, but\nsurprisingly consistent temporal variance at all scales. This framework\nunderscores the utility of low-frequency, high density measurements for\nmaximizing information content from water quality monitoring programs.",
+    "year": 2026,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.22541/au.176863528.84575212/v1"
+  },
+  {
+    "doi": "10.21203/rs.3.rs-1392008/v1",
+    "title": "Temporal and Spatial Evolution Law of Mine Water Artificial Recharge Water Quality",
+    "abstract": "Abstract \n         In order to understand the evolution law of groundwater quality during the artificial recharge process with mine water, the effluent from the mine water treatment plant of the Mindong No. 1 Mine was selected to artificially recharge the Quaternary aquifer of the study area. In this experiment, the spatial evolution of the groundwater quality of some wells around the recharge well was monitored during the artificial recharge process with reclaimed mine water. The factor analysis method was used to reveal the evolution law of groundwater quality during the recharge process. Although the reclaimed mine water met the standards for artificial recharge, the results showed that pH value as well as Cl − , TDS, NO 3  − , and F −  concentrations in the reclaimed water were higher than those observed in the Quaternary aquifer, presenting a potential risk to groundwater quality. On the other hand, four organic components were identified in the groundwater after the artificial recharge, including fulvic-like acids (Ex/Em = 280/440, Ex/Em = 250/440) as the main component. Indeed, most of these components were caused by terrestrial origin and soil migration. In addition, the reclaimed mine water contained protein-like tryptophan (Ex/Em = 300/340), which was mainly derived from the discharge of point sources. The total fluorescence intensity of organic pollutants in the different wells tended to be uniform with the recharge time. However, if external pollution is introduced, it may significantly affect the types of organic pollutants and diffuse rapidly within 24 hours. Therefore, it is necessary to control effectively the concentration of trace organic matter in the influent water to ensure the safety of the artificial recharge with mine water.",
+    "year": 2022,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.21203/rs.3.rs-1392008/v1"
+  },
+  {
+    "doi": "10.3133/wri014244",
+    "title": "Spatial patterns and temporal variability in water quality from City of Albuquerque drinking-water supply wells and piezometer nests, with implications for the ground-water flow system",
+    "abstract": "",
+    "year": 2002,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.3133/wri014244"
+  },
+  {
+    "doi": "10.24425/jwld.2021.137103",
+    "title": "Spatial and temporal assessment of surface water quality using water quality index. The Saguling Reservoir, Indonesia",
+    "abstract": "Developments in agriculture, industry, and urban life have caused the deterioration of water resources, such as rivers and reservoirs in terms of their quality and quantity. This includes the Saguling Reservoir located in the Citarum Basin, Indonesia. A review of previous studies reveals that the water quality index ( WQI) is efficient for the identification of pollution sources, as well as for the understanding of temporal and spatial variations in reservoir water quality. The NSFWQI (The National Sanitation Foundation water quality index) is one of WQI calculation methods. The NSFWQI is commonly used as an indi-cator of surface water quality. It is based on nitrate, phosphate, turbidity, temperature, faecal coliform, pH, DO, TDS, and BOD. The average NSFWQI has been 48.42 during a dry year, 43.97 during a normal year, and 45.82 during a wet year. The WQI helped to classify water quality in the Saguling Reservoir as “bad”. This study reveals that the strongest and most significant correlation between the parameter concentration and the WQI is the turbidity concentration, for which the coeffi-cient correlation is 0.821 in a dry year, and faecal coli, for which the coefficient correlation is 0.729 in a dry year. Both parameters can be used to calculate the WQI. The research also included a nitrate concentration distribution analysis around the Saguling Reservoir using the Inverse Distance Weighted method.",
+    "year": 2021,
+    "journal": "Journal of Water and Land Development",
+    "source": "Crossref",
+    "url": "https://doi.org/10.24425/jwld.2021.137103"
+  },
+  {
+    "doi": "10.2139/ssrn.4890564",
+    "title": "Spatial and temporal variation of water quality of Buriganga River, Dhaka",
+    "abstract": "",
+    "year": 2024,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.2139/ssrn.4890564"
+  },
+  {
+    "doi": "10.21203/rs.3.rs-637713/v2",
+    "title": "Assessment of spatial and temporal water quality distribution of Lake Ludas, Serbia",
+    "abstract": "Abstract \n         This work presents the analysis of both spatial and temporal water quality distribution of Lake Ludas in the Republic of Serbia using water quality data from 2011 to 2018 at three different locations. By including a set of standard methods, the initial 15 water quality parameters were reduced to 7 parameters representative for the upcoming temporal and spatial considerations. The selected parameters were subjected to a series of tests such as spatial and temporal analysis. Principal component analysis (PCA) was employed to present the variation of the measurements most efficiently and identify spatial and temporal tendencies. The PCA was expanded by the utilization of biplots providing a more comprehensive understanding of the measurements. Finally, the overall state of the lake's quality was evaluated using the Canadian Council of Ministers of the Environment Water Quality Index method for each sampling location, both annually and for the overall time interval, and as one representative value for the whole lake. The presented research lead to several conclusions, including the need for more detailed future measurements. It was shown that a reasonable monitoring approach leading to reliable conclusions should include much denser data in space and time. Furthermore, the necessity of three sampling locations remains relevant. In fact, it would be preferred to have a shorter list of monitored variables covering denser time and space data acquisition than having more diverse quality parameter evaluation at fever locations or temporally sporadic measurements.",
+    "year": 2022,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.21203/rs.3.rs-637713/v2"
+  },
+  {
+    "doi": "10.21203/rs.3.rs-637713/v1",
+    "title": "Assessment of Spatial And Temporal Water Quality Distribution of Lake Ludas, Serbia",
+    "abstract": "Abstract \n         This work presents the analysis of both spatial and temporal water quality distribution of Lake Ludas in the Republic of Serbia using water quality data from 2011 to 2018 at three different locations. By including a set of standard methods, we reduced the initial 15 water quality parameters to 7 parameters representative for the upcoming temporal and spatial considerations. The selected parameters were subject to a series of tests such as spatial and temporal analysis. Principal component analysis (PCA) was employed to present the variation of the measurements most efficiently and identify spatial and temporal tendencies. The PCA was expanded by the utilization of biplots providing a more comprehensive understanding of the measurements. Finally, the overall state of the lake's quality was evaluated using the Canadian Council of Ministers of the Environment Water Quality Index method for each sampling location, both annually and for the overall time interval, and as one representative value for the whole lake. The presented research lead to several conclusions, including the need for more detailed future measurements. It was shown that a reasonable monitoring approach leading to reliable conclusions should include much denser data in space and time. Furthermore, the necessity of three sampling locations remains relevant. In fact, it would be preferred to have a shorter list of monitored variables covering denser time and space data acquisition than having more diverse quality parameter evaluation at fever locations or temporally sporadic measurements.",
+    "year": 2021,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.21203/rs.3.rs-637713/v1"
+  },
+  {
+    "doi": "10.64898/2026.09.01.26360393",
+    "title": "Toward Transportable Acute Kidney Injury Prediction: An Explainable XGBoost Model with Temporal Validation Using MIMIC-IV",
+    "abstract": "Abstract \n                 \n                   Background \n                   Acute kidney injury (AKI) is a frequent complication within intensive care units, with its sudden onset often missed. Existing machine learning and deep learning models have contributed to closing this gap, but their complexity, requiring hundreds to thousands of features, and lack of generalisation pose a limitation that prevents them from being integrated into clinical workflows across different electronic health-record ecosystems. \n                 \n                 \n                   Methods \n                   This study presents a 37-feature XGBoost model trained on the MIMIC-IV dataset with 5.4% positive cases, with hyperparameters optimised via Optuna and probabilities calibrated using isotonic regression, designed for transportability across clinical settings. Validation was conducted internally using a temporal patient-level split simulating prospective deployment, training on 2008–2016 data and testing on 2017–2022 data. External validation was performed on the eICU Collaborative Research Database, a multi-centre dataset spanning 208 US hospitals, using the trained model without retraining. SHAP TreeExplainer was used to provide feature-level explainability for individual predictions. \n                 \n                 \n                   Results \n                   Internal testing yielded an AUROC score of 0.794 for predicting AKI onset within a 12–24 hour window. External validation produced a 0.750 AUROC without retraining. Equitable discrimination was observed across gender, age, chronic kidney disease presence, race, and AKI stages on both datasets, with a 95% internal CI of 0.789–0.799 confirming the model’s estimate stability. \n                 \n                 \n                   Conclusion \n                   These results suggest that clinically useful prediction systems are achievable with substantially fewer features than current models require.",
+    "year": 2026,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.64898/2026.09.01.26360393"
+  },
+  {
+    "doi": "10.2139/ssrn.7207552",
+    "title": "Physics-ASTGN: A physically consistent adaptive spatio-temporal graph neural network coupling advection–diffusion–reaction processes for coastal water quality forecasting",
+    "abstract": "High-precision and timely water quality forecasting is critical for marine ecosystem security and refined coastal management. However, existing methods face a dual bottleneck: mechanistic models are computationally prohibitive, whereas purely data-driven models lack physical interpretability. Particularly in complex coastal waters, conventional spatio-temporal models struggle to characterize the asymmetric, non-stationary transport features of hydrodynamic processes and lack prior constraints aligned with physical laws. To enhance physical credibility and long-term forecasting robustness, this study decomposes seawater quality evolution into advection, diffusion, and reaction processes, proposing a Physically Consistent Adaptive Spatio-Temporal Graph Neural Network (Physics-ASTGN). Specifically, the network incorporates a dual-gated reaction module, a Chebyshev graph convolutional diffusion module, and an attention-based advection module, optimized via sparse and complementary physical regularization losses. Evaluation using in-situ buoy data from the Beibu Gulf, China, demonstrates that Physics-ASTGN significantly outperforms state-of-the-art baselines, achieving an R2 &gt; 0.98 for short-term forecasts and maintaining an R2 &gt; 0.94 for up to 24-h lead times, which yields a &gt;30% improvement in long-term accuracy. Ablation studies and transport matrix visualizations further reveal that the model captures patterns consistent with dominant currents, local mixing, and long-range transport lags, confirming its dual advantages in predictive performance and physical consistency.",
+    "year": 2026,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.2139/ssrn.7207552"
+  },
+  {
+    "doi": "10.13031/aim.20152182407",
+    "title": "Recurrent Neural Network for forecasting water quality parameters: Sensitivity Analysis",
+    "abstract": "",
+    "year": 2015,
+    "journal": "2015 ASABE International Meeting",
+    "source": "Crossref",
+    "url": "https://doi.org/10.13031/aim.20152182407"
+  },
+  {
+    "doi": "10.2139/ssrn.4683965",
+    "title": "Uncertainty Graph Convolution Recurrent Neural Network for Air Quality Forecasting",
+    "abstract": "",
+    "year": 2024,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.2139/ssrn.4683965"
+  },
+  {
+    "doi": "10.1002/wer.11138",
+    "title": "An efficient water quality index forecasting and categorization using optimized Deep Capsule Crystal Edge Graph neural network",
+    "abstract": "Abstract \n                   \n                     \n                     The world's freshwater supply, predominantly sourced from rivers, faces significant contamination from various economic activities, confirming that the quality of river water is critical for public health, environmental sustainability, and effective pollution control. This research addresses the urgent need for accurate and reliable water quality monitoring by introducing a novel method for estimating the water quality index (WQI). The proposed approach combines cutting‐edge optimization techniques with Deep Capsule Crystal Edge Graph neural networks, marking a significant advancement in the field. The innovation lies in the integration of a Hybrid Crested Porcupine Genghis Khan Shark Optimization Algorithm for precise feature selection, ensuring that the most relevant indicators of water quality (WQ) are utilized. Furthermore, the use of the Greylag Goose Optimization Algorithm to fine‐tune the neural network's weight parameters enhances the model's predictive accuracy. This dual optimization framework significantly improves WQI prediction, achieving a remarkable mean squared error (MSE) of 6.7 and an accuracy of 99%. By providing a robust and highly accurate method for WQ assessment, this research offers a powerful tool for environmental authorities to proactively manage river WQ, prevent pollution, and evaluate the success of restoration efforts. \n                   \n                   \n                     Practitioner Points \n                     \n                       \n                         \n                           Novel method combines optimization and Deep Capsule Crystal Edge Graph for WQI estimation. \n                         \n                         \n                           Preprocessing includes data cleanup and feature selection using advanced algorithms. \n                         \n                         \n                           Deep Capsule Crystal Edge Graph neural network predicts WQI with high accuracy. \n                         \n                         \n                           Greylag Goose Optimization fine‐tunes network parameters for precise forecasts. \n                         \n                         \n                           Proposed method achieves low MSE of 6.7 and high accuracy of 99%.",
+    "year": 2024,
+    "journal": "Water Environment Research",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1002/wer.11138"
+  },
+  {
+    "doi": "10.1051/limn/2025010",
+    "title": "Temporal water quality forecasting in Peruća Reservoir, Croatia, using a hybrid graph neural network and transformer model under climate variability",
+    "abstract": "The Peruća Reservoir, a critical karstic water resource in Dalmatia, Croatia, experiences significant water quality fluctuations influenced by rapid surface and groundwater recharge and climate change. This study develops a predictive framework utilizing a hybrid Graph Neural Network (GNN) and Transformer model to forecast key water quality parameters. Based on a dataset of monthly surface water quality measurements from 2019 to 2021, including water level, dissolved oxygen (DO), electrical conductivity (EC), pH, hardness, temperature, and precipitation, the model accurately predicts the Water Quality Index (WQI), DO, and EC (\n                     R \n                     2 \n                    &gt; 0.92 for 5-day forecasts). The analysis focuses on temporal water quality variations at a single monitoring station due to data limitations, with spatial resolution limited to inflow influences. Climate projections for 2050, assuming a 5% decrease in precipitation and a 1.7 °C temperature rise, indicate a potential decline in reservoir water levels by 0.75–1.17 meters and a summer WQI reduction to 67–70. The proposed model consistently outperforms benchmark Random Forest and Long Short-Term Memory (LSTM) models, demonstrating its robust predictive capability and providing crucial decision-support for the sustainable management of karstic reservoirs.",
+    "year": 2025,
+    "journal": "International Journal of Limnology",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1051/limn/2025010"
+  },
+  {
+    "doi": "10.2139/ssrn.4646397",
+    "title": "Graph Neural Network-Based Tourism Demand Forecasting",
+    "abstract": "",
+    "year": 2023,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.2139/ssrn.4646397"
+  },
+  {
+    "doi": "10.5194/egusphere-egu25-5283",
+    "title": "A graph neural network-based model for spring discharge forecasting",
+    "abstract": "Groundwater from karst aquifers supplies freshwater for 25% of the world population. Worldwidely, groundwater level has been descending, spring discharge has declined, and some springs have dried up due to climate changes and anthropogenic activities. Spring discharge as a proxy, can reflects the state of karst hydrological processes. Thus, simulation of spring discharge is vital in water resources development, utilization and management.The forming processes of spring discharge in a basin include surface water convergence, dictated by terrains, and groundwater diffusion, controlled by heterogeneous aquifers. Consideration of the physical processes can better understand karst hydrological processes. Many machine learning models have recently been used to simulate karst spring processes, however, without considering the physical mechanisms. This paper develops a graph neural network (GNN) embedded with a heat kernel (HK) model to depict rainfall-runoff converging and groundwater diffusing processes in data insufficient area and finally realize spring discharge modeling. Application of the model to Niangziguan Springs, China, demonstrates that the GNN with the second-order HK has better metric performance than the first-order model in forecasting multi-time step spring discharge processes. The optimal graph structure of the model varies with the forecasting time step. The structure of one- and two-step forecasting is an information flow graph, which mainly describes the convergence of surface flow, while the structure of three- and four-step forecasting is a groundwater flow graph that stresses groundwater diffusion. The facts reveal that surface water convergence is completed within two months, and groundwater diffusion mainly happens between three and four months. GNN with HK is robust in depicting the karst hydrological processes with interpretability.",
+    "year": 2025,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.5194/egusphere-egu25-5283"
+  },
+  {
+    "doi": "10.2139/ssrn.5917279",
+    "title": "Coupling spatial heterogeneity and temporal dynamics in graph neural networks for accurate forecasting of water quality",
+    "abstract": "",
+    "year": 2025,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.2139/ssrn.5917279"
+  },
+  {
+    "doi": "10.3390/app14083428",
+    "title": "Ensemble Empirical Mode Decomposition Granger Causality Test Dynamic Graph Attention Transformer Network: Integrating Transformer and Graph Neural Network Models for Multi-Sensor Cross-Temporal Granularity Water Demand Forecasting",
+    "abstract": "Accurate water demand forecasting is crucial for optimizing the strategies across multiple water sources. This paper proposes the Ensemble Empirical Mode Decomposition Granger causality test Dynamic Graph Attention Transformer Network (EG-DGATN) for multi-sensor cross-temporal granularity water demand forecasting, which combines the Transformer and Graph Neural Networks. It employs the EEMD–Granger test to delineate the interconnections among sensors and extracts the spatiotemporal features within the causal domain by stacking dynamical graph spatiotemporal attention layers. The experimental results demonstrate that compared to baseline models, the EG-DGATN improves the MAPE metrics by 2.12%, 4.33%, and 6.32% in forecasting intervals of 15 min, 45 min, and 90 min, respectively. The model achieves an R2 score of 0.97, indicating outstanding predictive accuracy and exceptional explanatory power for the target variable. This research highlights significant potential applications in predictive tasks within smart water management systems.",
+    "year": 2024,
+    "journal": "Applied Sciences",
+    "source": "Crossref",
+    "url": "https://doi.org/10.3390/app14083428"
+  },
+  {
+    "doi": "10.1016/j.ijforecast.2010.09.003",
+    "title": "An empirical analysis of neural network memory structures for basin water quality forecasting",
+    "abstract": "",
+    "year": 2011,
+    "journal": "International Journal of Forecasting",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1016/j.ijforecast.2010.09.003"
+  },
+  {
+    "doi": "10.5220/0014322300004052",
+    "title": "A Lightweight Spatial-Temporal Graph Neural Network for Long-Term Time Series Forecasting",
+    "abstract": "",
+    "year": 2026,
+    "journal": "Proceedings of the 18th International Conference on Agents and Artificial Intelligence",
+    "source": "Crossref",
+    "url": "https://doi.org/10.5220/0014322300004052"
+  },
+  {
+    "doi": "10.3390/w17030453",
+    "title": "Water Quality Assessment and Forecasting Along the Liffey and Andarax Rivers by Artificial Neural Network Techniques Toward Sustainable Water Resources Management",
+    "abstract": "This research evaluates water quality in two contrasting hydro-climatic regions: the River Liffey in Ireland and the Andarax River in Spain. It utilizes an Artificial Neural Network (ANN) to simulate potential changes in key water-quality parameters based on field measurements. The ANN models showed strong predictive efficiency and performance, achieving R2 values of 0.89 for dissolved oxygen (DO), 0.98 for electrical conductivity (EC), 0.87 for pH, 0.95 for total dissolved solids (TDS), and 0.96 for turbidity. The root mean-square-error (RMSE) values for important parameters were DO (1.25 mg/L), EC (48.06 µS/cm), and turbidity (8.9 FNU). The models were able to capture complex nonlinear relationships under different environmental conditions. The results showed that DO levels in the Liffey will decline by up to 20% over the next decade due to rising nutrient pollution, while TDS levels in the Andarax River are expected to rise by approximately 15% during the same period as a result of ongoing agricultural runoff. The study also simulated potential future hypothetical scenarios by applying the model to four different “what-if” situations. Overall, the research underscores the significance of machine learning in understanding intricate water-quality dynamics.",
+    "year": 2025,
+    "journal": "Water",
+    "source": "Crossref",
+    "url": "https://doi.org/10.3390/w17030453"
+  },
+  {
+    "doi": "10.2139/ssrn.5294497",
+    "title": "Gnn-Pinn: A Physics-Guided Graph Neural Network Framework for Soil Temperature Forecasting",
+    "abstract": "",
+    "year": 2025,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.2139/ssrn.5294497"
+  },
+  {
+    "doi": "10.2139/ssrn.6039314",
+    "title": "Forecasting Equity Correlations with Hybrid Transformer Graph Neural Network",
+    "abstract": "",
+    "year": 2026,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.2139/ssrn.6039314"
+  },
+  {
+    "doi": "10.1016/s0043-1354(97)00072-9",
+    "title": "Forecasting raw-water quality parameters for the North Saskatchewan River by neural network modeling",
+    "abstract": "",
+    "year": 1997,
+    "journal": "Water Research",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1016/s0043-1354(97)00072-9"
+  },
+  {
+    "doi": "10.1109/access.2024.3509744",
+    "title": "Water Quality Prediction Method Based on Reinforcement Learning Graph Neural Network",
+    "abstract": "",
+    "year": 2024,
+    "journal": "IEEE Access",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1109/access.2024.3509744"
+  },
+  {
+    "doi": "10.1109/iceiec65904.2025.11273122",
+    "title": "A Graph Neural Network Approach for Forecasting Quality of Service in Web Services",
+    "abstract": "",
+    "year": 2025,
+    "journal": "2025 IEEE 15th International Conference on Electronics Information and Emergency Communication (ICEIEC)",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1109/iceiec65904.2025.11273122"
+  },
+  {
+    "doi": "10.2139/ssrn.5704123",
+    "title": "Dynamic Urban Knowledge Graph-Informed Inner-City Traffic Flow Forecasting via Spatio-Temporal Graph Neural Network",
+    "abstract": "",
+    "year": 2025,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.2139/ssrn.5704123"
+  },
+  {
+    "doi": "10.2139/ssrn.7423258",
+    "title": "Multimodal Foreign Exchange Rate Forecasting Based on Graph Neural Network",
+    "abstract": "We examine whether exchange-rate predictability depends on interactions among heterogeneous information sources. Using daily CNY/USD data from 2010 to 2023, we construct a multimodal forecasting system that combines exchange-rate prices, macroeconomic indicators, technical indicators, professional news, and social-media information. We model these sources as nodes in a dynamic graph and use a GNN-LSTM framework to learn time-varying cross-modal dependencies before forecasting daily returns. The model delivers competitive point-forecast accuracy relative to ARMA, LSTM, XGBoost, and Transformer benchmarks, although its statistical advantage over the strongest time-series and multimodal alternatives is limited. Its economic performance is substantially stronger. After transaction costs, the GNN-LSTM produces the highest annualized return and Sharpe ratio among all models and remains profitable across all rolling windows. Modality-ablation tests show that each information source contributes incremental forecasting information, with news removal producing the largest loss in accuracy. The trading results are especially robust during the COVID-19 period, when several non-graph multimodal models deteriorate or generate nearly static trading signals. The learned graph structure also varies across market periods, indicating that exchange-rate information behaves as an evolving predictive network rather than a fixed set of independent predictors.",
+    "year": 2026,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.2139/ssrn.7423258"
+  },
+  {
+    "doi": "10.58837/chula.the.2001.1477",
+    "title": "Water demand forecasting using the artificial neural network",
+    "abstract": "This research presents the application of artificial neural network for forecasting water demand of the customers in the responsible area of the Metropolitan Waterworks Authority. Gross Domestic Product (GDP), Increased Water Tariffs and number of customers are the input of the network that is properly trained with historical data. The result of the forecasting is the water demand. The network used in this study is a two layer feedforward network and the learning process is the backpropagation. This network is trained to be able to forecast water demand accurately. For water demand forecasting of the Fiscal Year 1999-2000, the result from artificial neural network provides more accuracy by having the percentages of error at -0.18% while the result from accrual moving average technique has the percentages of error at 4.06%. Academic Year.",
+    "year": null,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.58837/chula.the.2001.1477"
+  },
+  {
+    "doi": "10.21203/rs.3.rs-8500219/v1",
+    "title": "Hybrid Deep Learning and Ensemble Approach for HVAC Energy Forecasting: A GRU + Random Forest Framework",
+    "abstract": "Abstract \n                 Heating, Ventilation, and Air Conditioning (HVAC) systems are among the most energy-intensive components of modern buildings, responsible for nearly 40% of global building energy consumption. An accurate prognostication of HVAC energy consumption is consequently imperative for formulating strategies aimed at enhancing efficiency and minimizing expenses. Conventional machine learning (ML) frameworks, such as Random Forest (RF), demonstrate commendable performance yet encounter difficulties in identifying sequential patterns within time-series data. On the other hand, deep learning (DL) designs, such the Gated Recurrent Unit (GRU), are good at capturing temporal dependencies, but they often need a lot of computing power and are prone to overfitting. This paper presents a new hybrid forecasting model that combines the Gated Recurrent Unit (GRU) and Random Forest (RF) methods to take advantage of the best features of both. A two-stage process was used with the Oak Ridge National Laboratory (ORNL) FRP-2 multizone building dataset. In Stage 1, GRU models use airflow (AF) and relative humidity (RH) features to guess what the temperature will be inside (T). In Stage 2, RF models employ these anticipated temperatures, AF, and RH characteristics to figure out how much energy the HVAC system uses overall (WHRTUTotal). The results indicate that the integrated GRU + RF framework surpasses individual models, attaining enhanced predictive precision (R² = 0.886, RMSE = 755.06) while concurrently yielding significant energy conservation (13.82% utilizing predicted T and 3.41% employing actual T). These outcomes underscore the dual advantages of precision and energy efficiency, positing that hybrid models may furnish more dependable instruments for the management of energy in intelligent buildings. The recommended methodology offers a scalable basis for incorporation into real-time control strategies like Model Predictive Control (MPC).",
+    "year": 2026,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.21203/rs.3.rs-8500219/v1"
+  },
+  {
+    "doi": "10.21203/rs.3.rs-10222764/v1",
+    "title": "Data-Driven Mission Recommendation for LEO Satellites using Random Forest and Hybrid Deep Learning Forecasting",
+    "abstract": "Abstract \n                 Satellite mission scheduling for LEO platforms becomes increasingly complex as the number of available mission configurations grows and operational schedules tighten. For LAPAN-IPB (LAPAN-A3), a LEO polar satellite at 500 km altitude operated by BRIN, mission feasibility is currently assessed by experienced operators who draw on accumulated knowledge of the satellite's battery behaviour. The approach works, but it depends on accumulated experience that is hard to document, transfer to new personnel, or verify after the fact. We address this gap with an end-to-end recommendation framework built from six years of telemetry (January 2019 – December 2024; 25357 records; four ground stations) that produces a ranked, auditable mission feasibility list at each ground-station contact. The framework comprises three components. A Hybrid SARIMAX-LSTM voltage predictor with a refined preprocessing protocol achieves R² = 0.8544, MAE = 0.1042 V, and MAPE = 0.7604% on the test partition. A Random Forest classifier, trained on telemetry aggregated at the level of each ground-station pass rather than individual raw readings, characterises the energy profile of 20 mission classes, achieving mean weighted F1 = 0.8163 and F1-macro = 0.7690 via StratifiedKFold 5-fold cross-validation. Mission thresholds are then derived through two independent approaches: a statistical approach that computes a Tukey upper-fence threshold directly from the aggregated dataset, and a machine-learning approach that derives the same threshold from the Random Forest's internal leaf-node distributions. The mission recommendation engine compares predicted battery voltage against these thresholds and ranks feasible missions by energy margin. The two approaches agree closely across all 20 mission classes, with the largest deviation at 0.0843 V, smaller than the predictor's own mean absolute error, confirming that the recommended thresholds are stable and reliable. The outcome is a documented, reproducible scheduling process that gives any operator, regardless of seniority, the same objective, evidence-based starting point for mission decisions.",
+    "year": 2026,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.21203/rs.3.rs-10222764/v1"
+  },
+  {
+    "doi": "10.20944/preprints202606.1440.v1",
+    "title": "Lightweight Machine Learning for Oyster-Reef Environmental Forecasting: A Random-Forest Baseline with Classical and Deep Benchmarks",
+    "abstract": "Short-term forecasting of coastal environmental conditions is critical for supporting oyster-reef management, early detection of stress events, and informed decision-making in dynamic estuarine systems. While deep learning models have gained traction in environmental prediction, lightweight machine learning approaches remain compelling due to their low computational cost, robustness to noisy sensor data, and interpretability. This paper presents a systematic baseline study for multivariate forecasting using a 48-hour input window and a 24-hour prediction horizon across seven key oyster-reef environmental variables. Random Forest (RF) is evaluated as the primary model and compared against four widely used benchmarks—ARIMA, Gradient Boosting (GB), LSTM, and GRU—under identical windowing, time-ordered splits, and per-feature evaluation. Results show that RF delivers strong and stable performance across most variables, outperforming ARIMA and matching or exceeding GB and recurrent neural networks. The study provides a reproducible, low-complexity baseline that supports future research in coastal forecasting, environmental risk assessment, and real-time autonomous monitoring systems.",
+    "year": 2026,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.20944/preprints202606.1440.v1"
+  },
+  {
+    "doi": "10.64643/ijirtv12i11-207111-459",
+    "title": "Forecasting River Water Quality Using Random Forest Regression Model: A Real-Time Sensory Approach on The River Ganga",
+    "abstract": "",
+    "year": 2026,
+    "journal": "International Journal of Innovative Research in Technology",
+    "source": "Crossref",
+    "url": "https://doi.org/10.64643/ijirtv12i11-207111-459"
+  },
+  {
+    "doi": "10.3791/69743",
+    "title": "Solar Power Forecasting Using Hybrid Deep Learning: Performance Enhancement with Random Forest-BiLSTM and Ensemble Modeling",
+    "abstract": "",
+    "year": 2026,
+    "journal": "Journal of Visualized Experiments",
+    "source": "Crossref",
+    "url": "https://doi.org/10.3791/69743"
+  },
+  {
+    "doi": "10.2139/ssrn.4968047",
+    "title": "Evaluating Foreign Exchange Rate Forecasting: A Deep Dive into Lstm, Mlp, and Random Forest Approaches",
+    "abstract": "",
+    "year": 2024,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.2139/ssrn.4968047"
+  },
+  {
+    "doi": "10.2139/ssrn.5578436",
+    "title": "A Parsimonious Hybrid Model: Integrating Wavelet Neural Networks and Deep Learning for Water Quality Forecasting",
+    "abstract": "",
+    "year": 2025,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.2139/ssrn.5578436"
+  },
+  {
+    "doi": "10.12795/revistafuentes.2024.24123",
+    "title": "Análisis sobre las plataformas LMS considerando el deep learning y random forest.",
+    "abstract": "Hoy en día, los educadores se apoyan en la tecnología para ofrecer a los estudiantes nuevos ambientes de aprendizaje. El objetivo de este estudio mixto es analizar la percepción de los estudiantes sobre el uso de las plataformas LMS durante la postpandemia COVID-19 por medio los algoritmos deep learning y random forest. Los resultados del algoritmo deep learning señalan que el uso de las plataformas LMS afecta positivamente el análisis y uso de la información escolar, la autonomía y el intercambio de ideas durante el proceso de aprendizaje. Asimismo, el algoritmo random forest permitió la construcción de tres modelos sobre esta herramienta tecnológica considerando el perfil de los estudiantes. Las limitaciones de esta investigación cuantitativa y cualitativa son la muestra y las variables dependientes. Por consiguiente, las futuras investigaciones pueden analizar el uso de las plataformas LMS durante la postpandemia COVID-19 considerando el rol activo de los estudiantes, el desarrollo de habilidades y la asimilación del conocimiento en diversas escuelas, facultades e institutos. Las implicaciones de este estudio están relacionadas con el uso de las plataformas LMS para eliminar las barreras físicas, fomentar el aprendizaje personalizado y actualizar las actividades bajo la modalidad a distancia. En conclusión, los educadores deben de incluir las plataformas LMS en la planeación de los cursos con el propósito de facilitar el proceso de aprendizaje.",
+    "year": 2024,
+    "journal": "Revista Fuentes",
+    "source": "Crossref",
+    "url": "https://doi.org/10.12795/revistafuentes.2024.24123"
+  },
+  {
+    "doi": "10.2139/ssrn.6558538",
+    "title": "A Novel Risk Forecasting Method by Fusing Deep Learning and Random Fores",
+    "abstract": "A novel method is proposed for risk forecasting by integrating deep learning and random forest, which combines the respective advantages of global and local fitting. To overcome the limitations of traditional quantile regression in capturing nonlinear relationships and the drawbacks of single machine learning models, this method innovatively embeds the local similarity weights generated by quantile random forest (QRF) into the quantile loss function. Such a design encourages similar predicted values for similar samples, preserves the strength of long short-term memory (LSTM) networks in modeling temporal dependence, and improves the sensitivity to nonlinear features and extreme risks. The proposed method is tested using simulated data generated from AR and GARCH models. It achieves significantly lower mean squared error (MSE) than LSTM and QRF over the quantile range of 0.01 to 0.10, particularly in heteroscedastic data. For empirical evaluation, experiments are carried out on the S&amp;amp;P 500 (2018-2024) and the Shanghai Stock Exchange Composite Index (SSEC, 2017-2025). The fusion method yields the optimal prediction accuracy at most quantiles, improving risk forecasting precision by 43.73% and 65.16% over LSTM and QRF for the SSEC, and by 76.80% and 78.96% for the S&amp;amp;P 500, with exceptional performance at extreme quantiles. This work provides a new tool for financial tail risk quantification and a useful reference for the fusion application of machine learning models.",
+    "year": 2026,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.2139/ssrn.6558538"
+  },
+  {
+    "doi": "10.2139/ssrn.6558718",
+    "title": "A Novel Risk Forecasting Method by Fusing Deep Learning and Random Fores",
+    "abstract": "A novel method is proposed for risk forecasting by integrating deep learning and random forest, which combines the respective advantages of global and local fitting. To overcome the limitations of traditional quantile regression in capturing nonlinear relationships and the drawbacks of single machine learning models, this method innovatively embeds the local similarity weights generated by quantile random forest (QRF) into the quantile loss function. Such a design encourages similar predicted values for similar samples, preserves the strength of long short-term memory (LSTM) networks in modeling temporal dependence, and improves the sensitivity to nonlinear features and extreme risks. The proposed method is tested using simulated data generated from AR and GARCH models. It achieves significantly lower mean squared error (MSE) than LSTM and QRF over the quantile range of 0.01 to 0.10, particularly in heteroscedastic data. For empirical evaluation, experiments are carried out on the S&amp;amp;P 500 (2018-2024) and the Shanghai Stock Exchange Composite Index (SSEC, 2017-2025). The fusion method yields the optimal prediction accuracy at most quantiles, improving risk forecasting precision by 43.73% and 65.16% over LSTM and QRF for the SSEC, and by 76.80% and 78.96% for the S&amp;amp;P 500, with exceptional performance at extreme quantiles. This work provides a new tool for financial tail risk quantification and a useful reference for the fusion application of machine learning models.",
+    "year": 2026,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.2139/ssrn.6558718"
+  },
+  {
+    "doi": "10.1007/979-8-8688-2028-1_15",
+    "title": "The Random Forest",
+    "abstract": "",
+    "year": 2025,
+    "journal": "Advanced Forecasting with Python",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1007/979-8-8688-2028-1_15"
+  },
+  {
+    "doi": "10.5194/egusphere-egu26-6357",
+    "title": "Integrated Analysis of Feature Selection and Deep Learning Models for Water Quality Forecasting Based on Meteorological Parameters",
+    "abstract": "Various pollutants pose significant threats to river ecosystems. This issue is particularly critical in Taiwan, where the unique geography of short, rapid rivers makes water retention difficult, necessitating rigorous water quality monitoring. Given the complex, non-linear correlations between water quality and meteorological parameters, this study investigates the impact of different feature selection techniques and predictive models on water quality forecasting for eight rivers in Taoyuan. We utilized 14 meteorological and water quality inputs to predict six key indicators, including COD, DO, EC, NH3-N, ORP, and SS. The methodology compared four feature selection strategies—Pearson Correlation, Entropy Weight Method (EWM), Combined Weights, and Mutual Information—alongside four forecasting models: Seq2Seq LSTM, ANFIS, MLP, and Transformer.The feature selection results reveal that the Entropy Weight Method yielded the highest precision (R^2 =0.9336), surpassing the Pearson method (R^2 =0.9161). This indicates that prioritizing features based on information entropy effectively minimizes information loss during screening. Regarding predictive modeling, the Transformer model demonstrated superior stability and accuracy. While other models fluctuated, the Transformer consistently achieved the best performance with an MSE of approximately 14.86 (RMSE=3.855) and an accuracy of 82.52%, significantly outperforming the MLP and ANFIS models. This study concludes that integrating entropy-based feature selection with the Transformer model establishes a superior and highly accurate framework for water quality forecasting in Taoyuan's rivers.",
+    "year": 2026,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.5194/egusphere-egu26-6357"
+  },
+  {
+    "doi": "10.70729/se25712140708",
+    "title": "Deep Learning-Based Classification of Lung Cancer in CT Images Using Transfer Learning and Random Forest",
+    "abstract": "",
+    "year": 2025,
+    "journal": "International Journal of Scientific Engineering and Research",
+    "source": "Crossref",
+    "url": "https://doi.org/10.70729/se25712140708"
+  },
+  {
+    "doi": "10.1109/iwdrl.2018.8358209",
+    "title": "Improving deep learning performance using random forest HTM cortical learning algorithm",
+    "abstract": "",
+    "year": 2018,
+    "journal": "2018 First International Workshop on Deep and Representation Learning (IWDRL)",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1109/iwdrl.2018.8358209"
+  },
+  {
+    "doi": "10.32469/10355/83736",
+    "title": "Curvilinear segmentation and classification of blood vessels using random forest and deep learning",
+    "abstract": "Curvilinear structures occur in many biomedical imagery, and reliable segmentation and classification is crucial for automatic image analysis. In this dissertation, we consider optimized filter bank (OFB) features with Random Forest (RF) classifier and deep learning networks to solve an important task: segmentation and pixel-wise classification for blood vessels in mice Dura Mater (DM) microscopy epifluorescence images. We consider vessel specific features which are optimized for obtaining accurate segmentations of micro-vessels under difficult imaging conditions. The segmentation is particularly challenging due to the excessive stain in the background and lack of stain within the lumen of the vasculature, different binding properties between arterioles and venules, uneven contrast, low texture content, and nonlinear binding of the fluorescence dye. By utilizing OFB features with max pooling along with a RF classifier, our segmentation method (RF OFB) is robust and avoids broken segments. We also developed and adapted new deep learning networks (VNet, SVNet, and optimized U-Net) for obtaining robust segmentations of microvasculature. As a result, we've proved that combining both RF OFB and optimized U-Net (RF OFB+U-Net) architectures achieves the highest score in DICE and overall accuracy compared with individual approaches and state of the art methods in biomedical segmentation. Our developed pipeline works on different biological imaging modalities and tissues such as dura mater, retina, and even cells. The RF can be interactively trained on regular computing hardware CPUs with small memory. As a result, the efficiency, speed, and simplicity of the infrastructure are attractive to consider our robust developed pipeline, RF OFB, as a solution for different problems.",
+    "year": null,
+    "journal": "",
+    "source": "Crossref",
+    "url": "https://doi.org/10.32469/10355/83736"
+  },
+  {
+    "doi": "10.1007/s13042-024-02329-7",
+    "title": "Extended random forest for multivariate air quality forecasting",
+    "abstract": "",
+    "year": 2024,
+    "journal": "International Journal of Machine Learning and Cybernetics",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1007/s13042-024-02329-7"
+  },
+  {
+    "doi": "10.1109/conit65521.2025.11167026",
+    "title": "Cryptocurrency Price Prediction Using a Hybrid Deep Learning Approach: Integrating CNN and Random Forest for Enhanced Forecasting",
+    "abstract": "",
+    "year": 2025,
+    "journal": "2025 5th International Conference on Intelligent Technologies (CONIT)",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1109/conit65521.2025.11167026"
+  },
+  {
+    "doi": "10.65525/svup.9788199778009.2026.7-16",
+    "title": "Assessing the Efficacy of Gradient Boosting, Random Forest and ANN Models in Water Demand Prediction",
+    "abstract": "",
+    "year": 2026,
+    "journal": "Neural Horizons The Uncharted Future of Deep Learning",
+    "source": "Crossref",
+    "url": "https://doi.org/10.65525/svup.9788199778009.2026.7-16"
+  },
+  {
+    "doi": "10.1201/9781032686363-9",
+    "title": "Water Quality Forecasting Using Deep Learning",
+    "abstract": "",
+    "year": 2023,
+    "journal": "Sustainability in Industry 5.0",
+    "source": "Crossref",
+    "url": "https://doi.org/10.1201/9781032686363-9"
+  },
+  {
+    "doi": "10.54097/w7yyaw27",
+    "title": "Air Quality Forecasting in London Using Random Forest Regression",
+    "abstract": "This paper explores short-term forecasting of daily PM2.5 and AQI levels in London during 2024, employing Random Forest (RF) regression as the primary modeling approach. Air quality records were utilized to compile a set of predicted values consisting of the 6 pollutants recorded (PM10, NO₂, SO₂, CO, and O₃) and daily average values obtained via data pre-processing. Temporal variables such as day-of-year and weekend indicators were incorporated to account for seasonal patterns and human activity effects. The RF model, trained on multivariate inputs, demonstrates strong predictive accuracy, with results showing close alignment between predicted and observed values. Feature importance analysis reveals PM10 as the dominant predictor for PM2.5, supported by known emission and dispersion dynamics. For future work, RF’s performance is also extended to benchmark with other regression approaches such as AutoRegressive Integrated Moving Average (ARIMA), Long Short-Term Memory (LSTM) and XGBoost in terms of its differences of prediction accuracy, model explainability and computation speed. The findings contribute to data-driven urban pollution monitoring, offering practical insights for short-term forecasting and public health early warning systems.",
+    "year": 2026,
+    "journal": "Journal of Innovation and Development",
+    "source": "Crossref",
+    "url": "https://doi.org/10.54097/w7yyaw27"
+  },
+  {
+    "doi": "10.1111/jpy.70188",
+    "pmcid": "PMC13485182",
+    "title": "Environmental constraints on freshwater red algae in Estonian streams: Insights from long-term observations and machine-learning models.",
+    "abstract": "The division Rhodophyta (red algae) includes an inconspicuous and often overlooked component of benthic freshwater biota. In many cases, freshwater red algae are considered indicators of good ecological status, yet their environmental preferences remain poorly understood. Species richness is low globally, and the distribution of many taxa remains poorly known. Here, we report the occurrence of 12 taxa of benthic red algae in 272 Estonian streams, based on 734 sampling sites and 1263 sampling occasions. The aim of this study is to identify the key environmental drivers of freshwater red algae occurrence and to evaluate their potential as indicators of water quality. Red algae were recorded in 20% of the samples. The influence of 37 environmental variables on the occurrence of red algae was assessed using machine-learning algorithms (random forest and gradient boosting trees). Hydrological and hydrochemical variables were by far the most important variable groups, followed by bottom substrate, watershed land cover and land use, and geological bedrock type. Among the hydrochemical variables, biological oxygen demand was the single most important predictor, indicating a high sensitivity of freshwater red algae to labile organic pollution. In contrast, the effect sizes of mineral and total nutrients were lower and more nuanced, suggesting that freshwater red algae are not particularly sensitive indicators of eutrophication. Some division-level responses may have been obscured by contrasting species-specific patterns. Species-level effects were often difficult to verify using machine-learning approaches due to low occurrence frequencies.",
+    "year": "2026",
+    "journal": "Journal of phycology",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1111/jpy.70188"
+  },
+  {
+    "doi": "10.1021/acs.est.5c12895",
+    "pmcid": "PMC13104026",
+    "title": "Fifteen Years of WRTDS for Advancing Water-Quality Science: A Review of Methodological Developments and Global Applications.",
+    "abstract": "Contamination by nutrients, major ions, and metals poses a major threat to global water sustainability. Understanding how these pollutants vary across time and space requires long-term monitoring and robust statistical approaches. Traditional methods, however, often struggle to account for streamflow variability, seasonality, and nonlinear responses. Introduced in 2010, the Weighted Regressions on Time, Discharge, and Season (WRTDS) method offers a flexible, data-driven framework that generates both observed and flow-normalized estimates of concentration and load. Over the past 15 years, WRTDS has become a state-of-the-art tool for water-quality science and management, with applications spanning a wide range of hydrologic, climatic, and policy contexts─including major watersheds across North America, Europe, Asia, Australia, and the Arctic. In this review of WRTDS, we document the method's major advancements, examine its expanding geographic and thematic applications, and summarize its relevance to water-quality management programs and policies worldwide. We also discuss its performance relative to other regression and machine-learning approaches. Finally, we identify key priorities for future development to support the continued evolution of WRTDS as a trusted and practical tool for scientists and managers working to protect and sustain water resources.",
+    "year": "2026",
+    "journal": "Environmental science & technology",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1021/acs.est.5c12895"
+  },
+  {
+    "doi": "10.1029/2024wr039207",
+    "pmcid": "PMC12425153",
+    "title": "Deep Learning Prediction and Interpretation of Riverine Nitrate Export Across the Mississippi River Basin.",
+    "abstract": "Excess riverine nitrate causes downstream eutrophication, notably in the Gulf of Mexico where hypoxia is linked to nutrient-rich discharge from the Mississippi River Basin (MRB). We developed a long short-term memory (LSTM) model using high-frequency sensor data from across the conterminous US to predict daily nitrate concentrations, achieving strong temporal validation performance (median KGE = 0.60). Spatial validation-or prediction in unmonitored basins-yielded lower performance for nitrate concentration (median KGE = 0.18). Nonetheless, spatial validation was crucial in quantifying the impact of current data gaps and guiding the model's targeted application to the MRB where spatial validation performance was stronger (median KGE = 0.34). Modeling results for the MRB from 1980 to 2022 showed relatively low riverine nitrate export (19 ± 4% of surplus), indicating large-scale retention of surplus nitrate within the MRB. Interannual nitrate yields varied significantly, especially in Midwestern states like Iowa, where wet-year export fractions (42 ± 24%) far exceeded dry year export (6 ± 6%), suggesting increased hydrologic connectivity and remobilization of legacy nitrogen. Further evidence of legacy nitrate remobilization was noted in a subset of Midwestern basins where, on occasion, annual surplus export fractions exceeded 100%. Interpretable Shapley values identified key spatial drivers influencing mean nitrate concentrations-tile drainage, roadway density, wetland cover-and quantitative, non-linear thresholds in their influence, offering management targets. This study leverages machine learning and aquatic sensing to provide improved spatiotemporal predictions and insights into nitrate drivers, thresholds, and legacy impacts, offering valuable information for targeted nutrient management strategies in the MRB.",
+    "year": "2025",
+    "journal": "Water resources research",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1029/2024wr039207"
+  },
+  {
+    "doi": "10.1016/j.jenvman.2026.129539",
+    "pmcid": null,
+    "title": "Analyzing the deep learning approach-based modeling framework to understand the critical environmental factors of predicting daily nitrate concentrations.",
+    "abstract": "Continuous stream nitrate data is critical for understanding nutrient dynamics and informing management practices. Recent studies applied deep learning (DL) models on high-frequency nitrate sensor data to predict continuous stream nitrate concentrations during data gaps and at data-limited locations. However, limited knowledge exists about environmental factors that influence DL models' prediction performance. Understanding these factors is crucial for improving model performance, optimizing monitoring network design, and applying the framework to other regions. The study hypothesizes that similar stream nitrate concentration-discharge (c-Q) relationships and similar temporal variability of key environmental factors between target low-frequency and input high-frequency sites improve DL model performance. The c-Q relationship similarities and critical environmental factors are identified using a previously developed DL modeling framework that predicts daily stream nitrate concentrations at low-frequency nitrate monitoring locations in Iowa. Analysis of c-Q patterns at input high-frequency sites revealed that those contributing to accurate predictions consistently exhibited similar dominant c-Q patterns to the target sites. First-order sensitivity analysis of DL model inputs showed that day length (seasonality representation), high-frequency nitrate concentration, and stream discharges of both input and target sites are critical environmental factors for accurate daily nitrate predictions. Dynamic Time Warping (DTW)-based similarity analysis confirmed that similarity in critical environmental factors of input and target nitrate monitoring sites contributes to the model performance, while spatial distance between input and target sites had limited influence. The findings support the replicability and scalability of the developed deep learning framework, underscoring its potential as a valuable tool for stream nitrate monitoring.",
+    "year": "2026",
+    "journal": "Journal of environmental management",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1016/j.jenvman.2026.129539"
+  },
+  {
+    "doi": "10.13227/j.hjkx.202507105",
+    "pmcid": null,
+    "title": "[Prediction of Nitrogen Concentration in Agricultural Drainage Water by Fusing Multispectral Images from Unmanned Aerial Vehicles and Stacking Models].",
+    "abstract": "Rapid and accurate monitoring of nitrogen concentration in farmland drainage ditch water can help to analyze the migration pattern of agricultural surface source pollution and enhance watershed water quality management and pollution prevention and control. In order to solve the problems of large nitrogen migration flux and difficult spatio-temporal dynamic monitoring of farmland drainage ditches in Ningxia Yellow River Irrigation District， taking the fourth drainage ditch of farmland in Ningxia Yellow River Irrigation District as the research object， and based on the dynamic water quality monitoring data and UAV multispectral images of the ploughing period in 2024， we chose six machine learning models including BP， SVM， CNN， RF， XGBoost， and CatBoost and conducted an analysis modeling and predicting total nitrogen （TN）， ammonium nitrogen （NH 4  + -N）， and nitrate nitrogen （NO 3  - -N）. On this basis， the RF， XGBoost， and CatBoost models with better performance were selected for stacked model development， and the distribution of the prediction results was plotted. The results of the study showed that： ① The average TN content of each monitoring point in the fourth drainage ditch was higher than the standard limit of Class V water （2 mg·L -1 ） during the 2024 cropping period， and the NO 3  - -N accounted for 26.16%-84.57% of TN， which was the main form of nitrogen pollution in the water body of the fourth drainage ditch. ② The normalized summation value （ k ） was able to combine the advantages of the Pearson correlation analysis and the random forest feature importance analysis and fully resolved the complex dependence between spectral features and nitrogen concentration， which is more reliable as the basis for feature screening. ③ Using the XGBoost model for TN， NH 4  + -N， and NO 3  - -N， the  R  2  of the test set was 0.81， 0.55， and 0.79； the MAE was 0.67， 0.12， and 0.68 mg·L -1 ； and the RMSE was 0.90， 0.16， and 0.90 mg·L -1 ， respectively， which were the best machine learning models in this study. ④ The RF-XGBoost models for TN， NH 4  + -N， and NO 3  - -N had test set  R  2  of 0.89， 0.66， and 0.86； MAE of 0.56， 0.10， and 0.61 mg·L -1 ； RMSE of 0.68， 0.14， and 0.73 mg·L -1 ； MSE 0.46， 0.02， and 0.53 mg·L -1 ； and CCC of 0.94， 0.74， and 0.92， respectively. The model had high prediction accuracy， small error， high consistency of prediction results， and strong extrapolation ability， and it was the best stacking model at the field scale in the present study. ⑤ The RF-XGBoost model tended to under-predict the extreme values， over-predict the extreme minima， and predict the intermediate values more accurately， and the consistency between the predicted and measured plots of TN and NO 3  - -N was stronger， while the prediction results of NH 4  + -N were poorer. In summary， the RF-XGBoost stacking model can achieve accurate prediction of TN and NO 3  - -N in the fourth drainage ditch of farmland in Ningxia Yellow River Irrigation District by relying on spectral features only， and it has strong extrapolation ability， which can be used in the follow-up promotion. However， it is difficult to fully reflect the changing law of NH 4  + -N by relying on spectral features only， so it is necessary to explore the modeling feasibility of other correlation indexes in the follow-up study. Therefore， it is necessary to explore the feasibility of modeling other related indexes in the subsequent research， and this result can provide new ideas and solutions for the research in this direction.",
+    "year": "2026",
+    "journal": "Huan jing ke xue= Huanjing kexue",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.13227/j.hjkx.202507105"
+  },
+  {
+    "doi": "10.1038/s41598-026-48132-y",
+    "pmcid": "PMC13269765",
+    "title": "The dynamic urban river water quality prediction based on hybrid model.",
+    "abstract": "The choice of prediction model plays a decisive role in prediction performance, and hybrid models contribute to enhancing both model performance and prediction accuracy. This study aims to improve the predictive performance of models in time series data processing and further explore urban river water quality prediction models. The hybrid ARIMA-LSTM model was proposed the to simulate and predict water quality indicators in urban rivers of Zhongshan City. The hybrid model firstly used the linear prediction capability of the ARIMA model to extract linear components from water quality data, thereby generating residuals as inputs for subsequent steps. Then the nonlinear prediction of the LSTM model used the results from the previous step as the input to obtain nonlinear data. Finally, the prediction results of the ARIMA model and the LSTM network were integrated to obtain fitting evaluation results, thereby improving the accuracy of prediction outcomes. Furthermore, three traditional individual prediction methods (CNN, LSTM, ARIMA) along with hybrid ARIMA-LSTM model were conducted and compared to evaluate the performance of the hybrid model. The results showed that the hybrid prediction model was superior to individual prediction methods in terms of accuracy. By integrating LSTM's ability to capture complex nonlinear temporal features with ARIMA's proficiency in modeling linear trends and seasonal components, the hybrid model exhibited superior comprehensive performance in characterizing dynamic water quality variation patterns. The study proved that using the hybrid model could effectively improve the accuracy of short-term urban water quality prediction, and that the prediction accuracy of different pollutants varied under the same prediction method.",
+    "year": "2026",
+    "journal": "Scientific reports",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1038/s41598-026-48132-y"
+  },
+  {
+    "doi": "10.1016/j.watres.2026.125613",
+    "pmcid": null,
+    "title": "Knowledge-guided graph machine learning for spatially distributed prediction of daily discharge and nitrogen export dynamics.",
+    "abstract": "Spatially distributed prediction of streamflow and nitrogen export dynamics is essential for precision management of agricultural watersheds. While temporal deep learning models such as Long Short-Term Memory (LSTM) have shown strong performance at basin scales, their ability to generalize spatially is limited by insufficient representation of spatial dependencies and flow paths, particularly under data-scarce conditions. To address this gap, we propose HydroGraphNet, a knowledge-guided graph machine learning framework that integrates process-based knowledge and explicit spatial learning into temporal modeling. This framework incorporates directed graph topology to encode watershed connectivity and upstream inflows, with mass balance constraints to improve physical consistency. To enhance generalization in sparsely monitored regions, HydroGraphNet is pretrained on synthetic data generated by the SWAT+ (Soil and Water Assessment Tool Plus). We evaluated HydroGraphNet in the Upper Sangamon River Basin (44 HUC-12 subwatersheds, 2001-2020) against two LSTM baselines: a lumped basin-level model and a distributed variant. When benchmarked on SWAT+ simulations in pretraining, HydroGraphNet improved test NSEs by 8.9 % (discharge) and 13.7 % (NO₃-N load) in temporal extrapolation, and by 27.1 % and 34.7 % in spatial extrapolation, relative to the Lumped LSTM baseline. After fine-tuning with USGS monitoring data, the proposed model achieved mean test NSE (KGE) scores of 0.768 (0.861) for discharge and 0.626 (0.664) for NO₃-N load, substantially outperforming baselines. Attribution analysis further highlighted the importance of upstream inflow representation and graph-based spatial learning in capturing cross-subwatershed dependencies. The model also reproduced seasonal hydrological and biogeochemical patterns consistent with known processes, demonstrating its robustness and process fidelity for spatially distributed prediction. Overall, HydroGraphNet advances the integration of physical knowledge and spatially explicit learning in hydrological modeling, offering a generalizable framework for distributed modeling to support spatially targeted water quality management in data-scarce watersheds.",
+    "year": "2026",
+    "journal": "Water research",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1016/j.watres.2026.125613"
+  },
+  {
+    "doi": "10.1093/nsr/nwag192",
+    "pmcid": "PMC13170804",
+    "title": "Globally doubled methane emissions from nutrient-enriched rivers.",
+    "abstract": "Methane (CH 4 ) accounts for about one-third of the current anthropogenic greenhouse gas-driven warming. Rivers, particularly those draining human-impacted landscapes, are important sources of CH 4  to the atmosphere. Yet, effective mitigation of this important flux remains elusive due to the lack of accurate quantification of human-induced emissions and a poor understanding of its key aquatic drivers. Here, we demonstrate that CH 4  emission rates from global nutrient-enriched rivers in human-impacted regions more than double (2.5-fold) those from pristine rivers. Importantly, a strong association is identified between CH 4  flux and concentrations of total phosphorus and ammonium nitrogen in these systems. This relationship is mediated by increased autochthonous and exogenous supplies of labile organic substrates, enhanced methanogen abundance and diversity, and extended anoxia in nutrient-enriched rivers. Quantitative modeling incorporating nutrient effects estimates global CH 4  emissions from nutrient-enriched rivers at 9.7 ± 1.1 Tg CH 4  yr -1 , of which 22%-49% could be mitigated by reducing current nutrient concentrations to levels constrained by sustainable development goals, half of their current levels, or pristine conditions. These findings highlight the substantial potential for effective mitigation of riverine CH 4  emissions via coordinated riverine nutrient management at the global scale.",
+    "year": "2026",
+    "journal": "National science review",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1093/nsr/nwag192"
+  },
+  {
+    "doi": "10.1016/j.watres.2026.126320",
+    "pmcid": null,
+    "title": "Short-term prediction of nitrate plus nitrite in riverine systems using hybrid deep learning models.",
+    "abstract": "Nitrate plus nitrite is a key indicator of water quality and ecosystem health. Real-time forecasting remains challenging due to costly in situ sensors and complex nitrogen cycling dynamics. This study developed five deep learning models, CNN, LSTM, TGCN, CNN-LSTM, and TGCN-LSTM, for 7-day-ahead prediction of daily nitrate plus nitrite concentrations. Models were trained on four years of daily data (n = 1461) from two contrasting Chinese rivers: the agriculturally influenced Huangfuchuan River and the urban-impacted Xiangxi River. Inputs combined lagged nitrate measurements with surrogate variables (pH, dissolved oxygen, and water temperature). A sequential 70/30 train-test split preserved temporal causality, supplemented by rolling-origin cross-validation. The TGCN-LSTM hybrid achieved the strongest performance: R² = 0.965 and RMSE = 0.211 mg/L at the agricultural site, and R² = 0.893 and RMSE = 0.499 mg/L at the urban site. Monte Carlo Dropout ensembles provided prediction intervals with 93% and 89% coverage, respectively. Sensitivity analysis confirmed recent nitrate lags as the most influential predictors, while dissolved oxygen and water temperature provided secondary contextual signals; pH contributed minimally. When lagged nitrate was excluded, performance degraded substantially (R² ≈ 0.65-0.75), confirming that past measurements remain essential for high-accuracy forecasting. However, surrogate-only inputs provided operationally useful predictions during sensor outages (R² > 0.70). The model maintained seasonal reliability (R² > 0.87 across all seasons). These findings demonstrate that TGCN-LSTM improves nutrient forecasting accuracy by combining autoregressive nitrate memory with low-cost sensor networks, though operational deployment requires maintaining nitrate sensor continuity or accepting reduced precision during outages.",
+    "year": "2026",
+    "journal": "Water research",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1016/j.watres.2026.126320"
+  },
+  {
+    "doi": "10.1016/j.biortech.2026.135637",
+    "pmcid": null,
+    "title": "Identifying causal pathways and risk-decision rules for nitrous oxide emission hot moments in wastewater treatment plants using probabilistic causal machine learning.",
+    "abstract": "Nitrous oxide (N_2O) emissions from biological wastewater treatment represent a significant challenge for climate-responsible operation due to their intermittency and occurrence as short-lived emission hot moments. Effective mitigation therefore requires accurate prediction and systematic identification of causal pathways and operational risk conditions. This study develops a probabilistic causal machine learning framework based on long-term online monitoring data from a full-scale wastewater treatment plant for low-emission process control and operational management. An optimal predictive model is first established to characterize N_2O dynamics under varying operational regimes. Building upon this foundation, cohort-based SHapley Additive exPlanations are used to identify regime-dependent nonlinear effects of key operational variables, including dissolved oxygen, ammonium, nitrate, and temperature. Linear Non-Gaussian Acyclic Model-based causal discovery is then used to characterize causal pathways associated with N_2O emission hot moments under different operational regimes. Copula-based joint probability analysis is conducted to quantify the likelihood of N_2O emission hot moments under interacting process conditions. Results demonstrate that N_2O emission hot moments are not triggered by single-factor thresholds but emerge from specific combinations of operational states, revealing interaction-dominated and regime-sensitive causal pathways. By converting interpretable machine learning outputs into probabilistic risk-decision rules, the proposed framework provides actionable guidance for adaptive aeration control, substrate load regulation, and proactive emission mitigation. This study establishes a data-driven framework for interpreting and managing N_2O emissions in biological wastewater treatment. Overall, the proposed framework provides practical support for proactive N_2O emission mitigation while maintaining process stability in full-scale wastewater treatment plants.",
+    "year": "2026",
+    "journal": "Bioresource technology",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1016/j.biortech.2026.135637"
+  },
+  {
+    "doi": "10.1002/wer.70564",
+    "pmcid": "PMC13563112",
+    "title": "Identifying Dominant Factors and Combined Effects of Shallow Groundwater Nitrate Contamination in the Guanzhong Basin Using PSO-XGBoost-SHAP.",
+    "abstract": "The Guanzhong Basin is a typical agricultural plain in China, where shallow groundwater nitrate contamination is jointly associated with multiple environmental factors. However, the dominant factors and their nonlinear response patterns remain unclear. In this study, shallow groundwater nitrate in the Guanzhong Basin was investigated using variables related to soil physicochemical properties, groundwater physicochemical parameters, hydrogeological conditions, climate, and land use/land cover. An XGBoost model optimized using particle swarm optimization (PSO) was combined with SHAP analysis to quantify the relative contributions and directions of association of environmental factors and to examine their condition-dependent combined patterns. The results showed that the PSO-XGBoost model effectively captured the nonlinear relationship between environmental factors and nitrate concentration, with satisfactory test-set performance (MAE = 1.3134, RMSE = 2.1502, R 2  = 0.9163). SHAP analysis indicated that precipitation, depth to groundwater, electrical conductivity, and vadose-zone thickness were the key predictors of shallow groundwater nitrate concentrations in the study area. Precipitation and electrical conductivity generally made positive contributions, depth to groundwater made a negative contribution, and vadose-zone thickness showed a nonmonotonic response pattern. SHAP dependence analysis further suggested that paired factors exhibited condition-dependent associations in model-predicted nitrate concentrations, providing evidence to support groundwater nitrate-risk management in the Guanzhong Basin.",
+    "year": "2026",
+    "journal": "Water environment research : a research publication of the Water Environment Federation",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1002/wer.70564"
+  },
+  {
+    "doi": "10.1038/s41598-025-27163-x",
+    "pmcid": "PMC12675495",
+    "title": "Decomposition prediction and optimal ensemble strategy improve river dissolved oxygen prediction accuracy.",
+    "abstract": "The accurate prediction of dissolved oxygen (DO) concentration in rivers is very important for the management of aquatic ecosystems, However, the hybrid model of ' modal decomposition + prediction ' for predicting the nonlinear change of dissolved oxygen in rivers is still insufficient. In this paper, a frequency division prediction framework based on the optimal ensemble of Complementary Ensemble Empirical Mode Decomposition with Adaptive Noise (CEEMDAN) is proposed. The dissolved oxygen sequence was decomposed into multiple components by CEEMDAN, and the long short-term memory network (LSTM), support vector regression (SVR) and multi-layer perceptron (MLP) models were constructed to predict each component independently. An innovative grid search algorithm with constraints is constructed, and the advantages of each model are complemented by dynamic combination. The optimal ensemble scheme is obtained with the goal of minimizing the mean absolute error ( MAE ) of the training set. The empirical study of monitoring sections A and B in the Ganjiang River Basin shows that : in the prediction task, the prediction of the training set, the MAE of the integrated model is 18.6-35.5% lower than that of the ensemble model, the root mean square error ( RMSE ) is 22.1-22.8% lower, and the determination coefficient ( R2 ) reaches 0.954 and 0.972. In particular, the error accumulation of MAE in the 3-day prediction is 27.2-81.4% lower than that of the mixed model. This framework enables the modes of multi-component dissolved oxygen series prediction to be effectively aliasing, and provides an extensible technical path for the intelligent management of the basin.",
+    "year": "2025",
+    "journal": "Scientific reports",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1038/s41598-025-27163-x"
+  },
+  {
+    "doi": "10.1016/j.isci.2026.116001",
+    "pmcid": "PMC13214539",
+    "title": "Identification of key environmental factors and intelligent ecological zoning in the upper Yangtze basin.",
+    "abstract": "Ecological zoning is indispensable for delineating heterogeneous environmental regimes and informing targeted basin management. To elucidate the drivers of phytoplankton community structure, we analyzed water chemistry and phytoplankton data from 26 sites in the upper Yangtze River using random forest modeling. We identified total nitrogen, total phosphorus, water temperature, and pH as primary determinants, enabling the delineation of three distinct ecological zones. These zones exhibit significant geographical variations in physical profiles and species richness. Niche analysis revealed a positive correlation between species niche breadth and overlap. Importantly, the nitrogen-to-phosphorus ratio emerged as the critical regulator of spatial differentiation and niche characteristics. Regulating these nutrient ratios is vital for maintaining ecosystem stability. This predictive framework clarifies the mechanisms shaping phytoplankton distribution and provides a quantitative basis for region-specific conservation and nutrient-management strategies in large river systems.",
+    "year": "2026",
+    "journal": "iScience",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1016/j.isci.2026.116001"
+  },
+  {
+    "doi": "10.1016/j.jconhyd.2026.105024",
+    "pmcid": null,
+    "title": "A cluster-based virtual sensing framework for estimating total nitrogen and total phosphorus using sensor-measurable water quality variables.",
+    "abstract": "In large river basins, water-quality responses exhibit strong spatial heterogeneity because of differences in hydraulic and geomorphic conditions, pollutant-source distributions, and residence times, and this heterogeneity limits the estimation accuracy of single-model virtual-sensor approaches. Total nitrogen (TN) and total phosphorus (TP), in particular, show nonlinear behavior and site-specific responses, highlighting the need for an estimation framework that explicitly incorporates spatial structure. This study proposes a cluster-based virtual-sensing framework that divides a large river basin into spatial clusters with similar water-quality responses and builds independent machine-learning virtual sensors for each cluster to improve TN and TP concentration estimation. Water Quality Monitoring Network (WQMN) data from January 2016 to October 2025 were used. Hierarchical Cluster Analysis (HCA), K-means, and Gaussian Mixture Model (GMM) clustering were applied and compared using multivariate water-quality variables, and the resulting spatial cluster structure was incorporated into the virtual-sensor estimation stage. Random Forest (RF), XGBoost (XGB), and Multilayer Perceptron (MLP) regression models were constructed for each cluster and evaluated through validation. The cluster-based approach showed the clearest complementary effect under restricted input conditions in which direct nutrient-component variables were excluded or only basic sensor variables were used. Relative to the no-cluster framework, the RF-based main cluster framework improved R 2  by up to approximately 0.045 for TN and 0.029 for TP, with more evident improvements under the component-excluded and basic sensor input conditions. These results demonstrate that combining spatial clustering with machine-learning-based virtual sensors can improve the spatial precision and interpretability of nutrient estimation in large river basins.",
+    "year": "2026",
+    "journal": "Journal of contaminant hydrology",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1016/j.jconhyd.2026.105024"
+  },
+  {
+    "doi": "10.3390/toxics14040335",
+    "pmcid": "PMC13119790",
+    "title": "Explainable Deep Learning for Research on the Synergistic Mechanisms of Multiple Pollutants: A Critical Review.",
+    "abstract": "The synergistic control of multiple pollutants is critically challenged by complex nonlinear interactions, strong spatiotemporal heterogeneity, and the difficulty of tracing causal drivers. Deep learning offers high predictive power but suffers from the \"black-box\" problem, limiting its acceptance in environmental decision-making. Explainable Deep Learning (XDL) integrates physical mechanisms with interpretable algorithms, achieving both prediction accuracy and explanatory transparency. This review systematically evaluates the effectiveness and limitations of XDL in analyzing multi-pollutant interactions, with a comparative focus on atmospheric and aquatic environments. Key techniques, including SHAP, attention mechanisms, and physics-informed neural networks, are examined for their roles in synergistic monitoring, source apportionment, and regulatory optimization. The main findings reveal that: (1) XDL, particularly the \"tree model + SHAP\" paradigm, has become a dominant tool for quantifying driving factors, yet most attributions remain correlational rather than causal; (2) physics-informed fusion (soft vs. hard constraints) improves physical consistency but faces unresolved conflicts between data and physical laws, with current models lacking a conflict detection mechanism; (3) cross-media comparison shows a unified technical logic of \"physical mechanism guidance + post hoc feature attribution\", but atmospheric applications lead in embedding advection-diffusion constraints, while aquatic research excels in spatial topology modeling via graph neural networks; (4) critical bottlenecks include the lack of causal inference, uncertainty-unaware interpretations, and data scarcity. Future directions demand a shift from correlation-only to causal-aware attribution, from blind fusion to conflict-detecting systems, and from no evaluation standards to domain-specific validation benchmarks. XDL is poised to transform multi-pollutant governance from experience-driven to intelligence-driven approaches, provided that verifiable interpretability and physical consistency become core design principles.",
+    "year": "2026",
+    "journal": "Toxics",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.3390/toxics14040335"
+  },
+  {
+    "doi": "10.1016/j.watres.2026.126427",
+    "pmcid": null,
+    "title": "Synergistic watershed-scale management offers a new perspective on land-to-sea total nitrogen control.",
+    "abstract": "Land-sea coordination is the core approach to addressing land-ocean pollution. However, existing measures focus on fragmented governance or the application of single models, and synergistic management technologies and quantitative schemes at the watershed scale remain insufficient. Pollution control therefore requires a shift from localized interventions to a synergistic strategy for the entire watershed. Here, OneBasin, a scalable framework for Multi-section Synergistic Simulation & Targeted Emission Reduction, was developed by integrating hydrological modeling, machine learning (ML), and multi-objective optimization. To improve the stability of the OneBasin framework, in ML model configuration, the non-cascaded configuration without GDP was identified as a superior approach, which can prevent mismatch between predictive variables and decision variables and reduce error accumulation. Based on the application practice of total nitrogen pollution control in the Yellow River Basin, this framework can generate emission reduction schemes that balance fairness and efficiency, and its core value lies in providing scientific support for the implementation of emission reduction measures such as agricultural upgrading and wastewater treatment standard improvement. These results aim to offer a valuable perspective for transitioning river basin water governance from fragmented \"local standards\" to integrated \"systemic health\".",
+    "year": "2026",
+    "journal": "Water research",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1016/j.watres.2026.126427"
+  },
+  {
+    "doi": "10.1038/s41598-026-56576-5",
+    "pmcid": "PMC13572458",
+    "title": "A hybrid deep learning approach for winter wheat yield prediction: evidence from leveraging multi-source data.",
+    "abstract": "Accurate district-level wheat yield forecasts are critical for food security planning, supply-chain management, and agricultural policy in India, the world's second-largest wheat producer. We benchmark nine model classes for this task on a 23-year (2001-2023) dataset of 275 districts across India's seven largest wheat-producing states, which together account for ∼95% of national production. The benchmark covers Random Forest, XGBoost, LightGBM, a 1D-CNN, an LSTM, a BiLSTM, a single-stream Transformer encoder, the recently proposed Parallel CNN-LSTM-Attention design, and our hybrid CNN-BiLSTM-Attention with modality-specific routing (a 1D-CNN over the vertically structured soil profile and a BiLSTM with self-attention over the meteorological and remote-sensing time series). The proposed model is the best entry, achieving a Mean Absolute Error (MAE) of 273.2 kg/ha and an [Formula: see text] of 0.795 on the held-out test set - a 43.8% MAE reduction over the Random Forest baseline, a ∼28% reduction over the gradient-boosted baselines, and a ∼4% reduction over the next-best deep model. A simple persistence forecast ([Formula: see text]) however, achieves an MAE of 274.9 kg/ha, essentially tying the proposed model on average. We show that the architectural value-add concentrates in anomalous years: in the dry 2023 sowing season the model improves MAE by 7.2% and RMSE by 11.2% over persistence, and SHAP attribution localises the temporal contribution to the February-March grain-filling window led by EVI and NDVI signal - consistent with the well-documented sensitivity of wheat grain-filling to moisture and temperature stress in that window. Together, these results position persistence-aware, modality-specific deep learning as a practical framework for stress-sensitive yield forecasting in data-scarce agricultural regions.",
+    "year": "2026",
+    "journal": "Scientific reports",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1038/s41598-026-56576-5"
+  },
+  {
+    "doi": "10.1016/j.envpol.2026.128570",
+    "pmcid": null,
+    "title": "From correlation to causality: Identifying potential environmental drivers of pathogenic antibiotic-resistant bacteria in river water using causal machine learning.",
+    "abstract": "Pathogenic antibiotic-resistant bacteria (PARB) pose a serious public health threat within the One Health framework, yet identifying their potential environmental drivers in complex aquatic systems remains a challenge. This study systematically compared correlation analysis, explainable machine learning, and causal machine learning within a unified framework. Both Spearman correlation and explainable machine learning identified numerous potentially important factors, notably non-antibiotic pharmaceuticals such as carbamazepine and bezafibrate. However, causal inference via double machine learning, which controls for confounders and interaction effects, revealed a distinctly different driver profile. Under predefined assumptions, this approach estimated potential causal effects for dissolved oxygen, the nitrate-to-ammonium ratio, specific antibiotics (roxithromycin, azithromycin), and non-antibiotic compounds (acenaphthene, 2-chloroanthracene). Taxon-specific analysis further showed that Aeromonas aligned closely with the overall PARB causal profile, whereas Pseudomonas responded primarily to oxidation-reduction potential. Functional profiles suggested potential stress-adaptation mechanisms related to signal transduction and metabolic regulation pathways. By shifting from associative prediction to causal inference, this causal machine learning-guided framework provides a robust analytical basis for identifying environmental drivers and informing targeted management of PARB risks in aquatic ecosystems.",
+    "year": "2026",
+    "journal": "Environmental pollution (Barking, Essex : 1987)",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1016/j.envpol.2026.128570"
+  },
+  {
+    "doi": "10.3390/toxins18050203",
+    "pmcid": "PMC13211262",
+    "title": "Predicting Algal Bloom Dynamics in Drinking Water Reservoirs Using High-Frequency In Situ Data and Machine Learning.",
+    "abstract": "Algal proliferation in subtropical drinking water reservoirs has become increasingly severe, and developing a reliable prediction for algal abundance through high-frequency in situ data is essential for early risk warning and effective management. This study analyzed the interannual variations in algal abundance in the Shanmei (SM) Reservoir, located in Quanzhou City, Fujian Province, China, based on the high-frequency data between 2020 and 2025, and forecasted algal abundance 24 h ahead via the optimized Transformer model. Results revealed that the SM reservoir exhibited seasonal variability in environmental factors, with persistently elevated pH during spring and summer, ranging from 7.12 to 9.66, and relatively high total nitrogen concentrations, ranging from 1.17 to 2.28 mg/L. Overall, algal abundance increased throughout the study period, and the annual average algal abundance in 2025 was 8.18 × 10 6  cells/L, which was twice that in 2021. Model comparisons revealed that the optimized Transformer model exhibited the highest performance in terms of R 2  = 0.88 when predicting the next hour using 12 days of data. Feature importance analysis based on SHapley Additive exPlanations (SHAPs) revealed that the predictions of algal dynamics were primarily influenced by previous-hours algal abundance, permanganate index, dissolved oxygen, air temperature, wind speed, and pH. This study revealed that the optimized independent learning model with integrated multi-scale features can significantly enhance the predictive performance of algal dynamics, offering a technical basis for early warning of algal blooms and refined reservoir management.",
+    "year": "2026",
+    "journal": "Toxins",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.3390/toxins18050203"
+  },
+  {
+    "doi": "10.1038/s41597-026-07165-8",
+    "pmcid": "PMC13230827",
+    "title": "CANSD v1.0: the first map of agricultural nitrogen surplus across China from 2000 to 2022.",
+    "abstract": "Under the dual challenges of global climate change and agricultural sustainability, spatially precise characterization of agricultural nitrogen surplus has become a key technical bottleneck in balancing food security and water environmental protection. Existing global and national nitrogen datasets remain restricted to individual nitrogen species or loss pathways, with no unified, long-term, spatially continuous gridded product for total agricultural nitrogen surplus-particularly at the national scale for China. Compounding these limitations, current modeling approaches are plagued by coarse statistical resolution, short temporal coverage, and overly simplified process representations that distort realistic nitrogen migration and cycling pathways. To address these critical gaps, this study constructs a 0.5° spatial resolution dataset of agricultural nitrogen surplus in China for the period 2000-2022 (CANSD v1.0). The grid-scale nitrogen surplus (NS) is operationally defined as a spatially continuous variable that quantifies agricultural nitrogen cycling heterogeneity at 0.5° resolution. Gridded values are post-processed by rescaling to align with prefecture-level total nitrogen surplus accounting, while realizing spatially continuous characterization based on the inherent spatial heterogeneity of agricultural nitrogen cycling. This approach overcomes the scale mismatch between administrative statistics and field-scale processes by integrating machine learning with spatial downscaling, thereby mitigating potential circular causality and enhancing the characterization of cross-scale transfer patterns. Our framework provides a practical basis foundation for evidence-based agricultural nitrogen management and environmental risk mitigation.",
+    "year": "2026",
+    "journal": "Scientific data",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1038/s41597-026-07165-8"
+  },
+  {
+    "doi": "10.1038/s41598-026-36229-3",
+    "pmcid": "PMC12894955",
+    "title": "Surface water quality prediction via an MLA-Mamba hybrid neural network with GRPO optimization.",
+    "abstract": "Surface water quality forecasting is crucial for pollution early warning and sustainable water resource management. However, accurate prediction of key water quality indicators remains challenging due to the highly nonlinear spatio-temporal dynamics and complex inter-variable relationships. Traditional statistical models and conventional machine learning approaches often struggle to effectively capture these couplings, leading to limited predictive performance. In this study, we propose a novel hybrid deep learning framework, termed MLA-Mamba, which integrates an improved Mamba-based sequence modeling network with a Multi-Head Local Attention (MLA) mechanism, optimized through a Gradient Reparameterization Optimization (GRPO) strategy. The Mamba module is designed to extract long-range temporal dependencies from water quality time series via a state-space modeling paradigm, while the MLA mechanism captures localized spatial correlations among multiple monitoring stations. To the best of our knowledge, this study represents one of the first explorations of applying Gradient Reparameterization Optimization (GRPO) to water quality prediction tasks. Furthermore, a multi-task learning scheme is incorporated to jointly predict multiple key indicators, including permanganate index (CODMn), ammonia nitrogen (NH3-N), total phosphorus (TP), and total nitrogen (TN), thereby exploiting inter-variable dependencies to enhance overall forecasting accuracy. The proposed GRPO strategy dynamically adjusts learning rates during training to accelerate convergence and improve model stability. Experimental evaluations on two real-world surface water datasets demonstrate that the proposed MLA-Mamba model achieves consistent performance improvements over the evaluated baseline methods across multiple error metrics. In addition, predictive uncertainty is quantified via Monte Carlo dropout, enabling the estimation of confidence intervals to support risk-aware water quality assessment. These results highlight the effectiveness of integrating advanced sequence modeling, attention-driven spatial feature extraction, and adaptive optimization for robust environmental time series forecasting.",
+    "year": "2026",
+    "journal": "Scientific reports",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1038/s41598-026-36229-3"
+  },
+  {
+    "doi": "10.3390/foods15183205",
+    "pmcid": "PMC13605652",
+    "title": "Application of Artificial Intelligence in Aquaculture, Processing, Safety, and Traceability in the Industry of Aquatic Products: A Review.",
+    "abstract": "The aquatic products industry has experienced rapid development due to the growing global demand for high-quality proteins. However, conventional production models remain constrained by multifaceted impediments, including disease outbreaks, environmental stressors, microbial contamination, and operational inefficiencies in processing, quality control, and logistics. Artificial intelligence (AI) offers targeted methodological solutions to these challenges. From a functional perspective, this review categorizes artificial intelligence into four major types: perception, prediction, control, and generation, and systematically evaluates its application progress in aquaculture, processing, quality inspection, and traceability fields. Perception AI constitutes the data acquisition and digitization layer, utilizing computer vision, sonar, and multimodal fusion technologies to establish digital mappings from environmental parameters to biological indicators. Prediction AI employs machine learning and deep learning algorithms to transform historical datasets into quantitative forecasts regarding water quality dynamics, disease risks, and production trends. Control AI translates decision-making protocols into precise, autonomous regulatory actions for aquaculture environments and processing workflows through fuzzy logic and model-based predictive control. Generation AI leverages large language models and generative adversarial networks to demonstrate innovative capabilities in data augmentation, solution optimization, and virtual simulation. Collectively, these applications optimize core production processes while significantly enhancing product quality, processing efficiency, safety management, and traceability systems. Future research directions will prioritize the development of robust, interdisciplinary AI technologies with superior integration capabilities.",
+    "year": "2026",
+    "journal": "Foods (Basel, Switzerland)",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.3390/foods15183205"
+  },
+  {
+    "doi": "10.1016/j.ese.2026.100755",
+    "pmcid": "PMC13545705",
+    "title": "Deep forecasting architectures mirror ecological time scales in water quality prediction.",
+    "abstract": "Accurate water quality forecasting-specifically tracking phytoplankton dynamics like chlorophyll  a -is crucial for safeguarding aquatic ecosystems and global water security. Deep temporal architectures offer powerful non-linear modeling capabilities, promising to overcome the parameterization bottlenecks of traditional process-based models. However, current applications treat these models as black boxes, leaving it obscure how specific architectural modules interact with the intrinsic ecological time scales governing aquatic environments. Here, we reveal a fundamental architectural-ecological duality in water quality forecasting by systematically dissecting nine prediction architectures-spanning classic baselines to modern deep models-across two ecologically contrasting reservoirs. Using chlorophyll  a  dynamics to represent integrated system responses, we show that patch embedding serves as a universal temporal operator, mitigating noise and enhancing forecasting accuracy by up to 10.1% when integrated into standard baselines. Crucially, inter-variable modeling strategies dictate the effective forecast horizon: channel-independent architectures dominate short-term (1-7 days) chlorophyll  a  forecasting (Nash-Sutcliffe efficiency up to 0.88) by capturing biomass self-persistence, whereas cross-variable attention architectures excel in medium-term (8-15 days) prediction (efficiency up to 0.83) by uncoupling delayed nutrient-temperature interactions. Explainable AI further confirms a temporal shift in feature reliance from current biomass to lagged drivers over extended horizons. Beyond water quality, this mechanistic alignment between deep learning modules and ecological time scales establishes a scalable blueprint for building interpretable, horizon-adaptive AI frameworks across complex climate and environmental systems.",
+    "year": "2026",
+    "journal": "Environmental science and ecotechnology",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1016/j.ese.2026.100755"
+  },
+  {
+    "doi": "10.3390/ma19143150",
+    "pmcid": "PMC13413826",
+    "title": "CTGAN-Based Data Augmentation and XGBoost-LSTM Strength Prediction of CSG.",
+    "abstract": "Cementitious sand and gravel (CSG) is commonly used in construction engineering; however, its mix proportion design is complex, and traditional physical experiments face limitations such as long cycles, high costs, and susceptibility to external factors when obtaining high-quality sample data. In this study, a foundational dataset was first acquired through physical experiments: 100 sets of CSG specimens with different mix proportions (cement content 40, 50, 60, 70 kg/m 3 ; water-to-binder ratio 1.0, 1.2, 1.4; sand ratio 0.1, 0.2, 0.3, 0.4; fly ash content 20, 30, 40, 50 kg/m 3 ) were prepared. After 28 days of standard curing, compressive strength and splitting tensile strength tests were conducted using a WAW-1000 electro-hydraulic servo universal testing machine, yielding 100 sets of real mechanical property data. The coefficients of variation for all test groups were below 10%, confirming the reliability and repeatability of the experimental data. On this basis, a data augmentation method based on Conditional Tabular Generative Adversarial Networks (CTGAN) is proposed. Through adversarial training between the generator and the discriminator, the model learns the multi-dimensional distribution characteristics of the original CSG data and generates 100 synthetic samples, which are then merged with the original data to expand the dataset to 200 samples. The quality of the synthetic data is evaluated using Wasserstein distance and correlation matrix heatmaps. Furthermore, a hybrid XGBoost-LSTM prediction model is proposed-XGBoost is used for feature construction to capture nonlinear interactions among mix proportion variables, and the constructed features are then fed into an LSTM network for sequential learning and regression prediction. The results show that the CTGAN-generated data are highly consistent with the original data in terms of kernel density distributions and variable correlations, with Wasserstein distance significantly superior to four comparative methods: Bootstrap, SMOTE, GaussianCopula, and TVAE. After augmentation, the XGBoost-LSTM model achieves a coefficient of determination (R 2 ) of 0.9897 for compressive strength prediction (vs. 0.9793 before augmentation) and 0.9801 for splitting tensile strength (vs. 0.9882 before augmentation, a slight decrease). The mean absolute percentage errors (MAPE) are 4.49% and 4.11%, and the root mean square errors (RMSE) are 0.201 and 0.049, respectively; both error metrics are reduced compared with those before augmentation. Compared with baseline models including XGBoost, LSTM, Random Forest (RF), and Support Vector Regression (SVR), the XGBoost-LSTM model exhibits the best performance across all evaluation metrics, and Wilcoxon signed-rank tests confirm that the performance differences are statistically significant ( p  < 0.05). The proposed method of CTGAN-based data augmentation combined with the XGBoost-LSTM hybrid model provides an effective solution to the problem of insufficient CSG sample data and offers a reference for data enhancement and performance prediction of other small-sample materials.",
+    "year": "2026",
+    "journal": "Materials (Basel, Switzerland)",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.3390/ma19143150"
+  },
+  {
+    "doi": "10.1038/s41598-026-57290-y",
+    "pmcid": "PMC13547387",
+    "title": "PI-HydroGNN: a physics-informed spatiotemporal graph neural network framework for hydraulic reliability, leakage detection, and energy-efficient operation in water distribution systems.",
+    "abstract": "For Water Distribution Networks (WDS) to be sustainably operated, hydraulic reliability, leak detection, and energy-efficient operation are essential. Although the data-driven hydraulic modeling problem has been advanced by recent developments in Graph Neural Networks (GNNs), the existing solutions are black-box predictors that lack the ability to directly enforce the physical conservation laws, which makes them less robust, interpretable, and reliably performing. The research proposes PI-HydroGNN, a physics-informed spatiotemporal graph learning framework for water distribution system monitoring and control. The framework integrates established modeling components within a unified architecture and incorporates hydraulic mass balance, energy conservation, and pressure-dependent leakage dynamics directly into the optimization objective, improving physical consistency and robustness. Three benchmark networks (Net3, C-Town, and Anytown) with stochastic demand variations and artificial leakage scenarios over a 60-day horizon are used in the extended period EPANET simulations to evaluate the framework. Compared to the data-driven baselines, PI-HydroGNN achieves 9.6% savings in pump energy use, an F1-score improvement of 0.922 for leakage detection, and a 39.9% reduction in pressure prediction RMSE, while also decreasing pressure violation rates by 68.9%. The model demonstrates strong generalization across benchmark networks under varying demand and leakage conditions. The findings show that a high-quality and functionally well-integrated digital twin for WDS operation can be obtained by incorporating physical principles into graph-based learning. PI-HydroGNN demonstrates strong potential for digital twin applications in water distribution system management.",
+    "year": "2026",
+    "journal": "Scientific reports",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1038/s41598-026-57290-y"
+  },
+  {
+    "doi": "10.1038/s41598-026-44885-8",
+    "pmcid": "PMC13172418",
+    "title": "Forecasting of global water usage in agriculture and total global consumption by using the Bi-GRU model.",
+    "abstract": "Water resources should be used efficiently in order to reduce constraints to future generations. it is important to stress the importance of well-developed management plans with sound forecasts. The need to have exact long-term forecast, limited access to data, changeable demand and some of the significant challenges it faces include integration of different datasets. The objective of this research is to predict Total Water consumption (TWC) and agricultural water use (AWU) which are increasing because of causes like climate change, seasonal highs and lows and financial requirements. Forecasting It is difficult to plan what to do with watering because of the unpredictable weather and soil conditions. In this Research, a Bidirectional Gated Recurrent Unit (Bi-GRU) is applied on the Global Water. These challenges to strategy could be addressed by the Consumption Dataset (2000–2024) in order to obtain the most accurate prediction. This is further enhanced by the fact that the performance of our model (Bi-GRU) is compared to that of other popular models like LSTM, Deep-AR, Mega-CRN and TFT. The play is very active. with an effective mean absolute percentage error (MAPE) of 0.2257, root mean square error (RMSE) by less than the fact that the mean squared error (MSE) = 0.0049 and the mean absolute error (MAE) = 0.0587 confirm that the Bi-GRU model is superior compared to other models used to forecast TWC and AWU that are also our dependent variables. The higher precision in forecasting rendered feasible by using deep learning algorithms enables a more precise evaluation of global water consumption particularly that of the agricultural and industrial sectors. It thus facilitates the development of efficient water-management schemes globally. The choice of Bi-GRU is motivated by its bidirectional temporal learning capability, which enables improved modeling of long-term and multivariate dependencies in global water consumption time-series.",
+    "year": "2026",
+    "journal": "Scientific reports",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1038/s41598-026-44885-8"
+  },
+  {
+    "doi": "10.1038/s41598-026-69489-0",
+    "pmcid": "PMC13578431",
+    "title": "Low-cost IoT real-time environmental monitoring and one-hour LSTM forecasting for small-scale agricultural applications.",
+    "abstract": "Standard equipment is too expensive and complex, frequently limiting continuous environmental monitoring in small-scale farming. To overcome this, a low-cost seven-channel IoT monitoring and forecasting system was developed and deployed, utilizing an Arduino Uno R3 and ESP8266 NodeMCU Wi-Fi module. The system acquired temperature, humidity, precipitation, soil moisture, methane, carbon monoxide, and air quality, transmitting data to the ThingSpeak cloud platform at an average interval of approximately one minute. The DHT22 temperature and humidity sensor carries a manufacturer-rated accuracy of ± 0.5 °C and ± 2-5% RH; the remaining sensors report uncalibrated raw output, as no reference-instrument validation was performed. The device was deployed for 21 days at a residential garden site in the Nile Delta region of Egypt. A total of 30,981 of 31,460 exported observations, 98.48% of the exported record were retained after the application of the preprocessing pipeline, which consisted of time-aware interpolation and Augmented Dickey-Fuller (ADF)-guided stationarity conditioning. A 70/15/15 chronological train/validation/test split was used to prevent temporal leakage. The analysis revealed distinct environmental patterns, including a rising trend of 0.296 °C/day, an anti-phase coupling between temperature and humidity, and an increase in raw gas sensor output overnight. To make use of this data for predictive insights, seven different univariate LSTM models were trained to forecast one hour ahead. When evaluated against persistence and seasonal-naive baselines on the same test set, the LSTM held a modest edge over persistence for methane (Mean Absolute Percentage Error, MAPE: 0.81%) and air quality (MAPE: 0.31%), while a simple persistence forecast matched or outperformed the LSTM for the remaining five channels. This field deployment demonstrates the technical feasibility of pairing affordable hardware with deep learning forecasting for continuous environmental monitoring, providing a foundation for future irrigation-support applications in resource-constrained settings.",
+    "year": "2026",
+    "journal": "Scientific reports",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1038/s41598-026-69489-0"
+  },
+  {
+    "doi": "10.1007/s10661-026-15786-0",
+    "pmcid": "PMC13481410",
+    "title": "A machine learning approach to predict river hydrographs for water quality sampling.",
+    "abstract": "Hydrology and water quality are innately linked, as flow dynamics control the transport of pollutants within river systems. Consequently, the timing of sample collection in water quality monitoring programs strongly influences the accuracy of estimated pollutant loads. To minimise error, concentrations should be sampled across the hydrograph, capturing the rising limb, peak, and falling limb, to reflect the dynamic nature of pollutant transport. However, in river systems with variable flow regimes, predicting the timing and duration of events is challenging. Monitoring programs often resort to oversampling to ensure that critical periods are represented, but this approach increases effort and cost. In this study, we apply probabilistic gradient boosting decision tree regression (CatBoost) to forecast river height in a tropical, fast-response catchment characterised by high-flow variability, using hourly rainfall, discharge, and river height data collected over a 15-year period. Model performance was evaluated across forecast horizons ranging from 1 to 48 h. The models reproduced hydrograph magnitude, shape, and timing with high accuracy at short horizons (1-12 h), while forecast confidence and accuracy declined progressively at longer horizons (24-48 h). Forecast performance also varied across flow regimes: low flows were predicted accurately across all horizons, moderate flows reliably up to the 24-h horizon, and high flows up to the 12-h horizon. Predictive skill declined for extreme events; however, forecasts remained operationally valuable up to the 12-h horizon. These findings highlight the potential for short-term forecasts to support adaptive, resource-efficient sampling programs and reduce reliance on oversampling while maintaining pollutant load accuracy.",
+    "year": "2026",
+    "journal": "Environmental monitoring and assessment",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1007/s10661-026-15786-0"
+  },
+  {
+    "doi": "10.1038/s41598-026-57110-3",
+    "pmcid": "PMC13530177",
+    "title": "A novel approach for forecasting algal bloom: long short-term memory artificial neural network with exponential smoothing feedback optimized by the arithmetic mean algorithm.",
+    "abstract": "Artificial intelligence-based methods have gained increasing attention for sustainable environmental monitoring due to their efficiency and low operational cost. In this study, a new long short-term memory with an exponential smoothing method is proposed, and an arithmetic mean optimization algorithm-based training strategy is introduced for the proposed neural networks. The resulting proposed neural network method is used to forecast chlorophyll-a concentrations, a key indicator of algal bloom dynamics, using satellite-derived time series data from 15 estuarine monitoring stations in the Black Sea region. To evaluate the effectiveness of this framework, comprehensive experiments are conducted by comparing the proposed neural network with several shallow and deep learning models. The results show that the proposed neural network model achieves superior forecasting performance in terms of root mean square error and mean absolute percentage error across the majority of the analysed time series. Furthermore, statistical significance analyses based on the Friedman and Wilcoxon signed-rank tests confirm that the observed performance improvements are statistically significant. The proposed neural network model attains the best overall ranking with a mean rank of 1.06 and significantly outperforms all competing models under the Holm-Bonferroni correction. The findings indicate that the proposed neural network improves both forecasting accuracy and robustness, providing a reliable and effective framework for modelling chlorophyll-a dynamics. This approach offers a promising tool for the early detection and management of algal bloom events in marine ecosystems.",
+    "year": "2026",
+    "journal": "Scientific reports",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1038/s41598-026-57110-3"
+  },
+  {
+    "doi": "10.1016/j.ese.2026.100733",
+    "pmcid": "PMC13446098",
+    "title": "Deep learning decodes multi-horizon dynamics and probabilistic risks of harmful algal blooms.",
+    "abstract": "Harmful algal blooms are expanding globally across freshwater ecosystems due to climate change and accelerating eutrophication, posing escalating threats to public health and economic stability. Robust early warning requires predictive frameworks that are accurate at hourly resolution, uncertainty-aware, and mechanistically interpretable. Existing process-based models are limited by sparse parameterization, while statistical and deep-learning approaches typically operate at daily resolution, produce only point predictions, and rely on threshold-based classifications or post-hoc explanations that fail to capture high-frequency temporal dynamics or quantify predictive uncertainty, thereby hindering proactive intervention and masking hidden ecological risks. Here we present BloomNet, an intrinsically interpretable deep neural network architecture configured for multi-horizon quantile forecasting, resolves these limitations by integrating future environmental covariates with historical observations from a hyper-eutrophic lake. Evaluated on a four-year hourly record, BloomNet achieves exceptional predictive stability across 24-, 48-, and 72-h horizons ( R   2  up to 0.78, 24-h  MAPE  = 25.7%), outperforming long short-term memory, Transformer, and temporal convolutional network baselines while circumventing iterative error accumulation. The network's dual-path variable-selection and attention mechanisms decode shifting ecological drivers directly across horizons, revealing a transition from short-term thermal regulation (water temperature weight up to 0.640) to medium-term nutrient governance (total phosphorus weight up to 0.689), while isolating distinct multimodal attention spikes 24h prior to bloom onset. Real-time interpretability further reveals that driver importance and temporal dependencies shift dynamically between bloom-onset and non-bloom states. These probabilistic quantiles establish a graduated, risk-oriented warning protocol that transforms reactive water resource administration into precision ecotechnology.",
+    "year": "2026",
+    "journal": "Environmental science and ecotechnology",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1016/j.ese.2026.100733"
+  },
+  {
+    "doi": "10.3390/s26154916",
+    "pmcid": "PMC13469244",
+    "title": "An Energy-Efficient Hybrid LoRa-Wi-Fi Architecture for Real- Time Water Quality Monitoring and Machine Learning-Based Trend Forecasting.",
+    "abstract": "Water quality management in large-scale institutional infrastructures faces significant challenges due to the high latency of manual sampling and the energy-connectivity trade-offs in traditional IoT deployments. This paper proposes HydroSense AI, a robust three-tier IoT framework designed for real-time multi-parameter water quality monitoring and predictive analytics. The system integrates a heterogeneous sensing layer (pH, TDS, turbidity, and temperature) with a hybrid communication architecture, utilising Long Range (LoRa) technology for low-power transmission over long ranges (manufacturer-rated for line-of-sight distances of up to 16 km, and validated up to 2 km within a dense campus environment in this study), bridged via an ESP32-based gateway to the cloud. To address the critical issue of energy autonomy in remote sensing nodes, we implement a hardware-synchronised duty-cycling mechanism using a DS3231 Real-Time Clock (RTC), enabling precise deep-sleep scheduling and significantly extending battery operational life. Beyond data acquisition, the framework incorporates AI-driven trend-forecasting and anomaly-detection models to provide early warnings of water degradation through a Telegram-integrated alert system. Experimental validation over an extended deployment period demonstrates high measurement stability, with the forecasting model achieving a one-step (10-min) normalised RMSE of 0.0063 (equivalent to 0.033 pH units) for pH and 0.0298 (17.0 ppm) for TDS on a held-out test partition; a benchmark against persistence and ARIMA baselines is also provided. A complete measured energy decomposition of the deployed node is reported: hardware-synchronised duty cycling reduces the quiescent current to 18.2 μA, and with a 12 s acquisition window at 112 mA on a 10-min cycle, the mean current is 2.26 mA, corresponding to an estimated 46 days of unattended operation on a 2500 mAh cell. Critically, the acquisition window accounts for 99.2% of the per-cycle energy budget and the sleep interval for only 0.8%, so quiescent current-the figure of merit most often reported as evidence of low-power design-is shown not to be the binding constraint for sensor-dominated nodes of this class. The results indicate that the proposed hybrid architecture offers a 99.8% packet delivery ratio for sustainable water management.",
+    "year": "2026",
+    "journal": "Sensors (Basel, Switzerland)",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.3390/s26154916"
+  },
+  {
+    "doi": "10.1002/wer.70466",
+    "pmcid": "PMC13372000",
+    "title": "IoT-Based Monitoring and Prediction of Water Quality Using Swin-Transformer and Depthwise Separable Convolutional Neural Network Optimized by Circulatory System-Based Optimization.",
+    "abstract": "The degradation of water quality, one of the major global environmental challenges, demands advanced and intelligent monitoring and prediction systems. This study uses data from the Rohri Canal in the Pakistani city of SBA to develop a combined IoT-based advanced deep learning (DL) model that can accurately forecast the water quality index (WQI) and water quality class (WQC). The sensors that are used under IoT are turbidity, temperature, pH, and total dissolved solids (TDS) to measure real-time parameters of water quality. All the acquired data are preprocessed with the help of a quality-aware fuzzy min-max neural network (QAFMMN) to reduce noise efficiently and increase the quality of the data. A combination of the addax optimization algorithm and the Nadam optimizer (AOA-NO) is used to select features, keeping only the most important ones, which makes the method computationally efficient. In this regard, the model known as the Swin-Transformer-depthwise separable convolutional neural network, trained with the circulatory system-based optimization method (ST-DSCNN-CSBO), is established. Indeed, one can see the incredible results of the proposed experimental research because the R 2  score obtained therein equals 0.999, the mean absolute error (MAE) equals 0.008, and the overall water quality classification accuracy is equal to 99.96%.",
+    "year": "2026",
+    "journal": "Water environment research : a research publication of the Water Environment Federation",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1002/wer.70466"
+  },
+  {
+    "doi": "10.1016/j.isci.2026.116396",
+    "pmcid": "PMC13487283",
+    "title": "Application of stacked Transformer-XGBoost model and SHAP interpretability in air quality index prediction in Linfen City.",
+    "abstract": "This study proposes a stacked Transformer-XGBoost framework with Shapley Additive Explanations (SHAP) interpretability to improve Air Quality Index prediction in Linfen City, a heavily industrialized region characterized by complex pollution dynamics and strong seasonal variability. The model combines Transformer-based temporal feature extraction with XGBoost nonlinear regression through a temporally consistent out-of-fold stacking strategy, enabling effective learning of sequential dependencies and pollutant-meteorology interactions. Using historical air quality and meteorological data from 2013 to 2024, the proposed framework achieved superior predictive performance (R 2  = 0.955, RMSE = 9.05, MAE = 2.91), outperforming conventional machine learning and deep learning models. SHAP analysis revealed that PM 2.5 , NO 2 , lagged AQI, and seasonal temporal factors were the dominant drivers of AQI variation, highlighting the importance of pollution persistence and meteorological stagnation. The findings provide both an accurate forecasting framework and interpretable insights to support early warning systems, adaptive emission control, and sustainable urban air-quality management.",
+    "year": "2026",
+    "journal": "iScience",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1016/j.isci.2026.116396"
+  },
+  {
+    "doi": "10.1002/hsr2.72684",
+    "pmcid": "PMC13284900",
+    "title": "Enhancing COVID-19 Forecasting Accuracy in Malaysia Using a Hybrid ARIMA-LSTM Model With Exogenous Variables: A Time-Series Predictive Study.",
+    "abstract": "Background Accurate forecasting of COVID-19 cases is essential for effective public health planning and resource allocation. Traditional statistical and deep-learning models often fail to jointly capture linear dynamics, nonlinear patterns, and exogenous drivers of disease transmission. This study proposes a hybrid ARIMA-LSTM forecasting framework incorporating four exogenous variables-daily average temperature, rainfall, vaccination rate, and population density-at both the linear (ARIMAX) and nonlinear (LSTM residual) stages. Methods Daily confirmed COVID-19 cases in Malaysia from January 4 to September 18, 2021 were analyzed. A dual-integration modeling strategy was implemented: an ARIMAX component modeled linear trends and exogenous effects (temperature, rainfall, vaccination rate, and population density), while a Long Short-Term Memory (LSTM) network captured nonlinear residual structures. Four competing models were evaluated: standalone ARIMA, standalone LSTM, hybrid ARIMA-LSTM without exogenous variables, and the proposed hybrid ARIMAX-LSTM with exogenous variables. Performance was assessed using RMSE, MAE, MAPE, and  R   2 , with statistical comparison via the Diebold-Mariano (DM) test. Results The proposed hybrid ARIMAX-LSTM model achieved superior predictive accuracy (RMSE = 948.62; MAE = 769.49; MAPE = 6.61%;  R   2  = 0.7883), representing approximately 49% lower prediction error than baseline models (RMSE = 1801.90-1857.94). The model explained 78.83% of variance compared with  p   Conclusions Integrating exogenous variables within both linear and nonlinear components substantially enhances COVID-19 forecasting accuracy. The proposed hybrid ARIMAX-LSTM framework provides a reliable tool for epidemic prediction and supports evidence-based public health decision-making. This approach is readily may be extensible to other infectious diseases and time-series forecasting applications.",
+    "year": "2026",
+    "journal": "Health science reports",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1002/hsr2.72684"
+  },
+  {
+    "doi": "10.3390/s26134242",
+    "pmcid": "PMC13364265",
+    "title": "Preliminary Field Evaluation of a Low-Cost IoT Workflow for Dissolved Oxygen Monitoring and Short-Horizon Forecasting in Nile Tilapia Aquaculture.",
+    "abstract": "Short-term fluctuations in dissolved oxygen are difficult to capture in warm outdoor Nile tilapia ( Oreochromis niloticus ) ponds using periodic manual measurements, yet they strongly influence fish performance and farm management. This study presents a preliminary field evaluation of a low-cost IoT workflow for dissolved oxygen monitoring and short-horizon forecasting in pond-based tilapia culture. An ESP32-based sensing node continuously measured dissolved oxygen, temperature, and pH, transmitted readings to a cloud backend, and generated short-horizon forecasts from 5 min aggregated windows. During live validation from 1 to 10 April 2026, the 30 min forecast achieved a mean absolute error of 0.783 mg/L and directional accuracy of 60.23%, with only modest improvement over a persistence baseline. The 6 h forecast achieved 1.109 mg/L and 53.82%, respectively, indicating limited predictive value at the extended horizon. An extended 47-day field deployment (May-June 2026) captured four sensor-recorded low-DO events and two documented power outages, causing sensor downtime and providing additional field-deployment evidence. These results demonstrate the engineering feasibility of the integrated workflow, but they do not establish robust operational forecasting validity because the data were collected from one pond, high-frequency records were temporally correlated, and independent reference-meter validation was not available. The study is, therefore, best interpreted as a proof-of-concept field evaluation that identifies practical requirements for future low-cost aquaculture forecasting systems.",
+    "year": "2026",
+    "journal": "Sensors (Basel, Switzerland)",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.3390/s26134242"
+  },
+  {
+    "doi": "10.64898/2026.09.13.751332",
+    "pmcid": null,
+    "title": "Time-series foundation modeling enables accurate lake ecosystem forecasting",
+    "abstract": "Accurate ecological forecasting is increasingly essential for understanding and managing ecosystem responses to climate variability and anthropogenic pressures; however, prediction remains difficult in lakes because key biological variables, such as phytoplankton biomass, exhibit nonlinear dynamics, observational noise, data sparsity, and non-stationarity. This study aimed to test whether large pre-trained time-series foundation models can improve forecasts of lake phytoplankton dynamics, focusing on chlorophyll-a (Chl.a) and water-quality variables in two ecologically contrasting Japanese lakes, the deep-stratified Lake Biwa and the shallow nutrient-rich Lake Kasumigaura. Using extensive monthly monitoring records spanning up to 30 years, we benchmarked two time-series foundation models—Transformer-based Chronos-T5 and probabilistic Lag-Llama—against 15 statistical (AR, ARIMA, SARIMA, Prophet), machine learning (Random Forest, XGBoost, KNN, SVR), and deep learning (LSTM, CNN, TCN, and SSA-hybrid) approaches. Chronos-T5 achieved superior reproduction accuracy and stability across diverse environmental variables and outperformed all other tested models. This performance stemmed from its ability to capture long-term dependencies and complex temporal patterns through large-scale pre-training. We further identified an optimal training window of approximately 14 years, balancing data sufficiency with regime stability, beyond which model accuracy diminished owing to ecological regime shifts. Our findings highlight the transformative potential of time-series foundation models for ecological forecasting, providing a scalable, data-driven framework that can underpin robust early warning systems and adaptive management strategies for aquatic ecosystems worldwide.  Significance statement   Accurate forecasting of lake ecosystems is crucial for water management under climate change, yet predicting phytoplankton dynamics remains challenging due to complex, non-stationary biological responses. Here, we demonstrate that large time-series foundation models significantly outperform traditional statistical, machine learning, and deep learning methods in forecasting chlorophyll-a and water-quality dynamics across contrasting Japanese lakes. Pre-trained on vast temporal datasets, these models successfully capture long-term dependencies and non-linear patterns without domain-specific architecture tuning. Furthermore, we identified an optimal 14-year training window, highlighting how ecological regime shifts constrain model memory. Our findings introduce time-series foundation models as a scalable, high-precision paradigm for ecological forecasting, offering vital tools for global freshwater conservation and early-warning systems.",
+    "year": "2026",
+    "journal": null,
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.64898/2026.09.13.751332"
+  },
+  {
+    "doi": "10.3390/antibiotics15090920",
+    "pmcid": "PMC13603386",
+    "title": "Explainable Stacked Ensemble Learning for Predicting Antibiotic Residues in the Danube River Within the Territory of the City of Novi Sad, Serbia.",
+    "abstract": "Background/Objectives : Antibiotic residues in aquatic environments reflect interacting physicochemical, climatic, and microbiological processes. This study characterized selected antibiotics in wastewater and surface water associated with the Danube River near Novi Sad, Serbia, and evaluated explainable stacked machine-learning models for concentration prediction.  Methods : Thirty-six samples collected during summer and autumn 2024 were analyzed using SPE-HPLC-MS/MS. Artificial neural network, random forest, support vector machine, XGBoost, stacked linear, and stacked random forest (STACK-RF) models were developed using environmental/physicochemical variables or presumptive resistant bacterial taxa. Models were evaluated by fivefold cross-validation, complementary error metrics, Holm-adjusted Diebold-Mariano tests, XGBoost Gain, and SHAP analysis.  Results : All target antibiotics were detected at least once. Azithromycin was most prevalent (75.0%), followed by sulfamethoxazole (58.3%), trimethoprim, and ciprofloxacin (52.8% each), while wastewater generally exhibited broader antibiotic profiles and higher concentrations than surface water. Standalone algorithms showed weak-to-moderate performance, whereas STACK-RF achieved the highest numerical accuracy for all environmental/physicochemical models (R 2  = 0.745-0.913) and the available microbial-taxa models (R 2  = 0.819-0.945), with consistently lower prediction errors. However, most pairwise differences were not significant after Holm correction. Influential environmental predictors were compound-specific and included COD, BOD 5 , pH, turbidity, electrical conductivity, water temperature, and relative humidity. Leading bacterial predictors included  Klebsiella pneumoniae ,  Escherichia coli ,  Citrobacter freundii , and  Aeromonas veronii .  Conclusions : The results provide a proof-of-concept for machine-learning-assisted antibiotic prediction. Explainable STACK-RF modeling captured nonlinear, antibiotic-specific associations among residues, water-quality conditions, and microbial indicators. It may complement targeted chemical monitoring and support hypothesis generation, although larger, externally validated datasets are required before broader application.",
+    "year": "2026",
+    "journal": "Antibiotics (Basel, Switzerland)",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.3390/antibiotics15090920"
+  },
+  {
+    "doi": "10.1016/j.isci.2026.116694",
+    "pmcid": "PMC13544337",
+    "title": "Climate change impact on disease emergence and antimicrobial resistance: A perspective on transmission and detection.",
+    "abstract": "Climate change is increasingly disrupting environmental and ecological systems, creating conditions that facilitate the emergence, transmission, and persistence of infectious diseases and the spread of antimicrobial resistance (AMR). This scoping review analyzed 427 articles published over the past five years, retrieved from major scientific databases. Findings show that climate variables significantly influence pathogen growth, reproduction, and transmission through vectors. Strong associations were identified between climatic changes and the spread of bacterial, viral, fungal, and protozoal diseases. Temperature fluctuations and anoxic conditions can promote AMR development. Climate-driven migration of birds and bats further contributes to cross-border pathogen transmission. The review also highlights emerging AI tools for rapid pathogen detection, diagnosis, and surveillance. Overall, climate change poses significant public health risks through increased infectious and non-infectious disease burden, zoonotic spillover, and AMR spread, emphasizing the need for integrated climate-health policies, AMR stewardship, AI-enabled surveillance, and interdisciplinary One Health research.",
+    "year": "2026",
+    "journal": "iScience",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1016/j.isci.2026.116694"
+  },
+  {
+    "doi": "10.1002/wer.70528",
+    "pmcid": "PMC13473891",
+    "title": "Evaluation of LSTM-Based Short-Term Prediction of MBR Operational Parameters: Applicability and Limitations for Aeration Control Applications.",
+    "abstract": "This study evaluated the predictive capability of long short-term memory (LSTM) neural network models for forecasting key operational variables in a membrane bioreactor (MBR) using a comparatively modest training dataset, a limited number of sensors, and a basic model architecture, with practical implementation in mind. Time-series data for dissolved oxygen (DO), pH, transmembrane pressure (TMP), mixed liquor suspended solids (MLSS), and airflow rate were collected from a laboratory-scale MBR over several months of continuous operation. Separate training and testing periods were used to develop and evaluate the models. The LSTM models achieved good predictive accuracy for DO, pH, and TMP over a 6-h prediction horizon and retained useful predictive capability at 12 h. However, the 12-h predictions showed a systematic delay in responding to process changes, indicating reduced reliability at longer horizons. Correlation analysis between airflow rate and the other operational variables further showed that the LSTM models did not fully capture the dynamic responses of the MBR to changes in aeration. This limitation likely reflects the complex and nonlinear behavior of activated sludge processes. Overall, the results indicate that a basic LSTM architecture trained on a comparatively modest dataset can support operational forecasting over horizons of 6 and 12 h. However, improved representation of aeration-related dynamics is required before the model can be used reliably for advanced operational decision support.",
+    "year": "2026",
+    "journal": "Water environment research : a research publication of the Water Environment Federation",
+    "source": "EuropePMC core",
+    "url": "https://doi.org/10.1002/wer.70528"
+  },
+  {
+    "doi": "10.1016/j.wroa.2023.100207",
+    "title": "Long short-term memory models of water quality in inland water environments",
+    "abstract": "",
+    "year": 2023,
+    "source": "Crossref DOI",
+    "url": "https://doi.org/10.1016/j.wroa.2023.100207"
+  },
+  {
+    "doi": "10.3389/frwa.2024.1456647",
+    "title": "Modeling continental US stream water quality using long-short term memory and weighted regressions on time, discharge, and season",
+    "abstract": "The temporal dynamics of solute export from catchments are challenging to quantify and model due to confounding hydrological and biogeochemical processes and sparse measurements. Conventionally, the concentration-discharge relationship (C-Q) and statistical approaches to describe it, such as the Weighted Regressions on Time, Discharge and Seasons (WRTDS), have been widely used. Recently, deep learning (DL) approaches, especially Long-Short-Term-Memory (LSTM) models, have shown predictive capability for discharge, temperature, and dissolved oxygen. However, it is not clear if such advances can be expanded to water quality variables driven by complex subsurface biogeochemical processes. This work evaluates the performance of LSTM and WRTDS for 20 water quality variables across ~500 catchments in the continental US. We find that LSTM does not markedly outperform WRTDS in our dataset, potentially limited by the current measurement capabilities of water quality across CONUS. Both models present similar performance patterns across water quality variables, with the LSTM displaying better performance for nutrients compared to weathering-derived solutes. Additionally, the LSTM does not benefit from flexibility in the inputs. For example, incorporation of climate data that constrains streamflow generation, does not significantly improve the LSTM performance. We also find that data availability is not a straightforward predictor of LSTM model performance, although higher availability tends to stabilize performance. To fully assess the potential of the LSTM model, it may be necessary to use a higher frequency dataset across the CONUS, which does not exist today. To evaluate the dynamics of C-Q patterns relative to model performance, we introduce a “simplicity index” considering both the seasonality in the concentration pattern and the linearity in the C-Q relationship, or the C-Q-t pattern. The simplicity index is strongly correlated with model performance and differentiates the underlying controls on water quality dynamics. Further DL experiments and model-intercomparison highlight the strengths and deficiencies of existing frameworks, pointing to the need for further hydrogeochemical theories that are amenable to complex basins and solutes.",
+    "year": 2024,
+    "source": "Crossref DOI",
+    "url": "https://doi.org/10.3389/frwa.2024.1456647"
+  },
+  {
+    "doi": "10.2166/ws.2023.164",
+    "title": "A deep learning model with spatio-temporal graph convolutional networks for river water quality prediction",
+    "abstract": "Abstract \n                \n                High-precision water quality prediction plays a vital role in preventing and controlling river pollution. However, river water's highly nonlinear and complex spatio-temporal dependencies pose significant challenges to water quality prediction tasks. In order to capture the spatial and temporal characteristics of water quality data simultaneously, this paper combines deep learning algorithms for river water quality prediction in the river network area of Jiangnan Plain, China. A water quality prediction method based on graph convolutional network (GCN) and long short-term memory neural network (LSTM), namely spatio-temporal graph convolutional network model (ST-GCN), is proposed. Specifically, the spatio-temporal graph is constructed based on the spatio-temporal correlation between river stations, the spatial features in the river network are extracted using GCN, and the temporal correlation of water quality data is obtained by integrating LSTM. The model was evaluated using R2, MAE, and RMSE, and the experimental results were 0.977, 0.238, and 0.291, respectively. Compared with traditional water quality prediction models, the ST-GCN model has significantly improved prediction accuracy, better stability, and generalization ability.",
+    "year": 2023,
+    "source": "Crossref DOI",
+    "url": "https://doi.org/10.2166/ws.2023.164"
+  },
+  {
+    "doi": "10.1016/j.scitotenv.2023.162930",
+    "title": "A deep learning-based novel approach to generate continuous daily stream nitrate concentration for nitrate data-sparse watersheds",
+    "abstract": "",
+    "year": 2023,
+    "source": "Crossref DOI",
+    "url": "https://doi.org/10.1016/j.scitotenv.2023.162930"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "unique_screened": 143,
+  "cap": 150,
+  "errors": [],
+  "mcp_available": false,
+  "openalex": "previous 500/503; public Crossref and EuropePMC fallback",
+  "queries": [
+    "river nitrate LSTM prediction",
+    "river total nitrogen machine learning prediction",
+    "water quality XGBoost temporal spatial validation",
+    "water quality graph neural network forecasting",
+    "water quality random forest deep learning forecasting"
+  ],
+  "full_text_claim": "only explicitly downloaded fullTextXML",
+  "preliminary_unique_count": 144,
+  "dedup_revision": "DOI case normalized"
+}

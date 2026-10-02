@@ -1,0 +1,11 @@
+{
+  "raw_unique_readings": 59013,
+  "eligible_raw_readings": 56643,
+  "accepted_days": 9716,
+  "readings_in_accepted_days": 51199,
+  "definition": "raw deduplicated TN records, eligible raw records, and records on adopted daily supports are different populations",
+  "hashes": {
+    "hf_readings.parquet": "38c933e7319a6b12cae7332ab307817da3a9de980ce786a2aa0856742cd25129",
+    "hf_daily_accepted.parquet": "bc11f2bc04709cedca5948721e16a73befc2bff245c4bdfb6d379a7ac448b4ae"
+  }
+}

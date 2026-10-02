@@ -1,0 +1,302 @@
+{
+  "original_path": "outputs/evaluation/error_decomposition_station.csv",
+  "original_sha256": "d8324b8400322d35ef7360df9d8bcb6c5a945f7c4f43d5885264cb7912ca2934",
+  "columns": [
+    "model_readout",
+    "station_key",
+    "scope",
+    "mse",
+    "bias_squared",
+    "amplitude_mismatch_squared",
+    "decorrelation_error",
+    "correlation",
+    "bias_fraction",
+    "amplitude_fraction",
+    "decorrelation_fraction",
+    "n",
+    "NSE",
+    "RMSE",
+    "bias",
+    "amplitude_ratio",
+    "reason"
+  ],
+  "rows": 20772,
+  "parts": [
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_000.csv",
+      "rows": 427,
+      "sha256": "f5a3034bc2c981c595125a7a871f7201b84828448c0737e60b6b0efabd15226b"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_001.csv",
+      "rows": 449,
+      "sha256": "6d8c6148982cd64d4f85d2e5e3920a1b8adcc238ffdb9a55967a57a2edb134a3"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_002.csv",
+      "rows": 353,
+      "sha256": "d5deeb360081d5e80d3c5489c13aaf035d08672fb259febcae51976886b31f08"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_003.csv",
+      "rows": 352,
+      "sha256": "b50ef05394940f07e7a7164cc3ef1adced33b68a02ca134a2c5063caad7a57f7"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_004.csv",
+      "rows": 374,
+      "sha256": "3206e55b22e129cb2747310a4eb4ca492d8e06874882d6a7998a317d4b4f63d7"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_005.csv",
+      "rows": 407,
+      "sha256": "09626c8b126e73703003ec2da552ddb015a9f81e1e006c74ced5992596759b91"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_006.csv",
+      "rows": 426,
+      "sha256": "503e252f08ef0e5c2f44169ae36a26a5603ef6eed0ca7a6f10af81ba47c942e5"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_007.csv",
+      "rows": 399,
+      "sha256": "374fb685d1651779ed3490b2c7bd78d940d5939870de018883ac6931b0707b19"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_008.csv",
+      "rows": 348,
+      "sha256": "19723756858801f35702458cdf3b2d51d4a08b9c6e2e11a59d0ece7b331e2add"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_009.csv",
+      "rows": 350,
+      "sha256": "0018306f71deb3c5615751b795d9187394a41887d5558ee24dc222b622876a8d"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_010.csv",
+      "rows": 385,
+      "sha256": "66e9af5d2760d5f28b4b4d14ecb6de57bb3c46497e9d3e35e5232f38d9d9dd32"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_011.csv",
+      "rows": 362,
+      "sha256": "c3175162040f440e9368315b22bd06abb94bdb011ec11c5a7240cb4f33bc5e10"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_012.csv",
+      "rows": 365,
+      "sha256": "e0221635bc16122451b229d93211097328d3f1942c71af835b3ae528eabc4966"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_013.csv",
+      "rows": 369,
+      "sha256": "554f244eb96d1bef2b9e9116c70765da4aba7858b6b323a018c5bc585b42e0d5"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_014.csv",
+      "rows": 365,
+      "sha256": "1797ff5033e96ce54ddbc80ec0199b5a68dde8173dbff2f7610faeb3ab706fd4"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_015.csv",
+      "rows": 362,
+      "sha256": "00ac13e2c60b81e26ff1c525c50ab2f0104c00df9f628b47c3fe7cd566f14a02"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_016.csv",
+      "rows": 361,
+      "sha256": "00e161d601b60fddc722a6663c650982d8c44986790b0c259a21085d49aec1a4"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_017.csv",
+      "rows": 367,
+      "sha256": "b77c9337081029b3bb13636ee6446dbbf86a5f007ff4b12a9a3f38d917d40eda"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_018.csv",
+      "rows": 368,
+      "sha256": "b1fa1e8fce21fdaf1dd39acb440d18154c9c7f53d3292c4d5f9774289e2999f4"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_019.csv",
+      "rows": 410,
+      "sha256": "868487096d2ebf06aad7d2dafafe45bc6dd637d39f79e0aaa98d4e0c91db43a6"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_020.csv",
+      "rows": 438,
+      "sha256": "e2315cc0b42b67620aa6393fdf3da03f13232a5c3425355065dd5f6ef2af1ec8"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_021.csv",
+      "rows": 369,
+      "sha256": "36124dc68a929c536dc132d89bd814de1d8de1748bf24e9033358943f19facee"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_022.csv",
+      "rows": 370,
+      "sha256": "4b19ffd6605be17b542e373397bb29b4a89585319b9a666e9cd63b495cc048b9"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_023.csv",
+      "rows": 374,
+      "sha256": "a706186277031cab98ec1dea5a1500ce9d23b1e9f2b5621be38d4e3a36d3f9ab"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_024.csv",
+      "rows": 368,
+      "sha256": "7c1bf079ba5df39d861a3d1ff2f233711dea7dea6b66844d3b52ad82a8387447"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_025.csv",
+      "rows": 382,
+      "sha256": "7cb538a279104053f3ea81ed4b5fc190eccb2a1c9cbfbc33159a8b0c1a30de5b"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_026.csv",
+      "rows": 398,
+      "sha256": "9960636631a4f1eb85486a1e0f33869b0a150c050b51d3a490f779cf61a8623e"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_027.csv",
+      "rows": 456,
+      "sha256": "511d262ec2bb93ddccbb750c0e40816960deff0b873cb812192c44b2a97afee5"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_028.csv",
+      "rows": 369,
+      "sha256": "79a2717fe5ba1e894d5e3fdea771aa05de008f39694ed5c50c1f2397eea841ab"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_029.csv",
+      "rows": 368,
+      "sha256": "4e9540949e42966b6bd255f3d0b5009197e387e2bce01a50ee28b6b3207c697c"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_030.csv",
+      "rows": 372,
+      "sha256": "1426e1741d8d32bcca8d4e63d18f25a45d53b6ae7e7754d105b28b1919b58994"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_031.csv",
+      "rows": 369,
+      "sha256": "a2150538cc21c82fd6d77107dd5fd8e50f2f00445ad00e1a55688d1e65ad2359"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_032.csv",
+      "rows": 381,
+      "sha256": "a9ea97c34a9dce7d6775b747bc2cdd1f553541e7162777e5e8f0f4295a070f0d"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_033.csv",
+      "rows": 375,
+      "sha256": "693ba8adadd53fdb27bdc211439cf501376abba310f441ea73c440e7b003094c"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_034.csv",
+      "rows": 343,
+      "sha256": "3bee32bc38f77a4527216f45384311387ecd1c682962222ac6d0db7662980830"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_035.csv",
+      "rows": 351,
+      "sha256": "0b8c6d2ac25eb43be800ba832573916aa13e47bbffaa690179a8061f91be4540"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_036.csv",
+      "rows": 347,
+      "sha256": "db685b14ecf8ff4fd0bb36b49e128f283728c39f49601e77b5db6699b63d7dcf"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_037.csv",
+      "rows": 364,
+      "sha256": "b1e60b1ab98fa0cf1b28d82ff1477fff28e1de8d0b11e9670a9566e11f0babb7"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_038.csv",
+      "rows": 360,
+      "sha256": "418fd0fcc7eb7576b7fb6be1455723989d775ac0f0d09fb2d3442042229ba77a"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_039.csv",
+      "rows": 354,
+      "sha256": "db1208fe0dfba4e0b17f276866d571296b497182965be328e4e33aa6ab9e5c81"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_040.csv",
+      "rows": 377,
+      "sha256": "1d800d335bc5893ad13ba2a088ac0d685267042ed22b705bae685c4650b09fb9"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_041.csv",
+      "rows": 383,
+      "sha256": "0f2d5cd5b863c0ba13ad23016ce6f5e6d9dfe33de80b74dd8efbe3713d7791e9"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_042.csv",
+      "rows": 384,
+      "sha256": "af2e184f9bad8deb8f1157e0e29ab99bc6995c3ee7556f3708cb3207caaed91c"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_043.csv",
+      "rows": 386,
+      "sha256": "5ee44504602b15f81af328a57093d7dba0f2e0937449ca72ecb24718bc501704"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_044.csv",
+      "rows": 383,
+      "sha256": "30d007bdd88fd1b63636259e395ae70ed1b15c0ac7f35f82508aeb268e5ea32a"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_045.csv",
+      "rows": 388,
+      "sha256": "4dbc029c24b66f0b100668660b51a1fbb82f71852eb85bc43b97ccbd2a3f0de2"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_046.csv",
+      "rows": 385,
+      "sha256": "0e9e90edc158abec4e85e1591d69458734750fc611ff5126ddd851dc88a56e30"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_047.csv",
+      "rows": 378,
+      "sha256": "1bfed7a935d004b961d434ad061afb5b9d43c1a6eefec06a91e31a77ce5bb900"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_048.csv",
+      "rows": 389,
+      "sha256": "ce3c3ca2900e922462354204f2d0de1baeeaee6f41d7a8e7c50fa072ea6b6811"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_049.csv",
+      "rows": 375,
+      "sha256": "4f2011fa0ed7be7e1c9d548334db4fde8684e82f45b3c5cf5205863546bccd20"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_050.csv",
+      "rows": 356,
+      "sha256": "518d524fbc31fba434752aa2b0a8ca6e3b1f2ceb6e6edf1bff380fe4bf0c53fd"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_051.csv",
+      "rows": 374,
+      "sha256": "e98ec1bfb1ca9916d473bc290abc0a8b1b3c0db83f6b552a5960a239976e97a0"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_052.csv",
+      "rows": 395,
+      "sha256": "f6e217d4e9d5b9effcbb54ba89d398b62ebbfe46f7ba4687b8dbf93979c385ad"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_053.csv",
+      "rows": 401,
+      "sha256": "07c86ff92e791506ad54ceb14a11d10d12e8f3c91f39235accb9a7da6601be46"
+    },
+    {
+      "path": "outputs/evaluation/error_decomposition_station/part_054.csv",
+      "rows": 311,
+      "sha256": "c3de1105a1fb3961f8cec3ad4c3709b701284756dc4483ea173e43c705a4b373"
+    }
+  ],
+  "transformation": "CSV rows and columns preserved; repeat header, UTF-8/LF serialization"
+}

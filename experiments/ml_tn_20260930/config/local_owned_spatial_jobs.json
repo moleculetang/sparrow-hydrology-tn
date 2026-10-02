@@ -1,0 +1,56 @@
+[
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1729,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1729,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1729,
+    "block": 191
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1730,
+    "block": 56
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1730,
+    "block": 113
+  },
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1730,
+    "block": 191
+  }
+]

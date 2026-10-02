@@ -1,0 +1,11 @@
+[
+  {
+    "role": "joint",
+    "stage": "S23",
+    "task": "joint",
+    "family": "GraphTCN",
+    "config": 0,
+    "seed": 1731,
+    "block": 56
+  }
+]

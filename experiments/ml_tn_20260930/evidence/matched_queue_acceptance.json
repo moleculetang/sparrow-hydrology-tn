@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "jobs": [
+    "fixed_recipe_F24_daily_CatBoost_c0_s1729",
+    "fixed_recipe_F24_monthly_CatBoost_c0_s1729",
+    "joint_fixed_recipe_F24_GraphTCN_c0_s1729",
+    "joint_fixed_recipe_F24_Transformer_c0_s1729",
+    "joint_fixed_recipe_F24_XGBoost_c0_s1729"
+  ],
+  "science_jobs_added": 0,
+  "rule": "same five pre-existing fixed_recipe IDs; no spatial-result dependency",
+  "source_sha256": "60408ed96b43fb0d0abd4232e7a70f8583d8c2d715f401d5f96fd961122d3ba8"
+}

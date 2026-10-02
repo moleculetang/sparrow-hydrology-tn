@@ -1,0 +1,76 @@
+{
+  "original_path": "outputs/expert_review/paired_uncertainty_summary.csv",
+  "original_sha256": "36a81f1ea35a87ea492bb4658ce2daa8ee9be13faa719bdcfa4d5d69e4035920",
+  "columns": [
+    "common_stations",
+    "baseline_median",
+    "candidate_median",
+    "median_difference",
+    "median_paired_difference",
+    "improved_fraction",
+    "context",
+    "task",
+    "baseline",
+    "candidate",
+    "block_months",
+    "replicates",
+    "median_difference_p025",
+    "median_difference_p975",
+    "median_difference_defined_replicates",
+    "median_paired_difference_p025",
+    "median_paired_difference_p975",
+    "median_paired_difference_defined_replicates",
+    "improved_fraction_p025",
+    "improved_fraction_p975",
+    "improved_fraction_defined_replicates",
+    "centered_median_paired_difference_p025",
+    "centered_median_paired_difference_p975",
+    "centered_median_paired_difference_defined_replicates",
+    "bootstrap_common_stations_min",
+    "bootstrap_common_stations_max"
+  ],
+  "rows": 2404,
+  "parts": [
+    {
+      "path": "outputs/expert_review/paired_uncertainty_summary/part_000.csv",
+      "rows": 323,
+      "sha256": "c9d0d491d533e323bab1cd4bd6d449a69eca662c8a67f93c7e9b51235562c2de"
+    },
+    {
+      "path": "outputs/expert_review/paired_uncertainty_summary/part_001.csv",
+      "rows": 326,
+      "sha256": "a2159a807012815efe932b6d87926cad80a432cba6aa2ec9128b1317777a51eb"
+    },
+    {
+      "path": "outputs/expert_review/paired_uncertainty_summary/part_002.csv",
+      "rows": 335,
+      "sha256": "b15ac96020d2cb1d776669c5ca4916160435986e0ddfa1cb3cf39342f5cd62ae"
+    },
+    {
+      "path": "outputs/expert_review/paired_uncertainty_summary/part_003.csv",
+      "rows": 342,
+      "sha256": "e2c9f4c51d0e8c08d4f61f4247826ca0558585c4411c5c724ec4dbe52d8b8287"
+    },
+    {
+      "path": "outputs/expert_review/paired_uncertainty_summary/part_004.csv",
+      "rows": 342,
+      "sha256": "6d10b469ff5603479051b6741b2d7038563e42537c7283107c7d02453ac0cef0"
+    },
+    {
+      "path": "outputs/expert_review/paired_uncertainty_summary/part_005.csv",
+      "rows": 351,
+      "sha256": "b256aee7a687b7a8de66a30c4e285d8cfb6e8a09ae6fade42ae2355d72d583db"
+    },
+    {
+      "path": "outputs/expert_review/paired_uncertainty_summary/part_006.csv",
+      "rows": 362,
+      "sha256": "e0d7e048a8f1fd2c7cd6525027cea977404c4b59e011d5e0504decae2098f9df"
+    },
+    {
+      "path": "outputs/expert_review/paired_uncertainty_summary/part_007.csv",
+      "rows": 23,
+      "sha256": "f33abe0c59daf8c1b8d554046ed459e3798746e7ef53550162b3e664d0086ca0"
+    }
+  ],
+  "transformation": "CSV rows and columns preserved; repeat header, UTF-8/LF serialization"
+}

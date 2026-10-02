@@ -1,0 +1,218 @@
+[
+  {
+    "role": "auxiliary",
+    "stage": "F23",
+    "task": "monthly",
+    "family": "CatBoost",
+    "config": 2,
+    "seed": 1729,
+    "lead": 1
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F23",
+    "task": "monthly",
+    "family": "CatBoost",
+    "config": 2,
+    "seed": 1730,
+    "lead": 1
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F23",
+    "task": "monthly",
+    "family": "CatBoost",
+    "config": 2,
+    "seed": 1731,
+    "lead": 1
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F24",
+    "task": "monthly",
+    "family": "CatBoost",
+    "config": 2,
+    "seed": 1729,
+    "lead": 1
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F24",
+    "task": "monthly",
+    "family": "CatBoost",
+    "config": 2,
+    "seed": 1730,
+    "lead": 1
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F24",
+    "task": "monthly",
+    "family": "CatBoost",
+    "config": 2,
+    "seed": 1731,
+    "lead": 1
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F23",
+    "task": "daily",
+    "family": "CatBoost",
+    "config": 4,
+    "seed": 1729,
+    "lead": 1
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F23",
+    "task": "daily",
+    "family": "CatBoost",
+    "config": 4,
+    "seed": 1730,
+    "lead": 1
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F23",
+    "task": "daily",
+    "family": "CatBoost",
+    "config": 4,
+    "seed": 1731,
+    "lead": 1
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F23",
+    "task": "daily",
+    "family": "CatBoost",
+    "config": 4,
+    "seed": 1729,
+    "lead": 7
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F23",
+    "task": "daily",
+    "family": "CatBoost",
+    "config": 4,
+    "seed": 1730,
+    "lead": 7
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F23",
+    "task": "daily",
+    "family": "CatBoost",
+    "config": 4,
+    "seed": 1731,
+    "lead": 7
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F23",
+    "task": "daily",
+    "family": "CatBoost",
+    "config": 4,
+    "seed": 1729,
+    "lead": 30
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F23",
+    "task": "daily",
+    "family": "CatBoost",
+    "config": 4,
+    "seed": 1730,
+    "lead": 30
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F23",
+    "task": "daily",
+    "family": "CatBoost",
+    "config": 4,
+    "seed": 1731,
+    "lead": 30
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F24",
+    "task": "daily",
+    "family": "CatBoost",
+    "config": 4,
+    "seed": 1729,
+    "lead": 1
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F24",
+    "task": "daily",
+    "family": "CatBoost",
+    "config": 4,
+    "seed": 1730,
+    "lead": 1
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F24",
+    "task": "daily",
+    "family": "CatBoost",
+    "config": 4,
+    "seed": 1731,
+    "lead": 1
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F24",
+    "task": "daily",
+    "family": "CatBoost",
+    "config": 4,
+    "seed": 1729,
+    "lead": 7
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F24",
+    "task": "daily",
+    "family": "CatBoost",
+    "config": 4,
+    "seed": 1730,
+    "lead": 7
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F24",
+    "task": "daily",
+    "family": "CatBoost",
+    "config": 4,
+    "seed": 1731,
+    "lead": 7
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F24",
+    "task": "daily",
+    "family": "CatBoost",
+    "config": 4,
+    "seed": 1729,
+    "lead": 30
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F24",
+    "task": "daily",
+    "family": "CatBoost",
+    "config": 4,
+    "seed": 1730,
+    "lead": 30
+  },
+  {
+    "role": "auxiliary",
+    "stage": "F24",
+    "task": "daily",
+    "family": "CatBoost",
+    "config": 4,
+    "seed": 1731,
+    "lead": 30
+  }
+]

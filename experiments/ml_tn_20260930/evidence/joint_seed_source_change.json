@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "before_sha256": "171b5dbd54d939298c510ae2c5cf5408dac7b66aaa4ef732a02424429486cb07",
+  "after_sha256": "4695637f98ab443439ffacef0ff209c2aa79e18539e10b52253ba764e67e1015",
+  "diff_sha256": "459592a44bf620ad93a739d2f3af2ec35fe25b188fc8d6f78b75e34e2815d52a",
+  "scope": "seed forwarded to XGBoost and LightGBM only; neural execution branch unchanged",
+  "affected_retraining": "original joint XGBoost matrix; no new input, support, target, configurations or seed"
+}

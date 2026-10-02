@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "known_NSE": 0.75,
+  "known_correlation": 1.0,
+  "known_amplitude_ratio": 0.5,
+  "scope": "whole diagnostic main, level and month-centered decomposition and reading support; isolated synthetic input, no real TN or fitting"
+}

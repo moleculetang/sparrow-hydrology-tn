@@ -1,0 +1,1094 @@
+{
+  "selected": {
+    "RF_monthly": 3,
+    "RF_daily": 3,
+    "ExtraTrees_monthly": 6,
+    "ExtraTrees_daily": 5,
+    "XGBoost_monthly": 3,
+    "XGBoost_daily": 6,
+    "LightGBM_monthly": 6,
+    "LightGBM_daily": 0,
+    "CatBoost_monthly": 2,
+    "CatBoost_daily": 4,
+    "MLP_monthly": 6,
+    "MLP_daily": 5,
+    "LSTM_monthly": 7,
+    "LSTM_daily": 3,
+    "GRU_monthly": 6,
+    "GRU_daily": 2,
+    "TCN_monthly": 2,
+    "TCN_daily": 1,
+    "Transformer_monthly": 1,
+    "Transformer_daily": 7,
+    "GraphTCN_monthly": 6,
+    "GraphTCN_daily": 3
+  },
+  "winners": {
+    "monthly": "CatBoost",
+    "daily": "CatBoost"
+  },
+  "joint_routes": {
+    "tree": "XGBoost",
+    "sequence": "Transformer",
+    "graph": "GraphTCN"
+  },
+  "selection_support": "2022 Jan-Sep; no 2023/2024 access",
+  "scores": [
+    {
+      "family": "RF",
+      "task": "monthly",
+      "config": 0,
+      "selection_score": 0.7755690507286466
+    },
+    {
+      "family": "RF",
+      "task": "monthly",
+      "config": 1,
+      "selection_score": 0.6633347037821217
+    },
+    {
+      "family": "RF",
+      "task": "monthly",
+      "config": 2,
+      "selection_score": 0.6161541141391668
+    },
+    {
+      "family": "RF",
+      "task": "monthly",
+      "config": 3,
+      "selection_score": 0.5684252313635291
+    },
+    {
+      "family": "RF",
+      "task": "monthly",
+      "config": 4,
+      "selection_score": 0.7516856091527475
+    },
+    {
+      "family": "RF",
+      "task": "monthly",
+      "config": 5,
+      "selection_score": 0.6258271865530258
+    },
+    {
+      "family": "RF",
+      "task": "monthly",
+      "config": 6,
+      "selection_score": 0.5748557010352916
+    },
+    {
+      "family": "RF",
+      "task": "monthly",
+      "config": 7,
+      "selection_score": 0.6814706988256678
+    },
+    {
+      "family": "RF",
+      "task": "daily",
+      "config": 0,
+      "selection_score": 2.0216892614465642
+    },
+    {
+      "family": "RF",
+      "task": "daily",
+      "config": 1,
+      "selection_score": 2.0016625247826454
+    },
+    {
+      "family": "RF",
+      "task": "daily",
+      "config": 2,
+      "selection_score": 2.2231300806504146
+    },
+    {
+      "family": "RF",
+      "task": "daily",
+      "config": 3,
+      "selection_score": 1.955426882002015
+    },
+    {
+      "family": "RF",
+      "task": "daily",
+      "config": 4,
+      "selection_score": 2.1114965820376703
+    },
+    {
+      "family": "RF",
+      "task": "daily",
+      "config": 5,
+      "selection_score": 1.9610508727428124
+    },
+    {
+      "family": "RF",
+      "task": "daily",
+      "config": 6,
+      "selection_score": 2.0833826133851123
+    },
+    {
+      "family": "RF",
+      "task": "daily",
+      "config": 7,
+      "selection_score": 2.222435303328692
+    },
+    {
+      "family": "ExtraTrees",
+      "task": "monthly",
+      "config": 0,
+      "selection_score": 0.8193957344823884
+    },
+    {
+      "family": "ExtraTrees",
+      "task": "monthly",
+      "config": 1,
+      "selection_score": 0.6839481171889953
+    },
+    {
+      "family": "ExtraTrees",
+      "task": "monthly",
+      "config": 2,
+      "selection_score": 0.6163356274246449
+    },
+    {
+      "family": "ExtraTrees",
+      "task": "monthly",
+      "config": 3,
+      "selection_score": 0.5699709922522734
+    },
+    {
+      "family": "ExtraTrees",
+      "task": "monthly",
+      "config": 4,
+      "selection_score": 0.7480517918899012
+    },
+    {
+      "family": "ExtraTrees",
+      "task": "monthly",
+      "config": 5,
+      "selection_score": 0.6397177196870153
+    },
+    {
+      "family": "ExtraTrees",
+      "task": "monthly",
+      "config": 6,
+      "selection_score": 0.5674174635778608
+    },
+    {
+      "family": "ExtraTrees",
+      "task": "monthly",
+      "config": 7,
+      "selection_score": 0.6971556736146013
+    },
+    {
+      "family": "ExtraTrees",
+      "task": "daily",
+      "config": 0,
+      "selection_score": 1.8456403343275372
+    },
+    {
+      "family": "ExtraTrees",
+      "task": "daily",
+      "config": 1,
+      "selection_score": 1.879436244067847
+    },
+    {
+      "family": "ExtraTrees",
+      "task": "daily",
+      "config": 2,
+      "selection_score": 1.9328104014496945
+    },
+    {
+      "family": "ExtraTrees",
+      "task": "daily",
+      "config": 3,
+      "selection_score": 1.8394694700115342
+    },
+    {
+      "family": "ExtraTrees",
+      "task": "daily",
+      "config": 4,
+      "selection_score": 1.9142391393689853
+    },
+    {
+      "family": "ExtraTrees",
+      "task": "daily",
+      "config": 5,
+      "selection_score": 1.8228277247674314
+    },
+    {
+      "family": "ExtraTrees",
+      "task": "daily",
+      "config": 6,
+      "selection_score": 1.9286994328114764
+    },
+    {
+      "family": "ExtraTrees",
+      "task": "daily",
+      "config": 7,
+      "selection_score": 1.8608298681361943
+    },
+    {
+      "family": "XGBoost",
+      "task": "monthly",
+      "config": 0,
+      "selection_score": 0.563883045877332
+    },
+    {
+      "family": "XGBoost",
+      "task": "monthly",
+      "config": 1,
+      "selection_score": 0.5470891354181069
+    },
+    {
+      "family": "XGBoost",
+      "task": "monthly",
+      "config": 2,
+      "selection_score": 0.5472535145200147
+    },
+    {
+      "family": "XGBoost",
+      "task": "monthly",
+      "config": 3,
+      "selection_score": 0.536625233693748
+    },
+    {
+      "family": "XGBoost",
+      "task": "monthly",
+      "config": 4,
+      "selection_score": 0.5644295103754473
+    },
+    {
+      "family": "XGBoost",
+      "task": "monthly",
+      "config": 5,
+      "selection_score": 0.5640282550765134
+    },
+    {
+      "family": "XGBoost",
+      "task": "monthly",
+      "config": 6,
+      "selection_score": 0.552734679347141
+    },
+    {
+      "family": "XGBoost",
+      "task": "monthly",
+      "config": 7,
+      "selection_score": 0.5678690518715457
+    },
+    {
+      "family": "XGBoost",
+      "task": "daily",
+      "config": 0,
+      "selection_score": 1.9404739821929193
+    },
+    {
+      "family": "XGBoost",
+      "task": "daily",
+      "config": 1,
+      "selection_score": 2.3043248610238076
+    },
+    {
+      "family": "XGBoost",
+      "task": "daily",
+      "config": 2,
+      "selection_score": 2.1596391468267924
+    },
+    {
+      "family": "XGBoost",
+      "task": "daily",
+      "config": 3,
+      "selection_score": 2.106621369819916
+    },
+    {
+      "family": "XGBoost",
+      "task": "daily",
+      "config": 4,
+      "selection_score": 2.2786319779939883
+    },
+    {
+      "family": "XGBoost",
+      "task": "daily",
+      "config": 5,
+      "selection_score": 1.886947761803103
+    },
+    {
+      "family": "XGBoost",
+      "task": "daily",
+      "config": 6,
+      "selection_score": 1.8356179196288436
+    },
+    {
+      "family": "XGBoost",
+      "task": "daily",
+      "config": 7,
+      "selection_score": 2.3334231228293163
+    },
+    {
+      "family": "LightGBM",
+      "task": "monthly",
+      "config": 0,
+      "selection_score": 0.5846893301715363
+    },
+    {
+      "family": "LightGBM",
+      "task": "monthly",
+      "config": 1,
+      "selection_score": 0.545436523357057
+    },
+    {
+      "family": "LightGBM",
+      "task": "monthly",
+      "config": 2,
+      "selection_score": 0.557741784553829
+    },
+    {
+      "family": "LightGBM",
+      "task": "monthly",
+      "config": 3,
+      "selection_score": 0.5466598090131438
+    },
+    {
+      "family": "LightGBM",
+      "task": "monthly",
+      "config": 4,
+      "selection_score": 0.563784686550615
+    },
+    {
+      "family": "LightGBM",
+      "task": "monthly",
+      "config": 5,
+      "selection_score": 0.8171611369699143
+    },
+    {
+      "family": "LightGBM",
+      "task": "monthly",
+      "config": 6,
+      "selection_score": 0.5287104463229318
+    },
+    {
+      "family": "LightGBM",
+      "task": "monthly",
+      "config": 7,
+      "selection_score": 0.5517853876894261
+    },
+    {
+      "family": "LightGBM",
+      "task": "daily",
+      "config": 0,
+      "selection_score": 1.897177315700428
+    },
+    {
+      "family": "LightGBM",
+      "task": "daily",
+      "config": 1,
+      "selection_score": 2.540635685619631
+    },
+    {
+      "family": "LightGBM",
+      "task": "daily",
+      "config": 2,
+      "selection_score": 2.4730731044550067
+    },
+    {
+      "family": "LightGBM",
+      "task": "daily",
+      "config": 3,
+      "selection_score": 2.5206344249654387
+    },
+    {
+      "family": "LightGBM",
+      "task": "daily",
+      "config": 4,
+      "selection_score": 2.687571461889331
+    },
+    {
+      "family": "LightGBM",
+      "task": "daily",
+      "config": 5,
+      "selection_score": 2.254398246023009
+    },
+    {
+      "family": "LightGBM",
+      "task": "daily",
+      "config": 6,
+      "selection_score": 2.2554683084046196
+    },
+    {
+      "family": "LightGBM",
+      "task": "daily",
+      "config": 7,
+      "selection_score": 2.2887080934883715
+    },
+    {
+      "family": "CatBoost",
+      "task": "monthly",
+      "config": 0,
+      "selection_score": 0.5937891832385062
+    },
+    {
+      "family": "CatBoost",
+      "task": "monthly",
+      "config": 1,
+      "selection_score": 0.5347137741695384
+    },
+    {
+      "family": "CatBoost",
+      "task": "monthly",
+      "config": 2,
+      "selection_score": 0.5130411129935963
+    },
+    {
+      "family": "CatBoost",
+      "task": "monthly",
+      "config": 3,
+      "selection_score": 0.5396270245163435
+    },
+    {
+      "family": "CatBoost",
+      "task": "monthly",
+      "config": 4,
+      "selection_score": 0.5435883920096195
+    },
+    {
+      "family": "CatBoost",
+      "task": "monthly",
+      "config": 5,
+      "selection_score": 0.5282547908670084
+    },
+    {
+      "family": "CatBoost",
+      "task": "monthly",
+      "config": 6,
+      "selection_score": 0.5237440684269462
+    },
+    {
+      "family": "CatBoost",
+      "task": "monthly",
+      "config": 7,
+      "selection_score": 0.5485793538331843
+    },
+    {
+      "family": "CatBoost",
+      "task": "daily",
+      "config": 0,
+      "selection_score": 1.744660501588583
+    },
+    {
+      "family": "CatBoost",
+      "task": "daily",
+      "config": 1,
+      "selection_score": 1.6967847851140223
+    },
+    {
+      "family": "CatBoost",
+      "task": "daily",
+      "config": 2,
+      "selection_score": 1.675065393759955
+    },
+    {
+      "family": "CatBoost",
+      "task": "daily",
+      "config": 3,
+      "selection_score": 1.7341064449752472
+    },
+    {
+      "family": "CatBoost",
+      "task": "daily",
+      "config": 4,
+      "selection_score": 1.6119169620558116
+    },
+    {
+      "family": "CatBoost",
+      "task": "daily",
+      "config": 5,
+      "selection_score": 1.6750170495085552
+    },
+    {
+      "family": "CatBoost",
+      "task": "daily",
+      "config": 6,
+      "selection_score": 1.712009420414835
+    },
+    {
+      "family": "CatBoost",
+      "task": "daily",
+      "config": 7,
+      "selection_score": 1.6471322829910642
+    },
+    {
+      "family": "MLP",
+      "task": "monthly",
+      "config": 0,
+      "selection_score": 0.6487076801271868
+    },
+    {
+      "family": "MLP",
+      "task": "monthly",
+      "config": 1,
+      "selection_score": 0.6638043365947375
+    },
+    {
+      "family": "MLP",
+      "task": "monthly",
+      "config": 2,
+      "selection_score": 0.6667588299142079
+    },
+    {
+      "family": "MLP",
+      "task": "monthly",
+      "config": 3,
+      "selection_score": 0.6036420457945418
+    },
+    {
+      "family": "MLP",
+      "task": "monthly",
+      "config": 4,
+      "selection_score": 0.7599809635899538
+    },
+    {
+      "family": "MLP",
+      "task": "monthly",
+      "config": 5,
+      "selection_score": 0.6012062941275089
+    },
+    {
+      "family": "MLP",
+      "task": "monthly",
+      "config": 6,
+      "selection_score": 0.6011191312414079
+    },
+    {
+      "family": "MLP",
+      "task": "monthly",
+      "config": 7,
+      "selection_score": 0.6390675714790933
+    },
+    {
+      "family": "MLP",
+      "task": "daily",
+      "config": 0,
+      "selection_score": 2.602566149935697
+    },
+    {
+      "family": "MLP",
+      "task": "daily",
+      "config": 1,
+      "selection_score": 2.7741598061970887
+    },
+    {
+      "family": "MLP",
+      "task": "daily",
+      "config": 2,
+      "selection_score": 2.7798445718135234
+    },
+    {
+      "family": "MLP",
+      "task": "daily",
+      "config": 3,
+      "selection_score": 2.971841196092664
+    },
+    {
+      "family": "MLP",
+      "task": "daily",
+      "config": 4,
+      "selection_score": 2.6466993028362924
+    },
+    {
+      "family": "MLP",
+      "task": "daily",
+      "config": 5,
+      "selection_score": 2.0131065901889005
+    },
+    {
+      "family": "MLP",
+      "task": "daily",
+      "config": 6,
+      "selection_score": 2.84814386025634
+    },
+    {
+      "family": "MLP",
+      "task": "daily",
+      "config": 7,
+      "selection_score": 2.9725502104628414
+    },
+    {
+      "family": "LSTM",
+      "task": "monthly",
+      "config": 0,
+      "selection_score": 0.7304367490555684
+    },
+    {
+      "family": "LSTM",
+      "task": "monthly",
+      "config": 1,
+      "selection_score": 0.6879060018885707
+    },
+    {
+      "family": "LSTM",
+      "task": "monthly",
+      "config": 2,
+      "selection_score": 0.7015883130932982
+    },
+    {
+      "family": "LSTM",
+      "task": "monthly",
+      "config": 3,
+      "selection_score": 0.6245978721297261
+    },
+    {
+      "family": "LSTM",
+      "task": "monthly",
+      "config": 4,
+      "selection_score": 0.7196157744393445
+    },
+    {
+      "family": "LSTM",
+      "task": "monthly",
+      "config": 5,
+      "selection_score": 0.6607422658610291
+    },
+    {
+      "family": "LSTM",
+      "task": "monthly",
+      "config": 6,
+      "selection_score": 0.6484601444199005
+    },
+    {
+      "family": "LSTM",
+      "task": "monthly",
+      "config": 7,
+      "selection_score": 0.6154013364737575
+    },
+    {
+      "family": "LSTM",
+      "task": "daily",
+      "config": 0,
+      "selection_score": 1.878444067915461
+    },
+    {
+      "family": "LSTM",
+      "task": "daily",
+      "config": 1,
+      "selection_score": 1.7939546214335802
+    },
+    {
+      "family": "LSTM",
+      "task": "daily",
+      "config": 2,
+      "selection_score": 1.7403207881474114
+    },
+    {
+      "family": "LSTM",
+      "task": "daily",
+      "config": 3,
+      "selection_score": 1.7299817571237726
+    },
+    {
+      "family": "LSTM",
+      "task": "daily",
+      "config": 4,
+      "selection_score": 1.9483799817309482
+    },
+    {
+      "family": "LSTM",
+      "task": "daily",
+      "config": 5,
+      "selection_score": 1.9405300329751252
+    },
+    {
+      "family": "LSTM",
+      "task": "daily",
+      "config": 6,
+      "selection_score": 1.7442531458994923
+    },
+    {
+      "family": "LSTM",
+      "task": "daily",
+      "config": 7,
+      "selection_score": 1.7533436238333726
+    },
+    {
+      "family": "GRU",
+      "task": "monthly",
+      "config": 0,
+      "selection_score": 0.7001960311802835
+    },
+    {
+      "family": "GRU",
+      "task": "monthly",
+      "config": 1,
+      "selection_score": 0.6462100922527764
+    },
+    {
+      "family": "GRU",
+      "task": "monthly",
+      "config": 2,
+      "selection_score": 0.6340976552564286
+    },
+    {
+      "family": "GRU",
+      "task": "monthly",
+      "config": 3,
+      "selection_score": 0.6565789644222964
+    },
+    {
+      "family": "GRU",
+      "task": "monthly",
+      "config": 4,
+      "selection_score": 0.6590203155964786
+    },
+    {
+      "family": "GRU",
+      "task": "monthly",
+      "config": 5,
+      "selection_score": 0.6590756003019934
+    },
+    {
+      "family": "GRU",
+      "task": "monthly",
+      "config": 6,
+      "selection_score": 0.60680836882642
+    },
+    {
+      "family": "GRU",
+      "task": "monthly",
+      "config": 7,
+      "selection_score": 0.6411304966811152
+    },
+    {
+      "family": "GRU",
+      "task": "daily",
+      "config": 0,
+      "selection_score": 1.7791923033331367
+    },
+    {
+      "family": "GRU",
+      "task": "daily",
+      "config": 1,
+      "selection_score": 1.743921949407701
+    },
+    {
+      "family": "GRU",
+      "task": "daily",
+      "config": 2,
+      "selection_score": 1.7174469878697045
+    },
+    {
+      "family": "GRU",
+      "task": "daily",
+      "config": 3,
+      "selection_score": 1.8814089126375264
+    },
+    {
+      "family": "GRU",
+      "task": "daily",
+      "config": 4,
+      "selection_score": 1.9606315544021693
+    },
+    {
+      "family": "GRU",
+      "task": "daily",
+      "config": 5,
+      "selection_score": 1.7856162904460933
+    },
+    {
+      "family": "GRU",
+      "task": "daily",
+      "config": 6,
+      "selection_score": 1.9493510867222523
+    },
+    {
+      "family": "GRU",
+      "task": "daily",
+      "config": 7,
+      "selection_score": 1.9528078189954012
+    },
+    {
+      "family": "TCN",
+      "task": "monthly",
+      "config": 0,
+      "selection_score": 0.6700032849678926
+    },
+    {
+      "family": "TCN",
+      "task": "monthly",
+      "config": 1,
+      "selection_score": 0.6428370584096434
+    },
+    {
+      "family": "TCN",
+      "task": "monthly",
+      "config": 2,
+      "selection_score": 0.6176326223708164
+    },
+    {
+      "family": "TCN",
+      "task": "monthly",
+      "config": 3,
+      "selection_score": 0.6493621532697966
+    },
+    {
+      "family": "TCN",
+      "task": "monthly",
+      "config": 4,
+      "selection_score": 0.6245129862664798
+    },
+    {
+      "family": "TCN",
+      "task": "monthly",
+      "config": 5,
+      "selection_score": 0.6431888072785001
+    },
+    {
+      "family": "TCN",
+      "task": "monthly",
+      "config": 6,
+      "selection_score": 0.6441226738719217
+    },
+    {
+      "family": "TCN",
+      "task": "monthly",
+      "config": 7,
+      "selection_score": 0.6182446891755354
+    },
+    {
+      "family": "TCN",
+      "task": "daily",
+      "config": 0,
+      "selection_score": 1.6339307718523082
+    },
+    {
+      "family": "TCN",
+      "task": "daily",
+      "config": 1,
+      "selection_score": 1.602215674002789
+    },
+    {
+      "family": "TCN",
+      "task": "daily",
+      "config": 2,
+      "selection_score": 1.8572791288071773
+    },
+    {
+      "family": "TCN",
+      "task": "daily",
+      "config": 3,
+      "selection_score": 1.6622207317230382
+    },
+    {
+      "family": "TCN",
+      "task": "daily",
+      "config": 4,
+      "selection_score": 1.7005626918332575
+    },
+    {
+      "family": "TCN",
+      "task": "daily",
+      "config": 5,
+      "selection_score": 1.7914920269191976
+    },
+    {
+      "family": "TCN",
+      "task": "daily",
+      "config": 6,
+      "selection_score": 1.7312773733652318
+    },
+    {
+      "family": "TCN",
+      "task": "daily",
+      "config": 7,
+      "selection_score": 1.6353703620162023
+    },
+    {
+      "family": "Transformer",
+      "task": "monthly",
+      "config": 0,
+      "selection_score": 0.6276230105493448
+    },
+    {
+      "family": "Transformer",
+      "task": "monthly",
+      "config": 1,
+      "selection_score": 0.5724578612480481
+    },
+    {
+      "family": "Transformer",
+      "task": "monthly",
+      "config": 2,
+      "selection_score": 0.6278613819500992
+    },
+    {
+      "family": "Transformer",
+      "task": "monthly",
+      "config": 3,
+      "selection_score": 0.5776257681222279
+    },
+    {
+      "family": "Transformer",
+      "task": "monthly",
+      "config": 4,
+      "selection_score": 0.6243320950614477
+    },
+    {
+      "family": "Transformer",
+      "task": "monthly",
+      "config": 5,
+      "selection_score": 0.6254898768358071
+    },
+    {
+      "family": "Transformer",
+      "task": "monthly",
+      "config": 6,
+      "selection_score": 0.5767767479008982
+    },
+    {
+      "family": "Transformer",
+      "task": "monthly",
+      "config": 7,
+      "selection_score": 0.6205220225385503
+    },
+    {
+      "family": "Transformer",
+      "task": "daily",
+      "config": 0,
+      "selection_score": 1.6194798848143614
+    },
+    {
+      "family": "Transformer",
+      "task": "daily",
+      "config": 1,
+      "selection_score": 2.033439708493438
+    },
+    {
+      "family": "Transformer",
+      "task": "daily",
+      "config": 2,
+      "selection_score": 1.7873001040302043
+    },
+    {
+      "family": "Transformer",
+      "task": "daily",
+      "config": 3,
+      "selection_score": 1.7004538399038325
+    },
+    {
+      "family": "Transformer",
+      "task": "daily",
+      "config": 4,
+      "selection_score": 1.9036268880834823
+    },
+    {
+      "family": "Transformer",
+      "task": "daily",
+      "config": 5,
+      "selection_score": 1.6408674962322216
+    },
+    {
+      "family": "Transformer",
+      "task": "daily",
+      "config": 6,
+      "selection_score": 1.8120961879238442
+    },
+    {
+      "family": "Transformer",
+      "task": "daily",
+      "config": 7,
+      "selection_score": 1.579036277540349
+    },
+    {
+      "family": "GraphTCN",
+      "task": "monthly",
+      "config": 0,
+      "selection_score": 0.6250856404652021
+    },
+    {
+      "family": "GraphTCN",
+      "task": "monthly",
+      "config": 1,
+      "selection_score": 0.6470067855589763
+    },
+    {
+      "family": "GraphTCN",
+      "task": "monthly",
+      "config": 2,
+      "selection_score": 0.6151395583680047
+    },
+    {
+      "family": "GraphTCN",
+      "task": "monthly",
+      "config": 3,
+      "selection_score": 0.6366303360206399
+    },
+    {
+      "family": "GraphTCN",
+      "task": "monthly",
+      "config": 4,
+      "selection_score": 0.6085883625665558
+    },
+    {
+      "family": "GraphTCN",
+      "task": "monthly",
+      "config": 5,
+      "selection_score": 0.6634219951446849
+    },
+    {
+      "family": "GraphTCN",
+      "task": "monthly",
+      "config": 6,
+      "selection_score": 0.6063642773402315
+    },
+    {
+      "family": "GraphTCN",
+      "task": "monthly",
+      "config": 7,
+      "selection_score": 0.6306148906064871
+    },
+    {
+      "family": "GraphTCN",
+      "task": "daily",
+      "config": 0,
+      "selection_score": 1.4756344585463403
+    },
+    {
+      "family": "GraphTCN",
+      "task": "daily",
+      "config": 1,
+      "selection_score": 1.523494430058449
+    },
+    {
+      "family": "GraphTCN",
+      "task": "daily",
+      "config": 2,
+      "selection_score": 1.4743742367701755
+    },
+    {
+      "family": "GraphTCN",
+      "task": "daily",
+      "config": 3,
+      "selection_score": 1.4723377930486103
+    },
+    {
+      "family": "GraphTCN",
+      "task": "daily",
+      "config": 4,
+      "selection_score": 1.5188933416470456
+    },
+    {
+      "family": "GraphTCN",
+      "task": "daily",
+      "config": 5,
+      "selection_score": 1.5619622679587568
+    },
+    {
+      "family": "GraphTCN",
+      "task": "daily",
+      "config": 6,
+      "selection_score": 1.480934498133889
+    },
+    {
+      "family": "GraphTCN",
+      "task": "daily",
+      "config": 7,
+      "selection_score": 1.564510169376454
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "source": "E:\\SPARROW\\5_Test\\20260926_1\\outputs\\deposition_landclass\\monthly_reach_clcd_class_deposition_1961_2024.parquet",
+  "source_sha256": "30b5fd90ba59c48b5c6daf4ea599da3beb1c80b8b20977cc96555e7434162b89",
+  "rows": [
+    {
+      "year": 2015,
+      "included_nonwater_exposure_kg_n": 1029097834.0073279,
+      "unknown_landclass_exposure_kg_n": 299209.2604474014,
+      "unknown_fraction_of_feature_exposure": 0.0002907490916410488,
+      "excluded_water_kg_n": 11711204.850827448,
+      "known_nonwater_exposure_kg_n": 1028798624.7468805
+    },
+    {
+      "year": 2016,
+      "included_nonwater_exposure_kg_n": 1083976753.7418237,
+      "unknown_landclass_exposure_kg_n": 317899.68673189805,
+      "unknown_fraction_of_feature_exposure": 0.0002932716828423923,
+      "excluded_water_kg_n": 12236023.973215612,
+      "known_nonwater_exposure_kg_n": 1083658854.0550919
+    },
+    {
+      "year": 2017,
+      "included_nonwater_exposure_kg_n": 976393454.6219578,
+      "unknown_landclass_exposure_kg_n": 291843.8972000231,
+      "unknown_fraction_of_feature_exposure": 0.0002988998910413834,
+      "excluded_water_kg_n": 10590400.128218982,
+      "known_nonwater_exposure_kg_n": 976101610.7247578
+    },
+    {
+      "year": 2018,
+      "included_nonwater_exposure_kg_n": 1020516073.8197601,
+      "unknown_landclass_exposure_kg_n": 297933.112589202,
+      "unknown_fraction_of_feature_exposure": 0.0002919435766200601,
+      "excluded_water_kg_n": 10866083.265283875,
+      "known_nonwater_exposure_kg_n": 1020218140.7071708
+    },
+    {
+      "year": 2019,
+      "included_nonwater_exposure_kg_n": 898294306.1585369,
+      "unknown_landclass_exposure_kg_n": 280287.0924250482,
+      "unknown_fraction_of_feature_exposure": 0.00031202145054627704,
+      "excluded_water_kg_n": 9650388.200575259,
+      "known_nonwater_exposure_kg_n": 898014019.0661119
+    },
+    {
+      "year": 2020,
+      "included_nonwater_exposure_kg_n": 919561826.4796425,
+      "unknown_landclass_exposure_kg_n": 272733.36684409744,
+      "unknown_fraction_of_feature_exposure": 0.0002965905706288421,
+      "excluded_water_kg_n": 9762187.891372092,
+      "known_nonwater_exposure_kg_n": 919289093.1127985
+    },
+    {
+      "year": 2021,
+      "included_nonwater_exposure_kg_n": 892516004.8128896,
+      "unknown_landclass_exposure_kg_n": 272458.467135563,
+      "unknown_fraction_of_feature_exposure": 0.0003052701191534176,
+      "excluded_water_kg_n": 9142986.531565767,
+      "known_nonwater_exposure_kg_n": 892243546.345754
+    },
+    {
+      "year": 2022,
+      "included_nonwater_exposure_kg_n": 918128163.747633,
+      "unknown_landclass_exposure_kg_n": 283631.61221828696,
+      "unknown_fraction_of_feature_exposure": 0.00030892376839912423,
+      "excluded_water_kg_n": 8793024.529275078,
+      "known_nonwater_exposure_kg_n": 917844532.1354147
+    },
+    {
+      "year": 2023,
+      "included_nonwater_exposure_kg_n": 993247819.1829097,
+      "unknown_landclass_exposure_kg_n": 291318.09832857543,
+      "unknown_fraction_of_feature_exposure": 0.0002932985028532223,
+      "excluded_water_kg_n": 9533468.208309863,
+      "known_nonwater_exposure_kg_n": 992956501.0845811
+    },
+    {
+      "year": 2024,
+      "included_nonwater_exposure_kg_n": 995059220.3523685,
+      "unknown_landclass_exposure_kg_n": 304504.98609473696,
+      "unknown_fraction_of_feature_exposure": 0.00030601694840524794,
+      "excluded_water_kg_n": 9626680.16761709,
+      "known_nonwater_exposure_kg_n": 994754715.3662738
+    }
+  ],
+  "actual_feature": "prepare.py excludes class5 water; class0 estimated exposure is included in four monthly covariates",
+  "identity": "unknown class remains uncertain; feature is not a physical known-land external-source mass interface",
+  "monthly_support": "constant current-month retrospective kg N/ha/month covariate; no wet-deposition daily rainfall division",
+  "labels_read": false,
+  "fitting_calls": 0,
+  "changed_input_arrays": false
+}

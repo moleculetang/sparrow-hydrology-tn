@@ -1,0 +1,11 @@
+{
+  "preserved_failure": {
+    "script": "author_final_report.py",
+    "exit_code": 1,
+    "elapsed_s": 1.0,
+    "sha256": "0747a2ed780c473e320e110b607f3e4f2e9cd5f85760a79310f45b918aab4df6"
+  },
+  "log": "logs/seed_repair_author_final_report.py.log",
+  "cause": "plot lookup still used c7 after train-only selection changed to c3",
+  "repair": "dynamic frozen_joint_selection used for all joint plot identities; numerical predictions unchanged"
+}

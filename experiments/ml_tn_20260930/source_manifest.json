@@ -1,0 +1,1082 @@
+[
+  {
+    "path": "acceptance.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\acceptance.py",
+    "sha256": "ac253d7f8cd98e94c2503fb78cc34f21975f4739bb8373d30e7409343703daea",
+    "exact": true
+  },
+  {
+    "path": "activate_external_ownership.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\activate_external_ownership.py",
+    "sha256": "e7929edf9acaa114adb1430a56a45ed2650b28479028cdde4d1920781746c4d9",
+    "exact": true
+  },
+  {
+    "path": "activate_source_update.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\activate_source_update.py",
+    "sha256": "8690713f5fd7a307c3ab9385cedd60ae475ceec1172bc07a662ee7b201b320d7",
+    "exact": true
+  },
+  {
+    "path": "adopt_current.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\adopt_current.py",
+    "sha256": "1a4ff749462f3f4e5fbf91e8a62f3cd753b0454634ea386159aa0fef8d5d9a33",
+    "exact": true
+  },
+  {
+    "path": "append_historical_comparators.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\append_historical_comparators.py",
+    "sha256": "e06c5dcc3d22c46d1942d8b98bd6faa40e07e2be8ef0cc363c0e496f85871ed4",
+    "exact": true
+  },
+  {
+    "path": "audit_deposition_features.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\audit_deposition_features.py",
+    "sha256": "9172edd8091aa89aaae5efa51b86cf81d90db405bfded2f7108b624a28d63206",
+    "exact": true
+  },
+  {
+    "path": "audit_effect_metrics.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\audit_effect_metrics.py",
+    "sha256": "ce778651cef06569b902a59c34bcba0e77b6fe0985abef2e5387df068f88588c",
+    "exact": true
+  },
+  {
+    "path": "audit_final_protocol.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\audit_final_protocol.py",
+    "sha256": "9575d634d6683dae79364070bdb416ac08452e1bfc6dda7bf37aa46fb3174c54",
+    "exact": true
+  },
+  {
+    "path": "audit_joint_seed.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\audit_joint_seed.py",
+    "sha256": "5fa476c3020db559c6d2ee653683db475203cbb27e2557c734ef9057381a0ef1",
+    "exact": true
+  },
+  {
+    "path": "author_amplitude_report.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\author_amplitude_report.py",
+    "sha256": "382b77e03ad9a5230e3a73d02f66c4c16e36c06f6ccc260f35c48d131e0207b3",
+    "exact": true
+  },
+  {
+    "path": "author_final_report.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\author_final_report.py",
+    "sha256": "a0ad2063eba60531ab254bece5844aed9cbf4f7a7d11b419e87bc0c23c884bb9",
+    "exact": true
+  },
+  {
+    "path": "auxiliary.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\auxiliary.py",
+    "sha256": "db4fcd702fd78374423acb7d295c2c87a9e8bf8ad4ed49b2b4016fef6b24196b",
+    "exact": true
+  },
+  {
+    "path": "baselines.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\baselines.py",
+    "sha256": "0c3727b1c96c02cd794c06e9d434692873d9eb3b7e8adbae68145b43a84eb05a",
+    "exact": true
+  },
+  {
+    "path": "benchmark.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\benchmark.py",
+    "sha256": "d6ede1d862e7518e7d3b4ecb8589902504a4def4f689c9081f890db61634f321",
+    "exact": true
+  },
+  {
+    "path": "benchmark_four_slots.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\benchmark_four_slots.py",
+    "sha256": "55ec68a76bc3ef2f598bd421a9227cecf5e2cc69472b73846eda766e80bd9077",
+    "exact": true
+  },
+  {
+    "path": "benchmark_joint.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\benchmark_joint.py",
+    "sha256": "171edfc338d663a86a381190a437b55fe4609114c11820a853b5ad4758580635",
+    "exact": true
+  },
+  {
+    "path": "benchmark_neural_cache.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\benchmark_neural_cache.py",
+    "sha256": "4da93380367d7f3ffd1a9a96fb9d27d384bccbaad67ac56ed2c565085352fded",
+    "exact": true
+  },
+  {
+    "path": "benchmark_pair.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\benchmark_pair.py",
+    "sha256": "662541f3ac5d5a26cf6a5dd30b6569a82168f3c06a5a7b06ff0feac1c4be45c0",
+    "exact": true
+  },
+  {
+    "path": "cancel_blocked_probe.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\cancel_blocked_probe.py",
+    "sha256": "444dfdbd7eaab3b31eac0dcfb5e2fb937e5cb65558edebf9801adcc16a5677cf",
+    "exact": true
+  },
+  {
+    "path": "check_bootstrap_scope.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\check_bootstrap_scope.py",
+    "sha256": "3bb06be3f2917cac19d759e7f058c0ec8a3cf46aad8ebbc901c088633e7b255b",
+    "exact": true
+  },
+  {
+    "path": "check_commit_accounting.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\check_commit_accounting.py",
+    "sha256": "df41e545c1dc0c31b67f3b1a89234bda51d94adcaab4ec502e0bf0d2e06c0caf",
+    "exact": true
+  },
+  {
+    "path": "check_diagnostic_readout.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\check_diagnostic_readout.py",
+    "sha256": "1ca2fa9138ab9a3e5a5ad4bcf59d002da97f856466eef626815f0ba11126c7b3",
+    "exact": true
+  },
+  {
+    "path": "check_gpu_pending.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\check_gpu_pending.py",
+    "sha256": "b45d7a324ffb784946067bcbc251e0d973f3af54d34bfa603a354e2f8c02e2fb",
+    "exact": true
+  },
+  {
+    "path": "check_handoff_lock.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\check_handoff_lock.py",
+    "sha256": "f90395b5457f04a32cfdece2dc2661ee32ad279853cf45df03c4d6951fe88c5e",
+    "exact": true
+  },
+  {
+    "path": "check_historical_append.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\check_historical_append.py",
+    "sha256": "1d1796a8234dcb68f91766129446e59dff4c568b1b8aa73a4e802e8df9de1602",
+    "exact": true
+  },
+  {
+    "path": "check_parallel_gate.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\check_parallel_gate.py",
+    "sha256": "182357a5f029859681ec73f22210adb212a6dfd276829cd858c8386ae3bb53c4",
+    "exact": true
+  },
+  {
+    "path": "check_registry_publication.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\check_registry_publication.py",
+    "sha256": "ffd5f531477a0d2e54b4217af93b09e7b7ed94878c272f1c6c37fec83b92387b",
+    "exact": true
+  },
+  {
+    "path": "controller.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\controller.py",
+    "sha256": "8750ae9ebba4456e53ebad3c511a20bd89ecf447ed9381b2393493bef6ee52c6",
+    "exact": true
+  },
+  {
+    "path": "coverage.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\coverage.py",
+    "sha256": "fe6368bc00dbc291f7e60eed4cf6987b62701883503f621a3ec4533c82588d0e",
+    "exact": true
+  },
+  {
+    "path": "deploy_matched_queue.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\deploy_matched_queue.py",
+    "sha256": "3ffa966d8e134a666ae7a6ab73ad1813240cd7e0e46e7cbcf0942997875064f0",
+    "exact": true
+  },
+  {
+    "path": "diagnose_amplitude.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\diagnose_amplitude.py",
+    "sha256": "95e03c1fde8dee770f764e8216bbb3afe79b6566229ad137a647207023757fab",
+    "exact": true
+  },
+  {
+    "path": "diagnostics.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\diagnostics.py",
+    "sha256": "b4981e8bc2a757e4b20c8d1040c3db0700c5137880dc3fcc5a8a0cc54b7fa4cf",
+    "exact": true
+  },
+  {
+    "path": "ensemble.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\ensemble.py",
+    "sha256": "2ee8e7d575b67e54e0e7558863a087b8bbe37d0c158841fd3c51485bfa56bf0c",
+    "exact": true
+  },
+  {
+    "path": "environment.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\environment.py",
+    "sha256": "29e59fc70325c1433140fd2d106c6c20c2e1a4585f29550059655c5e1fb9f341",
+    "exact": true
+  },
+  {
+    "path": "evaluate.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evaluate.py",
+    "sha256": "3fa9a71bef035e2bdeff405e96c88382274c283fadc6cbf0ad245d4842609849",
+    "exact": true
+  },
+  {
+    "path": "expert_tables.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\expert_tables.py",
+    "sha256": "408e9378b446c74ecbf67c4031296fbc2c9db5df1623ee6ea005520fdf1c3f8a",
+    "exact": true
+  },
+  {
+    "path": "external_jobs.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\external_jobs.py",
+    "sha256": "9f4a5e08b6ec4b89684a7ef3ed1c08bfe3d6c0280d6159d7ec8ea26457896f97",
+    "exact": true
+  },
+  {
+    "path": "feature_collisions.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\feature_collisions.py",
+    "sha256": "248d9d6ffd7543ecbf7cf14a0b5c8a787cf232a2d9aaefadeba58a1f07933f5b",
+    "exact": true
+  },
+  {
+    "path": "feature_reliance.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\feature_reliance.py",
+    "sha256": "83f6e9e4d8ef53431da8dceb9248e05fa20a5458faa0251ecf2c5cc7477c28d7",
+    "exact": true
+  },
+  {
+    "path": "final_delivery.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\final_delivery.py",
+    "sha256": "393bc13ec89b17ddbd40b32693eac1111ca82eb2079349f2b040969811d088dc",
+    "exact": true
+  },
+  {
+    "path": "finalize_local_evidence.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\finalize_local_evidence.py",
+    "sha256": "58f6fad6bd750466025c954511ead5a3afc2aa552b338093926d48ab286a48de",
+    "exact": true
+  },
+  {
+    "path": "freeze_design.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\freeze_design.py",
+    "sha256": "af0730ea8cbb2af7fd78416401dfeca617876c9da0da6dcd8c769ae2b040963d",
+    "exact": true
+  },
+  {
+    "path": "freeze_results.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\freeze_results.py",
+    "sha256": "ea1590e1da913e77a6d1ecf8a7de473a9bf446ce4f542be53e07305930326908",
+    "exact": true
+  },
+  {
+    "path": "full_domain.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\full_domain.py",
+    "sha256": "3262ea505c9b3229c9355de7813ac8b99b9d5ea3af8a7b9ff76ea49b400e340e",
+    "exact": true
+  },
+  {
+    "path": "handoff_controller.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\handoff_controller.py",
+    "sha256": "800e2ae3693a5350b604288500106f2dcb19ea63a994c5e878c1f55380e05262",
+    "exact": true
+  },
+  {
+    "path": "handoff_pending_single.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\handoff_pending_single.py",
+    "sha256": "301427b145862d7bf382a0cdd3a9773731bfb7bed4bd2462b19fee1342047dba",
+    "exact": true
+  },
+  {
+    "path": "handoff_seed_repair.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\handoff_seed_repair.py",
+    "sha256": "ceb210b9096c8ac3cfbdbd39cc0463f2799e621c27b23f339210d835def6a1b5",
+    "exact": true
+  },
+  {
+    "path": "history_baseline.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\history_baseline.py",
+    "sha256": "28eacda725b233333e87838fdd33567af269671062e26efa859d1e70cc1da9ff",
+    "exact": true
+  },
+  {
+    "path": "import_delivery.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\import_delivery.py",
+    "sha256": "a0b2ff940d86fddc2c6af57e0b8cd2c69c39cbf4f39a22624a8e79f3f0d52e71",
+    "exact": true
+  },
+  {
+    "path": "independent_readings.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\independent_readings.py",
+    "sha256": "2a2d4ee499a7b42cc4980c9983738324a4551c0a0dfacd32925d1bea37b728a9",
+    "exact": true
+  },
+  {
+    "path": "independent_review.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\independent_review.py",
+    "sha256": "615d81eaa9d0fccc34d57d21c845efe1e02480c07d2b40ce6b315b7180f88d80",
+    "exact": true
+  },
+  {
+    "path": "install_gpu_policy.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\install_gpu_policy.py",
+    "sha256": "a05d1532d12caf9e02ae9a0122823c40f31fdfa46c1c03dabe5ec38d32c6f237",
+    "exact": true
+  },
+  {
+    "path": "joint.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\joint.py",
+    "sha256": "4695637f98ab443439ffacef0ff209c2aa79e18539e10b52253ba764e67e1015",
+    "exact": true
+  },
+  {
+    "path": "launch_dispatch_handoff.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\launch_dispatch_handoff.py",
+    "sha256": "d8fbc39070925505064bbf02ebf121e890dd12e248399ed16ca1c94adba24572",
+    "exact": true
+  },
+  {
+    "path": "launch_gpu_priority_handoff.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\launch_gpu_priority_handoff.py",
+    "sha256": "e5433553b57903be63e7595a8c950e3676a651e2f9e52f1df662dff5a29757e6",
+    "exact": true
+  },
+  {
+    "path": "literature.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\literature.py",
+    "sha256": "acba42c0877e5064aef099d06b58403b7fb9c9fdf6eba93832bc3c9439550d4e",
+    "exact": true
+  },
+  {
+    "path": "monthly_readouts.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\monthly_readouts.py",
+    "sha256": "6c0c166ade581320a20554c1ebf1921ccc72de76b975a04c7c022276204b2b47",
+    "exact": true
+  },
+  {
+    "path": "observation_availability.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\observation_availability.py",
+    "sha256": "25cf822f10c828e914ea4db10789ccc560badf8d03997d74cf8e30aa4c8967cb",
+    "exact": true
+  },
+  {
+    "path": "pack_source_update.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\pack_source_update.py",
+    "sha256": "5bf5862e4a2d05fd48d1624875c0aac184121653e24edcd179612beea63e2d76",
+    "exact": true
+  },
+  {
+    "path": "portable_check.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\portable_check.py",
+    "sha256": "3a622422dec05149a52b933fb0ef522e3131ee990d2030cf96dbffb5c0cb1ef9",
+    "exact": true
+  },
+  {
+    "path": "postprocess.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\postprocess.py",
+    "sha256": "09ce55fa799289a781fba7fd4430661c2b07e4021ebb3a50192caeec8a1f08fb",
+    "exact": true
+  },
+  {
+    "path": "postprocess_priority_bridge.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\postprocess_priority_bridge.py",
+    "sha256": "64de6b1f292f1570d775780d810550b3bc90b9e3e644a8c949df3f7d25501b6e",
+    "exact": true
+  },
+  {
+    "path": "prepare.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\prepare.py",
+    "sha256": "f0aef4fa3ee93cf6d6d5330a08c43add8755a526beeaa470de86cd0c02c2e4ca",
+    "exact": true
+  },
+  {
+    "path": "rebuild_seed_evidence.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\rebuild_seed_evidence.py",
+    "sha256": "95061a5b8584b9d0a8bdcfa678bb3aa555872714692e9f9f651b2363422cfc62",
+    "exact": true
+  },
+  {
+    "path": "reconcile_warmup.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\reconcile_warmup.py",
+    "sha256": "ab1d4d000dad0791486c3be3bd9741b090b8a8278eaf7241e109ef6b8ec82593",
+    "exact": true
+  },
+  {
+    "path": "references.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\references.py",
+    "sha256": "f582316e502fb7dc716b333405ed25eedf45ba94c4960cea886a718972087f47",
+    "exact": true
+  },
+  {
+    "path": "remote_preflight.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\remote_preflight.py",
+    "sha256": "54626674fdcfe5652d92e29ba5dd0b50b84aa72db987b7d0afa07aef82165da7",
+    "exact": true
+  },
+  {
+    "path": "repair_constant_HF_means.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\repair_constant_HF_means.py",
+    "sha256": "5ed3265c3ead55aa79300adc0405e8bb27212b4fa4468359aeef8c42beebfc7c",
+    "exact": true
+  },
+  {
+    "path": "repair_joint_seed.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\repair_joint_seed.py",
+    "sha256": "eb7c5a7c38c6e4ed56b8d6e22552d8aed111de1af45d89e3c3ea685a5996b214",
+    "exact": true
+  },
+  {
+    "path": "repair_warmup.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\repair_warmup.py",
+    "sha256": "a96caa6df056dc81e1d5556ffed8a95441f4219286e8106dd28919c04f6daec1",
+    "exact": true
+  },
+  {
+    "path": "report_draft.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\report_draft.py",
+    "sha256": "54b2dfb7c87680753564a55421fe93dbd7bfdb6c6798cf84a5391b3cc7fe23b0",
+    "exact": true
+  },
+  {
+    "path": "review_literature.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\review_literature.py",
+    "sha256": "8b86675c58a822dbecb7c21ea3226b8ccf8b296ee04a826a3d0d472ba53505b1",
+    "exact": true
+  },
+  {
+    "path": "run_external_sequence.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\run_external_sequence.py",
+    "sha256": "d8d9551fb8977454d316c4122434e853b98eeb0754b3c36d9479e70592846cec",
+    "exact": true
+  },
+  {
+    "path": "run_remaining.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\run_remaining.py",
+    "sha256": "60408ed96b43fb0d0abd4232e7a70f8583d8c2d715f401d5f96fd961122d3ba8",
+    "exact": true
+  },
+  {
+    "path": "run_single_external.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\run_single_external.py",
+    "sha256": "0848893d944ec26b1ef4de96aa4ebab74579d1378a816e1fdc02556dbd617b82",
+    "exact": true
+  },
+  {
+    "path": "seal_amplitude_interpretation.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\seal_amplitude_interpretation.py",
+    "sha256": "c7238ddfe35529a475eb82b58b0be11852829ee012bc54938234ce0ddf5c1a11",
+    "exact": true
+  },
+  {
+    "path": "start_postprocess.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\start_postprocess.py",
+    "sha256": "fbd6f79fedafe69de2bfba463c3359d72513192cd25bf13f74db2bb02bae918a",
+    "exact": true
+  },
+  {
+    "path": "stream_external_returns.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\stream_external_returns.py",
+    "sha256": "b028ce7b4ce984f75fcc79da87e71b0ee82c3a792fc01fd83996d50f263a6937",
+    "exact": true
+  },
+  {
+    "path": "train.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\train.py",
+    "sha256": "7cde777fd05d76f815546fdbc46b22d0b2abfd3112cc7cce25fb2705e229c4a1",
+    "exact": true
+  },
+  {
+    "path": "training_metrics.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\training_metrics.py",
+    "sha256": "e15b9dcc06621262cf8b6cb7bc98c44daba0ea5dabbf1a8267b9da679c4bcdb2",
+    "exact": true
+  },
+  {
+    "path": "training_seedmeans.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\training_seedmeans.py",
+    "sha256": "6f9c84f843035634c1c25bce3a45b284fa2ad8a360ffabfd7db0c8b47e4d3153",
+    "exact": true
+  },
+  {
+    "path": "verify_aggregate_receipt.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\verify_aggregate_receipt.py",
+    "sha256": "b5151aadd0190c36a64dbf5d66bd558f508149284c96bce6e6d101f622baabfb",
+    "exact": true
+  },
+  {
+    "path": "wait_delivery.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\wait_delivery.py",
+    "sha256": "ca3269cfd350be90d48a653e30b1f817442ff11e5f83701f4d632a010010d39b",
+    "exact": true
+  },
+  {
+    "path": "mltn/__init__.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\mltn\\__init__.py",
+    "sha256": "75560eb12e559217ca1479927156380db7c2c5f04cbc7f53beb491fffed6e173",
+    "exact": true
+  },
+  {
+    "path": "mltn/bootstrap.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\mltn\\bootstrap.py",
+    "sha256": "510c038b60bfb259f20b4ebbc58b058b4bafd2bec90c9454d237eee7fe6b3a50",
+    "exact": true
+  },
+  {
+    "path": "mltn/budget.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\mltn\\budget.py",
+    "sha256": "6973c1dad3899bdbcecdd7dd66a7f37e4441d11aedd0454762b285fb8b52db6c",
+    "exact": true
+  },
+  {
+    "path": "mltn/checkpoint.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\mltn\\checkpoint.py",
+    "sha256": "aebc89747826999462468f1000c5bea2760533e9305b4402a461bd29fa8e148b",
+    "exact": true
+  },
+  {
+    "path": "mltn/common.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\mltn\\common.py",
+    "sha256": "8046a7697d48c2ce9ede337fe757d04b64a4d4bd6dfe38a162bd1c2a52b8043f",
+    "exact": true
+  },
+  {
+    "path": "mltn/data.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\mltn\\data.py",
+    "sha256": "d3ea760e23f716ac9f1cf7010744200f853ccaef16085ecadf891a0950b91381",
+    "exact": true
+  },
+  {
+    "path": "mltn/history.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\mltn\\history.py",
+    "sha256": "af4682517eabdef33982c18e8f4cd8e85e1f15e7cb4ef92215fc1cbfafcd6e4f",
+    "exact": true
+  },
+  {
+    "path": "mltn/inference.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\mltn\\inference.py",
+    "sha256": "d1e29a2a78ffdce922ff03b3b978cad5952d4bf3410b0dab5f8a8f6f7e670417",
+    "exact": true
+  },
+  {
+    "path": "mltn/metrics.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\mltn\\metrics.py",
+    "sha256": "283559de975a75e8ab839c96d9c3f1393305ce62877f32dc7b7c4ac045d77f4a",
+    "exact": true
+  },
+  {
+    "path": "mltn/models.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\mltn\\models.py",
+    "sha256": "cce568f44c080678022f2220ed99e6a52a6562fff7da0ced01895cf8aa219935",
+    "exact": true
+  },
+  {
+    "path": "mltn/objectives.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\mltn\\objectives.py",
+    "sha256": "08915319d152025c6ca68bbc0c64a5fa6ce6c8141962dd8b9da9034e7cd11297",
+    "exact": true
+  },
+  {
+    "path": "mltn/ownership.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\mltn\\ownership.py",
+    "sha256": "55f82c6a1d8be1494603c23fedbd5d0fd4b7daf279e295e6c928646f372e4cdd",
+    "exact": true
+  },
+  {
+    "path": "mltn/resources.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\mltn\\resources.py",
+    "sha256": "f6aafe3cbf77d56436dc23ef878c1a53cb129224349bff279eb853488c65dcdc",
+    "exact": true
+  },
+  {
+    "path": "mltn/usage.py",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\mltn\\usage.py",
+    "sha256": "b449f211d8fd213d976bb8bc487dc4da35f3caf63a2010f89372456f86e74f0e",
+    "exact": true
+  },
+  {
+    "path": "config/design.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\config\\design.json",
+    "sha256": "5ab48835739b8fa8ecef6b24094e146bc9735773dda1e730cc763b4d7a830d4d",
+    "exact": true
+  },
+  {
+    "path": "config/direct_final_corrected_jobs.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\config\\direct_final_corrected_jobs.json",
+    "sha256": "92f2002084a012003884a21141a8886670b17423a3971444df83a385f0969c85",
+    "exact": true
+  },
+  {
+    "path": "config/direct_final_jobs.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\config\\direct_final_jobs.json",
+    "sha256": "68fca8f268520905b7b9b0571dffb15357c896df70840c20dc6566b4c7bb17a6",
+    "exact": true
+  },
+  {
+    "path": "config/execution.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\config\\execution.json",
+    "sha256": "dc395363ced06784eb9ce5491608fc0bcda0d34d07f4cbc9008c319228cca11b",
+    "exact": true
+  },
+  {
+    "path": "config/external_ownership.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\config\\external_ownership.json",
+    "sha256": "aa5092d9a8d1113168341deaee1c10e2c0ed198e279cc0efda616d2b1be0dc5d",
+    "exact": true
+  },
+  {
+    "path": "config/historical_TN_jobs.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\config\\historical_TN_jobs.json",
+    "sha256": "f22480efb62719ce8ba70fc3fb7598403f9e2967f0dc3efae3891808bc915c46",
+    "exact": true
+  },
+  {
+    "path": "config/joint_final_jobs.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\config\\joint_final_jobs.json",
+    "sha256": "95c99ca9455129e73088d7ea8893b640be560b68db06a4c81e6898400e2f3e87",
+    "exact": true
+  },
+  {
+    "path": "config/joint_screen_and_independent_historical_TN_jobs.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\config\\joint_screen_and_independent_historical_TN_jobs.json",
+    "sha256": "0dc0517922228b6355cd428d6720a482b527eb8e4ed99972dc3099dd13c1702e",
+    "exact": true
+  },
+  {
+    "path": "config/joint_screen_jobs.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\config\\joint_screen_jobs.json",
+    "sha256": "725d877e2a34f675694d9b1a8b7c6545cbabb69648fb5e4a1042aa82ef2b3657",
+    "exact": true
+  },
+  {
+    "path": "config/local_owned_spatial_jobs.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\config\\local_owned_spatial_jobs.json",
+    "sha256": "a5015bc5e6203e39b3828a459a16b734110e61e6b320d232c45e29ab356e8d73",
+    "exact": true
+  },
+  {
+    "path": "config/local_single_joint_S23_GraphTCN_c0_s1731_B113_jobs.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\config\\local_single_joint_S23_GraphTCN_c0_s1731_B113_jobs.json",
+    "sha256": "df61cc02faaa60171b92bfb22c997ba8fed44397be4ecfd82bd71ee5f218fd9c",
+    "exact": true
+  },
+  {
+    "path": "config/local_single_joint_S23_GraphTCN_c0_s1731_B191_jobs.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\config\\local_single_joint_S23_GraphTCN_c0_s1731_B191_jobs.json",
+    "sha256": "61eeb734903b380a191f776621d149fcfa5194135cb76bfeca0849bbbd4fd72c",
+    "exact": true
+  },
+  {
+    "path": "config/local_single_joint_S23_GraphTCN_c0_s1731_B56_jobs.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\config\\local_single_joint_S23_GraphTCN_c0_s1731_B56_jobs.json",
+    "sha256": "648f379e803546dff7fe4e8000b0b4d3f20ecc9f3ce6d2824f1f366004cebcd0",
+    "exact": true
+  },
+  {
+    "path": "config/matched_spatial_recipe_reference_jobs.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\config\\matched_spatial_recipe_reference_jobs.json",
+    "sha256": "59b23e47eb0b5c67190ccf3f91b598f1ea68dbc5c0773936d7679bc1f8624743",
+    "exact": true
+  },
+  {
+    "path": "config/screen_corrected_jobs.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\config\\screen_corrected_jobs.json",
+    "sha256": "c37067fa11f50bc0957d135bf645eab8193cf4feb9c0369c2e36ab5505f5c015",
+    "exact": true
+  },
+  {
+    "path": "config/screen_jobs.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\config\\screen_jobs.json",
+    "sha256": "c37067fa11f50bc0957d135bf645eab8193cf4feb9c0369c2e36ab5505f5c015",
+    "exact": true
+  },
+  {
+    "path": "config/seed_repair_final_jobs.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\config\\seed_repair_final_jobs.json",
+    "sha256": "9a6ec6ddd1e712228348d69dd812c345b4b1c9585bb7a0162d231cafef5bfb0c",
+    "exact": true
+  },
+  {
+    "path": "config/seed_repair_screen_jobs.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\config\\seed_repair_screen_jobs.json",
+    "sha256": "4878b137866606a6ab373dcbd9525f78bbe0a85bdb9c3b58feee981b7d5eda13",
+    "exact": true
+  },
+  {
+    "path": "study.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\study.json",
+    "sha256": "18df16774ac79c16173874d387b834efbabac7a37b2aed9c27cdd23ca985e3f9",
+    "exact": true
+  },
+  {
+    "path": "vendor/resource_registry.py",
+    "source": "E:\\SPARROW\\5_Test\\compute_coordination\\resource_registry.py",
+    "sha256": "830ad7856df31a5f192a4914c752202f62ec8a2ad16db7341fa3154c0837c394",
+    "exact": true
+  },
+  {
+    "path": "evidence/acceptance_Linux.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\acceptance_Linux.json",
+    "sha256": "49b5aa58ffff6d48608fadd3d76c9903bf74f89844857d10144911bd6eabc6fc",
+    "exact": true
+  },
+  {
+    "path": "evidence/acceptance_Windows.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\acceptance_Windows.json",
+    "sha256": "f0812834365dfc85ccec38eba58d30e8976af59b40d6cc3c9e7f17a7f636f52b",
+    "exact": true
+  },
+  {
+    "path": "evidence/commit_accounting_acceptance.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\commit_accounting_acceptance.json",
+    "sha256": "7d7bbed06a3671a8c01c817850e378bfd1e9c0f4a3a37c311343016ac51e647e",
+    "exact": true
+  },
+  {
+    "path": "evidence/constant_HF_mean_acceptance.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\constant_HF_mean_acceptance.json",
+    "sha256": "acedd90b698b41cd0bebf41363bccf472601aba0093e006cd1fe8b20764bc2f2",
+    "exact": true
+  },
+  {
+    "path": "evidence/constant_HF_mean_repair.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\constant_HF_mean_repair.json",
+    "sha256": "d712f9978a734ac0cc6907a937adf3a22e3e798a152c49d1495684c7b9878eef",
+    "exact": true
+  },
+  {
+    "path": "evidence/deposition_feature_class_identity.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\deposition_feature_class_identity.json",
+    "sha256": "a54070fef7753e58baa0da4745783aa5f7551b6c3f2fff012d1c74924bc63a2d",
+    "exact": true
+  },
+  {
+    "path": "evidence/diagnostic_readout_acceptance.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\diagnostic_readout_acceptance.json",
+    "sha256": "c253022962cfb6b70185f3ad4c415ff0bf8836ba5255a2babac4c960e74220e3",
+    "exact": true
+  },
+  {
+    "path": "evidence/environment_Linux.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\environment_Linux.json",
+    "sha256": "ce33fd4f6f092b46a3bca2e607bc8a48d1bd948ee90ad8291c0be93c05efe7a8",
+    "exact": true
+  },
+  {
+    "path": "evidence/environment_Windows.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\environment_Windows.json",
+    "sha256": "de4a222ee2e63dcb2047f0966f1bc40ab8bfe57237ee0909a1f4c72d2b5d313f",
+    "exact": true
+  },
+  {
+    "path": "evidence/HF_support_count_identity.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\HF_support_count_identity.json",
+    "sha256": "5c15e3e7f5f12a23e4040f109f4ccfd224c4a885aab046f7cb99c34ad69b7704",
+    "exact": true
+  },
+  {
+    "path": "evidence/historical_append_acceptance.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\historical_append_acceptance.json",
+    "sha256": "e6166ef4b3791d8917c4bb80b4240f4431be8605f8d3ee88a61d26bf62bdbe32",
+    "exact": true
+  },
+  {
+    "path": "evidence/independent_actual_effect_metrics.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\independent_actual_effect_metrics.json",
+    "sha256": "9e56b6de058d4abb8f521d8067d89a9e4060391e2070b02472b13eb4b5bf554c",
+    "exact": true
+  },
+  {
+    "path": "evidence/independent_aggregate_fixture.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\independent_aggregate_fixture.json",
+    "sha256": "5fd5e3c4dba2fa02cde373fea2467fd1e07c552d617fd9f3a7b5052d7c0de0a2",
+    "exact": true
+  },
+  {
+    "path": "evidence/independent_final_protocol.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\independent_final_protocol.json",
+    "sha256": "54cc9c991739855ea3f612e1c3b9069bf6164866fd0f2ebc209e3e6960cdedc7",
+    "exact": true
+  },
+  {
+    "path": "evidence/independent_H1_station_water.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\independent_H1_station_water.json",
+    "sha256": "a97f29f34483f9ce4c74bff1bac480c0bd4ad1ac878267ddf3e5210d1b09d5c6",
+    "exact": true
+  },
+  {
+    "path": "evidence/independent_HF_reading_mean.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\independent_HF_reading_mean.json",
+    "sha256": "f534cca5bd5a86225bdd074460ecb24af839b2f0a77901216d0d117bece6239e",
+    "exact": true
+  },
+  {
+    "path": "evidence/joint_curvature_repair.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\joint_curvature_repair.json",
+    "sha256": "2a37d27edbdc07dee5169d178a3823fafa1e17d48d7b7d3c83a6fd28536ae015",
+    "exact": true
+  },
+  {
+    "path": "evidence/joint_seed_correction.diff",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\joint_seed_correction.diff",
+    "sha256": "459592a44bf620ad93a739d2f3af2ec35fe25b188fc8d6f78b75e34e2815d52a",
+    "exact": true
+  },
+  {
+    "path": "evidence/joint_seed_forwarding_acceptance.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\joint_seed_forwarding_acceptance.json",
+    "sha256": "995dba5b9a3061bb2278767ef18d2e877afc280fe13f1c03f3cbfa2005229e1f",
+    "exact": true
+  },
+  {
+    "path": "evidence/joint_seed_repair.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\joint_seed_repair.json",
+    "sha256": "a567aecc36805bff765895b9d62d521dd40e58b631b5e71075e0e9e64416daf8",
+    "exact": true
+  },
+  {
+    "path": "evidence/joint_seed_source_change.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\joint_seed_source_change.json",
+    "sha256": "e170126bec77ea67b1a16b1f30f654591f9f2645b33f2e1bc2253953fbcadc89",
+    "exact": true
+  },
+  {
+    "path": "evidence/matched_queue_acceptance.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\matched_queue_acceptance.json",
+    "sha256": "63968be115aa325f0c1108b50aacb37d1fa8c23453b0f00c232215d37c8a9207",
+    "exact": true
+  },
+  {
+    "path": "evidence/nested_postprocess_lease_handoff.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\nested_postprocess_lease_handoff.json",
+    "sha256": "1c611ecf62c98ddf936118e758bdd4bb4d7c6ed140c3732ae73071a562f1d8e4",
+    "exact": true
+  },
+  {
+    "path": "evidence/performance/Linux_four_after_audit_release_summary.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\performance\\Linux_four_after_audit_release_summary.json",
+    "sha256": "41f6ae35e52fa5e1c92c800cf4d510c75a9f27164acec9795bff231ee718583e",
+    "exact": true
+  },
+  {
+    "path": "evidence/portable_check_Linux.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\portable_check_Linux.json",
+    "sha256": "83bed2dd1618cc591f1a9aa96dadb06fee7ee85b1968d8bc6f5e7a8ad7bcd6fb",
+    "exact": true
+  },
+  {
+    "path": "evidence/portable_check_Windows.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\portable_check_Windows.json",
+    "sha256": "d9a760b3504201385e445fa5da82b8886d5a4cf34b611bc8216626a5e16bc072",
+    "exact": true
+  },
+  {
+    "path": "evidence/postprocess_repair_identity.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\postprocess_repair_identity.json",
+    "sha256": "d1b1f4381d305e288717bb26e463d42b4552dff74e93c20d5540492d6d27989f",
+    "exact": true
+  },
+  {
+    "path": "evidence/registry_atomic_publication_acceptance.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\registry_atomic_publication_acceptance.json",
+    "sha256": "689522d25d182809f87141d1ae4724f89f9e9e63e8d259ce12b1358ec03effd9",
+    "exact": true
+  },
+  {
+    "path": "evidence/report_render_c7_hardcoding_failure.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\report_render_c7_hardcoding_failure.json",
+    "sha256": "0f477fc194f9bc2ad2b0f9784cd09cd01019c07e7fc76b51d58faef57208ad11",
+    "exact": true
+  },
+  {
+    "path": "evidence/results_recovery.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\results_recovery.json",
+    "sha256": "d589d60c3b1b8751249043e4a99a43dbe4441a4f73b1f320c42bd7a348bab9e3",
+    "exact": true
+  },
+  {
+    "path": "evidence/seed_repair_unaffected_diagnostics_reuse.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\evidence\\seed_repair_unaffected_diagnostics_reuse.json",
+    "sha256": "6e4f476a07353f649051cfae6006af86268fed88c16709a4dcbda18640a3447f",
+    "exact": true
+  },
+  {
+    "path": "literature/detailed_evidence_table.csv",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\literature\\detailed_evidence_table.csv",
+    "sha256": "4c54971b2ce1fbc91ac52e5dd6958bebc85d61a4ae4c94dd1060696ced428636",
+    "exact": true
+  },
+  {
+    "path": "literature/detailed_review_receipt.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\literature\\detailed_review_receipt.json",
+    "sha256": "0b866d639491e74c54db266f0988ad153ca6042058c2083b401c51f4a0c6ee45",
+    "exact": true
+  },
+  {
+    "path": "literature/screened_unique.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\literature\\screened_unique.json",
+    "sha256": "bea546e7951ae6eadecd45adf86d69daa17881e7e4f4d7d3c0b671cd998efaa5",
+    "exact": true
+  },
+  {
+    "path": "literature/search_receipt.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\literature\\search_receipt.json",
+    "sha256": "6f6cad2dac03cf15a4302fcf0e8c3635373661da1fc7a0a7b86b124d195a48eb",
+    "exact": true
+  },
+  {
+    "path": "outputs/amplitude_diagnostic/joint_training_amplitude_directions.csv",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\amplitude_diagnostic\\joint_training_amplitude_directions.csv",
+    "sha256": "a3efd9867e3055e58f7a83a862f9278c04236f7d25c99df639f8d69afbc5e692",
+    "exact": true
+  },
+  {
+    "path": "outputs/amplitude_diagnostic/joint_training_amplitude_profiles.csv",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\amplitude_diagnostic\\joint_training_amplitude_profiles.csv",
+    "sha256": "dc558a7a871f6b8437c08fbe863101367f0f3bd262e31d456bf30c5f23eebcf7",
+    "exact": true
+  },
+  {
+    "path": "outputs/amplitude_diagnostic/output_range_and_zero_activity.csv",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\amplitude_diagnostic\\output_range_and_zero_activity.csv",
+    "sha256": "f32bf56f43d310051278f99768a160ed617aec09b77bb9a59e173a7d6653d9bd",
+    "exact": true
+  },
+  {
+    "path": "outputs/amplitude_diagnostic/receipt.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\amplitude_diagnostic\\receipt.json",
+    "sha256": "85813851490e6019db333c689dafd2f413a5c1e5b9289f028c8bcbc3018ee0dc",
+    "exact": true
+  },
+  {
+    "path": "outputs/amplitude_diagnostic/seed_averaging_variance.csv",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\amplitude_diagnostic\\seed_averaging_variance.csv",
+    "sha256": "a97fa384b8e750a24d70198b21c4e28998be1ccbf15d3550ea102c85fea091b5",
+    "exact": true
+  },
+  {
+    "path": "outputs/amplitude_diagnostic/shape_gain_summary.csv",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\amplitude_diagnostic\\shape_gain_summary.csv",
+    "sha256": "a004a2bfe83e771a241c858a5f481a9b00d053c8f884842c89085c958fd8cb42",
+    "exact": true
+  },
+  {
+    "path": "outputs/completion.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\completion.json",
+    "sha256": "7caf0264de1db4fa047462953b110e6e9ac155c26c2dc24e6d07ff35f7804add",
+    "exact": true
+  },
+  {
+    "path": "outputs/coverage/station_year_support.csv",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\coverage\\station_year_support.csv",
+    "sha256": "ca8ffcee07e0413bd9582f7728f18e0a25041bc09193531175903cf0516e1767",
+    "exact": true
+  },
+  {
+    "path": "outputs/evaluation/group_permutation_reliance.csv",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\evaluation\\group_permutation_reliance.csv",
+    "sha256": "bb4b73a39bcdbde0ef7fb5ae804a7e81083129d21d42fbba43be567d634cec14",
+    "exact": true
+  },
+  {
+    "path": "outputs/expert_review/CatBoost_F23_training_years.csv",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\expert_review\\CatBoost_F23_training_years.csv",
+    "sha256": "6a353c6924905230bcdfea5b461cf8408433d1139092675388777bd630f7610c",
+    "exact": true
+  },
+  {
+    "path": "outputs/expert_review/configuration_summary.csv",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\expert_review\\configuration_summary.csv",
+    "sha256": "7c52aab10a6f349aa01bd47985cd234eefd494426870d3c36f217a7f3a62c8af",
+    "exact": true
+  },
+  {
+    "path": "outputs/expert_review/error_component_summary.csv",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\expert_review\\error_component_summary.csv",
+    "sha256": "f20471b7d10e466611d39ebaa7f5c5299b732ef32dff3a6e0accea6ff2e5ca68",
+    "exact": true
+  },
+  {
+    "path": "outputs/expert_review/event_paired_summary.csv",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\expert_review\\event_paired_summary.csv",
+    "sha256": "4b0c838a9dbe1b371721fef6623fb3b22b49568418b362b7daece2cbab402450",
+    "exact": true
+  },
+  {
+    "path": "outputs/expert_review/figure_receipt.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\expert_review\\figure_receipt.json",
+    "sha256": "60466c7fbfe2eb81a81fdca95d2deafda59418ef24ec010f2ffc8ee308eafe52",
+    "exact": true
+  },
+  {
+    "path": "outputs/expert_review/training_attempts_summary.csv",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\expert_review\\training_attempts_summary.csv",
+    "sha256": "a2b8354a33c436706c3d323cb4e75862d82dfbe4c1fe6b60fc9ffc5a4805dda2",
+    "exact": true
+  },
+  {
+    "path": "outputs/expert_review/历史配置共同支持对照.csv",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\expert_review\\历史配置共同支持对照.csv",
+    "sha256": "7a3dea26f4939472522d7e43086e66f13ccd3a0df6a4ae0f82d3da5d5fd27bf7",
+    "exact": true
+  },
+  {
+    "path": "outputs/expert_review/完整空间核心表.csv",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\expert_review\\完整空间核心表.csv",
+    "sha256": "73fb4fd41dcc24be58b3329498aab0ad9630de30603b9a6b02a618f00c4519b7",
+    "exact": true
+  },
+  {
+    "path": "outputs/expert_review/完整空间配对表.csv",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\expert_review\\完整空间配对表.csv",
+    "sha256": "17b7f0fa44c3d2fbef9c565ca7db644c7f51bfccd3fb0fcc9d2a374ce0f16ca7",
+    "exact": true
+  },
+  {
+    "path": "outputs/expert_review/核心时间表.csv",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\expert_review\\核心时间表.csv",
+    "sha256": "168f5cf8a8440005c68ea5085ebb2ee02ffbee170318af5227de4add15b8776e",
+    "exact": true
+  },
+  {
+    "path": "outputs/expert_review/核心时间配对表.csv",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\expert_review\\核心时间配对表.csv",
+    "sha256": "fb95b5af9a08a9a43cfef40c47e19b8e2fcf21efd3522e9d2b1f293639283650",
+    "exact": true
+  },
+  {
+    "path": "outputs/expert_review/核心配对区间.csv",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\expert_review\\核心配对区间.csv",
+    "sha256": "37d30124954b4e5533ff23a9aecf7a3a351c11cdc17279f408fb6d7fc57eb631",
+    "exact": true
+  },
+  {
+    "path": "outputs/final_delivery_receipt.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\final_delivery_receipt.json",
+    "sha256": "e4ec3960407d0435226b0e5338482aea8d0f366ee07162b2124d3f9508ad064f",
+    "exact": true
+  },
+  {
+    "path": "outputs/frozen_joint_selection.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\frozen_joint_selection.json",
+    "sha256": "4b06f3d61d9fbbef08a262e8458b54b4ae05a426cce2aca513d78e06a2fd23e5",
+    "exact": true
+  },
+  {
+    "path": "outputs/local_final_evidence_done.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\local_final_evidence_done.json",
+    "sha256": "18d6a3bf6e16d869de338cc2ee09df3f5064605edd69cb137d9f9901ac2c76da",
+    "exact": true
+  },
+  {
+    "path": "outputs/result_roles.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\result_roles.json",
+    "sha256": "eab04e6ee9f43653388594615ffeb7c8e89d966c7f6beb5c50ac04826dfa36d6",
+    "exact": true
+  },
+  {
+    "path": "outputs/seed_repair_postprocess_done.json",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\outputs\\seed_repair_postprocess_done.json",
+    "sha256": "c76682c8fca29ba9dfb7c6ef424dc22b3ad8d067cbb8b11624c5139c0ee6ccf9",
+    "exact": true
+  },
+  {
+    "path": "reports/figures/amplitude_correlation.png",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\reports\\figures\\amplitude_correlation.png",
+    "sha256": "5cfa954c0ae621c9aad04e1740efe7bf86d60f04bba9318d9e9f6444ea0d1514",
+    "exact": true
+  },
+  {
+    "path": "reports/figures/time_holdout.png",
+    "source": "E:\\SPARROW\\5_Test\\20260930_1\\reports\\figures\\time_holdout.png",
+    "sha256": "034d11deb5554ab5617733685abca3f68b6d6dcab9f346eec3fb4fe1f11cdc33",
+    "exact": true
+  }
+]

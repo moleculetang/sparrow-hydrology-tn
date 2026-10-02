@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "completed_utc": "2026-10-01T04:17:34.276081+00:00",
+  "valid_screen_identities": 200,
+  "registered_final_paths": 189,
+  "legal_spatial_checkpoint_readouts": 45,
+  "missing": [],
+  "reports": [
+    "reports/专家机器学习与全域验证报告.md",
+    "reports/实际方法与偏离.md",
+    "reports/模型路径与观测支持说明.md",
+    "reports/振幅控制因子数值诊断.md"
+  ],
+  "independent_actual_station_rows": 18559,
+  "independent_actual_scalar_checks": 99048,
+  "local_root": "E:\\SPARROW\\5_Test\\20260930_1",
+  "remote_root": "/home/pc/TWY/SPARROW/Test/20260930_1",
+  "publication": false,
+  "scheduled_tasks": false,
+  "training": "finished; no new fits",
+  "original_workstation_archive": "preserved as pre-final-correction recovery snapshot",
+  "package": "transfer/machine_learning_results_final.tar.gz; SHA256 and byte readback receipt outside archive to avoid self-reference"
+}

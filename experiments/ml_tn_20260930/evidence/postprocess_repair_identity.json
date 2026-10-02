@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "utc": "2026-10-01T02:27:17.136949+00:00",
+  "cause": "duplicate correlation keyword in diagnostic dict construction; training/evaluation unaffected",
+  "before": {
+    "diagnostics.py": "ff6136c52447a6a846a03c6aaebd1c21c144b2d286a5ef32b2119f198a6b685e",
+    "postprocess.py": "6d200654c62ff2150adbb7abf3866806a29ef9f5deeaa96d4991e82bd5bb3541"
+  },
+  "after": {
+    "diagnostics.py": "b4981e8bc2a757e4b20c8d1040c3db0700c5137880dc3fcc5a8a0cc54b7fa4cf",
+    "postprocess.py": "09ce55fa799289a781fba7fd4430661c2b07e4021ebb3a50192caeec8a1f08fb"
+  },
+  "independent_fixture": {
+    "passed": true,
+    "known_NSE": 0.75,
+    "known_correlation": 1.0,
+    "known_amplitude_ratio": 0.5,
+    "scope": "whole diagnostic main, level and month-centered decomposition and reading support; isolated synthetic input, no real TN or fitting"
+  },
+  "remote_bytes_verified": true,
+  "training_changed": false,
+  "resume": "completed stages reused only with same code/dependencies and exit0; CPU-only tail takes a new CPU lease after dead prior owner, no live reservation shrink"
+}

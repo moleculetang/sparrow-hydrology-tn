@@ -1,0 +1,20 @@
+{
+  "host": "WIN-2VR7CA15U2H",
+  "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "D:\\ProgramData\\anaconda3\\envs\\sparrow\\python.exe",
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "torch": "2.13.0+cu126",
+    "xgboost": "3.1.3",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10"
+  },
+  "cuda": "12.6",
+  "gpu": "NVIDIA GeForce RTX 4060 Ti, GPU-ee6b64f7-ea81-8fc4-2a3d-aedbb85c151a, 16380 MiB, 572.83",
+  "gpu_available": true,
+  "TF32": false,
+  "amp": false
+}

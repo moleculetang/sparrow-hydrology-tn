@@ -1,0 +1,1234 @@
+[
+  {
+    "family": "RF",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "RF",
+    "task": "monthly",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "RF",
+    "task": "monthly",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "RF",
+    "task": "monthly",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "RF",
+    "task": "monthly",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "RF",
+    "task": "monthly",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "RF",
+    "task": "monthly",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "RF",
+    "task": "monthly",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "RF",
+    "task": "daily",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "RF",
+    "task": "daily",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "RF",
+    "task": "daily",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "RF",
+    "task": "daily",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "RF",
+    "task": "daily",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "RF",
+    "task": "daily",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "RF",
+    "task": "daily",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "RF",
+    "task": "daily",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "ExtraTrees",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "ExtraTrees",
+    "task": "monthly",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "ExtraTrees",
+    "task": "monthly",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "ExtraTrees",
+    "task": "monthly",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "ExtraTrees",
+    "task": "monthly",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "ExtraTrees",
+    "task": "monthly",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "ExtraTrees",
+    "task": "monthly",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "ExtraTrees",
+    "task": "monthly",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "ExtraTrees",
+    "task": "daily",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "ExtraTrees",
+    "task": "daily",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "ExtraTrees",
+    "task": "daily",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "ExtraTrees",
+    "task": "daily",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "ExtraTrees",
+    "task": "daily",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "ExtraTrees",
+    "task": "daily",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "ExtraTrees",
+    "task": "daily",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "ExtraTrees",
+    "task": "daily",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "XGBoost",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "XGBoost",
+    "task": "monthly",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "XGBoost",
+    "task": "monthly",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "XGBoost",
+    "task": "monthly",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "XGBoost",
+    "task": "monthly",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "XGBoost",
+    "task": "monthly",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "XGBoost",
+    "task": "monthly",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "XGBoost",
+    "task": "monthly",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "XGBoost",
+    "task": "daily",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "XGBoost",
+    "task": "daily",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "XGBoost",
+    "task": "daily",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "XGBoost",
+    "task": "daily",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "XGBoost",
+    "task": "daily",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "XGBoost",
+    "task": "daily",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "XGBoost",
+    "task": "daily",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "XGBoost",
+    "task": "daily",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LightGBM",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LightGBM",
+    "task": "monthly",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LightGBM",
+    "task": "monthly",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LightGBM",
+    "task": "monthly",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LightGBM",
+    "task": "monthly",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LightGBM",
+    "task": "monthly",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LightGBM",
+    "task": "monthly",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LightGBM",
+    "task": "monthly",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LightGBM",
+    "task": "daily",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LightGBM",
+    "task": "daily",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LightGBM",
+    "task": "daily",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LightGBM",
+    "task": "daily",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LightGBM",
+    "task": "daily",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LightGBM",
+    "task": "daily",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LightGBM",
+    "task": "daily",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LightGBM",
+    "task": "daily",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "CatBoost",
+    "task": "monthly",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "CatBoost",
+    "task": "daily",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "MLP",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "MLP",
+    "task": "monthly",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "MLP",
+    "task": "monthly",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "MLP",
+    "task": "monthly",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "MLP",
+    "task": "monthly",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "MLP",
+    "task": "monthly",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "MLP",
+    "task": "monthly",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "MLP",
+    "task": "monthly",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "MLP",
+    "task": "daily",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "MLP",
+    "task": "daily",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "MLP",
+    "task": "daily",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "MLP",
+    "task": "daily",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "MLP",
+    "task": "daily",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "MLP",
+    "task": "daily",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "MLP",
+    "task": "daily",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "MLP",
+    "task": "daily",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LSTM",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LSTM",
+    "task": "monthly",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LSTM",
+    "task": "monthly",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LSTM",
+    "task": "monthly",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LSTM",
+    "task": "monthly",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LSTM",
+    "task": "monthly",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LSTM",
+    "task": "monthly",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LSTM",
+    "task": "monthly",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LSTM",
+    "task": "daily",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LSTM",
+    "task": "daily",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LSTM",
+    "task": "daily",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LSTM",
+    "task": "daily",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LSTM",
+    "task": "daily",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LSTM",
+    "task": "daily",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LSTM",
+    "task": "daily",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "LSTM",
+    "task": "daily",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GRU",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GRU",
+    "task": "monthly",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GRU",
+    "task": "monthly",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GRU",
+    "task": "monthly",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GRU",
+    "task": "monthly",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GRU",
+    "task": "monthly",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GRU",
+    "task": "monthly",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GRU",
+    "task": "monthly",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GRU",
+    "task": "daily",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GRU",
+    "task": "daily",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GRU",
+    "task": "daily",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GRU",
+    "task": "daily",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GRU",
+    "task": "daily",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GRU",
+    "task": "daily",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GRU",
+    "task": "daily",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GRU",
+    "task": "daily",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "TCN",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "TCN",
+    "task": "monthly",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "TCN",
+    "task": "monthly",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "TCN",
+    "task": "monthly",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "TCN",
+    "task": "monthly",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "TCN",
+    "task": "monthly",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "TCN",
+    "task": "monthly",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "TCN",
+    "task": "monthly",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "TCN",
+    "task": "daily",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "TCN",
+    "task": "daily",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "TCN",
+    "task": "daily",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "TCN",
+    "task": "daily",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "TCN",
+    "task": "daily",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "TCN",
+    "task": "daily",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "TCN",
+    "task": "daily",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "TCN",
+    "task": "daily",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "Transformer",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "Transformer",
+    "task": "monthly",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "Transformer",
+    "task": "monthly",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "Transformer",
+    "task": "monthly",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "Transformer",
+    "task": "monthly",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "Transformer",
+    "task": "monthly",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "Transformer",
+    "task": "monthly",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "Transformer",
+    "task": "monthly",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "Transformer",
+    "task": "daily",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "Transformer",
+    "task": "daily",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "Transformer",
+    "task": "daily",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "Transformer",
+    "task": "daily",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "Transformer",
+    "task": "daily",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "Transformer",
+    "task": "daily",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "Transformer",
+    "task": "daily",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "Transformer",
+    "task": "daily",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GraphTCN",
+    "task": "monthly",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GraphTCN",
+    "task": "monthly",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GraphTCN",
+    "task": "monthly",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GraphTCN",
+    "task": "monthly",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GraphTCN",
+    "task": "monthly",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GraphTCN",
+    "task": "monthly",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GraphTCN",
+    "task": "monthly",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GraphTCN",
+    "task": "monthly",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GraphTCN",
+    "task": "daily",
+    "config": 0,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GraphTCN",
+    "task": "daily",
+    "config": 1,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GraphTCN",
+    "task": "daily",
+    "config": 2,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GraphTCN",
+    "task": "daily",
+    "config": 3,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GraphTCN",
+    "task": "daily",
+    "config": 4,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GraphTCN",
+    "task": "daily",
+    "config": 5,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GraphTCN",
+    "task": "daily",
+    "config": 6,
+    "seed": 1729,
+    "stage": "screen"
+  },
+  {
+    "family": "GraphTCN",
+    "task": "daily",
+    "config": 7,
+    "seed": 1729,
+    "stage": "screen"
+  }
+]

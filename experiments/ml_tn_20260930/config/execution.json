@@ -1,0 +1,12 @@
+{
+  "cpu_jobs": 2,
+  "tree_threads": 2,
+  "gpu_jobs": 3,
+  "neural_threads": 1,
+  "stagger_seconds": 4,
+  "cpu_physical_core_cap": 40,
+  "status": "frozen_after_complete_step_and_concurrency_gate",
+  "mixed_precision": false,
+  "neural_speedup_pilot": 1.5279792310534506,
+  "dispatch_hold": false
+}

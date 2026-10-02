@@ -1,0 +1,266 @@
+{
+  "original_path": "outputs/evaluation/training_seedmean_station_metrics.csv",
+  "original_sha256": "caedd84a5506b9ae53ab0cd67df2af5f27723cc86f95f605e9763f93ee27ee84",
+  "columns": [
+    "station_key",
+    "configuration",
+    "n",
+    "NSE",
+    "RMSE",
+    "bias",
+    "correlation",
+    "amplitude_ratio",
+    "reason",
+    "month_centered_n",
+    "month_centered_NSE",
+    "month_centered_RMSE",
+    "month_centered_bias",
+    "month_centered_correlation",
+    "month_centered_amplitude_ratio",
+    "month_centered_reason",
+    "coverage_sufficient",
+    "nse_eligible",
+    "job",
+    "task",
+    "period"
+  ],
+  "rows": 25441,
+  "parts": [
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_000.csv",
+      "rows": 561,
+      "sha256": "689e6e4a3a439fd271c8163841f1a56637fb2211d62ba996d289205ebdf54c4e"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_001.csv",
+      "rows": 550,
+      "sha256": "2ea99f2c42085dcd02f0253ff4910c4576b5cd75294ecf25869e6332a000a1f5"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_002.csv",
+      "rows": 540,
+      "sha256": "3733c57db740c93b6a398a0f63039caebed0503d7d06d7a2edc64ba5933ed3ec"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_003.csv",
+      "rows": 534,
+      "sha256": "5d1715dff90bfdc1627090290fc7f4ccb694e42d4f501c415aa2fb1b850a1ca2"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_004.csv",
+      "rows": 565,
+      "sha256": "22f38953d41d1b7ac852b90cd7b7edee46fd021d1cd0876b90e8b399d07d4637"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_005.csv",
+      "rows": 565,
+      "sha256": "38872ce3305144cbfb15cb32cf18963bc0daac4567f8afe9f2d5e7a29cb44a7c"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_006.csv",
+      "rows": 522,
+      "sha256": "b450ce034de38aa5479f8f77255516a04aab38fec859b0fa4115674b84c8ff12"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_007.csv",
+      "rows": 542,
+      "sha256": "de6c59f7f67d810bbf989c6f04416fefc2d64b272c2d9a19fff3b65c38709589"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_008.csv",
+      "rows": 565,
+      "sha256": "4a5bcc911ce61310fe7138b56aa283cdc5af6e7526efccad3d85d1ad4dd8271f"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_009.csv",
+      "rows": 566,
+      "sha256": "90fd9cb2911fbc2d66a69cbefa6817d4e75d1678ccbee753ae486ac02be15015"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_010.csv",
+      "rows": 510,
+      "sha256": "59e4d8bf512890ee1f656192cf2be519b769c8f18fe381034dd615aad1e3c4c7"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_011.csv",
+      "rows": 541,
+      "sha256": "23e229a2b5b2fb20a4ab3fcd6078b5268b4c51cbc28c872403305f912503fa0f"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_012.csv",
+      "rows": 459,
+      "sha256": "fe11393e0747a4e9c9e74bba579e9c8def40a5a15b6f228d264a21428ce368f5"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_013.csv",
+      "rows": 558,
+      "sha256": "a2615f2ddcd3ee32150ad6356b6b2768e26d365953b94dfe9fad8a2a611ee9db"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_014.csv",
+      "rows": 555,
+      "sha256": "fae49d8798fbca413ee9c236ed1372be5348027a86dd80610d94965f8026edd9"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_015.csv",
+      "rows": 559,
+      "sha256": "e555861ae3935647fbb3241225041d7f01bb6c1f224b8e12b45fd2982d6b7923"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_016.csv",
+      "rows": 560,
+      "sha256": "b161470327711f90d28372fc85fc1695c40ae7b887aab605a10741f1b167c4ac"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_017.csv",
+      "rows": 596,
+      "sha256": "e4c6f5f865883d3878ba21d9fd26b1f8c5e82d924147fe82165afc2f1ae0dad2"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_018.csv",
+      "rows": 557,
+      "sha256": "168b7ae98a9cccb72470456de5210ae99346c008cff1475b31b808bff0fd99dd"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_019.csv",
+      "rows": 549,
+      "sha256": "b3bf45ca0482d9b01641a56b366152c6dea2f36a9d72fd02c0cd7f86c0b1f277"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_020.csv",
+      "rows": 582,
+      "sha256": "6c013cedbdb5a6cd323e4b650766745a0317a4905385a46c5f46d9933b07b8b2"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_021.csv",
+      "rows": 560,
+      "sha256": "d38c78238bdc3af126fb2a8b989ce9c490d569dd26f1d5f22990a54dd6d1a23a"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_022.csv",
+      "rows": 555,
+      "sha256": "1c29fa158fd1199ec9c801ecd32973c1e810508491134ef01f14717a1d49cfa5"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_023.csv",
+      "rows": 551,
+      "sha256": "2a60d320babff2580ed2910c9e8f4e57c4ce850e816e467a7ae555ebd38d7a3a"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_024.csv",
+      "rows": 576,
+      "sha256": "f48e333587811ee20350af28b12eead605767ee6afed911da3119d017f009fb9"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_025.csv",
+      "rows": 550,
+      "sha256": "42e2878074434aca43aab97cb77b8c1856e54b4b7f385d747c2430ef3f53e8c0"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_026.csv",
+      "rows": 543,
+      "sha256": "41d62c003f49cd9d01a0ed4633eea245dbbec8c23181766199b2684d89898876"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_027.csv",
+      "rows": 541,
+      "sha256": "8a8a70cf6fda5600e4afb13051431d0d0a057812b896fcfe6114e237f2ea0f91"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_028.csv",
+      "rows": 568,
+      "sha256": "24a63f055a8023f5a70e59cafda860e4957cd2e2f2e98f7f0f1f47cc678ef48d"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_029.csv",
+      "rows": 543,
+      "sha256": "b78bb3f8614dfd5f5e3471c4c7b7e4c21153ee4d5fd53e714c7c4edc04e60f32"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_030.csv",
+      "rows": 544,
+      "sha256": "1876c7ceb91a767557944e942ac3aa5c995f2078a1d1953c0fe3ae01029a5977"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_031.csv",
+      "rows": 550,
+      "sha256": "40bd15fbcfee30b8340117b59a00297920bccc961a43fc3359d44bdd23bac7e7"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_032.csv",
+      "rows": 569,
+      "sha256": "3aef6e2f836d20eb220b05b985b8d05608cec721081f5b6f20f879528f12e9b6"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_033.csv",
+      "rows": 561,
+      "sha256": "401fbc0d42315aea15e86d214cff45352ac81bd610cbea52785af675aa6adca8"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_034.csv",
+      "rows": 548,
+      "sha256": "b4fd70639e2182cf40a84f445de94f3b2703a97490b78dbe32ec838a362f9960"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_035.csv",
+      "rows": 549,
+      "sha256": "f6befb4b6c5c6cac0d4346af03f3f2848f79e1441f8d03d57fa90e7539d85eed"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_036.csv",
+      "rows": 549,
+      "sha256": "1b9545c13ab576d320bd1691c47f722eca3307f8439f4159e98fe436aa501219"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_037.csv",
+      "rows": 579,
+      "sha256": "1bde4a684d513f209c6e0d14dc5b51764564f209d5445f6e290d1f1279f42cb9"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_038.csv",
+      "rows": 541,
+      "sha256": "4e4737e6a2164733bbe78184a706a0f8cf4fcff458920bfc080bc3c74053e0c5"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_039.csv",
+      "rows": 540,
+      "sha256": "bcb096b88e2c34d75c5400b896731988f478d19346f4d450097f97f79fcf9c3b"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_040.csv",
+      "rows": 539,
+      "sha256": "4a9d84c06cddf1bed68cfd3500f24c49e3dd10fd14d7758263236fd9524f2b47"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_041.csv",
+      "rows": 571,
+      "sha256": "e02b3305d09c1a92b1aa73cd721c3bc836626f75da2a62a9aac671748a6ca702"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_042.csv",
+      "rows": 547,
+      "sha256": "99c8f428bd8495e9cd64606cc90c17b7ba0ba67ddbf788cffc9f41777e5c52c4"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_043.csv",
+      "rows": 550,
+      "sha256": "7d6d29872f139c7a115c80de9cbb1c7030bda7bbb6d0cac8a93b1b070a9093f5"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_044.csv",
+      "rows": 547,
+      "sha256": "96dc4cd32fae60ae8214815d2771ec1c747151d2aa1f77f77607783f359d07b6"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_045.csv",
+      "rows": 581,
+      "sha256": "b932959dd067c8a9efc0c6d68c842d6b46380b81d0df1345d42098e9e6cc1cfc"
+    },
+    {
+      "path": "outputs/evaluation/training_seedmean_station_metrics/part_046.csv",
+      "rows": 53,
+      "sha256": "f06944d4f6198edd15acbce2936e8335d165786bfb3210b8180592f48ede6302"
+    }
+  ],
+  "transformation": "CSV rows and columns preserved; repeat header, UTF-8/LF serialization"
+}

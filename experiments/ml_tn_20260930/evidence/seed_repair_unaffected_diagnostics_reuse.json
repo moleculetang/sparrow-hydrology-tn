@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "files": {
+    "exact_input_collision_lower_bound.parquet": "16f9ad8442d63dfdb4a3f3079b9b6e7c367bdad3a63fdf957fb086493d5e3d95",
+    "feature_collision_identity.json": "91682263aeb6e56849c4bca20b62088c610e2c325b56f730b7c9fc5f53590fc2",
+    "feature_reliance_receipt.json": "316dded73006a82ba78b1f4a0a53db13202b95a98cca1740852c8ef48482db13",
+    "group_permutation_reliance.csv": "bb4b73a39bcdbde0ef7fb5ae804a7e81083129d21d42fbba43be567d634cec14",
+    "native_feature_importance.csv": "6ffad20eddd3bcbebb32e199e89bc1856ca532605a752dd49b4f944a73638ca5"
+  },
+  "scope": "input-only collision check; unchanged direct CatBoost diagnostic only; no joint XGBoost cache reuse",
+  "scientific_parents": {
+    "jobs\\F23_daily_CatBoost_c4_s1729\\prediction.parquet": "c73f8fb3d18620bfe2e9b49f678c04883b43ccbfc433482ba08da9f1a794cfef",
+    "jobs\\F24_daily_CatBoost_c4_s1729\\prediction.parquet": "bb7370fffbaece547eb9274608e7555e84590e02bd37da3d401fd91d6f437876"
+  }
+}
