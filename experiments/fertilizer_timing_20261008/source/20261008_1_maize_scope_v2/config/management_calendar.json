@@ -1,0 +1,58 @@
+{
+  "identity": "regional_literature_scenarios_v1_not_observed_farm_operations",
+  "coverage_file": "inputs/calendar_support/coverage.csv",
+  "intervention_year": 2016,
+  "uncovered_policy": "retain original uniform source and plant activity",
+  "calendar_date_support": "source agricultural day mapped to existing frozen H1 calendar; H1 day identity limitation retained",
+  "crop_scenarios": [
+    {
+      "crop": "Rice",
+      "enabled": true,
+      "region": "CCD double-rice supported reaches with both phenology seasons",
+      "evidence": [
+        "10.3389/fpls.2022.907231",
+        "10.5194/essd-12-197-2020"
+      ],
+      "date_bounds": null,
+      "basal_bounds": [
+        -0.1,
+        0.1
+      ],
+      "seasons": [],
+      "assumptions": [
+        "2015 proxy, stage interpolation and seasonal equal share; source annual amounts unchanged",
+        "no farmer-date range verified, date adjustment fixed"
+      ]
+    },
+    {
+      "crop": "Maize",
+      "enabled": true,
+      "region": "CCD maize supported reaches with V3/HE/MA phenology",
+      "evidence": [
+        "10.3390/agronomy10030362",
+        "10.5194/essd-12-197-2020"
+      ],
+      "date_bounds": null,
+      "basal_bounds": [
+        -0.05,
+        0.05
+      ],
+      "seasons": [],
+      "assumptions": [
+        "sweet corn to field maize split transfer is regional research scenario",
+        "remaining stage proportions fixed; no date-range calibration"
+      ]
+    },
+    {
+      "crop": "Vegetables",
+      "enabled": false,
+      "reason": "mixed-species/season allocation and verified field support unresolved"
+    },
+    {
+      "crop": "Sugarcane",
+      "enabled": false,
+      "reason": "ratoon/plant-cane mix and cross-year annual-operation budget unresolved"
+    }
+  ],
+  "reach_profiles_file": "inputs/calendar_support/reach_profiles.json"
+}

@@ -1,0 +1,81 @@
+{
+  "identity": "fixed_annual_mass_timing_evidence_v1",
+  "date_claim": "regional research scenario, not observed farm management",
+  "ccd_role": "applicability only; never a mass multiplier",
+  "fertilizer_profiles": [
+    {
+      "crop": "Rice",
+      "source": "Nfer",
+      "enabled": true,
+      "identity": "frozen2015_double_rice_phenology_south_china_split_scenario",
+      "basal_delta_bounds": [
+        -0.1,
+        0.1
+      ],
+      "evidence": [
+        "10.3389/fpls.2022.907231",
+        "10.1038/s41598-020-66757-5",
+        "10.5194/essd-12-197-2020"
+      ]
+    },
+    {
+      "crop": "Maize",
+      "source": "Nfer",
+      "enabled": true,
+      "identity": "frozen2015_maize_phenology_regional_split_transfer_scenario",
+      "basal_delta_bounds": [
+        -0.05,
+        0.0
+      ],
+      "evidence": [
+        "10.3390/agronomy10030362",
+        "10.5194/essd-12-197-2020"
+      ],
+      "bounds_basis": "base0.50; literature0.40–0.50 intersect inherited±0.05 and research±0.10; sweet-corn transfer scenario"
+    },
+    {
+      "crop": "Rice",
+      "source": "Nmanure",
+      "enabled": false,
+      "reason": "independent field-manure operational fractions and date support not verified"
+    },
+    {
+      "crop": "Maize",
+      "source": "Nmanure",
+      "enabled": false,
+      "reason": "independent field-manure operational fractions and date support not verified"
+    },
+    {
+      "crop": "Vegetables",
+      "source": "Nfer",
+      "enabled": false,
+      "reason": "mixed species and multi-season budget allocation unresolved"
+    },
+    {
+      "crop": "Vegetables",
+      "source": "Nmanure",
+      "enabled": false,
+      "reason": "mixed species and multi-season budget allocation unresolved"
+    },
+    {
+      "crop": "Sugarcane",
+      "source": "Nfer",
+      "enabled": false,
+      "reason": "ratoon/plant-cane mix and cross-year operation-year support unresolved"
+    },
+    {
+      "crop": "Sugarcane",
+      "source": "Nmanure",
+      "enabled": false,
+      "reason": "ratoon/plant-cane mix and cross-year operation-year support unresolved"
+    }
+  ],
+  "unsupported_policy": "retain entire annual mass using uniform daily research scenario with date_unknown flag",
+  "protected_fields": [
+    "annual_mass",
+    "manure_entry_fractions",
+    "BNF_daily_input",
+    "deposition_monthly_mass",
+    "physical_land_area"
+  ]
+}

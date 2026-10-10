@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "scope": "public_synthetic_only_no_private_data_no_real_fit",
+  "entry": "public_tests.py",
+  "test_scripts": 7,
+  "independent_native_solver_cases": 9,
+  "source_files": 601,
+  "tests": [
+    {
+      "test": "../../test_event_profiles_public.py",
+      "exit_code": 0
+    },
+    {
+      "test": "tests/test_timing_kernel.py",
+      "exit_code": 0
+    },
+    {
+      "test": "tests/test_timing_edge_cases.py",
+      "exit_code": 0
+    },
+    {
+      "test": "tests/test_timing_labels.py",
+      "exit_code": 0
+    },
+    {
+      "test": "tests/test_year_feedback.py",
+      "exit_code": 0
+    },
+    {
+      "test": "tests/test_plant_activity_ledger.py",
+      "exit_code": 0
+    },
+    {
+      "test": "work/test_native_bound_adapter_v2.py",
+      "exit_code": 0
+    }
+  ],
+  "environment": {
+    "python": "3.11.15",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "pandas": "3.0.2",
+    "numba": "0.65.1",
+    "torch": "2.13.0+cu126 (CPU float64 only)"
+  }
+}
