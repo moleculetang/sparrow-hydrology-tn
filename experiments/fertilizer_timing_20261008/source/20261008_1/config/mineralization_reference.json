@@ -1,0 +1,42 @@
+{
+  "identity": "LAND1_fixed_effective_mineralization_reference_v1",
+  "status": "explicit_research_default_not_PRB_measurement",
+  "mode": "fixed",
+  "dt_days": 1.0,
+  "k_active_per_day": 0.007701635339554948,
+  "protected_turnover_years": 270.0,
+  "days_per_reference_year": 365.25,
+  "k_protected_definition": "1 / (270 * 365.25)",
+  "soil_temperature_enabled": false,
+  "temperature_gate_receipt": "outputs/soil_temperature/decision.json",
+  "active_evidence": {
+    "source": "https://doi.org/10.3390/agriculture13061187",
+    "anchor": "Table 2: crop straw N released within season, 45.11–54.04 percent for seven crops",
+    "published_quantity": "In-season N release fraction, not a daily rate constant",
+    "adaptation": "Select a 50 percent release fraction over a declared 90-day reference interval, k=ln(2)/90 per day, for the mixed fresh/active pool. 90 days is a research timescale, not the duration reported for every Table 2 experiment.",
+    "identity_warning": "Fresh residue N release is not identical to net SON mineralization. Applying this effective rate to initial active SON and new organic inputs is a structural research assumption; not a PRB field calibration."
+  },
+  "protected_evidence": {
+    "source": "https://raw.githubusercontent.com/ESCOMP/CTSM/2ebc042c59649b7f97ac337723ffa4a5eacfae28/doc/source/tech_note/Decomposition/CLM50_Tech_Note_Decomposition.rst",
+    "anchor": "Century-based SOM3 turnover table: 270 years",
+    "published_quantity": "SOM decomposition turnover in a carbon-nitrogen cascade with environmental modifiers",
+    "adaptation": "Use this timescale as an effective direct SON nitrogen release reference; no claim of equivalent carbon-nitrogen cascade.",
+    "version_warning": "Pinned document content describes CLM6 despite legacy CLM50 filename; do not cite this as CLM5 default."
+  },
+  "temperature_candidate_not_enabled": {
+    "equation": "k(T) = k_ref * Q10 ** ((T_soil_C - T_ref_C) / 10)",
+    "Q10": 1.5,
+    "T_ref_C": 25.0,
+    "source_anchor": "Same pinned CTSM decomposition technical note, environmental temperature scalar",
+    "limitation": "Soil temperature alone does not reproduce CTSM moisture/oxygen/depth controls."
+  },
+  "integration": "p = -expm1(-k * dt); release = yesterday_SON * p",
+  "new_organic_inputs": "mineralize from following day",
+  "tuning_using_TN": false,
+  "complete_new_source_run_ready": false,
+  "active_reference_half_life_days": 90,
+  "rejected_direct_transfer": {
+    "SWAT_CMN": 0.0003,
+    "reason": "SWAT humic mineralization factor with environmental and inter-pool pathways is not directly a fresh residue daily rate. Direct use for all LAND1 fresh inputs would have a roughly 9.1-year e-fold time, conflicting with the intended fresh/active semantics. Retained as external evidence, not adopted as primary mixed-pool default."
+  }
+}
