@@ -1,0 +1,18 @@
+{
+  "identity": "fixed_mass_intermonth_intramonth_timing_v1",
+  "registered_utc": "2026-10-08T08:54:15.743069+00:00",
+  "years": [
+    1961,
+    2024
+  ],
+  "intervention_year": 2016,
+  "source_multiplier": 1.0,
+  "source_units": "kg N/year in frozen source product; kg N/day after allocation",
+  "neural_branches": false,
+  "logical_paths": 44,
+  "hard_budget": false,
+  "heldout_labels_used_to_design": false,
+  "phase": "implementation_and_acceptance",
+  "remote_root": "/home/pc/TWY/SPARROW/Test/20261008_1",
+  "reused_inputs_have_original_scenario_and_donor_identities": true
+}
