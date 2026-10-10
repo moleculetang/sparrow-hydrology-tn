@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "scope": "public_synthetic_only_no_private_data_no_real_fit",
+  "public_test_scripts": 7,
+  "native_solver_controls": 9,
+  "operational_test_scripts": 4,
+  "operational_controls": 62,
+  "source_files": 628,
+  "tests": [
+    {
+      "test": "../../test_event_profiles_public.py",
+      "exit_code": 0
+    },
+    {
+      "test": "tests/test_timing_kernel.py",
+      "exit_code": 0
+    },
+    {
+      "test": "tests/test_timing_edge_cases.py",
+      "exit_code": 0
+    },
+    {
+      "test": "tests/test_timing_labels.py",
+      "exit_code": 0
+    },
+    {
+      "test": "tests/test_year_feedback.py",
+      "exit_code": 0
+    },
+    {
+      "test": "tests/test_plant_activity_ledger.py",
+      "exit_code": 0
+    },
+    {
+      "test": "work/test_native_bound_adapter_v2.py",
+      "exit_code": 0
+    },
+    {
+      "test": "deployment/test_repartition_policy_v1.py",
+      "exit_code": 0
+    },
+    {
+      "test": "deployment/test_repartition_allocation_controller_v1.py",
+      "exit_code": 0
+    },
+    {
+      "test": "deployment/test_approved_parent_lineage.py",
+      "exit_code": 0
+    },
+    {
+      "test": "deployment/test_allocation_launch_identity_v1.py",
+      "exit_code": 0
+    }
+  ],
+  "private_data_checkpoints_credentials_excluded": true,
+  "science_training_not_interrupted": true,
+  "all44_finished": false
+}
