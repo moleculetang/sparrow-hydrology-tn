@@ -1,0 +1,39 @@
+{
+  "runtime": {
+    "environment_name": "sparrow",
+    "expected_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "sys_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "sys_executable": "D:\\ProgramData\\anaconda3\\envs\\sparrow\\python.exe",
+    "conda_prefix": "D:\\ProgramData\\anaconda3\\envs\\sparrow",
+    "conda_default_env": "sparrow"
+  },
+  "checks": {
+    "reach_count_230": true,
+    "edge_count_216": true,
+    "weak_components_14": true,
+    "terminal_count_14": true,
+    "acyclic": true,
+    "five_coordinate_edges_present": true,
+    "catchment_coverage": true,
+    "catchment_count_230": true,
+    "no_zero_catchments": true
+  },
+  "passed": true,
+  "edge_count": 216,
+  "weak_components": 14,
+  "terminal_count": 14,
+  "catchments": {
+    "coverage_ratio": 0.999999999999996,
+    "coverage_ratio_before_fill": 0.991602423161113,
+    "filled_uncovered_component_count": 132,
+    "catchment_count": 230,
+    "zero_area_count": 0,
+    "incremental_area_sum_km2": 414345.6372136284,
+    "catchment_raster_sha256": "7b05182393f679ae619c5f573359a7bf3b3b066426c095e2e2d3b52dde2ec6ab"
+  },
+  "station_registry": {
+    "registry_rows": 230,
+    "coordinate_reassignments": 0,
+    "confirmed_199_to_196_rows": 0
+  }
+}

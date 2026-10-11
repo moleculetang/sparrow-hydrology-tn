@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "current_H1": {
+    "path": "5_Test/20260917_5/data/domains/FULL24C/area_ha.npy",
+    "sha256": "95920d24cf6538f588d7b7118d2abda5f3a342b1a1eaa9bde2ac4eee96e220d5",
+    "rows": 230,
+    "sum_km2": 410866.1378872674
+  },
+  "geometry_snapshots": [
+    {
+      "path": "0_reach_topology/results/vectors/reach_catchments.shp",
+      "sha256": "f19fcb40ebb9254a71d20510669f319b7ac2e75c4cbff3944bfb862e77d438dc",
+      "rows": 230,
+      "geometry_area_km2": 414345.672900001,
+      "geometry_max_difference_from_H1_km2": 1138.3326,
+      "inc_km2": {
+        "sum_km2": 414345.6729,
+        "max_difference_from_H1_km2": 1138.3326
+      }
+    },
+    {
+      "path": "5_Test/20260810_1/inputs/spatial_corrected/reach_catchments.shp",
+      "sha256": "792f8138935ae06ce7730435b406c3f4900516fb2c03e73eff31283eff5476cf",
+      "rows": 230,
+      "geometry_area_km2": 414345.6372136284,
+      "geometry_max_difference_from_H1_km2": 1991.3341176580495,
+      "inc_km2": {
+        "sum_km2": 414345.6372136284,
+        "max_difference_from_H1_km2": 1991.3341176580495
+      }
+    },
+    {
+      "path": "5_Test/20260814_1/inputs/spatial/reach_catchments.shp",
+      "sha256": "e37e78a616bd6100e6af61027accebbf975baf92e6f3de884e3da1530c7644a8",
+      "rows": 230,
+      "geometry_area_km2": 410866.1378872674,
+      "geometry_max_difference_from_H1_km2": 9.094947017729282e-13,
+      "inc_km2": {
+        "sum_km2": 410866.1378872674,
+        "max_difference_from_H1_km2": 9.094947017729282e-13
+      }
+    }
+  ],
+  "area_bridges": [
+    {
+      "path": "5_Test/20260814_1/inputs/development_indata_2006_2018.parquet",
+      "sha256": "06b37cb106b9d69baba93dc9133a97e82bad6b19020e0589804663c414718517",
+      "field": "IncAreaKm2",
+      "rows": 230,
+      "sum_km2": 410866.1378872674,
+      "max_difference_from_H1_km2": 9.094947017729282e-13,
+      "byte_exact_numeric_equality": false,
+      "same_as_H1_within_1e_9_km2": true
+    },
+    {
+      "path": "5_Test/20260823_27/outputs/q72_full_state_tn_bridge_2006_2022.parquet",
+      "sha256": "6a6e2da8b1f154db52c127770bd9ac30e44671aa2d0c027ed36e3008b016385b",
+      "field": "catchment_area_km2",
+      "rows": 230,
+      "sum_km2": 410866.1378872674,
+      "max_difference_from_H1_km2": 9.094947017729282e-13,
+      "byte_exact_numeric_equality": false,
+      "same_as_H1_within_1e_9_km2": true
+    }
+  ],
+  "scientific_state_changed": false,
+  "observation_labels_read": false
+}

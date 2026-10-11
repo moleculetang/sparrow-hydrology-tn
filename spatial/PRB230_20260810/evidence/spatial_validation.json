@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "adopted_geometry": "20260810_1 corrected incremental catchments",
+  "source_shp_sha256": "792f8138935ae06ce7730435b406c3f4900516fb2c03e73eff31283eff5476cf",
+  "geometry_crs_wkt": "PROJCRS[\"unknown\",BASEGEOGCRS[\"unknown\",DATUM[\"World Geodetic System 1984\",ELLIPSOID[\"WGS 84\",6378137,298.257223563,LENGTHUNIT[\"metre\",1]],ID[\"EPSG\",6326]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"Degree\",0.0174532925199433]]],CONVERSION[\"unnamed\",METHOD[\"Albers Equal Area\",ID[\"EPSG\",9822]],PARAMETER[\"Latitude of false origin\",24.55625,ANGLEUNIT[\"Degree\",0.0174532925199433],ID[\"EPSG\",8821]],PARAMETER[\"Longitude of false origin\",109.06625,ANGLEUNIT[\"Degree\",0.0174532925199433],ID[\"EPSG\",8822]],PARAMETER[\"Latitude of 1st standard parallel\",22.25,ANGLEUNIT[\"Degree\",0.0174532925199433],ID[\"EPSG\",8823]],PARAMETER[\"Latitude of 2nd standard parallel\",26.87,ANGLEUNIT[\"Degree\",0.0174532925199433],ID[\"EPSG\",8824]],PARAMETER[\"Easting at false origin\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8826]],PARAMETER[\"Northing at false origin\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8827]]],CS[Cartesian,2],AXIS[\"easting\",east,ORDER[1],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]]",
+  "boundary_native_crs_wkt": "GEOGCRS[\"WGS 84\",ENSEMBLE[\"World Geodetic System 1984 ensemble\",MEMBER[\"World Geodetic System 1984 (Transit)\"],MEMBER[\"World Geodetic System 1984 (G730)\"],MEMBER[\"World Geodetic System 1984 (G873)\"],MEMBER[\"World Geodetic System 1984 (G1150)\"],MEMBER[\"World Geodetic System 1984 (G1674)\"],MEMBER[\"World Geodetic System 1984 (G1762)\"],MEMBER[\"World Geodetic System 1984 (G2139)\"],MEMBER[\"World Geodetic System 1984 (G2296)\"],ELLIPSOID[\"WGS 84\",6378137,298.257223563,LENGTHUNIT[\"metre\",1]],ENSEMBLEACCURACY[2.0]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],CS[ellipsoidal,2],AXIS[\"geodetic latitude (Lat)\",north,ORDER[1],ANGLEUNIT[\"degree\",0.0174532925199433]],AXIS[\"geodetic longitude (Lon)\",east,ORDER[2],ANGLEUNIT[\"degree\",0.0174532925199433]],USAGE[SCOPE[\"Horizontal component of 3D system.\"],AREA[\"World.\"],BBOX[-90,-180,90,180]],ID[\"EPSG\",4326]]",
+  "reach_count": 230,
+  "river_line_count": 230,
+  "geometry_area_sum_km2": 414345.6372136284,
+  "H1_effective_area_sum_km2": 410866.1378872674,
+  "H1_area_gap_km2": -3479.499326360994,
+  "H1_mismatch_gt1pct_reaches": [
+    16,
+    43,
+    92,
+    111,
+    116,
+    122,
+    123,
+    130,
+    230
+  ],
+  "catchment_overlap_gt1m2_pairs": [],
+  "boundary_symmetric_difference_m2": 0.0,
+  "edges": 216,
+  "terminals": 14,
+  "weak_components": 14,
+  "acyclic": true,
+  "H1_edge_set_matches_corrected_graph": true,
+  "initial_D8_coverage_fraction": 0.991602423161113,
+  "heuristic_gap_components": 132,
+  "authoritative_catchment_ground_truth": false,
+  "H1_area_difference_resolved": false,
+  "current_model_and_training_changed": false,
+  "training_or_evaluation_labels_read": false,
+  "evidence": {
+    "spatial_audit_20260926_sha256": "aae47550e0202869b0334caa166a4f76d699f4b14e95dfcdd4f24ceb4570a93b",
+    "current_H1_topology_sha256": "f378c87051fe1a4094d635d6326e92f2d19d7083b8768d31d5b75dedefeb2f75",
+    "current_H1_area_sha256": "95920d24cf6538f588d7b7118d2abda5f3a342b1a1eaa9bde2ac4eee96e220d5"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "status": "PASS_HYDROLOGY_ALIGNED_TOPOLOGY_V3",
+  "checks": {
+    "model_graph_metadata_identity": true,
+    "compatible_graph_bytes_identity": true,
+    "polygon_within_grid_extent": true,
+    "raster_grid_sample_identity": true,
+    "raster_grid_matches_hydrology_reference": true,
+    "267_pixels_outside_frozen_domain": true,
+    "D8_direction_regression": true,
+    "raster_full_reach_coverage": true,
+    "graph_DAG": true,
+    "graph_all_IDs": true,
+    "reservoir_shared_graph_DAG": true,
+    "unchanged_model_input_arrays": true
+  },
+  "reach_count": 230,
+  "edges": 216,
+  "reservoirs": 13,
+  "raster_sample_points": 5000,
+  "raster_sample_mismatches": 0,
+  "polygon_outside_raster_area_m2": 0.0,
+  "excluded_prior_diagnostic_pixels": 267,
+  "hydrology_source_or_TN_modified": false,
+  "scientific_scope": "Operational topology consistency; does not certify every terrain pathway or newly authorize OS",
+  "files": {
+    "hydrology_edges_v3.parquet": "7aae1bd6236ea148ca2e4eade236c4a7066fdd53695990a4c89b36fcdbf214e1",
+    "hydrology_reach_registry_v3.parquet": "eccfd3c317ced83cd4a4721a5c7a097fa104483b16bd5cd6ec7848e545b5a730",
+    "hydrology_reservoir_links_v3.parquet": "90f8a967f14562ca37d9f21d49059954a84ae33f1978fd5554c42caa055a9377",
+    "training_area_crosscheck.parquet": "84cb2b9d9c774cd18430245dfefc50ed1ce82ce76d78d1370c6d110615a8d704",
+    "training_catchments.parquet": "305ce66cb9c1c127d733cdad898d5b57de5a4bb66596005573a3766bccf9c07a",
+    "training_reaches.parquet": "47b86abe77225a5976a0d87920c086770708cefabe92924e01cd0df095304d70",
+    "training_source_grid_weights.parquet": "7e21654e6d66088365d05e58e9301d731aa3fda38089168bd2228d6758cb89bf",
+    "training_station_support.parquet": "7bd82e71ea2079a583321fda45f14fd575bf6c8d5a0f06943c1bb4ba4927068c",
+    "hydrology_model_topology_v3.json": "4d4b5ca16ed439e3c4f4d34602c6cff8071bcc9b7b8c3c001c10ad02d9da524a",
+    "hydrology_support_labels_30m_v3.tif": "b6d75d5d820361cfa85780a3bddcd6c1a7b4d84a47cb0bc3cb6f8181f20eef23",
+    "hydrology_topology_edges_compatible_v3.csv": "24c22d4b2e01106c9ce0d3a8bd3d8213517890998eb38ef18805fb70e5423dc8"
+  }
+}

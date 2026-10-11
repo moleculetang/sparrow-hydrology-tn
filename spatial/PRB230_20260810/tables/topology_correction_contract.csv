@@ -1,0 +1,6 @@
+﻿source_reach,receiver_reach,junction_type,junction_x,junction_y,receiver_fraction,endpoint_to_receiver_m,evidence
+14,19,interior_confluence,281952.8129307534,-154950.9975800481,0.40964292580854256,2.8493137364241235e-09,20260809_3 coordinate geometry plus external river-network cross-check
+64,59,interior_confluence,440920.7159239109,-36356.61433808611,0.8063796509479301,9.92657332911063e-10,20260809_3 coordinate geometry plus external river-network cross-check
+132,149,interior_confluence,-9053.596097414913,-102337.50480548386,0.7728517877986272,1.5552853802763094e-09,20260809_3 coordinate geometry plus external river-network cross-check
+180,168,interior_confluence,-175560.38197701995,32365.47484997334,0.29177159375267464,4.468754627793858e-10,20260809_3 coordinate geometry plus external river-network cross-check
+199,196,interior_confluence,-442511.97728065954,62918.02334668267,0.33049794445437375,1.0034803796446777e-09,20260809_3 coordinate geometry plus external river-network cross-check

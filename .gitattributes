@@ -1,3 +1,5 @@
 .gitattributes -text
 README.md -text
 experiments/fertilizer_timing_20261008/** -text
+spatial/PRB230_20260810/** -text
+spatial/H1_unified_20260915_v3/** -text

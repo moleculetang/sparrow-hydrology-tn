@@ -1,0 +1,36 @@
+{
+  "frozen_mismatch_reaches": 0,
+  "current_mismatch_reaches": 187,
+  "sample": [
+    {
+      "reach_id": 1,
+      "frozen_area_m2": 1101275907.721027,
+      "current_area_m2": 1100730600.0,
+      "symmetric_difference_m2": 1450850.7400830083,
+      "intersection_m2": 1100277828.4904656,
+      "hydrology_area_m2": 1101275907.7210286,
+      "hydrology_minus_frozen_m2": 1.6689300537109375e-06,
+      "hydrology_minus_current_m2": 545307.7210285664
+    },
+    {
+      "reach_id": 2,
+      "frozen_area_m2": 1087131518.7500165,
+      "current_area_m2": 1090928700.0,
+      "symmetric_difference_m2": 3958422.689525704,
+      "intersection_m2": 1087050898.0302465,
+      "hydrology_area_m2": 1087131518.7500165,
+      "hydrology_minus_frozen_m2": 0.0,
+      "hydrology_minus_current_m2": -3797181.249983549
+    },
+    {
+      "reach_id": 3,
+      "frozen_area_m2": 2116226293.57962,
+      "current_area_m2": 2116450800.0,
+      "symmetric_difference_m2": 1012604.6057798635,
+      "intersection_m2": 2115832244.486912,
+      "hydrology_area_m2": 2116226293.5796196,
+      "hydrology_minus_frozen_m2": -2.384185791015625e-07,
+      "hydrology_minus_current_m2": -224506.42038035393
+    }
+  ]
+}
