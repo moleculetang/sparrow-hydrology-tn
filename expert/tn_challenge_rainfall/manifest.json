@@ -1,0 +1,407 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "data/precipitation_1961.csv",
+      "sha256": "3fde6061120217dfc1dcf825313022d96db1f50829eab3ca6c84d14edf3d2f97",
+      "bytes": 229754,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1962.csv",
+      "sha256": "a4c6bf27b8842fc5f515373fdfdd0703514adf05fe0c751fb464146abf1733ab",
+      "bytes": 212783,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1963.csv",
+      "sha256": "099a48ef73ca575230d2926e941701dfd4f0433192327e48edc443a815a76360",
+      "bytes": 210772,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1964.csv",
+      "sha256": "6a7842eb870e1730ffb5e7c9821d74028347a2512a6660a7f20acca315a6a90c",
+      "bytes": 218492,
+      "rows": 366
+    },
+    {
+      "path": "data/precipitation_1965.csv",
+      "sha256": "f42ef70704afcf919cb493a0a9c403f42c970aaf658efe34a1d5a4351aca17c1",
+      "bytes": 215390,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1966.csv",
+      "sha256": "2f3abde58328dcf52b6c394b1b6fc92555f06ba85b1bf2d89180b9f43599fa5e",
+      "bytes": 206540,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1967.csv",
+      "sha256": "8502bf83749d64ce21e1e2dac1597d50a448a45b8be9d44844ea6fd07a219074",
+      "bytes": 206316,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1968.csv",
+      "sha256": "19619f468826f9a222298222c7b6064eca1c40430dea252a5ac35dec02b06b69",
+      "bytes": 208936,
+      "rows": 366
+    },
+    {
+      "path": "data/precipitation_1969.csv",
+      "sha256": "d3244399794cea2917f1760c687adaa2ab934d730c479d1c51534d1d9f385867",
+      "bytes": 208046,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1970.csv",
+      "sha256": "331953b78db5dfc0292d949d5fd2239e5c37cdecb5a2b2e620d0b4870dd1a805",
+      "bytes": 218898,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1971.csv",
+      "sha256": "1fbde46e2e466845e195bb7c6ac315a5796f9d08b7b2fee2922c2d2e0f7a7a66",
+      "bytes": 203679,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1972.csv",
+      "sha256": "f7e37ac14fd0057e3bdb75d47f17e51f8d9e0ec211dbcf0da6e990660dcbd8cd",
+      "bytes": 215671,
+      "rows": 366
+    },
+    {
+      "path": "data/precipitation_1973.csv",
+      "sha256": "fb1120ddc7f68f7277f86e428522d71dc75c25e6732ae14c3f802d68ae90ea10",
+      "bytes": 218669,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1974.csv",
+      "sha256": "206846232302c431b36325e56c1ef69c509b7b36db0056d889f42680fa0d821c",
+      "bytes": 204966,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1975.csv",
+      "sha256": "7059e9dac0e26dbc9984133e3e9631cb8e487a9485bb17eb5a2598aae09f6439",
+      "bytes": 223236,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1976.csv",
+      "sha256": "3a723203d21b1653e2b275c7a0f82fce61c8d8597dfe27910572cc1358db851b",
+      "bytes": 209040,
+      "rows": 366
+    },
+    {
+      "path": "data/precipitation_1977.csv",
+      "sha256": "6c5f962f74b5b4da2701fe701b8d382434ee11479014fa0316ca1fa1fc6d8223",
+      "bytes": 199637,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1978.csv",
+      "sha256": "3348cf9da3d7383e4f1c6474f4e185ce6fb1bd68c3281fa68d803e6e185be4dc",
+      "bytes": 206474,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1979.csv",
+      "sha256": "70513c46a712a72a61e2bbfe21cf4252e3daa4b75b176fa8486cc88c45cf1cda",
+      "bytes": 209746,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1980.csv",
+      "sha256": "66df6d4913c129258e1d94a57c3e13b00e4c20366f7f7b7775029a33fd4e8316",
+      "bytes": 199260,
+      "rows": 366
+    },
+    {
+      "path": "data/precipitation_1981.csv",
+      "sha256": "f9eafa9cc246896b9e2b47e3eb2bfaf89178904b519e8dd43597b26ba132a278",
+      "bytes": 203306,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1982.csv",
+      "sha256": "9492507fb9c855b3fee224388a9195dc77ade7f6a695a227fc877a37bdc278d8",
+      "bytes": 204093,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1983.csv",
+      "sha256": "a6a7b0fb4fdd58a74277c6513a90e61feb64fb5774a31cab61b8c215b3d9f1fb",
+      "bytes": 205857,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1984.csv",
+      "sha256": "fc14c2bcd35e6ee42d2e3fee2d83cb4967aa746979f097e2bd32a3cc9977af61",
+      "bytes": 206443,
+      "rows": 366
+    },
+    {
+      "path": "data/precipitation_1985.csv",
+      "sha256": "1c0cf64aeeaebed3c5ba33e379fabe1d5045c65f6e1ed8f40353b61ae6623cf6",
+      "bytes": 210090,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1986.csv",
+      "sha256": "0d28df35bfc64aad6640a6609593f67994ca11537053c4a9f9ac0d9592a846f4",
+      "bytes": 187848,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1987.csv",
+      "sha256": "17a2a8d1a8658589a03872437c08e973966ae81b1b3d65f6900769477eac7fab",
+      "bytes": 199811,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1988.csv",
+      "sha256": "fdf0821ccc3954e94299af5b1505e7792c1cf2559ecc071a79634707c38bed1d",
+      "bytes": 190663,
+      "rows": 366
+    },
+    {
+      "path": "data/precipitation_1989.csv",
+      "sha256": "e065f0634820659fbf9b781419975f80ae350e0784ac532e38396c2df373b95d",
+      "bytes": 194930,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1990.csv",
+      "sha256": "22fc60b601897e500fb8e17cc9e28f24be086922f2cde434ba8f03bd9c218e4c",
+      "bytes": 198362,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1991.csv",
+      "sha256": "491f4029e8beb54af0cd5e052ce0bc2a32a9db509e22ab54891535d074e6ad22",
+      "bytes": 188781,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1992.csv",
+      "sha256": "d5ee747fd95f3619c8f93cad5b60e77780850b41dc783128f617e3977c6c03b6",
+      "bytes": 191949,
+      "rows": 366
+    },
+    {
+      "path": "data/precipitation_1993.csv",
+      "sha256": "005d7eb91bc09ff1a5edf7dcdd41b9c990c54a63d1049181c24bd446e125049a",
+      "bytes": 205459,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1994.csv",
+      "sha256": "01dffc9e47785e1e8a95fab0fa26c8f55aee83c66db120da8ca0789189d04c52",
+      "bytes": 207226,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1995.csv",
+      "sha256": "691122181465c02af85bafbb51629d2204b00596bf87cf9dafb7a871b96fa942",
+      "bytes": 191643,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1996.csv",
+      "sha256": "747c265750211ca81b13141fb9afe016003c1f2eeb4f01323f7c75ade0e4e006",
+      "bytes": 191414,
+      "rows": 366
+    },
+    {
+      "path": "data/precipitation_1997.csv",
+      "sha256": "a5abb81070c21a1c64b47402511f284182c562e182eb984047381fc41891679c",
+      "bytes": 207975,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1998.csv",
+      "sha256": "f88a61952a810bdcfffa3934f06d994e27fe8c68b197f3714a2bd999c241cacd",
+      "bytes": 201721,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_1999.csv",
+      "sha256": "236591fd146d9374ead277b0e135c0b076748b5dd816fabae37cbc896bc8c03e",
+      "bytes": 197505,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_2000.csv",
+      "sha256": "01d5b02b22804b9e253bef5d10369376180183257dbdce3c248c95da1d92337a",
+      "bytes": 195165,
+      "rows": 366
+    },
+    {
+      "path": "data/precipitation_2001.csv",
+      "sha256": "9ea84c3556d3053228dcde27523f2ce95c22ff21ffc85fe7852a63d0719db1cb",
+      "bytes": 189014,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_2002.csv",
+      "sha256": "526e6a0d493af338a3f36c23b861b23c9230cc3dc023daf0e433d289978abb01",
+      "bytes": 198459,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_2003.csv",
+      "sha256": "ef4347bab1196e5a0795bf9f4866334eac98378459edc95c129f3b000ed87ea6",
+      "bytes": 174376,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_2004.csv",
+      "sha256": "77103ae917e76d5f045dcfcb0b58c414d414a0d03dc7c11712d87d2de27deba5",
+      "bytes": 178749,
+      "rows": 366
+    },
+    {
+      "path": "data/precipitation_2005.csv",
+      "sha256": "1b813338230f36de437324883b5459d2abaea9ab3b016ef112c2bfce32bdd889",
+      "bytes": 196918,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_2006.csv",
+      "sha256": "08acdaea1aa1bac193df839ca5c9b587de80e0cb479a362f86dbb172a15403ab",
+      "bytes": 185943,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_2007.csv",
+      "sha256": "0c84f202b40f0185443e74cbc36004a85df6c4ef1feac9f715b95ac07457be0d",
+      "bytes": 176416,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_2008.csv",
+      "sha256": "3455e74cc45fa621693eacfc333a6ad27b280be2118f70492cda4fa31674f1f6",
+      "bytes": 181481,
+      "rows": 366
+    },
+    {
+      "path": "data/precipitation_2009.csv",
+      "sha256": "552a7c4cdfc798c3d1acb3e25253bfd4f1d6ecbeb0d3ab8a0062bc07737da232",
+      "bytes": 178652,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_2010.csv",
+      "sha256": "9d0029a151ce6a506cc5001a87343c8e7e7b3643a273861a079db9265c800b45",
+      "bytes": 196000,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_2011.csv",
+      "sha256": "8e14cdfaa9b5fa728e39a01d6d1152c827a5eb0790b9227872da33225e099c4c",
+      "bytes": 169227,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_2012.csv",
+      "sha256": "44ab87d2ebac5329be78b1f64a92df760e8f55cc64cfd5f8353292f86b042a99",
+      "bytes": 206820,
+      "rows": 366
+    },
+    {
+      "path": "data/precipitation_2013.csv",
+      "sha256": "be6aa5d54a114a8be58bbddb6c44f707bfbeda8e0d9c9141caaaa6de9496d6c5",
+      "bytes": 182718,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_2014.csv",
+      "sha256": "7aca84f1c3badbd25e720e41684116315f6af47b0669e90c554947369cc0e76d",
+      "bytes": 186485,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_2015.csv",
+      "sha256": "3f79b0a75861053920af9b91b911295efdb47953efb6680977dffb3abd5dcb5b",
+      "bytes": 193895,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_2016.csv",
+      "sha256": "95e1d8c8d22edabf48ce4b61f4c7e804eeb54dea761ad2e013228272d6dbdb29",
+      "bytes": 195384,
+      "rows": 366
+    },
+    {
+      "path": "data/precipitation_2017.csv",
+      "sha256": "fbe2493d9d9f621c95c10f9030e425b63620b9ad1939fce156c7c2ddbd12516a",
+      "bytes": 186756,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_2018.csv",
+      "sha256": "1e85ca5f4fe00535ff342eb3f0ed7c5a41bb3b16e832d070636bd65dbfe7504a",
+      "bytes": 187546,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_2019.csv",
+      "sha256": "f4e40513f14f3a5087a32485b0154f1a4ead01dbb0cdaf4d1aa163f3358a9961",
+      "bytes": 185798,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_2020.csv",
+      "sha256": "3fd25a60ff323550d9d3661d2b741a761be0c88c7f9bd89258525cf13d11e057",
+      "bytes": 192139,
+      "rows": 366
+    },
+    {
+      "path": "data/precipitation_2021.csv",
+      "sha256": "773324679a4254f8180a4bb011a02212aed0f083073e0e75d871e72b577f30e1",
+      "bytes": 176631,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_2022.csv",
+      "sha256": "a0b295b4b2e3bb6fc63fb64356b031b7af5a097b7f8454c20b4acb7e2b77c1eb",
+      "bytes": 170890,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_2023.csv",
+      "sha256": "eb8c00082177af8ac000da77634e3ad85123909374d61845112c5638df0606b0",
+      "bytes": 193717,
+      "rows": 365
+    },
+    {
+      "path": "data/precipitation_2024.csv",
+      "sha256": "b0ae90f85242f78781d81ec8f81ece7964bc876cac290f207aa8391f56625125",
+      "bytes": 200755,
+      "rows": 366
+    }
+  ],
+  "shape": [
+    23376,
+    39
+  ],
+  "readings": 911664,
+  "logical_float64_c_order_sha256": "d8f35942606785d21386ebf2ed9f26b773bbac852708d09a254d714b31907a86",
+  "dtype": "float64",
+  "csv_parse_requirement": "pandas.read_csv(float_precision='round_trip')",
+  "scope_file": "case_scope.json",
+  "source_product": "CHM_PRE V2 daily, original frozen catchment overlap aggregation",
+  "original_source_relative": "5_Test/20260828_29/outputs/daily_hbv_forcing_1961_2024.parquet",
+  "original_source_sha256": "2d968ab729b5bada0b3ff776d678213ae59ec0829efe51f60e039638e9b31657",
+  "case_sensitivity_forcing_sha256": "5b7724155ba24de254dbcc4833ff34dbfec2e73600deb93f697036140fca7086",
+  "case_topology_sha256": "5415b667849ea942c6670c1e7a64e8eba03250cd6ea770c75f09ff3155a6444b",
+  "overlap_weights_sha256": "4cd3457d52fe940b6d06d126e695389e19022f2451ae416dcc4b1ffc2875c4d2",
+  "source_page": "https://www.tpdc.ac.cn/zh-hans/data/e5c335d9-cbb9-48a6-ba35-d67dd614bb8c",
+  "original_builder_relative": "5_Test/20260828_29/scripts/build_historical_forcing_1961_2024.py",
+  "original_builder_sha256": "0a7215f7c8fe293c1cbfda081cb54646e56a295fb39c1687e4bff7328b980eee"
+}
