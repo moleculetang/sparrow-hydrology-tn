@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "scope": "historical_WWTP_product_and_synthetic_readout_not_current_training_acceptance",
+  "file_hashes_verified": 21,
+  "rebuild_scope": [
+    "reach_annual",
+    "reach_month"
+  ],
+  "counts": {
+    "reach_province_anchors": 113,
+    "reach_annual": 4704,
+    "reach_month": 56448,
+    "fit_parameters": 240
+  },
+  "central_2012_error_t_n": 5.684341886080802e-14,
+  "month_year_error_kg_n": 3.725290298461914e-09,
+  "annual_rebuild_error_kg_n": 7.450580596923828e-09,
+  "monthly_rebuild_error_kg_n": 9.313225746154785e-10,
+  "synthetic_fits": {
+    "P1": {
+      "eta": [
+        0.5029644728932853,
+        0.7371124306824147
+      ],
+      "success": true,
+      "nfev": 7
+    },
+    "P2": {
+      "eta": [
+        0.5538139140748352,
+        0.7685237731076479
+      ],
+      "success": true,
+      "nfev": 8
+    }
+  },
+  "wwtp_unscaled_by_eta_verified": true,
+  "real_monitoring_read": false,
+  "current_science_changed": false,
+  "historical_fit_success_count": 240,
+  "nse": "not_applicable_to_product_mass_or_parameter_verification"
+}

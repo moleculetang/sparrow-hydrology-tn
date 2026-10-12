@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "mee_grid_counts": {
+    "2007": 1178,
+    "2008": 1521,
+    "2009": 1916,
+    "2010": 2739,
+    "2011": 3184,
+    "2012": 3836,
+    "2013": 4136,
+    "2014": 4436
+  },
+  "mee_total_rows": 22946,
+  "mee_field_repair_summary": {
+    "2007": {
+      "normalized_province_rows": 1178,
+      "valid_both_flow_rows": 1178,
+      "valid_commission_date_rows": 1176
+    },
+    "2008": {
+      "normalized_province_rows": 1521,
+      "valid_both_flow_rows": 1521,
+      "valid_commission_date_rows": 1502
+    },
+    "2009": {
+      "normalized_province_rows": 1916,
+      "valid_both_flow_rows": 1916,
+      "valid_commission_date_rows": 1912
+    },
+    "2010": {
+      "normalized_province_rows": 2739,
+      "valid_both_flow_rows": 2723,
+      "valid_commission_date_rows": 2677
+    },
+    "2011": {
+      "normalized_province_rows": 3184,
+      "valid_both_flow_rows": 3183,
+      "valid_commission_date_rows": 3174
+    },
+    "2012": {
+      "normalized_province_rows": 3836,
+      "valid_both_flow_rows": 3836,
+      "valid_commission_date_rows": 3816
+    },
+    "2013": {
+      "normalized_province_rows": 4136,
+      "valid_both_flow_rows": 4136,
+      "valid_commission_date_rows": 4136
+    },
+    "2014": {
+      "normalized_province_rows": 4436,
+      "valid_both_flow_rows": 4436,
+      "valid_commission_date_rows": 4436
+    }
+  },
+  "anchor_rows_after_exact_deduplication": 267,
+  "reach_quality_counts": {
+    "A": 120,
+    "C": 77,
+    "D": 37,
+    "B": 33
+  },
+  "annual_rows": 11214,
+  "facility_month_rows": 115920,
+  "reach_month_rows": 56448,
+  "model_reach_count": 112,
+  "central_2012_max_abs_difference_t_n_yr": 0.0,
+  "facility_month_to_annual_max_abs_difference_kg_n": 9.313225746154785e-10,
+  "reach_to_facility_month_max_abs_difference_kg_n": 1.862645149230957e-09
+}

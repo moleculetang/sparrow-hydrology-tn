@@ -1,0 +1,155 @@
+{
+  "files": [
+    {
+      "path": "data/mee_province_year_activity_validation_2007_2014.parquet",
+      "bytes": 16486,
+      "sha256": "254f64cb0f280cab30a0466a4ba79690536a2461d3502cd2c0ff69a9866bfa19",
+      "source_path": "5_Test/20260817_9/inputs/model_ready/point_sources/mee_province_year_activity_validation_2007_2014.parquet",
+      "release_transform": "unchanged_or_documented_extraction"
+    },
+    {
+      "path": "data/prb_wwtp_tn_annual_reach_2006_2019.parquet",
+      "bytes": 50090,
+      "sha256": "d6384bbadd4c3995e729cef4111ef68abee591a03d0ff9db4798f6c78be39fbb",
+      "source_path": null,
+      "release_transform": "unchanged_or_documented_extraction"
+    },
+    {
+      "path": "data/prb_wwtp_tn_monthly_reach_2006_2019.parquet",
+      "bytes": 414920,
+      "sha256": "46fef8715ace1caefb2e5dd1912b8ccac0f41086ed6772035f191e1b2ddc11b0",
+      "source_path": "5_Test/20260817_9/inputs/model_ready/point_sources/prb_wwtp_tn_monthly_reach_2006_2019.parquet",
+      "release_transform": "unchanged_or_documented_extraction"
+    },
+    {
+      "path": "data/wang_province_year_temporal_factors_2006_2019.parquet",
+      "bytes": 33869,
+      "sha256": "9a83e2da86020bb67f5c13947f81ae7ddfecf9d6b07ec1636877ae214f23e237",
+      "source_path": "5_Test/20260817_9/inputs/model_ready/point_sources/wang_province_year_temporal_factors_2006_2019.parquet",
+      "release_transform": "unchanged_or_documented_extraction"
+    },
+    {
+      "path": "data/wwtp_reach_province_2012_tdn_anchor.parquet",
+      "bytes": 4778,
+      "sha256": "3502d1fd2daad04395590c12c469381076e140d95c23ba943552476cc29fece1",
+      "source_path": null,
+      "release_transform": "unchanged_or_documented_extraction"
+    },
+    {
+      "path": "evidence/chen_mee_crosswalk_summary.json",
+      "bytes": 282,
+      "sha256": "0c368d27f6e6452e8143d62f284016f58a16f154f007242752f3fddb3b2dc388",
+      "source_path": null,
+      "release_transform": "unchanged_or_documented_extraction"
+    },
+    {
+      "path": "evidence/experiment_contract.json",
+      "bytes": 356,
+      "sha256": "e94a1fd9b5f07eda0ca6010548161a8034c54e8bdce21a8c70514842dfa17250",
+      "source_path": "5_Test/20260818_3/experiment_contract.json",
+      "release_transform": "unchanged_or_documented_extraction"
+    },
+    {
+      "path": "evidence/final_validation.json",
+      "bytes": 1880,
+      "sha256": "d7590f47d4a6d4c7eb0ae8254585b8d87750ca0ea01df28fc106045d9a3c4b8e",
+      "source_path": "5_Test/20260817_9/inputs/qa/final_validation.json",
+      "release_transform": "unchanged_or_documented_extraction"
+    },
+    {
+      "path": "evidence/prb_wwtp_tn_model_input_qa.json",
+      "bytes": 911,
+      "sha256": "a49710750c771ef069632d23041f18fb2b12dfe66c7ba5e9c7e9e6cd0662d51d",
+      "source_path": "5_Test/20260817_9/inputs/qa/prb_wwtp_tn_model_input_qa.json",
+      "release_transform": "unchanged_or_documented_extraction"
+    },
+    {
+      "path": "evidence/readout_training_contract.json",
+      "bytes": 235,
+      "sha256": "d8634dc495f1be89bada69b1a347ec1849343b429dee35d568c8070f2ed431b8",
+      "source_path": "5_Test/20260818_3/reports/readout_training_contract.json",
+      "release_transform": "unchanged_or_documented_extraction"
+    },
+    {
+      "path": "evidence/verification.json",
+      "bytes": 410,
+      "sha256": "37a8a09a2a31603ae6c2ce05eed89fce9378ab39c7248acd1c4dd8e6cfc04f94",
+      "source_path": "5_Test/20260818_3/reports/verification.json",
+      "release_transform": "unchanged_or_documented_extraction"
+    },
+    {
+      "path": "evidence/wang_tn_inverse_qa.json",
+      "bytes": 1379,
+      "sha256": "2c53ef733a1439903f0b626ffdce1a802e66f17392ba2fedc5841514ca50c160",
+      "source_path": "5_Test/20260817_9/inputs/qa/wang_tn_inverse_qa.json",
+      "release_transform": "unchanged_or_documented_extraction"
+    },
+    {
+      "path": "evidence/wwtp_evidence_decision.json",
+      "bytes": 873,
+      "sha256": "acffa24afaad5c5fcc7b858661fea826d07b79fd99b67bd729e5eb1d83b3fb59",
+      "source_path": "5_Test/20260818_3/reports/wwtp_evidence_decision.json",
+      "release_transform": "unchanged_or_documented_extraction"
+    },
+    {
+      "path": "evidence/wwtp_source_nonoverlap_audit.json",
+      "bytes": 886,
+      "sha256": "39c6a5d8fd1cc071839ece9b757e8ada189c2337ccba812c5a2822eb7a2d0909",
+      "source_path": "5_Test/20260818_3/reports/wwtp_source_nonoverlap_audit.json",
+      "release_transform": "unchanged_or_documented_extraction"
+    },
+    {
+      "path": "fit/candidate_fold_readout_parameters.parquet",
+      "bytes": 18292,
+      "sha256": "817c2ddd77597e67e2ee1e74e0a954cd506d72ac30d96d1d9746d58fdffebd04",
+      "source_path": "5_Test/20260818_3/outputs/candidate_fold_readout_parameters.parquet",
+      "release_transform": "unchanged_or_documented_extraction"
+    },
+    {
+      "path": "fit/wwtp_scenario_registry.parquet",
+      "bytes": 582943,
+      "sha256": "4edddc57f39bbfe67efe85ac4afa188c8e000e072bc139b7a1ffbb62e7c42e72",
+      "source_path": "5_Test/20260818_3/outputs/wwtp_scenario_registry.parquet",
+      "release_transform": "unchanged_or_documented_extraction"
+    },
+    {
+      "path": "legacy_readout.py",
+      "bytes": 3270,
+      "sha256": "2ee7505b1ad0517563de2c1c92e439ee2f474bc356270aaf11c91e888df7adbf",
+      "source_path": null,
+      "release_transform": "unchanged_or_documented_extraction"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3728,
+      "sha256": "b8328c6f7c54b09a846d41949d56c16bdf2f11a29e6625b7a98a5ad7f36e5d19",
+      "source_path": null,
+      "release_transform": "unchanged_or_documented_extraction"
+    },
+    {
+      "path": "rebuild.py",
+      "bytes": 1734,
+      "sha256": "fe65dc53160193d0f320bc4215a81dfc4f46264ebab7eefc64cf4644f3fab0ea",
+      "source_path": null,
+      "release_transform": "unchanged_or_documented_extraction"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 31,
+      "sha256": "a2d6249bac43961d4a8901e8a0c0124b2d2c9e50f507fb77fe02e7d4922c4eee",
+      "source_path": null,
+      "release_transform": "unchanged_or_documented_extraction"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 5912,
+      "sha256": "60fa973ee227e35bb0d3f2b6435ad5cfa4c2f655b2d69aaefef9732cf9451dc8",
+      "source_path": null,
+      "release_transform": "unchanged_or_documented_extraction"
+    }
+  ],
+  "authorization": "User requested WWTP model derivatives and methods; facility identity removed after automatic review",
+  "raw_river_monitoring_included": false,
+  "facility_identity_mapping_included": false,
+  "production_training_changed": false
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checks": {
+    "parent_hashes_unchanged": true,
+    "source_nonoverlap_pass": true,
+    "five_scenarios": true,
+    "forcing_2006_2019_only": true,
+    "no_negative_mass": true,
+    "sixty_candidates": true,
+    "two_layers": true,
+    "native_oof_1711": true,
+    "years_2018_2019": true,
+    "independent_readouts": true,
+    "wwtp_not_eta_scaled_contract": true
+  }
+}

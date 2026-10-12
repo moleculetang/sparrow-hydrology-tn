@@ -1,0 +1,13 @@
+{
+  "candidate_specific_refit": true,
+  "scenarios_refit_independently": [
+    "PS0",
+    "PS1",
+    "PS2",
+    "PS3",
+    "PS09"
+  ],
+  "P1_b_j": 0,
+  "P2_parent_readout_inherited": true,
+  "WWTP_not_scaled_by_eta": true
+}
