@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "network_reaches": 230,
+  "load_units": 113,
+  "facility_ids": 267,
+  "retained_historical_candidates": 213,
+  "outside_H1_historical_candidates": 17,
+  "blocked_load_units": 1,
+  "unknown_reach_years": 460,
+  "independent_2020_2021_load_available": false,
+  "current_training_modified": false,
+  "remapped_annual_rows": 4704,
+  "remapped_monthly_rows": 56448,
+  "independent_annual_rebuild_error_kg": 1.862645149230957e-09,
+  "independent_monthly_rebuild_error_kg": 3.4924596548080444e-10,
+  "monthly_to_annual_error_kg": 1.862645149230957e-09,
+  "annual_remapping_conservation_error_kg": 1.6763806343078613e-08,
+  "monthly_remapping_conservation_error_kg": 1.7462298274040222e-09,
+  "NSE": "not_applicable_to_input_mapping"
+}

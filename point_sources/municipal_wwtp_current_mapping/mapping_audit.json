@@ -1,0 +1,125 @@
+{
+  "scope": "WWTP_identifier_mapping_and_H1_reaggregation_not_new_year_or_outfall_certification",
+  "source_years": [
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019
+  ],
+  "requested_years": [
+    2020,
+    2021
+  ],
+  "independent_requested_years_available": false,
+  "raw_sources": [
+    {
+      "product": "Chen2012",
+      "doi": "10.1021/acs.est.8b07352",
+      "coverage": [
+        2012,
+        2012
+      ]
+    },
+    {
+      "product": "Wang",
+      "doi": "10.1038/s41597-022-01439-7",
+      "coverage": [
+        2006,
+        2019
+      ]
+    },
+    {
+      "product": "MEE inventories available locally",
+      "coverage": [
+        2007,
+        2014
+      ]
+    }
+  ],
+  "files": {
+    "master_sha256": "911a1bded59cf86179bc6b6f3aecd7d17629f09f339b0519d52640bc7c985767",
+    "public_anchor_sha256": "3502d1fd2daad04395590c12c469381076e140d95c23ba943552476cc29fece1",
+    "h1_spatial_zip_sha256": "1a90224565fd74f309492857edaa7445e75a68304fb6eacce005d4c900813a70",
+    "source_annual_sha256": "a8751a4a5a7878bd358443c4ed39d20326355e59933aa07b76538a2dfb927d3f",
+    "source_facility_monthly_sha256": "81eda2380ee776a45b84c699a728df8f4bfb6a94454d763547a49d664d9a9bc1",
+    "source_reach_monthly_sha256": "46fef8715ace1caefb2e5dd1912b8ccac0f41086ed6772035f191e1b2ddc11b0"
+  },
+  "spatial_components": {
+    "5_Test/20260810_1/inputs/spatial_corrected/reach_catchments.cpg": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+    "5_Test/20260810_1/inputs/spatial_corrected/reach_catchments.dbf": "7d462003b679f3b9014cd2daa1104b65863b5b73ab4eb9904afe20a781dd147c",
+    "5_Test/20260810_1/inputs/spatial_corrected/reach_catchments.prj": "48a44261fed6ba2892b50afe8b76ecbf3857bf39c493543ac99efd3a16f6a03b",
+    "5_Test/20260810_1/inputs/spatial_corrected/reach_catchments.shp": "792f8138935ae06ce7730435b406c3f4900516fb2c03e73eff31283eff5476cf",
+    "5_Test/20260810_1/inputs/spatial_corrected/reach_catchments.shx": "6baff9de0461e38cfef971d7d78803d716b7e7a928c9dcca4076c2d821477508",
+    "5_Test/20260814_1/inputs/spatial/reach_catchments.cpg": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+    "5_Test/20260814_1/inputs/spatial/reach_catchments.dbf": "64ad5c346b998ed5647525839a791d284a87ab0dd45713a2b33e83059f491a5c",
+    "5_Test/20260814_1/inputs/spatial/reach_catchments.prj": "48a44261fed6ba2892b50afe8b76ecbf3857bf39c493543ac99efd3a16f6a03b",
+    "5_Test/20260814_1/inputs/spatial/reach_catchments.shp": "e37e78a616bd6100e6af61027accebbf975baf92e6f3de884e3da1530c7644a8",
+    "5_Test/20260814_1/inputs/spatial/reach_catchments.shx": "cd339d38a00f93b314c2cf31388b30f026c76e08754d6a6f7849090dff1c676f",
+    "5_Test/20260810_1/inputs/spatial_corrected/reaches_topology.cpg": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+    "5_Test/20260810_1/inputs/spatial_corrected/reaches_topology.dbf": "bc4f898e2c8c5944eed4e651d4349a17dce47cf2e34391ab8557bec3f9c7622a",
+    "5_Test/20260810_1/inputs/spatial_corrected/reaches_topology.prj": "48a44261fed6ba2892b50afe8b76ecbf3857bf39c493543ac99efd3a16f6a03b",
+    "5_Test/20260810_1/inputs/spatial_corrected/reaches_topology.shp": "f89a8e097a56466a5419c590b7f9490c0392f1960f5e54c8537d3666d7cf94fb",
+    "5_Test/20260810_1/inputs/spatial_corrected/reaches_topology.shx": "0728577259793e6b87817bf8d150ec51a340e9dde39cbe42bc3599d2f054aacc"
+  },
+  "counts": {
+    "unique_facility_ids": 267,
+    "accepted_historic_facilities": 230,
+    "excluded_historic_facilities": 37,
+    "facility_mapping_states": {
+      "retained_same_reach_candidate": 213,
+      "excluded_catchment_nearest_disagreement": 28,
+      "outside_current_domain": 26
+    },
+    "historical_accepted_id_changes_among_retained": 0,
+    "current_supported_historical_facilities": 213,
+    "historical_accepted_outside_H1": 17,
+    "blocked_reach_province_load_units": 1,
+    "reach_province_load_units": 113,
+    "reaches_with_historical_load": 112,
+    "network_reaches": 230,
+    "missing_reach_year_entries": 460,
+    "remapped_annual_rows": 4704,
+    "remapped_monthly_rows": 56448,
+    "outside_H1_facility_year_rows": 714
+  },
+  "checks": {
+    "network_downstream_identity_passed": true,
+    "H1_area_max_error_km2": 9.5367431640625e-13,
+    "historical_load_or_training_modified": false,
+    "nearest_line_from_archived_network_not_new_outfall_survey": true,
+    "annual_remapping_mass_error_kg": 1.30385160446167e-08,
+    "monthly_remapping_mass_error_kg": 1.6298145055770874e-09,
+    "month_to_year_mass_error_kg": 1.862645149230957e-09,
+    "no_mass_redistribution": true
+  },
+  "search": {
+    "date": "2026-10-13",
+    "local_roots": [
+      "0_reach_topology/data/raw/point_sources/wastewater",
+      "1_Inputs",
+      "0_water_quality",
+      "0_hydro_sediment_data",
+      "5_Test reports",
+      "E:/Hydro_input",
+      "E:/HISTORY",
+      "E:/waq_validation",
+      "E:/SWAT"
+    ],
+    "conclusion": "No independent 2020/2021 WWTP load product located; not a claim that no external data exists",
+    "historical_evidence": [
+      "5_Test/20260818_6/experiment_contract.json",
+      "5_Test/20260818_6/reports/verification.json",
+      "5_Test/20260818_7/reports/completion_audit.json"
+    ]
+  }
+}

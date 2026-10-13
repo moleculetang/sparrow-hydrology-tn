@@ -1,0 +1,70 @@
+{
+  "scope": "user_requested_WWTP_ID_mapping_and_missing_year_status",
+  "files": [
+    {
+      "path": "data/H1_reach_province_2012_tdn_anchor.parquet",
+      "bytes": 4810,
+      "sha256": "6c4e0adaf255ff1a55c4fae1b9ce0da5ee0a39b97311c4b9bb1c864c4a6631f0"
+    },
+    {
+      "path": "data/H1_wwtp_tn_annual_reach_2006_2019.parquet",
+      "bytes": 51500,
+      "sha256": "55356a31ccbf3ba3233885dc4fbfcd5584a501d3cec39a80e14ecb17a6b18958"
+    },
+    {
+      "path": "data/H1_wwtp_tn_monthly_reach_2006_2019.parquet",
+      "bytes": 211810,
+      "sha256": "9a9d52338620a4fe65cff6b839e221c2b60642bf82041c6347fd098c400147ae"
+    },
+    {
+      "path": "data/outside_H1_historical_facility_loads_2006_2019.parquet",
+      "bytes": 10616,
+      "sha256": "989bb3fa7f1a3132ec1b5b6d5fb00c933eef8733a7cad0800c34963bb20d74ba"
+    },
+    {
+      "path": "facility_id_to_current_reach.csv",
+      "bytes": 29983,
+      "sha256": "f232fec356c4b332a38557afd17f67f987c137b35d7adce082b82bbc9b5cd54e"
+    },
+    {
+      "path": "independent_load_availability_2020_2021.csv",
+      "bytes": 59206,
+      "sha256": "74fcb5996280c89c7af68cd5a8665caba3f45c95f2342c7c23c6c1b3759b3cb2"
+    },
+    {
+      "path": "load_reach_id_to_current_h1.csv",
+      "bytes": 26557,
+      "sha256": "234a525019c6f1d76527ea196e9e9db6cb29b3fb896e20cc195a29064c711dd8"
+    },
+    {
+      "path": "load_unit_to_current_reach.csv",
+      "bytes": 19452,
+      "sha256": "19df6fe2fab78dc8de5e6059ee36847b06ea03b6c23bb2a710a180cb8198292a"
+    },
+    {
+      "path": "mapping_audit.json",
+      "bytes": 5411,
+      "sha256": "0edbf212835d174db33f79bf7a3bc45d17396a2fb03e8629b319563fbc5c9b25"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6679,
+      "sha256": "eb5f567a736e3bddcd16a8507de7da05032cd46b74c21cb7faa09855f2a64e0c"
+    },
+    {
+      "path": "remap.py",
+      "bytes": 3526,
+      "sha256": "7356feb61cbe14e1a3c13bca6c8823261de1d8a954928e2f6a81080d1b75f0f5"
+    },
+    {
+      "path": "remapping_mass_reconciliation.csv",
+      "bytes": 4600,
+      "sha256": "77eb3308041bd95e572731f75b5bcf9d87d512dc5a3c1e37e2b49f85fbfe53e4"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 9447,
+      "sha256": "b9d133995999565135a2acb36900fc8979f2ddf9ac1d9529b8822015d70a473f"
+    }
+  ]
+}
