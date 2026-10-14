@@ -1,0 +1,20 @@
+{
+  "dyn3p_hbv": "sources/dyn3p_hbv.py",
+  "dyn2p_hbv": "sources/dyn2p_hbv.py",
+  "state_consistent_sig2p": "sources/state_consistent_sig2p.py",
+  "learnable_state_sig2p": "sources/learnable_state_sig2p.py",
+  "hydrology_core": "sources/hydrology_core.py",
+  "fast_route_autograd": "sources/fast_route_autograd.py",
+  "run_stage4": "sources/run_stage4.py",
+  "torch_hbv": "sources/torch_hbv.py",
+  "run_stage25": "sources/run_stage25.py",
+  "fold_worker": "sources/fold_worker.py",
+  "run_stage2_temporal": "sources/run_stage2_temporal.py",
+  "run_stage3_diagnostics": "sources/run_stage3_diagnostics.py",
+  "frozen_hydrology_core": "sources/frozen_hydrology_core.py",
+  "reservoir_operator": "sources/reservoir_operator.py",
+  "reservoir_network_router": "sources/reservoir_network_router.py",
+  "reservoir_development_core": "sources/reservoir_development_core.py",
+  "export_final_tn_hydrology_interface": "sources/export_final_tn_hydrology_interface.py",
+  "run_locked_long_simulation": "sources/run_locked_long_simulation.py"
+}
