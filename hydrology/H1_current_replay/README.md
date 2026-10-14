@@ -42,3 +42,7 @@ python replay.py --end 2024-12-31 --output full_history
 只附一张原始[stage2_result_revised_sync_operations.csv](source_index/stage2_result_revised_sync_operations.csv)，没有上传全部逐站原始CSV。索引3,453行、361个站名、2006—2022；ACTIVE 3,051行，STALE_OR_EXCLUDED 205行，EXCLUDED_ARCHIVE 197行。保留source_path、source_sha256、target_path、station_norm、year、source_group、补充优先级、替代与排除/同步状态。205个缺源哈希均属旧/排除行，仍留空。原件SHA256为`da06efd10df89211599eaac3645f30ffd96499cf14bdf99ca9259f1c0887b931`，与20260915_2冻结快照逐字节相同。
 
 该索引覆盖完整流量整理库，**不是本包实际训练站/年份清单**。旧103站开发流量、102站留出流量和当前74站登记均可通过ACTIVE索引的规范站名连接；实际资格和掩蔽仍按observations/current_screen与原拟合锁判定。规范连接使用原A2c规则：NFKC、去空白/下划线、统一括号、去末尾“站”；来源选择还要求ACTIVE、合法target_group、stage2_result_revised源路径、源文件实际存在、按站年与补充优先级选取。source_path是当时权威原文件，target_path是同步目的，不能把同步副本自动认定为另一个独立观测来源。原绝对路径只作溯源，不是专家电脑的可运行路径，也不证明未随包上传的每个原CSV已被本次重新校验。
+
+## 4站补充来源审查与Q分析面板
+
+[4站最小证据与失败用例](../H1_four_gauge_sources/README.md)已单独补齐，仅含2010—2018。找到原扫描表和36个站年OCR/CSV来源，但泸江2018发现将泸江标题配到同页东沟数据块的明确错误；三个水库/渠道站的Q对象也需与模型边界分别核查。Q主分析先使用53个共同站，57站敏感性尚不准入；53站只认证文件/映射支持，未认证仪器/质控/插补真实性。当前原H1 checkpoint和历史57站资料没有被改写或重新率定。

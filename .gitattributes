@@ -10,3 +10,4 @@ expert/tn_challenge_rainfall/** -text
 point_sources/municipal_wwtp_current_mapping/** -text
 observations/tn_daily_4h_2021/** -text
 hydrology/H1_current_replay/** -text
+hydrology/H1_four_gauge_sources/** -text
