@@ -1,0 +1,83 @@
+{
+  "status": "passed_with_explicit_research_limits",
+  "time_utc": "2026-10-15T07:46:53.043424+00:00",
+  "scope": "two newly requested local supplemental archives only",
+  "findings": [],
+  "archive_sha256": {
+    "case39_compute_1961_2018.zip": "d5eded7fa7efccb3bd49819da1565d8dc89f5e7800af372059cfff0062ed40bb",
+    "catboost_replay_F23_F24_seed1729.zip": "c3a29d69f0949a1f5d88d2a06e6f27a671b9a5c206a08b9df5c13691738299f0"
+  },
+  "case39": {
+    "clean_assets": 527,
+    "manifest_payloads": 582,
+    "archive_files": 583,
+    "selected_parent_numeric_comparisons": 15,
+    "years": 58,
+    "reaches": 39,
+    "reservoirs": 4,
+    "TN_metadata_records": 417,
+    "pre2016_C1_C2_exact_C0": true,
+    "daily_deposition_blocked": true
+  },
+  "catboost": {
+    "models": 4,
+    "seed": 1729,
+    "manifest_payloads": 53,
+    "archive_files": 54,
+    "existing_replay_prediction_rows": 32510,
+    "existing_replay_pair_rows": 5330,
+    "existing_replay_max_abs_difference": 0,
+    "recomputed_predictions_in_this_review": false
+  },
+  "evidence_bindings": [
+    {
+      "path": "delivery/supplement_case39_independent_review.json",
+      "sha256": "f0e5d9d7de7701410efbbb040472e20e50399b702bd0dba620af12fe2eed5718",
+      "bytes": 4754
+    },
+    {
+      "path": "delivery/supplement_catboost_independent_review.json",
+      "sha256": "2f832104353ab67fd2cbed333c131e02624898b599a6ef27e109ec5ba6e87657",
+      "bytes": 23920
+    },
+    {
+      "path": "delivery/supplement_delivery_index.json",
+      "sha256": "5bdfd4c7a2abdab4cce35f39ef2bd9c4afc3f4445425a04426f84e39ff5bd1f4",
+      "bytes": 746
+    },
+    {
+      "path": "delivery/case39_compute_1961_2018_receipt.json",
+      "sha256": "f3b3fb709d36322a04e5207fc89a511a14b61741446e63191962b950a366f7cc",
+      "bytes": 1116
+    },
+    {
+      "path": "delivery/catboost_replay_F23_F24_seed1729_receipt.json",
+      "sha256": "8a9fab6880f5127c54335667562cf2e709ab69e35b9b40b39edde004258821ce",
+      "bytes": 1614
+    },
+    {
+      "path": "delivery/补包交付说明.md",
+      "sha256": "f290d8ae1d2eb0ad75460cf9473579d43c807c11f49e08a84c2f755e653241cb",
+      "bytes": 2399
+    },
+    {
+      "path": "delivery/两份补包独立审查.md",
+      "sha256": "7729df701e71a78c53b1a2615daaf8bef96eb122feee936d64e098b5467ab2d2",
+      "bytes": 2825
+    }
+  ],
+  "no_TN_labels_or_model_scores_read": true,
+  "no_new_training": true,
+  "no_parent_sealed_files_modified": true,
+  "no_old_review_zip_modified": true,
+  "no_upload": true,
+  "limitations": [
+    "Hydrology is frozen precomputed output, not a complete hydrology calibration runtime.",
+    "Daily deposition remains globally blocked; this is not a complete admissible daily greybox source package.",
+    "1961 initial and noncrop plans use explicit modern soil/NPP research proxies, including 2019-2020 reference information.",
+    "417 prior TN records are identifier/date mappings only and not new unseen validation.",
+    "This is a schema and static-code review, not a semantic audit of numerical feature values or a new prediction run.",
+    "Exact replay is software reproducibility evidence, not water-quality performance or generalization evidence.",
+    "F24 predictions on 2023 training records remain in-training diagnostics."
+  ]
+}

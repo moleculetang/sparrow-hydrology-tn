@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "zip_file": "delivery/catboost_replay_F23_F24_seed1729.zip",
+  "zip_sha256": "c3a29d69f0949a1f5d88d2a06e6f27a671b9a5c206a08b9df5c13691738299f0",
+  "zip_bytes": 14844300,
+  "extracted_validation_directory": "delivery/supplements/_verification/catboost_final_20261015T152910768645/catboost_replay_F23_F24_seed1729",
+  "models": 4,
+  "paired_2023_rows": 5330,
+  "prediction_rows": 32510,
+  "max_abs_difference": 0.0,
+  "TN_label_reads": 0,
+  "training_calls": 0,
+  "original_data_modified": false,
+  "threads": 1,
+  "negative_controls": [
+    "extra CBM rejected",
+    "unknown job rejected",
+    "altered feature bytes rejected"
+  ],
+  "steps": [
+    {
+      "command": "python scripts/validate_package.py ",
+      "returncode": 0,
+      "stdout": "{\"status\": \"passed\", \"model_count\": 4, \"immutable_files\": 53, \"labels_read\": 0}",
+      "stderr": ""
+    },
+    {
+      "command": "python scripts/catboost_replay.py ",
+      "returncode": 0,
+      "stdout": "{\"status\": \"passed\", \"models\": 4, \"max_abs_difference\": 0.0, \"paired_2023_rows\": 5330}",
+      "stderr": ""
+    },
+    {
+      "command": "python scripts/validate_package.py ",
+      "returncode": 0,
+      "stdout": "{\"status\": \"passed\", \"model_count\": 4, \"immutable_files\": 53, \"labels_read\": 0}",
+      "stderr": ""
+    },
+    {
+      "command": "python scripts/catboost_replay.py ",
+      "returncode": 0,
+      "stdout": "{\"status\": \"passed\", \"models\": 4, \"max_abs_difference\": 0.0, \"paired_2023_rows\": 5330}",
+      "stderr": ""
+    }
+  ]
+}
