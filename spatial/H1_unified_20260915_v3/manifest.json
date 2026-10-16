@@ -1,0 +1,128 @@
+{
+  "identity": "hydrology_aligned_topology_v3",
+  "files": [
+    {
+      "path": "evidence/current_area_lineage_readback.json",
+      "bytes": 2512,
+      "sha256": "4ac7152249a0eaf864f4f1ca5ba4bbe49b710d7df2c8fbce4ee6b260ffaaa723",
+      "source_relative": null
+    },
+    {
+      "path": "evidence/hydrology_area_support_v2.json",
+      "bytes": 1226,
+      "sha256": "17541ff36e813987b24f7f4097403c45b19a2d1ea6573456039878222abce9ce",
+      "source_relative": null
+    },
+    {
+      "path": "evidence/source_boundary_audit.json",
+      "bytes": 1286,
+      "sha256": "da0fe884d76f564b3dd328f28e7398b74d5511f0a9c1209b6bdae40c3351cca7",
+      "source_relative": null
+    },
+    {
+      "path": "evidence/topology_alignment_v3.md",
+      "bytes": 4263,
+      "sha256": "a95812e4fcd64493613fca9d0408068003e94fe54b99fcf756b0ed68895cb2cf",
+      "source_relative": null
+    },
+    {
+      "path": "evidence/topology_v3_completion_audit.json",
+      "bytes": 2166,
+      "sha256": "c4ebd0409fbc792d2b2223cedbddb1f13d2a4d6fbd5fce66226477d30d096d55",
+      "source_relative": null
+    },
+    {
+      "path": "H1_unified_spatial_files.zip",
+      "bytes": 7010134,
+      "sha256": "1a90224565fd74f309492857edaa7445e75a68304fb6eacce005d4c900813a70",
+      "source_relative": null
+    },
+    {
+      "path": "README.md",
+      "bytes": 3825,
+      "sha256": "812e67df66e9c02a75326856154e38f8fa5c3618fc5e36f420e43028fdaa4d71",
+      "source_relative": null
+    },
+    {
+      "path": "verify.py",
+      "bytes": 4267,
+      "sha256": "ce88c2c641517b46a4f05c49508d3ca7ca0c87439c75470fff897cb197957996",
+      "source_relative": null
+    }
+  ],
+  "archive_members": [
+    {
+      "path": "canonical/hydrology_edges_v3.parquet",
+      "bytes": 3704,
+      "sha256": "7aae1bd6236ea148ca2e4eade236c4a7066fdd53695990a4c89b36fcdbf214e1",
+      "source_relative": "5_Test/20260915_2/canonical/spatial/hydrology_edges_v3.parquet"
+    },
+    {
+      "path": "canonical/hydrology_model_topology_v3.json",
+      "bytes": 8206,
+      "sha256": "4d4b5ca16ed439e3c4f4d34602c6cff8071bcc9b7b8c3c001c10ad02d9da524a",
+      "source_relative": "5_Test/20260915_2/canonical/spatial/hydrology_model_topology_v3.json"
+    },
+    {
+      "path": "canonical/hydrology_reach_registry_v3.parquet",
+      "bytes": 17424,
+      "sha256": "eccfd3c317ced83cd4a4721a5c7a097fa104483b16bd5cd6ec7848e545b5a730",
+      "source_relative": "5_Test/20260915_2/canonical/spatial/hydrology_reach_registry_v3.parquet"
+    },
+    {
+      "path": "canonical/hydrology_reservoir_links_v3.parquet",
+      "bytes": 4386,
+      "sha256": "90f8a967f14562ca37d9f21d49059954a84ae33f1978fd5554c42caa055a9377",
+      "source_relative": "5_Test/20260915_2/canonical/spatial/hydrology_reservoir_links_v3.parquet"
+    },
+    {
+      "path": "canonical/hydrology_support_labels_30m_v3.tif",
+      "bytes": 5424898,
+      "sha256": "b6d75d5d820361cfa85780a3bddcd6c1a7b4d84a47cb0bc3cb6f8181f20eef23",
+      "source_relative": "5_Test/20260915_2/canonical/spatial/hydrology_support_labels_30m_v3.tif"
+    },
+    {
+      "path": "canonical/hydrology_topology_edges_compatible_v3.csv",
+      "bytes": 19412,
+      "sha256": "24c22d4b2e01106c9ce0d3a8bd3d8213517890998eb38ef18805fb70e5423dc8",
+      "source_relative": "5_Test/20260915_2/canonical/spatial/hydrology_topology_edges_compatible_v3.csv"
+    },
+    {
+      "path": "canonical/training_area_crosscheck.parquet",
+      "bytes": 8143,
+      "sha256": "84cb2b9d9c774cd18430245dfefc50ed1ce82ce76d78d1370c6d110615a8d704",
+      "source_relative": "5_Test/20260915_2/canonical/spatial/training_area_crosscheck.parquet"
+    },
+    {
+      "path": "vectors/reach_catchments.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "source_relative": "5_Test/20260814_1/inputs/spatial/reach_catchments.cpg"
+    },
+    {
+      "path": "vectors/reach_catchments.dbf",
+      "bytes": 33972,
+      "sha256": "64ad5c346b998ed5647525839a791d284a87ab0dd45713a2b33e83059f491a5c",
+      "source_relative": "5_Test/20260814_1/inputs/spatial/reach_catchments.dbf"
+    },
+    {
+      "path": "vectors/reach_catchments.prj",
+      "bytes": 423,
+      "sha256": "48a44261fed6ba2892b50afe8b76ecbf3857bf39c493543ac99efd3a16f6a03b",
+      "source_relative": "5_Test/20260814_1/inputs/spatial/reach_catchments.prj"
+    },
+    {
+      "path": "vectors/reach_catchments.shp",
+      "bytes": 25010316,
+      "sha256": "e37e78a616bd6100e6af61027accebbf975baf92e6f3de884e3da1530c7644a8",
+      "source_relative": "5_Test/20260814_1/inputs/spatial/reach_catchments.shp"
+    },
+    {
+      "path": "vectors/reach_catchments.shx",
+      "bytes": 1940,
+      "sha256": "cd339d38a00f93b314c2cf31388b30f026c76e08754d6a6f7849090dff1c676f",
+      "source_relative": "5_Test/20260814_1/inputs/spatial/reach_catchments.shx"
+    }
+  ],
+  "archive": "H1_unified_spatial_files.zip"
+}

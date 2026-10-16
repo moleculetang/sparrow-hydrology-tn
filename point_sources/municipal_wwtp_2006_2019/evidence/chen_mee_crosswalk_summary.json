@@ -1,0 +1,11 @@
+{
+  "rows": 267,
+  "match_quality_counts": {
+    "C": 163,
+    "B": 53,
+    "A": 51
+  },
+  "identity_table_not_published": true,
+  "reason": "Full facility identity fields are outside approved public release",
+  "crosswalk_does_not_modify_load_or_reach_assignment": true
+}

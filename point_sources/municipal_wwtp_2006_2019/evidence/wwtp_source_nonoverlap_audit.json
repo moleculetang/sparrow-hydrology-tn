@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "checks": {
+    "diffuse_ledger_identity_max_abs_kg_n": 1.3969838619232178e-09,
+    "previous_point_source_mass_all_missing": true,
+    "parent_core_does_not_read_point_source_tn": true,
+    "hydrowaste_proxy_not_in_parent_mass_core": true,
+    "wwtp_appears_once_before_R0": true,
+    "D_quality_rows_in_model_input": 0,
+    "facility_to_local_max_abs_error_kg_n": {
+      "PS1": 1.862645149230957e-09,
+      "PS3": 9.313225746154785e-10,
+      "PS09": 1.862645149230957e-09,
+      "PS2": 9.313225746154785e-10
+    },
+    "terminal_routing_max_relative_error": {
+      "PS0": 0.0,
+      "PS1": 4.342394306042957e-16,
+      "PS2": 3.083534396125723e-16,
+      "PS3": 3.722052262322535e-16,
+      "PS09": 4.0514160370295206e-16
+    },
+    "registry_negative_mass_rows": 0,
+    "forcing_year_min": 2006,
+    "forcing_year_max": 2019
+  }
+}

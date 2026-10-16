@@ -1,0 +1,37 @@
+{
+  "scenario_id": "20260818_3",
+  "point_source_status": "contradictory",
+  "point_source_robustness": "robust",
+  "PS1_overall_noninferior_model_count": 0,
+  "PS1_point_improved_model_count": 0,
+  "PS1_spatial_noninferior_model_count": 0,
+  "PS1_process_evidence_model_count": 12,
+  "repeated_P1_eta_boundary_model_count_by_scenario": {
+    "PS0": 0,
+    "PS09": 0,
+    "PS1": 0,
+    "PS2": 0,
+    "PS3": 0
+  },
+  "sensitivity": {
+    "PS2": {
+      "median_delta": 0.005857383517304526,
+      "improved_model_count": 0
+    },
+    "PS3": {
+      "median_delta": 0.009589922737801279,
+      "improved_model_count": 0
+    }
+  },
+  "formal_evaluation_years": [
+    2018,
+    2019
+  ],
+  "forcing_years": [
+    2006,
+    2019
+  ],
+  "forcing_2020_2022": "unavailable_not_filled",
+  "return_flow_water": "off",
+  "locked_2022_used": false
+}

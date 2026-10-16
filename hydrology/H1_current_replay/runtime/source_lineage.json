@@ -1,0 +1,313 @@
+{
+  "generated_by_original_git_commit": null,
+  "git_commit_reason": "No original Git commit was recorded for this ignored experimental runtime; source-byte identities and original locks are authoritative. PR10 publication commit will identify this reproducible distribution, not retroactively date the generating run.",
+  "current_h1": "20260917_3/work/screen corrected H1 -> 20260917_5 FULL24C -> 20261008_1",
+  "sources": [
+    {
+      "path": "sources/dyn3p_hbv.py",
+      "source_relative": "5_Test/20260826_24/scripts/dyn3p_hbv.py",
+      "sha256": "4c665290aa2e02bc4e019eb4237c43cff081bc34836137714c1a76fd398ae615",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "sources/dyn2p_hbv.py",
+      "source_relative": "5_Test/20260826_27/scripts/dyn2p_hbv.py",
+      "sha256": "3799b78dc6986aa8570f715669b2c6fb0f97f978ee3f5d3d100603c945cbc644",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "sources/state_consistent_sig2p.py",
+      "source_relative": "5_Test/20260827_7/scripts/state_consistent_sig2p.py",
+      "sha256": "12d1d9569944506ace772f8dacdb01a2d10675d0740cd6a90298cc01c52a04d9",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "sources/learnable_state_sig2p.py",
+      "source_relative": "5_Test/20260828_5/scripts/learnable_state_sig2p.py",
+      "sha256": "35f3707bc73c45bab67e4ebd0e9bf6105ce4a7049714b41f4988b0eda8bbe2ac",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "sources/hydrology_core.py",
+      "source_relative": "5_Test/20260825_3/scripts/hydrology_core.py",
+      "sha256": "6e764a6d5478ba572f02a257383754709b83ac46bc3fd3e47afacfa89e7cb8ef",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "sources/fast_route_autograd.py",
+      "source_relative": "5_Test/20260826_24/scripts/fast_route_autograd.py",
+      "sha256": "d87279e45546b3b298e5d85d3d400cde5918fdb72610b824e8c8a0b689d30d6c",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "sources/run_stage4.py",
+      "source_relative": "5_Test/20260825_4/scripts/run_stage4.py",
+      "sha256": "ed7c29ea5abc5029333184e2487e5ecf6f4c74b3170f6652f06a6c5f43d42475",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "sources/torch_hbv.py",
+      "source_relative": "5_Test/20260826_14/scripts/torch_hbv.py",
+      "sha256": "5e4101e5de692e462ca020afa75e35c517a511592c2497d9ad89c26be68b6aaa",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "sources/run_stage25.py",
+      "source_relative": "5_Test/20260826_25/scripts/run_stage25.py",
+      "sha256": "cbf5a28ed22648b918bae1aa44b47e4d0bd2d020a616238f1921589b67aeb137",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "sources/fold_worker.py",
+      "source_relative": "5_Test/20260826_26/scripts/fold_worker.py",
+      "sha256": "9d11fe783cc716b5965983ae11f3f47713fdffc000416b2f0a0d929c40f42630",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "sources/run_stage2_temporal.py",
+      "source_relative": "5_Test/20260827_2/scripts/run_stage2_temporal.py",
+      "sha256": "90eca963531da52d295b5f514942ad4e211de1c071d9037b57c8d550cc63f145",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "sources/run_stage3_diagnostics.py",
+      "source_relative": "5_Test/20260827_3/scripts/run_stage3_diagnostics.py",
+      "sha256": "c539f21eba41986da02d67a8b4d72fb3ef849e5bd8e15a3c268a9fa62ff4ccb0",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "sources/frozen_hydrology_core.py",
+      "source_relative": "5_Test/20260828_33/scripts/frozen_hydrology_core.py",
+      "sha256": "b8b62a69fa8a7cf04e324c6008e4a02384a65b3862c40c21e28f059d89d75677",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "sources/reservoir_operator.py",
+      "source_relative": "5_Test/20260828_14/scripts/reservoir_operator.py",
+      "sha256": "6440c09313ff41c54f37794525378d44e5c99b88389c5f13f142daad4ca2e37a",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "sources/reservoir_network_router.py",
+      "source_relative": "5_Test/20260828_15/scripts/reservoir_network_router.py",
+      "sha256": "6b712f45fe914b8e8a3c72a1585ed2bdb398c5399e23f499b5171dbdd3a03fee",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "sources/reservoir_development_core.py",
+      "source_relative": "5_Test/20260828_20/scripts/reservoir_development_core.py",
+      "sha256": "f4eec53713e3ecd1e39ce6eaa5f760d0d1228bf5ee5d71aee03a85194d8ead4f",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "sources/export_final_tn_hydrology_interface.py",
+      "source_relative": "5_Test/20260828_24/scripts/export_final_tn_hydrology_interface.py",
+      "sha256": "c73f87f23d3de1e92fd767e9c467216aee4bd9ab660cbcf01fec95f238e4b943",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "sources/run_locked_long_simulation.py",
+      "source_relative": "5_Test/20260828_34/scripts/run_locked_long_simulation.py",
+      "sha256": "8fbadb27a17860ac33509d1f319630e4b87700ce753933f8260bef8262d0dc17",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "data/model.pt",
+      "source_relative": "5_Test/20260917_3/work/screen/outputs/export/parent_preserving_state_consistent_model.pt",
+      "sha256": "fab0f9ae7dab5636b352d13a4d47a77a642b148adc25f2cd09e628376c10e426",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "data/parent_fit_checkpoint.pt",
+      "source_relative": "5_Test/20260917_3/work/screen/outputs/stage5/full_development_model_lock.pt",
+      "sha256": "c991236b69662a552cfcee1c08b75adfe1268f79a605dbf19ff7926c12763a45",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "data/parent_training_trace.parquet",
+      "source_relative": "5_Test/20260917_3/work/screen/outputs/stage5/full_development_training_trace.parquet",
+      "sha256": "84ac508282d8548f74136360a13aa35761032b2d279abd05ae2fd47a57450da3",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "data/regionalized_slow_score.parquet",
+      "source_relative": "5_Test/20260917_3/work/screen/outputs/stage8/regionalized_slow_score.parquet",
+      "sha256": "9ecf7408e911c997437ac75cc2cc8ad15a64c9691432868a395cdf709f2dfc40",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "data/bfi_regionalization_coefficients.parquet",
+      "source_relative": "5_Test/20260917_3/work/screen/outputs/stage8/bfi_regionalization_coefficients.parquet",
+      "sha256": "d7bf91503a6580cf89d2374b55e9e7614eaeb49b9a5af1e334cc19610865cc3c",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "data/dynamic_feature_scaling.json",
+      "source_relative": "5_Test/20260826_24/reports/dynamic_feature_scaling.json",
+      "sha256": "010062b19fbaddb8722905555a9f13684f7325778235a3b7cf2be3b08a2cbe70",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "data/static.parquet",
+      "source_relative": "5_Test/20260826_15/outputs/local_static_features_standardized.parquet",
+      "sha256": "2f046a38dc178647909fb2484ee76cc1656e45ac65a78f53c5ad523d3b32fa98",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "data/topology_edges.csv",
+      "source_relative": "5_Test/20260814_1/inputs/topology/topology_edges.csv",
+      "sha256": "24c22d4b2e01106c9ce0d3a8bd3d8213517890998eb38ef18805fb70e5423dc8",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "data/historical_reservoir_static_metadata.parquet",
+      "source_relative": "5_Test/20260828_32/outputs/historical_reservoir_static_metadata.parquet",
+      "sha256": "37f62bc1de25a0e3e6c2db3216a7383dc35dc1e38e91a26a56ecfead34b6399d",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "data/tn_hydrology_reservoir_static_metadata.parquet",
+      "source_relative": "5_Test/20260917_3/outputs/tn_hydrology_reservoir_static_metadata.parquet",
+      "sha256": "91333e13b4279e5dd320409bc382361144dfa7368a3f6b96f10fa5e78e99b5f8",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "data/tn_hydrology_reservoir_daily.parquet",
+      "source_relative": "5_Test/20260917_3/outputs/tn_hydrology_reservoir_daily.parquet",
+      "sha256": "e38f3d412f02be20d40a379277c1b731c89a08170603e02d33f0a996814d8dd2",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "data/historical_initial_land_state_1961.npz",
+      "source_relative": "5_Test/20260917_3/work/screen/stage33/outputs/historical_initial_land_state_1961.npz",
+      "sha256": "90690e0c8dd16abea0de04835922bdb4ad498dd7ade1855ccbbc5a31b8e1cd56",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "data/historical_initial_reservoir_states_1961.json",
+      "source_relative": "5_Test/20260917_3/work/screen/stage33/outputs/historical_initial_reservoir_states_1961.json",
+      "sha256": "1967d910c48b81e27640b63b1252b6c820f7eaa027c9b39ff4c6c8fc28402a4b",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "observations/daily_discharge_development_2010_2018.parquet",
+      "source_relative": "5_Test/20260825_2/outputs/daily_discharge_development_2010_2018.parquet",
+      "sha256": "02180d2e39cf0012a13ce5bba9fc134f873d80e61327d7a6e743216616fe5e9f",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "observations/daily_discharge_locked_retrospective_2019_2022.parquet",
+      "source_relative": "5_Test/20260825_2/outputs/daily_discharge_locked_retrospective_2019_2022.parquet",
+      "sha256": "7c7ac62610571c5ab85aadbeb5c624108271cd4caedd92655c487df904548f26",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "observations/original_gauge_representativeness_audit.parquet",
+      "source_relative": "5_Test/20260825_2/outputs/gauge_representativeness_audit.parquet",
+      "sha256": "8b48d17b479f7212318cbfe52e392d8fdffe44e4a6298a076e4b1f48be246231",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "evidence/original_experiment_contract.json",
+      "source_relative": "5_Test/20260917_3/work/screen/experiment_contract.json",
+      "sha256": "96f040f79416119c12198058131149160212c776f11d4865025f9b6c51e15422",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "evidence/original_b1_run.json",
+      "source_relative": "5_Test/20260917_3/reports/b1_run.json",
+      "sha256": "5cb2558e984407d9841dad3b3fd66e3dc1c596ee91833a260d1371e1486b0152",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "evidence/original_b2_reproduction.json",
+      "source_relative": "5_Test/20260917_3/reports/b2_reproduction.json",
+      "sha256": "947435a7ad4cf0dcc8dc66fcf1f3982ec2931cf6cf7364d545c7f62e8ceb5e6e",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "evidence/original_spinup_qa.json",
+      "source_relative": "5_Test/20260917_3/work/screen/stage33/reports/frozen_reproduction_spinup_qa.json",
+      "sha256": "4abc89a8db67c1a251128d0c80057a574309e734c37e7293e9a0311231b8da88",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "observations/current_screen/s5_discharge.parquet",
+      "source_relative": "5_Test/20260917_3/work/screen/inputs/s5_discharge.parquet",
+      "sha256": "0710f0b0aa4e0111307a7373eeea064b6f79cd2f317b331298e789c36bb2272b",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "observations/current_screen/s5_registry.parquet",
+      "source_relative": "5_Test/20260917_3/work/screen/inputs/s5_registry.parquet",
+      "sha256": "4e2f723b48a22c2a8108dd9ddb7ecb542052adda49ed96959a92c380c16fb5b7",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "observations/current_screen/s8_discharge.parquet",
+      "source_relative": "5_Test/20260917_3/work/screen/inputs/s8_discharge.parquet",
+      "sha256": "c81269ef872a9529a167cb4da9d4d821a94f405637bbe34d94f7f385366a14e3",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "observations/current_screen/s8_monthly.parquet",
+      "source_relative": "5_Test/20260917_3/work/screen/inputs/s8_monthly.parquet",
+      "sha256": "498710c32f656e7ed2486d70aad4993a8b26b73c0d8f28c466df344dd3b10164",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "observations/current_screen/s8_registry.parquet",
+      "source_relative": "5_Test/20260917_3/work/screen/inputs/s8_registry.parquet",
+      "sha256": "68bf92fc36e600cc25dac54c819c00ca9f67b8efac50fea3467644e41cb250da",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "historical_driver/b1_run_product.py",
+      "source_relative": "5_Test/20260917_3/scripts/b1_run_product.py",
+      "sha256": "18a34097742d4f29a8f2150a51319afd06c9cdbb5a3650153e4a82ee6dbdc882",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "historical_driver/a2h_refit_arm.py",
+      "source_relative": "5_Test/20260917_2/scripts/a2h_refit_arm.py",
+      "sha256": "648d1fc044566b44dc66282f5f4d2caf2612b0d07a84053255318cc507de8c7a",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "historical_driver/s5_parent_fit.py",
+      "source_relative": "5_Test/20260917_3/scripts/forks/s5_parent_fit.py",
+      "sha256": "10d6a8745ed43e7a478ff285737f2ef516120bbf7bfa83940a45dff63f5cd858",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "historical_driver/s8_regionalize.py",
+      "source_relative": "5_Test/20260917_3/scripts/forks/s8_regionalize.py",
+      "sha256": "9b591c7ec3792a282d5f8fe9607aedf932664d30aa200f0d894cb891754499a6",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "historical_driver/s33_spinup.py",
+      "source_relative": "5_Test/20260917_3/scripts/forks/s33_spinup.py",
+      "sha256": "34af215cae7456e1905171222e369e9ae7da44affb02fa96c49b86f77da8e09a",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "historical_driver/export_parent_preserving_state_product.py",
+      "source_relative": "5_Test/20260828_9/scripts/export_parent_preserving_state_product.py",
+      "sha256": "ace5ecbc1653073b4964c0217bfc860c2e483b3e8399ecc44d926e99dbaafdd3",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "historical_driver/export_tn_hydrology_interface.py",
+      "source_relative": "5_Test/20260828_35/scripts/export_tn_hydrology_interface.py",
+      "sha256": "a85c2fb5dd1da1ceb0164a02f38da479c76245a3c01384e4c5ad1bf5dab55f5e",
+      "exact_source_bytes": true
+    },
+    {
+      "path": "data/area.parquet",
+      "source_relative": "5_Test/20260823_27/outputs/q72_full_state_tn_bridge_2006_2022.parquet",
+      "source_sha256": "6a6e2da8b1f154db52c127770bd9ac30e44671aa2d0c027ed36e3008b016385b",
+      "transform": "select reach_id,catchment_area_km2 and remove identical repeats; no TN exported"
+    }
+  ]
+}

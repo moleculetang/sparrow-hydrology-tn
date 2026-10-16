@@ -1,0 +1,8 @@
+runtime/data/
+runtime/forcing/
+runtime/observations/
+runtime/evidence/
+runtime/**/__pycache__/
+runtime/check/
+runtime/full_history/
+*.zip

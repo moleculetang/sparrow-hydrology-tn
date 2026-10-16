@@ -1,0 +1,430 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "clean/agriculture/crop_activity_annual_H1_1961_2024.parquet",
+      "bytes": 22600478,
+      "sha256": "427c3a2e8e69b6f9b99a1c113c328f8e52b4d108f20507b91ee85637f0683aaf"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1961.parquet",
+      "bytes": 380915,
+      "sha256": "8bd6ae7deb4386d6fbbbf64bbf6cb40bcdd7b4d5673ec3861e6eb0b281284a2b"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1962.parquet",
+      "bytes": 377874,
+      "sha256": "695cebd99aa8601afa5f18b7df6d3fd93593a7d1f79007ab884d7f872bd49bdb"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1963.parquet",
+      "bytes": 379813,
+      "sha256": "18195fdb20cc59734fa300db12fbcfb0248d563e92c33d18c09d9ad2fa75abc6"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1964.parquet",
+      "bytes": 380451,
+      "sha256": "18ac339bf3307173d79ffc335423b3e2a7eb582ef8c4b1ac856e2fa65dfd60b4"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1965.parquet",
+      "bytes": 379890,
+      "sha256": "897229bf5614a61fbb90266596c11845fdecb87f4b5b44b52d512ae7cef1393c"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1966.parquet",
+      "bytes": 378989,
+      "sha256": "cd6d9656a65d239b6687cb6a7722c609dc7f2538f7c18b36b37e4e3ff4c41625"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1967.parquet",
+      "bytes": 380376,
+      "sha256": "ac220aba4fbe9e8affb51dc572797ece48348bc4c5d83c1b504905a8c04c3f17"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1968.parquet",
+      "bytes": 378512,
+      "sha256": "e5d69419e7a153069ca68b9ec700053e9325418b1cb588da4d237176be77e6b7"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1969.parquet",
+      "bytes": 379821,
+      "sha256": "6790e1e7227d062163cfdd38513ac37bf8b5e06a4721f9fca9816570f670ad64"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1970.parquet",
+      "bytes": 379045,
+      "sha256": "b964b72d190741ae0f3b3de85487b29f845b075e045005a4430d7d14cd05693e"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1971.parquet",
+      "bytes": 379217,
+      "sha256": "117b84a00f2bf9b3e9a3cf1bcc1418d8405288c32356a30f62658ec7d095df7c"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1972.parquet",
+      "bytes": 380637,
+      "sha256": "3ae3d38539baa512af4afa07e3da8deba9a37b37581a182a11e08e6b9c556e80"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1973.parquet",
+      "bytes": 378974,
+      "sha256": "9b3b10d58428f5a9e07c1c3ff6143dba850d3a6b56b4bdf8a4d3f5723db8089b"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1974.parquet",
+      "bytes": 379702,
+      "sha256": "d9c77ded455935a959f0febc976bafef998b41580ed194c021e7960ad1c726e6"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1975.parquet",
+      "bytes": 380588,
+      "sha256": "92bed867c42391564c0d57a0c56d4468db0cec4407712cd217b288519db26d25"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1976.parquet",
+      "bytes": 379298,
+      "sha256": "78cf633ce86b4206e5696fda9421181893e8746c5bbeca3d94991fc28c8db9e6"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1977.parquet",
+      "bytes": 378751,
+      "sha256": "444188d43d90c09b414be559b93fb05fc97ca35451428e79de7dcb94dd6422b0"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1978.parquet",
+      "bytes": 379691,
+      "sha256": "237129dbf35849a148c55f55ac257bd75270cf9867f55dd912e19f2f503806fa"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1979.parquet",
+      "bytes": 379761,
+      "sha256": "158f01668cce2cf9db8607054f1012271b353e54600b91db6f8f5344422ceab3"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1980.parquet",
+      "bytes": 381920,
+      "sha256": "f06180441070238328bd806b6a2ca2a5ecbf7f912db69693d829c5be2d076548"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1981.parquet",
+      "bytes": 379122,
+      "sha256": "e8076ce3d0f1dfe93712680d2fe45fb03c210298546378a5dc2591807a9fee96"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1982.parquet",
+      "bytes": 381125,
+      "sha256": "d8f036c9b47d411465e2c5440e8c6c72a737541adbf32e094618dbc4380b2cc3"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1983.parquet",
+      "bytes": 380583,
+      "sha256": "da15c45a2ab3b3302c29c2e6e5f297e5534e0ddf03fd612224f3a34463e80082"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1984.parquet",
+      "bytes": 378851,
+      "sha256": "b03d5a9c56bda517362b49f633f9f5ac23f0b46301b9b4ec398386a9aace4c31"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1985.parquet",
+      "bytes": 379439,
+      "sha256": "508e5f9c9de4e071aee8437dcb42ed5c1e0d765531b8fe2a552e7c7158e7cc8d"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1986.parquet",
+      "bytes": 378449,
+      "sha256": "b437aaa3ed8149ee9f310779792fd70b18c32dae463b31c28601947943ac626b"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1987.parquet",
+      "bytes": 380798,
+      "sha256": "db3b20336c29b5514dc9f5d66a32a82e4f2f329fa79404935dc6270b2707659b"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1988.parquet",
+      "bytes": 378292,
+      "sha256": "c4ba2cea206b60f8bd7643d27b15cbd0e7c2b044c8f4d5dba64ec500a0f9c622"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1989.parquet",
+      "bytes": 378379,
+      "sha256": "21abf88e320507d3877ab801d1a4502b3e492afde4517a5ba176ecff0dbd5967"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1990.parquet",
+      "bytes": 381611,
+      "sha256": "f2a25968c9c96d07f0c323ff3122296197917cf44b32052e826eac04af8c5126"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1991.parquet",
+      "bytes": 379333,
+      "sha256": "80057892fc29cda45edcee7ff8dd5b7959f73c5dc86f3d1b2f1e8f6f8f31b79e"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1992.parquet",
+      "bytes": 378761,
+      "sha256": "aa2dd534825e9889db92ca687e0227b96359a83c04e8d0c5e2d5955368613e4d"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1993.parquet",
+      "bytes": 378868,
+      "sha256": "becbe397c32e81b0feb21448fc01de6d77a21d0a3a37114e3b4f95435da43372"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1994.parquet",
+      "bytes": 380233,
+      "sha256": "51e50f0f7c87c650053294b8623061fc6920688aa6418a19ae1b4eb009dccc09"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1995.parquet",
+      "bytes": 379181,
+      "sha256": "5edb65165a2c3e3139d95552fd3f3fc54ccaeccc8d4ec895acca35830763a729"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1996.parquet",
+      "bytes": 379125,
+      "sha256": "ffc60e34eb758d442357df1fbce9631319566a50bef34ffd5df8184bd153fffb"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1997.parquet",
+      "bytes": 378325,
+      "sha256": "1757ec8b8e82c7c6c3b6b4c31dc48f388fbc46a41da43ab8dc0246fdaa5e95a4"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1998.parquet",
+      "bytes": 378340,
+      "sha256": "c97c889eb4875dd125911e7bdddc6bab926443c3a64c9385315e3a0ef237a04f"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/1999.parquet",
+      "bytes": 378796,
+      "sha256": "c1c1ac9bf914f2efe7d10f40dfdf09cb6fda7d1975bcfdd2ec25186132c8d3bd"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2000.parquet",
+      "bytes": 378680,
+      "sha256": "1ee1584710a0d7056e8f89539d8a977eb3e0f72f26530fcfc4a180908728331f"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2001.parquet",
+      "bytes": 378070,
+      "sha256": "5138c028082d988989c52cc1a0e5172e59965ba5de3b49994951d22cf4e2bc71"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2002.parquet",
+      "bytes": 379739,
+      "sha256": "18c02936dd6137daccda99b965069f9b4a71825cc126cb9a129d8e45211dddd6"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2003.parquet",
+      "bytes": 378397,
+      "sha256": "44c2b127933438cc7b8fed84a72eba627c315fadf86e4e691f30aa1d2b538c36"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2004.parquet",
+      "bytes": 378229,
+      "sha256": "3b7fad974fb14ea31a848eba4b692fcd2aec0f4421bdcddc995bdf759104eae3"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2005.parquet",
+      "bytes": 380539,
+      "sha256": "2493853d3e993b6d07fb8c226dc1e8ec777ce616258b43bf2c804466c56409c0"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2006.parquet",
+      "bytes": 378131,
+      "sha256": "c911fe5ef9eed45650f1c148e7d678ca092e9582004a3a55a3cd7f727d460dc8"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2007.parquet",
+      "bytes": 378292,
+      "sha256": "65b02616b5ab8418b144fb649723ed77a8375c6161287bc1988aeeb429705e7a"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2008.parquet",
+      "bytes": 378843,
+      "sha256": "b591daffba7b7b4f843f1547d76ab4b774ebee845585557671d42040f63e92b5"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2009.parquet",
+      "bytes": 378884,
+      "sha256": "1ff4a1d9e66970845221c098969241c15e9d6c04e713fe2de6856cc8eeb3db57"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2010.parquet",
+      "bytes": 378915,
+      "sha256": "65c27ec52a7fd69c072a4b7961ba08949673edbfb806f7eb0b13a599b62f4e4f"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2011.parquet",
+      "bytes": 379607,
+      "sha256": "55bb1dd2a3194077d363679c76ff0ff95f188076c551d403d90b9eb06778da38"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2012.parquet",
+      "bytes": 377649,
+      "sha256": "540b67c46ab81ef7c4bd7fdf287e60d370adde3e890f4b745a0d2d181a8bfc9b"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2013.parquet",
+      "bytes": 379519,
+      "sha256": "d2638d9708464d37dc7f641235acbf8e638843e139410db3a11fefe4133388fe"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2014.parquet",
+      "bytes": 379191,
+      "sha256": "9d662788e23b47c116fd7999420502fd8ab7d74bfcfda06a71ae027b98927ac5"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2015.parquet",
+      "bytes": 380116,
+      "sha256": "0666874d882295f9f67ee5f89891d4a507eacec235d241dbc19a44aa34a0628c"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2016.parquet",
+      "bytes": 379330,
+      "sha256": "c1579d7585ea8005956c8119839a85eafe6865588722e34df3469c80fdfe7bf2"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2017.parquet",
+      "bytes": 379132,
+      "sha256": "c3236bd60caf80792ffdc2cd15af1aec283fed18d5e4ea26232f06c2f8db2474"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2018.parquet",
+      "bytes": 380181,
+      "sha256": "1f8e6795f3a750c9fe7ab5f62c301789814c2a44b82e414005a3fd75bd728763"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2019.parquet",
+      "bytes": 379788,
+      "sha256": "f02360dfd6ea743f1e1e5f0a857b0bcf9b4a2abfc81a1055bda0f539397e55ec"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2020.parquet",
+      "bytes": 379909,
+      "sha256": "28c679ec77102c880636809e2027e33678ee72f0032536578eac39972983d51e"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2021.parquet",
+      "bytes": 378304,
+      "sha256": "7ba27679aca83c16d4aa6af474597e2e88edbd3e2aa99d38f8d68bc50ca9113b"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2022.parquet",
+      "bytes": 380616,
+      "sha256": "1280b73f16bdf7d83114fcb2286d587367701f8c80c66792827f1c46f11f5f4e"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2023.parquet",
+      "bytes": 378911,
+      "sha256": "b3b26732ad3cf11c374b819b499c03fa763d9ec31d2f648b72ccfe4d9c27ce74"
+    },
+    {
+      "path": "clean/agriculture/signals/C0/monthly/2024.parquet",
+      "bytes": 379851,
+      "sha256": "41c513558a3948c62738556749a43610219bc6c3879e52f69afbd1a3f41dc991"
+    },
+    {
+      "path": "clean/agriculture/signals/C1/monthly/2016.parquet",
+      "bytes": 695716,
+      "sha256": "8e6be9a62dadc12688a2a4c8707ad92a28640aebe644ee3dab906bef0b664891"
+    },
+    {
+      "path": "clean/agriculture/signals/C1/monthly/2017.parquet",
+      "bytes": 698255,
+      "sha256": "37ad86a208af38bc36fe47c4e547e0154c79b42832982309dae84db32ea38b6e"
+    },
+    {
+      "path": "clean/agriculture/signals/C1/monthly/2018.parquet",
+      "bytes": 696596,
+      "sha256": "1bdceee2953b276ff3b4f6c96c3af7b7180cb7fd061df4c8a7ba4d70bd909c0c"
+    },
+    {
+      "path": "clean/agriculture/signals/C1/monthly/2019.parquet",
+      "bytes": 698870,
+      "sha256": "5459a6d80b5a83ec9c1c0dda7f8e9d47f4795f9eab47da69fb162723885a215d"
+    },
+    {
+      "path": "clean/agriculture/signals/C1/monthly/2020.parquet",
+      "bytes": 698770,
+      "sha256": "4442239e7541e6977c8eff41e6f26c687ef95854b46d7cd18b3c9cdc16003073"
+    },
+    {
+      "path": "clean/agriculture/signals/C1/monthly/2021.parquet",
+      "bytes": 698353,
+      "sha256": "8a89f67c6080805614d69bb118fa580c9e80ac558c2f6b788e47c347725c31ef"
+    },
+    {
+      "path": "clean/agriculture/signals/C1/monthly/2022.parquet",
+      "bytes": 700651,
+      "sha256": "f7319a9b68be33adc2f81588f1ddd249a624c8fa167f0c1d36871a92e3923c59"
+    },
+    {
+      "path": "clean/agriculture/signals/C1/monthly/2023.parquet",
+      "bytes": 698541,
+      "sha256": "a4487ecee4d420a45abd92636495e7b63a897ff3b6da6a69810cb9d1da5315f4"
+    },
+    {
+      "path": "clean/agriculture/signals/C1/monthly/2024.parquet",
+      "bytes": 699344,
+      "sha256": "8545dcefcc91850a385c5e6270502f449acde591f7f30c2aec91780a3ca61f12"
+    },
+    {
+      "path": "clean/calendar/monthly_timing_fractions_2016_2024.parquet",
+      "bytes": 495043,
+      "sha256": "339173afc261df6fff40f1d26a2bf66b193bc089e733c391f483b97e586b1b88"
+    },
+    {
+      "path": "clean/calendar/reach_phenology_H1_2015_proxy.parquet",
+      "bytes": 25116,
+      "sha256": "6a1aceaa5bb2596c2a2014acaa13a58d18189481eb2793bbfb9e5a3f3cc899b7"
+    },
+    {
+      "path": "clean/calendar/reach_profiles_H1.json",
+      "bytes": 372059,
+      "sha256": "b8fc3b70cf0947c321054678e0e3f7bb714232c097bc8b383bf18e7ef59bb326"
+    },
+    {
+      "path": "clean/deposition/clcd_mask_years.npy",
+      "bytes": 272,
+      "sha256": "a2bbc8fa5572343e5559e5efc97dc0df65fe9bb47c2a251e29e4cd4dbae58b4f"
+    },
+    {
+      "path": "clean/deposition/monthly_clcd_code_components_kg_n.npy",
+      "bytes": 56524928,
+      "sha256": "936a6a793efcf0c8c01a127706d95dc69cfb3db7eb06edc5b83d9e6df3f97d01"
+    },
+    {
+      "path": "clean/deposition/monthly_landclass_components.parquet",
+      "bytes": 28732218,
+      "sha256": "36e67b413eab26579c95b16bc3b27485f83351a72413ec9126f67a3da28c510e"
+    },
+    {
+      "path": "clean/deposition/reach_ids.npy",
+      "bytes": 1048,
+      "sha256": "ae5ec28998a362dfe642cb066ac635b3d4d3d28c100671aa1a06bf6aeca5e6b7"
+    },
+    {
+      "path": "clean/land/luh3/land_state_h1_1961_2024.parquet",
+      "bytes": 1425988,
+      "sha256": "df1ad9f259de5dd37f5380857b29238f7bf328315610b026362a350f8b379cce"
+    },
+    {
+      "path": "clean/spatial/river_lines.parquet",
+      "bytes": 331198,
+      "sha256": "47b86abe77225a5976a0d87920c086770708cefabe92924e01cd0df095304d70"
+    },
+    {
+      "path": "clean/spatial/static_physical_units.parquet",
+      "bytes": 24871,
+      "sha256": "2a8ecdb40060ee76f325a3a8e34dff69a80a4ae8461c1004d819a290d5e24805"
+    },
+    {
+      "path": "clean/spatial/static_raw.parquet",
+      "bytes": 25001,
+      "sha256": "5ca6f4d7d47e6ccc1d909cf40e546b95995200acafbdbdcec6ba0fc14f0f2cae"
+    }
+  ]
+}

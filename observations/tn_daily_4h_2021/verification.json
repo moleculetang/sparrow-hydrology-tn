@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "stations": 15,
+  "daily_stations": 14,
+  "daily_rows": 651,
+  "daily_eligible_rows": 348,
+  "unique_TN_readings": 2653,
+  "raw_snapshot_rows": 3188,
+  "raw_missing_TN": 307,
+  "raw_missing_time": 53,
+  "daily_mean_error": 0.0,
+  "daily_counts_exact": true,
+  "timezone": "Asia/Shanghai",
+  "missing_filled": false,
+  "original_monthly_sample_rows": 6,
+  "NSE": "not_applicable_to_input_verification"
+}

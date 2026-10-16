@@ -1,0 +1,11 @@
+**/__pycache__/
+**/cache/
+**/outputs/
+**/evidence/
+**/data/
+**/inputs/
+**/state/
+**/state_*/
+public_test_results.json
+public_operational_results.json
+.public_native_runs/

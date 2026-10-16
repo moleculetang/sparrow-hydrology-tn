@@ -1,0 +1,27 @@
+{
+  "chen_source_rows_in_prb": 270,
+  "chen_exact_duplicate_rows_removed": 3,
+  "chen_unique_anchor_rows": 267,
+  "reach_quality_counts": {
+    "A": 120,
+    "C": 77,
+    "D": 37,
+    "B": 33
+  },
+  "reach_approved_anchor_rows": 230,
+  "reach_excluded_D_rows": 37,
+  "annual_rows_all_scenarios": 11214,
+  "facility_month_rows_approved_reaches": 115920,
+  "reach_month_rows": 56448,
+  "central_2012_max_abs_difference_from_deduplicated_chen_t_n_yr": 0.0,
+  "monthly_to_annual_max_abs_closure_difference_kg_n": 9.313225746154785e-10,
+  "crosswalk_quality_counts": {
+    "C": 163,
+    "B": 53,
+    "A": 51
+  },
+  "crosswalk_model_allowed_rows": 104,
+  "mee_activity_rows": 239,
+  "method_release": "PASS",
+  "interpretation": "Central scenario treats Chen TDN as a lower-bound TN-equivalent. The 0.9 and 0.8 dissolved-fraction cases are sensitivity scenarios, not measured fractions."
+}

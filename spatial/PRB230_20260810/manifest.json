@@ -1,0 +1,188 @@
+{
+  "identity": "new_S1_divergent_geometry",
+  "files": [
+    {
+      "path": "evidence/corrected_topology_validation_20260810.json",
+      "bytes": 1282,
+      "sha256": "1d3771edcd3177c1c67aa3302fddee6b603b7c96f5a93cd6fc307a7c59cf03cb",
+      "source_relative": "5_Test/20260810_1/reports/spatial_correction/corrected_topology_validation.json"
+    },
+    {
+      "path": "evidence/spatial_validation.json",
+      "bytes": 3339,
+      "sha256": "2084db79248bc8225edd361715d1c2b3836bddcfacdb48149e529ce28ea531c3",
+      "source_relative": null
+    },
+    {
+      "path": "README.md",
+      "bytes": 6513,
+      "sha256": "bc3bf1e0d1f11dde38607b4a266ff5ab6bd1355237a8c1b93a840b97625110e2",
+      "source_relative": null
+    },
+    {
+      "path": "tables/geometry_H1_area_crosswalk.csv",
+      "bytes": 10553,
+      "sha256": "33f924fdc7c1201fa2d37625166df7cbe5d594dce05e7a2be0c3cecedbb86e12",
+      "source_relative": null
+    },
+    {
+      "path": "tables/H1_FULL24C_topology.json",
+      "bytes": 10568,
+      "sha256": "f378c87051fe1a4094d635d6326e92f2d19d7083b8768d31d5b75dedefeb2f75",
+      "source_relative": "5_Test/20261008_1/vendor/legacy22/data/domains/FULL24C/topology.json"
+    },
+    {
+      "path": "tables/topology_correction_contract.csv",
+      "bytes": 1013,
+      "sha256": "68831bc1c128b265b6b82c8e93ffed722a0ef9d976db9e12b7a9523b99f9dc2a",
+      "source_relative": "5_Test/20260810_1/inputs/spatial_corrected/topology_correction_contract.csv"
+    },
+    {
+      "path": "tables/topology_edges.csv",
+      "bytes": 18988,
+      "sha256": "2daa0a1df1e8b4d5cf364492068be88e410c3d6228fe417275fda3bc4afd37f9",
+      "source_relative": "5_Test/20260810_1/inputs/spatial_corrected/topology_edges.csv"
+    },
+    {
+      "path": "vectors/prb_boundary.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "source_relative": "0_reach_topology/data/processed/vector/prb_boundary.cpg"
+    },
+    {
+      "path": "vectors/prb_boundary.dbf",
+      "bytes": 994,
+      "sha256": "7b94800feb2008605242e7f6327adedebe18b9719f9dc7ff119789bfaf585303",
+      "source_relative": "0_reach_topology/data/processed/vector/prb_boundary.dbf"
+    },
+    {
+      "path": "vectors/prb_boundary.prj",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4",
+      "source_relative": "0_reach_topology/data/processed/vector/prb_boundary.prj"
+    },
+    {
+      "path": "vectors/prb_boundary.sbn",
+      "bytes": 252,
+      "sha256": "d754f978a97e41223ab374da867e227781919d8702838e8a2a4a38dca9709e59",
+      "source_relative": "0_reach_topology/data/processed/vector/prb_boundary.sbn"
+    },
+    {
+      "path": "vectors/prb_boundary.sbx",
+      "bytes": 132,
+      "sha256": "3ebd4c19590fc77feea21015e877daef9aa830371e0c7ccb579111476b804b0a",
+      "source_relative": "0_reach_topology/data/processed/vector/prb_boundary.sbx"
+    },
+    {
+      "path": "vectors/prb_boundary.shp",
+      "bytes": 331300,
+      "sha256": "aec909b6ea4373e425c53cf1fcf66077eb1925ee87dfc38a386b9c4631d80120",
+      "source_relative": "0_reach_topology/data/processed/vector/prb_boundary.shp"
+    },
+    {
+      "path": "vectors/prb_boundary.shx",
+      "bytes": 196,
+      "sha256": "2f2618bba97bc3830dda86f9e81e2eca65015e31dd9fca7356f8682413389c73",
+      "source_relative": "0_reach_topology/data/processed/vector/prb_boundary.shx"
+    },
+    {
+      "path": "vectors/reach_catchments.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "source_relative": "5_Test/20260810_1/inputs/spatial_corrected/reach_catchments.cpg"
+    },
+    {
+      "path": "vectors/reach_catchments.dbf",
+      "bytes": 33972,
+      "sha256": "7d462003b679f3b9014cd2daa1104b65863b5b73ab4eb9904afe20a781dd147c",
+      "source_relative": "5_Test/20260810_1/inputs/spatial_corrected/reach_catchments.dbf"
+    },
+    {
+      "path": "vectors/reach_catchments.prj",
+      "bytes": 423,
+      "sha256": "48a44261fed6ba2892b50afe8b76ecbf3857bf39c493543ac99efd3a16f6a03b",
+      "source_relative": "5_Test/20260810_1/inputs/spatial_corrected/reach_catchments.prj"
+    },
+    {
+      "path": "vectors/reach_catchments.shx",
+      "bytes": 1940,
+      "sha256": "6baff9de0461e38cfef971d7d78803d716b7e7a928c9dcca4076c2d821477508",
+      "source_relative": "5_Test/20260810_1/inputs/spatial_corrected/reach_catchments.shx"
+    },
+    {
+      "path": "vectors/reach_catchments.zip",
+      "bytes": 4457328,
+      "sha256": "9beac2c6f575703e4103ddee5293002f3acc56564f3d23dd4436d8c270718ba1",
+      "source_relative": null
+    },
+    {
+      "path": "vectors/reaches_topology.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "source_relative": "5_Test/20260810_1/inputs/spatial_corrected/reaches_topology.cpg"
+    },
+    {
+      "path": "vectors/reaches_topology.dbf",
+      "bytes": 119488,
+      "sha256": "bc4f898e2c8c5944eed4e651d4349a17dce47cf2e34391ab8557bec3f9c7622a",
+      "source_relative": "5_Test/20260810_1/inputs/spatial_corrected/reaches_topology.dbf"
+    },
+    {
+      "path": "vectors/reaches_topology.prj",
+      "bytes": 423,
+      "sha256": "48a44261fed6ba2892b50afe8b76ecbf3857bf39c493543ac99efd3a16f6a03b",
+      "source_relative": "5_Test/20260810_1/inputs/spatial_corrected/reaches_topology.prj"
+    },
+    {
+      "path": "vectors/reaches_topology.shp",
+      "bytes": 302196,
+      "sha256": "f89a8e097a56466a5419c590b7f9490c0392f1960f5e54c8537d3666d7cf94fb",
+      "source_relative": "5_Test/20260810_1/inputs/spatial_corrected/reaches_topology.shp"
+    },
+    {
+      "path": "vectors/reaches_topology.shx",
+      "bytes": 1940,
+      "sha256": "0728577259793e6b87817bf8d150ec51a340e9dde39cbe42bc3599d2f054aacc",
+      "source_relative": "5_Test/20260810_1/inputs/spatial_corrected/reaches_topology.shx"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 3563,
+      "sha256": "5aec1c8f7cd056907dc8dff4a7e76ba36b0ee3bd0c4bc235a738f8f02bf423d7",
+      "source_relative": null
+    }
+  ],
+  "archive_members": [
+    {
+      "path": "reach_catchments.cpg",
+      "bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "source_relative": "5_Test/20260810_1/inputs/spatial_corrected/reach_catchments.cpg"
+    },
+    {
+      "path": "reach_catchments.dbf",
+      "bytes": 33972,
+      "sha256": "7d462003b679f3b9014cd2daa1104b65863b5b73ab4eb9904afe20a781dd147c",
+      "source_relative": "5_Test/20260810_1/inputs/spatial_corrected/reach_catchments.dbf"
+    },
+    {
+      "path": "reach_catchments.prj",
+      "bytes": 423,
+      "sha256": "48a44261fed6ba2892b50afe8b76ecbf3857bf39c493543ac99efd3a16f6a03b",
+      "source_relative": "5_Test/20260810_1/inputs/spatial_corrected/reach_catchments.prj"
+    },
+    {
+      "path": "reach_catchments.shp",
+      "bytes": 24799380,
+      "sha256": "792f8138935ae06ce7730435b406c3f4900516fb2c03e73eff31283eff5476cf",
+      "source_relative": "5_Test/20260810_1/inputs/spatial_corrected/reach_catchments.shp"
+    },
+    {
+      "path": "reach_catchments.shx",
+      "bytes": 1940,
+      "sha256": "6baff9de0461e38cfef971d7d78803d716b7e7a928c9dcca4076c2d821477508",
+      "source_relative": "5_Test/20260810_1/inputs/spatial_corrected/reach_catchments.shx"
+    }
+  ],
+  "archive": "vectors/reach_catchments.zip"
+}

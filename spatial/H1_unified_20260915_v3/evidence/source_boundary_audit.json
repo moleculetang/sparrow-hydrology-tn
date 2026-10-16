@@ -1,0 +1,35 @@
+{
+  "rows": 8930,
+  "reaches": 230,
+  "frozen_registered_max_abs_m2": 0.0,
+  "frozen_registered_violations": 0,
+  "changed_source_support_reaches": 192,
+  "old_source_support_outside_current_m2": 1805177415.2010083,
+  "pilot_cells": [
+    {
+      "reach_id": 158,
+      "lat_index": 785,
+      "lon_index": 3393,
+      "registered_overlap_m2": 343595.99673488754,
+      "recomputed_frozen_overlap_m2": 343595.99673488754,
+      "current_same_reach_overlap_m2": 0.0,
+      "old_support_retained_m2": 0.0,
+      "old_support_outside_current_m2": 343595.99673488754,
+      "current_extra_support_m2": 0.0,
+      "registered_error_m2": 0.0
+    },
+    {
+      "reach_id": 225,
+      "lat_index": 773,
+      "lon_index": 3428,
+      "registered_overlap_m2": 1090160.134822838,
+      "recomputed_frozen_overlap_m2": 1090160.134822838,
+      "current_same_reach_overlap_m2": 0.0,
+      "old_support_retained_m2": 0.0,
+      "old_support_outside_current_m2": 1090160.134822838,
+      "current_extra_support_m2": 0.0,
+      "registered_error_m2": 0.0
+    }
+  ],
+  "policy": "DO_NOT_TRANSFER_SOURCE_MASS_WITH_AREA_CROSSWALK; frozen source/hydrology support retained. New geography requires separately rebuilding and validating both source and hydrology inputs."
+}

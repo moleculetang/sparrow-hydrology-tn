@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "source_hash_matches_frozen_record": true,
+  "csv_float64_round_trip_exact": true,
+  "original_sensitivity_precipitation_exact": true,
+  "original_case_fast_water_exact": true,
+  "original_case_area_exact": true,
+  "missing": 0,
+  "negative": 0,
+  "date_count": 23376,
+  "reach_count": 39,
+  "readings": 911664,
+  "leap_days": 16,
+  "min_mm_day": 0.0,
+  "max_mm_day": 259.03358471699767,
+  "training_or_evaluation_labels_read": false,
+  "existing_training_modified": false,
+  "hydrologic_model_retrained": false,
+  "scope": "original_expert_case_rainfall_only_not_current_44_path_input_unification"
+}

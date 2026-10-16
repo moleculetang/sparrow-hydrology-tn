@@ -1,0 +1,22 @@
+{
+  "source": "Wang et al. 2022, DOI 10.1038/s41597-022-01439-7",
+  "equation": "TN_out_kg_yr = Effluent_N2O_t_CO2eq_yr * 1e6 / (265 * EF_eff_g_N2O_per_kg_TN)",
+  "effluent_n2o_workbook_unit": "t CO2eq/year",
+  "effluent_ef_unit": "g N2O/kg TN effluent",
+  "gwp_n2o_100yr": 265.0,
+  "records_total": 57060,
+  "terminal_aquatic_records": 55208,
+  "terminal_aquatic_records_with_positive_effluent_n2o_and_volume": 52153,
+  "terminal_aquatic_records_zero_or_missing_effluent_n2o_excluded": 3055,
+  "terminal_non_aquatic_records_excluded": 1087,
+  "flowing_sewer_transfer_records_excluded": 765,
+  "dual_route_closure_records": 46022,
+  "dual_route_closure_pass_records": 45312,
+  "dual_route_closure_pass_fraction": 0.9845725957150928,
+  "dual_route_relative_difference_median": 3.023305171106942e-16,
+  "dual_route_relative_difference_p95": 1.7811773587841306e-15,
+  "dual_route_relative_difference_max": 1.9698333982319685,
+  "tn_removed_unit_inference": "The workbook header retains a COD wording, but the field is empirically supported as kg TN/year only where Bio-N2O and Effluent-N2O two-route closure succeeds; it is not used as a direct effluent load.",
+  "release_gate": "PASS only when pathway/process mappings are complete, p95 dual-route relative difference is <= 0.05, and >=95% of dual-route records are within 5%.",
+  "release_status": "PASS"
+}

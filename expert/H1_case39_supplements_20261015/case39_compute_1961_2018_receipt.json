@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "zip_file": "delivery/case39_compute_1961_2018.zip",
+  "zip_bytes": 346896423,
+  "zip_sha256": "d5eded7fa7efccb3bd49819da1565d8dc89f5e7800af372059cfff0062ed40bb",
+  "members": 583,
+  "files_hash_verified": 582,
+  "extracted_validation_directory": "delivery/supplements/_verification/case39_20261015T073712256062/case39_compute_1961_2018",
+  "verification": {
+    "status": "passed",
+    "files_hash_verified": 582,
+    "registered_assets": 527,
+    "years": 58,
+    "reaches": 39,
+    "reservoirs": 4,
+    "reach_days": 826176,
+    "reservoir_days": 84736,
+    "agriculture_config_years_read": 64,
+    "max_annual_N_mass_error_kg": 1.4901161193847656e-08,
+    "C1_C2_pre2016_C0_exact": true,
+    "source_multiplier": 1.0,
+    "daily_deposition_blocked": true,
+    "TN_value_columns_found": false,
+    "original_experiment_reads": 0,
+    "training_calls": 0
+  },
+  "original_review_zip_unchanged": true,
+  "parent_clean_data_modified": false,
+  "uploaded": false,
+  "validation_command": "python -B scripts/verify_package.py from extracted config directory"
+}
